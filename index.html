@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlucoBeacon — Diabetes Tracking, Reimagined</title>
+  <meta name="description" content="GlucoBeacon is a private, powerful diabetes management app for Android. Track blood sugar, estimate A1C, discover safe restaurant meals, and build healthy habits — all on your device." />
+  <link rel="icon" type="image/png" href="img/icon.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #1E3A5F;
+      --navy2:  #162d4a;
+      --orange: #F97316;
+      --orange2:#EA6010;
+      --white:  #FFFFFF;
+      --gray:   #F8FAFC;
+      --text:   #0F172A;
+      --muted:  #64748B;
+      --border: #E2E8F0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ─── NAV ─────────────────────────────────────── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%;
+      height: 64px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+    .nav-brand {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none;
+    }
+    .nav-brand img { width: 36px; height: 36px; border-radius: 8px; }
+    .nav-brand span {
+      color: var(--white);
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+    .nav-badge {
+      background: var(--orange);
+      color: var(--white);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--white); }
+
+    /* ─── HERO ────────────────────────────────────── */
+    .hero {
+      background: linear-gradient(135deg, var(--navy2) 0%, var(--navy) 60%, #1a4a7a 100%);
+      color: var(--white);
+      padding: 80px 5% 60px;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      min-height: 90vh;
+    }
+    .hero-text { flex: 1; max-width: 580px; }
+    .hero-eyebrow {
+      display: inline-block;
+      background: rgba(249,115,22,0.2);
+      border: 1px solid rgba(249,115,22,0.4);
+      color: #FCA663;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+    }
+    .hero h1 span { color: var(--orange); }
+    .hero p {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 36px;
+      max-width: 480px;
+      line-height: 1.7;
+    }
+    .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+    .btn-coming-soon {
+      display: flex; align-items: center; gap: 10px;
+      background: rgba(255,255,255,0.1);
+      border: 1.5px solid rgba(255,255,255,0.3);
+      color: rgba(255,255,255,0.6);
+      padding: 14px 24px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: default;
+    }
+    .btn-coming-soon svg { opacity: 0.6; }
+    .btn-secondary {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-decoration: none;
+      display: flex; align-items: center; gap: 6px;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      padding-bottom: 2px;
+      transition: color 0.2s;
+    }
+    .btn-secondary:hover { color: var(--white); }
+    .hero-image { flex: 1; display: flex; justify-content: center; align-items: center; }
+    .phone-frame {
+      position: relative;
+      width: 280px;
+      filter: drop-shadow(0 30px 60px rgba(0,0,0,0.5));
+    }
+    .phone-frame img {
+      width: 100%;
+      border-radius: 32px;
+      border: 6px solid rgba(255,255,255,0.15);
+    }
+    .hero-trust {
+      margin-top: 48px;
+      display: flex; align-items: center; gap: 8px;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.85rem;
+    }
+    .hero-trust span { color: var(--orange); font-weight: 700; }
+
+    /* ─── STATS BAR ───────────────────────────────── */
+    .stats {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 32px 5%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1;
+    }
+    .stat-num span { color: var(--orange); }
+    .stat-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-weight: 500;
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* ─── SECTION BASE ────────────────────────────── */
+    section { padding: 80px 5%; }
+    .section-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--orange);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 560px;
+      line-height: 1.7;
+      margin-bottom: 56px;
+    }
+
+    /* ─── FEATURES ────────────────────────────────── */
+    .features { background: var(--gray); }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .feature-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 28px;
+      border: 1px solid var(--border);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .feature-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(30,58,95,0.1);
+    }
+    .feature-icon {
+      width: 48px; height: 48px;
+      background: linear-gradient(135deg, #FFF7ED, #FFEDD5);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px;
+      font-size: 1.5rem;
+    }
+    .feature-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .feature-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .feature-tag {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+    .tag-free { background: #DCFCE7; color: #166534; }
+    .tag-pro  { background: #EDE9FE; color: #5B21B6; }
+
+    /* ─── SCREENSHOTS ─────────────────────────────── */
+    .screenshots { background: var(--navy); }
+    .screenshots .section-title { color: var(--white); }
+    .screenshots .section-label { color: #FCA663; }
+    .screenshots .section-sub { color: rgba(255,255,255,0.65); }
+    .screenshot-scroll {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 16px;
+      scrollbar-width: thin;
+      scrollbar-color: var(--orange) rgba(255,255,255,0.1);
+    }
+    .screenshot-scroll::-webkit-scrollbar { height: 4px; }
+    .screenshot-scroll::-webkit-scrollbar-track { background: rgba(255,255,255,0.1); border-radius: 2px; }
+    .screenshot-scroll::-webkit-scrollbar-thumb { background: var(--orange); border-radius: 2px; }
+    .screenshot-item {
+      flex: 0 0 200px;
+      text-align: center;
+    }
+    .screenshot-item img {
+      width: 200px;
+      border-radius: 20px;
+      border: 4px solid rgba(255,255,255,0.12);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+    }
+    .screenshot-caption {
+      margin-top: 12px;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.55);
+      font-weight: 500;
+    }
+
+    /* ─── FOR WHO ─────────────────────────────────── */
+    .forwho { background: var(--white); }
+    .who-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    .who-card {
+      border-radius: 16px;
+      padding: 32px 28px;
+      border: 2px solid var(--border);
+    }
+    .who-card.type1 { border-color: #BFDBFE; background: #EFF6FF; }
+    .who-card.type2 { border-color: #FED7AA; background: #FFF7ED; }
+    .who-card.pre   { border-color: #BBF7D0; background: #F0FDF4; }
+    .who-emoji { font-size: 2.2rem; margin-bottom: 14px; }
+    .who-card h3 { font-size: 1.15rem; font-weight: 800; margin-bottom: 10px; color: var(--navy); }
+    .who-card p  { font-size: 0.9rem; color: var(--muted); line-height: 1.65; }
+
+    /* ─── PRO TABLE ───────────────────────────────── */
+    .pro-section { background: var(--gray); }
+    .pro-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    .pro-table thead tr th {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 24px;
+      text-align: left;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+    .pro-table thead tr th:last-child {
+      background: var(--orange);
+      text-align: center;
+    }
+    .pro-table tbody tr:nth-child(even) td { background: #F8FAFC; }
+    .pro-table tbody tr:nth-child(odd)  td { background: var(--white); }
+    .pro-table td {
+      padding: 14px 24px;
+      font-size: 0.9rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+    }
+    .pro-table td:nth-child(2),
+    .pro-table td:nth-child(3) { text-align: center; }
+    .check { color: #16A34A; font-size: 1.2rem; font-weight: 700; }
+    .cross { color: #DC2626; font-size: 1.1rem; }
+    .pro-price {
+      text-align: center;
+      margin-top: 28px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .pro-price strong { color: var(--navy); font-size: 1.5rem; }
+
+    /* ─── PRIVACY ─────────────────────────────────── */
+    .privacy-section {
+      background: linear-gradient(135deg, var(--navy2), var(--navy));
+      color: var(--white);
+      text-align: center;
+    }
+    .privacy-section .section-title { color: var(--white); }
+    .privacy-section .section-sub { color: rgba(255,255,255,0.7); margin: 0 auto 48px; }
+    .privacy-pillars {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .pillar {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 16px;
+      padding: 28px 24px;
+      width: 220px;
+      text-align: center;
+    }
+    .pillar-icon { font-size: 2rem; margin-bottom: 12px; }
+    .pillar h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; }
+    .pillar p  { font-size: 0.82rem; color: rgba(255,255,255,0.6); line-height: 1.5; }
+
+    /* ─── CTA ─────────────────────────────────────── */
+    .cta-section {
+      background: var(--orange);
+      text-align: center;
+      padding: 64px 5%;
+    }
+    .cta-section h2 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+    .cta-section p {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.05rem;
+      margin-bottom: 32px;
+    }
+    .btn-notify {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--white);
+      color: var(--orange2);
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 15px 32px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    .btn-notify:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    }
+
+    /* ─── FOOTER ──────────────────────────────────── */
+    footer {
+      background: var(--navy2);
+      color: rgba(255,255,255,0.6);
+      padding: 40px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .footer-brand {
+      display: flex; align-items: center; gap: 10px;
+    }
+    .footer-brand img { width: 28px; border-radius: 6px; }
+    .footer-brand span { color: var(--white); font-weight: 700; font-size: 0.95rem; }
+    footer p { font-size: 0.82rem; }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a {
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      font-size: 0.82rem;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--white); }
+
+    /* ─── RESPONSIVE ──────────────────────────────── */
+    @media (max-width: 768px) {
+      .hero { flex-direction: column; text-align: center; padding: 60px 5% 40px; min-height: auto; }
+      .hero p { max-width: 100%; }
+      .hero-cta { justify-content: center; }
+      .hero-image { width: 100%; }
+      .phone-frame { width: 220px; }
+      .hero-trust { justify-content: center; }
+      .nav-links { display: none; }
+      footer { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="#">
+    <img src="img/icon.png" alt="GlucoBeacon logo" />
+    <span>GlucoBeacon</span>
+  </a>
+  <div class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#screenshots">Screenshots</a>
+    <a href="#pro">Pro</a>
+    <a href="#privacy">Privacy</a>
+    <a href="mailto:admin@glucobeacon.com">Contact</a>
+  </div>
+  <span class="nav-badge">Coming Soon</span>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-eyebrow">Diabetes Management · Reimagined</div>
+    <h1>Your Health Data.<br /><span>Your Device.</span><br />Your Control.</h1>
+    <p>GlucoBeacon gives you a complete picture of your diabetes — blood sugar trends, A1C estimates, restaurant guidance, workout routines, and an AI coach — all stored privately on your phone. No cloud. No accounts. No compromise.</p>
+    <div class="hero-cta">
+      <div class="btn-coming-soon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg>
+        Coming Soon on Google Play
+      </div>
+      <a class="btn-secondary" href="mailto:admin@glucobeacon.com">
+        Get notified at launch →
+      </a>
+    </div>
+    <div class="hero-trust">
+      <span>100% private</span>&nbsp;·&nbsp;No account required&nbsp;·&nbsp;Built for Type 1, Type 2 &amp; Pre-Diabetes
+    </div>
+  </div>
+  <div class="hero-image">
+    <div class="phone-frame">
+      <img src="img/screen-dashboard.png" alt="GlucoBeacon dashboard showing blood sugar in range" />
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats">
+  <div class="stat">
+    <div class="stat-num">176<span>+</span></div>
+    <div class="stat-label">Foods with GI Data</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">48</div>
+    <div class="stat-label">Restaurant Chains</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">3,075<span>+</span></div>
+    <div class="stat-label">Menu Items Scored</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">18</div>
+    <div class="stat-label">Workout Routines</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">0</div>
+    <div class="stat-label">Data Sent to Cloud</div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="section-label">What's Inside</div>
+  <div class="section-title">Everything you need.<br />Nothing you don't.</div>
+  <div class="section-sub">Built by someone who understands that managing diabetes is serious work — GlucoBeacon gives you clinical-grade tools in a clean, simple interface.</div>
+  <div class="features-grid">
+
+    <div class="feature-card">
+      <div class="feature-icon">🩸</div>
+      <h3>Blood Sugar Tracking</h3>
+      <p>Log readings instantly with color-coded feedback. See 7-day trends, time-in-range rings, and a full history of every reading you've ever taken.</p>
+      <span class="feature-tag tag-free">Free</span>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <h3>A1C Estimator</h3>
+      <p>Get a real-time A1C estimate using the ADA's Nathan formula, recency-weighted over your last 90 days of readings. No lab required.</p>
+      <span class="feature-tag tag-pro">Pro</span>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🍔</div>
+      <h3>Restaurant Advisor</h3>
+      <p>Eating out? GlucoBeacon scores every item at 48 major chains — McDonald's, Chipotle, Panera and more — by glycemic impact, carbs, and calories against your personal goals.</p>
+      <span class="feature-tag tag-pro">Pro</span>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">💊</div>
+      <h3>Medication Tracking</h3>
+      <p>Log your medications with autocomplete across 120+ diabetes and blood pressure drugs. Set up to 3 daily reminders per medication so you never miss a dose.</p>
+      <span class="feature-tag tag-free">Free</span>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🏋️</div>
+      <h3>Workout Library</h3>
+      <p>18 evidence-based routines across beginner, intermediate, and expert levels — each with diabetes safety notes, science citations, and a guided timer-based player.</p>
+      <span class="feature-tag tag-pro">Pro</span>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🍽️</div>
+      <h3>Pantry &amp; Recipes</h3>
+      <p>Scan items into your pantry with a barcode scanner. Browse 80 diabetic-friendly recipes and see exactly what percentage of ingredients you already have on hand.</p>
+      <span class="feature-tag tag-pro">Pro</span>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">❤️</div>
+      <h3>Blood Pressure &amp; Weight</h3>
+      <p>Track your full cardiovascular picture alongside your blood sugar. Trend charts, history logs, and lifestyle card summaries keep all your vitals in one place.</p>
+      <span class="feature-tag tag-pro">Pro</span>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">🤖</div>
+      <h3>AI Diabetes Assistant</h3>
+      <p>Ask real questions and get answers personalized to your actual readings, A1C, medications, and goals — not generic health advice. Powered by Claude AI.</p>
+      <span class="feature-tag tag-pro">Pro · Coming Soon</span>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">📱</div>
+      <h3>Health Connect Sync</h3>
+      <p>Connect your Fitbit, Garmin, Samsung Watch, or Wear OS device. Step counts, glucose imports, and background health sync via Android Health Connect.</p>
+      <span class="feature-tag tag-pro">Pro</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section class="screenshots" id="screenshots">
+  <div class="section-label">See It in Action</div>
+  <div class="section-title" style="color:white;">Real screens. Real data.</div>
+  <div class="section-sub">Every screen is designed to surface the information you need — fast. No clutter, no noise.</div>
+  <div class="screenshot-scroll">
+    <div class="screenshot-item">
+      <img src="img/screen-dashboard.png" alt="Blood sugar dashboard" />
+      <div class="screenshot-caption">Home Dashboard</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="img/screen-timeinrange.png" alt="Time in range 100%" />
+      <div class="screenshot-caption">Time In Range</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="img/screen-restaurant.png" alt="McDonald's meal recommendations" />
+      <div class="screenshot-caption">Restaurant Advisor</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="img/screen-kfc.png" alt="KFC carb counts" />
+      <div class="screenshot-caption">Carb Counts by Chain</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="img/screen-medication.png" alt="Medication autocomplete" />
+      <div class="screenshot-caption">Medication Log</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="img/screen-workouts.png" alt="Workout routine levels" />
+      <div class="screenshot-caption">Workout Library</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="img/screen-bp.png" alt="Blood pressure tracking" />
+      <div class="screenshot-caption">Blood Pressure</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="img/screen-recipes.png" alt="Diabetic recipe library" />
+      <div class="screenshot-caption">Recipe Library</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="img/screen-barcode.png" alt="Barcode scan result" />
+      <div class="screenshot-caption">Barcode Scanner</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="forwho" id="whoisitfor">
+  <div class="section-label">Who It's For</div>
+  <div class="section-title">Built for every type of diabetes.</div>
+  <div class="section-sub">Whether you were diagnosed last month or have managed your condition for decades, GlucoBeacon meets you where you are.</div>
+  <div class="who-grid">
+    <div class="who-card type1">
+      <div class="who-emoji">💉</div>
+      <h3>Type 1 Diabetes</h3>
+      <p>Carbs and insulin logging per reading. CGM-compatible health sync. Pattern detection that flags dawn phenomenon, post-meal spikes, and overnight lows before they become a problem.</p>
+    </div>
+    <div class="who-card type2">
+      <div class="who-emoji">🍎</div>
+      <h3>Type 2 Diabetes</h3>
+      <p>Restaurant guidance, food glycemic index scoring, weight tracking, and MET-based calorie burn calculations — the full lifestyle picture you need to keep your A1C on track.</p>
+    </div>
+    <div class="who-card pre">
+      <div class="who-emoji">⚡</div>
+      <h3>Pre-Diabetes</h3>
+      <p>Catch trends before they progress. The A1C estimator and pattern detection give you the clinical context to have informed conversations with your doctor — without waiting for lab results.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FREE VS PRO -->
+<section class="pro-section" id="pro">
+  <div class="section-label">Pricing</div>
+  <div class="section-title">Start free. Go further with Pro.</div>
+  <div class="section-sub">Core blood sugar tracking is always free. Pro unlocks the complete toolkit for people who are serious about their health.</div>
+  <table class="pro-table">
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Free</th>
+        <th>Pro</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Blood Sugar Logging (unlimited)</td><td class="check">✓</td><td class="check">✓</td></tr>
+      <tr><td>Reading History</td><td>Last 90 days</td><td class="check">Unlimited</td></tr>
+      <tr><td>Medication Logging</td><td class="check">✓</td><td class="check">✓</td></tr>
+      <tr><td>Step Counter (phone pedometer)</td><td class="check">✓</td><td class="check">✓</td></tr>
+      <tr><td>Home Screen Widget</td><td class="check">✓</td><td class="check">✓</td></tr>
+      <tr><td>Reminders</td><td>Up to 3</td><td class="check">Unlimited</td></tr>
+      <tr><td>A1C Estimator</td><td>Preview only</td><td class="check">Full screen + trends</td></tr>
+      <tr><td>Pattern Detection (11 patterns)</td><td>Preview only</td><td class="check">Full details</td></tr>
+      <tr><td>Doctor PDF Report</td><td class="cross">✗</td><td class="check">✓</td></tr>
+      <tr><td>Full Lifestyle Tab</td><td class="cross">✗</td><td class="check">✓</td></tr>
+      <tr><td>Restaurant Advisor (48 chains)</td><td class="cross">✗</td><td class="check">✓</td></tr>
+      <tr><td>Pantry &amp; Recipe Library</td><td class="cross">✗</td><td class="check">✓</td></tr>
+      <tr><td>Workout Library (18 routines)</td><td class="cross">✗</td><td class="check">✓</td></tr>
+      <tr><td>Health Connect Sync</td><td class="cross">✗</td><td class="check">✓</td></tr>
+      <tr><td>AI Diabetes Assistant</td><td>3 lifetime queries</td><td class="check">15 queries/day</td></tr>
+    </tbody>
+  </table>
+  <div class="pro-price">
+    <div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-bottom:12px;">
+      <div style="background:white;border:1.5px solid #E2E8F0;border-radius:14px;padding:20px 28px;text-align:center;min-width:160px;">
+        <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748B;margin-bottom:6px;">Monthly</div>
+        <div style="font-size:2rem;font-weight:800;color:#1E3A5F;">$4.99</div>
+        <div style="font-size:0.8rem;color:#64748B;">per month</div>
+      </div>
+      <div style="background:#1E3A5F;border:1.5px solid #1E3A5F;border-radius:14px;padding:20px 28px;text-align:center;min-width:160px;position:relative;">
+        <div style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#F97316;color:white;font-size:0.7rem;font-weight:700;padding:3px 12px;border-radius:20px;white-space:nowrap;">BEST VALUE</div>
+        <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,0.6);margin-bottom:6px;">Annual</div>
+        <div style="font-size:2rem;font-weight:800;color:white;">$49.99</div>
+        <div style="font-size:0.8rem;color:rgba(255,255,255,0.6);">per year · save 17%</div>
+      </div>
+      <div style="background:white;border:1.5px solid #E2E8F0;border-radius:14px;padding:20px 28px;text-align:center;min-width:160px;">
+        <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#64748B;margin-bottom:6px;">Lifetime</div>
+        <div style="font-size:2rem;font-weight:800;color:#1E3A5F;">$79.99</div>
+        <div style="font-size:0.8rem;color:#64748B;">one-time · forever</div>
+      </div>
+    </div>
+    <p style="font-size:0.85rem;color:#64748B;">All plans include full Pro access. Cancel monthly or annual anytime.</p>
+  </div>
+</section>
+
+<!-- PRIVACY -->
+<section class="privacy-section" id="privacy">
+  <div class="section-label">Privacy First</div>
+  <div class="section-title">Your health data belongs to you.</div>
+  <div class="section-sub">In an industry where health data is bought and sold, GlucoBeacon is different. Everything stays on your device — always.</div>
+  <div class="privacy-pillars">
+    <div class="pillar">
+      <div class="pillar-icon">📵</div>
+      <h4>No Account Required</h4>
+      <p>Open the app and start logging. No email, no password, no profile to create.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">💾</div>
+      <h4>On-Device Storage</h4>
+      <p>All your data lives in an SQLite database on your phone. It never touches a server.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">🔒</div>
+      <h4>No Data Selling</h4>
+      <p>We don't collect, analyze, or sell your health information. There is no "us" in your data.</p>
+    </div>
+    <div class="pillar">
+      <div class="pillar-icon">☁️</div>
+      <h4>Optional Backup</h4>
+      <p>If you want backup, connect your own Google Drive. The file goes to your account, not ours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Be the first to know when we launch.</h2>
+  <p>GlucoBeacon is coming to Google Play. Drop us your email and we'll notify you the moment it's live.</p>
+  <a class="btn-notify" href="mailto:admin@glucobeacon.com?subject=Notify me when GlucoBeacon launches">
+    ✉️ &nbsp; Get Launch Notification
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <img src="img/icon.png" alt="GlucoBeacon" />
+    <span>GlucoBeacon</span>
+  </div>
+  <p>© 2026 GAMZ Holdings LLC. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="https://glucobeacon.github.io/privacy/">Privacy Policy</a>
+    <a href="mailto:admin@glucobeacon.com">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
