@@ -1,0 +1,5216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Carb Calculator &amp; Daily Carb Budget — GlucoBeacon</title>
+  <meta name="description" content="Free carb calculator for diabetes and low-carb tracking. Search 176 curated foods with glycemic index data plus live USDA database lookup for thousands more, calculate net carbs from a label, or get a personalized daily carb budget. No signup, no app required." />
+  <link rel="canonical" href="https://glucobeacon.com/carb-calculator.html" />
+  <link rel="icon" type="image/png" href="img/icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Free Carb Calculator & Daily Carb Budget — GlucoBeacon" />
+  <meta property="og:description" content="Search 176 curated foods with real glycemic index data, calculate net carbs from a label, or get a personalized daily carb budget. Free, no signup." />
+  <meta property="og:image" content="https://glucobeacon.com/img/screen-dashboard.png" />
+  <meta property="og:url" content="https://glucobeacon.com/carb-calculator.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Free Carb Calculator & Daily Carb Budget — GlucoBeacon" />
+  <meta name="twitter:description" content="Search 176 curated foods with real glycemic index data, calculate net carbs from a label, or get a personalized daily carb budget. Free, no signup." />
+  <link rel="stylesheet" href="assets/css/site.css" />
+  <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <style>
+    /* ─── PERSISTENT BEACON BACKDROP ──────────────────────────
+       Same fixed photo + revolving-beam effect as index.html, carried
+       over unchanged (see that file for the full rationale). Fixed
+       full-viewport, z-index BELOW every section so opaque sections
+       (the white .tool-card boxes here) naturally cover it on scroll --
+       it only shows through .tool-head, whose background below is now
+       a translucent scrim instead of a solid fill. */
+    .beacon-bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+    .beacon-frame { position: absolute; top: 130px; left: 0; width: 100%; height: 100vh; }
+    .beacon-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+    .beacon-lamp {
+      position: absolute; top: 16.8%; left: 50%; width: 46px; height: 46px; border-radius: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(255,251,235,1) 0%, rgba(253,214,150,0.9) 40%, rgba(249,168,90,0.5) 65%, rgba(249,168,90,0) 80%);
+      filter: blur(2px);
+      animation: beaconPulse 2.3s ease-in-out infinite, beaconFlash 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    .beacon-beam {
+      position: absolute; top: 16.8%; left: 50%; width: 46vw; max-width: 640px; height: 90px;
+      transform-origin: 0% 50%;
+      transform: translateY(-50%) scaleX(1);
+      background: linear-gradient(90deg,
+        rgba(255,251,235,0.95) 0%,
+        rgba(253,200,130,0.55) 40%,
+        rgba(253,200,130,0.15) 75%,
+        transparent 100%);
+      clip-path: polygon(0% 38%, 100% 0%, 100% 100%, 0% 62%);
+      filter: blur(6px);
+      animation: beaconSweep 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    @keyframes beaconSweep {
+      0%   { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+      22%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      25%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      28%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      50%  { transform: translateY(-50%) scaleX(-1);    opacity: 0.95; }
+      72%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      75%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      78%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      100% { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+    }
+    @keyframes beaconFlash {
+      0%, 20%, 30%, 70%, 80%, 100% { filter: blur(2px) brightness(1); }
+      25%, 75% { filter: blur(2px) brightness(1.9); }
+    }
+    @keyframes beaconPulse {
+      0%, 100% { opacity: 0.85; transform: translate(-50%, -50%) scale(1); }
+      50%      { opacity: 1;    transform: translate(-50%, -50%) scale(1.15); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .beacon-lamp, .beacon-beam { animation: none; }
+    }
+
+    .tool-head {
+      position: relative; overflow: hidden;
+      background: linear-gradient(100deg, rgba(9,20,36,0.62) 0%, rgba(9,20,36,0.4) 55%, rgba(9,20,36,0.2) 100%);
+      color: var(--white); padding: 64px 5% 56px; text-align: center;
+    }
+    .tool-head .container { max-width: 640px; }
+    .tool-head h1 { font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; }
+    .tool-head h1 span { color: var(--orange-light); }
+    .tool-head p { color: rgba(255,255,255,0.75); font-size: 1.03rem; }
+    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 22px; }
+    .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--white); }
+
+    /* ─── LAYOUT ───────────────────────────────────── */
+    .wrap { max-width: 760px; margin: 0 auto; padding: 56px 5% 24px; }
+    .tool-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 40px;
+      transition: box-shadow 0.3s var(--ease);
+    }
+    .tool-card:hover { box-shadow: var(--shadow-lg); }
+    .tool-card h2 {
+      font-size: 1.28rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+    .tool-card .card-sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 22px; }
+
+    /* ─── FOOD SEARCH ──────────────────────────────── */
+    #foodSearch {
+      width: 100%;
+      padding: 15px 18px;
+      font-size: 1rem;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-sm);
+      outline: none;
+      font-family: inherit;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    #foodSearch:focus { border-color: var(--orange); box-shadow: 0 0 0 4px rgba(249,115,22,0.12); }
+    #searchResults {
+      margin-top: 10px;
+      max-height: 260px;
+      overflow-y: auto;
+      border-radius: var(--radius-sm);
+    }
+    .result-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 12px 14px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background 0.15s;
+    }
+    .result-row:hover { background: var(--bg); }
+    .result-name { font-weight: 600; font-size: 0.92rem; }
+    .result-cat { font-size: 0.76rem; color: var(--muted); }
+    .result-cat.is-usda { color: #2563EB; background: #EFF6FF; padding: 2px 9px; border-radius: 20px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; font-size: 0.66rem; }
+    .search-note { font-size: 0.78rem; color: var(--muted); margin-top: 10px; }
+
+    #foodDetail { margin-top: 24px; display: none; }
+    .detail-head {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      padding-bottom: 18px; margin-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    .detail-name { font-size: 1.14rem; font-weight: 800; color: var(--text); }
+    .detail-serving { font-size: 0.84rem; color: var(--muted); margin-top: 2px; }
+    .gi-badge {
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px;
+      padding: 5px 11px; border-radius: 20px; white-space: nowrap;
+    }
+    .gi-low  { background: var(--good-bg); color: var(--good); }
+    .gi-med  { background: var(--warn-bg); color: var(--warn); }
+    .gi-high { background: var(--bad-bg);  color: var(--bad); }
+    .gi-na   { background: var(--border);  color: var(--muted); }
+
+    .servings-row { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+    .servings-row label { font-size: 0.86rem; font-weight: 600; color: var(--muted); }
+    .stepper { display: flex; align-items: center; gap: 10px; }
+    .stepper button {
+      width: 34px; height: 34px; border-radius: 9px; border: 1.5px solid var(--border);
+      background: var(--white); color: var(--navy); font-size: 1.1rem; font-weight: 700;
+      cursor: pointer; line-height: 1; transition: background 0.2s, border-color 0.2s;
+    }
+    .stepper button:hover { background: var(--bg); border-color: var(--orange); }
+    .stepper span { font-weight: 700; min-width: 26px; text-align: center; }
+
+    .nutrient-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 12px;
+    }
+    .nutrient {
+      background: var(--bg);
+      border-radius: 13px;
+      padding: 15px;
+      text-align: center;
+    }
+    .nutrient .num { font-size: 1.32rem; font-weight: 800; color: var(--navy); font-variant-numeric: tabular-nums; }
+    .nutrient .num small { font-size: 0.7rem; font-weight: 600; color: var(--muted); }
+    .nutrient .lbl { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; margin-top: 3px; }
+    .nutrient.hero-nutrient { background: linear-gradient(135deg, #FFF3E8, #FFE4CC); border: 1px solid #FED7AA; }
+    .nutrient.hero-nutrient .num { color: var(--orange2); }
+
+    /* ─── MANUAL CALC ──────────────────────────────── */
+    .manual-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+    .field.wide { grid-column: span 2; }
+    @media (max-width: 480px) { .field.wide { grid-column: span 1; } }
+    .field label { display: block; font-size: 0.8rem; font-weight: 700; color: var(--muted); margin-bottom: 7px; text-transform: uppercase; letter-spacing: 0.4px; }
+    .field input, .field select {
+      width: 100%; padding: 13px 14px; font-size: 1rem;
+      border: 1.5px solid var(--border); border-radius: var(--radius-sm); outline: none;
+      font-variant-numeric: tabular-nums;
+      background: var(--white); color: var(--text);
+      font-family: inherit;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    /* Custom chevron replaces the browser's native one so we control its
+       spacing -- the native arrow was sitting flush against the text with
+       no reserved padding, which is what clipped "Balanced (~45% of c..."
+       in the Carb Approach dropdown. */
+    .field select {
+      appearance: none; -webkit-appearance: none; -moz-appearance: none;
+      padding-right: 40px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2364748B' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .field input:focus, .field select:focus { border-color: var(--orange); box-shadow: 0 0 0 4px rgba(249,115,22,0.12); }
+    .field .hint { display: block; font-size: 0.74rem; color: var(--muted); margin-top: 5px; text-transform: none; letter-spacing: normal; font-weight: 500; }
+    /* Feet + inches instead of a single raw-inches field -- asking someone
+       to mentally convert "5'7"" into "67" before they can type it was the
+       actual UX problem, not the hint text underneath it. */
+    .height-row { display: flex; align-items: center; gap: 6px; }
+    .height-row + .height-row { margin-top: 8px; }
+    .height-row input { width: auto; flex: 1 1 0%; min-width: 0; text-align: center; }
+    .height-row .height-unit { font-size: 0.85rem; color: var(--muted); font-weight: 600; flex-shrink: 0; }
+    .unit-toggle { display: inline-flex; gap: 4px; background: var(--bg); padding: 4px; border-radius: 999px; margin-bottom: 22px; }
+    .unit-btn {
+      border: none; background: transparent; padding: 8px 16px; border-radius: 999px;
+      font-size: 0.82rem; font-weight: 700; color: var(--muted); cursor: pointer;
+      font-family: inherit; transition: background 0.2s, color 0.2s;
+    }
+    .unit-btn.is-active { background: var(--navy); color: var(--white); }
+    /* .height-row's own "display: flex" otherwise beats the browser's
+       default [hidden] { display: none }, since author CSS always wins
+       over the UA stylesheet -- so a hidden height-row was still
+       rendering as a flex box. */
+    [hidden] { display: none !important; }
+    .budget-results { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; margin-top: 6px; }
+    .budget-result {
+      background: linear-gradient(150deg, var(--navy2), var(--navy));
+      color: var(--white); border-radius: var(--radius-md); padding: 22px; text-align: center;
+    }
+    .budget-result.secondary { background: var(--bg); color: var(--text); }
+    .budget-result.secondary .num { color: var(--navy); }
+    .budget-result .num { font-size: 1.9rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+    .budget-result .num small { font-size: 0.7rem; font-weight: 600; }
+    .budget-result .lbl { font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; opacity: 0.75; }
+    .manual-result {
+      background: linear-gradient(150deg, var(--navy2), var(--navy));
+      color: var(--white);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      text-align: center;
+    }
+    .manual-result .num { font-size: 2.4rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+    .manual-result .lbl { font-size: 0.82rem; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.6px; margin-top: 4px; }
+    .formula-note { font-size: 0.78rem; color: var(--muted); margin-top: 16px; line-height: 1.6; }
+
+    /* ─── EXPLAINER ────────────────────────────────── */
+    .explainer { background: var(--bg); padding: 64px 5%; }
+    .explainer-inner { max-width: 760px; margin: 0 auto; }
+    .explainer h2 { font-size: 1.55rem; font-weight: 800; color: var(--navy); margin-bottom: 20px; }
+    .explainer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 22px; margin-top: 26px; }
+    .explainer-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 22px; }
+    .explainer-item h4 { font-size: 0.98rem; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+    .explainer-item p { font-size: 0.87rem; color: var(--muted); line-height: 1.65; }
+    .explainer p.lead { color: var(--muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 8px; }
+
+    .cta-band { position: relative; overflow: hidden; background: linear-gradient(120deg, var(--orange2), var(--orange)); text-align: center; padding: 60px 5%; }
+    .cta-band h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .cta-band p { color: rgba(255,255,255,0.9); font-size: 1rem; margin-bottom: 28px; }
+  </style>
+</head>
+<body>
+
+<div class="beacon-bg" aria-hidden="true">
+  <div class="beacon-frame">
+    <img src="img/beacon-hero.jpg" alt="" />
+    <div class="beacon-lamp"></div>
+    <div class="beacon-beam"></div>
+  </div>
+</div>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">
+      <img src="img/icon.png" alt="GlucoBeacon logo" />
+      <span>GlucoBeacon<sup>&trade;</sup></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="index.html#features">Features</a>
+      <a href="carb-calculator.html" class="active">Carb Calculator</a>
+      <a href="compare.html">Compare</a>
+      <a href="index.html#pro">Pricing</a>
+      <a href="blog/index.html">Blog</a>
+      <a class="nav-cta" href="mailto:admin@glucobeacon.com">Get Notified</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<div class="tool-head">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Carb Calculator</div>
+    <div class="eyebrow eyebrow-light" style="justify-content:center;">Free Tool · No Signup · No App Required</div>
+    <h1>Carb Calculator &amp; Daily <span>Carb Budget</span></h1>
+    <p>Search 176 foods curated with exact glycemic index data — the same database that powers GlucoBeacon — plus live results from the USDA's food database for anything else. Calculate net carbs from a nutrition label, or get a personalized daily carb target. Free to everyone, forever.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="tool-card reveal">
+    <h2>What should my daily carb intake be?</h2>
+    <p class="card-sub">A personalized starting point based on your stats, activity, and goal — not just a single food.</p>
+    <div class="unit-toggle" role="group" aria-label="Units">
+      <button type="button" id="unitImperialBtn" class="unit-btn is-active">Imperial (lb / ft-in)</button>
+      <button type="button" id="unitMetricBtn" class="unit-btn">Metric (kg / cm)</button>
+    </div>
+    <div class="manual-grid">
+      <div class="field">
+        <label for="bAge">Age</label>
+        <input type="number" id="bAge" min="1" max="120" step="1" placeholder="45" />
+      </div>
+      <div class="field">
+        <label for="bSex">Sex</label>
+        <select id="bSex">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <span class="hint">Used for the BMR formula only</span>
+      </div>
+      <div class="field">
+        <label>Weight</label>
+        <div class="height-row imperial-only">
+          <input type="number" id="bWeightLbs" min="1" step="0.1" placeholder="180" />
+          <span class="height-unit">lbs</span>
+        </div>
+        <div class="height-row metric-only" hidden>
+          <input type="number" id="bWeightKg" min="1" step="0.1" placeholder="82" />
+          <span class="height-unit">kg</span>
+        </div>
+      </div>
+      <div class="field">
+        <label>Height</label>
+        <div class="height-row imperial-only">
+          <input type="number" id="bHeightFt" min="0" max="8" step="1" placeholder="5" />
+          <span class="height-unit">ft</span>
+          <input type="number" id="bHeightIn" min="0" max="11" step="1" placeholder="7" />
+          <span class="height-unit">in</span>
+        </div>
+        <div class="height-row metric-only" hidden>
+          <input type="number" id="bHeightCm" min="1" step="1" placeholder="170" />
+          <span class="height-unit">cm</span>
+        </div>
+      </div>
+      <div class="field">
+        <label for="bActivity">Activity Level</label>
+        <select id="bActivity">
+          <option value="1.2">Sedentary (little/no exercise)</option>
+          <option value="1.375">Light (1–3 days/week)</option>
+          <option value="1.55" selected>Moderate (3–5 days/week)</option>
+          <option value="1.725">Active (6–7 days/week)</option>
+          <option value="1.9">Very Active (physical job/training)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="bGoal">Goal</label>
+        <select id="bGoal">
+          <option value="0">Maintain weight</option>
+          <option value="-500">Lose weight</option>
+          <option value="350">Gain weight</option>
+        </select>
+      </div>
+      <div class="field wide">
+        <label for="bApproach">Carb Approach</label>
+        <select id="bApproach">
+          <option value="0.45" selected>Balanced (~45% of calories)</option>
+          <option value="0.30">Lower-Carb (~30% of calories)</option>
+          <option value="0.20">Very Low-Carb (~20% of calories)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="bMeals">Meals per Day</label>
+        <select id="bMeals">
+          <option value="1">1 meal (OMAD)</option>
+          <option value="2">2 meals</option>
+          <option value="3" selected>3 meals</option>
+          <option value="4">3 meals + 1 snack</option>
+          <option value="5">3 meals + 2 snacks</option>
+        </select>
+      </div>
+    </div>
+    <div class="budget-results">
+      <div class="budget-result secondary">
+        <div class="num" id="bCalories">–</div>
+        <div class="lbl">Est. Daily Calories</div>
+      </div>
+      <div class="budget-result">
+        <div class="num" id="bDailyCarbs">–</div>
+        <div class="lbl">Daily Carb Target</div>
+      </div>
+      <div class="budget-result">
+        <div class="num" id="bPerMealCarbs">–</div>
+        <div class="lbl">Per Meal/Snack</div>
+      </div>
+    </div>
+    <p class="formula-note">This is a general educational estimate (Mifflin-St Jeor + your chosen carb approach), not a medical prescription. If you take insulin or have a carb ratio from your doctor or dietitian, follow that instead — it accounts for your specific medications and labs in a way a formula can't.</p>
+  </div>
+
+  <div class="tool-card reveal">
+    <h2>Search a food</h2>
+    <p class="card-sub">Start typing — try "banana," "white rice," or "chicken breast." Our 176 curated foods come first with full glycemic index data; broader results pull live from the USDA's public food database.</p>
+    <input type="text" id="foodSearch" placeholder="Search any food..." autocomplete="off" />
+    <div id="searchResults"></div>
+    <p class="search-note" id="searchNote" style="display:none;">Results tagged <span class="result-cat is-usda" style="font-size:0.62rem;">USDA</span> come from the USDA FoodData Central database (carbs, calories, macros) — glycemic index isn't published for these, so no GI badge is shown.</p>
+
+    <div id="foodDetail">
+      <div class="detail-head">
+        <div>
+          <div class="detail-name" id="detailName"></div>
+          <div class="detail-serving" id="detailServing"></div>
+        </div>
+        <div class="gi-badge" id="detailGiBadge"></div>
+      </div>
+      <div class="servings-row">
+        <label>Servings:</label>
+        <div class="stepper">
+          <button id="servDown" type="button" aria-label="Decrease servings">–</button>
+          <span id="servCount">1</span>
+          <button id="servUp" type="button" aria-label="Increase servings">+</button>
+        </div>
+      </div>
+      <div class="nutrient-grid">
+        <div class="nutrient hero-nutrient"><div class="num" id="dCarbs"></div><div class="lbl">Total Carbs</div></div>
+        <div class="nutrient hero-nutrient"><div class="num" id="dNet"></div><div class="lbl">Net Carbs</div></div>
+        <div class="nutrient"><div class="num" id="dFiber"></div><div class="lbl">Fiber</div></div>
+        <div class="nutrient"><div class="num" id="dSugar"></div><div class="lbl">Sugar</div></div>
+        <div class="nutrient"><div class="num" id="dCal"></div><div class="lbl">Calories</div></div>
+        <div class="nutrient"><div class="num" id="dProtein"></div><div class="lbl">Protein</div></div>
+        <div class="nutrient"><div class="num" id="dFat"></div><div class="lbl">Fat</div></div>
+        <div class="nutrient"><div class="num" id="dGi"></div><div class="lbl">Glycemic Index</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool-card reveal">
+    <h2>Or calculate manually</h2>
+    <p class="card-sub">Have a nutrition label in front of you? Enter the numbers directly.</p>
+    <div class="manual-grid">
+      <div class="field">
+        <label for="mCarbs">Total Carbs (g)</label>
+        <input type="number" id="mCarbs" min="0" step="0.1" placeholder="0" />
+      </div>
+      <div class="field">
+        <label for="mFiber">Fiber (g)</label>
+        <input type="number" id="mFiber" min="0" step="0.1" placeholder="0" />
+      </div>
+      <div class="field">
+        <label for="mSugarAlcohol">Sugar Alcohols (g)</label>
+        <input type="number" id="mSugarAlcohol" min="0" step="0.1" placeholder="0" />
+      </div>
+    </div>
+    <div class="manual-result">
+      <div class="num" id="manualNet">0.0g</div>
+      <div class="lbl">Net Carbs</div>
+    </div>
+    <p class="formula-note">Formula: Net Carbs = Total Carbs − Fiber − (Sugar Alcohols ÷ 2). This is the most common convention, though how much a sugar alcohol actually affects your blood sugar varies by type and by person — if you use a CGM, your own logged data is the real answer.</p>
+  </div>
+
+</div>
+
+<div class="explainer">
+  <div class="explainer-inner">
+    <h2>What are net carbs, and why do they matter?</h2>
+    <p class="lead">Not every gram of carbohydrate on a label hits your bloodstream the same way. "Net carbs" is an attempt to estimate the portion that actually does.</p>
+    <div class="explainer-grid">
+      <div class="explainer-item">
+        <h4>Fiber isn't digested</h4>
+        <p>Your body can't break fiber down into glucose, so it doesn't raise blood sugar the way starch or sugar does — subtracting it gives a more honest picture of a food's real impact.</p>
+      </div>
+      <div class="explainer-item">
+        <h4>Sugar alcohols are partial</h4>
+        <p>Ingredients like erythritol or xylitol are absorbed differently than regular sugar — typically less, but not zero, and it varies by type and by person.</p>
+      </div>
+      <div class="explainer-item">
+        <h4>Glycemic index adds context</h4>
+        <p>Two foods with identical carb counts can raise blood sugar at very different speeds. GI tells you how fast, not just how much.</p>
+      </div>
+      <div class="explainer-item">
+        <h4>It's an estimate, not a promise</h4>
+        <p>Net carbs is a useful planning tool, not a guarantee — the only way to know exactly how a food affects you is to check your own blood sugar after eating it.</p>
+      </div>
+      <div class="explainer-item">
+        <h4>Where our GI numbers actually come from</h4>
+        <p>Every GI value in our 176-food database traces back to real clinical testing — published, peer-reviewed tables, not a guess. For mixed dishes that were never lab-tested as a whole (nobody has tested "chicken enchiladas" — recipes vary too much), we won't invent a number. The honest method is a carb-weighted average of each ingredient's real GI, and even that documented technique runs 22–50% off a true lab-measured result — so we label composite estimates as estimates, not facts. A lot of GI tools skip this distinction entirely.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="cta-band">
+  <h2>Want this to travel with you and log automatically?</h2>
+  <p>GlucoBeacon tracks every reading, meal, and pattern privately on your phone — no account, no cloud.</p>
+  <a class="btn btn-white" href="index.html#pro">See what GlucoBeacon does →</a>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand-col">
+      <div class="footer-brand">
+        <img src="img/icon.png" alt="GlucoBeacon" />
+        <span>GlucoBeacon&trade;</span>
+      </div>
+      <p>A private, on-device diabetes management app for Android — blood sugar, A1C, meds, food, and more, all in one place.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Product</h5>
+      <a href="index.html#features">Features</a>
+      <a href="index.html#screenshots">Screenshots</a>
+      <a href="index.html#pro">Pricing</a>
+      <a href="index.html#privacy">Privacy</a>
+    </div>
+    <div class="footer-col">
+      <h5>Free Tools</h5>
+      <a href="carb-calculator.html">Carb Calculator</a>
+      <a href="compare.html">Compare</a>
+      <a href="blog/index.html">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <a href="index.html#faq">FAQ</a>
+      <a href="mailto:admin@glucobeacon.com">Contact</a>
+      <a href="https://glucobeacon.github.io/privacy/">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 GAMZ Holdings LLC. All rights reserved.</p>
+    <div class="legal-links">
+      <a href="https://glucobeacon.github.io/privacy/">Privacy Policy</a>
+      <a href="mailto:admin@glucobeacon.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="assets/js/site.js"></script>
+<script>
+const FOODS =[
+  {
+    "name": "White bread",
+    "aliases": [
+      "bread",
+      "white loaf",
+      "sandwich bread"
+    ],
+    "gi": 75,
+    "cat": "Bread",
+    "per100g": {
+      "cal": 265,
+      "carbs": 49,
+      "sugar": 5,
+      "fiber": 2.7,
+      "fat": 3.2,
+      "protein": 9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "slice",
+      "g": 30
+    },
+    "processed": 7,
+    "veg": true
+  },
+  {
+    "name": "Whole wheat bread",
+    "aliases": [
+      "wholemeal bread",
+      "brown bread",
+      "whole grain bread"
+    ],
+    "gi": 69,
+    "cat": "Bread",
+    "per100g": {
+      "cal": 247,
+      "carbs": 41,
+      "sugar": 5,
+      "fiber": 7,
+      "fat": 3.4,
+      "protein": 13
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "slice",
+      "g": 30
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Sourdough bread",
+    "aliases": [
+      "sourdough"
+    ],
+    "gi": 54,
+    "cat": "Bread",
+    "per100g": {
+      "cal": 289,
+      "carbs": 56,
+      "sugar": 2,
+      "fiber": 2.4,
+      "fat": 1.5,
+      "protein": 10
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "slice",
+      "g": 35
+    },
+    "processed": 5,
+    "veg": true
+  },
+  {
+    "name": "Multigrain bread",
+    "aliases": [
+      "multi-grain bread",
+      "seeded bread"
+    ],
+    "gi": 53,
+    "cat": "Bread",
+    "per100g": {
+      "cal": 250,
+      "carbs": 43,
+      "sugar": 4,
+      "fiber": 6,
+      "fat": 4,
+      "protein": 11
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "slice",
+      "g": 30
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Rye bread",
+    "aliases": [
+      "rye"
+    ],
+    "gi": 58,
+    "cat": "Bread",
+    "per100g": {
+      "cal": 259,
+      "carbs": 48,
+      "sugar": 3.9,
+      "fiber": 6.2,
+      "fat": 3.3,
+      "protein": 9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "slice",
+      "g": 32
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Pumpernickel bread",
+    "aliases": [
+      "pumpernickel"
+    ],
+    "gi": 56,
+    "cat": "Bread",
+    "per100g": {
+      "cal": 250,
+      "carbs": 48,
+      "sugar": 1.3,
+      "fiber": 7.5,
+      "fat": 1.7,
+      "protein": 8.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "slice",
+      "g": 32
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Bagel (white)",
+    "aliases": [
+      "bagel",
+      "plain bagel"
+    ],
+    "gi": 72,
+    "cat": "Bread",
+    "per100g": {
+      "cal": 270,
+      "carbs": 53,
+      "sugar": 6,
+      "fiber": 2.3,
+      "fat": 1.5,
+      "protein": 10
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "bagel",
+      "g": 105
+    },
+    "processed": 7,
+    "veg": true
+  },
+  {
+    "name": "Pita bread (white)",
+    "aliases": [
+      "pita",
+      "pitta"
+    ],
+    "gi": 68,
+    "cat": "Bread",
+    "per100g": {
+      "cal": 275,
+      "carbs": 56,
+      "sugar": 1.8,
+      "fiber": 2.2,
+      "fat": 1.2,
+      "protein": 9.1
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "pita",
+      "g": 60
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Corn tortilla",
+    "aliases": [
+      "corn tortilla",
+      "taco shell"
+    ],
+    "gi": 52,
+    "cat": "Bread",
+    "per100g": {
+      "cal": 238,
+      "carbs": 47,
+      "sugar": 2,
+      "fiber": 6.3,
+      "fat": 3.3,
+      "protein": 5.7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "tortilla",
+      "g": 26
+    },
+    "processed": 4,
+    "veg": true
+  },
+  {
+    "name": "Flour tortilla",
+    "aliases": [
+      "flour tortilla",
+      "wrap",
+      "burrito wrap"
+    ],
+    "gi": 30,
+    "cat": "Bread",
+    "per100g": {
+      "cal": 312,
+      "carbs": 52,
+      "sugar": 2.2,
+      "fiber": 2.4,
+      "fat": 8,
+      "protein": 8
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "tortilla",
+      "g": 45
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Croissant",
+    "aliases": [
+      "croissant"
+    ],
+    "gi": 67,
+    "cat": "Bread",
+    "per100g": {
+      "cal": 406,
+      "carbs": 46,
+      "sugar": 11,
+      "fiber": 2.1,
+      "fat": 21,
+      "protein": 8.2
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "croissant",
+      "g": 57
+    },
+    "processed": 8,
+    "veg": true
+  },
+  {
+    "name": "Rice cakes",
+    "aliases": [
+      "rice cake",
+      "rice cracker"
+    ],
+    "gi": 82,
+    "cat": "Crackers",
+    "per100g": {
+      "cal": 387,
+      "carbs": 81,
+      "sugar": 0.5,
+      "fiber": 2.8,
+      "fat": 3,
+      "protein": 8.2
+    },
+    "serving": {
+      "qty": 2,
+      "unit": "cakes",
+      "g": 18
+    },
+    "processed": 5,
+    "veg": true
+  },
+  {
+    "name": "Water crackers",
+    "aliases": [
+      "crackers",
+      "plain crackers"
+    ],
+    "gi": 71,
+    "cat": "Crackers",
+    "per100g": {
+      "cal": 430,
+      "carbs": 75,
+      "sugar": 1,
+      "fiber": 3,
+      "fat": 9,
+      "protein": 8
+    },
+    "serving": {
+      "qty": 4,
+      "unit": "crackers",
+      "g": 20
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Pretzels",
+    "aliases": [
+      "pretzel"
+    ],
+    "gi": 83,
+    "cat": "Crackers",
+    "per100g": {
+      "cal": 381,
+      "carbs": 80,
+      "sugar": 2.8,
+      "fiber": 2.5,
+      "fat": 3.7,
+      "protein": 10
+    },
+    "serving": {
+      "qty": 10,
+      "unit": "small",
+      "g": 30
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Cornflakes",
+    "aliases": [
+      "corn flakes",
+      "corn flake cereal"
+    ],
+    "gi": 81,
+    "cat": "Cereal",
+    "per100g": {
+      "cal": 357,
+      "carbs": 84,
+      "sugar": 8,
+      "fiber": 3.3,
+      "fat": 0.4,
+      "protein": 7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 28
+    },
+    "processed": 8,
+    "veg": true
+  },
+  {
+    "name": "Rice Krispies",
+    "aliases": [
+      "rice krispies",
+      "puffed rice cereal"
+    ],
+    "gi": 82,
+    "cat": "Cereal",
+    "per100g": {
+      "cal": 382,
+      "carbs": 87,
+      "sugar": 9.2,
+      "fiber": 0.8,
+      "fat": 1,
+      "protein": 6
+    },
+    "serving": {
+      "qty": 1.25,
+      "unit": "cups",
+      "g": 33
+    },
+    "processed": 8,
+    "veg": true
+  },
+  {
+    "name": "Cheerios",
+    "aliases": [
+      "cheerios",
+      "oat cereal rings"
+    ],
+    "gi": 74,
+    "cat": "Cereal",
+    "per100g": {
+      "cal": 375,
+      "carbs": 73,
+      "sugar": 5,
+      "fiber": 8.3,
+      "fat": 6.7,
+      "protein": 12.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 30
+    },
+    "processed": 7,
+    "veg": true
+  },
+  {
+    "name": "All-Bran",
+    "aliases": [
+      "all bran",
+      "bran cereal"
+    ],
+    "gi": 44,
+    "cat": "Cereal",
+    "per100g": {
+      "cal": 257,
+      "carbs": 46,
+      "sugar": 15,
+      "fiber": 27,
+      "fat": 3,
+      "protein": 13
+    },
+    "serving": {
+      "qty": 0.5,
+      "unit": "cup",
+      "g": 30
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Oatmeal (rolled oats)",
+    "aliases": [
+      "oatmeal",
+      "oats",
+      "porridge",
+      "rolled oats"
+    ],
+    "gi": 55,
+    "cat": "Cereal",
+    "per100g": {
+      "cal": 71,
+      "carbs": 12,
+      "sugar": 0.3,
+      "fiber": 1.7,
+      "fat": 1.4,
+      "protein": 2.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup cooked",
+      "g": 234
+    },
+    "processed": 3,
+    "veg": true
+  },
+  {
+    "name": "Instant oatmeal",
+    "aliases": [
+      "instant oats",
+      "quick oats"
+    ],
+    "gi": 79,
+    "cat": "Cereal",
+    "per100g": {
+      "cal": 68,
+      "carbs": 12,
+      "sugar": 0.5,
+      "fiber": 1.5,
+      "fat": 1.1,
+      "protein": 2.4
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup cooked",
+      "g": 234
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Muesli",
+    "aliases": [
+      "muesli",
+      "granola"
+    ],
+    "gi": 57,
+    "cat": "Cereal",
+    "per100g": {
+      "cal": 381,
+      "carbs": 65,
+      "sugar": 17,
+      "fiber": 8.2,
+      "fat": 8.5,
+      "protein": 10
+    },
+    "serving": {
+      "qty": 0.5,
+      "unit": "cup",
+      "g": 59
+    },
+    "processed": 4,
+    "veg": true
+  },
+  {
+    "name": "Granola",
+    "aliases": [
+      "granola bar",
+      "crunchy granola"
+    ],
+    "gi": 62,
+    "cat": "Cereal",
+    "per100g": {
+      "cal": 471,
+      "carbs": 64,
+      "sugar": 24,
+      "fiber": 5.4,
+      "fat": 20,
+      "protein": 10
+    },
+    "serving": {
+      "qty": 0.5,
+      "unit": "cup",
+      "g": 61
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "White rice (cooked)",
+    "aliases": [
+      "white rice",
+      "rice",
+      "steamed rice",
+      "boiled rice"
+    ],
+    "gi": 73,
+    "cat": "Grains",
+    "per100g": {
+      "cal": 130,
+      "carbs": 28,
+      "sugar": 0,
+      "fiber": 0.4,
+      "fat": 0.3,
+      "protein": 2.7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 186
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Brown rice (cooked)",
+    "aliases": [
+      "brown rice",
+      "whole grain rice"
+    ],
+    "gi": 68,
+    "cat": "Grains",
+    "per100g": {
+      "cal": 112,
+      "carbs": 24,
+      "sugar": 0.4,
+      "fiber": 1.8,
+      "fat": 0.9,
+      "protein": 2.3
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 195
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Basmati rice (cooked)",
+    "aliases": [
+      "basmati",
+      "basmati rice"
+    ],
+    "gi": 57,
+    "cat": "Grains",
+    "per100g": {
+      "cal": 121,
+      "carbs": 25,
+      "sugar": 0,
+      "fiber": 0.4,
+      "fat": 0.3,
+      "protein": 3.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 186
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Jasmine rice (cooked)",
+    "aliases": [
+      "jasmine rice",
+      "thai rice",
+      "fragrant rice"
+    ],
+    "gi": 109,
+    "cat": "Grains",
+    "per100g": {
+      "cal": 130,
+      "carbs": 29,
+      "sugar": 0,
+      "fiber": 0.3,
+      "fat": 0.2,
+      "protein": 2.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 186
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Spaghetti (cooked)",
+    "aliases": [
+      "spaghetti",
+      "pasta",
+      "white pasta",
+      "noodles"
+    ],
+    "gi": 49,
+    "cat": "Grains",
+    "per100g": {
+      "cal": 158,
+      "carbs": 31,
+      "sugar": 0.6,
+      "fiber": 1.8,
+      "fat": 0.9,
+      "protein": 5.8
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 140
+    },
+    "processed": 4,
+    "veg": true
+  },
+  {
+    "name": "Whole wheat spaghetti (cooked)",
+    "aliases": [
+      "whole wheat pasta",
+      "whole grain pasta",
+      "wheat pasta"
+    ],
+    "gi": 48,
+    "cat": "Grains",
+    "per100g": {
+      "cal": 149,
+      "carbs": 30,
+      "sugar": 1.1,
+      "fiber": 3.9,
+      "fat": 0.8,
+      "protein": 5.9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 140
+    },
+    "processed": 3,
+    "veg": true
+  },
+  {
+    "name": "Fettuccine (cooked)",
+    "aliases": [
+      "fettuccine",
+      "fettuccini",
+      "linguine"
+    ],
+    "gi": 32,
+    "cat": "Grains",
+    "per100g": {
+      "cal": 158,
+      "carbs": 31,
+      "sugar": 0.5,
+      "fiber": 1.8,
+      "fat": 0.9,
+      "protein": 5.8
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 140
+    },
+    "processed": 4,
+    "veg": true
+  },
+  {
+    "name": "Macaroni (cooked)",
+    "aliases": [
+      "macaroni",
+      "elbow pasta",
+      "mac"
+    ],
+    "gi": 47,
+    "cat": "Grains",
+    "per100g": {
+      "cal": 158,
+      "carbs": 31,
+      "sugar": 0.7,
+      "fiber": 1.8,
+      "fat": 0.9,
+      "protein": 5.8
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 140
+    },
+    "processed": 4,
+    "veg": true
+  },
+  {
+    "name": "Rice noodles (cooked)",
+    "aliases": [
+      "rice noodles",
+      "pad thai noodles",
+      "vermicelli"
+    ],
+    "gi": 61,
+    "cat": "Grains",
+    "per100g": {
+      "cal": 108,
+      "carbs": 25,
+      "sugar": 0,
+      "fiber": 0.9,
+      "fat": 0.2,
+      "protein": 1.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 176
+    },
+    "processed": 3,
+    "veg": true
+  },
+  {
+    "name": "Udon noodles (cooked)",
+    "aliases": [
+      "udon",
+      "udon noodles"
+    ],
+    "gi": 55,
+    "cat": "Grains",
+    "per100g": {
+      "cal": 125,
+      "carbs": 26,
+      "sugar": 1,
+      "fiber": 1.1,
+      "fat": 0.3,
+      "protein": 3.7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 200
+    },
+    "processed": 4,
+    "veg": true
+  },
+  {
+    "name": "Barley (cooked)",
+    "aliases": [
+      "barley",
+      "pearl barley"
+    ],
+    "gi": 28,
+    "cat": "Grains",
+    "per100g": {
+      "cal": 123,
+      "carbs": 28,
+      "sugar": 0.3,
+      "fiber": 3.8,
+      "fat": 0.4,
+      "protein": 2.3
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 157
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Quinoa (cooked)",
+    "aliases": [
+      "quinoa"
+    ],
+    "gi": 53,
+    "cat": "Grains",
+    "per100g": {
+      "cal": 120,
+      "carbs": 21,
+      "sugar": 0.9,
+      "fiber": 2.8,
+      "fat": 1.9,
+      "protein": 4.4
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 185
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Couscous (cooked)",
+    "aliases": [
+      "couscous"
+    ],
+    "gi": 65,
+    "cat": "Grains",
+    "per100g": {
+      "cal": 112,
+      "carbs": 23,
+      "sugar": 0.1,
+      "fiber": 1.4,
+      "fat": 0.2,
+      "protein": 3.8
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 157
+    },
+    "processed": 3,
+    "veg": true
+  },
+  {
+    "name": "Bulgur wheat (cooked)",
+    "aliases": [
+      "bulgur",
+      "bulgur wheat",
+      "cracked wheat"
+    ],
+    "gi": 47,
+    "cat": "Grains",
+    "per100g": {
+      "cal": 83,
+      "carbs": 18,
+      "sugar": 0.1,
+      "fiber": 4.5,
+      "fat": 0.2,
+      "protein": 3.1
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 182
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Popcorn (plain)",
+    "aliases": [
+      "popcorn",
+      "plain popcorn",
+      "air popped popcorn"
+    ],
+    "gi": 65,
+    "cat": "Grains",
+    "per100g": {
+      "cal": 387,
+      "carbs": 78,
+      "sugar": 0.9,
+      "fiber": 15,
+      "fat": 4.5,
+      "protein": 13
+    },
+    "serving": {
+      "qty": 3,
+      "unit": "cups",
+      "g": 24
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Potato (boiled)",
+    "aliases": [
+      "boiled potato",
+      "potatoes",
+      "boiled potatoes",
+      "new potatoes"
+    ],
+    "gi": 78,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 87,
+      "carbs": 20,
+      "sugar": 0.9,
+      "fiber": 1.8,
+      "fat": 0.1,
+      "protein": 1.9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 150
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Potato (baked)",
+    "aliases": [
+      "baked potato",
+      "jacket potato"
+    ],
+    "gi": 85,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 93,
+      "carbs": 21,
+      "sugar": 1.1,
+      "fiber": 2.2,
+      "fat": 0.1,
+      "protein": 2.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 173
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Mashed potato",
+    "aliases": [
+      "mashed potatoes",
+      "mash"
+    ],
+    "gi": 87,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 113,
+      "carbs": 17,
+      "sugar": 1.4,
+      "fiber": 1.6,
+      "fat": 4.2,
+      "protein": 2
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 210
+    },
+    "processed": 3,
+    "veg": true
+  },
+  {
+    "name": "French fries",
+    "aliases": [
+      "french fries",
+      "fries",
+      "chips",
+      "potato fries",
+      "fast food fries"
+    ],
+    "gi": 63,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 312,
+      "carbs": 41,
+      "sugar": 0.4,
+      "fiber": 3.8,
+      "fat": 15,
+      "protein": 3.4
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium serving",
+      "g": 117
+    },
+    "processed": 7,
+    "veg": true
+  },
+  {
+    "name": "Sweet potato (cooked)",
+    "aliases": [
+      "sweet potato",
+      "yams",
+      "sweet potatoes"
+    ],
+    "gi": 63,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 90,
+      "carbs": 21,
+      "sugar": 6.5,
+      "fiber": 3.3,
+      "fat": 0.1,
+      "protein": 2
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 130
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Yam (cooked)",
+    "aliases": [
+      "yam",
+      "yams"
+    ],
+    "gi": 54,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 116,
+      "carbs": 27,
+      "sugar": 0.5,
+      "fiber": 3.9,
+      "fat": 0.1,
+      "protein": 1.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 136
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Corn (sweet)",
+    "aliases": [
+      "corn",
+      "sweet corn",
+      "corn on the cob",
+      "canned corn"
+    ],
+    "gi": 52,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 96,
+      "carbs": 21,
+      "sugar": 4.5,
+      "fiber": 2.4,
+      "fat": 1.5,
+      "protein": 3.4
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 154
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Carrots (cooked)",
+    "aliases": [
+      "cooked carrots",
+      "boiled carrots"
+    ],
+    "gi": 39,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 35,
+      "carbs": 8.2,
+      "sugar": 3.6,
+      "fiber": 3,
+      "fat": 0.2,
+      "protein": 0.8
+    },
+    "serving": {
+      "qty": 0.5,
+      "unit": "cup",
+      "g": 78
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Carrots (raw)",
+    "aliases": [
+      "carrot",
+      "raw carrots",
+      "baby carrots"
+    ],
+    "gi": 16,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 41,
+      "carbs": 10,
+      "sugar": 4.7,
+      "fiber": 2.8,
+      "fat": 0.2,
+      "protein": 0.9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 61
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Green peas",
+    "aliases": [
+      "peas",
+      "green peas",
+      "garden peas"
+    ],
+    "gi": 51,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 81,
+      "carbs": 14,
+      "sugar": 5.7,
+      "fiber": 5.1,
+      "fat": 0.4,
+      "protein": 5.4
+    },
+    "serving": {
+      "qty": 0.5,
+      "unit": "cup",
+      "g": 80
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Beets",
+    "aliases": [
+      "beet",
+      "beetroot",
+      "beets"
+    ],
+    "gi": 64,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 44,
+      "carbs": 10,
+      "sugar": 7,
+      "fiber": 2.8,
+      "fat": 0.2,
+      "protein": 1.7
+    },
+    "serving": {
+      "qty": 0.5,
+      "unit": "cup",
+      "g": 85
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Pumpkin",
+    "aliases": [
+      "pumpkin",
+      "butternut squash",
+      "squash"
+    ],
+    "gi": 75,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 26,
+      "carbs": 7,
+      "sugar": 2.8,
+      "fiber": 0.5,
+      "fat": 0.1,
+      "protein": 1
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 116
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Parsnip",
+    "aliases": [
+      "parsnip",
+      "parsnips"
+    ],
+    "gi": 52,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 75,
+      "carbs": 18,
+      "sugar": 4.8,
+      "fiber": 4.9,
+      "fat": 0.3,
+      "protein": 1.2
+    },
+    "serving": {
+      "qty": 0.5,
+      "unit": "cup",
+      "g": 78
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Broccoli",
+    "aliases": [
+      "broccoli"
+    ],
+    "gi": 15,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 34,
+      "carbs": 7,
+      "sugar": 1.7,
+      "fiber": 2.6,
+      "fat": 0.4,
+      "protein": 2.8
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 91
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Spinach",
+    "aliases": [
+      "spinach",
+      "baby spinach"
+    ],
+    "gi": 15,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 23,
+      "carbs": 3.6,
+      "sugar": 0.4,
+      "fiber": 2.2,
+      "fat": 0.4,
+      "protein": 2.9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 30
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Tomato",
+    "aliases": [
+      "tomato",
+      "tomatoes",
+      "cherry tomato"
+    ],
+    "gi": 15,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 18,
+      "carbs": 3.9,
+      "sugar": 2.6,
+      "fiber": 1.2,
+      "fat": 0.2,
+      "protein": 0.9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 123
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Bell pepper",
+    "aliases": [
+      "bell pepper",
+      "pepper",
+      "capsicum",
+      "red pepper",
+      "green pepper"
+    ],
+    "gi": 15,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 31,
+      "carbs": 6,
+      "sugar": 4.2,
+      "fiber": 2.1,
+      "fat": 0.3,
+      "protein": 1
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 119
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Cauliflower",
+    "aliases": [
+      "cauliflower"
+    ],
+    "gi": 15,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 25,
+      "carbs": 5,
+      "sugar": 1.9,
+      "fiber": 2,
+      "fat": 0.3,
+      "protein": 1.9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 100
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Zucchini",
+    "aliases": [
+      "zucchini",
+      "courgette",
+      "summer squash"
+    ],
+    "gi": 15,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 17,
+      "carbs": 3.1,
+      "sugar": 2.5,
+      "fiber": 1,
+      "fat": 0.3,
+      "protein": 1.2
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 196
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Mushrooms",
+    "aliases": [
+      "mushroom",
+      "mushrooms"
+    ],
+    "gi": 10,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 22,
+      "carbs": 3.3,
+      "sugar": 2,
+      "fiber": 1,
+      "fat": 0.3,
+      "protein": 3.1
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 70
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Cucumber",
+    "aliases": [
+      "cucumber",
+      "cucumbers"
+    ],
+    "gi": 15,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 15,
+      "carbs": 3.6,
+      "sugar": 1.7,
+      "fiber": 0.5,
+      "fat": 0.1,
+      "protein": 0.7
+    },
+    "serving": {
+      "qty": 0.5,
+      "unit": "cup",
+      "g": 52
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Onion",
+    "aliases": [
+      "onion",
+      "onions",
+      "red onion",
+      "white onion"
+    ],
+    "gi": 10,
+    "cat": "Vegetables",
+    "per100g": {
+      "cal": 40,
+      "carbs": 9.3,
+      "sugar": 4.2,
+      "fiber": 1.7,
+      "fat": 0.1,
+      "protein": 1.1
+    },
+    "serving": {
+      "qty": 0.25,
+      "unit": "cup",
+      "g": 40
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Apple",
+    "aliases": [
+      "apple",
+      "apples",
+      "red apple",
+      "green apple"
+    ],
+    "gi": 36,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 52,
+      "carbs": 14,
+      "sugar": 10,
+      "fiber": 2.4,
+      "fat": 0.2,
+      "protein": 0.3
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 182
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Orange",
+    "aliases": [
+      "orange",
+      "oranges",
+      "navel orange"
+    ],
+    "gi": 43,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 47,
+      "carbs": 12,
+      "sugar": 9.4,
+      "fiber": 2.4,
+      "fat": 0.1,
+      "protein": 0.9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 131
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Banana (ripe)",
+    "aliases": [
+      "banana",
+      "bananas",
+      "yellow banana"
+    ],
+    "gi": 51,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 89,
+      "carbs": 23,
+      "sugar": 12,
+      "fiber": 2.6,
+      "fat": 0.3,
+      "protein": 1.1
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 118
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Banana (unripe/green)",
+    "aliases": [
+      "green banana",
+      "unripe banana",
+      "plantain"
+    ],
+    "gi": 42,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 89,
+      "carbs": 23,
+      "sugar": 12,
+      "fiber": 2.6,
+      "fat": 0.3,
+      "protein": 1.1
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 118
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Watermelon",
+    "aliases": [
+      "watermelon",
+      "water melon"
+    ],
+    "gi": 76,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 30,
+      "carbs": 7.6,
+      "sugar": 6.2,
+      "fiber": 0.4,
+      "fat": 0.2,
+      "protein": 0.6
+    },
+    "serving": {
+      "qty": 2,
+      "unit": "cups",
+      "g": 280
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Grapes",
+    "aliases": [
+      "grapes",
+      "red grapes",
+      "green grapes",
+      "grape"
+    ],
+    "gi": 59,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 69,
+      "carbs": 18,
+      "sugar": 15,
+      "fiber": 0.9,
+      "fat": 0.2,
+      "protein": 0.7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 92
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Mango",
+    "aliases": [
+      "mango",
+      "mangoes"
+    ],
+    "gi": 60,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 60,
+      "carbs": 15,
+      "sugar": 13,
+      "fiber": 1.6,
+      "fat": 0.4,
+      "protein": 0.8
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 165
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Pineapple",
+    "aliases": [
+      "pineapple",
+      "pineapples"
+    ],
+    "gi": 59,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 50,
+      "carbs": 13,
+      "sugar": 10,
+      "fiber": 1.4,
+      "fat": 0.1,
+      "protein": 0.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 165
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Peach",
+    "aliases": [
+      "peach",
+      "peaches",
+      "nectarine"
+    ],
+    "gi": 42,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 39,
+      "carbs": 10,
+      "sugar": 8.4,
+      "fiber": 1.5,
+      "fat": 0.3,
+      "protein": 0.9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 150
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Pear",
+    "aliases": [
+      "pear",
+      "pears"
+    ],
+    "gi": 38,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 57,
+      "carbs": 15,
+      "sugar": 10,
+      "fiber": 3.1,
+      "fat": 0.1,
+      "protein": 0.4
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 178
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Strawberries",
+    "aliases": [
+      "strawberry",
+      "strawberries"
+    ],
+    "gi": 40,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 32,
+      "carbs": 7.7,
+      "sugar": 4.9,
+      "fiber": 2,
+      "fat": 0.3,
+      "protein": 0.7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 152
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Blueberries",
+    "aliases": [
+      "blueberry",
+      "blueberries"
+    ],
+    "gi": 53,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 57,
+      "carbs": 14,
+      "sugar": 10,
+      "fiber": 2.4,
+      "fat": 0.3,
+      "protein": 0.7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 148
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Raspberries",
+    "aliases": [
+      "raspberry",
+      "raspberries"
+    ],
+    "gi": 32,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 52,
+      "carbs": 12,
+      "sugar": 4.4,
+      "fiber": 6.5,
+      "fat": 0.7,
+      "protein": 1.2
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 123
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Cherries",
+    "aliases": [
+      "cherry",
+      "cherries",
+      "sweet cherries"
+    ],
+    "gi": 20,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 63,
+      "carbs": 16,
+      "sugar": 13,
+      "fiber": 2.1,
+      "fat": 0.2,
+      "protein": 1.1
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 138
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Kiwi",
+    "aliases": [
+      "kiwi",
+      "kiwifruit",
+      "kiwi fruit"
+    ],
+    "gi": 52,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 61,
+      "carbs": 15,
+      "sugar": 9,
+      "fiber": 3,
+      "fat": 0.5,
+      "protein": 1.1
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 69
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Grapefruit",
+    "aliases": [
+      "grapefruit",
+      "grapefruit half"
+    ],
+    "gi": 25,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 42,
+      "carbs": 11,
+      "sugar": 7,
+      "fiber": 1.6,
+      "fat": 0.1,
+      "protein": 0.8
+    },
+    "serving": {
+      "qty": 0.5,
+      "unit": "medium",
+      "g": 154
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Plum",
+    "aliases": [
+      "plum",
+      "plums"
+    ],
+    "gi": 40,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 46,
+      "carbs": 11,
+      "sugar": 9.9,
+      "fiber": 1.4,
+      "fat": 0.3,
+      "protein": 0.7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 66
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Apricot",
+    "aliases": [
+      "apricot",
+      "apricots"
+    ],
+    "gi": 34,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 48,
+      "carbs": 11,
+      "sugar": 9.2,
+      "fiber": 2,
+      "fat": 0.4,
+      "protein": 1.4
+    },
+    "serving": {
+      "qty": 3,
+      "unit": "apricots",
+      "g": 105
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Cantaloupe",
+    "aliases": [
+      "cantaloupe",
+      "rockmelon",
+      "honeydew",
+      "melon"
+    ],
+    "gi": 65,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 34,
+      "carbs": 8.2,
+      "sugar": 7.9,
+      "fiber": 0.9,
+      "fat": 0.2,
+      "protein": 0.8
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 177
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Papaya",
+    "aliases": [
+      "papaya",
+      "pawpaw"
+    ],
+    "gi": 60,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 43,
+      "carbs": 11,
+      "sugar": 7.8,
+      "fiber": 1.7,
+      "fat": 0.3,
+      "protein": 0.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 145
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Dates",
+    "aliases": [
+      "date",
+      "dates",
+      "medjool date"
+    ],
+    "gi": 42,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 282,
+      "carbs": 75,
+      "sugar": 63,
+      "fiber": 8,
+      "fat": 0.4,
+      "protein": 2.5
+    },
+    "serving": {
+      "qty": 3,
+      "unit": "dates",
+      "g": 24
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Raisins",
+    "aliases": [
+      "raisin",
+      "raisins",
+      "dried grapes",
+      "sultanas"
+    ],
+    "gi": 64,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 299,
+      "carbs": 79,
+      "sugar": 59,
+      "fiber": 3.7,
+      "fat": 0.5,
+      "protein": 3.1
+    },
+    "serving": {
+      "qty": 0.25,
+      "unit": "cup",
+      "g": 36
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Lentils (cooked)",
+    "aliases": [
+      "lentils",
+      "red lentils",
+      "green lentils",
+      "lentil soup"
+    ],
+    "gi": 29,
+    "cat": "Legumes",
+    "per100g": {
+      "cal": 116,
+      "carbs": 20,
+      "sugar": 1.8,
+      "fiber": 7.9,
+      "fat": 0.4,
+      "protein": 9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 198
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Chickpeas",
+    "aliases": [
+      "chickpeas",
+      "garbanzo beans",
+      "chick peas",
+      "hummus base"
+    ],
+    "gi": 28,
+    "cat": "Legumes",
+    "per100g": {
+      "cal": 164,
+      "carbs": 27,
+      "sugar": 4.8,
+      "fiber": 7.6,
+      "fat": 2.6,
+      "protein": 8.9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 164
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Kidney beans",
+    "aliases": [
+      "kidney beans",
+      "red kidney beans"
+    ],
+    "gi": 29,
+    "cat": "Legumes",
+    "per100g": {
+      "cal": 127,
+      "carbs": 23,
+      "sugar": 0.3,
+      "fiber": 6.4,
+      "fat": 0.5,
+      "protein": 8.7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 177
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Black beans",
+    "aliases": [
+      "black beans",
+      "black turtle beans"
+    ],
+    "gi": 30,
+    "cat": "Legumes",
+    "per100g": {
+      "cal": 132,
+      "carbs": 24,
+      "sugar": 0.3,
+      "fiber": 8.7,
+      "fat": 0.5,
+      "protein": 8.9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 172
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Soybeans",
+    "aliases": [
+      "soybeans",
+      "soy beans",
+      "edamame"
+    ],
+    "gi": 16,
+    "cat": "Legumes",
+    "per100g": {
+      "cal": 173,
+      "carbs": 10,
+      "sugar": 3,
+      "fiber": 6,
+      "fat": 9,
+      "protein": 17
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 172
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Baked beans",
+    "aliases": [
+      "baked beans",
+      "canned baked beans"
+    ],
+    "gi": 40,
+    "cat": "Legumes",
+    "per100g": {
+      "cal": 94,
+      "carbs": 18,
+      "sugar": 5.1,
+      "fiber": 4.6,
+      "fat": 0.5,
+      "protein": 4.8
+    },
+    "serving": {
+      "qty": 0.5,
+      "unit": "cup",
+      "g": 130
+    },
+    "processed": 5,
+    "veg": true
+  },
+  {
+    "name": "Hummus",
+    "aliases": [
+      "hummus",
+      "houmous",
+      "hummus dip"
+    ],
+    "gi": 6,
+    "cat": "Legumes",
+    "per100g": {
+      "cal": 166,
+      "carbs": 14,
+      "sugar": 0.5,
+      "fiber": 6,
+      "fat": 10,
+      "protein": 8
+    },
+    "serving": {
+      "qty": 2,
+      "unit": "tbsp",
+      "g": 30
+    },
+    "processed": 4,
+    "veg": true
+  },
+  {
+    "name": "Whole milk",
+    "aliases": [
+      "whole milk",
+      "milk",
+      "full fat milk",
+      "cow milk"
+    ],
+    "gi": 39,
+    "cat": "Dairy",
+    "per100g": {
+      "cal": 61,
+      "carbs": 4.8,
+      "sugar": 5.1,
+      "fiber": 0,
+      "fat": 3.3,
+      "protein": 3.2
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 244
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Skim milk",
+    "aliases": [
+      "skim milk",
+      "fat free milk",
+      "skimmed milk",
+      "low fat milk"
+    ],
+    "gi": 37,
+    "cat": "Dairy",
+    "per100g": {
+      "cal": 34,
+      "carbs": 5,
+      "sugar": 5.1,
+      "fiber": 0,
+      "fat": 0.2,
+      "protein": 3.4
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 245
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Yogurt (plain)",
+    "aliases": [
+      "plain yogurt",
+      "greek yogurt",
+      "natural yogurt",
+      "yoghurt"
+    ],
+    "gi": 36,
+    "cat": "Dairy",
+    "per100g": {
+      "cal": 59,
+      "carbs": 3.6,
+      "sugar": 3.2,
+      "fiber": 0,
+      "fat": 3.3,
+      "protein": 3.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 245
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Yogurt (fruit/flavored)",
+    "aliases": [
+      "fruit yogurt",
+      "flavored yogurt",
+      "strawberry yogurt",
+      "vanilla yogurt"
+    ],
+    "gi": 41,
+    "cat": "Dairy",
+    "per100g": {
+      "cal": 96,
+      "carbs": 17,
+      "sugar": 14,
+      "fiber": 0,
+      "fat": 1.2,
+      "protein": 4.4
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 245
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Ice cream (vanilla)",
+    "aliases": [
+      "ice cream",
+      "vanilla ice cream",
+      "gelato"
+    ],
+    "gi": 57,
+    "cat": "Dairy",
+    "per100g": {
+      "cal": 207,
+      "carbs": 24,
+      "sugar": 21,
+      "fiber": 0.7,
+      "fat": 11,
+      "protein": 3.5
+    },
+    "serving": {
+      "qty": 0.5,
+      "unit": "cup",
+      "g": 66
+    },
+    "processed": 7,
+    "veg": true
+  },
+  {
+    "name": "Chocolate milk",
+    "aliases": [
+      "chocolate milk",
+      "choco milk"
+    ],
+    "gi": 43,
+    "cat": "Dairy",
+    "per100g": {
+      "cal": 83,
+      "carbs": 12,
+      "sugar": 11,
+      "fiber": 0.3,
+      "fat": 3,
+      "protein": 3.4
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 250
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Dark chocolate (70%+)",
+    "aliases": [
+      "dark chocolate",
+      "70% chocolate",
+      "85% chocolate",
+      "bittersweet chocolate"
+    ],
+    "gi": 23,
+    "cat": "Sweets",
+    "per100g": {
+      "cal": 598,
+      "carbs": 46,
+      "sugar": 24,
+      "fiber": 11,
+      "fat": 43,
+      "protein": 7.8
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "oz (1 square)",
+      "g": 28
+    },
+    "processed": 5,
+    "veg": true
+  },
+  {
+    "name": "Milk chocolate",
+    "aliases": [
+      "milk chocolate",
+      "chocolate bar",
+      "chocolate"
+    ],
+    "gi": 43,
+    "cat": "Sweets",
+    "per100g": {
+      "cal": 535,
+      "carbs": 60,
+      "sugar": 52,
+      "fiber": 2.4,
+      "fat": 30,
+      "protein": 7.7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "oz",
+      "g": 28
+    },
+    "processed": 8,
+    "veg": true
+  },
+  {
+    "name": "Honey",
+    "aliases": [
+      "honey",
+      "raw honey"
+    ],
+    "gi": 61,
+    "cat": "Sweeteners",
+    "per100g": {
+      "cal": 304,
+      "carbs": 82,
+      "sugar": 82,
+      "fiber": 0.2,
+      "fat": 0,
+      "protein": 0.3
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "tbsp",
+      "g": 21
+    },
+    "processed": 3,
+    "veg": true
+  },
+  {
+    "name": "Table sugar",
+    "aliases": [
+      "sugar",
+      "white sugar",
+      "sucrose",
+      "cane sugar"
+    ],
+    "gi": 65,
+    "cat": "Sweeteners",
+    "per100g": {
+      "cal": 387,
+      "carbs": 100,
+      "sugar": 100,
+      "fiber": 0,
+      "fat": 0,
+      "protein": 0
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "tsp",
+      "g": 4
+    },
+    "processed": 4,
+    "veg": true
+  },
+  {
+    "name": "Maple syrup",
+    "aliases": [
+      "maple syrup",
+      "pure maple syrup"
+    ],
+    "gi": 54,
+    "cat": "Sweeteners",
+    "per100g": {
+      "cal": 260,
+      "carbs": 67,
+      "sugar": 60,
+      "fiber": 0,
+      "fat": 0.1,
+      "protein": 0
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "tbsp",
+      "g": 20
+    },
+    "processed": 3,
+    "veg": true
+  },
+  {
+    "name": "Agave syrup",
+    "aliases": [
+      "agave",
+      "agave nectar",
+      "agave syrup"
+    ],
+    "gi": 19,
+    "cat": "Sweeteners",
+    "per100g": {
+      "cal": 310,
+      "carbs": 76,
+      "sugar": 68,
+      "fiber": 0,
+      "fat": 0.5,
+      "protein": 0.1
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "tbsp",
+      "g": 21
+    },
+    "processed": 4,
+    "veg": true
+  },
+  {
+    "name": "Potato chips",
+    "aliases": [
+      "potato chips",
+      "crisps",
+      "chips",
+      "pringles",
+      "lays"
+    ],
+    "gi": 56,
+    "cat": "Snacks",
+    "per100g": {
+      "cal": 536,
+      "carbs": 53,
+      "sugar": 0.5,
+      "fiber": 4.4,
+      "fat": 35,
+      "protein": 7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "oz",
+      "g": 28
+    },
+    "processed": 8,
+    "veg": true
+  },
+  {
+    "name": "Jelly beans",
+    "aliases": [
+      "jelly beans",
+      "gummy candy",
+      "candy"
+    ],
+    "gi": 80,
+    "cat": "Sweets",
+    "per100g": {
+      "cal": 375,
+      "carbs": 94,
+      "sugar": 71,
+      "fiber": 0,
+      "fat": 0.6,
+      "protein": 0
+    },
+    "serving": {
+      "qty": 10,
+      "unit": "beans",
+      "g": 28
+    },
+    "processed": 9,
+    "veg": true
+  },
+  {
+    "name": "Mars bar",
+    "aliases": [
+      "mars bar",
+      "chocolate caramel bar"
+    ],
+    "gi": 65,
+    "cat": "Sweets",
+    "per100g": {
+      "cal": 452,
+      "carbs": 67,
+      "sugar": 52,
+      "fiber": 0.7,
+      "fat": 18,
+      "protein": 3.8
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "bar",
+      "g": 58
+    },
+    "processed": 9,
+    "veg": true
+  },
+  {
+    "name": "Snickers",
+    "aliases": [
+      "snickers bar",
+      "snickers"
+    ],
+    "gi": 55,
+    "cat": "Sweets",
+    "per100g": {
+      "cal": 488,
+      "carbs": 57,
+      "sugar": 44,
+      "fiber": 1.4,
+      "fat": 26,
+      "protein": 9.7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "bar",
+      "g": 52
+    },
+    "processed": 9,
+    "veg": true
+  },
+  {
+    "name": "Orange juice",
+    "aliases": [
+      "orange juice",
+      "oj",
+      "fresh orange juice"
+    ],
+    "gi": 50,
+    "cat": "Beverages",
+    "per100g": {
+      "cal": 45,
+      "carbs": 10,
+      "sugar": 8.4,
+      "fiber": 0.2,
+      "fat": 0.2,
+      "protein": 0.7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 248
+    },
+    "processed": 4,
+    "veg": true
+  },
+  {
+    "name": "Apple juice",
+    "aliases": [
+      "apple juice",
+      "apple cider"
+    ],
+    "gi": 44,
+    "cat": "Beverages",
+    "per100g": {
+      "cal": 46,
+      "carbs": 11,
+      "sugar": 10,
+      "fiber": 0.1,
+      "fat": 0.1,
+      "protein": 0.1
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 248
+    },
+    "processed": 4,
+    "veg": true
+  },
+  {
+    "name": "Cola / Soda",
+    "aliases": [
+      "cola",
+      "coke",
+      "pepsi",
+      "soda",
+      "soft drink",
+      "regular soda"
+    ],
+    "gi": 63,
+    "cat": "Beverages",
+    "per100g": {
+      "cal": 41,
+      "carbs": 11,
+      "sugar": 11,
+      "fiber": 0,
+      "fat": 0,
+      "protein": 0
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "can (12oz)",
+      "g": 355
+    },
+    "processed": 9,
+    "veg": true
+  },
+  {
+    "name": "Sports drink (Gatorade)",
+    "aliases": [
+      "gatorade",
+      "sports drink",
+      "powerade",
+      "electrolyte drink"
+    ],
+    "gi": 78,
+    "cat": "Beverages",
+    "per100g": {
+      "cal": 27,
+      "carbs": 7.1,
+      "sugar": 5.8,
+      "fiber": 0,
+      "fat": 0,
+      "protein": 0
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "bottle (20oz)",
+      "g": 591
+    },
+    "processed": 8,
+    "veg": true
+  },
+  {
+    "name": "Beer",
+    "aliases": [
+      "beer",
+      "lager",
+      "ale",
+      "regular beer"
+    ],
+    "gi": 66,
+    "cat": "Beverages",
+    "per100g": {
+      "cal": 43,
+      "carbs": 3.6,
+      "sugar": 0.1,
+      "fiber": 0,
+      "fat": 0,
+      "protein": 0.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "can (12oz)",
+      "g": 356
+    },
+    "processed": 5,
+    "veg": true
+  },
+  {
+    "name": "Tomato juice",
+    "aliases": [
+      "tomato juice",
+      "v8"
+    ],
+    "gi": 38,
+    "cat": "Beverages",
+    "per100g": {
+      "cal": 17,
+      "carbs": 3.8,
+      "sugar": 2.8,
+      "fiber": 0.4,
+      "fat": 0.1,
+      "protein": 0.8
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 243
+    },
+    "processed": 4,
+    "veg": true
+  },
+  {
+    "name": "Pancakes",
+    "aliases": [
+      "pancakes",
+      "hotcakes",
+      "flapjacks"
+    ],
+    "gi": 67,
+    "cat": "Breakfast",
+    "per100g": {
+      "cal": 227,
+      "carbs": 38,
+      "sugar": 6.5,
+      "fiber": 1.5,
+      "fat": 6.3,
+      "protein": 6.2
+    },
+    "serving": {
+      "qty": 2,
+      "unit": "medium",
+      "g": 152
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Waffles",
+    "aliases": [
+      "waffles",
+      "waffle"
+    ],
+    "gi": 76,
+    "cat": "Breakfast",
+    "per100g": {
+      "cal": 291,
+      "carbs": 37,
+      "sugar": 7.2,
+      "fiber": 1.4,
+      "fat": 13,
+      "protein": 7.9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "round waffle",
+      "g": 75
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Pizza (cheese)",
+    "aliases": [
+      "pizza",
+      "cheese pizza",
+      "pepperoni pizza",
+      "margherita"
+    ],
+    "gi": 60,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 266,
+      "carbs": 33,
+      "sugar": 3.6,
+      "fiber": 2.3,
+      "fat": 10,
+      "protein": 11
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "slice",
+      "g": 107
+    },
+    "processed": 7,
+    "veg": true
+  },
+  {
+    "name": "Burger bun",
+    "aliases": [
+      "hamburger bun",
+      "bun",
+      "burger roll",
+      "slider bun"
+    ],
+    "gi": 61,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 279,
+      "carbs": 51,
+      "sugar": 6.9,
+      "fiber": 2,
+      "fat": 4.3,
+      "protein": 9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "bun",
+      "g": 48
+    },
+    "processed": 7,
+    "veg": true
+  },
+  {
+    "name": "Donut",
+    "aliases": [
+      "donut",
+      "doughnut",
+      "glazed donut"
+    ],
+    "gi": 76,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 452,
+      "carbs": 51,
+      "sugar": 20,
+      "fiber": 1.7,
+      "fat": 25,
+      "protein": 5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "medium",
+      "g": 60
+    },
+    "processed": 9,
+    "veg": true
+  },
+  {
+    "name": "Muffin (blueberry)",
+    "aliases": [
+      "muffin",
+      "blueberry muffin",
+      "corn muffin"
+    ],
+    "gi": 62,
+    "cat": "Bakery",
+    "per100g": {
+      "cal": 377,
+      "carbs": 55,
+      "sugar": 29,
+      "fiber": 1.6,
+      "fat": 14,
+      "protein": 6.2
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "muffin",
+      "g": 113
+    },
+    "processed": 8,
+    "veg": true
+  },
+  {
+    "name": "Banana bread",
+    "aliases": [
+      "banana bread",
+      "banana loaf"
+    ],
+    "gi": 51,
+    "cat": "Bakery",
+    "per100g": {
+      "cal": 326,
+      "carbs": 53,
+      "sugar": 29,
+      "fiber": 1.7,
+      "fat": 11,
+      "protein": 5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "slice",
+      "g": 60
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Cheeseburger",
+    "aliases": [
+      "cheeseburger",
+      "cheese burger",
+      "double cheeseburger"
+    ],
+    "gi": 60,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 295,
+      "carbs": 24,
+      "sugar": 6,
+      "fiber": 1.2,
+      "fat": 16,
+      "protein": 17
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "burger",
+      "g": 160
+    },
+    "processed": 7,
+    "veg": false
+  },
+  {
+    "name": "Hamburger (plain)",
+    "aliases": [
+      "hamburger",
+      "burger",
+      "plain burger",
+      "beef burger"
+    ],
+    "gi": 60,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 272,
+      "carbs": 25,
+      "sugar": 5,
+      "fiber": 1.2,
+      "fat": 12,
+      "protein": 15
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "burger",
+      "g": 150
+    },
+    "processed": 6,
+    "veg": false
+  },
+  {
+    "name": "Chicken sandwich",
+    "aliases": [
+      "chicken sandwich",
+      "crispy chicken sandwich",
+      "grilled chicken sandwich"
+    ],
+    "gi": 58,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 250,
+      "carbs": 27,
+      "sugar": 4,
+      "fiber": 1.5,
+      "fat": 10,
+      "protein": 15
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "sandwich",
+      "g": 180
+    },
+    "processed": 6,
+    "veg": false
+  },
+  {
+    "name": "Chicken nuggets",
+    "aliases": [
+      "chicken nuggets",
+      "mcnuggets",
+      "nuggets",
+      "chicken tenders"
+    ],
+    "gi": 55,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 296,
+      "carbs": 18,
+      "sugar": 0.5,
+      "fiber": 0.8,
+      "fat": 18,
+      "protein": 15
+    },
+    "serving": {
+      "qty": 6,
+      "unit": "pieces",
+      "g": 102
+    },
+    "processed": 8,
+    "veg": false
+  },
+  {
+    "name": "Hot dog",
+    "aliases": [
+      "hot dog",
+      "hotdog",
+      "frankfurter",
+      "corn dog"
+    ],
+    "gi": 52,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 290,
+      "carbs": 22,
+      "sugar": 5,
+      "fiber": 1,
+      "fat": 18,
+      "protein": 11
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "hot dog (bun)",
+      "g": 98
+    },
+    "processed": 8,
+    "veg": false
+  },
+  {
+    "name": "Mac and cheese",
+    "aliases": [
+      "mac and cheese",
+      "macaroni and cheese",
+      "mac n cheese"
+    ],
+    "gi": 58,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 164,
+      "carbs": 22,
+      "sugar": 4.7,
+      "fiber": 0.8,
+      "fat": 5.5,
+      "protein": 7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 200
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Pepperoni pizza",
+    "aliases": [
+      "pepperoni pizza",
+      "pizza pepperoni"
+    ],
+    "gi": 60,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 298,
+      "carbs": 30,
+      "sugar": 3.6,
+      "fiber": 2.3,
+      "fat": 14,
+      "protein": 13
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "slice",
+      "g": 107
+    },
+    "processed": 7,
+    "veg": false
+  },
+  {
+    "name": "Veggie pizza",
+    "aliases": [
+      "veggie pizza",
+      "vegetable pizza",
+      "garden pizza"
+    ],
+    "gi": 58,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 245,
+      "carbs": 32,
+      "sugar": 4,
+      "fiber": 2.8,
+      "fat": 8.5,
+      "protein": 10
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "slice",
+      "g": 107
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "BLT sandwich",
+    "aliases": [
+      "blt",
+      "blt sandwich",
+      "bacon lettuce tomato"
+    ],
+    "gi": 55,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 268,
+      "carbs": 24,
+      "sugar": 4,
+      "fiber": 1.5,
+      "fat": 14,
+      "protein": 13
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "sandwich",
+      "g": 200
+    },
+    "processed": 6,
+    "veg": false
+  },
+  {
+    "name": "Turkey sandwich",
+    "aliases": [
+      "turkey sandwich",
+      "turkey sub",
+      "turkey wrap"
+    ],
+    "gi": 52,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 218,
+      "carbs": 26,
+      "sugar": 3,
+      "fiber": 2.4,
+      "fat": 6,
+      "protein": 16
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "sandwich",
+      "g": 200
+    },
+    "processed": 5,
+    "veg": false
+  },
+  {
+    "name": "Grilled cheese",
+    "aliases": [
+      "grilled cheese",
+      "grilled cheese sandwich"
+    ],
+    "gi": 58,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 350,
+      "carbs": 27,
+      "sugar": 3,
+      "fiber": 1.3,
+      "fat": 21,
+      "protein": 12
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "sandwich",
+      "g": 150
+    },
+    "processed": 5,
+    "veg": true
+  },
+  {
+    "name": "Beef taco",
+    "aliases": [
+      "beef taco",
+      "taco",
+      "hard taco",
+      "crispy taco"
+    ],
+    "gi": 55,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 226,
+      "carbs": 20,
+      "sugar": 2,
+      "fiber": 2.8,
+      "fat": 11,
+      "protein": 10
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "taco",
+      "g": 90
+    },
+    "processed": 5,
+    "veg": false
+  },
+  {
+    "name": "Chicken burrito",
+    "aliases": [
+      "chicken burrito",
+      "burrito",
+      "grilled chicken burrito"
+    ],
+    "gi": 58,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 206,
+      "carbs": 27,
+      "sugar": 2,
+      "fiber": 2.4,
+      "fat": 6.5,
+      "protein": 13
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "burrito",
+      "g": 350
+    },
+    "processed": 5,
+    "veg": false
+  },
+  {
+    "name": "Quesadilla",
+    "aliases": [
+      "quesadilla",
+      "cheese quesadilla",
+      "chicken quesadilla"
+    ],
+    "gi": 57,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 310,
+      "carbs": 28,
+      "sugar": 2,
+      "fiber": 1.5,
+      "fat": 16,
+      "protein": 14
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "quesadilla",
+      "g": 150
+    },
+    "processed": 5,
+    "veg": true
+  },
+  {
+    "name": "Nachos",
+    "aliases": [
+      "nachos",
+      "tortilla chips with cheese",
+      "loaded nachos"
+    ],
+    "gi": 65,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 356,
+      "carbs": 39,
+      "sugar": 2.5,
+      "fiber": 3.5,
+      "fat": 19,
+      "protein": 8.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "serving",
+      "g": 85
+    },
+    "processed": 7,
+    "veg": true
+  },
+  {
+    "name": "Guacamole",
+    "aliases": [
+      "guacamole",
+      "guac",
+      "avocado dip"
+    ],
+    "gi": 15,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 157,
+      "carbs": 8.5,
+      "sugar": 0.5,
+      "fiber": 6.7,
+      "fat": 14.7,
+      "protein": 2
+    },
+    "serving": {
+      "qty": 2,
+      "unit": "tbsp",
+      "g": 30
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Fried rice",
+    "aliases": [
+      "fried rice",
+      "chinese fried rice",
+      "pork fried rice",
+      "shrimp fried rice"
+    ],
+    "gi": 72,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 163,
+      "carbs": 26,
+      "sugar": 0.9,
+      "fiber": 1,
+      "fat": 4.5,
+      "protein": 4.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 198
+    },
+    "processed": 5,
+    "veg": true
+  },
+  {
+    "name": "Lo mein",
+    "aliases": [
+      "lo mein",
+      "chicken lo mein",
+      "beef lo mein"
+    ],
+    "gi": 58,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 154,
+      "carbs": 22,
+      "sugar": 2.2,
+      "fiber": 1.8,
+      "fat": 4.8,
+      "protein": 6.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 200
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Spring roll",
+    "aliases": [
+      "spring roll",
+      "egg roll",
+      "fried spring roll"
+    ],
+    "gi": 65,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 195,
+      "carbs": 22,
+      "sugar": 1.5,
+      "fiber": 1.8,
+      "fat": 9.5,
+      "protein": 5.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "roll",
+      "g": 70
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Sushi roll",
+    "aliases": [
+      "sushi",
+      "sushi roll",
+      "california roll",
+      "maki",
+      "spicy tuna roll"
+    ],
+    "gi": 55,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 150,
+      "carbs": 28,
+      "sugar": 3,
+      "fiber": 1.5,
+      "fat": 2.5,
+      "protein": 5
+    },
+    "serving": {
+      "qty": 6,
+      "unit": "pieces",
+      "g": 150
+    },
+    "processed": 4,
+    "veg": false
+  },
+  {
+    "name": "Pad thai",
+    "aliases": [
+      "pad thai",
+      "thai noodles"
+    ],
+    "gi": 60,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 165,
+      "carbs": 24,
+      "sugar": 4.5,
+      "fiber": 1.5,
+      "fat": 5.5,
+      "protein": 7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 200
+    },
+    "processed": 6,
+    "veg": false
+  },
+  {
+    "name": "Naan bread",
+    "aliases": [
+      "naan",
+      "naan bread",
+      "garlic naan"
+    ],
+    "gi": 71,
+    "cat": "Bread",
+    "per100g": {
+      "cal": 310,
+      "carbs": 55,
+      "sugar": 3.6,
+      "fiber": 2.2,
+      "fat": 7,
+      "protein": 9.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "piece",
+      "g": 90
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Scrambled eggs",
+    "aliases": [
+      "scrambled eggs",
+      "eggs",
+      "cooked eggs",
+      "fried eggs"
+    ],
+    "gi": 0,
+    "cat": "Breakfast",
+    "per100g": {
+      "cal": 149,
+      "carbs": 1.6,
+      "sugar": 1.2,
+      "fiber": 0,
+      "fat": 11,
+      "protein": 10
+    },
+    "serving": {
+      "qty": 2,
+      "unit": "large eggs",
+      "g": 96
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Bacon",
+    "aliases": [
+      "bacon",
+      "crispy bacon",
+      "pork bacon",
+      "turkey bacon"
+    ],
+    "gi": 0,
+    "cat": "Breakfast",
+    "per100g": {
+      "cal": 541,
+      "carbs": 1.4,
+      "sugar": 0,
+      "fiber": 0,
+      "fat": 42,
+      "protein": 37
+    },
+    "serving": {
+      "qty": 2,
+      "unit": "slices",
+      "g": 24
+    },
+    "processed": 7,
+    "veg": false
+  },
+  {
+    "name": "Breakfast sausage",
+    "aliases": [
+      "breakfast sausage",
+      "pork sausage",
+      "link sausage",
+      "sausage links"
+    ],
+    "gi": 0,
+    "cat": "Breakfast",
+    "per100g": {
+      "cal": 301,
+      "carbs": 2,
+      "sugar": 0.5,
+      "fiber": 0,
+      "fat": 26,
+      "protein": 17
+    },
+    "serving": {
+      "qty": 2,
+      "unit": "links",
+      "g": 56
+    },
+    "processed": 7,
+    "veg": false
+  },
+  {
+    "name": "French toast",
+    "aliases": [
+      "french toast"
+    ],
+    "gi": 68,
+    "cat": "Breakfast",
+    "per100g": {
+      "cal": 229,
+      "carbs": 32,
+      "sugar": 11,
+      "fiber": 1.3,
+      "fat": 8.5,
+      "protein": 7.5
+    },
+    "serving": {
+      "qty": 2,
+      "unit": "slices",
+      "g": 130
+    },
+    "processed": 5,
+    "veg": true
+  },
+  {
+    "name": "Hash browns",
+    "aliases": [
+      "hash browns",
+      "hashbrowns",
+      "potato hash"
+    ],
+    "gi": 75,
+    "cat": "Breakfast",
+    "per100g": {
+      "cal": 265,
+      "carbs": 30,
+      "sugar": 1.5,
+      "fiber": 2.5,
+      "fat": 14,
+      "protein": 2.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "patty",
+      "g": 70
+    },
+    "processed": 6,
+    "veg": true
+  },
+  {
+    "name": "Tomato soup",
+    "aliases": [
+      "tomato soup",
+      "cream of tomato",
+      "tomato bisque"
+    ],
+    "gi": 52,
+    "cat": "Soups",
+    "per100g": {
+      "cal": 73,
+      "carbs": 11,
+      "sugar": 6.4,
+      "fiber": 1,
+      "fat": 2,
+      "protein": 1.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 244
+    },
+    "processed": 5,
+    "veg": true
+  },
+  {
+    "name": "Chicken noodle soup",
+    "aliases": [
+      "chicken noodle soup",
+      "chicken soup",
+      "noodle soup"
+    ],
+    "gi": 50,
+    "cat": "Soups",
+    "per100g": {
+      "cal": 56,
+      "carbs": 7,
+      "sugar": 1,
+      "fiber": 0.5,
+      "fat": 1.5,
+      "protein": 3.8
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 244
+    },
+    "processed": 5,
+    "veg": false
+  },
+  {
+    "name": "Caesar salad",
+    "aliases": [
+      "caesar salad",
+      "chicken caesar",
+      "caesar"
+    ],
+    "gi": 15,
+    "cat": "Salads",
+    "per100g": {
+      "cal": 155,
+      "carbs": 7.5,
+      "sugar": 1.5,
+      "fiber": 2,
+      "fat": 12,
+      "protein": 6.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "serving",
+      "g": 200
+    },
+    "processed": 5,
+    "veg": false
+  },
+  {
+    "name": "Garden salad",
+    "aliases": [
+      "garden salad",
+      "side salad",
+      "house salad",
+      "green salad"
+    ],
+    "gi": 15,
+    "cat": "Salads",
+    "per100g": {
+      "cal": 20,
+      "carbs": 3.5,
+      "sugar": 2,
+      "fiber": 1.5,
+      "fat": 0.2,
+      "protein": 1.2
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "large",
+      "g": 200
+    },
+    "processed": 3,
+    "veg": true
+  },
+  {
+    "name": "Peanut butter",
+    "aliases": [
+      "peanut butter",
+      "pb",
+      "creamy peanut butter",
+      "natural peanut butter"
+    ],
+    "gi": 14,
+    "cat": "Snacks",
+    "per100g": {
+      "cal": 588,
+      "carbs": 20,
+      "sugar": 8.5,
+      "fiber": 5.9,
+      "fat": 50,
+      "protein": 25
+    },
+    "serving": {
+      "qty": 2,
+      "unit": "tbsp",
+      "g": 32
+    },
+    "processed": 4,
+    "veg": true
+  },
+  {
+    "name": "Almonds",
+    "aliases": [
+      "almond",
+      "almonds",
+      "raw almonds",
+      "roasted almonds"
+    ],
+    "gi": 0,
+    "cat": "Snacks",
+    "per100g": {
+      "cal": 579,
+      "carbs": 22,
+      "sugar": 4.2,
+      "fiber": 12.5,
+      "fat": 50,
+      "protein": 21
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "oz (23 almonds)",
+      "g": 28
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Cashews",
+    "aliases": [
+      "cashew",
+      "cashews",
+      "roasted cashews"
+    ],
+    "gi": 22,
+    "cat": "Snacks",
+    "per100g": {
+      "cal": 553,
+      "carbs": 30,
+      "sugar": 5.9,
+      "fiber": 3.3,
+      "fat": 44,
+      "protein": 18
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "oz",
+      "g": 28
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Walnuts",
+    "aliases": [
+      "walnut",
+      "walnuts"
+    ],
+    "gi": 15,
+    "cat": "Snacks",
+    "per100g": {
+      "cal": 654,
+      "carbs": 14,
+      "sugar": 2.6,
+      "fiber": 6.7,
+      "fat": 65,
+      "protein": 15
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "oz",
+      "g": 28
+    },
+    "processed": 2,
+    "veg": true
+  },
+  {
+    "name": "Cheddar cheese",
+    "aliases": [
+      "cheddar cheese",
+      "cheddar",
+      "cheese",
+      "american cheese",
+      "cheese slice"
+    ],
+    "gi": 0,
+    "cat": "Dairy",
+    "per100g": {
+      "cal": 402,
+      "carbs": 1.3,
+      "sugar": 0.5,
+      "fiber": 0,
+      "fat": 33,
+      "protein": 25
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "oz (1 slice)",
+      "g": 28
+    },
+    "processed": 3,
+    "veg": true
+  },
+  {
+    "name": "Avocado",
+    "aliases": [
+      "avocado",
+      "hass avocado",
+      "half avocado"
+    ],
+    "gi": 15,
+    "cat": "Fruit",
+    "per100g": {
+      "cal": 160,
+      "carbs": 9,
+      "sugar": 0.7,
+      "fiber": 6.7,
+      "fat": 15,
+      "protein": 2
+    },
+    "serving": {
+      "qty": 0.5,
+      "unit": "medium avocado",
+      "g": 100
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Edamame",
+    "aliases": [
+      "edamame",
+      "edamame beans",
+      "shelled edamame"
+    ],
+    "gi": 18,
+    "cat": "Legumes",
+    "per100g": {
+      "cal": 122,
+      "carbs": 10,
+      "sugar": 2.2,
+      "fiber": 5.2,
+      "fat": 5.2,
+      "protein": 11
+    },
+    "serving": {
+      "qty": 0.5,
+      "unit": "cup shelled",
+      "g": 78
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Grilled chicken breast",
+    "aliases": [
+      "grilled chicken",
+      "chicken breast",
+      "grilled chicken breast",
+      "baked chicken"
+    ],
+    "gi": 0,
+    "cat": "Protein",
+    "per100g": {
+      "cal": 165,
+      "carbs": 0,
+      "sugar": 0,
+      "fiber": 0,
+      "fat": 3.6,
+      "protein": 31
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "breast (3oz)",
+      "g": 85
+    },
+    "processed": 2,
+    "veg": false
+  },
+  {
+    "name": "Salmon (baked)",
+    "aliases": [
+      "salmon",
+      "baked salmon",
+      "grilled salmon",
+      "atlantic salmon"
+    ],
+    "gi": 0,
+    "cat": "Protein",
+    "per100g": {
+      "cal": 208,
+      "carbs": 0,
+      "sugar": 0,
+      "fiber": 0,
+      "fat": 13,
+      "protein": 20
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "fillet (4oz)",
+      "g": 113
+    },
+    "processed": 2,
+    "veg": false
+  },
+  {
+    "name": "Canned tuna",
+    "aliases": [
+      "canned tuna",
+      "tuna",
+      "tuna in water",
+      "albacore tuna"
+    ],
+    "gi": 0,
+    "cat": "Protein",
+    "per100g": {
+      "cal": 116,
+      "carbs": 0,
+      "sugar": 0,
+      "fiber": 0,
+      "fat": 2.6,
+      "protein": 25.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "can (5oz)",
+      "g": 142
+    },
+    "processed": 3,
+    "veg": false
+  },
+  {
+    "name": "Beef steak",
+    "aliases": [
+      "steak",
+      "sirloin",
+      "beef steak",
+      "sirloin steak",
+      "strip steak",
+      "ribeye"
+    ],
+    "gi": 0,
+    "cat": "Protein",
+    "per100g": {
+      "cal": 207,
+      "carbs": 0,
+      "sugar": 0,
+      "fiber": 0,
+      "fat": 11,
+      "protein": 26
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "serving (4oz)",
+      "g": 113
+    },
+    "processed": 2,
+    "veg": false
+  },
+  {
+    "name": "Shrimp",
+    "aliases": [
+      "shrimp",
+      "cooked shrimp",
+      "grilled shrimp",
+      "shrimp cocktail"
+    ],
+    "gi": 0,
+    "cat": "Protein",
+    "per100g": {
+      "cal": 99,
+      "carbs": 0.9,
+      "sugar": 0,
+      "fiber": 0,
+      "fat": 1.1,
+      "protein": 21
+    },
+    "serving": {
+      "qty": 3,
+      "unit": "oz",
+      "g": 85
+    },
+    "processed": 2,
+    "veg": false
+  },
+  {
+    "name": "Tofu",
+    "aliases": [
+      "tofu",
+      "firm tofu",
+      "silken tofu",
+      "bean curd"
+    ],
+    "gi": 15,
+    "cat": "Protein",
+    "per100g": {
+      "cal": 76,
+      "carbs": 1.9,
+      "sugar": 0.9,
+      "fiber": 0.3,
+      "fat": 4.8,
+      "protein": 8
+    },
+    "serving": {
+      "qty": 0.5,
+      "unit": "cup",
+      "g": 126
+    },
+    "processed": 3,
+    "veg": true
+  },
+  {
+    "name": "Green tea",
+    "aliases": [
+      "green tea",
+      "unsweetened green tea",
+      "matcha tea"
+    ],
+    "gi": 0,
+    "cat": "Beverages",
+    "per100g": {
+      "cal": 1,
+      "carbs": 0.2,
+      "sugar": 0,
+      "fiber": 0,
+      "fat": 0,
+      "protein": 0
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup (8oz)",
+      "g": 240
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Black coffee",
+    "aliases": [
+      "coffee",
+      "black coffee",
+      "americano",
+      "espresso",
+      "drip coffee"
+    ],
+    "gi": 0,
+    "cat": "Beverages",
+    "per100g": {
+      "cal": 2,
+      "carbs": 0.3,
+      "sugar": 0,
+      "fiber": 0,
+      "fat": 0,
+      "protein": 0.3
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup (8oz)",
+      "g": 240
+    },
+    "processed": 1,
+    "veg": true
+  },
+  {
+    "name": "Latte",
+    "aliases": [
+      "latte",
+      "coffee latte",
+      "cafe latte",
+      "starbucks latte",
+      "flat white"
+    ],
+    "gi": 41,
+    "cat": "Beverages",
+    "per100g": {
+      "cal": 54,
+      "carbs": 5.5,
+      "sugar": 5.2,
+      "fiber": 0,
+      "fat": 2.3,
+      "protein": 2.8
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "12oz",
+      "g": 350
+    },
+    "processed": 3,
+    "veg": true
+  },
+  {
+    "name": "Diet soda",
+    "aliases": [
+      "diet coke",
+      "diet pepsi",
+      "diet soda",
+      "zero sugar soda",
+      "coke zero"
+    ],
+    "gi": 0,
+    "cat": "Beverages",
+    "per100g": {
+      "cal": 0,
+      "carbs": 0,
+      "sugar": 0,
+      "fiber": 0,
+      "fat": 0,
+      "protein": 0
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "can (12oz)",
+      "g": 355
+    },
+    "processed": 8,
+    "veg": true
+  },
+  {
+    "name": "Protein shake",
+    "aliases": [
+      "protein shake",
+      "whey shake",
+      "protein drink",
+      "whey protein"
+    ],
+    "gi": 30,
+    "cat": "Beverages",
+    "per100g": {
+      "cal": 61,
+      "carbs": 5,
+      "sugar": 3.5,
+      "fiber": 0.5,
+      "fat": 1.5,
+      "protein": 7.5
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "shake (11oz)",
+      "g": 330
+    },
+    "processed": 7,
+    "veg": true
+  },
+  {
+    "name": "Chicken tikka masala",
+    "aliases": [
+      "tikka masala",
+      "chicken tikka",
+      "indian curry",
+      "butter chicken"
+    ],
+    "gi": 48,
+    "cat": "Fast Food",
+    "per100g": {
+      "cal": 148,
+      "carbs": 10,
+      "sugar": 6,
+      "fiber": 1.8,
+      "fat": 7.5,
+      "protein": 14
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "cup",
+      "g": 250
+    },
+    "processed": 5,
+    "veg": false
+  },
+  {
+    "name": "Pork chop",
+    "aliases": [
+      "pork chop",
+      "grilled pork chop",
+      "baked pork chop"
+    ],
+    "gi": 0,
+    "cat": "Protein",
+    "per100g": {
+      "cal": 231,
+      "carbs": 0,
+      "sugar": 0,
+      "fiber": 0,
+      "fat": 14,
+      "protein": 26
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "chop (4oz)",
+      "g": 113
+    },
+    "processed": 2,
+    "veg": false
+  },
+  {
+    "name": "Ground beef",
+    "aliases": [
+      "ground beef",
+      "minced beef",
+      "ground meat",
+      "hamburger meat"
+    ],
+    "gi": 0,
+    "cat": "Protein",
+    "per100g": {
+      "cal": 254,
+      "carbs": 0,
+      "sugar": 0,
+      "fiber": 0,
+      "fat": 18,
+      "protein": 26
+    },
+    "serving": {
+      "qty": 3,
+      "unit": "oz cooked",
+      "g": 85
+    },
+    "processed": 2,
+    "veg": false
+  },
+  {
+    "name": "Turkey breast",
+    "aliases": [
+      "turkey breast",
+      "sliced turkey",
+      "roast turkey",
+      "deli turkey"
+    ],
+    "gi": 0,
+    "cat": "Protein",
+    "per100g": {
+      "cal": 135,
+      "carbs": 0,
+      "sugar": 0,
+      "fiber": 0,
+      "fat": 3,
+      "protein": 28
+    },
+    "serving": {
+      "qty": 3,
+      "unit": "oz",
+      "g": 85
+    },
+    "processed": 2,
+    "veg": false
+  },
+  {
+    "name": "Cottage cheese",
+    "aliases": [
+      "cottage cheese",
+      "low fat cottage cheese"
+    ],
+    "gi": 10,
+    "cat": "Dairy",
+    "per100g": {
+      "cal": 98,
+      "carbs": 3.4,
+      "sugar": 2.7,
+      "fiber": 0,
+      "fat": 4.3,
+      "protein": 11
+    },
+    "serving": {
+      "qty": 0.5,
+      "unit": "cup",
+      "g": 113
+    },
+    "processed": 3,
+    "veg": true
+  },
+  {
+    "name": "String cheese",
+    "aliases": [
+      "string cheese",
+      "mozzarella stick",
+      "string mozzarella"
+    ],
+    "gi": 0,
+    "cat": "Dairy",
+    "per100g": {
+      "cal": 300,
+      "carbs": 2.5,
+      "sugar": 0.5,
+      "fiber": 0,
+      "fat": 22,
+      "protein": 24
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "stick",
+      "g": 28
+    },
+    "processed": 3,
+    "veg": true
+  },
+  {
+    "name": "Corn chips (Fritos)",
+    "aliases": [
+      "corn chips",
+      "fritos",
+      "corn crisps"
+    ],
+    "gi": 63,
+    "cat": "Snacks",
+    "per100g": {
+      "cal": 541,
+      "carbs": 57,
+      "sugar": 0.5,
+      "fiber": 3.5,
+      "fat": 32,
+      "protein": 7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "oz",
+      "g": 28
+    },
+    "processed": 8,
+    "veg": true
+  },
+  {
+    "name": "Granola bar",
+    "aliases": [
+      "granola bar",
+      "chewy bar",
+      "nature valley",
+      "cliff bar"
+    ],
+    "gi": 65,
+    "cat": "Snacks",
+    "per100g": {
+      "cal": 471,
+      "carbs": 62,
+      "sugar": 28,
+      "fiber": 3.5,
+      "fat": 20,
+      "protein": 7
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "bar",
+      "g": 47
+    },
+    "processed": 7,
+    "veg": true
+  },
+  {
+    "name": "Trail mix",
+    "aliases": [
+      "trail mix",
+      "mixed nuts and raisins",
+      "gorp"
+    ],
+    "gi": 35,
+    "cat": "Snacks",
+    "per100g": {
+      "cal": 462,
+      "carbs": 45,
+      "sugar": 25,
+      "fiber": 5.5,
+      "fat": 29,
+      "protein": 11
+    },
+    "serving": {
+      "qty": 0.25,
+      "unit": "cup",
+      "g": 38
+    },
+    "processed": 4,
+    "veg": true
+  },
+  {
+    "name": "Pita chips",
+    "aliases": [
+      "pita chips",
+      "pita crackers",
+      "stacy's pita chips"
+    ],
+    "gi": 70,
+    "cat": "Crackers",
+    "per100g": {
+      "cal": 482,
+      "carbs": 64,
+      "sugar": 2,
+      "fiber": 3.5,
+      "fat": 20,
+      "protein": 9
+    },
+    "serving": {
+      "qty": 1,
+      "unit": "oz (11 chips)",
+      "g": 28
+    },
+    "processed": 6,
+    "veg": true
+  }
+]
+;
+
+const searchInput   = document.getElementById('foodSearch');
+const resultsEl      = document.getElementById('searchResults');
+const detailEl       = document.getElementById('foodDetail');
+const servCountEl    = document.getElementById('servCount');
+const servDownBtn    = document.getElementById('servDown');
+const servUpBtn      = document.getElementById('servUp');
+
+let activeFood = null;
+let servings = 1;
+
+function giClass(gi) {
+  if (gi == null) return 'gi-na';
+  if (gi <= 55) return 'gi-low';
+  if (gi <= 69) return 'gi-med';
+  return 'gi-high';
+}
+function giLabel(gi) {
+  if (gi == null) return 'GI data unavailable';
+  if (gi <= 55) return 'Low GI';
+  if (gi <= 69) return 'Medium GI';
+  return 'High GI';
+}
+
+// ── Local curated matches (176 foods, full GI data) ─────────────────────
+function localMatches(q) {
+  return FOODS.filter(f =>
+    f.name.toLowerCase().includes(q) ||
+    (f.aliases || []).some(a => a.toLowerCase().includes(q))
+  ).slice(0, 8);
+}
+
+function renderResultRows(items) {
+  resultsEl.innerHTML = '';
+  const note = document.getElementById('searchNote');
+  const hasUsda = items.some(f => f.source === 'usda');
+  if (note) note.style.display = hasUsda ? 'block' : 'none';
+  items.forEach(f => {
+    const row = document.createElement('div');
+    row.className = 'result-row';
+    const tagClass = f.source === 'usda' ? ' is-usda' : '';
+    row.innerHTML = '<span class="result-name">' + f.name + '</span><span class="result-cat' + tagClass + '">' + f.cat + '</span>';
+    row.addEventListener('click', () => selectFood(f));
+    resultsEl.appendChild(row);
+  });
+}
+
+// ── Live USDA FoodData Central lookup (fills in anything not in our
+// curated 176 — carbs/calories/macros only, no GI, USDA doesn't publish it) ──
+const USDA_API_KEY = 'DEMO_KEY'; // rate-limited public key — swap for a free key from api.data.gov before production
+let searchToken = 0;
+let debounceTimer = null;
+const usdaCache = new Map();
+
+function normalizeUsdaFood(item) {
+  const n = {};
+  (item.foodNutrients || []).forEach(x => { n[x.nutrientId] = x.value; });
+  const per100g = {
+    carbs:   n[1005] || 0,
+    fiber:   n[1079] || 0,
+    sugar:   n[2000] != null ? n[2000] : (n[1063] || 0),
+    cal:     n[1008] || 0,
+    protein: n[1003] || 0,
+    fat:     n[1004] || 0,
+  };
+  const name = (item.description || '').replace(/\s+/g, ' ').trim();
+  return {
+    name: name,
+    cat: 'USDA Database',
+    aliases: [],
+    gi: null,
+    source: 'usda',
+    serving: { qty: 100, unit: 'g', g: 100 },
+    per100g: per100g,
+  };
+}
+
+function fetchUsda(q, local, token) {
+  if (local.length >= 8) return; // local results already fill the list
+  const cached = usdaCache.get(q);
+  if (cached) { mergeAndRender(local, cached, token); return; }
+
+  const url = 'https://api.nal.usda.gov/fdc/v1/foods/search?api_key=' + USDA_API_KEY +
+    '&pageSize=8&dataType=Foundation,SR%20Legacy,Branded&query=' + encodeURIComponent(q);
+
+  fetch(url)
+    .then(res => res.ok ? res.json() : null)
+    .then(data => {
+      if (!data) return;
+      const items = (data.foods || [])
+        .map(normalizeUsdaFood)
+        .filter(f => f.name && (f.per100g.carbs || f.per100g.cal));
+      usdaCache.set(q, items);
+      mergeAndRender(local, items, token);
+    })
+    .catch(() => { /* USDA lookup is a bonus, not a requirement — local results already shown */ });
+}
+
+function mergeAndRender(local, usdaItems, token) {
+  if (token !== searchToken) return; // a newer keystroke superseded this response
+  const localNames = new Set(local.map(f => f.name.toLowerCase()));
+  const extra = usdaItems.filter(f => !localNames.has(f.name.toLowerCase())).slice(0, 6);
+  renderResultRows(local.concat(extra));
+}
+
+function renderResults(query) {
+  const q = query.trim().toLowerCase();
+  clearTimeout(debounceTimer);
+  if (q.length < 2) { resultsEl.innerHTML = ''; return; }
+
+  const local = localMatches(q);
+  renderResultRows(local);
+
+  const token = ++searchToken;
+  debounceTimer = setTimeout(() => fetchUsda(q, local, token), 350);
+}
+
+function selectFood(food) {
+  activeFood = food;
+  servings = 1;
+  servCountEl.textContent = '1';
+  resultsEl.innerHTML = '';
+  searchInput.value = food.name;
+  detailEl.style.display = 'block';
+  renderDetail();
+}
+
+function renderDetail() {
+  if (!activeFood) return;
+  const f = activeFood;
+  const gramsPerServing = f.serving.g;
+  const totalGrams = gramsPerServing * servings;
+  const scale = totalGrams / 100;
+
+  const carbs   = f.per100g.carbs  * scale;
+  const fiber   = f.per100g.fiber  * scale;
+  const sugar   = f.per100g.sugar  * scale;
+  const cal     = f.per100g.cal    * scale;
+  const protein = f.per100g.protein* scale;
+  const fat     = f.per100g.fat    * scale;
+  const net     = Math.max(0, carbs - fiber);
+
+  document.getElementById('detailName').textContent = f.name;
+  document.getElementById('detailServing').textContent =
+    servings + ' × ' + f.serving.qty + ' ' + f.serving.unit + ' (' + Math.round(totalGrams) + 'g)';
+
+  const badge = document.getElementById('detailGiBadge');
+  badge.textContent = f.gi == null ? 'GI data unavailable' : giLabel(f.gi) + ' · ' + f.gi;
+  badge.className = 'gi-badge ' + giClass(f.gi);
+
+  document.getElementById('dCarbs').innerHTML   = carbs.toFixed(1) + '<small>g</small>';
+  document.getElementById('dNet').innerHTML     = net.toFixed(1) + '<small>g</small>';
+  document.getElementById('dFiber').innerHTML   = fiber.toFixed(1) + '<small>g</small>';
+  document.getElementById('dSugar').innerHTML   = sugar.toFixed(1) + '<small>g</small>';
+  document.getElementById('dCal').innerHTML     = Math.round(cal);
+  document.getElementById('dProtein').innerHTML = protein.toFixed(1) + '<small>g</small>';
+  document.getElementById('dFat').innerHTML     = fat.toFixed(1) + '<small>g</small>';
+  document.getElementById('dGi').innerHTML      = f.gi == null ? '—' : f.gi;
+}
+
+searchInput.addEventListener('input', () => {
+  activeFood = null;
+  detailEl.style.display = 'none';
+  renderResults(searchInput.value);
+});
+
+servDownBtn.addEventListener('click', () => {
+  if (servings > 0.5) {
+    servings = Math.round((servings - 0.5) * 2) / 2;
+    servCountEl.textContent = servings;
+    renderDetail();
+  }
+});
+servUpBtn.addEventListener('click', () => {
+  servings = Math.round((servings + 0.5) * 2) / 2;
+  servCountEl.textContent = servings;
+  renderDetail();
+});
+
+// ── Manual net carb calculator ──────────────────────────────────────────
+const mCarbs = document.getElementById('mCarbs');
+const mFiber = document.getElementById('mFiber');
+const mSugarAlcohol = document.getElementById('mSugarAlcohol');
+const manualNetEl = document.getElementById('manualNet');
+
+function computeManual() {
+  const carbs = parseFloat(mCarbs.value) || 0;
+  const fiber = parseFloat(mFiber.value) || 0;
+  const sugarAlcohol = parseFloat(mSugarAlcohol.value) || 0;
+  const net = Math.max(0, carbs - fiber - (sugarAlcohol / 2));
+  manualNetEl.textContent = net.toFixed(1) + 'g';
+}
+[mCarbs, mFiber, mSugarAlcohol].forEach(el => el.addEventListener('input', computeManual));
+
+// ── Daily carb budget calculator ────────────────────────────────────────
+const bAge       = document.getElementById('bAge');
+const bSex       = document.getElementById('bSex');
+const bWeightLbs = document.getElementById('bWeightLbs');
+const bWeightKg  = document.getElementById('bWeightKg');
+const bHeightFt  = document.getElementById('bHeightFt');
+const bHeightIn  = document.getElementById('bHeightIn');
+const bHeightCm  = document.getElementById('bHeightCm');
+const bActivity  = document.getElementById('bActivity');
+const bGoal      = document.getElementById('bGoal');
+const bApproach  = document.getElementById('bApproach');
+const bMeals     = document.getElementById('bMeals');
+const bCaloriesEl     = document.getElementById('bCalories');
+const bDailyCarbsEl   = document.getElementById('bDailyCarbs');
+const bPerMealCarbsEl = document.getElementById('bPerMealCarbs');
+
+const unitImperialBtn = document.getElementById('unitImperialBtn');
+const unitMetricBtn   = document.getElementById('unitMetricBtn');
+const imperialUnitFields = document.querySelectorAll('.imperial-only');
+const metricUnitFields   = document.querySelectorAll('.metric-only');
+let isMetric = false;
+
+function setUnitMode(metric) {
+  isMetric = metric;
+  imperialUnitFields.forEach(el => { el.hidden = metric; });
+  metricUnitFields.forEach(el => { el.hidden = !metric; });
+  unitImperialBtn.classList.toggle('is-active', !metric);
+  unitMetricBtn.classList.toggle('is-active', metric);
+  computeBudget();
+}
+unitImperialBtn.addEventListener('click', () => setUnitMode(false));
+unitMetricBtn.addEventListener('click', () => setUnitMode(true));
+
+function computeBudget() {
+  const age = parseFloat(bAge.value);
+  let weightKg, heightCm;
+  if (isMetric) {
+    weightKg = parseFloat(bWeightKg.value);
+    heightCm = parseFloat(bHeightCm.value);
+  } else {
+    const weightLbs = parseFloat(bWeightLbs.value);
+    const feet   = parseFloat(bHeightFt.value) || 0;
+    const inches = parseFloat(bHeightIn.value) || 0;
+    weightKg = weightLbs * 0.453592;
+    heightCm = ((feet * 12) + inches) * 2.54;
+  }
+  if (!age || !weightKg || !heightCm) {
+    bCaloriesEl.textContent = '–';
+    bDailyCarbsEl.textContent = '–';
+    bPerMealCarbsEl.textContent = '–';
+    return;
+  }
+  const sexOffset = bSex.value === 'male' ? 5 : -161;
+  const bmr = (10 * weightKg) + (6.25 * heightCm) - (5 * age) + sexOffset;
+  const tdee = bmr * parseFloat(bActivity.value);
+  const adjustedCalories = Math.max(1200, tdee + parseFloat(bGoal.value));
+  const carbGrams = (adjustedCalories * parseFloat(bApproach.value)) / 4;
+  const perMeal = carbGrams / parseFloat(bMeals.value);
+
+  bCaloriesEl.innerHTML = Math.round(adjustedCalories) + '<small> kcal</small>';
+  bDailyCarbsEl.innerHTML = Math.round(carbGrams) + '<small>g</small>';
+  bPerMealCarbsEl.innerHTML = Math.round(perMeal) + '<small>g</small>';
+}
+[bAge, bSex, bWeightLbs, bWeightKg, bHeightFt, bHeightIn, bHeightCm, bActivity, bGoal, bApproach, bMeals].forEach(el => el.addEventListener('input', computeBudget));
+</script>
+</body>
+</html>
