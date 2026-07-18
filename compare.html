@@ -98,6 +98,11 @@
     table.cmp { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 640px; }
     table.cmp th, table.cmp td { padding: 13px 16px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
     table.cmp th:first-child, table.cmp td:first-child { white-space: normal; min-width: 160px; }
+    /* Used where cell text is long-form (the pricing table's cost columns) —
+       wraps to a second line instead of forcing a horizontal scrollbar. */
+    table.cmp.cmp-wrap { min-width: 0; }
+    table.cmp.cmp-wrap th, table.cmp.cmp-wrap td { white-space: normal; }
+    table.cmp.cmp-wrap td:nth-child(2), table.cmp.cmp-wrap td:nth-child(3) { min-width: 200px; }
     table.cmp thead th { background: var(--bg); color: var(--muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.4px; font-weight: 700; }
     table.cmp tbody tr:last-child td { border-bottom: none; }
     table.cmp tbody tr.is-us { background: linear-gradient(90deg, rgba(249,115,22,0.07), rgba(249,115,22,0.02)); }
@@ -215,7 +220,7 @@
     <h2>Pricing, side by side</h2>
     <p class="card-sub">GlucoBeacon is the only app on this list with a one-time lifetime option — everything else here is a recurring subscription for as long as you use it. And "Free" below isn't the whole story: <a href="#real-cost">see the Real all-in cost column</a> — every one of these apps still needs you to test with something, and that something is rarely free.</p>
     <div class="table-scroll">
-      <table class="cmp">
+      <table class="cmp cmp-wrap">
         <thead>
           <tr><th>App</th><th>App price</th><th id="real-cost">Real all-in cost/mo*</th></tr>
         </thead>
