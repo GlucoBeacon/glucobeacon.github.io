@@ -27,18 +27,26 @@
 .nutrition-label { font-size: 0.76rem; color: var(--muted); margin-top: 2px; }
 
 /* ─── INGREDIENTS ──────────────────────────────────── */
-.ingredient-list { list-style: none; margin: 0 0 18px; }
+.ingredient-list {
+  list-style: none; margin: 0 0 24px;
+  background: var(--white); border: 1.5px solid var(--border); border-radius: 12px;
+  padding: 4px 22px; box-shadow: 0 2px 8px rgba(15,23,42,0.04);
+}
 .ingredient-list li {
-  display: flex; align-items: baseline; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--border);
+  display: flex; align-items: baseline; gap: 10px; padding: 12px 0; border-bottom: 1px solid var(--border);
   font-size: 1.02rem; color: var(--text);
 }
 .ingredient-list li:last-child { border-bottom: none; }
 .ingredient-qty { font-weight: 700; color: var(--navy); min-width: 64px; flex-shrink: 0; }
 
 /* ─── INSTRUCTIONS ─────────────────────────────────── */
-.instruction-list { list-style: none; margin: 0 0 18px; counter-reset: step; }
+.instruction-list {
+  list-style: none; margin: 0 0 24px; counter-reset: step;
+  background: var(--white); border: 1.5px solid var(--border); border-radius: 12px;
+  padding: 4px 22px; box-shadow: 0 2px 8px rgba(15,23,42,0.04);
+}
 .instruction-list li {
-  display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border);
+  display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--border);
   font-size: 1.02rem; color: var(--text); line-height: 1.7;
 }
 .instruction-list li:last-child { border-bottom: none; }
