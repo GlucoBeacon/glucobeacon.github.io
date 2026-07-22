@@ -195,6 +195,19 @@
     .hero-trust b { color: var(--orange-light); font-weight: 700; }
     .hero-trust .dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,0.3); }
 
+    .waitlist-form { display: flex; gap: 10px; flex-wrap: wrap; }
+    .waitlist-form .hp-field { position: absolute; left: -9999px; top: -9999px; opacity: 0; pointer-events: none; }
+    .waitlist-form input[type="email"] {
+      font-family: inherit; font-size: 0.95rem; padding: 13px 18px; border-radius: 14px;
+      border: 1.5px solid rgba(255,255,255,0.28); background: rgba(255,255,255,0.08);
+      color: var(--white); min-width: 240px;
+    }
+    .waitlist-form input[type="email"]::placeholder { color: rgba(255,255,255,0.5); }
+    .waitlist-form input[type="email"]:focus { outline: none; border-color: var(--orange); background: rgba(255,255,255,0.12); }
+    .waitlist-status { font-size: 0.86rem; margin-top: -10px; margin-bottom: 26px; min-height: 1.2em; }
+    .waitlist-status.ok { color: #86EFAC; }
+    .waitlist-status.err { color: #FCA5A5; }
+
     .hero-visual { flex: 1; display: flex; align-items: center; justify-content: center; min-height: 420px; }
     .phone-frame { position: relative; width: 270px; }
     .phone-frame img {
@@ -355,12 +368,13 @@
     </button>
     <div class="nav-menu" id="navMenu">
       <a href="features.html">Features</a>
+      <a href="recipes/index.html">Recipes</a>
       <a href="carb-calculator.html">Carb Calculator</a>
       <a href="compare.html">Compare</a>
       <a href="#pro">Pricing</a>
       <a href="#privacy">Privacy</a>
       <a href="blog/index.html">Blog</a>
-      <a class="nav-cta" href="mailto:admin@glucobeacon.com">Get Notified</a>
+      <a class="nav-cta" href="#waitlist">Get Notified</a>
     </div>
   </nav>
 </header>
@@ -368,7 +382,7 @@
 <main id="main">
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="waitlist">
   <div class="hero-grid">
     <div class="hero-text">
       <div class="hero-eyebrow"><span></span>Diabetes App · Blood Sugar &amp; A1C Tracker</div>
@@ -379,8 +393,16 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg>
           Coming Soon on Google Play
         </span>
-        <a class="btn-ghost" href="mailto:admin@glucobeacon.com" style="color:rgba(255,255,255,0.75); border-color: rgba(255,255,255,0.3);">Get notified at launch →</a>
       </div>
+      <form id="waitlistForm" class="waitlist-form" novalidate>
+        <div class="hp-field" aria-hidden="true">
+          <label for="wlWebsite">Leave this field empty</label>
+          <input type="text" id="wlWebsite" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+        <input type="email" id="wlEmail" placeholder="Enter your email" required autocomplete="email" />
+        <button type="submit" class="btn btn-primary" id="wlSubmitBtn">Notify me at launch</button>
+      </form>
+      <div id="wlStatus" class="waitlist-status" role="status"></div>
       <div class="hero-trust">
         <b>14 days of Pro, free at launch</b><span class="dot"></span>No account required<span class="dot"></span>Built for Type 1, Type 2 &amp; Pre-Diabetes
       </div>
@@ -397,7 +419,7 @@
   <div class="stats-float reveal">
     <div class="stat"><div class="stat-num">176<span class="accent2">+</span></div><div class="stat-label">Foods with GI Data</div></div>
     <div class="stat"><div class="stat-num">53</div><div class="stat-label">Restaurant Chains</div></div>
-    <div class="stat"><div class="stat-num">3,500<span class="accent2">+</span></div><div class="stat-label">Menu Items Scored</div></div>
+    <div class="stat"><div class="stat-num">3,700<span class="accent2">+</span></div><div class="stat-label">Menu Items Scored</div></div>
     <div class="stat"><div class="stat-num">18</div><div class="stat-label">Workout Routines</div></div>
     <div class="stat"><div class="stat-num">0</div><div class="stat-label">Health Records Sold</div></div>
   </div>
@@ -865,6 +887,7 @@
       <h5>Free Tools</h5>
       <a href="carb-calculator.html">Carb Calculator</a>
       <a href="compare.html">Compare</a>
+      <a href="recipes/index.html">Recipes</a>
       <a href="blog/index.html">Blog</a>
     </div>
     <div class="footer-col">

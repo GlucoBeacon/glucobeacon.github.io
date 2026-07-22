@@ -109,4 +109,49 @@
       });
     });
   }
+
+  // Pre-launch waitlist signup (hero form on index.html)
+  var waitlistForm = document.getElementById('waitlistForm');
+  if (waitlistForm) {
+    var WAITLIST_URL = 'https://us-central1-glucobeacon.cloudfunctions.net/subscribeWaitlist';
+    var wlStatus = document.getElementById('wlStatus');
+    var wlSubmitBtn = document.getElementById('wlSubmitBtn');
+
+    waitlistForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      wlStatus.className = 'waitlist-status';
+      wlStatus.textContent = '';
+
+      var email = document.getElementById('wlEmail').value;
+      var website = document.getElementById('wlWebsite').value; // honeypot
+
+      wlSubmitBtn.disabled = true;
+      wlSubmitBtn.textContent = 'Sending…';
+
+      fetch(WAITLIST_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, website: website }),
+      })
+        .then(function (res) { return res.json().then(function (data) { return { ok: res.ok, data: data }; }); })
+        .then(function (result) {
+          if (!result.ok || !result.data.success) {
+            throw new Error((result.data && result.data.error) || 'Something went wrong. Please try again.');
+          }
+          wlStatus.className = 'waitlist-status ok';
+          wlStatus.textContent = result.data.alreadySubscribed
+            ? "You're already on the list — we'll email you at launch."
+            : "You're on the list! We'll email you the moment GlucoBeacon launches.";
+          waitlistForm.reset();
+          wlSubmitBtn.disabled = false;
+          wlSubmitBtn.textContent = 'Notify me at launch';
+        })
+        .catch(function (err) {
+          wlStatus.className = 'waitlist-status err';
+          wlStatus.textContent = err.message || 'Something went wrong. Please try again.';
+          wlSubmitBtn.disabled = false;
+          wlSubmitBtn.textContent = 'Notify me at launch';
+        });
+    });
+  }
 })();
