@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Shopping List | GlucoBeacon</title>
+  <meta name="description" content="Review the recipes you've picked and generate a QR code the GlucoBeacon app can scan to add every ingredient to your Shopping List at once." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/png" href="../img/icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="beacon-bg" aria-hidden="true">
+  <div class="beacon-frame">
+    <img src="../img/beacon-hero.jpg" alt="" />
+    <div class="beacon-lamp"></div>
+    <div class="beacon-beam"></div>
+  </div>
+</div>
+
+<nav>
+  <a class="nav-brand" href="../index.html">
+    <img src="../img/icon.png" alt="GlucoBeacon logo" />
+    <span>GlucoBeacon</span>
+  </a>
+  <div class="nav-links">
+    <a href="../features.html">Features</a>
+    <a href="../index.html#pro">Pro</a>
+    <a href="index.html">Food Science</a>
+    <a href="../restaurants/index.html">Restaurants</a>
+    <a href="../blog/index.html">Blog</a>
+    <a href="mailto:admin@glucobeacon.com">Contact</a>
+  </div>
+  <span class="nav-badge">Coming Soon</span>
+</nav>
+
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Food Science</a> / Shopping List</div>
+    <div class="article-eyebrow">Your Picks</div>
+    <h1>Shopping List</h1>
+    <div class="article-meta">Scan the QR code in the GlucoBeacon app to add everything at once</div>
+  </div>
+</div>
+
+<div class="article-body">
+
+  <div id="cartEmpty" style="display:none;">
+    <p>Your list is empty. Browse the <a href="index.html">recipe hub</a> and tap "Add to Shopping List" on any recipe you want, then come back here.</p>
+  </div>
+
+  <div id="cartFilled" style="display:none;">
+    <h2>Recipes in your list</h2>
+    <div id="cartItems"></div>
+
+    <h2>Get it into the app</h2>
+    <p>Tap "Generate QR Code" below, then in the GlucoBeacon app open Shopping List and tap the QR scan icon in the top bar. Every ingredient across all these recipes gets added at once (already-combined quantities where recipes share an ingredient).</p>
+
+    <button class="cart-toggle-btn" id="generateBtn" style="max-width:320px;">Generate QR Code</button>
+    <div id="qrResult"></div>
+  </div>
+
+  <div class="callout">
+    <div class="callout-label">Not on your phone right now?</div>
+    <p>This list is saved in your browser, so it'll still be here next time you visit on this device. The QR code only works once you're ready to scan it in the app.</p>
+  </div>
+
+</div>
+
+<div class="back-link"><a href="index.html">&larr; Back to all recipes</a></div>
+
+<footer>
+  <div class="footer-brand">
+    <img src="../img/icon.png" alt="GlucoBeacon" />
+    <span>GlucoBeacon</span>
+  </div>
+  <p>&copy; 2026 GAMZ Holdings LLC. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="https://glucobeacon.github.io/privacy/">Privacy Policy</a>
+    <a href="mailto:admin@glucobeacon.com">Contact</a>
+  </div>
+</footer>
+
+<script src="js/qrcode.js"></script>
+<script src="js/shopping-cart.js"></script>
+<script src="js/shopping-list-page.js"></script>
+
+</body>
+</html>

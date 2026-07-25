@@ -134,3 +134,38 @@
 .diet-science-sources { font-size: 0.8rem; color: var(--muted); margin-top: 14px; }
 .diet-science-sources a { color: var(--orange2); text-decoration: none; }
 .diet-science-sources a:hover { text-decoration: underline; }
+
+/* ─── SHOPPING-LIST CART (floating pill + toggle button) ────────────── */
+
+.gb-cart-pill {
+  position: fixed; bottom: 20px; right: 20px; z-index: 40;
+  background: var(--navy); color: var(--white); text-decoration: none;
+  padding: 12px 20px; border-radius: 999px; font-size: 0.88rem; font-weight: 700;
+  box-shadow: 0 8px 24px rgba(30,58,95,0.35); transition: transform 0.2s;
+}
+.gb-cart-pill:hover { transform: translateY(-2px); }
+
+.cart-toggle-btn {
+  display: block; width: 100%; margin: 18px 0; padding: 13px 20px;
+  border-radius: 10px; border: 1.5px solid var(--orange); background: var(--white);
+  color: var(--orange2); font-size: 0.95rem; font-weight: 700; font-family: inherit;
+  cursor: pointer; transition: background 0.2s, color 0.2s;
+}
+.cart-toggle-btn:hover { background: var(--orange); color: var(--white); }
+.cart-toggle-btn.is-added { background: var(--orange); color: var(--white); border-color: var(--orange); }
+
+.cart-list-item {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 14px 16px; background: var(--white); border: 1px solid var(--border);
+  border-radius: 10px; margin-bottom: 10px;
+}
+.cart-list-item a { color: var(--text); font-weight: 700; text-decoration: none; font-size: 0.98rem; }
+.cart-list-item a:hover { color: var(--orange2); }
+.cart-remove-btn {
+  background: none; border: none; color: var(--muted); font-size: 0.85rem;
+  cursor: pointer; font-family: inherit; padding: 4px 8px;
+}
+.cart-remove-btn:hover { color: var(--danger, #DC2626); }
+
+#qrResult { text-align: center; margin: 24px 0; }
+#qrResult img { border-radius: 12px; border: 1px solid var(--border); }
