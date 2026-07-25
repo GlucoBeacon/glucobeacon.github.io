@@ -79,6 +79,9 @@
 }
 .recipe-filter-btn:hover { border-color: var(--orange); }
 .recipe-filter-btn.is-active { background: var(--orange); border-color: var(--orange); color: var(--white); }
+.recipe-filter-bar-secondary { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); margin-bottom: 8px; }
+.recipe-filter-bar-secondary .recipe-filter-btn { font-size: 0.78rem; font-weight: 600; padding: 6px 14px; color: var(--muted); }
+.recipe-filter-bar-secondary .recipe-filter-btn.is-active { background: var(--navy); border-color: var(--navy); color: var(--white); }
 .recipe-grid {
   max-width: 1040px; margin: 0 auto; padding: 40px 5% 56px;
   display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;
