@@ -154,4 +154,77 @@
         });
     });
   }
+
+  // Local-currency price estimate (Pricing section, index.html). Detects
+  // currency from the visitor's browser locale -- deliberately not IP
+  // geolocation, so this adds zero network calls beyond the rate fetch
+  // itself and never sends anyone's IP to a third party. US/unrecognized
+  // locales just keep showing the plain USD price, which is already
+  // correct and complete on its own -- this is a progressive addition,
+  // not something the page depends on.
+  var priceEls = document.querySelectorAll('[data-usd]');
+  if (priceEls.length) {
+    var REGION_CURRENCY = {
+      // Eurozone
+      DE: 'EUR', FR: 'EUR', IT: 'EUR', ES: 'EUR', PT: 'EUR', NL: 'EUR', BE: 'EUR', AT: 'EUR',
+      IE: 'EUR', FI: 'EUR', GR: 'EUR', SK: 'EUR', SI: 'EUR', LU: 'EUR', MT: 'EUR', CY: 'EUR',
+      EE: 'EUR', LV: 'EUR', LT: 'EUR', HR: 'EUR',
+      // Rest of Europe
+      GB: 'GBP', CH: 'CHF', SE: 'SEK', NO: 'NOK', DK: 'DKK', PL: 'PLN', CZ: 'CZK', HU: 'HUF',
+      RO: 'RON', BG: 'BGN', IS: 'ISK', TR: 'TRY',
+      // Asia
+      JP: 'JPY', CN: 'CNY', IN: 'INR', KR: 'KRW', SG: 'SGD', HK: 'HKD', TH: 'THB', ID: 'IDR',
+      MY: 'MYR', PH: 'PHP', IL: 'ILS',
+      // Americas
+      CA: 'CAD', MX: 'MXN', BR: 'BRL',
+      // Oceania / Africa
+      AU: 'AUD', NZ: 'NZD', ZA: 'ZAR',
+    };
+
+    var region = (navigator.language || '').split('-')[1];
+    var currency = region ? REGION_CURRENCY[region.toUpperCase()] : null;
+
+    if (currency) {
+      var applyRate = function (rate) {
+        if (!rate) return;
+        priceEls.forEach(function (el) {
+          var usd = parseFloat(el.getAttribute('data-usd'));
+          if (!usd) return;
+          var converted;
+          try {
+            converted = (usd * rate).toLocaleString(undefined, {
+              style: 'currency', currency: currency, maximumFractionDigits: 2,
+            });
+          } catch (e) {
+            return; // unsupported currency code for Intl in this browser -- skip silently
+          }
+          var note = document.createElement('span');
+          note.className = 'price-fx-note';
+          note.textContent = '≈ ' + converted;
+          el.appendChild(note);
+        });
+        var disclaimer = document.getElementById('priceFxDisclaimer');
+        if (disclaimer) disclaimer.hidden = false;
+      };
+
+      var CACHE_KEY = 'gb_fx_' + currency;
+      var CACHE_MS = 24 * 60 * 60 * 1000;
+      var cached = null;
+      try { cached = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null'); } catch (e) {}
+
+      if (cached && (Date.now() - cached.t) < CACHE_MS) {
+        applyRate(cached.rate);
+      } else {
+        fetch('https://api.frankfurter.dev/v1/latest?from=USD&to=' + currency)
+          .then(function (res) { return res.json(); })
+          .then(function (data) {
+            var rate = data && data.rates && data.rates[currency];
+            if (!rate) return;
+            try { localStorage.setItem(CACHE_KEY, JSON.stringify({ rate: rate, t: Date.now() })); } catch (e) {}
+            applyRate(rate);
+          })
+          .catch(function () { /* silently keep USD-only display */ });
+      }
+    }
+  }
 })();

@@ -154,14 +154,20 @@
   <h2>Why this fits a diabetes-friendly diet</h2>
   <p>At 1g of carbs per serving, it fits comfortably within most low-carb diabetes meal plans, and its estimated glycemic index of ~10 means the carbs it does have tend to digest slowly rather than spiking blood sugar fast, and 16g of protein per serving also helps slow digestion and blunt any post-meal rise.</p>
 
-  <h2>Ingredients</h2>
+  <div class="ingredients-head">
+    <h2>Ingredients</h2>
+    <div class="unit-toggle-row" role="group" aria-label="Measurement units">
+      <button type="button" class="unit-toggle-btn" data-unit="us" onclick="setGbUnits('us')">US</button>
+      <button type="button" class="unit-toggle-btn" data-unit="metric" onclick="setGbUnits('metric')">Metric</button>
+    </div>
+  </div>
   <ul class="ingredient-list">
-    <li><span class="ingredient-qty">6 large</span> eggs</li>
-    <li><span class="ingredient-qty">4 slice</span> bacon</li>
-    <li><span class="ingredient-qty">1/2 cup</span> cheddar cheese</li>
-    <li><span class="ingredient-qty">2 tbsp</span> heavy cream</li>
-    <li><span class="ingredient-qty">1 tbsp</span> chives</li>
-    <li><span class="ingredient-qty">1/4 tsp</span> black pepper</li>
+    <li><span class="ingredient-qty qty-us">6 large</span><span class="ingredient-qty qty-metric" hidden>6 large</span> eggs</li>
+    <li><span class="ingredient-qty qty-us">4 slice</span><span class="ingredient-qty qty-metric" hidden>4 slice</span> bacon</li>
+    <li><span class="ingredient-qty qty-us">1/2 cup</span><span class="ingredient-qty qty-metric" hidden>120 ml</span> cheddar cheese</li>
+    <li><span class="ingredient-qty qty-us">2 tbsp</span><span class="ingredient-qty qty-metric" hidden>30 ml</span> heavy cream</li>
+    <li><span class="ingredient-qty qty-us">1 tbsp</span><span class="ingredient-qty qty-metric" hidden>15 ml</span> chives</li>
+    <li><span class="ingredient-qty qty-us">1/4 tsp</span><span class="ingredient-qty qty-metric" hidden>1 ml</span> black pepper</li>
   </ul>
 
   <h2>Instructions</h2>
@@ -199,6 +205,7 @@
 
 <script src="js/qrcode.js"></script>
 <script src="js/shopping-cart.js"></script>
+<script src="js/units.js"></script>
 
 </body>
 </html>

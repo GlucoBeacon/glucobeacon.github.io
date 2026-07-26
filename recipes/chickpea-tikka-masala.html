@@ -152,17 +152,23 @@
   <h2>Why this fits a diabetes-friendly diet</h2>
   <p>At 82g of carbs per serving, it&#x27;s worth pairing with protein or fat and watching portion size to keep the resulting blood sugar rise gradual, and its estimated glycemic index of ~45 means the carbs it does have tend to digest slowly rather than spiking blood sugar fast, and 18g of protein per serving also helps slow digestion and blunt any post-meal rise, and 14g of fiber per serving adds the same slowing effect.</p>
 
-  <h2>Ingredients</h2>
+  <div class="ingredients-head">
+    <h2>Ingredients</h2>
+    <div class="unit-toggle-row" role="group" aria-label="Measurement units">
+      <button type="button" class="unit-toggle-btn" data-unit="us" onclick="setGbUnits('us')">US</button>
+      <button type="button" class="unit-toggle-btn" data-unit="metric" onclick="setGbUnits('metric')">Metric</button>
+    </div>
+  </div>
   <ul class="ingredient-list">
-    <li><span class="ingredient-qty">1 1/2 cup</span> chickpeas</li>
-    <li><span class="ingredient-qty">1 cup</span> diced tomatoes</li>
-    <li><span class="ingredient-qty">1/2 cup</span> coconut milk</li>
-    <li><span class="ingredient-qty">1/2 medium</span> onion</li>
-    <li><span class="ingredient-qty">2 clove</span> garlic</li>
-    <li><span class="ingredient-qty">1 tsp</span> ginger</li>
-    <li><span class="ingredient-qty">1 1/2 tsp</span> garam masala</li>
-    <li><span class="ingredient-qty">1/2 cup</span> brown rice</li>
-    <li><span class="ingredient-qty">1 tbsp</span> olive oil</li>
+    <li><span class="ingredient-qty qty-us">1 1/2 cup</span><span class="ingredient-qty qty-metric" hidden>355 ml</span> chickpeas</li>
+    <li><span class="ingredient-qty qty-us">1 cup</span><span class="ingredient-qty qty-metric" hidden>235 ml</span> diced tomatoes</li>
+    <li><span class="ingredient-qty qty-us">1/2 cup</span><span class="ingredient-qty qty-metric" hidden>120 ml</span> coconut milk</li>
+    <li><span class="ingredient-qty qty-us">1/2 medium</span><span class="ingredient-qty qty-metric" hidden>1/2 medium</span> onion</li>
+    <li><span class="ingredient-qty qty-us">2 clove</span><span class="ingredient-qty qty-metric" hidden>2 clove</span> garlic</li>
+    <li><span class="ingredient-qty qty-us">1 tsp</span><span class="ingredient-qty qty-metric" hidden>5 ml</span> ginger</li>
+    <li><span class="ingredient-qty qty-us">1 1/2 tsp</span><span class="ingredient-qty qty-metric" hidden>7 ml</span> garam masala</li>
+    <li><span class="ingredient-qty qty-us">1/2 cup</span><span class="ingredient-qty qty-metric" hidden>120 ml</span> brown rice</li>
+    <li><span class="ingredient-qty qty-us">1 tbsp</span><span class="ingredient-qty qty-metric" hidden>15 ml</span> olive oil</li>
   </ul>
 
   <h2>Instructions</h2>
@@ -199,6 +205,7 @@
 
 <script src="js/qrcode.js"></script>
 <script src="js/shopping-cart.js"></script>
+<script src="js/units.js"></script>
 
 </body>
 </html>

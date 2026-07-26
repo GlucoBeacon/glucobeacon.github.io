@@ -139,12 +139,18 @@
   <h2>Why this fits a diabetes-friendly diet</h2>
   <p>At 21g of carbs per serving, it&#x27;s worth pairing with protein or fat and watching portion size to keep the resulting blood sugar rise gradual, and its estimated glycemic index of ~40 means the carbs it does have tend to digest slowly rather than spiking blood sugar fast.</p>
 
-  <h2>Ingredients</h2>
+  <div class="ingredients-head">
+    <h2>Ingredients</h2>
+    <div class="unit-toggle-row" role="group" aria-label="Measurement units">
+      <button type="button" class="unit-toggle-btn" data-unit="us" onclick="setGbUnits('us')">US</button>
+      <button type="button" class="unit-toggle-btn" data-unit="metric" onclick="setGbUnits('metric')">Metric</button>
+    </div>
+  </div>
   <ul class="ingredient-list">
-    <li><span class="ingredient-qty">2 whole</span> orange</li>
-    <li><span class="ingredient-qty">1/2 tsp</span> cinnamon</li>
-    <li><span class="ingredient-qty">2 tbsp</span> pistachios</li>
-    <li><span class="ingredient-qty">1 tsp</span> honey</li>
+    <li><span class="ingredient-qty qty-us">2 whole</span><span class="ingredient-qty qty-metric" hidden>2 whole</span> orange</li>
+    <li><span class="ingredient-qty qty-us">1/2 tsp</span><span class="ingredient-qty qty-metric" hidden>2 ml</span> cinnamon</li>
+    <li><span class="ingredient-qty qty-us">2 tbsp</span><span class="ingredient-qty qty-metric" hidden>30 ml</span> pistachios</li>
+    <li><span class="ingredient-qty qty-us">1 tsp</span><span class="ingredient-qty qty-metric" hidden>5 ml</span> honey</li>
   </ul>
 
   <h2>Instructions</h2>
@@ -179,6 +185,7 @@
 
 <script src="js/qrcode.js"></script>
 <script src="js/shopping-cart.js"></script>
+<script src="js/units.js"></script>
 
 </body>
 </html>

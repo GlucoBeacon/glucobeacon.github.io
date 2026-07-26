@@ -312,6 +312,9 @@
     .price-card.best .plabel { color: rgba(255,255,255,0.6); }
     .price-card.best .pnum { color: var(--white); }
     .price-card.best .psub { color: rgba(255,255,255,0.6); }
+    .price-fx-note { display: block; font-size: 0.78rem; font-weight: 600; color: var(--muted); margin-top: 3px; }
+    .price-card.best .price-fx-note { color: rgba(255,255,255,0.55); }
+    .price-fx-disclaimer { text-align: center; font-size: 0.78rem; color: var(--muted); margin: -8px 0 24px; }
     .best-ribbon { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--orange); color: var(--white); font-size: 0.68rem; font-weight: 800; padding: 4px 13px; border-radius: 20px; white-space: nowrap; letter-spacing: 0.4px; }
     @media (max-width: 560px) { .price-card.best { transform: none; } }
 
@@ -717,21 +720,22 @@
     <div class="price-cards reveal">
       <div class="price-card">
         <div class="plabel">Monthly</div>
-        <div class="pnum">$4.99</div>
+        <div class="pnum" data-usd="4.99">$4.99</div>
         <div class="psub">per month, after your free 14 days</div>
       </div>
       <div class="price-card best">
         <div class="best-ribbon">Best Value</div>
         <div class="plabel">Annual</div>
-        <div class="pnum">$49.99</div>
+        <div class="pnum" data-usd="49.99">$49.99</div>
         <div class="psub">per year · save 17% · 14 days free</div>
       </div>
       <div class="price-card">
         <div class="plabel">Lifetime</div>
-        <div class="pnum">$79.99</div>
+        <div class="pnum" data-usd="79.99">$79.99</div>
         <div class="psub">one-time · forever</div>
       </div>
     </div>
+    <p class="price-fx-disclaimer" id="priceFxDisclaimer" hidden>Billed in USD via Google Play. Local-currency amounts shown are estimates — your Play Store checkout shows the exact price in your currency.</p>
 
     <div class="pro-table-wrap reveal">
       <table class="pro-table">

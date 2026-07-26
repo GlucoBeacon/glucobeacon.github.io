@@ -148,14 +148,20 @@
   <h2>Why this fits a diabetes-friendly diet</h2>
   <p>With only 18g of carbs per serving, it&#x27;s a lighter-carb option without needing a strict low-carb framing, and its estimated glycemic index of ~28 means the carbs it does have tend to digest slowly rather than spiking blood sugar fast, and 5g of fiber per serving adds the same slowing effect.</p>
 
-  <h2>Ingredients</h2>
+  <div class="ingredients-head">
+    <h2>Ingredients</h2>
+    <div class="unit-toggle-row" role="group" aria-label="Measurement units">
+      <button type="button" class="unit-toggle-btn" data-unit="us" onclick="setGbUnits('us')">US</button>
+      <button type="button" class="unit-toggle-btn" data-unit="metric" onclick="setGbUnits('metric')">Metric</button>
+    </div>
+  </div>
   <ul class="ingredient-list">
-    <li><span class="ingredient-qty">3/4 cup</span> chickpeas</li>
-    <li><span class="ingredient-qty">1 tsp</span> olive oil</li>
-    <li><span class="ingredient-qty">1/2 tsp</span> cumin</li>
-    <li><span class="ingredient-qty">1/2 tsp</span> smoked paprika</li>
-    <li><span class="ingredient-qty">1/4 tsp</span> garlic powder</li>
-    <li><span class="ingredient-qty">1/4 tsp</span> black pepper</li>
+    <li><span class="ingredient-qty qty-us">3/4 cup</span><span class="ingredient-qty qty-metric" hidden>175 ml</span> chickpeas</li>
+    <li><span class="ingredient-qty qty-us">1 tsp</span><span class="ingredient-qty qty-metric" hidden>5 ml</span> olive oil</li>
+    <li><span class="ingredient-qty qty-us">1/2 tsp</span><span class="ingredient-qty qty-metric" hidden>2 ml</span> cumin</li>
+    <li><span class="ingredient-qty qty-us">1/2 tsp</span><span class="ingredient-qty qty-metric" hidden>2 ml</span> smoked paprika</li>
+    <li><span class="ingredient-qty qty-us">1/4 tsp</span><span class="ingredient-qty qty-metric" hidden>1 ml</span> garlic powder</li>
+    <li><span class="ingredient-qty qty-us">1/4 tsp</span><span class="ingredient-qty qty-metric" hidden>1 ml</span> black pepper</li>
   </ul>
 
   <h2>Instructions</h2>
@@ -192,6 +198,7 @@
 
 <script src="js/qrcode.js"></script>
 <script src="js/shopping-cart.js"></script>
+<script src="js/units.js"></script>
 
 </body>
 </html>

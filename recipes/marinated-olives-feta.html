@@ -141,14 +141,20 @@
   <h2>Why this fits a diabetes-friendly diet</h2>
   <p>At 3g of carbs per serving, it fits comfortably within most low-carb diabetes meal plans, and its estimated glycemic index of ~0 means the carbs it does have tend to digest slowly rather than spiking blood sugar fast.</p>
 
-  <h2>Ingredients</h2>
+  <div class="ingredients-head">
+    <h2>Ingredients</h2>
+    <div class="unit-toggle-row" role="group" aria-label="Measurement units">
+      <button type="button" class="unit-toggle-btn" data-unit="us" onclick="setGbUnits('us')">US</button>
+      <button type="button" class="unit-toggle-btn" data-unit="metric" onclick="setGbUnits('metric')">Metric</button>
+    </div>
+  </div>
   <ul class="ingredient-list">
-    <li><span class="ingredient-qty">1 cup</span> kalamata olives</li>
-    <li><span class="ingredient-qty">4 oz</span> low-sodium feta cheese</li>
-    <li><span class="ingredient-qty">3 tbsp</span> olive oil</li>
-    <li><span class="ingredient-qty">1 tsp</span> lemon zest</li>
-    <li><span class="ingredient-qty">1/4 tsp</span> red pepper flakes</li>
-    <li><span class="ingredient-qty">1/2 tsp</span> dried oregano</li>
+    <li><span class="ingredient-qty qty-us">1 cup</span><span class="ingredient-qty qty-metric" hidden>235 ml</span> kalamata olives</li>
+    <li><span class="ingredient-qty qty-us">4 oz</span><span class="ingredient-qty qty-metric" hidden>115 g</span> low-sodium feta cheese</li>
+    <li><span class="ingredient-qty qty-us">3 tbsp</span><span class="ingredient-qty qty-metric" hidden>45 ml</span> olive oil</li>
+    <li><span class="ingredient-qty qty-us">1 tsp</span><span class="ingredient-qty qty-metric" hidden>5 ml</span> lemon zest</li>
+    <li><span class="ingredient-qty qty-us">1/4 tsp</span><span class="ingredient-qty qty-metric" hidden>1 ml</span> red pepper flakes</li>
+    <li><span class="ingredient-qty qty-us">1/2 tsp</span><span class="ingredient-qty qty-metric" hidden>2 ml</span> dried oregano</li>
   </ul>
 
   <h2>Instructions</h2>
@@ -183,6 +189,7 @@
 
 <script src="js/qrcode.js"></script>
 <script src="js/shopping-cart.js"></script>
+<script src="js/units.js"></script>
 
 </body>
 </html>

@@ -133,10 +133,16 @@
   <h2>Why this fits a diabetes-friendly diet</h2>
   <p>With only 18g of carbs per serving, it&#x27;s a lighter-carb option without needing a strict low-carb framing, and its estimated glycemic index of ~25 means the carbs it does have tend to digest slowly rather than spiking blood sugar fast.</p>
 
-  <h2>Ingredients</h2>
+  <div class="ingredients-head">
+    <h2>Ingredients</h2>
+    <div class="unit-toggle-row" role="group" aria-label="Measurement units">
+      <button type="button" class="unit-toggle-btn" data-unit="us" onclick="setGbUnits('us')">US</button>
+      <button type="button" class="unit-toggle-btn" data-unit="metric" onclick="setGbUnits('metric')">Metric</button>
+    </div>
+  </div>
   <ul class="ingredient-list">
-    <li><span class="ingredient-qty">1 oz</span> dark chocolate</li>
-    <li><span class="ingredient-qty">1 oz</span> almonds</li>
+    <li><span class="ingredient-qty qty-us">1 oz</span><span class="ingredient-qty qty-metric" hidden>30 g</span> dark chocolate</li>
+    <li><span class="ingredient-qty qty-us">1 oz</span><span class="ingredient-qty qty-metric" hidden>30 g</span> almonds</li>
   </ul>
 
   <h2>Instructions</h2>
@@ -170,6 +176,7 @@
 
 <script src="js/qrcode.js"></script>
 <script src="js/shopping-cart.js"></script>
+<script src="js/units.js"></script>
 
 </body>
 </html>
