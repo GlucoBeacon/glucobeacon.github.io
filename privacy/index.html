@@ -44,10 +44,19 @@
     footer { font-size: 13px; color: #9ca3af; text-align: center; margin-top: 48px; }
     a { color: #2563eb; text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .lang-switch { text-align: right; margin-bottom: 8px; font-size: 14px; }
+    .lang-switch a { font-weight: 600; }
   </style>
+  <script>
+    if (!location.search.includes('lang=en') && navigator.language && navigator.language.toLowerCase().startsWith('es')) {
+      location.replace('/privacy/es/');
+    }
+  </script>
 </head>
 <body>
 <div class="container">
+
+  <div class="lang-switch"><a href="/privacy/es/">Español</a></div>
 
   <div class="logo">
     <div class="logo-mark">
