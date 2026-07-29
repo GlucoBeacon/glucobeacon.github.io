@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlucoBeacon — Control de Diabetes, Reinventado</title>
+  <meta name="description" content="GlucoBeacon es una app de gestión de diabetes privada y poderosa para Android. Registra tu azúcar en la sangre, estima tu A1C, descubre comidas seguras en restaurantes y crea hábitos saludables — todo en tu dispositivo." />
+  <link rel="canonical" href="https://glucobeacon.com/es/" />
+  <link rel="alternate" hreflang="en" href="https://glucobeacon.com/" />
+  <link rel="alternate" hreflang="es" href="https://glucobeacon.com/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://glucobeacon.com/" />
+  <link rel="icon" type="image/png" href="../img/icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GlucoBeacon — Control de Diabetes, Reinventado" />
+  <meta property="og:description" content="Una app privada de gestión de diabetes para Android, directo en tu dispositivo. Registra tu azúcar en la sangre, estima tu A1C, encuentra comidas seguras en restaurantes y crea hábitos saludables — sin nube, sin cuentas." />
+  <meta property="og:image" content="https://glucobeacon.com/img/screen-dashboard.png" />
+  <meta property="og:url" content="https://glucobeacon.com/es/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GlucoBeacon — Control de Diabetes, Reinventado" />
+  <meta name="twitter:description" content="Una app privada de gestión de diabetes para Android, directo en tu dispositivo. Registra tu azúcar en la sangre, estima tu A1C, encuentra comidas seguras en restaurantes y crea hábitos saludables — sin nube, sin cuentas." />
+  <meta name="twitter:image" content="https://glucobeacon.com/img/screen-dashboard.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "GlucoBeacon",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Android",
+    "description": "Una app privada de seguimiento de diabetes y azúcar en la sangre para Android, directo en tu dispositivo. Registra lecturas de glucosa, estima tu A1C, encuentra comidas seguras en restaurantes, controla medicamentos, presión arterial, sueño y citas, y obtén un informe en PDF listo para tu médico — sin cuenta y sin subir tus datos de salud a la nube.",
+    "url": "https://glucobeacon.com/es/",
+    "offers": [
+      { "@type": "Offer", "name": "Mensual", "price": "4.99", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Anual", "price": "49.99", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "De por vida", "price": "79.99", "priceCurrency": "USD" }
+    ],
+    "publisher": { "@type": "Organization", "name": "GAMZ Holdings LLC" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Mis datos de salud realmente son privados, o eso es solo marketing?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No hay sistema de cuentas, y tus datos de salud — lecturas, medicamentos, citas, registros de comida — viven en una base de datos local en tu teléfono y nunca se suben automáticamente. Si quieres un respaldo, va a tu propio Google Drive, no al nuestro. Dos excepciones puntuales y reveladas: un reporte anónimo de fallos si la app se cierra inesperadamente (modelo del dispositivo y rastro del error, nunca tus datos de salud), y el mensaje o foto específico que envías al Asistente de IA o al Escaneo de Comida con IA, que no se almacena después." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué tan preciso es el Escaneo de Comida con IA?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Bueno para comidas frescas, caseras y de restaurante. Para productos empaquetados, el Escáner de Código de Barras obtiene datos nutricionales reales de Open Food Facts en lugar de estimarlos a partir de una foto. Un artículo mal identificado se puede quitar con un toque, recalculando el total al instante." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué pasa realmente si no actualizo a Pro?",
+        "acceptedAnswer": { "@type": "Answer", "text": "El registro de azúcar en la sangre, el seguimiento y recordatorios de medicamentos, el contador de pasos y el widget de pantalla de inicio son gratis para siempre, sin límite de prueba. Pro desbloquea historial de comidas, tendencias completas de A1C, asesor de restaurantes, biblioteca de ejercicios, asistente de IA y más — cada plan comienza con 14 días de Pro gratis." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Necesito un MCG para usar GlucoBeacon?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. GlucoBeacon está construida en torno al registro tradicional con punción digital, que sigue siendo la forma en que la mayoría de las personas con diabetes realmente se monitorean. La sincronización con Health Connect cubre pasos, peso, presión arterial, sueño y ejercicio. GlucoBeacon actualmente no ofrece transmisión en tiempo real de MCG." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo mostrarle GlucoBeacon a mi médico?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí — el Informe PDF para el Médico compila lecturas, estimación de A1C y patrones detectados en un reporte formateado para una cita real." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo funciona la prueba gratuita de 14 días?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Cada plan Pro, mensual o anual, comienza con 14 días de acceso completo gratis. Google Play requiere un método de pago registrado para iniciar la prueba, pero no se realiza ningún cargo hasta que termina, y se puede cancelar en cualquier momento antes de eso sin costo. Las compras de por vida son un pago único y no forman parte de la prueba." }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <style>
+    /* ─── PERSISTENT BEACON BACKDROP ──────────────────────────
+       The confirmed photo + revolving-beam effect (built and approved
+       as a standalone preview first), now installed as the literal
+       bottom layer of the page: fixed full-viewport, z-index BELOW
+       every section (not above, like the earlier icon version was).
+       Because every section below the hero (white cards, navy pillars,
+       etc.) paints its own opaque background in normal flow, they
+       naturally cover this on scroll -- it only shows through the
+       hero, where .hero's background is now a translucent scrim
+       instead of a solid fill. pointer-events:none throughout so nothing
+       here can ever intercept clicks. Lamp position (50%, 16.8% of the
+       photo) and the scaleX-flip sweep + synced lamp flash are carried
+       over unchanged from the approved preview -- a real lighthouse
+       lamp turns around a vertical axis and stays level, so the beam
+       shrinks to a flash and re-extends on the other side rather than
+       swinging up/down like a clock hand. */
+    .beacon-bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+    /* The photo and the lamp/beam overlay move together as one unit, shifted
+       down 130px (roughly the site-header + sticky subnav's combined height)
+       so the lamp clears that opaque strip instead of being covered by it.
+       Shifting the lamp on its own, without moving the photo underneath it,
+       would have unglued the light from the actual bulb in the image --
+       moving the whole frame keeps them pinned together. */
+    .beacon-frame { position: absolute; top: 130px; left: 0; width: 100%; height: 100vh; }
+    .beacon-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+    .beacon-lamp {
+      position: absolute; top: 16.8%; left: 50%; width: 46px; height: 46px; border-radius: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(255,251,235,1) 0%, rgba(253,214,150,0.9) 40%, rgba(249,168,90,0.5) 65%, rgba(249,168,90,0) 80%);
+      filter: blur(2px);
+      animation: beaconPulse 2.3s ease-in-out infinite, beaconFlash 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    .beacon-beam {
+      position: absolute; top: 16.8%; left: 50%; width: 46vw; max-width: 640px; height: 90px;
+      transform-origin: 0% 50%;
+      transform: translateY(-50%) scaleX(1);
+      background: linear-gradient(90deg,
+        rgba(255,251,235,0.95) 0%,
+        rgba(253,200,130,0.55) 40%,
+        rgba(253,200,130,0.15) 75%,
+        transparent 100%);
+      clip-path: polygon(0% 38%, 100% 0%, 100% 100%, 0% 62%);
+      filter: blur(6px);
+      animation: beaconSweep 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    @keyframes beaconSweep {
+      0%   { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+      22%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      25%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      28%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      50%  { transform: translateY(-50%) scaleX(-1);    opacity: 0.95; }
+      72%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      75%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      78%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      100% { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+    }
+    @keyframes beaconFlash {
+      0%, 20%, 30%, 70%, 80%, 100% { filter: blur(2px) brightness(1); }
+      25%, 75% { filter: blur(2px) brightness(1.9); }
+    }
+    @keyframes beaconPulse {
+      0%, 100% { opacity: 0.85; transform: translate(-50%, -50%) scale(1); }
+      50%      { opacity: 1;    transform: translate(-50%, -50%) scale(1.15); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .beacon-lamp, .beacon-beam { animation: none; }
+    }
+    #screenshots, #privacy {
+      background: linear-gradient(100deg, rgba(9,20,36,0.62) 0%, rgba(9,20,36,0.4) 50%, rgba(9,20,36,0.18) 100%);
+    }
+    #features, #tools, #faq {
+      background: rgba(246,248,251,0.5);
+    }
+
+    /* ─── HERO ─────────────────────────────────────────────── */
+    .hero {
+      position: relative; overflow: hidden;
+      background: linear-gradient(100deg, rgba(9,20,36,0.6) 0%, rgba(9,20,36,0.42) 45%, rgba(9,20,36,0.2) 75%, rgba(9,20,36,0.06) 100%);
+      color: var(--white);
+      padding: 76px 5% 120px;
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0; opacity: 0.5; pointer-events: none;
+      background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+      background-size: 26px 26px;
+      mask-image: radial-gradient(700px 500px at 30% 20%, black, transparent 75%);
+    }
+    .hero-grid { position: relative; max-width: var(--container); margin: 0 auto; display: flex; align-items: center; gap: 60px; }
+    .hero-text { flex: 1; max-width: 560px; }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(249,115,22,0.16); border: 1px solid rgba(249,115,22,0.4); color: var(--orange-light);
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase;
+      padding: 6px 15px; border-radius: 20px; margin-bottom: 26px;
+    }
+    .hero-eyebrow span { width: 6px; height: 6px; border-radius: 50%; background: var(--orange); }
+    .hero h1 { font-size: clamp(2.3rem, 5vw, 3.6rem); font-weight: 800; line-height: 1.12; letter-spacing: -1.2px; margin-bottom: 22px; }
+    .hero h1 .accent { background: linear-gradient(100deg, var(--orange-light), var(--orange)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .hero p.lead { font-size: 1.14rem; color: rgba(255,255,255,0.78); margin-bottom: 36px; max-width: 480px; line-height: 1.7; }
+    .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; margin-bottom: 36px; }
+    .hero-trust { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+    .hero-trust b { color: var(--orange-light); font-weight: 700; }
+    .hero-trust .dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,0.3); }
+
+    .waitlist-form { display: flex; gap: 10px; flex-wrap: wrap; }
+    .waitlist-form .hp-field { position: absolute; left: -9999px; top: -9999px; opacity: 0; pointer-events: none; }
+    .waitlist-form input[type="email"] {
+      font-family: inherit; font-size: 0.95rem; padding: 13px 18px; border-radius: 14px;
+      border: 1.5px solid rgba(255,255,255,0.28); background: rgba(255,255,255,0.08);
+      color: var(--white); min-width: 240px;
+    }
+    .waitlist-form input[type="email"]::placeholder { color: rgba(255,255,255,0.5); }
+    .waitlist-form input[type="email"]:focus { outline: none; border-color: var(--orange); background: rgba(255,255,255,0.12); }
+    .waitlist-status { font-size: 0.86rem; margin-top: -10px; margin-bottom: 26px; min-height: 1.2em; }
+    .waitlist-status.ok { color: #86EFAC; }
+    .waitlist-status.err { color: #FCA5A5; }
+
+    .hero-visual { flex: 1; display: flex; align-items: center; justify-content: center; min-height: 420px; }
+    .phone-frame { position: relative; width: 270px; }
+    .phone-frame img {
+      width: 100%; border-radius: 34px; border: 6px solid rgba(255,255,255,0.15); display: block;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    }
+    @media (prefers-reduced-motion: reduce) { .phone-frame img { animation: none; } }
+
+    .stats-float-wrap { position: relative; max-width: var(--container); margin: -64px auto 0; padding: 0 5%; z-index: 5; }
+    .stats-float {
+      background: var(--white); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg);
+      display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;
+      padding: 30px 5%;
+    }
+    .stat { text-align: center; }
+    .stat-num { font-size: 1.9rem; font-weight: 800; color: var(--navy); line-height: 1; }
+    .stat-num .accent2 { color: var(--orange); }
+    .stat-label { font-size: 0.78rem; color: var(--muted); font-weight: 600; margin-top: 6px; text-transform: uppercase; letter-spacing: 0.4px; }
+
+    /* ─── QUOTE ────────────────────────────────────────────── */
+    .quote-block { max-width: 820px; margin: 0 auto; display: flex; gap: 30px; align-items: flex-start; }
+    .quote-mark {
+      flex-shrink: 0; width: 58px; height: 58px; border-radius: 16px;
+      background: linear-gradient(135deg, var(--navy), var(--navy2)); color: var(--white);
+      display: flex; align-items: center; justify-content: center; font-size: 1.9rem; font-weight: 800;
+      box-shadow: var(--shadow-md);
+    }
+    .quote-block blockquote { font-size: 1.22rem; line-height: 1.65; font-weight: 500; margin-bottom: 18px; }
+    .quote-block blockquote b { color: var(--orange2); font-weight: 700; }
+    .quote-attr { display: flex; align-items: center; gap: 10px; font-size: 0.88rem; color: var(--muted); flex-wrap: wrap; }
+    .quote-attr strong { color: var(--navy); }
+    .quote-attr .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--border-strong); }
+    @media (max-width: 640px) { .quote-block { flex-direction: column; gap: 16px; } }
+
+    /* ─── WHO IT'S FOR ─────────────────────────────────────── */
+    .who-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 22px; }
+    .who-card { border-radius: var(--radius-lg); padding: 32px 28px; border: 1.5px solid var(--border); background: var(--white); transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease); }
+    .who-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .who-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 18px; }
+    .who-card.type1 .who-icon { background: #EFF6FF; }
+    .who-card.type2 .who-icon { background: #FFF7ED; }
+    .who-card.pre .who-icon   { background: #F0FDF4; }
+    .who-card h3 { font-size: 1.14rem; font-weight: 800; margin-bottom: 10px; color: var(--navy); }
+    .who-card p  { font-size: 0.9rem; color: var(--muted); line-height: 1.65; }
+
+    /* ─── SCREENSHOTS ──────────────────────────────────────── */
+    .showcase-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 32px; }
+    .showcase-tab {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); color: rgba(255,255,255,0.7);
+      font-family: inherit; font-size: 0.84rem; font-weight: 600; padding: 9px 18px; border-radius: 20px; cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+    .showcase-tab:hover { color: var(--white); border-color: rgba(255,255,255,0.4); }
+    .showcase-tab.is-active { background: var(--orange); border-color: var(--orange); color: var(--white); }
+    .showcase-scroll { display: flex; gap: 20px; overflow-x: auto; padding-bottom: 16px; scrollbar-width: thin; scrollbar-color: var(--orange) rgba(255,255,255,0.1); }
+    .showcase-scroll::-webkit-scrollbar { height: 5px; }
+    .showcase-scroll::-webkit-scrollbar-track { background: rgba(255,255,255,0.1); border-radius: 3px; }
+    .showcase-scroll::-webkit-scrollbar-thumb { background: var(--orange); border-radius: 3px; }
+    .showcase-item { flex: 0 0 194px; text-align: center; }
+    .showcase-item img { width: 194px; border-radius: 20px; border: 4px solid rgba(255,255,255,0.12); box-shadow: 0 16px 40px rgba(0,0,0,0.4); transition: transform 0.3s var(--ease); }
+    .showcase-item:hover img { transform: translateY(-6px); }
+    .showcase-caption { margin-top: 12px; font-size: 0.78rem; color: rgba(255,255,255,0.55); font-weight: 500; }
+
+    /* ─── TOOLS CROSS-LINK ─────────────────────────────────── */
+    .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+    .tool-card {
+      display: block; text-decoration: none; background: var(--white); border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg); padding: 30px; transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), border-color 0.3s;
+    }
+    .tool-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--orange); }
+    .tool-card .tile-icon { background: linear-gradient(135deg, #FFF3E8, #FFE4CC); }
+    .tool-card h3 { font-size: 1.08rem; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+    .tool-card p { font-size: 0.89rem; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
+    .tool-card .tool-link { font-size: 0.86rem; font-weight: 700; color: var(--orange2); display: inline-flex; align-items: center; gap: 6px; }
+    .tool-card:hover .tool-link { gap: 9px; }
+    .tool-link svg { transition: transform 0.2s; }
+
+    /* ─── PRICING ──────────────────────────────────────────── */
+    .trial-banner {
+      display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;
+      background: linear-gradient(120deg, #FFF3E8, #FFE4CC); border: 1.5px solid #FED7AA;
+      border-radius: var(--radius-lg); padding: 16px 24px; margin-bottom: 40px; text-align: center;
+      font-size: 0.95rem; font-weight: 700; color: var(--orange2);
+    }
+    .trial-banner span.sub { font-weight: 500; color: var(--muted); font-size: 0.85rem; }
+    .value-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px;
+      margin-bottom: 48px;
+    }
+    .value-chip {
+      display: flex; align-items: center; gap: 12px; background: var(--bg); border: 1px solid var(--border);
+      border-radius: 14px; padding: 14px 16px; font-size: 0.86rem; font-weight: 700; color: var(--text);
+    }
+    .value-chip .vic { font-size: 1.25rem; flex-shrink: 0; }
+    .price-cards { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-bottom: 24px; }
+    .price-card { background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius-lg); padding: 26px 30px; text-align: center; min-width: 175px; box-shadow: var(--shadow-sm); }
+    .price-card .plabel { font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 8px; }
+    .price-card .pnum { font-size: 2.1rem; font-weight: 800; color: var(--navy); }
+    .price-card .psub { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
+    .price-card.best { background: linear-gradient(160deg, var(--navy2), var(--navy)); border-color: var(--navy); position: relative; transform: scale(1.05); box-shadow: var(--shadow-navy); }
+    .price-card.best .plabel { color: rgba(255,255,255,0.6); }
+    .price-card.best .pnum { color: var(--white); }
+    .price-card.best .psub { color: rgba(255,255,255,0.6); }
+    .price-fx-note { display: block; font-size: 0.78rem; font-weight: 600; color: var(--muted); margin-top: 3px; }
+    .price-card.best .price-fx-note { color: rgba(255,255,255,0.55); }
+    .price-fx-disclaimer { text-align: center; font-size: 0.78rem; color: var(--muted); margin: -8px 0 24px; }
+    .best-ribbon { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--orange); color: var(--white); font-size: 0.68rem; font-weight: 800; padding: 4px 13px; border-radius: 20px; white-space: nowrap; letter-spacing: 0.4px; }
+    @media (max-width: 560px) { .price-card.best { transform: none; } }
+
+    .pro-table-wrap { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+    .pro-table { width: 100%; border-collapse: collapse; min-width: 640px; }
+    .pro-table thead th { background: var(--navy); color: var(--white); padding: 16px 22px; text-align: left; font-size: 0.86rem; font-weight: 700; }
+    .pro-table thead th:last-child { background: var(--orange); text-align: center; }
+    .pro-table tbody tr:nth-child(even) td { background: var(--bg); }
+    .pro-table td { padding: 13px 22px; font-size: 0.87rem; border-bottom: 1px solid var(--border); }
+    .pro-table td:nth-child(2), .pro-table td:nth-child(3) { text-align: center; }
+    .check { color: var(--good); font-weight: 700; }
+    .cross { color: #CBD5E1; }
+
+    /* ─── PRIVACY ──────────────────────────────────────────── */
+    .privacy-pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 20px; }
+    .pillar { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius-lg); padding: 30px 24px; text-align: center; transition: background 0.25s, transform 0.25s var(--ease); }
+    .pillar:hover { background: rgba(255,255,255,0.11); transform: translateY(-3px); }
+    .pillar-icon { width: 50px; height: 50px; margin: 0 auto 14px; border-radius: 13px; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+    .pillar h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; }
+    .pillar p { font-size: 0.83rem; color: rgba(255,255,255,0.6); line-height: 1.55; }
+
+    /* ─── CTA BAND ─────────────────────────────────────────── */
+    .cta-band { position: relative; overflow: hidden; background: linear-gradient(120deg, var(--orange2), var(--orange)); text-align: center; padding: 72px 5%; }
+    .cta-band::before, .cta-band::after { content: ''; position: absolute; border-radius: 50%; background: rgba(255,255,255,0.12); }
+    .cta-band::before { width: 300px; height: 300px; top: -140px; left: -80px; }
+    .cta-band::after { width: 220px; height: 220px; bottom: -120px; right: 5%; }
+    .cta-band h2 { position: relative; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; color: var(--white); margin-bottom: 12px; letter-spacing: -0.6px; }
+    .cta-band p { position: relative; color: rgba(255,255,255,0.9); font-size: 1.05rem; margin-bottom: 34px; }
+    .cta-band .btn { position: relative; }
+  </style>
+  <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+<div class="beacon-bg" aria-hidden="true">
+  <div class="beacon-frame">
+    <img src="../img/beacon-hero.jpg" alt="" />
+    <div class="beacon-lamp"></div>
+    <div class="beacon-beam"></div>
+  </div>
+</div>
+
+<a href="#main" class="skip-link">Saltar al contenido</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">
+      <img src="../img/icon.png" alt="Logo de GlucoBeacon" />
+      <span>GlucoBeacon<sup>&trade;</sup></span>
+    </a>
+    <span class="nav-badge">Próximamente</span>
+    <button class="nav-toggle" id="navToggle" aria-label="Alternar menú" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="features.html">Características</a>
+      <a href="recipes/index.html">Ciencia Alimentaria</a>
+      <a href="restaurants/index.html">Restaurantes</a>
+      <a href="carb-calculator.html">Calculadora de Carbohidratos</a>
+      <a href="compare.html">Comparar</a>
+      <a href="#pro">Precios</a>
+      <a href="#privacy">Privacidad</a>
+      <a href="blog/index.html">Blog</a>
+      <span id="lang-switch" class="nav-lang"></span>
+      <a class="nav-cta" href="#waitlist">Notificarme</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="waitlist">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <div class="hero-eyebrow"><span></span>App de Diabetes · Azúcar en la Sangre y A1C</div>
+      <h1>Tus Datos de Salud.<br />Tu Dispositivo.<br /><span class="accent">Tu Control.</span></h1>
+      <p class="lead">GlucoBeacon te da una imagen completa de tu diabetes — tendencias de azúcar en la sangre, estimaciones de A1C, guía de restaurantes, rutinas de ejercicio, historial de comidas y un coach de IA — todo almacenado de forma privada en tu teléfono. Sin nube. Sin cuentas. Sin comprometer nada.</p>
+      <div class="hero-cta">
+        <span class="btn btn-disabled">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2z"/><path d="M12 6v6l4 2"/></svg>
+          Próximamente en Google Play
+        </span>
+      </div>
+      <form id="waitlistForm" class="waitlist-form" novalidate>
+        <div class="hp-field" aria-hidden="true">
+          <label for="wlWebsite">Deja este campo vacío</label>
+          <input type="text" id="wlWebsite" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+        <input type="email" id="wlEmail" placeholder="Ingresa tu correo electrónico" required autocomplete="email" />
+        <button type="submit" class="btn btn-primary" id="wlSubmitBtn">Notificarme en el lanzamiento</button>
+      </form>
+      <div id="wlStatus" class="waitlist-status" role="status"></div>
+      <div class="hero-trust">
+        <b>14 días de Pro, gratis al lanzamiento</b><span class="dot"></span>No se necesita cuenta<span class="dot"></span>Hecho para Tipo 1, Tipo 2 y Prediabetes
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone-frame">
+        <img src="img/screen-dashboard.png" alt="Panel de GlucoBeacon mostrando azúcar en la sangre en rango" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-float-wrap">
+  <div class="stats-float reveal">
+    <div class="stat"><div class="stat-num">176<span class="accent2">+</span></div><div class="stat-label">Alimentos con Datos de IG</div></div>
+    <div class="stat"><div class="stat-num">53</div><div class="stat-label">Cadenas de Restaurantes</div></div>
+    <div class="stat"><div class="stat-num">3,700<span class="accent2">+</span></div><div class="stat-label">Platillos Evaluados</div></div>
+    <div class="stat"><div class="stat-num">18</div><div class="stat-label">Rutinas de Ejercicio</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Registros de Salud Vendidos</div></div>
+  </div>
+</div>
+
+<!-- IN-PAGE SUBNAV -->
+<div class="subnav-wrap">
+  <div class="subnav">
+    <a href="#features">Características</a>
+    <a href="#screenshots">Pantallas</a>
+    <a href="#whoisitfor">Para Quién Es</a>
+    <a href="#tools">Herramientas Gratis</a>
+    <a href="#pro">Precios</a>
+    <a href="#privacy">Privacidad</a>
+    <a href="#faq">Preguntas</a>
+  </div>
+</div>
+
+<!-- FOUNDER QUOTE -->
+<section class="section-tight bg-white">
+  <div class="quote-block reveal">
+    <div class="quote-mark">GB</div>
+    <div>
+      <blockquote>
+        "He sido diabético Tipo 2 por más de <b>20 años</b>. Probé las apps de diabetes populares — durante años. Eran torpes, a medio terminar, o construidas alrededor de una suscripción en lugar de alrededor de mí. Ninguna se ajustaba a cómo es realmente un día con diabetes: medicamentos, comidas, citas médicas, presión arterial, todo conectado. Así que construí la app que realmente necesitaba."
+      </blockquote>
+      <div class="quote-attr">
+        <strong>Michael</strong><span class="dot"></span><span>Diabético Tipo 2, más de 20 años</span><span class="dot"></span><span>Fundador, GlucoBeacon</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES BENTO -->
+<section class="section bg-tint" id="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Qué Incluye</div>
+      <h2 class="section-title">Todo lo que necesitas.<br />Nada de lo que no.</h2>
+      <p class="section-lead">Construida por alguien que entiende que controlar la diabetes es un trabajo serio — GlucoBeacon te da herramientas de nivel clínico en una interfaz limpia y sencilla.</p>
+    </div>
+
+    <div class="bento">
+      <div class="bento-tile reveal">
+        <div class="tile-icon">🩸</div>
+        <h3>Control de Azúcar en la Sangre</h3>
+        <p>Registra lecturas al instante con retroalimentación codificada por colores. Ve tendencias de 7 días, anillos de tiempo en rango, y un historial completo de cada lectura que has tomado.</p>
+        <div class="tile-tags"><span class="tag tag-free">Gratis</span></div>
+      </div>
+      <div class="bento-tile reveal">
+        <div class="tile-icon">📊</div>
+        <h3>Estimador de A1C</h3>
+        <p>Una estimación de A1C en tiempo real usando la fórmula Nathan de la ADA, ponderada por recencia sobre tus últimos 90 días. No se necesita laboratorio.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+      <div class="bento-tile featured reveal">
+        <div class="tile-icon">🤖</div>
+        <h3>Asistente de IA para Diabetes</h3>
+        <p>Haz preguntas reales y obtén respuestas personalizadas según tus lecturas reales, tu A1C, medicamentos y objetivos — no consejos de salud genéricos. Impulsado por Claude AI.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+
+      <div class="bento-tile span-6 featured reveal" style="flex-direction: row; align-items: center; gap: 28px;">
+        <div class="tile-icon" style="margin-bottom:0; flex-shrink:0; width:64px; height:64px; font-size:1.9rem;">🔁</div>
+        <div>
+          <h3 style="font-size:1.2rem;">Historial de Comidas</h3>
+          <p>¿Vas a registrar ese sándwich de pollo a la parrilla otra vez? Ve exactamente qué pasó la última vez — tu lectura antes de comer, cualquier medicamento que tomaste, la lectura después de comer con la subida real, y si una caminata después marcó una diferencia. Tus propios datos se convierten en tu mejor guía, automáticamente, cada vez que comes algo que ya has probado.</p>
+        </div>
+        <div class="tile-tags" style="margin-top:0; margin-left:auto; flex-shrink:0;"><span class="tag tag-pro">Pro</span></div>
+      </div>
+
+      <div class="bento-tile span-6 featured reveal" style="flex-direction: row; align-items: center; gap: 28px;">
+        <div class="tile-icon" style="margin-bottom:0; flex-shrink:0; width:64px; height:64px; font-size:1.9rem;">⏱️</div>
+        <div>
+          <h3 style="font-size:1.2rem;">Nuevo: Rastreador de Ayuno</h3>
+          <p>Comienza un ayuno con un solo toque con ventanas de 16:8, 18:6, 20:4, OMAD, o tu propia ventana personalizada. Una cuenta regresiva en vivo y un anillo de progreso te mantienen en curso dentro de la app, y el widget de tu pantalla de inicio cuenta regresivamente junto contigo — "Menos de 1 hora restante", "10 min restantes", "¡Hora de comer!" ¿Olvidaste iniciarlo a tiempo? Corrige la hora de inicio después y todo se recalcula al instante.</p>
+        </div>
+        <div class="tile-tags" style="margin-top:0; margin-left:auto; flex-shrink:0;"><span class="tag tag-free">Gratis</span></div>
+      </div>
+
+      <div class="bento-tile span-3 reveal">
+        <div class="tile-icon">🍔</div>
+        <h3>Asesor de Restaurantes</h3>
+        <p>¿Comes fuera? GlucoBeacon evalúa cada platillo en 53 cadenas importantes — McDonald's, Chipotle, Panera y más — por impacto glucémico, carbohidratos y calorías contra tus objetivos personales.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+      <div class="bento-tile span-3 reveal">
+        <div class="tile-icon">🏋️</div>
+        <h3>Biblioteca de Ejercicios</h3>
+        <p>18 rutinas basadas en evidencia en niveles principiante, intermedio y experto — cada una con notas de seguridad para diabéticos, citas científicas, y un reproductor guiado con temporizador.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+
+      <div class="bento-tile reveal">
+        <div class="tile-icon">💊</div>
+        <h3>Control de Medicamentos</h3>
+        <p>Autocompletado entre más de 120 medicamentos para diabetes y presión arterial, con hasta 3 recordatorios diarios por medicamento para que nunca olvides una dosis.</p>
+        <div class="tile-tags"><span class="tag tag-free">Gratis</span></div>
+      </div>
+      <div class="bento-tile reveal">
+        <div class="tile-icon">🍽️</div>
+        <h3>Despensa y Recetas</h3>
+        <p>Escanea artículos a tu despensa con un lector de código de barras. Explora 120 recetas aptas para diabéticos y ve qué porcentaje de ingredientes ya tienes.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+      <div class="bento-tile reveal">
+        <div class="tile-icon">❤️</div>
+        <h3>Presión Arterial y Peso</h3>
+        <p>Controla tu panorama cardiovascular completo junto con tu azúcar en la sangre. Gráficas de tendencias, registros de historial y resúmenes de estilo de vida en un solo lugar.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+
+      <div class="bento-tile span-3 reveal">
+        <div class="tile-icon">📱</div>
+        <h3>Sincronización con Health Connect</h3>
+        <p>Conecta tu Fitbit, Garmin, Samsung Watch, o dispositivo Wear OS. Pasos, peso, presión arterial, sueño y ejercicio se sincronizan automáticamente vía Android Health Connect.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+      <div class="bento-tile span-3 reveal">
+        <div class="tile-icon">📅</div>
+        <h3>Citas</h3>
+        <p>Mantén cada cita médica en un calendario integrado con recordatorios, y recibe una alerta automática si dos se superponen. Pídele a tu asistente de IA que agende una por ti.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+
+      <div class="bento-tile span-6 reveal" style="flex-direction: row; align-items: center; gap: 24px;">
+        <div class="tile-icon" style="margin-bottom:0;">📌</div>
+        <div>
+          <h3>Widget de Pantalla de Inicio</h3>
+          <p>Registra una lectura, un medicamento, o revisa tus pasos sin siquiera abrir la app — toca el micrófono del widget y solo dilo, échale un vistazo a tus números más recientes, o mira cómo baja tu cuenta regresiva de ayuno, todo desde tu pantalla de inicio.</p>
+        </div>
+        <div class="tile-tags" style="margin-top:0; margin-left:auto;"><span class="tag tag-free">Gratis</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section class="section bg-navy" id="screenshots">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow eyebrow-light">Véelo en Acción</div>
+      <h2 class="section-title on-dark">Pantallas reales. Datos reales.</h2>
+      <p class="section-lead on-dark">Cada pantalla está diseñada para mostrar la información que necesitas — rápido. Sin desorden, sin ruido.</p>
+    </div>
+    <div class="showcase-tabs reveal">
+      <button class="showcase-tab is-active" data-group="all">Todas las Pantallas</button>
+      <button class="showcase-tab" data-group="track">Registrar</button>
+      <button class="showcase-tab" data-group="eat">Comer Inteligente</button>
+      <button class="showcase-tab" data-group="manage">Gestionar Salud</button>
+      <button class="showcase-tab" data-group="widget">Widget</button>
+    </div>
+    <div class="showcase-scroll reveal">
+      <div class="showcase-item" data-group="track">
+        <img src="img/screen-dashboard.png" alt="Panel principal de GlucoBeacon para el seguimiento de azúcar en la sangre" />
+        <div class="showcase-caption">Panel Principal</div>
+      </div>
+      <div class="showcase-item" data-group="track">
+        <img src="../img/screen-timeinrange.png" alt="Desglose de tiempo en rango" />
+        <div class="showcase-caption">Tiempo en Rango</div>
+      </div>
+      <div class="showcase-item" data-group="track">
+        <img src="img/screen-fasting.png" alt="Temporizador de ayuno con cuenta regresiva en vivo" />
+        <div class="showcase-caption">Rastreador de Ayuno</div>
+      </div>
+      <div class="showcase-item" data-group="eat">
+        <img src="img/screen-restaurant.png" alt="Recomendaciones de comida de McDonald's" />
+        <div class="showcase-caption">Asesor de Restaurantes</div>
+      </div>
+      <div class="showcase-item" data-group="eat">
+        <img src="img/screen-kfc.png" alt="Conteo de carbohidratos del menú de KFC en el asesor de restaurantes" />
+        <div class="showcase-caption">Carbohidratos por Cadena</div>
+      </div>
+      <div class="showcase-item" data-group="manage">
+        <img src="img/screen-medication.png" alt="Registro de medicamentos para diabetes con autocompletado" />
+        <div class="showcase-caption">Registro de Medicamentos</div>
+      </div>
+      <div class="showcase-item" data-group="manage">
+        <img src="img/screen-workouts.png" alt="Rutinas de ejercicio seguras para diabéticos por nivel de aptitud" />
+        <div class="showcase-caption">Biblioteca de Ejercicios</div>
+      </div>
+      <div class="showcase-item" data-group="manage">
+        <img src="img/screen-bp.png" alt="Gráfica de seguimiento de presión arterial en GlucoBeacon" />
+        <div class="showcase-caption">Presión Arterial</div>
+      </div>
+      <div class="showcase-item" data-group="eat">
+        <img src="img/screen-recipes.png" alt="Biblioteca de recetas para diabéticos" />
+        <div class="showcase-caption">Biblioteca de Recetas</div>
+      </div>
+      <div class="showcase-item" data-group="eat">
+        <img src="../img/screen-barcode.png" alt="Resultado nutricional del escáner de código de barras para alimentos empaquetados" />
+        <div class="showcase-caption">Escáner de Código de Barras</div>
+      </div>
+      <div class="showcase-item" data-group="manage">
+        <img src="img/screen-appointments.png" alt="Calendario de citas con alerta de conflicto en vivo" />
+        <div class="showcase-caption">Citas</div>
+      </div>
+      <div class="showcase-item" data-group="widget">
+        <img src="../img/screen-widget.png" alt="Widget de pantalla de inicio mostrando azúcar en la sangre, pasos y accesos directos de IA" />
+        <div class="showcase-caption">Widget de Pantalla de Inicio</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="section bg-white" id="whoisitfor">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Para Quién Es</div>
+      <h2 class="section-title">Hecho para todo tipo de diabetes.</h2>
+      <p class="section-lead">Ya sea que te diagnosticaron el mes pasado o hayas manejado tu condición por décadas, GlucoBeacon se adapta a ti.</p>
+    </div>
+    <div class="who-grid">
+      <div class="who-card type1 reveal">
+        <div class="who-icon">💉</div>
+        <h3>Diabetes Tipo 1</h3>
+        <p>Registro de carbohidratos e insulina por lectura. Detección de patrones que identifica el fenómeno del amanecer, picos después de comer, y bajones nocturnos antes de que se conviertan en un problema.</p>
+      </div>
+      <div class="who-card type2 reveal">
+        <div class="who-icon">🍎</div>
+        <h3>Diabetes Tipo 2</h3>
+        <p>Guía de restaurantes, evaluación del índice glucémico de alimentos, seguimiento de peso, y cálculos de calorías quemadas basados en MET — el panorama completo de estilo de vida para mantener tu A1C en control.</p>
+      </div>
+      <div class="who-card pre reveal">
+        <div class="who-icon">⚡</div>
+        <h3>Prediabetes</h3>
+        <p>Detecta tendencias antes de que avancen. El estimador de A1C y la detección de patrones te dan contexto clínico para conversaciones informadas con tu médico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FREE TOOLS CROSS-LINK -->
+<section class="section bg-tint" id="tools">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Sin Necesidad de la App</div>
+      <h2 class="section-title">Herramientas gratis, directo en tu navegador.</h2>
+      <p class="section-lead">Los mismos datos reales que impulsan la app — utilizables ahora mismo, sin descarga, sin registro.</p>
+    </div>
+    <div class="tools-grid">
+      <a class="tool-card reveal" href="carb-calculator.html">
+        <div class="tile-icon">🧮</div>
+        <h3>Calculadora de Carbohidratos y Presupuesto Diario</h3>
+        <p>Busca entre 176 alimentos reales para datos exactos de carbohidratos e IG, calcula carbohidratos netos a partir de una etiqueta, u obtén un objetivo diario de carbohidratos personalizado.</p>
+        <span class="tool-link">Probar la calculadora <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="tool-card reveal" href="recipes/index.html">
+        <div class="tile-icon">🍳</div>
+        <h3>Recetas para Diabéticos</h3>
+        <p>28 recetas de desayuno y snacks con desgloses nutricionales completos y estimaciones de índice glucémico para cada platillo.</p>
+        <span class="tool-link">Ver recetas <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="tool-card reveal" href="blog/index.html">
+        <div class="tile-icon">📚</div>
+        <h3>El Blog de GlucoBeacon</h3>
+        <p>Guías prácticas y directas sobre A1C, alimentos de bajo IG, opciones de comida rápida, y la vida diaria con diabetes.</p>
+        <span class="tool-link">Leer el blog <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section bg-white" id="pro">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Precios</div>
+      <h2 class="section-title">Un precio. Todo incluido.</h2>
+      <p class="section-lead" style="margin: 0 auto;">Sin herramientas a la carta, sin ventas adicionales dentro de la app, sin división "básico" vs. "premium" dentro de Pro. El registro básico de azúcar en la sangre es gratis para siempre — todo lo demás es una sola suscripción.</p>
+    </div>
+
+    <div class="value-grid reveal">
+      <div class="value-chip"><span class="vic">🩸</span>Registro e Historial Ilimitado</div>
+      <div class="value-chip"><span class="vic">📊</span>Estimador de A1C y Patrones</div>
+      <div class="value-chip"><span class="vic">💊</span>Registro y Recordatorios de Medicamentos</div>
+      <div class="value-chip"><span class="vic">🔁</span>Historial y Tendencias de Comidas</div>
+      <div class="value-chip"><span class="vic">🍔</span>Asesor de Restaurantes de 53 Cadenas</div>
+      <div class="value-chip"><span class="vic">🤖</span>Asistente de IA para Diabetes</div>
+      <div class="value-chip"><span class="vic">🏋️</span>18 Rutinas de Ejercicio</div>
+      <div class="value-chip"><span class="vic">🍽️</span>Despensa y 166 Recetas</div>
+      <div class="value-chip"><span class="vic">❤️</span>Presión Arterial y Peso</div>
+      <div class="value-chip"><span class="vic">📱</span>Sincronización con Health Connect</div>
+      <div class="value-chip"><span class="vic">📅</span>Citas y Recordatorios</div>
+      <div class="value-chip"><span class="vic">📄</span>Informes en PDF Listos para el Médico</div>
+      <div class="value-chip"><span class="vic">🔔</span>Recordatorios Inteligentes Ilimitados</div>
+    </div>
+
+    <div class="trial-banner reveal">
+      🎉 Comienza cada plan con <strong>&nbsp;14 días de Pro, gratis&nbsp;</strong> <span class="sub">— cancela cuando quieras, sin cargo si cancelas antes de que termine.</span>
+    </div>
+
+    <div class="price-cards reveal">
+      <div class="price-card">
+        <div class="plabel">Mensual</div>
+        <div class="pnum" data-usd="4.99">$4.99</div>
+        <div class="psub">por mes, después de tus 14 días gratis</div>
+      </div>
+      <div class="price-card best">
+        <div class="best-ribbon">Mejor Valor</div>
+        <div class="plabel">Anual</div>
+        <div class="pnum" data-usd="49.99">$49.99</div>
+        <div class="psub">por año · ahorra 17% · 14 días gratis</div>
+      </div>
+      <div class="price-card">
+        <div class="plabel">De por Vida</div>
+        <div class="pnum" data-usd="79.99">$79.99</div>
+        <div class="psub">pago único · para siempre</div>
+      </div>
+    </div>
+    <p class="price-fx-disclaimer" id="priceFxDisclaimer" hidden>Facturado en USD vía Google Play. Los montos en moneda local mostrados son estimaciones — tu pago en Play Store muestra el precio exacto en tu moneda.</p>
+
+    <div class="pro-table-wrap reveal">
+      <table class="pro-table">
+        <thead><tr><th>Función</th><th>Gratis</th><th>Pro</th></tr></thead>
+        <tbody>
+          <tr><td>Registro de Azúcar en la Sangre (ilimitado)</td><td class="check">✓</td><td class="check">✓</td></tr>
+          <tr><td>Historial de Lecturas</td><td>Últimos 90 días</td><td class="check">Ilimitado</td></tr>
+          <tr><td>Registro de Medicamentos</td><td class="check">✓</td><td class="check">✓</td></tr>
+          <tr><td>Contador de Pasos y Widget de Pantalla de Inicio</td><td class="check">✓</td><td class="check">✓</td></tr>
+          <tr><td>Rastreador de Ayuno (temporizador, cuenta regresiva en widget)</td><td class="check">✓</td><td class="check">✓</td></tr>
+          <tr><td>Recordatorios</td><td>Hasta 3</td><td class="check">Ilimitados</td></tr>
+          <tr><td>Estimador de A1C y Detección de Patrones</td><td>Solo vista previa</td><td class="check">Detalle completo</td></tr>
+          <tr><td>Historial de Comidas (antes/medicamentos/después/actividad)</td><td class="cross">✗</td><td class="check">✓</td></tr>
+          <tr><td>Informe PDF para el Médico</td><td class="cross">✗</td><td class="check">✓</td></tr>
+          <tr><td>Pestaña Completa de Estilo de Vida (comida, sueño, citas)</td><td class="cross">✗</td><td class="check">✓</td></tr>
+          <tr><td>Asesor de Restaurantes (53 cadenas)</td><td class="cross">✗</td><td class="check">✓</td></tr>
+          <tr><td>Despensa, Recetas y Biblioteca de Ejercicios</td><td class="cross">✗</td><td class="check">✓</td></tr>
+          <tr><td>Sincronización con Health Connect</td><td class="cross">✗</td><td class="check">✓</td></tr>
+          <tr><td>Asistente de IA para Diabetes</td><td>3 consultas de por vida</td><td class="check">15 consultas/día</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="text-align:center; margin-top: 20px; font-size: 0.85rem; color: var(--muted);">Todos los planes incluyen acceso Pro completo y comienzan con 14 días gratis. Cancela mensual o anual cuando quieras.</p>
+  </div>
+</section>
+
+<!-- PRIVACY -->
+<section class="section bg-navy" id="privacy">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow eyebrow-light">Privacidad Primero</div>
+      <h2 class="section-title on-dark">Tus datos de salud te pertenecen.</h2>
+      <p class="section-lead on-dark" style="margin: 0 auto;">En una industria donde los datos de salud se compran y se venden, GlucoBeacon es diferente. Todo se queda en tu dispositivo — siempre.</p>
+    </div>
+    <div class="privacy-pillars reveal">
+      <div class="pillar">
+        <div class="pillar-icon">📵</div>
+        <h4>No se Necesita Cuenta</h4>
+        <p>Abre la app y empieza a registrar. Sin correo, sin contraseña, sin perfil que crear.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">💾</div>
+        <h4>Almacenamiento en el Dispositivo</h4>
+        <p>Tus lecturas, medicamentos y registros viven en una base de datos SQLite en tu teléfono — nunca se suben, nunca se sincronizan con nosotros.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🔒</div>
+        <h4>Sin Venta de Datos</h4>
+        <p>No recopilamos, analizamos, ni vendemos tu información de salud. No hay un "nosotros" en tus datos.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">☁️</div>
+        <h4>Respaldo Opcional</h4>
+        <p>Si quieres respaldo, conecta tu propio Google Drive. El archivo va a tu cuenta, no a la nuestra.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🛠️</div>
+        <h4>Reportes Anónimos de Fallos</h4>
+        <p>Si la app llega a fallar, un reporte técnico — modelo del dispositivo y rastro del error, nunca tus datos de salud — nos ayuda a corregirlo. Eso es lo único que se envía automáticamente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section bg-tint" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Preguntas</div>
+      <h2 class="section-title">Respuestas directas.</h2>
+      <p class="section-lead">Las cosas que la gente realmente pregunta antes de confiarle sus datos de salud a una app.</p>
+    </div>
+    <div class="accordion reveal">
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="true" aria-controls="faq1">
+          ¿Mis datos de salud realmente son privados, o eso es solo marketing?
+          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="accordion-panel" id="faq1" style="max-height: 200px;">
+          <p class="accordion-panel-inner">No hay sistema de cuentas, y tus datos de salud — lecturas, medicamentos, citas, registros de comida — viven en una base de datos local en tu teléfono y nunca se suben automáticamente. Si quieres un respaldo, va a tu propio Google Drive, no al nuestro. Dos excepciones puntuales y reveladas: si la app falla, se envía un reporte técnico anónimo (modelo del dispositivo y rastro del error — nunca tus datos de salud) para ayudarnos a corregir el bug; y si eliges usar el Asistente de IA o el Escaneo de Comida con IA, ese mensaje o foto específico se envía para generar una respuesta y no se almacena después.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="faq2">
+          ¿Qué tan preciso es el Escaneo de Comida con IA?
+          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="accordion-panel" id="faq2">
+          <p class="accordion-panel-inner">Bueno para comidas frescas, caseras y de restaurante — para eso está diseñado. Para productos empaquetados, usa el Escáner de Código de Barras en su lugar: obtiene datos nutricionales reales de Open Food Facts en lugar de estimarlos a partir de una foto, así que es exacto donde la estimación por IA no puede serlo. ¿Se equivocó? Un toque elimina un artículo mal identificado y recalcula tu total al instante. ¿Faltó algo? Escríbelo y obtén una estimación separada e instantánea para ese artículo — sin necesidad de volver a tomar la foto.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="faq3">
+          ¿Qué pasa realmente si no actualizo a Pro?
+          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="accordion-panel" id="faq3">
+          <p class="accordion-panel-inner">El registro de azúcar en la sangre, el seguimiento y recordatorios de medicamentos, el contador de pasos y el widget de pantalla de inicio son gratis, permanentemente, sin límite de prueba. Pro desbloquea todo lo demás — historial de comidas, tendencias completas de A1C, asesor de restaurantes, biblioteca de ejercicios, asistente de IA y más — y cada plan comienza con 14 días de Pro gratis, para que puedas probar el kit de herramientas completo antes de pagar algo.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="faq4">
+          ¿Necesito un MCG para usar esto?
+          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="accordion-panel" id="faq4">
+          <p class="accordion-panel-inner">No — y eso es a propósito. GlucoBeacon está construida en torno al registro tradicional con punción digital, que sigue siendo la forma en que la mayoría de las personas con diabetes realmente se monitorean, ya sea por elección, indicación médica, o porque un MCG no está cubierto por su seguro. La sincronización con Health Connect cubre pasos, peso, presión arterial, sueño y ejercicio desde tu teléfono o reloj. Actualmente no ofrecemos transmisión de MCG en tiempo real — si eso es indispensable para ti, apps construidas alrededor de un MCG específico te servirán mejor.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="faq5">
+          ¿Puedo mostrarle esto a mi médico?
+          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="accordion-panel" id="faq5">
+          <p class="accordion-panel-inner">Sí — para eso está hecho el Informe PDF para el Médico. Compila tus lecturas, estimación de A1C y patrones en un reporte formateado para una cita real, no un volcado de datos sin procesar.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="faq6">
+          ¿Cómo funciona la prueba gratuita de 14 días?
+          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="accordion-panel" id="faq6">
+          <p class="accordion-panel-inner">Cada plan Pro — mensual o anual — comienza con 14 días de acceso completo, gratis. Google Play requiere un método de pago registrado para iniciar la prueba, pero no se te cobrará hasta que termine, y puedes cancelar en cualquier momento antes de eso sin ningún cargo. Las compras de por vida son un pago único y no forman parte de la prueba.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <h2>Sé el primero en saber cuándo lanzamos.</h2>
+  <p>GlucoBeacon llega pronto a Google Play con 14 días de Pro, gratis. Déjanos tu correo y te notificaremos en el momento en que esté disponible.</p>
+  <a class="btn btn-white" href="mailto:admin@glucobeacon.com?subject=Notif%C3%ADcame%20cuando%20GlucoBeacon%20se%20lance">
+    ✉️ Recibir Notificación de Lanzamiento
+  </a>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand-col">
+      <div class="footer-brand">
+        <img src="../img/icon.png" alt="GlucoBeacon" />
+        <span>GlucoBeacon&trade;</span>
+      </div>
+      <p>Una app privada de gestión de diabetes para Android — azúcar en la sangre, A1C, medicamentos, comida y más, todo en un solo lugar.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Producto</h5>
+      <a href="features.html">Características</a>
+      <a href="#screenshots">Capturas de Pantalla</a>
+      <a href="#pro">Precios</a>
+      <a href="#privacy">Privacidad</a>
+    </div>
+    <div class="footer-col">
+      <h5>Herramientas Gratis</h5>
+      <a href="carb-calculator.html">Calculadora de Carbohidratos</a>
+      <a href="compare.html">Comparar</a>
+      <a href="recipes/index.html">Ciencia Alimentaria</a>
+      <a href="blog/index.html">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h5>Compañía</h5>
+      <a href="#pro">Prueba Gratis de 14 Días</a>
+      <a href="#faq">Preguntas</a>
+      <a href="mailto:admin@glucobeacon.com">Contacto</a>
+      <a href="https://glucobeacon.github.io/privacy/es/">Política de Privacidad</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 GAMZ Holdings LLC. Todos los derechos reservados.</p>
+    <div class="legal-links">
+      <a href="https://glucobeacon.github.io/privacy/es/">Política de Privacidad</a>
+      <a href="mailto:admin@glucobeacon.com">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Volver arriba">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="../assets/js/site.js"></script>
+<script src="../assets/js/lang-switch.js"></script>
+</body>
+</html>

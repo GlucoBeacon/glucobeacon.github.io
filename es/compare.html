@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlucoBeacon vs. mySugr, MyFitnessPal, Carb Manager y Más — Comparación de Apps de Diabetes</title>
+  <meta name="description" content="Una comparación honesta y verificada de GlucoBeacon contra 9 apps populares de diabetes y monitoreo de glucosa — mySugr, Glooko, Dario, Carb Manager, Glucose Buddy, One Drop, Diabetes:M, Sugarmate, y MyFitnessPal. Precios reales, funciones reales, sin números inflados." />
+  <link rel="canonical" href="https://glucobeacon.com/es/compare.html" />
+  <link rel="alternate" hreflang="en" href="https://glucobeacon.com/compare.html" />
+  <link rel="alternate" hreflang="es" href="https://glucobeacon.com/es/compare.html" />
+  <link rel="alternate" hreflang="x-default" href="https://glucobeacon.com/compare.html" />
+  <link rel="icon" type="image/png" href="../img/icon.png" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GlucoBeacon vs. mySugr, MyFitnessPal, Carb Manager y Más" />
+  <meta property="og:description" content="Una comparación honesta y verificada de GlucoBeacon contra 9 apps populares de diabetes y monitoreo de glucosa. Precios reales, funciones reales, sin números inflados." />
+  <meta property="og:image" content="https://glucobeacon.com/img/screen-dashboard.png" />
+  <meta property="og:url" content="https://glucobeacon.com/es/compare.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GlucoBeacon vs. mySugr, MyFitnessPal, Carb Manager y Más" />
+  <meta name="twitter:description" content="Una comparación honesta y verificada de GlucoBeacon contra 9 apps populares de diabetes y monitoreo de glucosa. Precios reales, funciones reales, sin números inflados." />
+  <meta name="twitter:image" content="https://glucobeacon.com/img/screen-dashboard.png" />
+  <style>
+    /* Same persistent beacon backdrop as every other page — see index.html for the full rationale. */
+    .beacon-bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+    .beacon-frame { position: absolute; top: 130px; left: 0; width: 100%; height: 100vh; }
+    .beacon-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+    .beacon-lamp {
+      position: absolute; top: 16.8%; left: 50%; width: 46px; height: 46px; border-radius: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(255,251,235,1) 0%, rgba(253,214,150,0.9) 40%, rgba(249,168,90,0.5) 65%, rgba(249,168,90,0) 80%);
+      filter: blur(2px);
+      animation: beaconPulse 2.3s ease-in-out infinite, beaconFlash 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    .beacon-beam {
+      position: absolute; top: 16.8%; left: 50%; width: 46vw; max-width: 640px; height: 90px;
+      transform-origin: 0% 50%;
+      transform: translateY(-50%) scaleX(1);
+      background: linear-gradient(90deg,
+        rgba(255,251,235,0.95) 0%,
+        rgba(253,200,130,0.55) 40%,
+        rgba(253,200,130,0.15) 75%,
+        transparent 100%);
+      clip-path: polygon(0% 38%, 100% 0%, 100% 100%, 0% 62%);
+      filter: blur(6px);
+      animation: beaconSweep 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    @keyframes beaconSweep {
+      0%   { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+      22%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      25%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      28%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      50%  { transform: translateY(-50%) scaleX(-1);    opacity: 0.95; }
+      72%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      75%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      78%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      100% { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+    }
+    @keyframes beaconFlash {
+      0%, 20%, 30%, 70%, 80%, 100% { filter: blur(2px) brightness(1); }
+      25%, 75% { filter: blur(2px) brightness(1.9); }
+    }
+    @keyframes beaconPulse {
+      0%, 100% { opacity: 0.85; transform: translate(-50%, -50%) scale(1); }
+      50%      { opacity: 1;    transform: translate(-50%, -50%) scale(1.15); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .beacon-lamp, .beacon-beam { animation: none; }
+    }
+
+    .tool-head {
+      position: relative; overflow: hidden;
+      background: linear-gradient(100deg, rgba(9,20,36,0.62) 0%, rgba(9,20,36,0.4) 55%, rgba(9,20,36,0.2) 100%);
+      color: var(--white); padding: 64px 5% 56px; text-align: center;
+    }
+    .tool-head .container { max-width: 720px; }
+    .tool-head h1 { font-size: clamp(1.7rem, 3.6vw, 2.5rem); font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; }
+    .tool-head h1 span { color: var(--orange-light); }
+    .tool-head p { color: rgba(255,255,255,0.75); font-size: 1.03rem; }
+    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 22px; }
+    .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--white); }
+
+    .wrap { max-width: 920px; margin: 0 auto; padding: 56px 5% 24px; }
+    .tool-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 40px;
+    }
+    .tool-card h2 { font-size: 1.28rem; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+    .tool-card .card-sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 22px; line-height: 1.55; }
+
+    /* ─── Pricing table ──────────────────────────────── */
+    .table-scroll { overflow-x: auto; border-radius: var(--radius-sm); border: 1px solid var(--border); }
+    table.cmp { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 640px; }
+    table.cmp th, table.cmp td { padding: 13px 16px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    table.cmp th:first-child, table.cmp td:first-child { white-space: normal; min-width: 160px; }
+    table.cmp.cmp-wrap { min-width: 0; }
+    table.cmp.cmp-wrap th, table.cmp.cmp-wrap td { white-space: normal; }
+    table.cmp.cmp-wrap td:nth-child(2), table.cmp.cmp-wrap td:nth-child(3) { min-width: 200px; }
+    table.cmp thead th { background: var(--bg); color: var(--muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.4px; font-weight: 700; }
+    table.cmp tbody tr:last-child td { border-bottom: none; }
+    table.cmp tbody tr.is-us { background: linear-gradient(90deg, rgba(249,115,22,0.07), rgba(249,115,22,0.02)); }
+    table.cmp tbody tr.is-us td:first-child { font-weight: 800; color: var(--navy); }
+    table.cmp .app-name { font-weight: 700; color: var(--text); }
+    table.cmp .app-note { display: block; font-size: 0.76rem; color: var(--muted); font-weight: 400; white-space: normal; margin-top: 2px; }
+    .yes { color: var(--good); font-weight: 800; }
+    .no  { color: var(--border-strong); font-weight: 800; }
+
+    /* ─── Head-to-head cards ─────────────────────────── */
+    .h2h { display: grid; gap: 14px; margin-top: 6px; }
+    .h2h-card { border: 1px solid var(--border); border-radius: var(--radius-md); padding: 22px 24px; }
+    .h2h-card h3 { font-size: 1.02rem; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
+    .h2h-card .h2h-price { font-size: 0.8rem; color: var(--orange2); font-weight: 700; margin-bottom: 12px; }
+    .h2h-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    @media (max-width: 640px) { .h2h-cols { grid-template-columns: 1fr; } }
+    .h2h-col h4 { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.4px; color: var(--muted); margin-bottom: 8px; }
+    .h2h-col.win h4 { color: var(--good); }
+    .h2h-col.theirs h4 { color: var(--muted); }
+    .h2h-col ul { padding-left: 18px; font-size: 0.88rem; line-height: 1.6; color: var(--text); }
+
+    .honesty-note { display: flex; gap: 12px; align-items: flex-start; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 18px 20px; font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin-top: 20px; }
+    .honesty-note svg { flex-shrink: 0; margin-top: 2px; color: var(--orange); }
+
+    .cta-band { position: relative; overflow: hidden; background: linear-gradient(120deg, var(--orange2), var(--orange)); text-align: center; padding: 60px 5%; }
+    .cta-band h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .cta-band p { color: rgba(255,255,255,0.9); font-size: 1rem; margin-bottom: 28px; }
+  </style>
+</head>
+<body>
+
+<div class="beacon-bg" aria-hidden="true">
+  <div class="beacon-frame">
+    <img src="../img/beacon-hero.jpg" alt="" />
+    <div class="beacon-lamp"></div>
+    <div class="beacon-beam"></div>
+  </div>
+</div>
+
+<a href="#main" class="skip-link">Saltar al contenido</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">
+      <img src="../img/icon.png" alt="Logo de GlucoBeacon" />
+      <span>GlucoBeacon<sup>&trade;</sup></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Alternar menú" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="features.html">Características</a>
+      <a href="recipes/index.html">Ciencia Alimentaria</a>
+      <a href="restaurants/index.html">Restaurantes</a>
+      <a href="carb-calculator.html">Calculadora de Carbohidratos</a>
+      <a href="compare.html" class="active">Comparar</a>
+      <a href="index.html#pro">Precios</a>
+      <a href="blog/index.html">Blog</a>
+      <span id="lang-switch" class="nav-lang"></span>
+      <a class="nav-cta" href="index.html#waitlist">Notificarme</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<div class="tool-head">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Inicio</a> / Comparar</div>
+    <div class="eyebrow eyebrow-light" style="justify-content:center;">Comparación Honesta · Números Reales</div>
+    <h1>Cómo se compara GlucoBeacon con <span>9 apps populares de diabetes</span></h1>
+    <p>Cada precio y función a continuación fue verificado en el sitio propio de cada empresa o su listado en la tienda de apps. Cuando un competidor realmente hace algo mejor que nosotros — transmisión de MCG en tiempo real, principalmente — lo decimos. Sin números inflados, sin debilidades inventadas.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="tool-card reveal">
+    <h2>Todo lo demás, que estas apps ni siquiera intentan</h2>
+    <p class="card-sub">Esto no es una comparación de casillas — para la mayoría de lo de abajo, no hay nada del otro lado que marcar. Estas son cosas que ninguna app en esta página hace, no funciones que hacen peor.</p>
+    <div class="h2h">
+      <div class="h2h-card">
+        <h3>Asistente de IA para Diabetes</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Un asistente de chat y voz que realmente conoce tus datos — tus lecturas reales, A1C, medicamentos y objetivos — no un chatbot genérico. Hazle una pregunta, o simplemente dile "registra mi metformina" o "comí 40 carbohidratos en el almuerzo" y lo registra por ti.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Rastreador de Ayuno + correlación con glucosa</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Cuenta regresiva en vivo para 16:8, 18:6, 20:4, OMAD o una ventana personalizada, más estadísticas de tiempo en rango e hipoglucemia por cada ayuno — y una perspectiva entre ayunos que compara tu glucosa durante las ventanas de ayuno vs. fuera de ellas, una vez que has registrado suficientes ayunos para ver un patrón real.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Historial de comidas y detección de patrones</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Registra una comida una vez y GlucoBeacon recuerda qué te hizo — "la última vez que comiste esto, tu lectura fue 210." La detección automática de patrones marca alimentos que constantemente te suben, en 14 tipos de patrones diferentes.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Asesor de Restaurantes</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">53 cadenas reales, más de 3,700 platillos pre-evaluados por impacto glucémico en Mejores Opciones / Buenas Opciones / Alto en Carbohidratos — más estimaciones nutricionales por IA para cualquier restaurante que aún no esté en la base de datos. Tu fonda local favorita tampoco se queda fuera: recuérdala una vez con tus platillos habituales, y se comporta como cualquier otra cadena de ahí en adelante.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Despensa, recetas y lista de compras</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Escanea víveres a una despensa que se descuenta automáticamente cuando cocinas. Una biblioteca de 120 recetas con filtrado real Keto/Vegetariano muestra qué puedes hacer ahora mismo con lo que ya tienes a la mano.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Citas, agendadas por voz</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Un calendario real con advertencias de conflicto — y puedes simplemente decir "agenda a mi endocrinólogo para el próximo martes a las 2" y queda en el calendario, sin necesidad de escribir.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Inteligencia de tipo de dieta</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Insignias reales de Keto y Vegetariano calculadas a partir de matemáticas reales de carbohidratos netos, no una suposición — más sugerencias de IA de un toque para modificar cualquier platillo ("pídelo envuelto en lechuga en su lugar") para que encaje en tu dieta.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Widget de pantalla de inicio</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Tu lectura más reciente, pasos y calorías de un vistazo — con un acceso directo de voz por IA de un toque directo desde tu pantalla de inicio, sin necesidad ni de abrir la app.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool-card reveal">
+    <h2>Precios, uno al lado del otro</h2>
+    <p class="card-sub">GlucoBeacon es la única app en esta lista con una opción de pago único de por vida — todo lo demás aquí es una suscripción recurrente mientras la uses. Y "Gratis" abajo no es toda la historia: <a href="#real-cost">mira la columna de Costo real todo incluido</a> — cada una de estas apps aún necesita que hagas pruebas con algo, y ese algo rara vez es gratis.</p>
+    <div class="table-scroll">
+      <table class="cmp cmp-wrap">
+        <thead>
+          <tr><th>App</th><th>Precio de la app</th><th id="real-cost">Costo real todo incluido/mes*</th></tr>
+        </thead>
+        <tbody>
+          <tr class="is-us">
+            <td>GlucoBeacon</td>
+            <td>$4.99/mes · $49.99/año · <b>$79.99 de por vida</b></td>
+            <td>$4.99 + lo que ya uses para pruebas</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Glooko</span><span class="app-note">Sincronización con más de 100 medidores/bombas/MCG, orientado a clínicas</span></td>
+            <td>Gratis</td>
+            <td>~$28–$580 (app gratis, pero aún necesita un medidor o MCG)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Sugarmate</span><span class="app-note">Solo pantalla/alertas de MCG — requiere Dexcom</span></td>
+            <td>Gratis</td>
+            <td>~$350–$580 (app gratis, pero Dexcom es obligatorio para usarla del todo)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">mySugr</span><span class="app-note">PRO desbloquea recordatorios, exportar PDF, calculadora de bolo†</span></td>
+            <td>Gratis, o PRO $2.99/mes</td>
+            <td>~$28–$580 + $0–2.99 (app gratis/barata, los insumos de prueba no lo son)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Diabetes:M</span><span class="app-note">La suscripción principalmente quita anuncios</span></td>
+            <td>Gratis, o $4.99/mes ($49.99/año)</td>
+            <td>~$28–$580 + $0–4.99</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Carb Manager</span><span class="app-note">Enfoque Keto/macros, no específico para diabetes</span></td>
+            <td>Gratis, o Premium ~$39.99/año</td>
+            <td>~$28–$580 + $0–3.33 (ni siquiera registra lecturas de glucosa)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">MyFitnessPal</span><span class="app-note">Contador de calorías general, sin registro de glucosa</span></td>
+            <td>Gratis, o $19.99/mes ($79.99/año)</td>
+            <td>~$28–$580 + $0–19.99 (tampoco registra glucosa)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Glucose Buddy</span><span class="app-note">Sincronización con Dexcom, complemento de coaching</span></td>
+            <td>Desde $19/mes</td>
+            <td>~$350–$580 + $19 (depende de Dexcom, igual que Sugarmate)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">One Drop</span><span class="app-note">Paquetes de coaching + suscripción de tiras de prueba</span></td>
+            <td>$19.99/mes, +$21–$80/mes por tiras</td>
+            <td>$41–$100 (la única que es honesta sobre esto desde el principio)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Dario</span><span class="app-note">Requiere comprar su medidor propietario</span></td>
+            <td>$25–$70/mes</td>
+            <td>$25–$70 (costo del medidor ya incluido en su precio)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem; color:var(--muted); margin-top:12px;">*Costo real todo incluido = el precio de la app propia más un costo típico de MCG o tiras de punción digital sin seguro (desglose completo y por dispositivo en la siguiente sección). Los rangos son amplios porque un MCG ($220–$580/mes) y las tiras de punción digital ($28–$117/mes) son puntos de precio muy diferentes — ve abajo exactamente cuáles. † La calculadora de bolo de mySugr está disponible en el Reino Unido, Australia y partes de Europa — no está disponible en la app de EE.UU. Precios vigentes al momento de la publicación; los precios anuales/regionales pueden variar — revisa el sitio propio de cada empresa antes de decidir.</p>
+  </div>
+
+  <div class="tool-card reveal">
+    <h2>El costo que nadie pone en la página de la tienda de apps</h2>
+    <p class="card-sub">El precio propio de una app es solo parte de la cuenta. Con qué realmente haces tus pruebas — un sensor de MCG o tiras de punción digital — usualmente cuesta mucho más al mes que cualquiera de estas apps, GlucoBeacon incluida. Aquí está el rango real y verificado para cada uno.</p>
+    <div class="table-scroll">
+      <table class="cmp">
+        <thead>
+          <tr><th>Con qué haces tus pruebas</th><th>Costo mensual típico, sin seguro</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="app-name">Dexcom G7</span><span class="app-note">Precio de venta en efectivo, varía según la farmacia</span></td><td>$350–$580</td></tr>
+          <tr><td><span class="app-name">FreeStyle Libre 2 o 3</span><span class="app-note">Venta al público; ~$130–$175 con un cupón de GoodRx/SingleCare</span></td><td>$220–$260</td></tr>
+          <tr><td><span class="app-name">Tiras OneTouch Verio</span><span class="app-note">Probando 3×/día, el medidor en sí usualmente es gratis</span></td><td>$63–$117</td></tr>
+          <tr><td><span class="app-name">Tiras Contour Next</span><span class="app-note">Probando 3×/día, el medidor en sí usualmente es gratis</span></td><td>$28–$34</td></tr>
+          <tr class="is-us"><td>GlucoBeacon</td><td>$4.99/mes · $49.99/año · $79.99 una vez — sobre lo que ya uses para pruebas</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem; color:var(--muted); margin-top:12px;">Obtenido de GoodRx, SingleCare, y páginas de precios del fabricante; el precio real en efectivo varía según farmacia, región, y uso de cupones. Dexcom también tiene un Programa de Asistencia al Paciente que puede bajar el costo a ~$45 por suministro de 90 días para pacientes de bajos ingresos que califiquen.</p>
+
+    <div class="honesty-note" style="margin-top:24px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      <div>Con lo que sea que hagas tus pruebas, ese hardware no recuerda qué te hizo un platillo la última vez, no te dice si el ayuno de anoche fue seguro, ni mantiene tus medicamentos y citas en el mismo lugar que tus lecturas — eso es un problema de software, no de sensor. GlucoBeacon cuesta <b>$4.99/mes sobre cualquiera de los dos métodos</b>, no en lugar de uno, y hace el mismo trabajo ya sea que tu prueba cueste $30 al mes o $500. Ve todo lo que agrega en nuestra <a href="features.html">página de Características</a>.</div>
+    </div>
+  </div>
+
+  <div class="tool-card reveal">
+    <h2>Lo que realmente obtienes</h2>
+    <p class="card-sub">La mayoría de estas apps están construidas alrededor de un solo trabajo — registro de glucosa, pantalla de MCG, o conteo de calorías. La apuesta de GlucoBeacon es amplitud de salud integral: la misma app que registra tu lectura también controla tus medicamentos, presión arterial, sueño y citas, y correlaciona todo eso con tu glucosa — de forma privada, en tu dispositivo. Ve el desglose completo de lo que realmente hace cada función en nuestra <a href="features.html">página de Características</a>.</p>
+    <div class="table-scroll">
+      <table class="cmp">
+        <thead>
+          <tr><th>App</th><th>Medicamentos / PA / sueño / citas</th><th>En el dispositivo, sin cuenta</th><th>Informe PDF para el médico</th><th>Opción de pago único de por vida</th><th>Platillos de restaurante evaluados por impacto glucémico</th><th>Calculadora de bolo</th><th>Sincronización de MCG en tiempo real</th></tr>
+        </thead>
+        <tbody>
+          <tr class="is-us">
+            <td>GlucoBeacon</td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="no">✕</span></td>
+            <td><span class="no">✕</span></td>
+          </tr>
+          <tr><td><span class="app-name">Glooko</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td><span class="app-name">Sugarmate</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td><span class="app-name">mySugr</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓†</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td><span class="app-name">Diabetes:M</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td><span class="app-name">Carb Manager</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td></tr>
+          <tr><td><span class="app-name">MyFitnessPal</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td></tr>
+          <tr><td><span class="app-name">Glucose Buddy</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td><span class="app-name">One Drop</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td></tr>
+          <tr><td><span class="app-name">Dario</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem; color:var(--muted); margin-top:12px;">† La calculadora de bolo de mySugr está disponible en el Reino Unido, Australia y partes de Europa — no está disponible en la app de EE.UU. "Platillos de restaurante evaluados por impacto glucémico" significa artículos clasificados por IG/carbohidratos/calorías/nivel de procesamiento, no solo una base de datos de alimentos — Carb Manager y MyFitnessPal tienen bases de datos generales de alimentos/recetas más grandes, solo que sin evaluación glucémica.</p>
+  </div>
+
+  <div class="tool-card reveal">
+    <h2>La ciencia detrás de nuestros números</h2>
+    <p class="card-sub">Cada cálculo en GlucoBeacon se remonta a una fuente clínica publicada — no una suposición, y no un número de marketing.</p>
+    <div class="h2h">
+      <div class="h2h-card">
+        <h3>Estimación de A1C</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Fórmula Nathan/ADA: <code>(promedio ponderado + 46.7) ÷ 28.7</code>, ponderado 1.0/0.5/0.25 para el tercio más reciente/medio/más antiguo de tus últimos 90 días de lecturas — el control reciente cuenta más que una lectura de hace 3 meses. Requiere al menos 7 lecturas antes de mostrar una estimación.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Tiempo en Rango y Variabilidad de Glucosa</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Construido sobre el consenso internacional en métricas de monitoreo continuo de glucosa (Battelino et al., <i>Diabetes Care</i> 2019), adoptado en los Estándares de Atención de la ADA: 70–180 mg/dL como rango objetivo, hipoglucemia dividida en Nivel 1 (&lt;70) y clínicamente significativa Nivel 2 (&lt;54), y coeficiente de variación para estabilidad día a día — ajustado a &lt;33% cuando se registra insulina o una sulfonilurea, según la guía de la ADA sobre riesgo de hipoglucemia para esas clases de medicamentos.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Datos de Índice Glucémico</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Nuestra base de datos curada de 176 alimentos se remonta a valores de IG reales probados en laboratorio (metodología ISO 26642: sujetos en ayunas, una porción de 50g de carbohidratos, glucosa en sangre rastreada durante 2 horas contra una referencia de glucosa). Para platillos mixtos que nunca se han probado como un todo — nadie ha hecho un ensayo clínico de "enchiladas de pollo" — calculamos una estimación ponderada por carbohidratos y la etiquetamos como estimación, ya que incluso esa técnica estándar tiene un margen de 22–50% respecto a un resultado real medido en laboratorio.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Presupuesto Diario de Carbohidratos</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Ecuación de Mifflin-St Jeor para la tasa metabólica basal, ajustada por nivel de actividad y objetivo, luego dividida por tu porcentaje de enfoque de carbohidratos elegido — la misma herramienta gratuita disponible en nuestra página de <a href="carb-calculator.html">Calculadora de Carbohidratos</a>.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Carbohidratos Netos</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Convención estándar: <code>Carbohidratos Totales − Fibra − (Alcoholes de Azúcar ÷ 2)</code> — la fibra no se digiere en glucosa, y los alcoholes de azúcar se absorben solo parcialmente.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Puntaje de Alimento Procesado</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Un puntaje de 1 a 10 basado en el sistema de clasificación de alimentos NOVA (Monteiro et al.), aplicado a cada alimento de la base de IG, platillo de restaurante, y producto escaneado por código de barras — junto con carbohidratos e índice glucémico, ya que qué tan procesado está un alimento afecta más que solo su conteo de carbohidratos.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<section class="cta-band">
+  <h2>Compruébalo tú mismo</h2>
+  <p>Un precio, pagado una vez si quieres — sin factura recurrente requerida para controlar tu diabetes.</p>
+  <a class="btn btn-white" href="index.html#pro">Ver los precios de GlucoBeacon →</a>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand-col">
+      <div class="footer-brand">
+        <img src="../img/icon.png" alt="GlucoBeacon" />
+        <span>GlucoBeacon&trade;</span>
+      </div>
+      <p>Una app privada de gestión de diabetes para Android — azúcar en la sangre, A1C, medicamentos, comida y más, todo en un solo lugar.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Producto</h5>
+      <a href="features.html">Características</a>
+      <a href="index.html#screenshots">Capturas de Pantalla</a>
+      <a href="index.html#pro">Precios</a>
+      <a href="index.html#privacy">Privacidad</a>
+    </div>
+    <div class="footer-col">
+      <h5>Herramientas Gratis</h5>
+      <a href="carb-calculator.html">Calculadora de Carbohidratos</a>
+      <a href="compare.html">Comparar</a>
+      <a href="recipes/index.html">Ciencia Alimentaria</a>
+      <a href="blog/index.html">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h5>Compañía</h5>
+      <a href="index.html#faq">Preguntas</a>
+      <a href="mailto:admin@glucobeacon.com">Contacto</a>
+      <a href="https://glucobeacon.github.io/privacy/es/">Política de Privacidad</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 GAMZ Holdings LLC. Todos los derechos reservados.</p>
+    <div class="legal-links">
+      <a href="https://glucobeacon.github.io/privacy/es/">Política de Privacidad</a>
+      <a href="mailto:admin@glucobeacon.com">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Volver arriba">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="../assets/js/site.js"></script>
+<script src="../assets/js/lang-switch.js"></script>
+</body>
+</html>

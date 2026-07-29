@@ -7,6 +7,9 @@
   <meta name="description" content="Share your feedback as a GlucoBeacon beta tester — what's working, what's confusing, any bugs you've hit, and what you'd like to see next." />
   <meta name="robots" content="noindex, nofollow" />
   <link rel="canonical" href="https://glucobeacon.com/feedback.html" />
+  <link rel="alternate" hreflang="en" href="https://glucobeacon.com/feedback.html" />
+  <link rel="alternate" hreflang="es" href="https://glucobeacon.com/es/feedback.html" />
+  <link rel="alternate" hreflang="x-default" href="https://glucobeacon.com/feedback.html" />
   <link rel="icon" type="image/png" href="img/icon.png" />
   <link rel="stylesheet" href="assets/css/site.css" />
   <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -135,6 +138,7 @@
       <a href="compare.html">Compare</a>
       <a href="index.html#pro">Pricing</a>
       <a href="blog/index.html">Blog</a>
+      <span id="lang-switch" class="nav-lang"></span>
       <a class="nav-cta" href="index.html#waitlist">Get Notified</a>
     </div>
   </nav>
@@ -298,6 +302,7 @@
 </button>
 
 <script src="assets/js/site.js"></script>
+<script src="assets/js/lang-switch.js"></script>
 <script>
 (function () {
   const FEEDBACK_URL = "https://us-central1-glucobeacon.cloudfunctions.net/submitTesterFeedback";

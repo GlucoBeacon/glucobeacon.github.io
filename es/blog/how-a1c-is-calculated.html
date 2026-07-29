@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cómo se Calcula la A1C (y Qué Significa Realmente tu Número) | GlucoBeacon</title>
+  <meta name="description" content="La A1C no es un simple promedio de tus lecturas de azúcar en la sangre. Así es como realmente se calcula, por qué los días recientes cuentan más que los antiguos, y qué significa el número para tu salud." />
+  <link rel="canonical" href="https://glucobeacon.com/es/blog/how-a1c-is-calculated.html" />
+  <link rel="alternate" hreflang="en" href="https://glucobeacon.com/blog/how-a1c-is-calculated.html" />
+  <link rel="alternate" hreflang="es" href="https://glucobeacon.com/es/blog/how-a1c-is-calculated.html" />
+  <link rel="alternate" hreflang="x-default" href="https://glucobeacon.com/blog/how-a1c-is-calculated.html" />
+  <link rel="icon" type="image/png" href="../../img/icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:title" content="Cómo se Calcula la A1C (y Qué Significa Realmente tu Número)" />
+  <meta property="og:description" content="La A1C no es un promedio diario — está ponderada. Aquí están las matemáticas reales detrás del número que más le importa a tu médico." />
+  <meta property="og:type" content="article" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Cómo se Calcula la A1C (y Qué Significa Realmente tu Número)",
+    "author": { "@type": "Organization", "name": "GlucoBeacon" },
+    "publisher": { "@type": "Organization", "name": "GAMZ Holdings LLC" },
+    "mainEntityOfPage": "https://glucobeacon.com/es/blog/how-a1c-is-calculated.html"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Es la A1C un simple promedio del azúcar en la sangre?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. La A1C es un promedio ponderado por recencia, no uno plano. Los 30 días más recientes contribuyen más a tu A1C, los días 31-60 contribuyen moderadamente, y los días 61-90 contribuyen menos. Dos personas con el mismo promedio de azúcar en la sangre en 90 días pueden obtener resultados de A1C diferentes si su patrón reciente fue diferente."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo se convierte la A1C a azúcar en la sangre promedio (eAG)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La glucosa promedio estimada en mg/dL es igual a 28.7 veces tu porcentaje de A1C, menos 46.7 (eAG = 28.7 x A1C - 46.7). Por ejemplo, una A1C de 7.0% corresponde a aproximadamente 154 mg/dL, y una A1C de 6.5% corresponde a aproximadamente 140 mg/dL."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué nivel de A1C indica diabetes o prediabetes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Según los rangos de referencia de la ADA, menos de 5.7% se considera normal, de 5.7% a 6.4% es el rango de prediabetes, y 6.5% o más en dos pruebas separadas se usa para diagnosticar diabetes. A la mayoría de los adultos con diabetes se les da un objetivo individualizado, comúnmente alrededor del 7%."
+        }
+      }
+    ]
+  }
+  </script>
+  <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+<div class="beacon-bg" aria-hidden="true">
+  <div class="beacon-frame">
+    <img src="../../img/beacon-hero.jpg" alt="" />
+    <div class="beacon-lamp"></div>
+    <div class="beacon-beam"></div>
+  </div>
+</div>
+
+<nav>
+  <a class="nav-brand" href="../index.html">
+    <img src="../../img/icon.png" alt="Logo de GlucoBeacon" />
+    <span>GlucoBeacon</span>
+  </a>
+  <div class="nav-links">
+    <a href="../features.html">Características</a>
+    <a href="../index.html#pro">Pro</a>
+    <a href="../recipes/index.html">Ciencia Alimentaria</a>
+    <a href="../restaurants/index.html">Restaurantes</a>
+    <a href="index.html" class="active">Blog</a>
+    <span id="lang-switch" class="nav-lang"></span>
+    <a href="mailto:admin@glucobeacon.com">Contacto</a>
+  </div>
+  <span class="nav-badge">Próximamente</span>
+</nav>
+
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Blog</a> / A1C</div>
+    <div class="article-eyebrow">A1C</div>
+    <h1>Cómo se Calcula la A1C (y Qué Significa Realmente tu Número)</h1>
+    <div class="article-meta">6 min de lectura</div>
+  </div>
+</div>
+
+<div class="article-body">
+
+  <p><strong>La A1C no es un promedio plano de tu azúcar en la sangre durante los últimos 3 meses — es un promedio ponderado por recencia, donde los 30 días más recientes cuentan más que los más antiguos.</strong> Tu A1C probablemente es el número individual que tu médico más de cerca vigila, y también uno de los menos comprendidos. La mayoría de la gente asume que es simplemente "el promedio de tu azúcar en la sangre de los últimos 3 meses." Eso está cerca, pero no del todo correcto, y la diferencia realmente importa.</p>
+
+  <h2>Qué mide realmente la A1C</h2>
+
+  <p>La A1C (también llamada HbA1c) mide el porcentaje de tu hemoglobina — la proteína en los glóbulos rojos que transporta oxígeno — que tiene glucosa adherida. Cuando el azúcar en la sangre está elevada, más glucosa se une a la hemoglobina. Debido a que los glóbulos rojos viven aproximadamente 2-3 meses, la prueba de A1C captura una instantánea continua de tu azúcar en la sangre promedio en aproximadamente esa ventana, no solo los últimos días.</p>
+
+  <h2>Por qué no es un promedio plano</h2>
+
+  <p>Aquí está la parte que la mayoría de las explicaciones se saltan: no todos los últimos tres meses cuentan igual. Debido a que los glóbulos rojos se reemplazan constantemente, <strong>los niveles de azúcar en la sangre más recientes tienen una influencia más grande en tu A1C que los más antiguos.</strong> Un desglose aproximado, comúnmente citado, se ve así:</p>
+
+  <ul>
+    <li><strong>Los 30 días más recientes</strong> — contribuyen más a tu A1C</li>
+    <li><strong>Hace 31-60 días</strong> — contribuyen moderadamente</li>
+    <li><strong>Hace 61-90 días</strong> — contribuyen menos</li>
+  </ul>
+
+  <p>Es por esto que dos personas con el mismo azúcar en la sangre promedio en 90 días pueden obtener resultados de A1C diferentes si su <em>patrón</em> fue diferente — alguien que estuvo alto al principio y mejoró recientemente generalmente saldrá mejor en la prueba que alguien cuyo control ha ido empeorando, aun con el mismo promedio general.</p>
+
+  <h2>Traduciendo la A1C a una glucosa promedio estimada</h2>
+
+  <p>Tu porcentaje de A1C se puede convertir a una glucosa promedio estimada (eAG) en mg/dL usando una fórmula de la ADA (basada en la fórmula de Nathan et al.):</p>
+
+  <p style="text-align:center; font-weight:700; color:var(--navy); font-size:1.1rem; margin: 24px 0;">eAG (mg/dL) = (28.7 × A1C) − 46.7</p>
+
+  <table>
+    <thead><tr><th>A1C</th><th>Glucosa Promedio Estimada</th></tr></thead>
+    <tbody>
+      <tr><td>5.0%</td><td>~97 mg/dL</td></tr>
+      <tr><td>5.7% (umbral de prediabetes)</td><td>~117 mg/dL</td></tr>
+      <tr><td>6.5% (umbral de diabetes)</td><td>~140 mg/dL</td></tr>
+      <tr><td>7.0%</td><td>~154 mg/dL</td></tr>
+      <tr><td>8.0%</td><td>~183 mg/dL</td></tr>
+      <tr><td>9.0%</td><td>~212 mg/dL</td></tr>
+    </tbody>
+  </table>
+
+  <p>Rangos generales de referencia de la ADA: menos de 5.7% se considera normal, 5.7%-6.4% es el rango de prediabetes, y 6.5% o más en dos pruebas separadas se usa para diagnosticar diabetes. A la mayoría de los adultos con diabetes se les da un objetivo individualizado, comúnmente alrededor del 7%, aunque tu médico puede establecer una meta diferente según tu edad, otras condiciones de salud, y riesgo de azúcar baja en la sangre.</p>
+
+  <h2>Por qué la A1C sola no es el panorama completo</h2>
+
+  <p>La A1C es un solo número, pero la misma A1C puede ocultar realidades del día a día muy diferentes. Alguien cuya azúcar en la sangre se mantiene estable en un rango moderado y alguien cuya azúcar en la sangre oscila salvajemente entre muy baja y muy alta pueden terminar con el mismo promedio de A1C — a pesar de que una situación es mucho más riesgosa día a día. Esto es parte de por qué más médicos ahora también observan el <strong>tiempo en rango</strong> (el porcentaje de tiempo que tu glucosa se mantiene dentro del objetivo) junto con la A1C, no en lugar de ella.</p>
+
+  <div class="callout">
+    <div class="callout-label">En GlucoBeacon</div>
+    <p>El Estimador de A1C de GlucoBeacon aplica esta misma fórmula ponderada por recencia a tus lecturas registradas — así que entre pruebas de laboratorio, puedes ver hacia dónde tiende tu número, no solo adivinar. Combínalo con la vista de Tiempo en Rango para el panorama más completo que un solo número de A1C no puede mostrar por sí solo.</p>
+  </div>
+
+  <h2>La conclusión</h2>
+  <p>La A1C es un indicador genuinamente útil a largo plazo, pero es un promedio ponderado y retrasado — no una lectura en vivo, y no toda la historia por sí sola. Entender el retraso ayuda a explicar por qué un gran cambio de estilo de vida hoy no se reflejará en un resultado de laboratorio durante semanas, y por qué mantener la consistencia importa más que cualquier semana individual buena (o mala).</p>
+
+</div>
+
+<p class="disclaimer">Este artículo es solo para fines educativos generales y no sustituye la asesoría médica profesional. Los objetivos de A1C varían según el individuo — siempre sigue la meta específica establecida por tu proveedor de salud, no un rango de referencia general.</p>
+
+<div class="back-link"><a href="index.html">← Volver a todos los artículos</a></div>
+
+<footer>
+  <div class="footer-brand">
+    <img src="../../img/icon.png" alt="GlucoBeacon" />
+    <span>GlucoBeacon</span>
+  </div>
+  <p>© 2026 GAMZ Holdings LLC. Todos los derechos reservados.</p>
+  <div class="footer-links">
+    <a href="https://glucobeacon.github.io/privacy/es/">Política de Privacidad</a>
+    <a href="mailto:admin@glucobeacon.com">Contacto</a>
+  </div>
+</footer>
+
+<script src="../../assets/js/lang-switch.js"></script>
+
+</body>
+</html>

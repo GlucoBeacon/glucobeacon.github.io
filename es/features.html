@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Características — Hecha para Diabéticos, por un Diabético | GlucoBeacon</title>
+  <meta name="description" content="Un vistazo profundo a lo que GlucoBeacon realmente hace y por qué — correlación de azúcar en la sangre con historial de comidas, información sobre ayuno, escaneo de comida con IA, un asistente de IA personal, guía de restaurantes, recordatorios de medicamentos, seguimiento de actividad y citas, construida por un diabético Tipo 2 que necesitaba todo esto él mismo." />
+  <link rel="canonical" href="https://glucobeacon.com/es/features.html" />
+  <link rel="alternate" hreflang="en" href="https://glucobeacon.com/features.html" />
+  <link rel="alternate" hreflang="es" href="https://glucobeacon.com/es/features.html" />
+  <link rel="alternate" hreflang="x-default" href="https://glucobeacon.com/features.html" />
+  <link rel="icon" type="image/png" href="../img/icon.png" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Características — Hecha para Diabéticos, por un Diabético | GlucoBeacon" />
+  <meta property="og:description" content="Correlación con historial de comidas, información sobre ayuno, escaneo de comida con IA, un asistente de IA personal, y más — lo que GlucoBeacon hace y las frustraciones reales detrás de por qué cada función existe." />
+  <meta property="og:image" content="https://glucobeacon.com/img/screen-dashboard.png" />
+  <meta property="og:url" content="https://glucobeacon.com/es/features.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Características — Hecha para Diabéticos, por un Diabético | GlucoBeacon" />
+  <meta name="twitter:description" content="Correlación con historial de comidas, información sobre ayuno, escaneo de comida con IA, un asistente de IA personal, y más — lo que GlucoBeacon hace y las frustraciones reales detrás de por qué cada función existe." />
+  <meta name="twitter:image" content="https://glucobeacon.com/img/screen-dashboard.png" />
+  <style>
+    /* Same persistent beacon backdrop as every other page — see index.html for the full rationale. */
+    .beacon-bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+    .beacon-frame { position: absolute; top: 130px; left: 0; width: 100%; height: 100vh; }
+    .beacon-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+    .beacon-lamp {
+      position: absolute; top: 16.8%; left: 50%; width: 46px; height: 46px; border-radius: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(255,251,235,1) 0%, rgba(253,214,150,0.9) 40%, rgba(249,168,90,0.5) 65%, rgba(249,168,90,0) 80%);
+      filter: blur(2px);
+      animation: beaconPulse 2.3s ease-in-out infinite, beaconFlash 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    .beacon-beam {
+      position: absolute; top: 16.8%; left: 50%; width: 46vw; max-width: 640px; height: 90px;
+      transform-origin: 0% 50%;
+      transform: translateY(-50%) scaleX(1);
+      background: linear-gradient(90deg,
+        rgba(255,251,235,0.95) 0%,
+        rgba(253,200,130,0.55) 40%,
+        rgba(253,200,130,0.15) 75%,
+        transparent 100%);
+      clip-path: polygon(0% 38%, 100% 0%, 100% 100%, 0% 62%);
+      filter: blur(6px);
+      animation: beaconSweep 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    @keyframes beaconSweep {
+      0%   { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+      22%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      25%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      28%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      50%  { transform: translateY(-50%) scaleX(-1);    opacity: 0.95; }
+      72%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      75%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      78%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      100% { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+    }
+    @keyframes beaconFlash {
+      0%, 20%, 30%, 70%, 80%, 100% { filter: blur(2px) brightness(1); }
+      25%, 75% { filter: blur(2px) brightness(1.9); }
+    }
+    @keyframes beaconPulse {
+      0%, 100% { opacity: 0.85; transform: translate(-50%, -50%) scale(1); }
+      50%      { opacity: 1;    transform: translate(-50%, -50%) scale(1.15); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .beacon-lamp, .beacon-beam { animation: none; }
+    }
+
+    .tool-head {
+      position: relative; overflow: hidden;
+      background: linear-gradient(100deg, rgba(9,20,36,0.62) 0%, rgba(9,20,36,0.4) 55%, rgba(9,20,36,0.2) 100%);
+      color: var(--white); padding: 64px 5% 44px; text-align: center;
+    }
+    .tool-head .container { max-width: 760px; }
+    .tool-head h1 { font-size: clamp(1.8rem, 3.8vw, 2.7rem); font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; }
+    .tool-head h1 span { color: var(--orange-light); }
+    .tool-head p { color: rgba(255,255,255,0.75); font-size: 1.05rem; line-height: 1.6; }
+    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 22px; }
+    .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--white); }
+
+    /* ─── Founder strip ──────────────────────────────── */
+    .founder-strip { background: var(--white); border-bottom: 1px solid var(--border); padding: 30px 5%; }
+    .founder-strip .inner { max-width: 760px; margin: 0 auto; display: flex; gap: 18px; align-items: flex-start; }
+    .founder-strip .mark {
+      flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: var(--navy);
+      display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 800; font-size: 0.85rem;
+    }
+    .founder-strip p { font-size: 0.95rem; line-height: 1.6; color: var(--text); }
+    .founder-strip p b { color: var(--orange2); }
+    .founder-strip .attr { font-size: 0.8rem; color: var(--muted); margin-top: 8px; }
+    .founder-strip .attr strong { color: var(--navy); }
+
+    .wrap { max-width: 920px; margin: 0 auto; padding: 48px 5% 24px; }
+
+    /* ─── Feature story cards ────────────────────────── */
+    .feat-section { margin-bottom: 56px; scroll-margin-top: 110px; }
+    .feat-head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; flex-wrap: wrap; }
+    .feat-icon { width: 48px; height: 48px; border-radius: 14px; background: linear-gradient(135deg, #FFF3E8, #FFE4CC); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; }
+    .feat-head h2 { font-size: 1.4rem; font-weight: 800; color: var(--navy); }
+    .feat-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); overflow: hidden; }
+    .feat-cols { display: grid; grid-template-columns: 1fr 1.15fr; }
+    @media (max-width: 720px) { .feat-cols { grid-template-columns: 1fr; } }
+    .feat-col { padding: 26px 28px; }
+    .feat-col.frustration { background: var(--bg); border-right: 1px solid var(--border); }
+    @media (max-width: 720px) { .feat-col.frustration { border-right: none; border-bottom: 1px solid var(--border); } }
+    .feat-col.frustration .label { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 10px; }
+    .feat-col.frustration p { font-size: 0.98rem; line-height: 1.65; color: var(--text); font-style: italic; }
+    .feat-col.frustration p b { color: var(--orange2); font-style: normal; }
+    .feat-col.solution .label { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: var(--good); margin-bottom: 10px; }
+    .feat-col.solution ul { padding-left: 18px; font-size: 0.9rem; line-height: 1.65; color: var(--text); }
+    .feat-col.solution ul li { margin-bottom: 8px; }
+    .feat-col.solution ul li:last-child { margin-bottom: 0; }
+    .feat-col.solution ul li b { color: var(--navy); }
+    .feat-note { font-size: 0.82rem; color: var(--muted); margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); line-height: 1.55; }
+
+    /* ─── CTA band ────────────────────────────────────── */
+    .cta-band { position: relative; overflow: hidden; background: linear-gradient(120deg, var(--orange2), var(--orange)); text-align: center; padding: 60px 5%; }
+    .cta-band h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .cta-band p { color: rgba(255,255,255,0.9); font-size: 1rem; margin-bottom: 28px; }
+    .cta-band .btn-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+<div class="beacon-bg" aria-hidden="true">
+  <div class="beacon-frame">
+    <img src="../img/beacon-hero.jpg" alt="" />
+    <div class="beacon-lamp"></div>
+    <div class="beacon-beam"></div>
+  </div>
+</div>
+
+<a href="#main" class="skip-link">Saltar al contenido</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">
+      <img src="../img/icon.png" alt="Logo de GlucoBeacon" />
+      <span>GlucoBeacon<sup>&trade;</sup></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Alternar menú" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="features.html" class="active">Características</a>
+      <a href="recipes/index.html">Ciencia Alimentaria</a>
+      <a href="restaurants/index.html">Restaurantes</a>
+      <a href="carb-calculator.html">Calculadora de Carbohidratos</a>
+      <a href="compare.html">Comparar</a>
+      <a href="index.html#pro">Precios</a>
+      <a href="blog/index.html">Blog</a>
+      <span id="lang-switch" class="nav-lang"></span>
+      <a class="nav-cta" href="index.html#waitlist">Notificarme</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<div class="tool-head">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Inicio</a> / Características</div>
+    <div class="eyebrow eyebrow-light" style="justify-content:center;">Hecha para Diabéticos · Por un Diabético</div>
+    <h1>Cada función existe porque <span>algo real era frustrante</span></h1>
+    <p>No es una hoja de especificaciones — son los momentos reales que llevaron a construir cada parte de GlucoBeacon, y lo que cambia una vez que la tienes.</p>
+  </div>
+</div>
+
+<div class="founder-strip">
+  <div class="inner reveal">
+    <div class="mark">GB</div>
+    <div>
+      <p>He sido <b>diabético Tipo 2 por más de 20 años</b>. Cada función de abajo comenzó de la misma forma — algo sobre controlar la diabetes era genuinamente molesto, propenso a errores, o simplemente faltaba en cada app que ya había probado, así que construí la pieza que faltaba. Nada de esto es una lista de casillas para competir con la app de alguien más. Es la app que realmente necesitaba.</p>
+      <div class="attr"><strong>Michael</strong> — Diabético Tipo 2, más de 20 años, Fundador, GlucoBeacon</div>
+    </div>
+  </div>
+</div>
+
+<div class="subnav-wrap">
+  <div class="subnav">
+    <a href="#meal-history">Historial de Comidas</a>
+    <a href="#fasting">Ayuno</a>
+    <a href="#food-scan">Escaneo de Comida</a>
+    <a href="#ai-assistant">Asistente de IA</a>
+    <a href="#restaurant-advisor">Asesor de Restaurantes</a>
+    <a href="#medication">Medicamentos</a>
+    <a href="#activity">Actividad</a>
+    <a href="#appointments">Citas</a>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- MEAL HISTORY -->
+  <section class="feat-section reveal" id="meal-history">
+    <div class="feat-head">
+      <div class="feat-icon">🕰️</div>
+      <h2>Historial de Comidas — "Ya has comido esto antes"</h2>
+      <span class="tag tag-pro">Pro</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">La frustración</div>
+          <p>En P.F. Chang's, el escáner de comida con IA leyó un plato como "lo mein de camarón" — en realidad era pollo. Bastante fácil de corregir volviendo a escanear. El problema real fue la entrada de rollitos de huevo: el menú solo dice "orden", no cuántas piezas o cuánto cuesta realmente en carbohidratos una sola. <b>Tuve que salir de la app, abrir Chrome, y buscarlo manualmente — a mitad de la comida.</b> E incluso entonces, nada en la app recordaba nada de eso para la próxima vez.</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">Cómo ayuda GlucoBeacon</div>
+          <ul>
+            <li>Cada comida que registras se compara automáticamente con <b>cada otra vez que has registrado esa misma comida</b> — sin configuración necesaria.</li>
+            <li>Muestra tu lectura antes de comer, cualquier medicamento tomado antes, la lectura después de comer con la subida real, y si la actividad después marcó una diferencia — el panorama completo, no solo un número.</li>
+            <li><b>Con reconocimiento de restaurante:</b> el mismo platillo en dos restaurantes diferentes — o hecho en casa — se registra por separado, ya que un lo mein de pollo casero y la versión de un restaurante no son la misma comida.</li>
+            <li>Las últimas 3 ocasiones, justo ahí cuando estás a punto de registrarlo de nuevo — antes de dar un bocado, no después.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feat-note" style="margin: 0 28px 22px;">No es algo que encontramos integrado en mySugr, Carb Manager, MyFitnessPal, u otras apps que investigamos para nuestra <a href="compare.html">página de comparación</a> — la mayoría rastrea lo que comiste, no lo que realmente te hizo la última vez.</div>
+    </div>
+  </section>
+
+  <!-- FASTING -->
+  <section class="feat-section reveal" id="fasting">
+    <div class="feat-head">
+      <div class="feat-icon">🌙</div>
+      <h2>Ayuno — Saber si realmente fue seguro</h2>
+      <span class="tag tag-free">Gratis</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">La frustración</div>
+          <p>El ayuno intermitente es un consejo común para el manejo del Tipo 2 — pero para cualquiera que use insulina u otros medicamentos, un ayuno nocturno conlleva un riesgo real de hipoglucemia. La mayoría de las apps de temporizador de ayuno (Zero, DoFasting, y el resto) tratan a todos los usuarios igual y <b>no tienen idea de qué hizo realmente tu azúcar en la sangre</b> mientras el reloj corría.</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">Cómo ayuda GlucoBeacon</div>
+          <ul>
+            <li>Comienza un ayuno con un solo toque — 16:8, 18:6, 20:4, OMAD, o una ventana personalizada — con una cuenta regresiva en vivo y un anillo de progreso, y el widget de tu pantalla de inicio contando regresivamente junto a él.</li>
+            <li>Cada ayuno completado muestra estadísticas clínicas reales: <b>promedio, rango, % de tiempo en rango, variabilidad de glucosa (CV%)</b>, y la hipoglucemia marcada por severidad clínica real, no una suposición.</li>
+            <li>Si registras insulina o una sulfonilurea, el enfoque de seguridad alrededor de cualquier lectura baja se agudiza automáticamente.</li>
+            <li>Una vez que has completado algunos ayunos, GlucoBeacon compara tu control durante las ventanas de ayuno contra el resto de tu día — y, con el tiempo, te dice qué ventana específica (16:8 vs. 20:4, por ejemplo) realmente funciona mejor para <i>tus</i> números.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feat-note" style="margin: 0 28px 22px;">Construido sobre el mismo consenso internacional de Tiempo en Rango (Battelino et al., 2019) que usan los propios Estándares de Atención de la ADA — no un umbral inventado.</div>
+    </div>
+  </section>
+
+  <!-- FOOD SCAN + RESTAURANT ATTACHMENT -->
+  <section class="feat-section reveal" id="food-scan">
+    <div class="feat-head">
+      <div class="feat-icon">📸</div>
+      <h2>Escaneo de Comida y Reconocimiento de Restaurante</h2>
+      <span class="tag tag-pro">Pro</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">La frustración</div>
+          <p>La comida de restaurante no viene con código de barras. Y tu lugar favorito — el restaurante mexicano familiar, la fonda que nadie conoce fuera de tu colonia — no está en la base de datos de nadie y nunca lo estará. La mayoría de las apps o te hacen escribir todo desde cero o simplemente no tienen una respuesta para "no es una cadena".</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">Cómo ayuda GlucoBeacon</div>
+          <ul>
+            <li>Toma una foto, obtén un desglose por artículo — agrega cualquier cosa que el escaneo no captó, elimina cualquier cosa que no esté realmente en tu plato, y se recalcula al instante.</li>
+            <li>Un botón dedicado <b>"Escanear Comida"</b> junto a "Escanear Código de Barras", ya que la comida de restaurante nunca iba a tener uno.</li>
+            <li>Adjunta un nombre de restaurante y una etiqueta personal como "Frecuentemente Ordenado" a cualquier entrada — en el momento en que lo registras, o después si lo olvidaste.</li>
+            <li>¿Explorando el menú de una cadena y no ves lo que realmente pediste? <b>"¿No ves lo que ordenaste? Escanéalo"</b> abre el escáner con el restaurante ya completado.</li>
+            <li>Para el lugar local que ninguna base de datos tiene: <b>"No está en la lista — ingresar manualmente"</b> más un "Recordar este restaurante" opcional — regístralo una vez y se comporta como una cadena real de ahí en adelante.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feat-note" style="margin: 0 28px 22px;">Deliberadamente no intentamos adivinar con IA la nutrición de restaurantes independientes buscando en internet — la mayoría nunca la publica en ningún lado, así que una búsqueda normalmente regresaría vacía. Es mejor que nos lo digas una vez y lo recordemos.</div>
+    </div>
+  </section>
+
+  <!-- AI ASSISTANT -->
+  <section class="feat-section reveal" id="ai-assistant">
+    <div class="feat-head">
+      <div class="feat-icon">🤖</div>
+      <h2>Asistente de IA — Alguien que realmente conoce tus números</h2>
+      <span class="tag tag-pro">Pro</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">La frustración</div>
+          <p>Son las 11pm, tu lectura es 240 después de cenar, y quieres saber si vale la pena preocuparse esta noche o solo hay que observarlo. Buscarlo en Google te da rangos genéricos que nunca han visto tu historial real, tus medicamentos, o cómo se ve "lo normal para ti".</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">Cómo ayuda GlucoBeacon</div>
+          <ul>
+            <li>Haz una pregunta real y obtén una respuesta ajustada a <b>tus lecturas reales, estimación de A1C, medicamentos y objetivos</b> — no consejos genéricos, y no enviada a un tercero como datos de entrenamiento.</li>
+            <li>Puede realizar acciones reales, no solo hablar: registrar una comida, un medicamento, una actividad, una lectura de azúcar en la sangre, o agendar una cita — escribiendo o por voz, con manos libres desde el widget de la pantalla de inicio.</li>
+            <li>El registro de medicamentos y azúcar en la sangre a través del asistente es gratis e ilimitado, siempre — incluso antes de haber usado alguna de tus consultas gratuitas.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feat-note" style="margin: 0 28px 22px;">3 consultas gratuitas de por vida para probarlo, 15/día en Pro. Impulsado por Claude, funcionando con tus propios datos en el dispositivo — nada de tu historial de salud sale de tu control para construir el perfil publicitario de alguien más.</div>
+    </div>
+  </section>
+
+  <!-- RESTAURANT ADVISOR -->
+  <section class="feat-section reveal" id="restaurant-advisor">
+    <div class="feat-head">
+      <div class="feat-icon">🍔</div>
+      <h2>Asesor de Restaurantes — Saber antes de ordenar</h2>
+      <span class="tag tag-pro">Pro</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">La frustración</div>
+          <p>Estar parado en el mostrador con un menú de 40 artículos detrás de la cajera y una fila formándose detrás de ti es un lugar genuinamente malo para intentar estimar el impacto glucémico mentalmente — así que la mayoría de la gente simplemente pide lo que suena bien y descubre el número después.</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">Cómo ayuda GlucoBeacon</div>
+          <ul>
+            <li><b>53 cadenas de restaurantes reales, más de 3,700 platillos</b> — evaluados por impacto glucémico, carbohidratos, calorías, y qué tan procesado está cada artículo, no solo el conteo de calorías.</li>
+            <li>Artículos ordenados en Mejores Opciones, Buenas Opciones, y Alto en Carbohidratos antes de que siquiera abras el menú real.</li>
+            <li>Precios reales de combos y paquetes de valor incluidos — no solo artículos individuales, ya que así es genuinamente como la mayoría de la gente ordena.</li>
+            <li>Etiquetas de compatibilidad Keto y Vegetariana integradas, para que un enfoque dietético y un objetivo glucémico no tengan que verificarse por separado.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDICATION -->
+  <section class="feat-section reveal" id="medication">
+    <div class="feat-head">
+      <div class="feat-icon">💊</div>
+      <h2>Medicamentos — "¿Ya me tomé esto?"</h2>
+      <span class="tag tag-free">Gratis</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">La frustración</div>
+          <p>Las pastillas diarias son fáciles de recordar. Una inyección semanal de GLP-1 o una inyección mensual de B12 es otra historia — y estar ahí genuinamente sin saber si ya te aplicaste algo es una sensación mucho peor con un inyectable que con una vitamina.</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">Cómo ayuda GlucoBeacon</div>
+          <ul>
+            <li>Recordatorios que realmente coinciden con cómo se prescribe un medicamento en la vida real — hasta 3 veces al día, o semanal, mensual, o un horario personalizado cada N días.</li>
+            <li>Etiquetas vinculadas a <i>para qué</i> es el medicamento (Antes de Comer, Después de Comer, Noche) en lugar de una hora fija, para que se ajuste a tu rutina real.</li>
+            <li>Regístralo temprano y la app cancela automáticamente el recordatorio de ese día — sin notificación molesta por algo que ya hiciste.</li>
+            <li>Si el recordatorio de tu teléfono alguna vez no suena — a veces los teléfonos hacen eso — GlucoBeacon lo nota en minutos y te recuerda de todos modos, en lugar de que una dosis olvidada se convierta también en un recordatorio olvidado.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITY -->
+  <section class="feat-section reveal" id="activity">
+    <div class="feat-head">
+      <div class="feat-icon">🏃</div>
+      <h2>Actividad — Ejercicio que realmente se cuenta</h2>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">La frustración</div>
+          <p>Una caminata real, registrada por un reloj, que nunca aparece en la app porque el teléfono se quedó en el mostrador todo el tiempo y su propio podómetro casi no contó nada. O preguntarte si realmente es seguro ejercitarte ahora mismo, dado dónde está tu azúcar en la sangre, sin nada en la app construido para responder eso.</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">Cómo ayuda GlucoBeacon</div>
+          <ul>
+            <li>El conteo de pasos y sincronización con dispositivos vestibles (Fitbit, Garmin, Samsung, Wear OS, Google Fit) son <span class="tag tag-free" style="vertical-align:middle;">Gratis</span> — más una entrada manual de respaldo para el escenario exacto de "el reloj lo contó, el teléfono no", y un ajuste para elegir en qué fuente confías realmente.</li>
+            <li><b>18 rutinas de ejercicio basadas en evidencia</b> (principiante hasta experto), cada una con recordatorios de seguridad para diabéticos integrados y un reproductor guiado con temporizador — parte de Pro.</li>
+            <li>Cada actividad registrada se correlaciona con tu azúcar en la sangre de la misma forma que la comida — así que "el ejercicio realmente mueve mis números" se convierte en algo que puedes ver, no algo que asumes.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPOINTMENTS -->
+  <section class="feat-section reveal" id="appointments">
+    <div class="feat-head">
+      <div class="feat-icon">📅</div>
+      <h2>Citas — Llega preparado</h2>
+      <span class="tag tag-pro">Pro</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">La frustración</div>
+          <p>Tu endocrinólogo pregunta cómo fueron los últimos tres meses, y la respuesta honesta es "¿bien, creo?" — porque los datos reales viven repartidos entre una app de registro, un calendario genérico que no sabe que una cita de seguimiento es relevante para la diabetes, y la memoria.</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">Cómo ayuda GlucoBeacon</div>
+          <ul>
+            <li>Un calendario real integrado para cada cita relevante a la diabetes, con recordatorios y advertencias automáticas de conflicto si dos se superponen.</li>
+            <li>Pídele al asistente de IA que agende una por ti por voz — "agenda un seguimiento con el Dr. Chen el próximo martes a las 2" — y queda en el calendario.</li>
+            <li>Combínalo con el <b>Informe PDF para el Médico</b> — llega a esa cita con tus lecturas, patrones y tendencias reales ya organizados, en lugar de un recuerdo vago de "ha estado bien, más o menos".</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<section class="cta-band">
+  <h2>Ve cómo todo encaja</h2>
+  <p>Una app, correlacionada con tu azúcar en la sangre real — no once diferentes que no se comunican entre sí.</p>
+  <div class="btn-row">
+    <a class="btn btn-white" href="index.html#pro">Ver precios →</a>
+    <a class="btn-ghost" href="compare.html" style="color:rgba(255,255,255,0.9); border-color: rgba(255,255,255,0.4);">Cómo nos comparamos con otras apps →</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand-col">
+      <div class="footer-brand">
+        <img src="../img/icon.png" alt="GlucoBeacon" />
+        <span>GlucoBeacon&trade;</span>
+      </div>
+      <p>Una app privada de gestión de diabetes para Android — azúcar en la sangre, A1C, medicamentos, comida y más, todo en un solo lugar.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Producto</h5>
+      <a href="features.html">Características</a>
+      <a href="index.html#screenshots">Capturas de Pantalla</a>
+      <a href="index.html#pro">Precios</a>
+      <a href="index.html#privacy">Privacidad</a>
+    </div>
+    <div class="footer-col">
+      <h5>Herramientas Gratis</h5>
+      <a href="carb-calculator.html">Calculadora de Carbohidratos</a>
+      <a href="compare.html">Comparar</a>
+      <a href="recipes/index.html">Ciencia Alimentaria</a>
+      <a href="blog/index.html">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h5>Compañía</h5>
+      <a href="index.html#faq">Preguntas</a>
+      <a href="mailto:admin@glucobeacon.com">Contacto</a>
+      <a href="https://glucobeacon.github.io/privacy/es/">Política de Privacidad</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 GAMZ Holdings LLC. Todos los derechos reservados.</p>
+    <div class="legal-links">
+      <a href="https://glucobeacon.github.io/privacy/es/">Política de Privacidad</a>
+      <a href="mailto:admin@glucobeacon.com">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Volver arriba">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="../assets/js/site.js"></script>
+<script src="../assets/js/lang-switch.js"></script>
+</body>
+</html>
