@@ -334,3 +334,9 @@ html[lang="es"] .nav-menu a:not(.nav-cta) { padding: 9px 9px; font-size: 0.84rem
   .footer-brand-col { grid-column: span 1; }
   .footer-bottom { flex-direction: column; text-align: center; }
 }
+
+/* Local-currency price estimate note (site.js), used on both the Pricing
+   cards and the compare-page table -- previously fully unstyled, so on
+   dense inline text (e.g. "$4.99/mo") the ≈ note ran flush against the
+   price with no visual gap. */
+.price-fx-note { margin-left: 4px; font-size: 0.86em; color: var(--muted); font-weight: 500; }
