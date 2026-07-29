@@ -175,8 +175,15 @@
       // Asia
       JP: 'JPY', CN: 'CNY', IN: 'INR', KR: 'KRW', SG: 'SGD', HK: 'HKD', TH: 'THB', ID: 'IDR',
       MY: 'MYR', PH: 'PHP', IL: 'ILS',
-      // Americas
+      // Americas -- only Canada/Mexico/Brazil were mapped originally, which
+      // meant most of Spanish-speaking Latin America (the actual audience
+      // for the es-419 site) fell through to plain USD with no estimate at
+      // all. Filled out the rest here. Panama, El Salvador, and Ecuador are
+      // deliberately omitted -- they use USD as their official currency, so
+      // the plain USD price is already the correct local price for them.
       CA: 'CAD', MX: 'MXN', BR: 'BRL',
+      AR: 'ARS', CL: 'CLP', CO: 'COP', PE: 'PEN', UY: 'UYU', PY: 'PYG', BO: 'BOB',
+      VE: 'VES', GT: 'GTQ', CR: 'CRC', HN: 'HNL', NI: 'NIO', DO: 'DOP',
       // Oceania / Africa
       AU: 'AUD', NZ: 'NZD', ZA: 'ZAR',
     };
@@ -215,10 +222,17 @@
       if (cached && (Date.now() - cached.t) < CACHE_MS) {
         applyRate(cached.rate);
       } else {
-        fetch('https://api.frankfurter.dev/v1/latest?from=USD&to=' + currency)
+        // frankfurter.dev (ECB-sourced) only carries ~30 major currencies --
+        // Mexico and Brazil are on that list but Chile, Argentina, Colombia,
+        // Peru, and the rest of Latin America are not, so those visitors
+        // would never get a rate no matter what's in REGION_CURRENCY above.
+        // open.er-api.com is also free/keyless (same no-IP-sent privacy
+        // property) but covers 166 currencies, including all of Latin
+        // America.
+        fetch('https://open.er-api.com/v6/latest/USD')
           .then(function (res) { return res.json(); })
           .then(function (data) {
-            var rate = data && data.rates && data.rates[currency];
+            var rate = data && data.result === 'success' && data.rates && data.rates[currency];
             if (!rate) return;
             try { localStorage.setItem(CACHE_KEY, JSON.stringify({ rate: rate, t: Date.now() })); } catch (e) {}
             applyRate(rate);
