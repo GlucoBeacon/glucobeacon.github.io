@@ -191,6 +191,15 @@
     var region = (navigator.language || '').split('-')[1];
     var currency = region ? REGION_CURRENCY[region.toUpperCase()] : null;
 
+    // Dev/QA override: ?fx=CLP forces a currency regardless of the visitor's
+    // real locale, so any of the 15+ mapped currencies can be spot-checked
+    // without changing browser/OS language settings. No effect when absent
+    // -- normal visitors never see or trigger this.
+    try {
+      var fxParam = new URLSearchParams(location.search).get('fx');
+      if (fxParam) currency = fxParam.toUpperCase();
+    } catch (e) {}
+
     if (currency) {
       var applyRate = function (rate) {
         if (!rate) return;
