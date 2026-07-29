@@ -155,6 +155,13 @@ img { max-width: 100%; display: block; }
 }
 .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(249,115,22,0.45); background: var(--orange2) !important; }
 
+/* Spanish nav labels run longer than English (e.g. "Calculadora de
+   Carbohidratos" vs "Carb Calculator") and overflow the unwrapped desktop
+   nav row even after shortening the two worst labels -- tighten spacing
+   specifically for /es/ pages rather than changing English's layout. */
+html[lang="es"] .nav-menu { gap: 2px; }
+html[lang="es"] .nav-menu a:not(.nav-cta) { padding: 9px 9px; font-size: 0.84rem; }
+
 .nav-toggle {
   display: none; flex-direction: column; justify-content: center; gap: 5px;
   width: 40px; height: 40px; background: none; border: none; cursor: pointer;
