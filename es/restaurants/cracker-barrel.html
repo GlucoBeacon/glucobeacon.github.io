@@ -46,7 +46,7 @@
   </script>
   <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
-<body>
+<body class="sticky-cta-page">
 
 <div class="beacon-bg" aria-hidden="true">
   <div class="beacon-frame">
@@ -56,22 +56,32 @@
   </div>
 </div>
 
+<header class="site-header">
 <nav>
   <a class="nav-brand" href="../index.html">
     <img src="../../img/icon.png" alt="Logo de GlucoBeacon" />
     <span>GlucoBeacon</span>
   </a>
-  <div class="nav-links">
-    <a href="../features.html">Características</a>
-    <a href="../index.html#pro">Pro</a>
-    <a href="../recipes/index.html">Ciencia Alimentaria</a>
-    <a href="index.html">Restaurantes</a>
-    <a href="../blog/index.html">Blog</a>
-    <span id="lang-switch" class="nav-lang"></span>
-    <a href="mailto:admin@glucobeacon.com">Contacto</a>
-  </div>
-  <span class="nav-badge">Ya Disponible</span>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="../features.html">Características</a>
+      <a href="../recipes/index.html">Nutrición</a>
+      <a href="index.html" class="active">Restaurantes</a>
+      <a href="../carb-calculator.html">Carbohidratos</a>
+      <a href="../compare.html">Comparar</a>
+      <a href="../index.html#pro">Precios</a>
+      <a href="../index.html#privacy">Privacidad</a>
+      <a href="../blog/index.html">Blog</a>
+      <span id="lang-switch" class="nav-lang"></span>
+    </div>
+  <div class="nav-store-badges">
+      <a class="nav-store-play" href="https://play.google.com/store/apps/details?id=com.glucobeacon.app" target="_blank" rel="noopener"><img src="../../img/google-play-badge.png" alt="Cons&#237;guelo en Google Play" /></a>
+      <span class="nav-store-ios">iOS &mdash; Pr&#243;ximamente</span>
+    </div>
 </nav>
+</header>
 
 <div class="article-hero">
   <div class="article-hero-inner">
@@ -102,6 +112,13 @@
     </tbody>
   </table>
 
+  <div class="callout mid-callout">
+    <div class="callout-label">App Gratis</div>
+    <p>&#191;Te gust&#243; lo que ves? Mira el <strong>men&#250; completo</strong>, evaluado contra <em>tus propios</em> objetivos de carbohidratos y calor&#237;as en lugar de un presupuesto gen&#233;rico, con registro de un toque a tu historial de az&#250;car en la sangre.</p>
+    <a class="callout-badge" href="https://play.google.com/store/apps/details?id=com.glucobeacon.app" target="_blank" rel="noopener"><img src="../../img/google-play-badge.png" alt="Consíguelo en Google Play" /></a>
+  </div>
+
+
   <h2>Consumir con precaución</h2>
   <p>Estos tienen el puntaje más bajo -- típicamente una combinación de carbohidratos altos, calorías altas, índice glucémico alto, o procesamiento intenso. No significa "nunca comer", solo son platillos para combinar con proteína/fibra extra o comer en una porción más pequeña.</p>
   <table>
@@ -120,7 +137,8 @@
 
   <div class="callout">
     <div class="callout-label">En GlucoBeacon</div>
-    <p>El menú completo de Cracker Barrel -- los 60 platillos -- se puede buscar en el Asesor de Restaurantes de la app GlucoBeacon, evaluado en vivo contra tus propios objetivos de carbohidratos y calorías en lugar de un presupuesto genérico, con registro de un toque directo a tu historial de azúcar en la sangre. <a href="https://play.google.com/store/apps/details?id=com.glucobeacon.app" target="_blank" rel="noopener">Descarga GlucoBeacon en Google Play &rarr;</a></p>
+    <p>El menú completo de Cracker Barrel -- los 60 platillos -- se puede buscar en el Asesor de Restaurantes de la app GlucoBeacon, evaluado en vivo contra tus propios objetivos de carbohidratos y calorías en lugar de un presupuesto genérico, con registro de un toque directo a tu historial de azúcar en la sangre.</p>
+    <a class="callout-badge" href="https://play.google.com/store/apps/details?id=com.glucobeacon.app" target="_blank" rel="noopener"><img src="../../img/google-play-badge.png" alt="Consíguelo en Google Play" /></a>
   </div>
 
 </div>
@@ -128,6 +146,11 @@
 <p class="disclaimer">Los valores nutricionales provienen de la información nutricional publicada de Cracker Barrel&#x27;s y son estimaciones -- siempre confirma con el restaurante, ya que las recetas y porciones cambian. Esta página es solo para fines informativos generales y no es asesoría médica -- consulta a tu médico o nutriólogo certificado sobre cómo estos platillos encajan en tu plan individual de manejo de la diabetes. "Cracker Barrel" y los nombres de los platillos de su menú son marcas registradas de sus respectivos propietarios; esta página es un análisis nutricional independiente y no está afiliada, respaldada, ni patrocinada por Cracker Barrel.</p>
 
 <div class="back-link"><a href="index.html">&larr; Volver a todos los restaurantes</a></div>
+
+<div class="sticky-cta">
+  <span class="sticky-cta-text">Mira tu men&#250; completo, evaluado a tus propias metas</span>
+  <a class="sticky-cta-btn" href="https://play.google.com/store/apps/details?id=com.glucobeacon.app" target="_blank" rel="noopener"><img src="../../img/google-play-badge.png" alt="Consíguelo en Google Play" /></a>
+</div>
 
 <footer>
   <div class="footer-brand">
@@ -141,6 +164,7 @@
   </div>
 </footer>
 
+<script src="../../assets/js/site.js"></script>
 <script src="../../assets/js/lang-switch.js"></script>
 
 </body>

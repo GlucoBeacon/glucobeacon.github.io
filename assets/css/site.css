@@ -37,7 +37,7 @@
   --radius-lg: 22px;
   --radius-xl: 28px;
   --container: 1240px;
-  --nav-h: 72px;
+  --nav-h: 132px;
 
   /* shadows */
   --shadow-sm: 0 2px 8px rgba(15,23,42,0.06);
@@ -119,75 +119,115 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 .nav {
-  height: var(--nav-h);
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 5%;
+  min-height: var(--nav-h);
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; row-gap: 10px;
+  padding: 12px 5%;
   max-width: var(--container); margin: 0 auto;
 }
-.nav-brand { display: flex; align-items: center; gap: 11px; text-decoration: none; flex-shrink: 0; }
-.nav-brand img { width: 34px; height: 34px; border-radius: 9px; }
-.nav-brand span { color: var(--white); font-size: 1.14rem; font-weight: 800; letter-spacing: -0.3px; }
-.nav-brand sup { font-size: 0.6rem; opacity: 0.7; }
+.nav-brand { order: 1; display: flex; align-items: center; gap: 14px; text-decoration: none; flex-shrink: 0; }
+.nav-brand img { width: 48px; height: 48px; border-radius: 11px; }
+.nav-brand span { color: var(--white); font-size: 1.5rem; font-weight: 800; letter-spacing: -0.3px; }
+.nav-brand sup { font-size: 0.75rem; opacity: 0.7; }
 
 .nav-badge {
   background: rgba(249,115,22,0.18); border: 1px solid rgba(249,115,22,0.4); color: var(--orange-light);
   font-size: 0.68rem; font-weight: 700; padding: 4px 11px; border-radius: 20px;
   letter-spacing: 0.5px; text-transform: uppercase; margin-left: 12px; white-space: nowrap;
 }
+/* On the opposite (right) side from the logo, sized to carry equal visual
+   weight to the wordmark instead of shrinking into the corner. */
+.nav-store-badges { order: 3; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; flex-shrink: 0; }
+.nav-store-play { display: block; line-height: 0; }
+.nav-store-play img { height: 42px; width: auto; display: block; }
+.nav-store-ios {
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.3px; text-transform: uppercase;
+  color: rgba(255,255,255,0.6); border: 1.5px solid rgba(255,255,255,0.3); border-radius: 20px;
+  padding: 5px 13px; white-space: nowrap;
+}
 
-.nav-menu { display: flex; align-items: center; gap: 6px; }
+/* ─── LANGUAGE DROPDOWN ────────────────────────────── */
+.lang-dropdown { position: relative; }
+.lang-dropdown-btn {
+  display: flex; align-items: center; gap: 5px; background: none; border: none; cursor: pointer;
+  color: rgba(255,255,255,0.75); font-size: 0.95rem; font-weight: 600; font-family: inherit; padding: 8px 4px;
+}
+.lang-dropdown-btn:hover { color: var(--white); }
+.lang-globe { font-size: 1.1rem; }
+.lang-caret { font-size: 0.65rem; transition: transform 0.2s; }
+.lang-dropdown.is-open .lang-caret { transform: rotate(180deg); }
+.lang-dropdown-menu {
+  position: absolute; top: calc(100% + 10px); right: 0; min-width: 160px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.18); list-style: none; padding: 6px; margin: 0;
+  max-height: 240px; overflow-y: auto;
+  opacity: 0; visibility: hidden; transform: translateY(-6px);
+  transition: opacity 0.15s, transform 0.15s, visibility 0.15s; z-index: 50;
+}
+.lang-dropdown.is-open .lang-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+.lang-dropdown-menu a {
+  display: block; padding: 10px 12px; border-radius: 7px; font-size: 0.92rem; font-weight: 600;
+  color: var(--text); text-decoration: none;
+}
+.lang-dropdown-menu a:hover { background: var(--bg); }
+.lang-dropdown-menu a.active { color: var(--orange2); background: rgba(249,115,22,0.1); cursor: default; }
+
+@media (max-width: 860px) {
+  .lang-dropdown-menu { right: auto; left: 0; }
+}
+
 .nav-menu a:not(.nav-cta) {
   color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.9rem; font-weight: 600;
-  padding: 9px 14px; border-radius: 9px; transition: color 0.2s, background 0.2s;
+  border-radius: 9px; transition: color 0.2s, background 0.2s;
   position: relative;
 }
 .nav-menu a:not(.nav-cta):hover { color: var(--white); background: rgba(255,255,255,0.06); }
-.nav-menu a.active { color: var(--white); }
-.nav-menu a.active::after {
-  content: ''; position: absolute; left: 14px; right: 14px; bottom: 3px; height: 2px;
-  background: var(--orange); border-radius: 2px;
-}
+.nav-menu a.active { color: var(--white); background: rgba(249,115,22,0.14); }
 .nav-cta {
   background: var(--orange); color: var(--white) !important; text-decoration: none;
   font-size: 0.86rem; font-weight: 700; padding: 10px 18px !important; border-radius: 11px;
-  margin-left: 8px; box-shadow: 0 6px 16px rgba(249,115,22,0.35);
+  box-shadow: 0 6px 16px rgba(249,115,22,0.35);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(249,115,22,0.45); background: var(--orange2) !important; }
 
-/* Spanish nav labels run longer than English (e.g. "Calculadora de
-   Carbohidratos" vs "Carb Calculator") and overflow the unwrapped desktop
-   nav row even after shortening the two worst labels -- tighten spacing
-   specifically for /es/ pages rather than changing English's layout. */
-html[lang="es"] .nav-menu { gap: 2px; }
-html[lang="es"] .nav-menu a:not(.nav-cta) { padding: 9px 9px; font-size: 0.84rem; }
-
 .nav-toggle {
-  display: none; flex-direction: column; justify-content: center; gap: 5px;
+  order: 4; display: none; flex-direction: column; justify-content: center; gap: 5px;
   width: 40px; height: 40px; background: none; border: none; cursor: pointer;
-  border-radius: 8px;
+  border-radius: 8px; flex-shrink: 0;
 }
 .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--white); border-radius: 2px; transition: transform 0.25s var(--ease), opacity 0.2s; }
 .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-@media (max-width: 860px) {
+/* A deliberate 2-row grid rather than relying on text-wrap: grid-auto-flow:
+   column fills each column top-to-bottom before starting the next, so
+   related links pair up (Features/Food Science, Restaurants/Carb
+   Calculator, ...) instead of wrapping wherever the text happens to run out
+   of room. The hamburger comes back only below 640px, where even this would
+   make the header too tall. */
+.nav-menu {
+  order: 2; display: grid; grid-auto-flow: column; grid-template-rows: repeat(2, auto);
+  align-items: center; justify-content: center; column-gap: 6px; row-gap: 2px;
+}
+.nav-menu a:not(.nav-cta) { padding: 8px 14px; }
+
+@media (max-width: 640px) {
   .nav-toggle { display: flex; }
   .nav-menu {
-    position: absolute; top: var(--nav-h); left: 0; right: 0;
-    background: var(--navy2); flex-direction: column; align-items: stretch;
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--navy2); display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start;
     padding: 10px 6% 20px; gap: 2px; border-bottom: 1px solid rgba(255,255,255,0.1);
     box-shadow: 0 16px 32px rgba(0,0,0,0.3);
     max-height: 0; overflow: hidden; opacity: 0;
     transition: max-height 0.3s var(--ease), opacity 0.25s ease;
   }
-  .nav-menu.is-open { max-height: 520px; opacity: 1; padding-top: 14px; }
+  .nav-menu.is-open { max-height: 560px; opacity: 1; padding-top: 14px; overflow-y: auto; }
   .nav-menu a:not(.nav-cta) { padding: 13px 12px; font-size: 0.98rem; }
-  .nav-menu a.active::after { display: none; }
-  .nav-menu a.active { background: rgba(249,115,22,0.14); }
   .nav-cta { margin: 8px 12px 0; text-align: center; }
   .nav-badge { display: none; }
+  .nav-store-ios { display: none; }
+  .nav-store-play img { height: 24px; }
 }
 
 /* in-page pill sub-nav (index only) */
