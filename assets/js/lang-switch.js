@@ -102,14 +102,11 @@
     FIL_AVAILABLE.push('/recipes/' + slug + '.html');
   });
 
-  // Spanish covers everything EXCEPT the Philippines region (no ES
-  // translation exists there yet) -- an exclude list is shorter and safer
-  // than trying to enumerate everything ES *does* cover.
-  var ES_UNAVAILABLE_PREFIX = '/restaurants/ph/';
-
+  // Spanish now covers every page on the site, including the Philippines
+  // region -- no exclusion needed.
   function isLangAvailable(seg, barePath) {
     if (!seg) return true; // English is the default locale for every page
-    if (seg === 'es') return barePath.indexOf(ES_UNAVAILABLE_PREFIX) !== 0;
+    if (seg === 'es') return true;
     if (seg === 'fil') return FIL_AVAILABLE.indexOf(barePath) !== -1;
     return true;
   }
