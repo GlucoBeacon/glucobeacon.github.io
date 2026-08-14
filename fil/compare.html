@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlucoBeacon vs. mySugr, MyFitnessPal, Carb Manager at Iba Pa — Paghahambing ng Diabetes App</title>
+  <meta name="description" content="Isang tapat at verified na paghahambing ng GlucoBeacon laban sa 9 popular na diabetes at glucose monitoring app — mySugr, Glooko, Dario, Carb Manager, Glucose Buddy, One Drop, Diabetes:M, Sugarmate, at MyFitnessPal. Totoong presyo, totoong feature, walang pinalaking numero." />
+  <link rel="canonical" href="https://glucobeacon.com/fil/compare.html" />
+  <link rel="alternate" hreflang="en" href="https://glucobeacon.com/compare.html" />
+  <link rel="alternate" hreflang="es" href="https://glucobeacon.com/es/compare.html" />
+  <link rel="alternate" hreflang="fil" href="https://glucobeacon.com/fil/compare.html" />
+  <link rel="alternate" hreflang="x-default" href="https://glucobeacon.com/compare.html" />
+  <link rel="icon" type="image/png" href="../img/icon.png" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GlucoBeacon vs. mySugr, MyFitnessPal, Carb Manager at Iba Pa" />
+  <meta property="og:description" content="Isang tapat at verified na paghahambing ng GlucoBeacon laban sa 9 popular na diabetes at glucose monitoring app. Totoong presyo, totoong feature, walang pinalaking numero." />
+  <meta property="og:image" content="https://glucobeacon.com/img/screen-dashboard.png" />
+  <meta property="og:url" content="https://glucobeacon.com/fil/compare.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GlucoBeacon vs. mySugr, MyFitnessPal, Carb Manager at Iba Pa" />
+  <meta name="twitter:description" content="Isang tapat at verified na paghahambing ng GlucoBeacon laban sa 9 popular na diabetes at glucose monitoring app. Totoong presyo, totoong feature, walang pinalaking numero." />
+  <meta name="twitter:image" content="https://glucobeacon.com/img/screen-dashboard.png" />
+  <style>
+    .beacon-bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+    .beacon-frame { position: absolute; top: 130px; left: 0; width: 100%; height: 100vh; }
+    .beacon-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+    .beacon-lamp {
+      position: absolute; top: 16.8%; left: 50%; width: 46px; height: 46px; border-radius: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(255,251,235,1) 0%, rgba(253,214,150,0.9) 40%, rgba(249,168,90,0.5) 65%, rgba(249,168,90,0) 80%);
+      filter: blur(2px);
+      animation: beaconPulse 2.3s ease-in-out infinite, beaconFlash 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    .beacon-beam {
+      position: absolute; top: 16.8%; left: 50%; width: 46vw; max-width: 640px; height: 90px;
+      transform-origin: 0% 50%;
+      transform: translateY(-50%) scaleX(1);
+      background: linear-gradient(90deg,
+        rgba(255,251,235,0.95) 0%,
+        rgba(253,200,130,0.55) 40%,
+        rgba(253,200,130,0.15) 75%,
+        transparent 100%);
+      clip-path: polygon(0% 38%, 100% 0%, 100% 100%, 0% 62%);
+      filter: blur(6px);
+      animation: beaconSweep 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    @keyframes beaconSweep {
+      0%   { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+      22%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      25%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      28%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      50%  { transform: translateY(-50%) scaleX(-1);    opacity: 0.95; }
+      72%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      75%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      78%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      100% { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+    }
+    @keyframes beaconFlash {
+      0%, 20%, 30%, 70%, 80%, 100% { filter: blur(2px) brightness(1); }
+      25%, 75% { filter: blur(2px) brightness(1.9); }
+    }
+    @keyframes beaconPulse {
+      0%, 100% { opacity: 0.85; transform: translate(-50%, -50%) scale(1); }
+      50%      { opacity: 1;    transform: translate(-50%, -50%) scale(1.15); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .beacon-lamp, .beacon-beam { animation: none; }
+    }
+
+    .tool-head {
+      position: relative; overflow: hidden;
+      background: linear-gradient(100deg, rgba(9,20,36,0.62) 0%, rgba(9,20,36,0.4) 55%, rgba(9,20,36,0.2) 100%);
+      color: var(--white); padding: 64px 5% 56px; text-align: center;
+    }
+    .tool-head .container { max-width: 720px; }
+    .tool-head h1 { font-size: clamp(1.7rem, 3.6vw, 2.5rem); font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; }
+    .tool-head h1 span { color: var(--orange-light); }
+    .tool-head p { color: rgba(255,255,255,0.75); font-size: 1.03rem; }
+    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 22px; }
+    .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--white); }
+
+    .wrap { max-width: 920px; margin: 0 auto; padding: 56px 5% 24px; }
+    .tool-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 40px;
+    }
+    .tool-card h2 { font-size: 1.28rem; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+    .tool-card .card-sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 22px; line-height: 1.55; }
+
+    .table-scroll { overflow-x: auto; border-radius: var(--radius-sm); border: 1px solid var(--border); }
+    table.cmp { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 640px; }
+    table.cmp th, table.cmp td { padding: 13px 16px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    table.cmp th:first-child, table.cmp td:first-child { white-space: normal; min-width: 160px; }
+    table.cmp.cmp-wrap { min-width: 0; }
+    table.cmp.cmp-wrap th, table.cmp.cmp-wrap td { white-space: normal; }
+    table.cmp.cmp-wrap td:nth-child(2), table.cmp.cmp-wrap td:nth-child(3) { min-width: 200px; }
+    table.cmp thead th { background: var(--bg); color: var(--muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.4px; font-weight: 700; }
+    table.cmp tbody tr:last-child td { border-bottom: none; }
+    table.cmp tbody tr.is-us { background: linear-gradient(90deg, rgba(249,115,22,0.07), rgba(249,115,22,0.02)); }
+    table.cmp tbody tr.is-us td:first-child { font-weight: 800; color: var(--navy); }
+    table.cmp .app-name { font-weight: 700; color: var(--text); }
+    table.cmp .app-note { display: block; font-size: 0.76rem; color: var(--muted); font-weight: 400; white-space: normal; margin-top: 2px; }
+    .yes { color: var(--good); font-weight: 800; }
+    .no  { color: var(--border-strong); font-weight: 800; }
+
+    .h2h { display: grid; gap: 14px; margin-top: 6px; }
+    .h2h-card { border: 1px solid var(--border); border-radius: var(--radius-md); padding: 22px 24px; }
+    .h2h-card h3 { font-size: 1.02rem; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
+    .h2h-card .h2h-price { font-size: 0.8rem; color: var(--orange2); font-weight: 700; margin-bottom: 12px; }
+    .h2h-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    @media (max-width: 640px) { .h2h-cols { grid-template-columns: 1fr; } }
+    .h2h-col h4 { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.4px; color: var(--muted); margin-bottom: 8px; }
+    .h2h-col.win h4 { color: var(--good); }
+    .h2h-col.theirs h4 { color: var(--muted); }
+    .h2h-col ul { padding-left: 18px; font-size: 0.88rem; line-height: 1.6; color: var(--text); }
+
+    .honesty-note { display: flex; gap: 12px; align-items: flex-start; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 18px 20px; font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin-top: 20px; }
+    .honesty-note svg { flex-shrink: 0; margin-top: 2px; color: var(--orange); }
+
+    .cta-band { position: relative; overflow: hidden; background: linear-gradient(120deg, var(--orange2), var(--orange)); text-align: center; padding: 60px 5%; }
+    .cta-band h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .cta-band p { color: rgba(255,255,255,0.9); font-size: 1rem; margin-bottom: 28px; }
+  </style>
+</head>
+<body>
+
+<div class="beacon-bg" aria-hidden="true">
+  <div class="beacon-frame">
+    <img src="../img/beacon-hero.jpg" alt="" />
+    <div class="beacon-lamp"></div>
+    <div class="beacon-beam"></div>
+  </div>
+</div>
+
+<a href="#main" class="skip-link">Lumaktaw sa Nilalaman</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">
+      <img src="../img/icon.png" alt="Logo ng GlucoBeacon" />
+      <span>GlucoBeacon<sup>&trade;</sup></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="I-toggle ang menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="features.html">Features</a>
+      <a href="recipes/index.html">Recipes</a>
+      <a href="restaurants/index.html">Restaurants</a>
+      <a href="carb-calculator.html">Carb Calculator</a>
+      <a href="compare.html" class="active">Compare</a>
+      <a href="index.html#pro">Presyo</a>
+      <a href="blog/index.html">Blog</a>
+      <span id="lang-switch" class="nav-lang"></span>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<div class="tool-head">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Compare</div>
+    <div class="eyebrow eyebrow-light" style="justify-content:center;">Tapat na Paghahambing &middot; Totoong Numero</div>
+    <h1>Paano nag-compare ang GlucoBeacon sa <span>9 popular na diabetes app</span></h1>
+    <p>Bawat presyo at feature sa baba ay na-verify sa sarili nilang website o listing sa app store. Kapag talagang may mas mahusay ang kumpetensya kaysa sa amin — real-time na CGM streaming, pangunahin — sinasabi namin. Walang pinalaking numero, walang inimbentong kahinaan.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="tool-card reveal">
+    <h2>Ang lahat ng iba pa, na hindi man lang sinusubukan ng mga app na 'to</h2>
+    <p class="card-sub">Hindi ito checklist comparison — para sa karamihan ng nasa baba, walang ikukumpara sa kabilang panig. Ito ang mga bagay na walang app sa page na 'to ang gumagawa, hindi mga feature na mas masama ang gawa.</p>
+    <div class="h2h">
+      <div class="h2h-card">
+        <h3>AI Assistant para sa Diabetes</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Isang chat at voice assistant na talagang alam ang data mo — totoong reading mo, A1C, gamot, at goals — hindi generic na chatbot. Magtanong, o sabihin lang na "i-log ang metformin ko" o "kumain ako ng 40 carbs sa lunch" at ilo-log nito para sa'yo.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Fasting Tracker + glucose correlation</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Live na countdown para sa 16:8, 18:6, 20:4, OMAD, o custom window, plus time-in-range at hypoglycemia stats kada fast — at insight sa pagitan ng mga fast na ikinukumpara ang asukal sa dugo mo habang nag-fa-fasting laban sa hindi, kapag nakapag-log ka na ng sapat na fast para makita ang totoong pattern.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Meal History at pattern detection</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">I-log ang isang meal nang isang beses at maaalala ng GlucoBeacon kung ano ang naging epekto nito — "noong huling kinain mo 'to, ang reading mo ay 210." Ang automatic pattern detection ay nag-fla-flag ng mga pagkain na palaging nagpapataas sa'yo, sa loob ng 14 iba't ibang uri ng pattern.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Restaurant Advisor</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">53 totoong chain, mahigit 3,700 dish na pre-scored ayon sa glycemic impact bilang Best Choices / Good Choices / High Carb — plus AI-powered nutrition estimate para sa anumang restaurant na wala pa sa database. Hindi rin naiiwan ang paborito mong local na karinderya — tandaan ito nang isang beses kasama ang mga madalas mong order, at kikilos itong tulad ng ibang chain mula noon.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Pantry, recipe, at shopping list</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">I-scan ang grocery papunta sa isang pantry na automatic na binabawasan kapag nagluluto ka. Isang 120-recipe library na may totoong Keto/Vegetarian filtering ang nagpapakita kung ano ang magagawa mo ngayon din gamit ang meron ka na.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Appointment, i-schedule sa boses</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Totoong calendar na may conflict warning — at pwede mo lang sabihing "mag-schedule ng endocrinologist ko sa susunod na Martes ng 2" at mapupunta ito sa calendar, walang typing.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Diet type intelligence</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Totoong Keto at Vegetarian badge na kinakalkula mula sa totoong net-carb math, hindi tantiya lang — plus one-tap AI suggestion para baguhin ang anumang dish ("i-order na naka-lettuce wrap na lang") para umangkop sa diet mo.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Home Screen Widget</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Ang huling reading mo, steps, at calories sa isang tingin lang — may one-tap AI voice shortcut direkta mula sa home screen mo, hindi na kailangang buksan ang app.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool-card reveal">
+    <h2>Presyo, magkatabi</h2>
+    <p class="card-sub">Ang GlucoBeacon lang ang app sa listahang 'to na may one-time lifetime payment option — subscription na paulit-ulit ang lahat dito habang ginagamit mo. At ang "Libre" sa baba ay hindi ang buong kwento: <a href="#real-cost">tingnan ang Totoong all-in na Gastos column</a> — kailangan pa rin ng bawat isa sa mga app na 'to ng kung ano ang ginagamit mo para mag-test, at bihirang libre ang bagay na 'yon.</p>
+    <div class="table-scroll">
+      <table class="cmp cmp-wrap">
+        <thead>
+          <tr><th>App</th><th>Presyo ng App</th><th id="real-cost">Totoong All-In na Gastos/buwan*</th></tr>
+        </thead>
+        <tbody>
+          <tr class="is-us">
+            <td>GlucoBeacon</td>
+            <td><span data-usd="4.99">$4.99</span>/buwan · <span data-usd="49.99">$49.99</span>/taon · <b><span data-usd="79.99">$79.99</span> habambuhay</b></td>
+            <td><span data-usd="4.99">$4.99</span> + kung ano ang meron ka na para sa testing</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Glooko</span><span class="app-note">Sync sa mahigit 100 meter/pump/CGM, para sa clinic</span></td>
+            <td>Libre</td>
+            <td>~$28–$580 (libre ang app, pero kailangan pa rin ng meter o CGM)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Sugarmate</span><span class="app-note">CGM display/alert lang — kailangan ng Dexcom</span></td>
+            <td>Libre</td>
+            <td>~$350–$580 (libre ang app, pero mandatory ang Dexcom para magamit nang buo)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">mySugr</span><span class="app-note">Ina-unlock ng PRO ang reminder, PDF export, bolus calculator†</span></td>
+            <td>Libre, o PRO $2.99/buwan</td>
+            <td>~$28–$580 + $0–2.99 (libre/mura ang app, hindi libre ang testing supplies)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Diabetes:M</span><span class="app-note">Ang subscription ay pangunahing nag-aalis ng ads</span></td>
+            <td>Libre, o $4.99/buwan ($49.99/taon)</td>
+            <td>~$28–$580 + $0–4.99</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Carb Manager</span><span class="app-note">Keto/macro focus, hindi specific sa diabetes</span></td>
+            <td>Libre, o Premium ~$39.99/taon</td>
+            <td>~$28–$580 + $0–3.33 (hindi man lang nag-lo-log ng glucose reading)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">MyFitnessPal</span><span class="app-note">General na calorie counter, walang glucose logging</span></td>
+            <td>Libre, o $19.99/buwan ($79.99/taon)</td>
+            <td>~$28–$580 + $0–19.99 (wala ring glucose logging)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Glucose Buddy</span><span class="app-note">Dexcom sync, coaching add-on</span></td>
+            <td>Simula sa $19/buwan</td>
+            <td>~$350–$580 + $19 (depende sa Dexcom, parehong-pareho ng Sugarmate)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">One Drop</span><span class="app-note">Coaching bundle + test strip subscription</span></td>
+            <td>$19.99/buwan, +$21–$80/buwan sa strips</td>
+            <td>$41–$100 (ang tanging tapat sa bagay na 'to mula umpisa)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Dario</span><span class="app-note">Kailangan bilhin ang proprietary meter nila</span></td>
+            <td>$25–$70/buwan</td>
+            <td>$25–$70 (kasama na ang gastos sa meter sa presyo)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem; color:var(--muted); margin-top:12px;">*Totoong all-in na gastos = ang presyo ng sariling app plus ang typical na gastos ng CGM o finger-prick strip nang walang insurance (buong breakdown per device sa susunod na section). Malawak ang range dahil ang CGM ($220–$580/buwan) at finger-prick strip ($28–$117/buwan) ay ibang-iba ang price point — tingnan sa baba kung alin talaga. † Ang bolus calculator ng mySugr ay available sa UK, Australia, at parte ng Europe — hindi available sa US app. Presyo base sa panahon ng publish; maaaring mag-iba ang annual/regional na presyo — tingnan ang sariling website ng bawat kumpanya bago magdesisyon.</p>
+  </div>
+
+  <div class="tool-card reveal">
+    <h2>Ang gastos na walang naglalagay sa app store page</h2>
+    <p class="card-sub">Ang sariling presyo ng app ay bahagi lang ng bill. Kung ano talaga ang ginagamit mong pang-test — isang CGM sensor o finger-prick strip — ay karaniwang mas mahal kada buwan kaysa sa alinman sa mga app na 'to, kasama na ang GlucoBeacon. Narito ang totoong verified na range para sa bawat isa.</p>
+    <div class="table-scroll">
+      <table class="cmp">
+        <thead>
+          <tr><th>Ano ang ginagamit mo sa testing</th><th>Karaniwang buwanang gastos, walang insurance</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="app-name">Dexcom G7</span><span class="app-note">Cash price, naiiba per pharmacy</span></td><td>$350–$580</td></tr>
+          <tr><td><span class="app-name">FreeStyle Libre 2 o 3</span><span class="app-note">Retail price; ~$130–$175 na may GoodRx/SingleCare coupon</span></td><td>$220–$260</td></tr>
+          <tr><td><span class="app-name">OneTouch Verio Strips</span><span class="app-note">3x/araw na testing, karaniwang libre ang meter</span></td><td>$63–$117</td></tr>
+          <tr><td><span class="app-name">Contour Next Strips</span><span class="app-note">3x/araw na testing, karaniwang libre ang meter</span></td><td>$28–$34</td></tr>
+          <tr class="is-us"><td>GlucoBeacon</td><td><span data-usd="4.99">$4.99</span>/buwan · <span data-usd="49.99">$49.99</span>/taon · <span data-usd="79.99">$79.99</span> isang beses lang — dagdag sa kung ano ang meron ka na para sa testing</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem; color:var(--muted); margin-top:12px;">Kinuha mula sa GoodRx, SingleCare, at pricing page ng manufacturer; naiiba ang totoong cash price per pharmacy, region, at paggamit ng coupon. May Patient Assistance Program din ang Dexcom na maaaring magpababa ng gastos sa ~$45 kada 90-day supply para sa qualified na low-income patient.</p>
+
+    <div class="honesty-note" style="margin-top:24px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      <div>Anuman ang ginagamit mo sa testing, hindi maaalala ng hardware na 'yon kung ano ang naging epekto ng isang dish sa'yo noong huling pagkakataon, hindi sinasabi kung ligtas ba ang fasting mo kagabi, at hindi tinatago ang gamot at appointment mo sa parehong lugar ng reading mo — 'yan ay problema ng software, hindi ng sensor. Ang GlucoBeacon ay <b><span data-usd="4.99">$4.99</span>/buwan dagdag sa alinman sa dalawang paraan</b>, hindi kapalit ng isa, at ginagawa ang parehong trabaho kahit $30 o $500 ang buwanang gastos ng testing mo. Tingnan ang lahat ng idinaragdag nito sa aming <a href="features.html">Features page</a>.</div>
+    </div>
+  </div>
+
+  <div class="tool-card reveal">
+    <h2>Ano talaga ang makukuha mo</h2>
+    <p class="card-sub">Karamihan sa mga app na 'to ay ginawa base sa iisang trabaho lang — glucose logging, CGM display, o calorie counting. Ang pusta ng GlucoBeacon ay full-health breadth: ang parehong app na nag-lo-log ng reading mo ay sumusubaybay din ng gamot mo, presyon ng dugo, tulog, at appointment, at kina-correlate ang lahat ng 'yon sa asukal sa dugo mo — privately, sa device mo. Tingnan ang buong breakdown kung ano talaga ang ginagawa ng bawat feature sa aming <a href="features.html">Features page</a>.</p>
+    <div class="table-scroll">
+      <table class="cmp">
+        <thead>
+          <tr><th>App</th><th>Gamot / BP / tulog / appointment</th><th>Nasa device, walang account</th><th>PDF report para sa doktor</th><th>One-time lifetime payment option</th><th>Restaurant dish na na-score ayon sa glycemic impact</th><th>Bolus calculator</th><th>Real-time CGM sync</th></tr>
+        </thead>
+        <tbody>
+          <tr class="is-us">
+            <td>GlucoBeacon</td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="no">✕</span></td>
+            <td><span class="no">✕</span></td>
+          </tr>
+          <tr><td><span class="app-name">Glooko</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td><span class="app-name">Sugarmate</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td><span class="app-name">mySugr</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓†</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td><span class="app-name">Diabetes:M</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td><span class="app-name">Carb Manager</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td></tr>
+          <tr><td><span class="app-name">MyFitnessPal</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td></tr>
+          <tr><td><span class="app-name">Glucose Buddy</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td><span class="app-name">One Drop</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td></tr>
+          <tr><td><span class="app-name">Dario</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem; color:var(--muted); margin-top:12px;">† Ang bolus calculator ng mySugr ay available sa UK, Australia, at parte ng Europe — hindi available sa US app. "Restaurant dish na na-score ayon sa glycemic impact" ay ibig sabihin mga item na ranked ayon sa GI/carbs/calories/processing level, hindi lang isang food database — mas malaki ang general food/recipe database ng Carb Manager at MyFitnessPal, wala lang glycemic scoring.</p>
+  </div>
+
+  <div class="tool-card reveal">
+    <h2>Ang science sa likod ng mga numero namin</h2>
+    <p class="card-sub">Bawat calculation sa GlucoBeacon ay may pinagmulan na published clinical source — hindi tantiya lang, at hindi marketing number.</p>
+    <div class="h2h">
+      <div class="h2h-card">
+        <h3>A1C Estimate</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Nathan/ADA formula: <code>(weighted average + 46.7) ÷ 28.7</code>, weighted 1.0/0.5/0.25 para sa pinaka-recent/middle/pinaka-lumang third ng huling 90 days ng reading mo — mas mabigat ang recent control kaysa sa reading noong 3 buwan ang nakalipas. Kailangan ng minimum 7 reading bago magpakita ng estimate.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Time in Range at Glucose Variability</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Ginawa base sa international consensus sa continuous glucose monitoring metrics (Battelino et al., <i>Diabetes Care</i> 2019), na ginamit ng ADA's Standards of Care: 70–180 mg/dL (3.9–10.0 mmol/L) bilang target range, hypoglycemia na hinati sa Level 1 (&lt;70 mg/dL / &lt;3.9 mmol/L) at clinically significant Level 2 (&lt;54 mg/dL / &lt;3.0 mmol/L), at coefficient of variation para sa day-to-day stability — naka-tighten sa &lt;33% kapag naka-log ang insulin o sulfonylurea, base sa ADA guidance sa hypoglycemia risk para sa mga klaseng 'yon ng gamot.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Glycemic Index Data</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Ang curated na 176-food database namin ay may pinagmulan na totoong lab-tested GI value (ISO 26642 methodology: fasting subjects, 50g carb portion, blood glucose na sinubaybayan sa loob ng 2 oras laban sa glucose reference). Para sa mixed dish na hindi pa nasubukan bilang isang buo — walang gumawa ng clinical trial para sa "chicken enchiladas" — kumakalkula kami ng carb-weighted estimate at tina-tag namin itong estimate, dahil kahit ang standard na technique na 'yon ay may margin na 22–50% laban sa totoong lab-measured result.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Daily Carb Budget</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Mifflin-St Jeor equation para sa basal metabolic rate, naka-adjust ayon sa activity level at goal, saka hinati sa napiling carb-focus percentage mo — parehong libreng tool na available sa aming <a href="carb-calculator.html">Carb Calculator page</a>.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Net Carbs</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Standard convention: <code>Total Carbs − Fiber − (Sugar Alcohol ÷ 2)</code> — hindi na-digest ang fiber papuntang glucose, at partial lang ang absorption ng sugar alcohol.</p>
+      </div>
+      <div class="h2h-card">
+        <h3>Processed Food Score</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Isang 1-to-10 na score base sa NOVA food classification system (Monteiro et al.), na ina-apply sa bawat pagkain sa GI database, restaurant dish, at barcode-scanned na produkto — kasabay ng carbs at glycemic index, dahil ang gaano ka-processed ang isang pagkain ay may epekto na higit pa sa carb count lang nito.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<section class="cta-band">
+  <h2>Subukan mo mismo</h2>
+  <p>Isang presyo, bayaran nang isang beses kung gusto mo — walang paulit-ulit na bill na kailangan para ma-control ang diabetes mo.</p>
+  <a class="btn btn-white" href="index.html#pro">Tingnan ang presyo ng GlucoBeacon &rarr;</a>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand-col">
+      <div class="footer-brand">
+        <img src="../img/icon.png" alt="GlucoBeacon" />
+        <span>GlucoBeacon&trade;</span>
+      </div>
+      <p>Isang pribadong diabetes management app para sa Android — asukal sa dugo, A1C, gamot, pagkain, at marami pa, lahat sa isang lugar.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Produkto</h5>
+      <a href="features.html">Features</a>
+      <a href="index.html#screenshots">Mga Screenshot</a>
+      <a href="index.html#pro">Presyo</a>
+      <a href="index.html#privacy">Privacy</a>
+    </div>
+    <div class="footer-col">
+      <h5>Libreng Tools</h5>
+      <a href="carb-calculator.html">Carb Calculator</a>
+      <a href="compare.html">Compare</a>
+      <a href="recipes/index.html">Recipes</a>
+      <a href="blog/index.html">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h5>Kompanya</h5>
+      <a href="index.html#faq">Mga Tanong</a>
+      <a href="mailto:admin@glucobeacon.com">Contact</a>
+      <a href="https://glucobeacon.github.io/privacy/">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 GAMZ Holdings LLC. Nakalaan ang lahat ng karapatan.</p>
+    <div class="legal-links">
+      <a href="https://glucobeacon.github.io/privacy/">Privacy Policy</a>
+      <a href="mailto:admin@glucobeacon.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Bumalik sa Itaas">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="../assets/js/site.js"></script>
+<script src="../assets/js/lang-switch.js"></script>
+</body>
+</html>

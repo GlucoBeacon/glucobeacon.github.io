@@ -8,6 +8,7 @@
   <link rel="canonical" href="https://glucobeacon.com/es/restaurants/" />
   <link rel="alternate" hreflang="en" href="https://glucobeacon.com/restaurants/" />
   <link rel="alternate" hreflang="es" href="https://glucobeacon.com/es/restaurants/" />
+  <link rel="alternate" hreflang="fil" href="https://glucobeacon.com/fil/restaurants/" />
   <link rel="alternate" hreflang="x-default" href="https://glucobeacon.com/restaurants/" />
   <link rel="icon" type="image/png" href="../../img/icon.png" />
   <link rel="stylesheet" href="style.css" />
@@ -62,6 +63,17 @@
 <div class="blog-hero">
   <h1>Guías de Menú Apto para Diabéticos de Restaurantes</h1>
   <p>Conteos reales de carbohidratos, calorías, e índice glucémico para 53 cadenas de restaurantes -- evaluados y clasificados con la misma fórmula que usa el Asesor de Restaurantes dentro de la app GlucoBeacon, para que sepas qué ordenar antes de ir.</p>
+</div>
+
+<div class="chain-grid" style="max-width:640px;">
+  <div class="chain-card" style="border-color:var(--orange); cursor:default;" aria-current="true">
+    <h2>&#x1F1FA;&#x1F1F8; EE. UU. (mostrado abajo)</h2>
+    <p>53 cadenas de restaurantes</p>
+  </div>
+  <div class="chain-card" style="opacity:0.55; cursor:default;" aria-disabled="true">
+    <h2>&#x1F1F5;&#x1F1ED; Filipinas</h2>
+    <p>Próximamente en español &mdash; ya disponible en filipino</p>
+  </div>
 </div>
 
 <div style="max-width:480px; margin: 28px auto 0; padding: 0 5%;">
@@ -298,7 +310,7 @@
 
 <script>
   var input = document.getElementById('chainSearch');
-  var cards = document.querySelectorAll('.chain-card');
+  var cards = document.querySelectorAll('#chainGrid .chain-card');
   input.addEventListener('input', function () {
     var q = input.value.toLowerCase().trim();
     cards.forEach(function (card) {

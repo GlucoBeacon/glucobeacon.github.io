@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paano Kinakalkula ang A1C (at Ano Talaga ang Ibig Sabihin ng Number Mo) | GlucoBeacon</title>
+  <meta name="description" content="Hindi simpleng average ang A1C ng mga blood sugar readings mo. Ganito ito talaga kinakalkula, bakit mas mabigat ang bilang ng mga kamakailang araw kaysa sa matagal nang lumipas, at ano ang ibig sabihin ng number para sa kalusugan mo." />
+  <link rel="canonical" href="https://glucobeacon.com/fil/blog/how-a1c-is-calculated.html" />
+  <link rel="alternate" hreflang="en" href="https://glucobeacon.com/blog/how-a1c-is-calculated.html" />
+  <link rel="alternate" hreflang="es" href="https://glucobeacon.com/es/blog/how-a1c-is-calculated.html" />
+  <link rel="alternate" hreflang="fil" href="https://glucobeacon.com/fil/blog/how-a1c-is-calculated.html" />
+  <link rel="alternate" hreflang="x-default" href="https://glucobeacon.com/blog/how-a1c-is-calculated.html" />
+  <link rel="icon" type="image/png" href="../../img/icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:title" content="Paano Kinakalkula ang A1C (at Ano Talaga ang Ibig Sabihin ng Number Mo)" />
+  <meta property="og:description" content="Hindi daily average ang A1C — weighted ito. Ito ang totoong math sa likod ng number na pinaka-binabantayan ng doktor mo." />
+  <meta property="og:type" content="article" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Paano Kinakalkula ang A1C (at Ano Talaga ang Ibig Sabihin ng Number Mo)",
+    "author": { "@type": "Organization", "name": "GlucoBeacon" },
+    "publisher": { "@type": "Organization", "name": "GAMZ Holdings LLC" },
+    "mainEntityOfPage": "https://glucobeacon.com/fil/blog/how-a1c-is-calculated.html"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Simpleng average ba ng blood sugar ang A1C?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hindi. Ang A1C ay recency-weighted average, hindi flat average. Ang pinakabagong 30 araw ang may pinakamalaking kontribusyon sa A1C mo, ang araw 31-60 ay may katamtamang kontribusyon, at ang araw 61-90 ay may pinakamaliit na kontribusyon. Dalawang taong may parehong 90-day average ng blood sugar ay maaaring magkaiba ang A1C result kung magkaiba ang kanilang kamakailang pattern."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Paano i-convert ang A1C sa average blood sugar (eAG)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ang estimated average glucose sa mg/dL ay katumbas ng 28.7 na beses ng A1C percentage mo, minus 46.7 (eAG = 28.7 x A1C - 46.7); sa mmol/L, 1.59 na beses ang A1C minus 2.59. Halimbawa, ang A1C na 7.0% ay katumbas ng humigit-kumulang 154 mg/dL (8.5 mmol/L), at ang A1C na 6.5% ay katumbas ng humigit-kumulang 140 mg/dL (7.8 mmol/L)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Anong A1C level ang nagpapakita ng diabetes o prediabetes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ayon sa reference ranges ng ADA, ang mas mababa sa 5.7% ay itinuturing na normal, ang 5.7% hanggang 6.4% ay ang prediabetes range, at ang 6.5% pataas sa dalawang magkaibang pagsusuri ay ginagamit para i-diagnose ang diabetes. Karamihan sa mga adult na may diabetes ay binibigyan ng individualized target, karaniwang nasa paligid ng 7%."
+        }
+      }
+    ]
+  }
+  </script>
+  <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+<div class="beacon-bg" aria-hidden="true">
+  <div class="beacon-frame">
+    <img src="../../img/beacon-hero.jpg" alt="" />
+    <div class="beacon-lamp"></div>
+    <div class="beacon-beam"></div>
+  </div>
+</div>
+
+<header class="site-header">
+<nav>
+  <a class="nav-brand" href="../index.html">
+    <img src="../../img/icon.png" alt="Logo ng GlucoBeacon" />
+    <span>GlucoBeacon</span>
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="I-toggle ang menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="../features.html">Features</a>
+      <a href="../recipes/index.html">Recipes</a>
+      <a href="../restaurants/index.html">Restaurants</a>
+      <a href="../carb-calculator.html">Carb Calculator</a>
+      <a href="../compare.html">Compare</a>
+      <a href="../index.html#pro">Presyo</a>
+      <a href="index.html" class="active">Blog</a>
+      <span id="lang-switch" class="nav-lang"></span>
+    </div>
+  <div class="nav-store-badges">
+      <a class="nav-store-play" href="https://play.google.com/store/apps/details?id=com.glucobeacon.app" target="_blank" rel="noopener"><img src="../../img/google-play-badge.png" alt="Kunin sa Google Play" /></a>
+      <span class="nav-store-ios">iOS &mdash; Paparating Na</span>
+    </div>
+</nav>
+</header>
+
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Blog</a> / A1C</div>
+    <div class="article-eyebrow">A1C</div>
+    <h1>Paano Kinakalkula ang A1C (at Ano Talaga ang Ibig Sabihin ng Number Mo)</h1>
+    <div class="article-meta">6 min na babasahin</div>
+  </div>
+</div>
+
+<div class="article-body">
+
+  <p><strong>Hindi flat average ang A1C ng blood sugar mo sa nakaraang 3 buwan — ito ay recency-weighted average, kung saan mas mabigat ang pinakabagong 30 araw kaysa sa mga mas matagal nang lumipas.</strong> Malamang ang A1C mo ang isang number na pinaka-binabantayan ng doktor mo, at isa rin sa hindi gaanong naiintindihan. Karamihan sa mga tao ay inaakala na ito lang ay "average ng blood sugar mo sa nakaraang 3 buwan." Malapit na iyon, pero hindi buo ang katumpakan, at mahalaga ang pagkakaibang ito.</p>
+
+  <h2>Ano talaga ang sinusukat ng A1C</h2>
+
+  <p>Sinusukat ng A1C (tinatawag ding HbA1c) ang porsyento ng hemoglobin mo — ang protina sa red blood cells na nagdadala ng oxygen — na may kumakapit na glucose. Kapag mataas ang blood sugar, mas maraming glucose ang kumakapit sa hemoglobin. Dahil ang red blood cells ay nabubuhay nang humigit-kumulang 2-3 buwan, kinukuha ng A1C test ang tuloy-tuloy na snapshot ng average blood sugar mo sa loob halos ng window na iyon, hindi lang ang mga huling araw.</p>
+
+  <h2>Bakit hindi ito flat average</h2>
+
+  <p>Ito ang parteng nili-liktawan ng karamihan ng mga paliwanag: hindi pantay ang bigat ng buong tatlong buwan. Dahil patuloy na pinapalitan ang red blood cells, <strong>mas malaki ang impluwensya ng pinakabagong blood sugar levels sa A1C mo kaysa sa mas matagal na</strong>. Ganito ang karaniwang binabanggit na rough breakdown:</p>
+
+  <ul>
+    <li><strong>Pinakabagong 30 araw</strong> — pinaka-malaking kontribusyon sa A1C mo</li>
+    <li><strong>31-60 araw ang nakalipas</strong> — katamtamang kontribusyon</li>
+    <li><strong>61-90 araw ang nakalipas</strong> — pinakamaliit na kontribusyon</li>
+  </ul>
+
+  <p>Kaya naman ang dalawang taong may parehong average blood sugar sa 90 araw ay maaaring magkaiba ang A1C result kung magkaiba ang kanilang <em>pattern</em> — ang taong mataas noong una pero gumaling kamakailan ay karaniwang mas maganda ang lalabas na test result kaysa sa taong lumalala nang lumalala ang control, kahit magkapareho ang overall average.</p>
+
+  <h2>Pag-convert ng A1C sa estimated average glucose</h2>
+
+  <p>Puwedeng i-convert ang A1C percentage mo sa estimated average glucose (eAG) gamit ang formula ng ADA (batay sa formula nina Nathan et al.) -- sa mg/dL, o direkta sa mmol/L gamit ang alternate formula mula sa parehong study:</p>
+
+  <p style="text-align:center; font-weight:700; color:var(--navy); font-size:1.1rem; margin: 24px 0;">eAG (mg/dL) = (28.7 × A1C) − 46.7<br><span style="font-size:0.85rem; color:var(--muted); font-weight:600;">eAG (mmol/L) = (1.59 × A1C) − 2.59</span></p>
+
+  <table>
+    <thead><tr><th>A1C</th><th>Estimated Average Glucose (mg/dL)</th><th>Estimated Average Glucose (mmol/L)</th></tr></thead>
+    <tbody>
+      <tr><td>5.0%</td><td>~97 mg/dL</td><td>~5.4 mmol/L</td></tr>
+      <tr><td>5.7% (prediabetes threshold)</td><td>~117 mg/dL</td><td>~6.5 mmol/L</td></tr>
+      <tr><td>6.5% (diabetes threshold)</td><td>~140 mg/dL</td><td>~7.8 mmol/L</td></tr>
+      <tr><td>7.0%</td><td>~154 mg/dL</td><td>~8.5 mmol/L</td></tr>
+      <tr><td>8.0%</td><td>~183 mg/dL</td><td>~10.2 mmol/L</td></tr>
+      <tr><td>9.0%</td><td>~212 mg/dL</td><td>~11.8 mmol/L</td></tr>
+    </tbody>
+  </table>
+
+  <p>Pangkalahatang reference ranges ng ADA: itinuturing na normal ang mas mababa sa 5.7%, ang 5.7%-6.4% ay ang prediabetes range, at ang 6.5% pataas sa dalawang magkaibang pagsusuri ay ginagamit para i-diagnose ang diabetes. Karamihan sa mga adult na may diabetes ay binibigyan ng individualized target, karaniwang nasa paligid ng 7%, pero maaaring magtakda ang doktor mo ng ibang goal depende sa edad mo, ibang health conditions, at risk ng mababang blood sugar.</p>
+
+  <h2>Bakit hindi kumpletong picture ang A1C mag-isa</h2>
+
+  <p>Iisang number lang ang A1C, pero ang parehong A1C ay maaaring magtago ng lubos na magkaibang day-to-day na realidad. Ang taong matatag ang blood sugar sa katamtamang range at ang taong malalang bumabagsak at tumataas ang blood sugar mula sa napakababa hanggang napakataas ay maaaring parehas lang ang resultang A1C average — kahit mas mapanganib ang isang sitwasyon araw-araw. Bahagi ito kung bakit mas maraming doktor ngayon ang binabantayan din ang <strong>time in range</strong> (ang porsyento ng oras na nasa loob ng target ang glucose mo) kasama ng A1C, hindi kapalit nito.</p>
+
+  <div class="callout">
+    <div class="callout-label">Sa GlucoBeacon</div>
+    <p>Ginagamit ng A1C Estimator ng GlucoBeacon ang parehong recency-weighted na formula sa mga naka-log mong readings — kaya sa pagitan ng lab tests, makikita mo kung saan patungo ang number mo, hindi lang manghula. I-combine ito sa Time in Range view para sa mas kumpletong picture na hindi maipapakita ng iisang A1C number mag-isa.</p>
+  </div>
+
+  <h2>Ang buod</h2>
+  <p>Tunay na kapaki-pakinabang ang A1C bilang long-term indicator, pero weighted average ito na may lag — hindi live reading, at hindi buong kwento mag-isa. Ang pag-intindi sa lag na ito ay tumutulong ipaliwanag kung bakit hindi agad lalabas sa lab result ang malaking pagbabago sa lifestyle mo ngayon sa loob ng ilang linggo, at kung bakit mas mahalaga ang consistency kaysa sa kahit anong magandang (o masamang) isang linggo.</p>
+
+</div>
+
+<p class="disclaimer">Ang artikulong ito ay para sa pangkalahatang layuning pang-edukasyon lamang at hindi kapalit ng propesyonal na medical advice. Nag-iiba ang A1C goals depende sa bawat indibidwal — palaging sundin ang specific target na itinakda ng healthcare provider mo, hindi ang pangkalahatang reference range.</p>
+
+<div class="back-link"><a href="index.html">← Bumalik sa lahat ng artikulo</a></div>
+
+<footer>
+  <div class="footer-brand">
+    <img src="../../img/icon.png" alt="GlucoBeacon" />
+    <span>GlucoBeacon</span>
+  </div>
+  <p>© 2026 GAMZ Holdings LLC. Nakalaan ang lahat ng karapatan.</p>
+  <div class="footer-links">
+    <a href="https://glucobeacon.github.io/privacy/">Patakaran sa Privacy</a>
+    <a href="mailto:admin@glucobeacon.com">Contact</a>
+  </div>
+</footer>
+
+<script src="../../assets/js/site.js"></script>
+<script src="../../assets/js/lang-switch.js"></script>
+
+</body>
+</html>

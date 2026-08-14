@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlucoBeacon — Pag-track ng Diabetes, Muling Ginawa</title>
+  <meta name="description" content="Ang GlucoBeacon ay isang pribado at makapangyarihang diabetes management app para sa Android. I-track ang asukal sa dugo, tantiyahin ang A1C, tuklasin ang mga ligtas na pagkain sa restaurant, at bumuo ng malulusog na gawi — lahat sa device mo." />
+  <link rel="canonical" href="https://glucobeacon.com/fil/" />
+  <link rel="alternate" hreflang="en" href="https://glucobeacon.com/" />
+  <link rel="alternate" hreflang="es" href="https://glucobeacon.com/es/" />
+  <link rel="alternate" hreflang="fil" href="https://glucobeacon.com/fil/" />
+  <link rel="alternate" hreflang="x-default" href="https://glucobeacon.com/" />
+  <link rel="icon" type="image/png" href="../img/icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GlucoBeacon — Pag-track ng Diabetes, Muling Ginawa" />
+  <meta property="og:description" content="Isang pribadong diabetes management app para sa Android, diretso sa device mo. I-track ang asukal sa dugo, tantiyahin ang A1C, maghanap ng ligtas na pagkain sa restaurant, at bumuo ng malulusog na gawi — walang cloud, walang account." />
+  <meta property="og:image" content="https://glucobeacon.com/img/screen-dashboard.png" />
+  <meta property="og:url" content="https://glucobeacon.com/fil/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GlucoBeacon — Pag-track ng Diabetes, Muling Ginawa" />
+  <meta name="twitter:description" content="Isang pribadong diabetes management app para sa Android, diretso sa device mo. I-track ang asukal sa dugo, tantiyahin ang A1C, maghanap ng ligtas na pagkain sa restaurant, at bumuo ng malulusog na gawi — walang cloud, walang account." />
+  <meta name="twitter:image" content="https://glucobeacon.com/img/screen-dashboard.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "GlucoBeacon",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Android",
+    "description": "Isang pribadong diabetes at asukal sa dugo tracking app para sa Android, diretso sa device mo. I-log ang mga glucose reading, tantiyahin ang A1C, maghanap ng ligtas na pagkain sa restaurant, i-track ang gamot, presyon ng dugo, tulog, at appointment, at kumuha ng doctor-ready na PDF report — walang account at walang pag-upload ng health data sa cloud.",
+    "url": "https://glucobeacon.com/fil/",
+    "offers": [
+      { "@type": "Offer", "name": "Buwanan", "price": "4.99", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Taunan", "price": "49.99", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Habambuhay", "price": "79.99", "priceCurrency": "USD" }
+    ],
+    "publisher": { "@type": "Organization", "name": "GAMZ Holdings LLC" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Talaga bang private ang health data ko, o marketing lang iyon?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Walang account system, at ang health data mo — mga reading, gamot, appointment, food log — ay nasa local database sa phone mo at hindi kailanman automatic na ina-upload. Kung gusto mo ng backup, pupunta ito sa sarili mong Google Drive, hindi sa amin. Dalawang maliit at ipinapaalam na exception: kung mag-crash ang app, may ipinapadalang anonymous na technical report (device model at error trace, hindi kailanman ang health data mo), at ang specific na mensahe o larawan na ipinapadala mo sa AI Assistant o AI Food Scan, na hindi na naka-store pagkatapos." }
+      },
+      {
+        "@type": "Question",
+        "name": "Gaano ka-accurate ang AI Food Scan?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Maganda para sa sariwa, homemade, at restaurant na pagkain. Para sa packaged na produkto, kumukuha ang Barcode Scanner ng totoong nutrition data mula sa Open Food Facts sa halip na tantiyahin mula sa larawan. Isang tap lang para tanggalin ang maling-identify na item, agad na ma-recalculate ang total." }
+      },
+      {
+        "@type": "Question",
+        "name": "Ano talaga ang mangyayari kung hindi ako mag-upgrade sa Pro?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ang pag-log ng asukal sa dugo, pag-track at reminders ng gamot, step counter, at home screen widget ay libre magpakailanman, walang trial clock. Binubuksan ng Pro ang meal history, buong A1C trends, restaurant advisor, workout library, AI assistant, at marami pa — ang bawat plano ay nagsisimula sa 14 araw ng Pro na libre." }
+      },
+      {
+        "@type": "Question",
+        "name": "Kailangan ko ba ng CGM para gamitin ang GlucoBeacon?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Hindi. Ang GlucoBeacon ay ginawa base sa traditional na finger-stick logging, na siya pa ring paraan ng karamihan ng may diabetes sa totoong buhay. Ang Health Connect sync ay sumasaklaw sa steps, timbang, presyon ng dugo, tulog, at workout. Wala pa kaming real-time na CGM streaming ngayon." }
+      },
+      {
+        "@type": "Question",
+        "name": "Puwede ko bang ipakita ang GlucoBeacon sa doktor ko?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Oo — pinagsasama ng Doctor PDF Report ang mga reading, A1C estimate, at natukoy na patterns sa isang report na naka-format para sa totoong appointment." }
+      },
+      {
+        "@type": "Question",
+        "name": "Paano gumagana ang 14-araw na libreng trial?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ang bawat Pro plan, buwanan o taunan, ay nagsisimula sa 14 araw ng buong access na libre. Kailangan ng Google Play ng naka-file na payment method para simulan ang trial, pero hindi ka sisingilin hanggang matapos ito, at puwede mong kanselahin anumang oras bago iyon nang walang bayad. Ang habambuhay na purchase ay isang beses na bayad at hindi bahagi ng trial." }
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <style>
+    /* ─── PERSISTENT BEACON BACKDROP ────────────────────────── */
+    .beacon-bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+    .beacon-frame { position: absolute; top: 130px; left: 0; width: 100%; height: 100vh; }
+    .beacon-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+    .beacon-lamp {
+      position: absolute; top: 16.8%; left: 50%; width: 46px; height: 46px; border-radius: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(255,251,235,1) 0%, rgba(253,214,150,0.9) 40%, rgba(249,168,90,0.5) 65%, rgba(249,168,90,0) 80%);
+      filter: blur(2px);
+      animation: beaconPulse 2.3s ease-in-out infinite, beaconFlash 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    .beacon-beam {
+      position: absolute; top: 16.8%; left: 50%; width: 46vw; max-width: 640px; height: 90px;
+      transform-origin: 0% 50%;
+      transform: translateY(-50%) scaleX(1);
+      background: linear-gradient(90deg,
+        rgba(255,251,235,0.95) 0%,
+        rgba(253,200,130,0.55) 40%,
+        rgba(253,200,130,0.15) 75%,
+        transparent 100%);
+      clip-path: polygon(0% 38%, 100% 0%, 100% 100%, 0% 62%);
+      filter: blur(6px);
+      animation: beaconSweep 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    @keyframes beaconSweep {
+      0%   { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+      22%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      25%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      28%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      50%  { transform: translateY(-50%) scaleX(-1);    opacity: 0.95; }
+      72%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      75%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      78%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      100% { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+    }
+    @keyframes beaconFlash {
+      0%, 20%, 30%, 70%, 80%, 100% { filter: blur(2px) brightness(1); }
+      25%, 75% { filter: blur(2px) brightness(1.9); }
+    }
+    @keyframes beaconPulse {
+      0%, 100% { opacity: 0.85; transform: translate(-50%, -50%) scale(1); }
+      50%      { opacity: 1;    transform: translate(-50%, -50%) scale(1.15); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .beacon-lamp, .beacon-beam { animation: none; }
+    }
+    #screenshots, #privacy {
+      background: linear-gradient(100deg, rgba(9,20,36,0.62) 0%, rgba(9,20,36,0.4) 50%, rgba(9,20,36,0.18) 100%);
+    }
+    #features, #tools, #faq {
+      background: rgba(246,248,251,0.5);
+    }
+
+    /* ─── HERO ─────────────────────────────────────────────── */
+    .hero {
+      position: relative; overflow: hidden;
+      background: linear-gradient(100deg, rgba(9,20,36,0.6) 0%, rgba(9,20,36,0.42) 45%, rgba(9,20,36,0.2) 75%, rgba(9,20,36,0.06) 100%);
+      color: var(--white);
+      padding: 76px 5% 120px;
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0; opacity: 0.5; pointer-events: none;
+      background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+      background-size: 26px 26px;
+      mask-image: radial-gradient(700px 500px at 30% 20%, black, transparent 75%);
+    }
+    .hero-grid { position: relative; max-width: var(--container); margin: 0 auto; display: flex; align-items: center; gap: 60px; }
+    .hero-text { flex: 1; max-width: 560px; }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(249,115,22,0.16); border: 1px solid rgba(249,115,22,0.4); color: var(--orange-light);
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase;
+      padding: 6px 15px; border-radius: 20px; margin-bottom: 26px;
+    }
+    .hero-eyebrow span { width: 6px; height: 6px; border-radius: 50%; background: var(--orange); }
+    .hero h1 { font-size: clamp(2.3rem, 5vw, 3.6rem); font-weight: 800; line-height: 1.12; letter-spacing: -1.2px; margin-bottom: 22px; }
+    .hero h1 .accent { background: linear-gradient(100deg, var(--orange-light), var(--orange)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .hero p.lead { font-size: 1.14rem; color: rgba(255,255,255,0.78); margin-bottom: 36px; max-width: 480px; line-height: 1.7; }
+    .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; margin-bottom: 36px; }
+    .hero-play-badge { display: inline-block; line-height: 0; transition: transform 0.2s; }
+    .hero-play-badge:hover { transform: translateY(-2px); }
+    .hero-play-badge img { display: block; }
+    .hero-trust { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; color: rgba(255,255,255,0.5); font-size: 0.85rem; }
+    .hero-trust b { color: var(--orange-light); font-weight: 700; }
+    .hero-trust .dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,0.3); }
+
+    .hero-visual { flex: 1; display: flex; align-items: center; justify-content: center; min-height: 420px; }
+    .phone-frame { position: relative; width: 270px; }
+    .phone-frame img {
+      width: 100%; border-radius: 34px; border: 6px solid rgba(255,255,255,0.15); display: block;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    }
+    @media (prefers-reduced-motion: reduce) { .phone-frame img { animation: none; } }
+
+    .stats-float-wrap { position: relative; max-width: var(--container); margin: -64px auto 0; padding: 0 5%; z-index: 5; }
+    .stats-float {
+      background: var(--white); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg);
+      display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;
+      padding: 30px 5%;
+    }
+    .stat { text-align: center; }
+    .stat-num { font-size: 1.9rem; font-weight: 800; color: var(--navy); line-height: 1; }
+    .stat-num .accent2 { color: var(--orange); }
+    .stat-label { font-size: 0.78rem; color: var(--muted); font-weight: 600; margin-top: 6px; text-transform: uppercase; letter-spacing: 0.4px; }
+
+    /* ─── QUOTE ────────────────────────────────────────────── */
+    .quote-block { max-width: 820px; margin: 0 auto; display: flex; gap: 30px; align-items: flex-start; }
+    .quote-mark {
+      flex-shrink: 0; width: 58px; height: 58px; border-radius: 16px;
+      background: linear-gradient(135deg, var(--navy), var(--navy2)); color: var(--white);
+      display: flex; align-items: center; justify-content: center; font-size: 1.9rem; font-weight: 800;
+      box-shadow: var(--shadow-md);
+    }
+    .quote-block blockquote { font-size: 1.22rem; line-height: 1.65; font-weight: 500; margin-bottom: 18px; }
+    .quote-block blockquote b { color: var(--orange2); font-weight: 700; }
+    .quote-attr { display: flex; align-items: center; gap: 10px; font-size: 0.88rem; color: var(--muted); flex-wrap: wrap; }
+    .quote-attr strong { color: var(--navy); }
+    .quote-attr .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--border-strong); }
+    @media (max-width: 640px) { .quote-block { flex-direction: column; gap: 16px; } }
+
+    /* ─── WHO IT'S FOR ─────────────────────────────────────── */
+    .who-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 22px; }
+    .who-card { border-radius: var(--radius-lg); padding: 32px 28px; border: 1.5px solid var(--border); background: var(--white); transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease); }
+    .who-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .who-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 18px; }
+    .who-card.type1 .who-icon { background: #EFF6FF; }
+    .who-card.type2 .who-icon { background: #FFF7ED; }
+    .who-card.pre .who-icon   { background: #F0FDF4; }
+    .who-card h3 { font-size: 1.14rem; font-weight: 800; margin-bottom: 10px; color: var(--navy); }
+    .who-card p  { font-size: 0.9rem; color: var(--muted); line-height: 1.65; }
+
+    /* ─── SCREENSHOTS ──────────────────────────────────────── */
+    .showcase-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 32px; }
+    .showcase-tab {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); color: rgba(255,255,255,0.7);
+      font-family: inherit; font-size: 0.84rem; font-weight: 600; padding: 9px 18px; border-radius: 20px; cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+    .showcase-tab:hover { color: var(--white); border-color: rgba(255,255,255,0.4); }
+    .showcase-tab.is-active { background: var(--orange); border-color: var(--orange); color: var(--white); }
+    .showcase-scroll { display: flex; gap: 20px; overflow-x: auto; padding-bottom: 16px; scrollbar-width: thin; scrollbar-color: var(--orange) rgba(255,255,255,0.1); }
+    .showcase-scroll::-webkit-scrollbar { height: 5px; }
+    .showcase-scroll::-webkit-scrollbar-track { background: rgba(255,255,255,0.1); border-radius: 3px; }
+    .showcase-scroll::-webkit-scrollbar-thumb { background: var(--orange); border-radius: 3px; }
+    .showcase-item { flex: 0 0 194px; text-align: center; }
+    .showcase-item img { width: 194px; border-radius: 20px; border: 4px solid rgba(255,255,255,0.12); box-shadow: 0 16px 40px rgba(0,0,0,0.4); transition: transform 0.3s var(--ease); }
+    .showcase-item:hover img { transform: translateY(-6px); }
+    .showcase-caption { margin-top: 12px; font-size: 0.78rem; color: rgba(255,255,255,0.55); font-weight: 500; }
+
+    /* ─── TOOLS CROSS-LINK ─────────────────────────────────── */
+    .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+    .tool-card {
+      display: block; text-decoration: none; background: var(--white); border: 1.5px solid var(--border);
+      border-radius: var(--radius-lg); padding: 30px; transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), border-color 0.3s;
+    }
+    .tool-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--orange); }
+    .tool-card .tile-icon { background: linear-gradient(135deg, #FFF3E8, #FFE4CC); }
+    .tool-card h3 { font-size: 1.08rem; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+    .tool-card p { font-size: 0.89rem; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
+    .tool-card .tool-link { font-size: 0.86rem; font-weight: 700; color: var(--orange2); display: inline-flex; align-items: center; gap: 6px; }
+    .tool-card:hover .tool-link { gap: 9px; }
+    .tool-link svg { transition: transform 0.2s; }
+
+    /* ─── PRICING ──────────────────────────────────────────── */
+    .trial-banner {
+      display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;
+      background: linear-gradient(120deg, #FFF3E8, #FFE4CC); border: 1.5px solid #FED7AA;
+      border-radius: var(--radius-lg); padding: 16px 24px; margin-bottom: 40px; text-align: center;
+      font-size: 0.95rem; font-weight: 700; color: var(--orange2);
+    }
+    .trial-banner span.sub { font-weight: 500; color: var(--muted); font-size: 0.85rem; }
+    .value-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px;
+      margin-bottom: 48px;
+    }
+    .value-chip {
+      display: flex; align-items: center; gap: 12px; background: var(--bg); border: 1px solid var(--border);
+      border-radius: 14px; padding: 14px 16px; font-size: 0.86rem; font-weight: 700; color: var(--text);
+    }
+    .value-chip .vic { font-size: 1.25rem; flex-shrink: 0; }
+    .price-cards { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-bottom: 24px; }
+    .price-card { background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius-lg); padding: 26px 30px; text-align: center; min-width: 175px; box-shadow: var(--shadow-sm); }
+    .price-card .plabel { font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 8px; }
+    .price-card .pnum { font-size: 2.1rem; font-weight: 800; color: var(--navy); }
+    .price-card .psub { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
+    .price-card.best { background: linear-gradient(160deg, var(--navy2), var(--navy)); border-color: var(--navy); position: relative; transform: scale(1.05); box-shadow: var(--shadow-navy); }
+    .price-card.best .plabel { color: rgba(255,255,255,0.6); }
+    .price-card.best .pnum { color: var(--white); }
+    .price-card.best .psub { color: rgba(255,255,255,0.6); }
+    .price-fx-note { display: block; font-size: 0.78rem; font-weight: 600; color: var(--muted); margin-top: 3px; }
+    .price-card.best .price-fx-note { color: rgba(255,255,255,0.55); }
+    .price-fx-disclaimer { text-align: center; font-size: 0.78rem; color: var(--muted); margin: -8px 0 24px; }
+    .best-ribbon { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--orange); color: var(--white); font-size: 0.68rem; font-weight: 800; padding: 4px 13px; border-radius: 20px; white-space: nowrap; letter-spacing: 0.4px; }
+    @media (max-width: 560px) { .price-card.best { transform: none; } }
+
+    .pro-table-wrap { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+    .pro-table { width: 100%; border-collapse: collapse; min-width: 640px; }
+    .pro-table thead th { background: var(--navy); color: var(--white); padding: 16px 22px; text-align: left; font-size: 0.86rem; font-weight: 700; }
+    .pro-table thead th:last-child { background: var(--orange); text-align: center; }
+    .pro-table tbody tr:nth-child(even) td { background: var(--bg); }
+    .pro-table td { padding: 13px 22px; font-size: 0.87rem; border-bottom: 1px solid var(--border); }
+    .pro-table td:nth-child(2), .pro-table td:nth-child(3) { text-align: center; }
+    .check { color: var(--good); font-weight: 700; }
+    .cross { color: #CBD5E1; }
+
+    /* ─── PRIVACY ──────────────────────────────────────────── */
+    .privacy-pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 20px; }
+    .pillar { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius-lg); padding: 30px 24px; text-align: center; transition: background 0.25s, transform 0.25s var(--ease); }
+    .pillar:hover { background: rgba(255,255,255,0.11); transform: translateY(-3px); }
+    .pillar-icon { width: 50px; height: 50px; margin: 0 auto 14px; border-radius: 13px; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+    .pillar h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 8px; }
+    .pillar p { font-size: 0.83rem; color: rgba(255,255,255,0.6); line-height: 1.55; }
+
+    /* ─── CTA BAND ─────────────────────────────────────────── */
+    .cta-band { position: relative; overflow: hidden; background: linear-gradient(120deg, var(--orange2), var(--orange)); text-align: center; padding: 72px 5%; }
+    .cta-band::before, .cta-band::after { content: ''; position: absolute; border-radius: 50%; background: rgba(255,255,255,0.12); }
+    .cta-band::before { width: 300px; height: 300px; top: -140px; left: -80px; }
+    .cta-band::after { width: 220px; height: 220px; bottom: -120px; right: 5%; }
+    .cta-band h2 { position: relative; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; color: var(--white); margin-bottom: 12px; letter-spacing: -0.6px; }
+    .cta-band p { position: relative; color: rgba(255,255,255,0.9); font-size: 1.05rem; margin-bottom: 34px; }
+    .cta-band .btn { position: relative; }
+  </style>
+  <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+<div class="beacon-bg" aria-hidden="true">
+  <div class="beacon-frame">
+    <img src="../img/beacon-hero.jpg" alt="" />
+    <div class="beacon-lamp"></div>
+    <div class="beacon-beam"></div>
+  </div>
+</div>
+
+<a href="#main" class="skip-link">Lumaktaw sa Nilalaman</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">
+      <img src="../img/icon.png" alt="Logo ng GlucoBeacon" />
+      <span>GlucoBeacon<sup>&trade;</sup></span>
+    </a>
+    <div class="nav-store-badges">
+      <a class="nav-store-play" href="https://play.google.com/store/apps/details?id=com.glucobeacon.app" target="_blank" rel="noopener"><img src="../img/google-play-badge.png" alt="Kunin sa Google Play" /></a>
+      <span class="nav-store-ios">iOS &mdash; Paparating Na</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="I-toggle ang menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="features.html">Features</a>
+      <a href="recipes/index.html">Recipes</a>
+      <a href="restaurants/index.html">Restaurants</a>
+      <a href="carb-calculator.html">Carb Calculator</a>
+      <a href="compare.html">Compare</a>
+      <a href="#pro">Presyo</a>
+      <a href="#privacy">Privacy</a>
+      <a href="blog/index.html">Blog</a>
+      <span id="lang-switch" class="nav-lang"></span>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <div class="hero-eyebrow"><span></span>Diabetes App · Asukal sa Dugo at A1C</div>
+      <h1>Ang Data ng Iyong Kalusugan.<br />Ang Device Mo.<br /><span class="accent">Nasa Kontrol Mo.</span></h1>
+      <p class="lead">Binibigyan ka ng GlucoBeacon ng kumpletong larawan ng diabetes mo — trends ng asukal sa dugo, A1C estimate, restaurant guidance, workout routine, meal history, at AI coach — lahat naka-store nang pribado sa phone mo. Walang cloud. Walang account. Walang ikino-compromise.</p>
+      <div class="hero-cta">
+        <a href="https://play.google.com/store/apps/details?id=com.glucobeacon.app" target="_blank" rel="noopener" class="hero-play-badge">
+          <img src="../img/google-play-badge.png" alt="Available sa Google Play" height="54" />
+        </a>
+      </div>
+      <div class="hero-trust">
+        <b>14 araw ng Pro, libre</b><span class="dot"></span>Walang kailangang account<span class="dot"></span>Ginawa para sa Type 1, Type 2, at Pre-Diabetes
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone-frame">
+        <img src="../img/screen-dashboard.png" alt="Dashboard ng GlucoBeacon na nagpapakita ng asukal sa dugo na nasa range" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-float-wrap">
+  <div class="stats-float reveal">
+    <div class="stat"><div class="stat-num">176<span class="accent2">+</span></div><div class="stat-label">Pagkain na may Data ng GI</div></div>
+    <div class="stat"><div class="stat-num">53</div><div class="stat-label">Restaurant Chain</div></div>
+    <div class="stat"><div class="stat-num">3,700<span class="accent2">+</span></div><div class="stat-label">Item na Sinuri</div></div>
+    <div class="stat"><div class="stat-num">18</div><div class="stat-label">Workout Routine</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Health Record na Ibinenta</div></div>
+  </div>
+</div>
+
+<!-- IN-PAGE SUBNAV -->
+<div class="subnav-wrap">
+  <div class="subnav">
+    <a href="#features">Features</a>
+    <a href="#screenshots">Mga Screen</a>
+    <a href="#whoisitfor">Para Kanino Ito</a>
+    <a href="#tools">Libreng Tools</a>
+    <a href="#pro">Presyo</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#faq">Mga Tanong</a>
+  </div>
+</div>
+
+<!-- FOUNDER QUOTE -->
+<section class="section-tight bg-white">
+  <div class="quote-block reveal">
+    <div class="quote-mark">GB</div>
+    <div>
+      <blockquote>
+        "Type 2 diabetic na ako sa loob ng mahigit <b>20 taon</b>. Sinubukan ko na ang mga popular na diabetes app — sa loob ng mga taon. Clunky sila, hindi tapos, o ginawa base sa subscription sa halip na base sa akin. Wala sa kanila ang bumagay sa totoong itsura ng isang araw kasama ang diabetes: gamot, pagkain, appointment sa doktor, presyon ng dugo — lahat konektado. Kaya ginawa ko ang app na talagang kailangan ko."
+      </blockquote>
+      <div class="quote-attr">
+        <strong>Michael</strong><span class="dot"></span><span>Type 2 Diabetic, mahigit 20 taon</span><span class="dot"></span><span>Founder, GlucoBeacon</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES BENTO -->
+<section class="section bg-tint" id="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Ano ang Kasama</div>
+      <h2 class="section-title">Lahat ng kailangan mo.<br />Wala nang iba pa.</h2>
+      <p class="section-lead">Ginawa ng taong nakakaintindi na seryosong trabaho ang pag-manage ng diabetes — binibigyan ka ng GlucoBeacon ng mga tool na klinikal ang antas sa isang malinis at simpleng interface.</p>
+    </div>
+
+    <div class="bento">
+      <div class="bento-tile reveal">
+        <div class="tile-icon">🩸</div>
+        <h3>Pag-track ng Asukal sa Dugo</h3>
+        <p>I-log ang reading kaagad na may color-coded na feedback. Makita ang 7-araw na trends, time-in-range ring, at kumpletong history ng bawat reading na kinuha mo.</p>
+        <div class="tile-tags"><span class="tag tag-free">Libre</span></div>
+      </div>
+      <div class="bento-tile reveal">
+        <div class="tile-icon">📊</div>
+        <h3>A1C Estimator</h3>
+        <p>Real-time na tantiya ng A1C gamit ang Nathan formula ng ADA, mas paborable sa mas kamakailang reading sa nakaraang 90 araw. Walang kailangang lab test.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+      <div class="bento-tile featured reveal">
+        <div class="tile-icon">🤖</div>
+        <h3>AI Assistant para sa Diabetes</h3>
+        <p>Magtanong ng totoong tanong at makakuha ng personalized na sagot batay sa aktwal mong mga reading, A1C, gamot, at goals — hindi generic na health advice. Powered by Claude AI.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+
+      <div class="bento-tile span-6 featured reveal" style="flex-direction: row; align-items: center; gap: 28px;">
+        <div class="tile-icon" style="margin-bottom:0; flex-shrink:0; width:64px; height:64px; font-size:1.9rem;">🔁</div>
+        <div>
+          <h3 style="font-size:1.2rem;">Meal History</h3>
+          <p>Ilo-log mo ba ulit ang grilled chicken sandwich mo? Tingnan mismo kung ano ang nangyari noong huli — ang reading mo bago kumain, anumang gamot na ininom mo, ang reading pagkatapos kumain kasama ang totoong spike, at kung may naitulong ba ang paglalakad pagkatapos. Ang sarili mong data ang magiging pinakamahusay mong guide, automatic, tuwing kakain ka ng bagay na nasubukan mo na.</p>
+        </div>
+        <div class="tile-tags" style="margin-top:0; margin-left:auto; flex-shrink:0;"><span class="tag tag-pro">Pro</span></div>
+      </div>
+
+      <div class="bento-tile span-6 featured reveal" style="flex-direction: row; align-items: center; gap: 28px;">
+        <div class="tile-icon" style="margin-bottom:0; flex-shrink:0; width:64px; height:64px; font-size:1.9rem;">⏱️</div>
+        <div>
+          <h3 style="font-size:1.2rem;">Bago: Fasting Tracker</h3>
+          <p>Magsimula ng fasting sa isang tap gamit ang 16:8, 18:6, 20:4, OMAD, o sarili mong custom window. Isang live countdown at progress ring ang magpapanatili sa iyo sa loob ng app, at kasabay kang bibilangin ng home screen widget mo — "Wala nang 1 oras," "10 min na lang," "Oras nang kumain!" Nakalimutan mong simulan sa tamang oras? Ayusin ang start time pagkatapos at automatic na ma-recalculate ang lahat.</p>
+        </div>
+        <div class="tile-tags" style="margin-top:0; margin-left:auto; flex-shrink:0;"><span class="tag tag-free">Libre</span></div>
+      </div>
+
+      <div class="bento-tile span-3 reveal">
+        <div class="tile-icon">🍔</div>
+        <h3>Restaurant Advisor</h3>
+        <p>Kumakain sa labas? Sinusuri ng GlucoBeacon ang bawat item sa 53 major chain — McDonald's, Chipotle, Panera, at marami pa — batay sa glycemic impact, carbs, at calories laban sa personal mong mga goal.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+      <div class="bento-tile span-3 reveal">
+        <div class="tile-icon">🏋️</div>
+        <h3>Workout Library</h3>
+        <p>18 evidence-based na routine sa Baguhan, Katamtaman, at Eksperto na level — bawat isa may safety notes para sa diabetic, scientific citations, at guided player na may timer.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+
+      <div class="bento-tile reveal">
+        <div class="tile-icon">💊</div>
+        <h3>Medication Tracking</h3>
+        <p>Autocomplete mula sa mahigit 120 gamot para sa diabetes at presyon ng dugo, may hanggang 3 daily reminder bawat gamot para hindi ka makalimot ng dose.</p>
+        <div class="tile-tags"><span class="tag tag-free">Libre</span></div>
+      </div>
+      <div class="bento-tile reveal">
+        <div class="tile-icon">🍽️</div>
+        <h3>Pantry at Recipe</h3>
+        <p>I-scan ang mga item papunta sa Pantry mo gamit ang barcode reader. I-explore ang 120 diabetic-friendly na recipe at tingnan kung ilang porsyento ng ingredients ang meron ka na.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+      <div class="bento-tile reveal">
+        <div class="tile-icon">❤️</div>
+        <h3>Presyon ng Dugo at Timbang</h3>
+        <p>I-track ang buong cardiovascular picture mo kasabay ng asukal sa dugo. Trend chart, history log, at lifestyle summary sa isang lugar lang.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+
+      <div class="bento-tile span-3 reveal">
+        <div class="tile-icon">📱</div>
+        <h3>Health Connect Sync</h3>
+        <p>I-connect ang Fitbit, Garmin, Samsung Watch, o Wear OS device mo. Ang steps, timbang, presyon ng dugo, tulog, at workout ay automatic na mag-sync via Android Health Connect.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+      <div class="bento-tile span-3 reveal">
+        <div class="tile-icon">📅</div>
+        <h3>Appointment</h3>
+        <p>Panatilihin ang bawat medical appointment sa built-in na calendar na may reminders, at makakatanggap ka ng automatic na alerto kung may dalawang nagbanggaan. Pasabihin sa AI assistant mo na mag-schedule para sa'yo.</p>
+        <div class="tile-tags"><span class="tag tag-pro">Pro</span></div>
+      </div>
+
+      <div class="bento-tile span-6 reveal" style="flex-direction: row; align-items: center; gap: 24px;">
+        <div class="tile-icon" style="margin-bottom:0;">📌</div>
+        <div>
+          <h3>Home Screen Widget</h3>
+          <p>Mag-log ng reading, gamot, o tingnan ang steps mo nang hindi pa binubuksan ang app — i-tap ang mic ng widget at sabihin lang, tingnan ang pinakabagong numbers mo, o panoorin bumaba ang fasting countdown mo, lahat mula sa home screen mo.</p>
+        </div>
+        <div class="tile-tags" style="margin-top:0; margin-left:auto;"><span class="tag tag-free">Libre</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section class="section bg-navy" id="screenshots">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow eyebrow-light">Makita sa Aksyon</div>
+      <h2 class="section-title on-dark">Totoong screen. Totoong data.</h2>
+      <p class="section-lead on-dark">Bawat screen ay dinisenyo para ipakita ang impormasyong kailangan mo — mabilis. Walang gulo, walang ingay.</p>
+    </div>
+    <div class="showcase-tabs reveal">
+      <button class="showcase-tab is-active" data-group="all">Lahat ng Screen</button>
+      <button class="showcase-tab" data-group="track">Mag-log</button>
+      <button class="showcase-tab" data-group="eat">Matalinong Kumain</button>
+      <button class="showcase-tab" data-group="manage">I-manage ang Kalusugan</button>
+      <button class="showcase-tab" data-group="widget">Widget</button>
+    </div>
+    <div class="showcase-scroll reveal">
+      <div class="showcase-item" data-group="track">
+        <img src="../img/screen-dashboard.png" alt="Dashboard ng GlucoBeacon para sa pag-track ng asukal sa dugo" />
+        <div class="showcase-caption">Dashboard</div>
+      </div>
+      <div class="showcase-item" data-group="track">
+        <img src="../img/screen-timeinrange.png" alt="Breakdown ng time in range" />
+        <div class="showcase-caption">Time in Range</div>
+      </div>
+      <div class="showcase-item" data-group="track">
+        <img src="../img/screen-fasting.png" alt="Fasting timer na may live na countdown" />
+        <div class="showcase-caption">Fasting Tracker</div>
+      </div>
+      <div class="showcase-item" data-group="eat">
+        <img src="../img/screen-restaurant.png" alt="Mga rekomendasyon ng pagkain mula sa McDonald's" />
+        <div class="showcase-caption">Restaurant Advisor</div>
+      </div>
+      <div class="showcase-item" data-group="eat">
+        <img src="../img/screen-kfc.png" alt="Bilang ng carbs sa menu ng KFC sa restaurant advisor" />
+        <div class="showcase-caption">Carbs kada Chain</div>
+      </div>
+      <div class="showcase-item" data-group="manage">
+        <img src="../img/screen-medication.png" alt="Medication log para sa diabetes na may autocomplete" />
+        <div class="showcase-caption">Medication Log</div>
+      </div>
+      <div class="showcase-item" data-group="manage">
+        <img src="../img/screen-workouts.png" alt="Mga workout routine na ligtas para sa diabetic ayon sa fitness level" />
+        <div class="showcase-caption">Workout Library</div>
+      </div>
+      <div class="showcase-item" data-group="manage">
+        <img src="../img/screen-bp.png" alt="Chart ng pag-track ng presyon ng dugo sa GlucoBeacon" />
+        <div class="showcase-caption">Presyon ng Dugo</div>
+      </div>
+      <div class="showcase-item" data-group="eat">
+        <img src="../img/screen-recipes.png" alt="Recipe library para sa diabetic" />
+        <div class="showcase-caption">Recipe Library</div>
+      </div>
+      <div class="showcase-item" data-group="eat">
+        <img src="../img/screen-barcode.png" alt="Resulta ng nutrition mula sa barcode scanner para sa packaged na pagkain" />
+        <div class="showcase-caption">Barcode Scanner</div>
+      </div>
+      <div class="showcase-item" data-group="manage">
+        <img src="../img/screen-appointments.png" alt="Calendar ng appointment na may live na conflict alert" />
+        <div class="showcase-caption">Appointment</div>
+      </div>
+      <div class="showcase-item" data-group="widget">
+        <img src="../img/screen-widget.png" alt="Home screen widget na nagpapakita ng asukal sa dugo, steps, at AI shortcut" />
+        <div class="showcase-caption">Home Screen Widget</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="section bg-white" id="whoisitfor">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Para Kanino Ito</div>
+      <h2 class="section-title">Ginawa para sa lahat ng uri ng diabetes.</h2>
+      <p class="section-lead">Kahit bagong diagnosed ka noong nakaraang buwan o matagal mo nang minamanage ang kondisyon mo, aakma sa'yo ang GlucoBeacon.</p>
+    </div>
+    <div class="who-grid">
+      <div class="who-card type1 reveal">
+        <div class="who-icon">💉</div>
+        <h3>Type 1 Diabetes</h3>
+        <p>Pag-log ng carbs at insulin kada reading. Pattern detection na nakakakita ng dawn phenomenon, post-meal spike, at overnight low bago pa ito maging problema.</p>
+      </div>
+      <div class="who-card type2 reveal">
+        <div class="who-icon">🍎</div>
+        <h3>Type 2 Diabetes</h3>
+        <p>Restaurant guidance, glycemic index scoring ng pagkain, weight tracking, at MET-based na calorie-burn calculation — kumpletong lifestyle picture para panatilihing kontrolado ang A1C mo.</p>
+      </div>
+      <div class="who-card pre reveal">
+        <div class="who-icon">⚡</div>
+        <h3>Pre-Diabetes</h3>
+        <p>Mahuli ang mga trend bago pa lumala. Ang A1C estimator at pattern detection ay nagbibigay sa'yo ng clinical context para sa informed na usapan kasama ang doktor mo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FREE TOOLS CROSS-LINK -->
+<section class="section bg-tint" id="tools">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Hindi Kailangan ang App</div>
+      <h2 class="section-title">Libreng tools, diretso sa browser mo.</h2>
+      <p class="section-lead">Ang parehong totoong data na nagpapagana sa app — magagamit ngayon din, walang download, walang sign-up.</p>
+    </div>
+    <div class="tools-grid">
+      <a class="tool-card reveal" href="carb-calculator.html">
+        <div class="tile-icon">🧮</div>
+        <h3>Carb Calculator at Daily Budget</h3>
+        <p>Maghanap sa 176 totoong pagkain para sa eksaktong data ng carbs at GI, kalkulahin ang net carbs mula sa label, o kumuha ng personalized na daily carb goal.</p>
+        <span class="tool-link">Subukan ang calculator <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="tool-card reveal" href="recipes/index.html">
+        <div class="tile-icon">🍳</div>
+        <h3>Mga Recipe para sa Diabetic</h3>
+        <p>28 recipe para sa almusal at snack na may kumpletong nutrition breakdown at glycemic index estimate para sa bawat isa.</p>
+        <span class="tool-link">Tingnan ang mga recipe <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="tool-card reveal" href="blog/index.html">
+        <div class="tile-icon">📚</div>
+        <h3>Ang Blog ng GlucoBeacon</h3>
+        <p>Practical at diretsahang guide tungkol sa A1C, mababang-GI na pagkain, fast food choices, at pang-araw-araw na buhay kasama ang diabetes.</p>
+        <span class="tool-link">Basahin ang blog <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section bg-white" id="pro">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow">Presyo</div>
+      <h2 class="section-title">Isang presyo. Lahat kasama.</h2>
+      <p class="section-lead" style="margin: 0 auto;">Walang à la carte na tools, walang upsell sa loob ng app, walang paghahati ng "basic" vs. "premium" sa loob ng Pro. Libre magpakailanman ang basic na pag-log ng asukal sa dugo — isang subscription na lang ang lahat ng iba pa.</p>
+    </div>
+
+    <div class="value-grid reveal">
+      <div class="value-chip"><span class="vic">🩸</span>Unlimited na Log at History</div>
+      <div class="value-chip"><span class="vic">📊</span>A1C Estimator at Pattern</div>
+      <div class="value-chip"><span class="vic">💊</span>Medication Log at Reminder</div>
+      <div class="value-chip"><span class="vic">🔁</span>Meal History at Trend</div>
+      <div class="value-chip"><span class="vic">🍔</span>Restaurant Advisor ng 53 Chain</div>
+      <div class="value-chip"><span class="vic">🤖</span>AI Assistant para sa Diabetes</div>
+      <div class="value-chip"><span class="vic">🏋️</span>18 Workout Routine</div>
+      <div class="value-chip"><span class="vic">🍽️</span>Pantry at 166 Recipe</div>
+      <div class="value-chip"><span class="vic">❤️</span>Presyon ng Dugo at Timbang</div>
+      <div class="value-chip"><span class="vic">📱</span>Health Connect Sync</div>
+      <div class="value-chip"><span class="vic">📅</span>Appointment at Reminder</div>
+      <div class="value-chip"><span class="vic">📄</span>Doctor-ready na PDF Report</div>
+      <div class="value-chip"><span class="vic">🔔</span>Unlimited na Smart Reminder</div>
+    </div>
+
+    <div class="trial-banner reveal">
+      🎉 Simulan ang bawat plano na may <strong>&nbsp;14 araw ng Pro, libre&nbsp;</strong> <span class="sub">— kanselahin anumang oras, walang bayad kung kakanselahin mo bago ito matapos.</span>
+    </div>
+
+    <div class="price-cards reveal">
+      <div class="price-card">
+        <div class="plabel">Buwanan</div>
+        <div class="pnum" data-usd="4.99">$4.99</div>
+        <div class="psub">kada buwan, pagkatapos ng 14 araw na libre</div>
+      </div>
+      <div class="price-card best">
+        <div class="best-ribbon">Pinakamahusay na Value</div>
+        <div class="plabel">Taunan</div>
+        <div class="pnum" data-usd="49.99">$49.99</div>
+        <div class="psub">kada taon · makatipid ng 17% · 14 araw libre</div>
+      </div>
+      <div class="price-card">
+        <div class="plabel">Habambuhay</div>
+        <div class="pnum" data-usd="79.99">$79.99</div>
+        <div class="psub">isang beses na bayad · magpakailanman</div>
+      </div>
+    </div>
+    <p class="price-fx-disclaimer" id="priceFxDisclaimer" hidden>Sisingilin sa USD sa pamamagitan ng Google Play. Ang halagang ipinapakita sa lokal na pera ay tantiya lamang — ipapakita ng Play Store ang eksaktong presyo sa pera mo.</p>
+
+    <div class="pro-table-wrap reveal">
+      <table class="pro-table">
+        <thead><tr><th>Feature</th><th>Libre</th><th>Pro</th></tr></thead>
+        <tbody>
+          <tr><td>Pag-log ng Asukal sa Dugo (unlimited)</td><td class="check">✓</td><td class="check">✓</td></tr>
+          <tr><td>Reading History</td><td>Huling 90 araw</td><td class="check">Unlimited</td></tr>
+          <tr><td>Medication Log</td><td class="check">✓</td><td class="check">✓</td></tr>
+          <tr><td>Step Counter at Home Screen Widget</td><td class="check">✓</td><td class="check">✓</td></tr>
+          <tr><td>Fasting Tracker (timer, countdown sa widget)</td><td class="check">✓</td><td class="check">✓</td></tr>
+          <tr><td>Reminder</td><td>Hanggang 3</td><td class="check">Unlimited</td></tr>
+          <tr><td>A1C Estimator at Pattern Detection</td><td>Preview lang</td><td class="check">Buong detalye</td></tr>
+          <tr><td>Meal History (bago/gamot/pagkatapos/activity)</td><td class="cross">✗</td><td class="check">✓</td></tr>
+          <tr><td>PDF Report para sa Doktor</td><td class="cross">✗</td><td class="check">✓</td></tr>
+          <tr><td>Buong Lifestyle Tab (pagkain, tulog, appointment)</td><td class="cross">✗</td><td class="check">✓</td></tr>
+          <tr><td>Restaurant Advisor (53 chain)</td><td class="cross">✗</td><td class="check">✓</td></tr>
+          <tr><td>Pantry, Recipe, at Workout Library</td><td class="cross">✗</td><td class="check">✓</td></tr>
+          <tr><td>Health Connect Sync</td><td class="cross">✗</td><td class="check">✓</td></tr>
+          <tr><td>AI Assistant para sa Diabetes</td><td>3 tanong habambuhay</td><td class="check">15 tanong/araw</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="text-align:center; margin-top: 20px; font-size: 0.85rem; color: var(--muted);">Lahat ng plano ay may kumpletong Pro access at nagsisimula sa 14 araw na libre. Kanselahin ang buwanan o taunan anumang oras.</p>
+  </div>
+</section>
+
+<!-- PRIVACY -->
+<section class="section bg-navy" id="privacy">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow eyebrow-light">Privacy Muna</div>
+      <h2 class="section-title on-dark">Sayo ang health data mo.</h2>
+      <p class="section-lead on-dark" style="margin: 0 auto;">Sa industriya kung saan binibili at binebenta ang health data, iba ang GlucoBeacon. Lahat ay nananatili sa device mo — palagi.</p>
+    </div>
+    <div class="privacy-pillars reveal">
+      <div class="pillar">
+        <div class="pillar-icon">📵</div>
+        <h4>Walang Kailangang Account</h4>
+        <p>Buksan ang app at magsimulang mag-log. Walang email, walang password, walang profile na gagawin.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">💾</div>
+        <h4>Naka-store sa Device</h4>
+        <p>Ang mga reading, gamot, at log mo ay nasa SQLite database sa phone mo — hindi kailanman ina-upload, hindi kailanman sina-sync sa amin.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🔒</div>
+        <h4>Walang Binebentang Data</h4>
+        <p>Hindi namin kinokolekta, ina-analyze, o binebenta ang health information mo. Walang "kami" sa data mo.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">☁️</div>
+        <h4>Optional na Backup</h4>
+        <p>Kung gusto mo ng backup, i-connect ang sarili mong Google Drive. Ang file ay pupunta sa account mo, hindi sa amin.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🛠️</div>
+        <h4>Anonymous na Crash Report</h4>
+        <p>Kung mag-crash man ang app, isang technical report — device model at error trace, hindi kailanman ang health data mo — ang tumutulong sa aming ayusin ito. Iyon lang ang automatic na ipinapadala.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section bg-tint" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Mga Tanong</div>
+      <h2 class="section-title">Diretsong sagot.</h2>
+      <p class="section-lead">Ang mga bagay na talagang itinatanong ng mga tao bago nila ipagkatiwala ang health data nila sa isang app.</p>
+    </div>
+    <div class="accordion reveal">
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="true" aria-controls="faq1">
+          Talaga bang private ang health data ko, o marketing lang iyon?
+          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="accordion-panel" id="faq1" style="max-height: 200px;">
+          <p class="accordion-panel-inner">Walang account system, at ang health data mo — mga reading, gamot, appointment, food log — ay nasa local database sa phone mo at hindi kailanman automatic na ina-upload. Kung gusto mo ng backup, pupunta ito sa sarili mong Google Drive, hindi sa amin. Dalawang maliit at ipinapaalam na exception: kung mag-crash ang app, may ipinapadalang anonymous na technical report (device model at error trace — hindi kailanman ang health data mo) para matulungan kaming ayusin ang bug; at kung pipiliin mong gamitin ang AI Assistant o AI Food Scan, ang specific na mensahe o larawan na iyon ay ipinapadala para makabuo ng sagot at hindi na naka-store pagkatapos.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="faq2">
+          Gaano ka-accurate ang AI Food Scan?
+          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="accordion-panel" id="faq2">
+          <p class="accordion-panel-inner">Maganda para sa sariwa, homemade, at restaurant na pagkain — para diyan ito dinisenyo. Para sa packaged na produkto, gamitin na lang ang Barcode Scanner: kumukuha ito ng totoong nutrition data mula sa Open Food Facts sa halip na tantiyahin mula sa larawan, kaya tama ito kung saan hindi kaya ng AI estimate. Nagkamali? Isang tap lang para tanggalin ang maling-identify na item at ma-recalculate agad ang total mo. May kulang? I-type ito at makakuha ng hiwalay, instant na estimate para diyan — hindi na kailangang kuhanan ulit ng larawan.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="faq3">
+          Ano talaga ang mangyayari kung hindi ako mag-upgrade sa Pro?
+          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="accordion-panel" id="faq3">
+          <p class="accordion-panel-inner">Ang pag-log ng asukal sa dugo, pag-track at reminders ng gamot, step counter, at home screen widget ay libre, magpakailanman, walang trial clock. Binubuksan ng Pro ang lahat ng iba pa — meal history, buong A1C trends, restaurant advisor, workout library, AI assistant, at marami pa — at ang bawat plano ay nagsisimula sa 14 araw ng Pro na libre, para masubukan mo ang buong toolkit bago ka magbayad ng kahit ano.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="faq4">
+          Kailangan ko ba ng CGM para gamitin ito?
+          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="accordion-panel" id="faq4">
+          <p class="accordion-panel-inner">Hindi — at sadya iyon. Ang GlucoBeacon ay ginawa base sa traditional na finger-stick logging, na siya pa ring paraan ng karamihan ng may diabetes sa totoong buhay, kahit choice, medical advice, o dahil hindi covered ng insurance ang CGM. Ang Health Connect sync ay sumasaklaw sa steps, timbang, presyon ng dugo, tulog, at workout mula sa phone o watch mo. Wala pa kaming real-time na CGM streaming ngayon — kung kailangan mo talaga iyon, mas mabuti sa'yo ang mga app na ginawa around sa specific na CGM.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="faq5">
+          Puwede ko bang ipakita ito sa doktor ko?
+          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="accordion-panel" id="faq5">
+          <p class="accordion-panel-inner">Oo — para diyan ginawa ang Doctor PDF Report. Pinagsasama nito ang mga reading mo, A1C estimate, at patterns sa isang report na naka-format para sa totoong appointment, hindi basta raw data dump.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false" aria-controls="faq6">
+          Paano gumagana ang 14-araw na libreng trial?
+          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="accordion-panel" id="faq6">
+          <p class="accordion-panel-inner">Ang bawat Pro plan — buwanan o taunan — ay nagsisimula sa 14 araw ng buong access, libre. Kailangan ng Google Play ng naka-file na payment method para simulan ang trial, pero hindi ka sisingilin hanggang matapos ito, at puwede mong kanselahin anumang oras bago iyon nang walang bayad. Ang habambuhay na purchase ay isang beses na bayad at hindi bahagi ng trial.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <h2>I-download ang GlucoBeacon ngayon.</h2>
+  <p>Available na sa Google Play, may 14 araw ng Pro na libre sa kahit anong plano.</p>
+  <a class="hero-play-badge" href="https://play.google.com/store/apps/details?id=com.glucobeacon.app" target="_blank" rel="noopener">
+    <img src="../img/google-play-badge.png" alt="Available sa Google Play" height="54" />
+  </a>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand-col">
+      <div class="footer-brand">
+        <img src="../img/icon.png" alt="GlucoBeacon" />
+        <span>GlucoBeacon&trade;</span>
+      </div>
+      <p>Isang pribadong diabetes management app para sa Android — asukal sa dugo, A1C, gamot, pagkain, at marami pa, lahat sa isang lugar.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Produkto</h5>
+      <a href="features.html">Features</a>
+      <a href="#screenshots">Mga Screenshot</a>
+      <a href="#pro">Presyo</a>
+      <a href="#privacy">Privacy</a>
+    </div>
+    <div class="footer-col">
+      <h5>Libreng Tools</h5>
+      <a href="carb-calculator.html">Carb Calculator</a>
+      <a href="compare.html">Compare</a>
+      <a href="recipes/index.html">Recipes</a>
+      <a href="blog/index.html">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h5>Kompanya</h5>
+      <a href="#pro">14-Araw na Libreng Trial</a>
+      <a href="#faq">Mga Tanong</a>
+      <a href="mailto:admin@glucobeacon.com">Contact</a>
+      <a href="https://glucobeacon.github.io/privacy/">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 GAMZ Holdings LLC. Nakalaan ang lahat ng karapatan.</p>
+    <div class="legal-links">
+      <a href="https://glucobeacon.github.io/privacy/">Privacy Policy</a>
+      <a href="mailto:admin@glucobeacon.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Bumalik sa Itaas">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="../assets/js/site.js"></script>
+<script src="../assets/js/lang-switch.js"></script>
+</body>
+</html>

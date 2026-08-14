@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback ng Beta Tester | GlucoBeacon</title>
+  <meta name="description" content="Ibahagi ang feedback mo bilang beta tester ng GlucoBeacon — ano ang gumagana, ano ang nakakalito, anumang bug na na-encounter mo, at ano ang gusto mong makita sa susunod." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://glucobeacon.com/fil/feedback.html" />
+  <link rel="alternate" hreflang="en" href="https://glucobeacon.com/feedback.html" />
+  <link rel="alternate" hreflang="es" href="https://glucobeacon.com/es/feedback.html" />
+  <link rel="alternate" hreflang="fil" href="https://glucobeacon.com/fil/feedback.html" />
+  <link rel="alternate" hreflang="x-default" href="https://glucobeacon.com/feedback.html" />
+  <link rel="icon" type="image/png" href="../img/icon.png" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <style>
+    .tool-head {
+      position: relative; overflow: hidden;
+      background: linear-gradient(120deg, var(--navy), #142942);
+      color: var(--white); padding: 56px 5% 40px; text-align: center;
+    }
+    .tool-head .container { max-width: 680px; margin: 0 auto; }
+    .tool-head h1 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); font-weight: 800; letter-spacing: -0.5px; margin-bottom: 14px; }
+    .tool-head h1 span { color: var(--orange-light, var(--orange)); }
+    .tool-head p { color: rgba(255,255,255,0.78); font-size: 1.02rem; line-height: 1.6; }
+    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 18px; }
+    .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--white); }
+
+    .wrap { max-width: 720px; margin: 0 auto; padding: 44px 5% 24px; }
+
+    .fb-card {
+      background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md); padding: 34px 32px;
+    }
+    @media (max-width: 560px) { .fb-card { padding: 26px 20px; } }
+
+    .fb-section { margin-bottom: 28px; }
+    .fb-section:last-of-type { margin-bottom: 0; }
+    .fb-section h2 {
+      font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;
+      color: var(--muted); margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border);
+    }
+
+    .field { margin-bottom: 18px; }
+    .field:last-child { margin-bottom: 0; }
+    .field label { display: block; font-size: 0.86rem; font-weight: 700; color: var(--text); margin-bottom: 7px; }
+    .field .optional { font-weight: 500; color: var(--muted); text-transform: none; letter-spacing: normal; }
+    .field .hint { display: block; font-size: 0.78rem; color: var(--muted); margin-top: 5px; font-weight: 500; }
+    .field input[type="text"], .field input[type="email"], .field textarea, .field select {
+      width: 100%; padding: 13px 14px; font-size: 0.98rem;
+      border: 1.5px solid var(--border); border-radius: var(--radius-sm); outline: none;
+      background: var(--white); color: var(--text); font-family: inherit;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .field textarea { resize: vertical; min-height: 90px; line-height: 1.5; }
+    .field input:focus, .field textarea:focus, .field select:focus {
+      border-color: var(--orange); box-shadow: 0 0 0 4px rgba(249,115,22,0.12);
+    }
+
+    /* Honeypot — invisible to real users, catches simple bots that fill every field */
+    .hp-field { position: absolute; left: -9999px; top: -9999px; opacity: 0; pointer-events: none; }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 560px) { .grid-2 { grid-template-columns: 1fr; } }
+
+    /* Star rating */
+    .star-row { display: flex; gap: 6px; }
+    .star-row input { position: absolute; opacity: 0; pointer-events: none; }
+    .star-btn {
+      width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;
+      border-radius: 10px; border: 1.5px solid var(--border); background: var(--white);
+      cursor: pointer; font-size: 1.3rem; color: var(--border); transition: all 0.15s;
+    }
+    .star-btn.filled { color: var(--orange); border-color: var(--orange); background: #FFF3E8; }
+    .star-btn:hover { border-color: var(--orange); }
+
+    /* NPS scale */
+    .nps-row { display: flex; gap: 5px; flex-wrap: wrap; }
+    .nps-btn {
+      flex: 1 1 0; min-width: 34px; height: 40px; display: flex; align-items: center; justify-content: center;
+      border-radius: 9px; border: 1.5px solid var(--border); background: var(--white);
+      cursor: pointer; font-size: 0.88rem; font-weight: 700; color: var(--muted); transition: all 0.15s;
+    }
+    .nps-btn.selected { color: var(--white); border-color: var(--orange); background: var(--orange); }
+    .nps-btn:hover { border-color: var(--orange); }
+    .nps-labels { display: flex; justify-content: space-between; font-size: 0.74rem; color: var(--muted); margin-top: 6px; font-weight: 600; }
+
+    /* Feature checkboxes */
+    .chip-row { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip { position: relative; }
+    .chip input { position: absolute; opacity: 0; pointer-events: none; }
+    .chip label {
+      display: inline-flex; align-items: center; padding: 9px 15px; border-radius: 999px;
+      border: 1.5px solid var(--border); background: var(--white); font-size: 0.85rem; font-weight: 600;
+      color: var(--text); cursor: pointer; transition: all 0.15s; margin: 0;
+    }
+    .chip input:checked + label { background: var(--navy); border-color: var(--navy); color: var(--white); }
+
+    .fb-submit { display: flex; justify-content: center; margin-top: 30px; }
+    .fb-submit .btn { width: 100%; max-width: 340px; padding: 15px 26px; font-size: 1rem; }
+
+    .fb-status {
+      display: none; text-align: center; padding: 40px 24px; border-radius: var(--radius-lg);
+      background: var(--white); border: 1px solid var(--border); box-shadow: var(--shadow-md);
+    }
+    .fb-status.show { display: block; }
+    .fb-status .icon { font-size: 2.6rem; margin-bottom: 14px; }
+    .fb-status h3 { font-size: 1.25rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
+    .fb-status p { color: var(--muted); font-size: 0.95rem; line-height: 1.6; }
+    .fb-error { color: var(--bad); font-size: 0.86rem; font-weight: 600; margin-top: 14px; text-align: center; display: none; }
+    .fb-error.show { display: block; }
+  </style>
+</head>
+<body>
+
+<div class="beacon-bg" aria-hidden="true">
+  <div class="beacon-frame">
+    <div class="beacon-lamp"></div>
+    <div class="beacon-beam"></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">
+      <img src="../img/icon.png" alt="Logo ng GlucoBeacon" />
+      <span>GlucoBeacon<sup>&trade;</sup></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="I-toggle ang menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="features.html">Features</a>
+      <a href="recipes/index.html">Recipes</a>
+      <a href="restaurants/index.html">Restaurants</a>
+      <a href="carb-calculator.html">Carb Calculator</a>
+      <a href="compare.html">Compare</a>
+      <a href="index.html#pro">Presyo</a>
+      <a href="blog/index.html">Blog</a>
+      <span id="lang-switch" class="nav-lang"></span>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<div class="tool-head">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Feedback ng Beta Tester</div>
+    <h1>Salamat sa pag-try ng <span>GlucoBeacon</span></h1>
+    <p>Parte ka ng maliit na grupo na tumutulong hubugin ito bago ito ilabas sa publiko. Ilang minuto ng tapat na sagot dito — ano ang gumagana, ano ang hindi, ano ang kulang — direktang nagbabago sa kung ano ang gagawin sunod. Walang maling sagot.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <form id="fbForm" class="fb-card reveal" novalidate>
+
+    <!-- Honeypot field — real users never see this -->
+    <div class="hp-field" aria-hidden="true">
+      <label for="fbWebsite">Iwanang blangko ang field na ito</label>
+      <input type="text" id="fbWebsite" name="website" tabindex="-1" autocomplete="off" />
+    </div>
+
+    <div class="fb-section">
+      <h2>Sa Pangkalahatan</h2>
+      <div class="field">
+        <label>Paano mo i-rarate ang experience mo sa ngayon? <span class="optional">(opsyonal)</span></label>
+        <div class="star-row" id="starRow" role="radiogroup" aria-label="Pangkalahatang rating">
+          <button type="button" class="star-btn" data-value="1">★</button>
+          <button type="button" class="star-btn" data-value="2">★</button>
+          <button type="button" class="star-btn" data-value="3">★</button>
+          <button type="button" class="star-btn" data-value="4">★</button>
+          <button type="button" class="star-btn" data-value="5">★</button>
+        </div>
+      </div>
+      <div class="field">
+        <label>Gaano ka-likely na i-recommend mo ang GlucoBeacon sa ibang diabetic? <span class="optional">(opsyonal)</span></label>
+        <div class="nps-row" id="npsRow" role="radiogroup" aria-label="Recommend score">
+        </div>
+        <div class="nps-labels"><span>Hindi gaanong likely</span><span>Sobrang likely</span></div>
+      </div>
+    </div>
+
+    <div class="fb-section">
+      <h2>Ang Experience Mo</h2>
+      <div class="field">
+        <label>Anong mga feature ang talagang nagamit mo na? <span class="optional">(opsyonal, piliin ang gusto mo)</span></label>
+        <div class="chip-row" id="featureChips">
+          <div class="chip"><input type="checkbox" id="f1" value="Blood sugar logging"><label for="f1">Pag-log ng asukal sa dugo</label></div>
+          <div class="chip"><input type="checkbox" id="f2" value="Food log / AI food scan"><label for="f2">Food log / AI food scan</label></div>
+          <div class="chip"><input type="checkbox" id="f3" value="Fasting tracker"><label for="f3">Fasting Tracker</label></div>
+          <div class="chip"><input type="checkbox" id="f4" value="Restaurant advisor"><label for="f4">Restaurant Advisor</label></div>
+          <div class="chip"><input type="checkbox" id="f5" value="Medication reminders"><label for="f5">Reminder ng gamot</label></div>
+          <div class="chip"><input type="checkbox" id="f6" value="Activity / steps"><label for="f6">Activity / steps</label></div>
+          <div class="chip"><input type="checkbox" id="f7" value="Appointments"><label for="f7">Appointment</label></div>
+          <div class="chip"><input type="checkbox" id="f8" value="AI Assistant"><label for="f8">AI Assistant</label></div>
+          <div class="chip"><input type="checkbox" id="f9" value="Doctor / PDF reports"><label for="f9">Report para sa doktor / PDF</label></div>
+          <div class="chip"><input type="checkbox" id="f10" value="Home screen widget"><label for="f10">Home Screen Widget</label></div>
+        </div>
+      </div>
+      <div class="field">
+        <label for="fbLike">Ano ang pinaka-gusto mo hanggang ngayon?</label>
+        <textarea id="fbLike" name="whatYouLike" placeholder="Anumang bagay na tunay na nagpadali, o simpleng naging maganda ang pakiramdam..."></textarea>
+      </div>
+      <div class="field">
+        <label for="fbImprove">Ano ang nakakalito, nakakainis, o mukhang kailangan pang pagandahin?</label>
+        <textarea id="fbImprove" name="whatToImprove" placeholder="Maging tapat — ito mismo ang kailangan naming marinig..."></textarea>
+      </div>
+      <div class="field">
+        <label for="fbBugs">May na-encounter ka bang bug, crash, o bagay na simpleng hindi gumana nang maayos?</label>
+        <textarea id="fbBugs" name="bugsEncountered" placeholder="Ano ang ginagawa mo bago 'to nangyari, at ano ang inaasahan mo vs. ano talaga ang nangyari?"></textarea>
+        <span class="hint">Kung mas specific, mas mabilis naming ma-trace — modelo ng device, aling screen ka noon, ano ang tinapik mo.</span>
+      </div>
+      <div class="field">
+        <label for="fbMissing">May kulang ba na gusto mong magawa ng GlucoBeacon?</label>
+        <textarea id="fbMissing" name="missingFeatures" placeholder="Isang feature, integration, kahit ano..."></textarea>
+      </div>
+      <div class="field">
+        <label for="fbOther">May iba ka pa bang gustong malaman namin?</label>
+        <textarea id="fbOther" name="otherComments" placeholder="Bukas na espasyo — kahit ano."></textarea>
+      </div>
+    </div>
+
+    <div class="fb-section">
+      <h2>Tungkol Sa'yo <span class="optional" style="text-transform:none; letter-spacing:normal; font-weight:600;">— lahat opsyonal, para lang may ma-follow-up kung kailangan</span></h2>
+      <div class="grid-2">
+        <div class="field">
+          <label for="fbName">Pangalan</label>
+          <input type="text" id="fbName" name="name" placeholder="Pangalan mo" autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="fbEmail">Email</label>
+          <input type="email" id="fbEmail" name="email" placeholder="ikaw@halimbawa.com" autocomplete="email" />
+        </div>
+      </div>
+      <div class="field">
+        <label for="fbDevice">Modelo ng phone <span class="optional">(hal. Pixel 8, Galaxy S24, Moto G Play)</span></label>
+        <input type="text" id="fbDevice" name="device" placeholder="Nakakatulong sa amin na ma-reproduce ang bug sa tamang device" />
+      </div>
+    </div>
+
+    <div class="fb-submit">
+      <button type="submit" class="btn btn-primary" id="fbSubmitBtn">I-submit ang Feedback</button>
+    </div>
+    <div class="fb-error" id="fbError"></div>
+  </form>
+
+  <div class="fb-status" id="fbStatus">
+    <div class="icon">✅</div>
+    <h3>Salamat — malaking tulong 'to.</h3>
+    <p>Ang feedback mo ay diretsong napupunta sa founder, hindi sa isang waiting queue. Kung nag-mark ka ng bug at iniwan ang email mo, maaari ka naming kontakin para sa ilang tanong.</p>
+  </div>
+
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand-col">
+      <div class="footer-brand">
+        <img src="../img/icon.png" alt="GlucoBeacon" />
+        <span>GlucoBeacon&trade;</span>
+      </div>
+      <p>Isang pribadong diabetes management app para sa Android — asukal sa dugo, A1C, gamot, pagkain, at marami pa, lahat sa isang lugar.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Produkto</h5>
+      <a href="features.html">Features</a>
+      <a href="index.html#screenshots">Mga Screenshot</a>
+      <a href="index.html#pro">Presyo</a>
+      <a href="index.html#privacy">Privacy</a>
+    </div>
+    <div class="footer-col">
+      <h5>Libreng Tools</h5>
+      <a href="carb-calculator.html">Carb Calculator</a>
+      <a href="compare.html">Compare</a>
+      <a href="recipes/index.html">Recipes</a>
+      <a href="blog/index.html">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h5>Kompanya</h5>
+      <a href="index.html#faq">Mga Tanong</a>
+      <a href="mailto:admin@glucobeacon.com">Contact</a>
+      <a href="https://glucobeacon.github.io/privacy/">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 GAMZ Holdings LLC. Nakalaan ang lahat ng karapatan.</p>
+    <div class="legal-links">
+      <a href="https://glucobeacon.github.io/privacy/">Privacy Policy</a>
+      <a href="mailto:admin@glucobeacon.com">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Bumalik sa Itaas">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="../assets/js/site.js"></script>
+<script src="../assets/js/lang-switch.js"></script>
+<script>
+(function () {
+  const FEEDBACK_URL = "https://us-central1-glucobeacon.cloudfunctions.net/submitTesterFeedback";
+
+  // Star rating
+  let ratingValue = null;
+  const starRow = document.getElementById("starRow");
+  starRow.querySelectorAll(".star-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      ratingValue = Number(btn.dataset.value);
+      starRow.querySelectorAll(".star-btn").forEach((b) => {
+        b.classList.toggle("filled", Number(b.dataset.value) <= ratingValue);
+      });
+    });
+  });
+
+  // NPS 0-10 scale
+  let npsValue = null;
+  const npsRow = document.getElementById("npsRow");
+  for (let i = 0; i <= 10; i++) {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "nps-btn";
+    btn.textContent = i;
+    btn.dataset.value = i;
+    btn.addEventListener("click", () => {
+      npsValue = i;
+      npsRow.querySelectorAll(".nps-btn").forEach((b) => b.classList.remove("selected"));
+      btn.classList.add("selected");
+    });
+    npsRow.appendChild(btn);
+  }
+
+  const form = document.getElementById("fbForm");
+  const errorEl = document.getElementById("fbError");
+  const submitBtn = document.getElementById("fbSubmitBtn");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    errorEl.classList.remove("show");
+
+    const featuresUsed = Array.from(document.querySelectorAll("#featureChips input:checked")).map((el) => el.value);
+
+    const payload = {
+      website: document.getElementById("fbWebsite").value, // honeypot
+      overallRating: ratingValue,
+      recommendScore: npsValue,
+      featuresUsed: featuresUsed,
+      whatYouLike: document.getElementById("fbLike").value,
+      whatToImprove: document.getElementById("fbImprove").value,
+      bugsEncountered: document.getElementById("fbBugs").value,
+      missingFeatures: document.getElementById("fbMissing").value,
+      otherComments: document.getElementById("fbOther").value,
+      name: document.getElementById("fbName").value,
+      email: document.getElementById("fbEmail").value,
+      device: document.getElementById("fbDevice").value,
+    };
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Isinu-submit...";
+
+    try {
+      const res = await fetch(FEEDBACK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || "May nagkamali. Pakisubukan ulit.");
+      }
+      form.style.display = "none";
+      document.getElementById("fbStatus").classList.add("show");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } catch (err) {
+      errorEl.textContent = err.message || "May nagkamali. Pakisubukan ulit.";
+      errorEl.classList.add("show");
+      submitBtn.disabled = false;
+      submitBtn.textContent = "I-submit ang Feedback";
+    }
+  });
+})();
+</script>
+</body>
+</html>
