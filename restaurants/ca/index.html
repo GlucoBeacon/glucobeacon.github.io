@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Central America Restaurant Guide: Diabetes-Friendly Menus | GlucoBeacon</title>
+  <meta name="description" content="Real diabetes-friendly menu picks for Central American restaurant chains -- carbs, calories, and glycemic index for every item, scored and ranked, no guessing." />
+  <link rel="canonical" href="https://glucobeacon.com/restaurants/ca/" />
+  <link rel="alternate" hreflang="en" href="https://glucobeacon.com/restaurants/ca/" />
+  <link rel="alternate" hreflang="es" href="https://glucobeacon.com/es/restaurants/ca/" />
+  <link rel="alternate" hreflang="x-default" href="https://glucobeacon.com/restaurants/ca/" />
+  <link rel="icon" type="image/png" href="../../img/icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Central America Restaurant Diabetes-Friendly Menu Guides",
+    "description": "Diabetes-friendly menu guides for Central American restaurant chains with real nutrition data and glycemic index estimates.",
+    "mainEntityOfPage": "https://glucobeacon.com/restaurants/ca/"
+  }
+  </script>
+  <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+<div class="beacon-bg" aria-hidden="true">
+  <div class="beacon-frame">
+    <img src="../../img/beacon-hero.jpg" alt="" />
+    <div class="beacon-lamp"></div>
+    <div class="beacon-beam"></div>
+  </div>
+</div>
+
+<header class="site-header">
+<nav>
+  <a class="nav-brand" href="../../index.html">
+    <img src="../../img/icon.png" alt="GlucoBeacon logo" />
+    <span>GlucoBeacon</span>
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="../../features.html">Features</a>
+      <a href="../../recipes/index.html">Food Science</a>
+      <a href="../index.html">Restaurants</a>
+      <a href="../../carb-calculator.html">Carb Calculator</a>
+      <a href="../../compare.html">Compare</a>
+      <a href="../../index.html#pro">Pricing</a>
+      <a href="../../index.html#privacy">Privacy</a>
+      <a href="../../blog/index.html">Blog</a>
+    <span id="lang-switch" class="nav-lang"></span>
+    </div>
+  <div class="nav-store-badges">
+      <a class="nav-store-play" href="https://play.google.com/store/apps/details?id=com.glucobeacon.app" target="_blank" rel="noopener"><img src="../../img/google-play-badge.png" alt="Get it on Google Play" /></a>
+      <span class="nav-store-ios">iOS &mdash; Coming Soon</span>
+    </div>
+</nav>
+</header>
+
+<div class="breadcrumb" style="text-align:center; padding-top:24px; font-size:0.85rem;"><a href="../index.html">Restaurant Guide</a> / &#x1F30E; Central America</div>
+
+<div class="blog-hero">
+  <h1>Central America Restaurant Diabetes-Friendly Menu Guides</h1>
+  <p>Real carb counts, calories, and glycemic index for major Central American restaurant chains -- scored and ranked with the same formula GlucoBeacon's in-app Restaurant Advisor uses, so you know what to order before you go.</p>
+</div>
+
+<p style="text-align:center; max-width:640px; margin:20px auto 0; padding:0 5%; font-size:0.9rem; color:var(--muted);">This region groups chains that operate across multiple Central American countries under one page, rather than splitting by country, since brands like Pollo Campero publish one nutrition dataset covering all their markets. Real official data, noted on every page.</p>
+
+<div style="max-width:480px; margin: 28px auto 0; padding: 0 5%;">
+  <input class="restaurant-search" id="chainSearch" type="text" placeholder="Search for a restaurant..." />
+</div>
+
+<div class="chain-grid" id="chainGrid">
+  <a class="chain-card" href="pollo-campero.html" data-name="pollo campero">
+    <h2>Pollo Campero</h2>
+    <p>23 menu items analyzed &middot; Official (global brand)</p>
+  </a>
+</div>
+
+<footer>
+  <div class="footer-brand">
+    <img src="../../img/icon.png" alt="GlucoBeacon" />
+    <span>GlucoBeacon</span>
+  </div>
+  <p>&copy; 2026 GAMZ Holdings LLC. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="https://glucobeacon.github.io/privacy/">Privacy Policy</a>
+    <a href="mailto:admin@glucobeacon.com">Contact</a>
+  </div>
+</footer>
+
+<script>
+  var input = document.getElementById('chainSearch');
+  var cards = document.querySelectorAll('#chainGrid .chain-card');
+  input.addEventListener('input', function () {
+    var q = input.value.toLowerCase().trim();
+    cards.forEach(function (card) {
+      var match = card.getAttribute('data-name').indexOf(q) !== -1;
+      card.style.display = match ? '' : 'none';
+    });
+  });
+</script>
+
+<script src="../../assets/js/site.js"></script>
+<script src="../../assets/js/lang-switch.js"></script>
+
+</body>
+</html>
