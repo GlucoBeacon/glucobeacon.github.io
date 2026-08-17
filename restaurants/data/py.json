@@ -1,0 +1,40 @@
+[
+  {
+    "chain": "Lomilito's",
+    "country": "Paraguay",
+    "region_code": "py",
+    "region_name": "Paraguay",
+    "source_note": "Lomilito's real price list exists only as an unreadable Facebook photo menu (no text-extractable digital menu found) -- only these 3 specific named dishes could be confirmed from public sources. Nutrition is estimated from Paraguay's well-documented classic lomito composition (bread, beef, ham, cheese, lettuce, tomato, fried egg, mayonnaise), not a chain-specific published description. Lower confidence than other regions in this series; flagged for a follow-up pass with direct menu verification (phone/in-person) before treating this list as complete.",
+    "source_url": "https://www.facebook.com/lomilitospy/",
+    "items": [
+      { "name": "Lomito Clásico", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "1 sandwich on bread, w/ egg + cheese", "carbs": 45, "cal": 650, "gi": 60, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Lomito Árabe", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "1 sandwich on pita bread, w/ egg + cheese", "carbs": 42, "cal": 600, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Lomito Árabe Mixto", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "1 sandwich on pita bread, beef + chicken, w/ egg + cheese", "carbs": 44, "cal": 680, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Papas Fritas", "cat": "Sides", "display_category": "Side", "serving": "1 side order", "carbs": 35, "cal": 320, "gi": 75, "processed": 7, "veg": true, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Amandau",
+    "country": "Paraguay",
+    "region_code": "py",
+    "region_name": "Paraguay",
+    "source_note": "Paraguay's #1 ice cream chain (200+ franchise locations); items and sizes pulled verbatim from real Amandau-branded product listings on Paraguayan online supermarkets. Amandau also distributes Unilever's Kibon and McCain product lines under license -- those foreign-brand items were deliberately excluded to avoid misattributing them to this local chain. Nutrition is AI-estimated (no official nutrition data published); tub-sized items (1L/1.3L) are estimated per a typical ~100g serving, not the whole container.",
+    "source_url": "https://losjardinesonline.com.py/catalogo/amandau-m85",
+    "items": [
+      { "name": "Helado Palito Crock Pistacho", "cat": "Desserts", "display_category": "Dessert", "serving": "1 bar (70g)", "carbs": 22, "cal": 210, "gi": 60, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Helado Copa Gourmet Pistacho", "cat": "Desserts", "display_category": "Dessert", "serving": "1 cup (200g)", "carbs": 34, "cal": 320, "gi": 58, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Helado Sandwich", "cat": "Desserts", "display_category": "Dessert", "serving": "1 sandwich (55g)", "carbs": 24, "cal": 180, "gi": 62, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Helado Palito Frutilla Relleno", "cat": "Desserts", "display_category": "Dessert", "serving": "1 bar (60g)", "carbs": 20, "cal": 170, "gi": 58, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Helado Diet Napolitano", "cat": "Desserts", "display_category": "Dessert", "serving": "1 scoop (~100g of 1L tub)", "carbs": 16, "cal": 110, "gi": 40, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Helado Frutos del Bosque Relleno", "cat": "Desserts", "display_category": "Dessert", "serving": "1 bar (60g)", "carbs": 21, "cal": 175, "gi": 58, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Helado Palito Chocolate Relleno", "cat": "Desserts", "display_category": "Dessert", "serving": "1 bar (60g)", "carbs": 22, "cal": 190, "gi": 58, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Helado Napolitano Zero Lactosa", "cat": "Desserts", "display_category": "Dessert", "serving": "1 scoop (~100g of 1.3L tub)", "carbs": 18, "cal": 150, "gi": 55, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Helado Copa Tres Leches", "cat": "Desserts", "display_category": "Dessert", "serving": "1 cup (200g)", "carbs": 38, "cal": 360, "gi": 62, "processed": 8, "veg": true, "mediterranean": false },
+      { "name": "Helado Copa Brownie", "cat": "Desserts", "display_category": "Dessert", "serving": "1 cup (205g)", "carbs": 40, "cal": 380, "gi": 62, "processed": 8, "veg": true, "mediterranean": false },
+      { "name": "Medialunas de Manteca", "cat": "Bakery", "display_category": "Bakery", "serving": "1 croissant (of 6u box)", "carbs": 18, "cal": 150, "gi": 65, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Postre Osito", "cat": "Desserts", "display_category": "Dessert", "serving": "1 portion (~120g of 500g box)", "carbs": 30, "cal": 250, "gi": 60, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Palitos Helados Frutales", "cat": "Desserts", "display_category": "Dessert", "serving": "1 bar (of 6u box)", "carbs": 16, "cal": 90, "gi": 55, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Helado Palito Bombón a la Crema", "cat": "Desserts", "display_category": "Dessert", "serving": "1 bar (50g)", "carbs": 18, "cal": 160, "gi": 58, "processed": 7, "veg": true, "mediterranean": false }
+    ]
+  }
+]

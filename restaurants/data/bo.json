@@ -1,0 +1,58 @@
+[
+  {
+    "chain": "Pollos Copacabana",
+    "country": "Bolivia",
+    "region_code": "bo",
+    "region_name": "Bolivia",
+    "source_note": "Menu items pulled verbatim from the chain's official PDF menu (polloscopacabana.com); nutrition values are AI-estimated (no official nutrition data published by the chain).",
+    "source_url": "https://polloscopacabana.com/docs/settings/pcmenu-destacados-lpcompressed.pdf",
+    "items": [
+      { "name": "Combo Antojito", "cat": "Chicken", "display_category": "Chicken Combo", "serving": "1 piece + fries or rice + soda", "carbs": 55, "cal": 650, "gi": 65, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo 1/4 Pollo", "cat": "Chicken", "display_category": "Chicken Combo", "serving": "quarter chicken + fries or rice + soda", "carbs": 58, "cal": 750, "gi": 65, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo Fiesta", "cat": "Chicken", "display_category": "Chicken Combo", "serving": "2 pieces + fries or rice + soda", "carbs": 60, "cal": 850, "gi": 65, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo Trío", "cat": "Chicken", "display_category": "Chicken Combo", "serving": "3 pieces + medium fries + medium soda", "carbs": 68, "cal": 1050, "gi": 68, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo Especial", "cat": "Chicken", "display_category": "Chicken Combo", "serving": "4 pieces + medium fries + medium soda", "carbs": 72, "cal": 1250, "gi": 68, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Combo Copalitos", "cat": "Chicken", "display_category": "Chicken Tenders Combo", "serving": "6 chicken tenders + fries or rice + soda", "carbs": 65, "cal": 950, "gi": 66, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo Pipocas de Pollo", "cat": "Chicken", "display_category": "Chicken Popcorn Combo", "serving": "chicken popcorn bites + small fries + soda", "carbs": 62, "cal": 800, "gi": 68, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Combo Balde Alitas", "cat": "Chicken", "display_category": "Wings Combo", "serving": "8 wings + medium fries + medium soda", "carbs": 64, "cal": 980, "gi": 66, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo Recreo", "cat": "Burgers", "display_category": "Burger Combo", "serving": "beef patty, tomato + small fries + soda", "carbs": 58, "cal": 650, "gi": 62, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo Copacabana", "cat": "Burgers", "display_category": "Burger Combo", "serving": "beef, bacon, lettuce, tomato + medium fries + soda", "carbs": 62, "cal": 820, "gi": 63, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo Doble", "cat": "Burgers", "display_category": "Burger Combo", "serving": "2 beef patties, bacon, cheese + fries + soda", "carbs": 64, "cal": 980, "gi": 63, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Combo Bicentenario", "cat": "Burgers", "display_category": "Burger Combo", "serving": "burger + 1 chicken piece + fries or rice", "carbs": 68, "cal": 1050, "gi": 65, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Combo Hamburguesa de Pollo Crocante", "cat": "Burgers", "display_category": "Crispy Chicken Burger Combo", "serving": "crispy chicken patty, lettuce, tomato + medium fries + soda", "carbs": 60, "cal": 750, "gi": 62, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo Hamburguesa de Quinua", "cat": "Burgers", "display_category": "Veggie Burger Combo", "serving": "quinoa patty, cheese, tomato, lettuce, avocado + fries + soda", "carbs": 58, "cal": 680, "gi": 55, "processed": 5, "veg": true, "mediterranean": true },
+      { "name": "Combo Wrap Espinaca y Tocino", "cat": "Sandwiches", "display_category": "Wrap", "serving": "1 wrap + soda", "carbs": 40, "cal": 520, "gi": 50, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Combo Wrap Copalitos", "cat": "Sandwiches", "display_category": "Wrap", "serving": "chicken-tender wrap + soda", "carbs": 45, "cal": 580, "gi": 52, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Combo Ensalada Primavera de Pollo", "cat": "Salads", "display_category": "Salad", "serving": "smoked chicken breast, greens, tomato, corn, carrot", "carbs": 18, "cal": 380, "gi": 35, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Combo Ensalada de Quinua", "cat": "Salads", "display_category": "Salad", "serving": "quinoa, avocado, carrot, cabbage, corn, peach, tomato", "carbs": 35, "cal": 420, "gi": 42, "processed": 3, "veg": true, "mediterranean": true },
+      { "name": "Donut", "cat": "Desserts", "display_category": "Dessert", "serving": "1 donut", "carbs": 30, "cal": 280, "gi": 60, "processed": 8, "veg": true, "mediterranean": false },
+      { "name": "Mousse", "cat": "Desserts", "display_category": "Dessert", "serving": "1 cup", "carbs": 28, "cal": 310, "gi": 55, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Pie de Frutilla / Maracuyá / Mora", "cat": "Desserts", "display_category": "Dessert", "serving": "1 slice", "carbs": 38, "cal": 340, "gi": 58, "processed": 7, "veg": true, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Alexander Coffee",
+    "country": "Bolivia",
+    "region_code": "bo",
+    "region_name": "Bolivia",
+    "source_note": "Menu items pulled verbatim from the chain's official menu page (alexander-coffee.com); no prices or nutrition data published, so both are AI-estimated.",
+    "source_url": "https://alexander-coffee.com/menu/sandwiches-y-ensaladas/",
+    "items": [
+      { "name": "Sándwich Jamón y Queso", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "ham, cheese, mayonnaise, mustard", "carbs": 38, "cal": 420, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Sándwich Lomito", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "beef, lettuce, tomato, onion, bell pepper, mayonnaise", "carbs": 40, "cal": 480, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Sándwich Pechuga de Pollo", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "chicken breast, lettuce, tomato, onion, mayonnaise, mustard", "carbs": 38, "cal": 410, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Sándwich Ensalada de Pollo o Atún", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "shredded chicken or tuna salad, bell pepper, lettuce, tomato, celery, onion, mayonnaise", "carbs": 36, "cal": 430, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Sunrise Sandwich", "cat": "Breakfast", "display_category": "Breakfast Sandwich", "serving": "ham or bacon, cheese, egg, croissant", "carbs": 34, "cal": 460, "gi": 60, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Sandwich TLT", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "tomato, lettuce, bacon, mayonnaise, mustard", "carbs": 36, "cal": 400, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Club Sandwich", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "tomato, lettuce, chicken, egg, cheese, ham, bacon, caesar sauce", "carbs": 42, "cal": 560, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Sándwich Alexander", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "lettuce, tomato, onion, chicken or beef, bacon or ham, cheese", "carbs": 40, "cal": 520, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Ensalada Caesar", "cat": "Salads", "display_category": "Salad", "serving": "with protein, croutons, parmesan", "carbs": 14, "cal": 380, "gi": 35, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Ensalada Chef", "cat": "Salads", "display_category": "Salad", "serving": "mixed greens, protein, cheese", "carbs": 16, "cal": 420, "gi": 35, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Ensalada Vegetariana", "cat": "Salads", "display_category": "Salad", "serving": "mixed vegetables", "carbs": 18, "cal": 280, "gi": 30, "processed": 3, "veg": true, "mediterranean": true },
+      { "name": "Ensalada Verde de Quinua", "cat": "Salads", "display_category": "Salad", "serving": "quinoa, mixed greens", "carbs": 30, "cal": 340, "gi": 40, "processed": 4, "veg": true, "mediterranean": true },
+      { "name": "Ensalada Asiática", "cat": "Salads", "display_category": "Salad", "serving": "lettuce, onion, tomato, red cabbage, teriyaki chicken, pineapple, teriyaki sauce", "carbs": 32, "cal": 380, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Ensalada de Pollo Crocante", "cat": "Salads", "display_category": "Salad", "serving": "crispy chicken, avocado, parmesan", "carbs": 20, "cal": 420, "gi": 45, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Porción de Papas Fritas", "cat": "Sides", "display_category": "Side", "serving": "1 side order", "carbs": 35, "cal": 320, "gi": 75, "processed": 7, "veg": true, "mediterranean": false }
+    ]
+  }
+]
