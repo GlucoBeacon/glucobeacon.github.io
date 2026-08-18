@@ -1,0 +1,18 @@
+[
+  {
+    "chain": "El Rápido",
+    "country": "Cuba",
+    "region_code": "cu",
+    "region_name": "Cuba",
+    "source_note": "Cuba's largest fast-food chain, state-run, open 24/7 at most locations. As a state enterprise it has no functioning official website, no delivery-app presence, and no menu photos found anywhere online -- item names below are the real product categories independently confirmed as sold there across multiple travel-guide and news sources (hamburgers, hot dogs, pizza, fries, milkshakes), not a full itemized menu with proprietary dish names. Lower confidence than every other chain in this series -- flagged for a follow-up pass if a better source (in-person visit, a future digital menu) ever becomes available. No official nutrition data published; AI-estimated.",
+    "source_url": "https://www.directoriocubano.info/noticias/precios-cuba-perrazo-500-pesos-hamburguesa-1150-sector-privado/",
+    "items": [
+      { "name": "Hamburguesa Sencilla", "cat": "Burgers", "display_category": "Burger", "serving": "1 burger", "carbs": 32, "cal": 380, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Hamburguesa con Queso", "cat": "Burgers", "display_category": "Burger", "serving": "1 burger", "carbs": 34, "cal": 430, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Perro Caliente", "cat": "Entrees", "display_category": "Hot Dog", "serving": "1 hot dog", "carbs": 28, "cal": 320, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Pizza Individual", "cat": "Pizza", "display_category": "Pizza", "serving": "1 individual pizza", "carbs": 45, "cal": 420, "gi": 62, "processed": 6, "veg": true, "mediterranean": true },
+      { "name": "Papas Fritas", "cat": "Sides", "display_category": "Side", "serving": "1 order", "carbs": 35, "cal": 320, "gi": 75, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Batido", "cat": "Desserts", "display_category": "Milkshake", "serving": "1 shake", "carbs": 45, "cal": 320, "gi": 60, "processed": 5, "veg": true, "mediterranean": false }
+    ]
+  }
+]

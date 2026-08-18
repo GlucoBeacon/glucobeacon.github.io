@@ -1,0 +1,16 @@
+[
+  {
+    "chain": "Tip-Top",
+    "country": "Nicaragua",
+    "region_code": "ni",
+    "region_name": "Nicaragua",
+    "source_note": "Nicaragua's largest fast-food chain (40 locations nationwide, founded 1958). Real combo names + real córdoba prices pulled from press coverage and social listings -- the chain's own official site (restaurantestiptop.com / tiptoprestaurantes.com) had persistent connectivity/certificate errors across multiple direct-fetch attempts and couldn't be read directly. Combos are family-size (8-12 chicken pieces); nutrition estimated per a 2-piece individual portion, not the whole combo. No second real Nicaraguan chain found that clears the multi-location bar (KFC/Church's/Pollo Campero present in-market are international, not local). No official nutrition data published; AI-estimated.",
+    "source_url": "https://www.laprensani.com/2026/05/24/suplemento/la-prensa-domingo/3703375-kfc-nicaragua-competencia-tip-top",
+    "items": [
+      { "name": "Combo Orgullo", "cat": "Chicken", "display_category": "Combo", "serving": "2 pieces + fries + coleslaw + soda (portion of 8-piece family combo, C$885 total)", "carbs": 45, "cal": 650, "gi": 62, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Combo Tradición", "cat": "Chicken", "display_category": "Combo", "serving": "2 pieces + fries + coleslaw + soda (portion of 12-piece family combo, C$1,100 total)", "carbs": 45, "cal": 650, "gi": 62, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Combo Gran Familiar", "cat": "Chicken", "display_category": "Combo", "serving": "2 pieces + fries + coleslaw + bread + soda (portion of family combo)", "carbs": 48, "cal": 680, "gi": 63, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Alitas Picantes", "cat": "Chicken", "display_category": "Wings", "serving": "6 spicy wings", "carbs": 10, "cal": 480, "gi": 45, "processed": 6, "veg": false, "mediterranean": false }
+    ]
+  }
+]
