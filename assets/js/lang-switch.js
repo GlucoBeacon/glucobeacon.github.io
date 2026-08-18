@@ -38,6 +38,35 @@
     '/restaurants/ph/wendys.html'
   ];
 
+  // The 16 Latin America + Spain regions, each fully translated to
+  // Filipino alongside their EN/ES pages -- unlike the 53 US chains, these
+  // already live under /restaurants/{code}/ in every language, no remap
+  // needed.
+  var REGION_CHAIN_SLUGS = {
+    esp: ['100-montaditos', 'telepizza'],
+    ve: ['arturos'],
+    ni: ['tip-top'],
+    cu: ['el-rapido'],
+    mx: ['burger-king', 'carls-jr', 'cielito-querido', 'dominos', 'el-fogoncito', 'el-pollo-loco', 'kfc', 'la-casa-de-tono', 'mcdonalds', 'pollo-feliz', 'sanborns', 'toks', 'vips', 'wings-army'],
+    co: ['crepes-waffles', 'el-corral', 'frisby', 'kokoriko'],
+    pe: ['bembos', 'norkys', 'pardos-chicken', 'rokys'],
+    ar: ['havanna', 'mostaza'],
+    cl: ['doggis', 'juan-maestro'],
+    ec: ['menestras-del-negro', 'tropiburger'],
+    do: ['adrian-tropical', 'meson-de-bari'],
+    uy: ['el-fogon', 'la-pasiva'],
+    py: ['amandau', 'lomilitos'],
+    bo: ['alexander-coffee', 'pollos-copacabana'],
+    pr: ['el-meson', 'martins-bbq', 'taco-maker'],
+    ca: ['pollo-campero']
+  };
+  Object.keys(REGION_CHAIN_SLUGS).forEach(function (code) {
+    FIL_AVAILABLE.push('/restaurants/' + code + '/');
+    REGION_CHAIN_SLUGS[code].forEach(function (slug) {
+      FIL_AVAILABLE.push('/restaurants/' + code + '/' + slug + '.html');
+    });
+  });
+
   // The 53 US chain pages predate the region split and deliberately kept
   // their existing /restaurants/{slug}.html URLs (real SEO history -- moving
   // them would have been a real ranking regression). Their Filipino
@@ -123,11 +152,17 @@
   }
 
   function usChainRemapToFil(bare) {
+    // Deliberately NOT remapping the bare "/restaurants/" hub here: its real
+    // Filipino equivalent is the country-selector hub at fil/restaurants/
+    // (which the unremapped fall-through in pathFor() already reaches
+    // correctly) -- only fil/restaurants/us/ needs the reverse remap below,
+    // since en/es have no separate "just the US chains" sub-hub to point at.
     var m = bare.match(/^\/restaurants\/([a-z0-9-]+)\.html$/);
     if (m && US_CHAIN_SLUGS.indexOf(m[1]) !== -1) return '/restaurants/us/' + m[1] + '.html';
     return null;
   }
   function usChainRemapToEn(bare) {
+    if (bare === '/restaurants/us/') return '/restaurants/';
     var m = bare.match(/^\/restaurants\/us\/([a-z0-9-]+)\.html$/);
     if (m && US_CHAIN_SLUGS.indexOf(m[1]) !== -1) return '/restaurants/' + m[1] + '.html';
     return null;
