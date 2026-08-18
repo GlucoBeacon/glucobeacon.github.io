@@ -1,0 +1,288 @@
+[
+  {
+    "slug": "pollo-al-horno-con-sazon-ligero",
+    "id": 651,
+    "cuisine": "puertorican",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 40,
+    "total_min": 55,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 320, "carbs": 8, "protein": 35, "fat": 15, "fiber": 2, "gi": 10},
+    "name": {
+      "en": "Roast Chicken with Puerto Rican Sazón",
+      "es": "Pollo al Horno con Sazón Ligero",
+      "fil": "Roast Chicken na may Puerto Rican Sazón"
+    },
+    "description": {
+      "en": "A real Puerto Rican roast chicken seasoned with a homemade adobo and sofrito-style sazón -- true island flavor, naturally light and low-carb.",
+      "es": "Un verdadero pollo horneado puertorriqueño sazonado con un adobo casero y sazón al estilo sofrito -- el verdadero sabor isleño, naturalmente liviano y bajo en carbohidratos.",
+      "fil": "Isang real na Puerto Rican roast chicken na naka-season ng homemade adobo at sofrito-style na sazón -- true na island flavor, naturally light at low-carb."
+    },
+    "why_it_fits": {
+      "en": "Roast chicken seasoned with real adobo and sofrito spices is naturally free of added starch or sugar, so it has very little effect on blood sugar on its own. Making the seasoning blend from scratch instead of using a store-bought packet also avoids the added salt and fillers those often contain.",
+      "es": "El pollo horneado sazonado con adobo real y especias de sofrito está naturalmente libre de almidón o azúcar agregada, por lo que tiene muy poco efecto en la glucémia por sí solo. Hacer la mezcla de especias desde cero en lugar de usar un sobre comprado también evita la sal y los rellenos agregados que a menudo contienen.",
+      "fil": "Ang roast chicken na naka-season ng real na adobo at sofrito spices ay naturally walang added starch o sugar, kaya may napakakaunting epekto sa blood sugar mag-isa. Ang paggawa ng seasoning blend mula sa simula sa halip na gumamit ng store-bought packet ay iniiwasan din ang added salt at fillers na kadalasang laman ng mga ito."
+    },
+    "ingredients": [
+      {"qty_us": "4", "qty_metric": "4", "text": {"en": "bone-in chicken thighs, skin removed", "es": "muslos de pollo con hueso, sin piel", "fil": "bone-in chicken thighs, tinanggalan ng balat"}},
+      {"qty_us": "4 cloves", "qty_metric": "4 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "dried oregano", "es": "orégano seco", "fil": "dried oregano"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground annatto or paprika", "es": "achiote molido o pimentón", "fil": "ground annatto o paprika"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+    ],
+    "instructions": {
+      "en": [
+        "Preheat the oven to 400°F (200°C). Combine the garlic, oregano, annatto, lime juice, olive oil, salt, and pepper into a paste.",
+        "Rub the chicken thighs thoroughly with the sazón paste and let sit 15 minutes if time allows.",
+        "Arrange on a baking sheet and roast 35-40 minutes until cooked through and golden.",
+        "Serve hot."
+      ],
+      "es": [
+        "Precalienta el horno a 200°C. Combina el ajo, el orégano, el achiote, el jugo de limón, el aceite de oliva, la sal y la pimienta en una pasta.",
+        "Frota los muslos de pollo bien con la pasta de sazón y deja reposar 15 minutos si el tiempo lo permite.",
+        "Acomoda en una bandeja para hornear y hornea 35-40 minutos hasta que estén cocidos y dorados.",
+        "Sirve caliente."
+      ],
+      "fil": [
+        "I-preheat ang oven sa 200°C. Ihalo ang bawang, oregano, achiote, lime juice, olive oil, asin, at paminta para sa paste.",
+        "Kuskusin ang chicken thighs nang husto ng sazón paste at hayaang tumigil ng 15 minuto kung may oras.",
+        "Ihanay sa baking sheet at i-roast ng 35-40 minuto hanggang maluto at golden.",
+        "I-serve na mainit."
+      ]
+    }
+  },
+  {
+    "slug": "ensalada-de-bacalao-ligera",
+    "id": 652,
+    "cuisine": "puertorican",
+    "meal_category": "lunch",
+    "prep_min": 25,
+    "cook_min": 0,
+    "total_min": 25,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 220, "carbs": 10, "protein": 24, "fat": 10, "fiber": 3, "gi": 15},
+    "name": {
+      "en": "Light Salt Cod Salad",
+      "es": "Ensalada de Bacalao Ligera",
+      "fil": "Light na Salt Cod Salad"
+    },
+    "description": {
+      "en": "Puerto Rico's classic salt cod salad with tomato, onion, and avocado -- real ensalada de bacalao flavor, made with a lighter hand on oil and salt.",
+      "es": "La clásica ensalada puertorriqueña de bacalao con tomate, cebolla y aguacate -- el verdadero sabor de la ensalada de bacalao, hecha con una mano más liviana en el aceite y la sal.",
+      "fil": "Ang classic na Puerto Rican salt cod salad na may kamatis, sibuyas, at avocado -- real na ensalada de bacalao flavor, gawa na may mas magaan na kamay sa oil at asin."
+    },
+    "why_it_fits": {
+      "en": "Salt cod itself is essentially pure lean protein with no carbohydrates, and this salad's fresh vegetables and avocado are all naturally low-GI. Thoroughly soaking and rinsing the salt cod before use, and dressing it lightly with olive oil instead of a heavy mayonnaise-based sauce, keeps the dish authentic while staying gentle on blood sugar.",
+      "es": "El bacalao en sí es prácticamente proteína magra pura sin carbohidratos, y las verduras frescas y el aguacate de esta ensalada son todos naturalmente de IG bajo. Remojar y enjuagar bien el bacalao antes de usarlo, y aderezarlo ligeramente con aceite de oliva en lugar de una salsa pesada a base de mayonesa, mantiene el plato auténtico mientras es suave con la glucémia.",
+      "fil": "Ang salt cod mismo ay essentially pure lean protein na walang carbohydrates, at ang fresh na gulay at avocado ng salad na ito ay pareho naturally low-GI. Ang masusing pagbabad at paghuhugas ng salt cod bago gamitin, at ang paggamit ng olive oil sa halip na heavy mayonnaise-based na sauce, ay pinapanatiling authentic ang dish habang gentle sa blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "salt cod, soaked overnight and rinsed well", "es": "bacalao salado, remojado toda la noche y bien enjuagado", "fil": "salt cod, binabad overnight at hinugasang mabuti"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "1/2", "qty_metric": "1/2", "text": {"en": "red onion, thinly sliced", "es": "cebolla morada, en juliana fina", "fil": "red onion, pinong hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, diced", "es": "aguacate, en cubos", "fil": "avocado, dinice"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}}
+    ],
+    "instructions": {
+      "en": [
+        "Simmer the soaked, rinsed salt cod in fresh water for 15 minutes, then drain and flake it, removing any bones or skin.",
+        "Combine the flaked cod with the tomato and red onion in a large bowl.",
+        "Whisk together the olive oil and lime juice, and toss with the salad.",
+        "Gently fold in the avocado just before serving, and season with pepper to taste."
+      ],
+      "es": [
+        "Cocina a fuego lento el bacalao remojado y enjuagado en agua fresca durante 15 minutos, luego escurre y desmenuza, quitando cualquier espina o piel.",
+        "Combina el bacalao desmenuzado con el tomate y la cebolla morada en un bol grande.",
+        "Bate el aceite de oliva con el jugo de limón, y mezcla con la ensalada.",
+        "Incorpora suavemente el aguacate justo antes de servir, y sazona con pimienta a gusto."
+      ],
+      "fil": [
+        "Pasimmerin ang binabad, hinugasang salt cod sa sariwang tubig ng 15 minuto, tapos i-drain at i-flake, tanggalin ang buto o balat.",
+        "Ihalo ang flaked cod sa kamatis at red onion sa malaking bowl.",
+        "I-whisk ang olive oil at lime juice, at haluin sa salad.",
+        "Dahan-dahang ihalo ang avocado bago i-serve, at i-season ng paminta ayon sa panlasa."
+      ]
+    }
+  },
+  {
+    "slug": "pescado-en-escabeche-ligero",
+    "id": 653,
+    "cuisine": "puertorican",
+    "meal_category": "lunch",
+    "prep_min": 15,
+    "cook_min": 15,
+    "total_min": 30,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 260, "carbs": 8, "protein": 30, "fat": 13, "fiber": 2, "gi": 10},
+    "name": {
+      "en": "Light Pickled Fish Escabeche",
+      "es": "Pescado en Escabeche Ligero",
+      "fil": "Light na Pickled Fish Escabeche"
+    },
+    "description": {
+      "en": "A real Puerto Rican pan-seared fish marinated in a tangy vinegar, onion, and pepper escabeche -- naturally light and low in carbs.",
+      "es": "Un verdadero pescado puertorriqueño dorado en sartén y marinado en un ácido escabeche de vinagre, cebolla y pimiento -- naturalmente liviano y bajo en carbohidratos.",
+      "fil": "Isang real na Puerto Rican pan-seared na isda na naka-marinate sa tangy na vinegar, sibuyas, at pepper escabeche -- naturally light at mababa sa carbs."
+    },
+    "why_it_fits": {
+      "en": "Escabeche is a vinegar-based marinade with onions and peppers, not a starch or sugar-based sauce, so it has essentially no carbohydrate content. Paired with a lean, pan-seared fish fillet, this dish delivers real tangy island flavor while staying close to zero glycemic impact.",
+      "es": "El escabeche es un marinado a base de vinagre con cebolla y pimientos, no una salsa a base de almidón o azúcar, por lo que prácticamente no tiene contenido de carbohidratos. Combinado con un filete de pescado magro dorado en sartén, este plato aporta un verdadero sabor isleño ácido mientras se mantiene con un impacto glucémico casi nulo.",
+      "fil": "Ang escabeche ay vinegar-based na marinade na may sibuyas at peppers, hindi starch o sugar-based na sauce, kaya halos walang carbohydrate content. Kasama ang lean, pan-seared na fish fillet, ang dish na ito ay nagbibigay ng real na tangy island flavor habang nananatiling malapit sa zero glycemic impact."
+    },
+    "ingredients": [
+      {"qty_us": "4", "qty_metric": "4", "text": {"en": "white fish fillets (such as red snapper or grouper)", "es": "filetes de pescado blanco (como chillo o mero)", "fil": "white fish fillets (tulad ng red snapper o grouper)"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, thinly sliced", "es": "cebolla, en juliana fina", "fil": "sibuyas, pinong hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, thinly sliced", "es": "morrón rojo, en juliana fina", "fil": "red bell pepper, pinong hiniwa"}},
+      {"qty_us": "1/2 cup", "qty_metric": "120 ml", "text": {"en": "white vinegar", "es": "vinagre blanco", "fil": "white vinegar"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
+      {"qty_us": "8", "qty_metric": "8", "text": {"en": "black peppercorns and 2 bay leaves", "es": "granos de pimienta negra y 2 hojas de laurel", "fil": "black peppercorns at 2 bay leaves"}}
+    ],
+    "instructions": {
+      "en": [
+        "Season the fish with salt and pepper, and pan-sear in a little olive oil, about 3-4 minutes per side, until golden and cooked through.",
+        "In a separate pan, sauté the onion and bell pepper briefly, about 3 minutes.",
+        "Add the vinegar, remaining olive oil, peppercorns, and bay leaves, and simmer 3-4 minutes to make the escabeche.",
+        "Pour the warm escabeche over the cooked fish and let it marinate at least 15 minutes before serving, chilled or at room temperature."
+      ],
+      "es": [
+        "Sazona el pescado con sal y pimienta, y dora en sartén con un poco de aceite de oliva, unos 3-4 minutos por lado, hasta que esté dorado y cocido.",
+        "En una sartén aparte, saltea la cebolla y el morrón brevemente, unos 3 minutos.",
+        "Agrega el vinagre, el resto del aceite de oliva, los granos de pimienta y las hojas de laurel, y cocina a fuego lento 3-4 minutos para hacer el escabeche.",
+        "Vierte el escabeche tibio sobre el pescado cocido y deja marinar al menos 15 minutos antes de servir, frío o a temperatura ambiente."
+      ],
+      "fil": [
+        "I-season ang isda ng asin at paminta, at i-pan-sear sa kaunting olive oil, mga 3-4 minuto bawat side, hanggang golden at cooked through.",
+        "Sa hiwalay na pan, igisa nang mabilis ang sibuyas at bell pepper, mga 3 minuto.",
+        "Idagdag ang vinegar, natitirang olive oil, peppercorns, at bay leaves, at pasimmerin ng 3-4 minuto para gawin ang escabeche.",
+        "Ibuhos ang mainit na escabeche sa ibabaw ng lutong isda at hayaang mag-marinate ng hindi bababa sa 15 minuto bago i-serve, malamig o sa room temperature."
+      ]
+    }
+  },
+  {
+    "slug": "habichuelas-guisadas-puertorriquenas",
+    "id": 654,
+    "cuisine": "puertorican",
+    "meal_category": "lunch",
+    "prep_min": 10,
+    "cook_min": 35,
+    "total_min": 45,
+    "servings": 4,
+    "tags": ["High-Fiber", "Gluten-Free", "Vegetarian"],
+    "nutrition": {"cal": 250, "carbs": 32, "protein": 13, "fat": 7, "fiber": 11, "gi": 30},
+    "name": {
+      "en": "Puerto Rican Stewed Beans",
+      "es": "Habichuelas Guisadas Puertorriqueñas",
+      "fil": "Puerto Rican Stewed Beans"
+    },
+    "description": {
+      "en": "Puerto Rico's everyday stewed pink beans with sofrito, recao, and calabaza -- real habichuelas guisadas comfort, naturally slow-digesting and fiber-rich.",
+      "es": "Las habichuelas rosadas guisadas cotidianas de Puerto Rico con sofrito, recao y calabaza -- el verdadero confort de las habichuelas guisadas, naturalmente de digestión lenta y rico en fibra.",
+      "fil": "Ang everyday na Puerto Rican stewed pink beans na may sofrito, recao, at calabaza -- real na habichuelas guisadas comfort, naturally slow-digesting at fiber-rich."
+    },
+    "why_it_fits": {
+      "en": "Beans are naturally low-GI and rich in soluble fiber, so this classic Puerto Rican staple digests gradually rather than spiking blood sugar. This version relies on the beans themselves as the main carb source, without the traditional side of white rice, making it a genuinely gentle, filling option.",
+      "es": "Los frijoles tienen naturalmente un IG bajo y son ricos en fibra soluble, por lo que este clásico plato puertorriqueño se digiere gradualmente en lugar de elevar la glucémia. Esta versión depende de los propios frijoles como fuente principal de carbohidratos, sin el tradicional acompañamiento de arroz blanco, lo que la convierte en una opción genuinamente suave y satisfactoria.",
+      "fil": "Ang beans ay naturally low-GI at mayaman sa soluble fiber, kaya ang classic na Puerto Rican staple na ito ay gradually ma-digest sa halip na magpataas ng blood sugar. Ang version na ito ay umaasa sa mismong beans bilang main carb source, na walang traditional na side ng white rice, na ginagawa itong genuinely gentle, filling na option."
+    },
+    "ingredients": [
+      {"qty_us": "3 cups", "qty_metric": "500 g", "text": {"en": "cooked pink or pinto beans, with a little of their liquid", "es": "habichuelas rosadas o pintas cocidas, con un poco de su líquido", "fil": "lutong pink o pinto beans, na may kaunting liquid nito"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "2 tbsp", "qty_metric": "8 g", "text": {"en": "fresh recao or cilantro, chopped", "es": "recao o cilantro fresco, picado", "fil": "fresh recao o cilantro, hiniwa"}},
+      {"qty_us": "1 cup", "qty_metric": "150 g", "text": {"en": "calabaza squash, cubed", "es": "calabaza, en cubos", "fil": "calabaza squash, dinice"}},
+      {"qty_us": "1 tbsp", "qty_metric": "30 g", "text": {"en": "tomato paste", "es": "pasta de tomate", "fil": "tomato paste"}},
+      {"qty_us": "3 cups", "qty_metric": "700 ml", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Sauté the onion, bell pepper, garlic, and recao in a large pot until soft and fragrant, about 6 minutes.",
+        "Stir in the tomato paste and cook 1-2 minutes.",
+        "Add the beans, broth, and calabaza, and bring to a boil.",
+        "Simmer 20-25 minutes until the calabaza is tender and the stew has thickened slightly.",
+        "Season with salt and pepper to taste and serve hot."
+      ],
+      "es": [
+        "Saltea la cebolla, el morrón, el ajo y el recao en una olla grande hasta que estén blandos y fragantes, unos 6 minutos.",
+        "Incorpora la pasta de tomate y cocina 1-2 minutos.",
+        "Agrega las habichuelas, el caldo y la calabaza, y lleva a hervor.",
+        "Cocina a fuego lento 20-25 minutos hasta que la calabaza esté tierna y el guiso haya espesado ligeramente.",
+        "Sazona con sal y pimienta a gusto y sirve caliente."
+      ],
+      "fil": [
+        "Igisa ang sibuyas, bell pepper, bawang, at recao sa malaking pot hanggang lumambot at mabango, mga 6 minuto.",
+        "Ihalo ang tomato paste at magluto ng 1-2 minuto.",
+        "Idagdag ang beans, broth, at calabaza, at pakuluan.",
+        "Pasimmerin ng 20-25 minuto hanggang lumambot ang calabaza at bahagyang lumapot ang stew.",
+        "I-season ng asin at paminta ayon sa panlasa at i-serve na mainit."
+      ]
+    }
+  },
+  {
+    "slug": "carne-guisada-puertorriquena-ligera",
+    "id": 655,
+    "cuisine": "puertorican",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 60,
+    "total_min": 75,
+    "servings": 4,
+    "tags": ["High-Protein", "High-Fiber", "Gluten-Free"],
+    "nutrition": {"cal": 340, "carbs": 20, "protein": 34, "fat": 14, "fiber": 5, "gi": 35},
+    "name": {
+      "en": "Light Puerto Rican Beef Stew",
+      "es": "Carne Guisada Puertorriqueña Ligera",
+      "fil": "Light na Puerto Rican Beef Stew"
+    },
+    "description": {
+      "en": "A real Puerto Rican beef stew with sofrito, olives, and carrots -- true carne guisada comfort, rebalanced with more vegetables and a smaller potato portion.",
+      "es": "Una verdadera carne guisada puertorriqueña con sofrito, aceitunas y zanahorias -- el verdadero confort de la carne guisada, reequilibrada con más verduras y una porción más pequeña de papa.",
+      "fil": "Isang real na Puerto Rican beef stew na may sofrito, olives, at carrots -- true na carne guisada comfort, na-rebalance na may mas maraming gulay at mas maliit na potato portion."
+    },
+    "why_it_fits": {
+      "en": "Traditional carne guisada often includes a generous amount of potato. Keeping just a modest portion of potato and bulking the stew up with extra carrot and green beans preserves the dish's real, hearty sofrito-braised flavor while lowering its overall glycemic load.",
+      "es": "La carne guisada tradicional a menudo incluye una cantidad generosa de papa. Mantener solo una porción moderada de papa y aumentar el guiso con zanahoria y ejotes extra conserva el verdadero sabor contundente y braseado con sofrito del plato, mientras reduce su carga glucémica general.",
+      "fil": "Ang traditional na carne guisada ay kadalasang may malaking halaga ng potato. Ang pananatili ng katamtamang portion lang ng potato at pagdaragdag ng extra carrot at green beans sa stew ay nagpapanatili ng real, hearty na sofrito-braised na lasa ng dish habang binabawasan ang overall glycemic load nito."
+    },
+    "ingredients": [
+      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "lean beef stew meat, trimmed", "es": "carne magra para guiso, sin grasa", "fil": "lean beef na pang-guiso, tinanggalan ng taba"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small potato, cubed", "es": "papa pequeña, en cubos", "fil": "maliit na potato, dinice"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "carrots, sliced", "es": "zanahorias, en rodajas", "fil": "carrots, hiniwa"}},
+      {"qty_us": "1 cup", "qty_metric": "100 g", "text": {"en": "green beans, chopped", "es": "ejotes, picados", "fil": "green beans, hiniwa"}},
+      {"qty_us": "8", "qty_metric": "8", "text": {"en": "green olives", "es": "aceitunas verdes", "fil": "green olives"}},
+      {"qty_us": "5 cups", "qty_metric": "1.2 L", "text": {"en": "low-sodium beef broth", "es": "caldo de carne bajo en sodio", "fil": "low-sodium beef broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Brown the beef with the onion, bell pepper, and garlic in a large pot, about 8 minutes.",
+        "Add the broth and simmer 40 minutes until the beef begins to tenderize.",
+        "Add the potato and carrot, and simmer 15 minutes.",
+        "Add the green beans and olives, and simmer 10 more minutes until everything is tender.",
+        "Season with salt and pepper to taste and serve hot."
+      ],
+      "es": [
+        "Dora la carne con la cebolla, el morrón y el ajo en una olla grande, unos 8 minutos.",
+        "Agrega el caldo y cocina a fuego lento 40 minutos hasta que la carne comience a ablandarse.",
+        "Agrega la papa y la zanahoria, y cocina a fuego lento 15 minutos.",
+        "Agrega los ejotes y las aceitunas, y cocina a fuego lento 10 minutos más hasta que todo esté tierno.",
+        "Sazona con sal y pimienta a gusto y sirve caliente."
+      ],
+      "fil": [
+        "I-brown ang beef kasama ang sibuyas, bell pepper, at bawang sa malaking pot, mga 8 minuto.",
+        "Idagdag ang broth at pasimmerin ng 40 minuto hanggang magsimulang lumambot ang beef.",
+        "Idagdag ang potato at carrot, at pasimmerin ng 15 minuto.",
+        "Idagdag ang green beans at olives, at pasimmerin pa ng 10 minuto hanggang lumambot lahat.",
+        "I-season ng asin at paminta ayon sa panlasa at i-serve na mainit."
+      ]
+    }
+  }
+]

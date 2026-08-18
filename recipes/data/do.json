@@ -1,0 +1,290 @@
+[
+  {
+    "slug": "pescado-con-coco-ligero",
+    "id": 641,
+    "cuisine": "dominican",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 20,
+    "total_min": 35,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 280, "carbs": 8, "protein": 32, "fat": 14, "fiber": 2, "gi": 15},
+    "name": {
+      "en": "Light Fish in Coconut Sauce",
+      "es": "Pescado con Coco Ligero",
+      "fil": "Light na Fish in Coconut Sauce"
+    },
+    "description": {
+      "en": "A real Dominican coastal dish -- fish simmered in a light coconut, tomato, and bell pepper sauce -- naturally low in carbs and rich in flavor.",
+      "es": "Un verdadero plato costero dominicano -- pescado cocido a fuego lento en una salsa liviana de coco, tomate y morrón -- naturalmente bajo en carbohidratos y lleno de sabor.",
+      "fil": "Isang real na Dominican coastal dish -- isda na pinasimmer sa light na coconut, kamatis, at bell pepper sauce -- naturally mababa sa carbs at puno ng lasa."
+    },
+    "why_it_fits": {
+      "en": "This dish is built on lean fish and a coconut-tomato sauce with no added starch, so its carbohydrate content stays naturally low. Using light coconut milk instead of the full-fat version keeps the real tropical richness of the sauce while trimming excess saturated fat.",
+      "es": "Este plato está hecho con pescado magro y una salsa de coco y tomate sin almidón agregado, por lo que su contenido de carbohidratos se mantiene naturalmente bajo. Usar leche de coco liviana en lugar de la versión entera mantiene la verdadera riqueza tropical de la salsa mientras reduce el exceso de grasa saturada.",
+      "fil": "Ang dish na ito ay gawa sa lean fish at coconut-tomato sauce na walang added starch, kaya naturally mababa ang carbohydrate content nito. Ang paggamit ng light coconut milk sa halip na full-fat version ay pinapanatili ang real na tropical richness ng sauce habang binabawasan ang excess saturated fat."
+    },
+    "ingredients": [
+      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "white fish fillets (such as tilapia or mahi-mahi)", "es": "filetes de pescado blanco (como tilapia o dorado)", "fil": "white fish fillets (tulad ng tilapia o mahi-mahi)"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, sliced", "es": "cebolla, en rodajas", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, sliced", "es": "morrón rojo, en tiras", "fil": "red bell pepper, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "3/4 cup", "qty_metric": "180 ml", "text": {"en": "light coconut milk", "es": "leche de coco liviana", "fil": "light coconut milk"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}}
+    ],
+    "instructions": {
+      "en": [
+        "Season the fish with salt, pepper, and lime juice, and let it sit 10 minutes.",
+        "Sauté the onion, bell pepper, and garlic in a large pan until soft, about 6 minutes.",
+        "Add the tomato and cook 3 minutes more.",
+        "Stir in the coconut milk and bring to a gentle simmer.",
+        "Add the fish and simmer 10-12 minutes until just cooked through, then serve hot."
+      ],
+      "es": [
+        "Sazona el pescado con sal, pimienta y jugo de limón, y deja reposar 10 minutos.",
+        "Saltea la cebolla, el morrón y el ajo en una sartén grande hasta que estén blandos, unos 6 minutos.",
+        "Agrega el tomate y cocina 3 minutos más.",
+        "Incorpora la leche de coco y lleva a un hervor suave.",
+        "Agrega el pescado y cocina a fuego lento 10-12 minutos hasta que esté apenas cocido, y sirve caliente."
+      ],
+      "fil": [
+        "I-season ang isda ng asin, paminta, at lime juice, at hayaang tumigil ng 10 minuto.",
+        "Igisa ang sibuyas, bell pepper, at bawang sa malaking pan hanggang lumambot, mga 6 minuto.",
+        "Idagdag ang kamatis at magluto pa ng 3 minuto.",
+        "Ihalo ang coconut milk at pakuluan nang bahagya.",
+        "Idagdag ang isda at pasimmerin ng 10-12 minuto hanggang maluto, at i-serve na mainit."
+      ]
+    }
+  },
+  {
+    "slug": "ensalada-verde-dominicana",
+    "id": 642,
+    "cuisine": "dominican",
+    "meal_category": "lunch",
+    "prep_min": 10,
+    "cook_min": 0,
+    "total_min": 10,
+    "servings": 4,
+    "tags": ["Vegetarian", "Vegan", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 110, "carbs": 8, "protein": 3, "fat": 8, "fiber": 3, "gi": 15},
+    "name": {
+      "en": "Dominican Green Salad",
+      "es": "Ensalada Verde Dominicana",
+      "fil": "Dominican Green Salad"
+    },
+    "description": {
+      "en": "A real, everyday Dominican side salad of lettuce, tomato, cucumber, and avocado with a light vinaigrette -- fresh and naturally low in carbs.",
+      "es": "Una verdadera y cotidiana ensalada dominicana de lechuga, tomate, pepino y aguacate con una vinagreta liviana -- fresca y naturalmente baja en carbohidratos.",
+      "fil": "Isang real, everyday na Dominican side salad na gawa sa lettuce, kamatis, pipino, at avocado na may light na vinaigrette -- fresh at naturally mababa sa carbs."
+    },
+    "why_it_fits": {
+      "en": "This salad is built entirely from non-starchy vegetables and avocado, with no rice, bread, or added sugar, so it has almost no effect on blood sugar while adding real volume, freshness, and healthy fat to any Dominican meal.",
+      "es": "Esta ensalada está hecha completamente de verduras sin almidón y aguacate, sin arroz, pan ni azúcar agregada, por lo que casi no tiene efecto en la glucémia mientras aporta volumen, frescura y grasa saludable real a cualquier comida dominicana.",
+      "fil": "Ang salad na ito ay gawa nang buo sa non-starchy na gulay at avocado, na walang kanin, tinapay, o added sugar, kaya halos walang epekto sa blood sugar habang nagdadagdag ng real volume, freshness, at healthy fat sa kahit anong Dominican meal."
+    },
+    "ingredients": [
+      {"qty_us": "4 cups", "qty_metric": "4 cups", "text": {"en": "romaine lettuce, chopped", "es": "lechuga romana, picada", "fil": "romaine lettuce, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "cucumber, sliced", "es": "pepino, en rodajas", "fil": "pipino, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, diced", "es": "aguacate, en cubos", "fil": "avocado, dinice"}},
+      {"qty_us": "1/4", "qty_metric": "1/4", "text": {"en": "red onion, thinly sliced", "es": "cebolla morada, en juliana fina", "fil": "red onion, pinong hiniwa"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil and vinegar dressing", "es": "aderezo de aceite de oliva y vinagre", "fil": "olive oil at vinegar dressing"}}
+    ],
+    "instructions": {
+      "en": [
+        "Combine the lettuce, tomato, cucumber, and red onion in a large bowl.",
+        "Add the avocado and toss gently.",
+        "Drizzle with the olive oil and vinegar dressing.",
+        "Season with salt and pepper to taste and serve immediately."
+      ],
+      "es": [
+        "Combina la lechuga, el tomate, el pepino y la cebolla morada en un bol grande.",
+        "Agrega el aguacate y mezcla con cuidado.",
+        "Rocía con el aderezo de aceite de oliva y vinagre.",
+        "Sazona con sal y pimienta a gusto y sirve de inmediato."
+      ],
+      "fil": [
+        "Ihalo ang lettuce, kamatis, pipino, at red onion sa malaking bowl.",
+        "Idagdag ang avocado at haluin nang dahan-dahan.",
+        "Ibuhos ang olive oil at vinegar dressing.",
+        "I-season ng asin at paminta ayon sa panlasa at i-serve agad."
+      ]
+    }
+  },
+  {
+    "slug": "habichuelas-guisadas-ligeras",
+    "id": 643,
+    "cuisine": "dominican",
+    "meal_category": "lunch",
+    "prep_min": 10,
+    "cook_min": 35,
+    "total_min": 45,
+    "servings": 4,
+    "tags": ["High-Fiber", "Gluten-Free", "Vegetarian"],
+    "nutrition": {"cal": 250, "carbs": 32, "protein": 13, "fat": 7, "fiber": 11, "gi": 30},
+    "name": {
+      "en": "Light Dominican Stewed Beans",
+      "es": "Habichuelas Guisadas Ligeras",
+      "fil": "Light na Dominican Stewed Beans"
+    },
+    "description": {
+      "en": "The Dominican Republic's everyday stewed red beans with sofrito and squash -- real habichuelas guisadas comfort, naturally slow-digesting.",
+      "es": "Las habichuelas guisadas cotidianas de República Dominicana con sofrito y auyama -- el verdadero confort de las habichuelas guisadas, naturalmente de digestión lenta.",
+      "fil": "Ang everyday na Dominican stewed red beans na may sofrito at kalabasa -- real na habichuelas guisadas comfort, naturally slow-digesting."
+    },
+    "why_it_fits": {
+      "en": "Beans are naturally low-GI and rich in soluble fiber, so this real Dominican staple digests gradually. Relying on the beans themselves as the main carbohydrate source, without the traditional side of white rice, makes this a genuinely gentle option for blood sugar.",
+      "es": "Los frijoles tienen naturalmente un IG bajo y son ricos en fibra soluble, por lo que este verdadero alimento básico dominicano se digiere gradualmente. Depender de los propios frijoles como fuente principal de carbohidratos, sin el tradicional acompañamiento de arroz blanco, hace de esto una opción genuinamente suave para la glucémia.",
+      "fil": "Ang beans ay naturally low-GI at mayaman sa soluble fiber, kaya ang real na Dominican staple na ito ay gradually ma-digest. Ang pag-asa sa mismong beans bilang main carbohydrate source, na walang traditional na side ng white rice, ay ginagawa itong genuinely gentle na option para sa blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "3 cups", "qty_metric": "500 g", "text": {"en": "cooked red beans, with a little of their liquid", "es": "habichuelas rojas cocidas, con un poco de su líquido", "fil": "lutong red beans, na may kaunting liquid nito"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1 cup", "qty_metric": "150 g", "text": {"en": "auyama (pumpkin), cubed", "es": "auyama, en cubos", "fil": "kalabasa, dinice"}},
+      {"qty_us": "1 tbsp", "qty_metric": "30 g", "text": {"en": "tomato paste", "es": "pasta de tomate", "fil": "tomato paste"}},
+      {"qty_us": "3 cups", "qty_metric": "700 ml", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Sauté the onion, bell pepper, and garlic in a large pot until soft, about 6 minutes.",
+        "Stir in the tomato paste and cook 1-2 minutes.",
+        "Add the beans, broth, and auyama, and bring to a boil.",
+        "Simmer 20-25 minutes until the auyama is tender and the stew has thickened slightly.",
+        "Season with salt and pepper to taste and serve hot."
+      ],
+      "es": [
+        "Saltea la cebolla, el morrón y el ajo en una olla grande hasta que estén blandos, unos 6 minutos.",
+        "Incorpora la pasta de tomate y cocina 1-2 minutos.",
+        "Agrega las habichuelas, el caldo y la auyama, y lleva a hervor.",
+        "Cocina a fuego lento 20-25 minutos hasta que la auyama esté tierna y el guiso haya espesado ligeramente.",
+        "Sazona con sal y pimienta a gusto y sirve caliente."
+      ],
+      "fil": [
+        "Igisa ang sibuyas, bell pepper, at bawang sa malaking pot hanggang lumambot, mga 6 minuto.",
+        "Ihalo ang tomato paste at magluto ng 1-2 minuto.",
+        "Idagdag ang beans, broth, at kalabasa, at pakuluan.",
+        "Pasimmerin ng 20-25 minuto hanggang lumambot ang kalabasa at bahagyang lumapot ang stew.",
+        "I-season ng asin at paminta ayon sa panlasa at i-serve na mainit."
+      ]
+    }
+  },
+  {
+    "slug": "pollo-guisado-dominicano-ligero",
+    "id": 644,
+    "cuisine": "dominican",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 35,
+    "total_min": 50,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 310, "carbs": 12, "protein": 33, "fat": 15, "fiber": 3, "gi": 20},
+    "name": {
+      "en": "Light Dominican Chicken Stew",
+      "es": "Pollo Guisado Dominicano Ligero",
+      "fil": "Light na Dominican Chicken Stew"
+    },
+    "description": {
+      "en": "A real Dominican everyday braised chicken with sofrito, olives, and tomato -- true pollo guisado flavor, served with vegetables instead of white rice.",
+      "es": "Un verdadero pollo guisado dominicano de todos los días con sofrito, aceitunas y tomate -- el verdadero sabor del pollo guisado, servido con verduras en lugar de arroz blanco.",
+      "fil": "Isang real na Dominican everyday na braised chicken na may sofrito, olives, at kamatis -- true na pollo guisado flavor, served na may gulay sa halip na white rice."
+    },
+    "why_it_fits": {
+      "en": "Pollo guisado itself -- chicken braised in a sofrito and tomato sauce -- is naturally low in carbohydrates. Serving it with roasted or steamed vegetables instead of the traditional white rice keeps the dish's real, savory flavor while making the whole plate much gentler on blood sugar.",
+      "es": "El pollo guisado en sí -- pollo braseado en una salsa de sofrito y tomate -- es naturalmente bajo en carbohidratos. Servirlo con verduras asadas o al vapor en lugar del tradicional arroz blanco mantiene el verdadero sabor sabroso del plato mientras hace que todo el plato sea mucho más suave para la glucémia.",
+      "fil": "Ang pollo guisado mismo -- chicken na braised sa sofrito at tomato sauce -- ay naturally mababa sa carbohydrates. Ang pag-serve nito na may roasted o steamed na gulay sa halip na traditional na white rice ay pinapanatili ang real, savory na lasa ng dish habang ginagawang mas gentle ang buong plato sa blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "bone-in chicken thighs, skin removed", "es": "muslos de pollo con hueso, sin piel", "fil": "bone-in chicken thighs, tinanggalan ng balat"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "4 cloves", "qty_metric": "4 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "8", "qty_metric": "8", "text": {"en": "green olives", "es": "aceitunas verdes", "fil": "green olives"}},
+      {"qty_us": "3 cups", "qty_metric": "3 cups", "text": {"en": "steamed mixed vegetables, for serving", "es": "verduras mixtas al vapor, para servir", "fil": "steamed na halo-halong gulay, pang-serve"}}
+    ],
+    "instructions": {
+      "en": [
+        "Sauté the onion, bell pepper, and garlic in a large pot until soft, about 6 minutes.",
+        "Add the chicken thighs and brown lightly on both sides.",
+        "Add the tomato and olives, cover, and simmer 25-30 minutes until the chicken is tender.",
+        "Season with salt and pepper to taste.",
+        "Serve hot alongside steamed mixed vegetables instead of rice."
+      ],
+      "es": [
+        "Saltea la cebolla, el morrón y el ajo en una olla grande hasta que estén blandos, unos 6 minutos.",
+        "Agrega los muslos de pollo y dora ligeramente por ambos lados.",
+        "Agrega el tomate y las aceitunas, tapa y cocina a fuego lento 25-30 minutos hasta que el pollo esté tierno.",
+        "Sazona con sal y pimienta a gusto.",
+        "Sirve caliente junto a verduras mixtas al vapor en lugar de arroz."
+      ],
+      "fil": [
+        "Igisa ang sibuyas, bell pepper, at bawang sa malaking pot hanggang lumambot, mga 6 minuto.",
+        "Idagdag ang chicken thighs at magaan na i-brown sa parehong side.",
+        "Idagdag ang kamatis at olives, takpan, at pasimmerin ng 25-30 minuto hanggang lumambot ang chicken.",
+        "I-season ng asin at paminta ayon sa panlasa.",
+        "I-serve na mainit kasama ang steamed na halo-halong gulay sa halip na kanin."
+      ]
+    }
+  },
+  {
+    "slug": "chillo-al-horno-con-vegetales",
+    "id": 645,
+    "cuisine": "dominican",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 25,
+    "total_min": 40,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 260, "carbs": 10, "protein": 32, "fat": 10, "fiber": 3, "gi": 15},
+    "name": {
+      "en": "Baked Red Snapper with Vegetables",
+      "es": "Chillo al Horno con Vegetales",
+      "fil": "Baked Red Snapper na may Gulay"
+    },
+    "description": {
+      "en": "A real Dominican baked whole red snapper with garlic, lime, and roasted vegetables -- coastal comfort, naturally light.",
+      "es": "Un verdadero chillo entero dominicano horneado con ajo, limón y verduras asadas -- confort costero, naturalmente liviano.",
+      "fil": "Isang real na Dominican baked na whole red snapper na may bawang, lime, at roasted na gulay -- coastal comfort, naturally light."
+    },
+    "why_it_fits": {
+      "en": "A whole baked fish with garlic and lime has almost no carbohydrates on its own, and roasting it alongside vegetables instead of serving it with rice or fried plantain keeps the whole meal close to zero glycemic impact while still being a real, satisfying dinner.",
+      "es": "Un pescado entero horneado con ajo y limón prácticamente no tiene carbohidratos por sí solo, y asarlo junto a verduras en lugar de servirlo con arroz o plátano frito mantiene toda la comida con un impacto glucémico casi nulo, sin dejar de ser una cena real y satisfactoria.",
+      "fil": "Ang buong baked na isda na may bawang at lime ay halos walang carbs mag-isa, at ang pag-roast nito kasama ang gulay sa halip na i-serve na may kanin o fried plantain ay pinapanatili ang buong meal na malapit sa zero glycemic impact habang isa pa ring real, satisfying na dinner."
+    },
+    "ingredients": [
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "whole red snapper (about 2 lb / 900 g), cleaned", "es": "chillo entero (aprox. 900 g), limpio", "fil": "buong red snapper (mga 900 g), nilinis"}},
+      {"qty_us": "4 cloves", "qty_metric": "4 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, sliced", "es": "morrón rojo, en tiras", "fil": "red bell pepper, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, sliced", "es": "cebolla, en rodajas", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "zucchini, sliced", "es": "zapallitos, en rodajas", "fil": "zucchini, hiniwa"}}
+    ],
+    "instructions": {
+      "en": [
+        "Preheat the oven to 400°F (200°C). Score the fish and rub with garlic, lime juice, olive oil, salt, and pepper, inside and out.",
+        "Arrange the bell pepper, onion, and zucchini on a baking sheet, and place the fish on top.",
+        "Bake 25-30 minutes until the fish flakes easily and the vegetables are tender.",
+        "Serve hot straight from the pan."
+      ],
+      "es": [
+        "Precalienta el horno a 200°C. Haz cortes en el pescado y frótalo con ajo, jugo de limón, aceite de oliva, sal y pimienta, por dentro y por fuera.",
+        "Acomoda el morrón, la cebolla y los zapallitos en una bandeja para hornear, y coloca el pescado encima.",
+        "Hornea 25-30 minutos hasta que el pescado se desmenuce fácilmente y las verduras estén tiernas.",
+        "Sirve caliente directamente de la bandeja."
+      ],
+      "fil": [
+        "I-preheat ang oven sa 200°C. I-score ang isda at kuskusin ng bawang, lime juice, olive oil, asin, at paminta, sa loob at labas.",
+        "Ihanay ang bell pepper, sibuyas, at zucchini sa baking sheet, at ilagay ang isda sa ibabaw.",
+        "I-bake ng 25-30 minuto hanggang madaling mahati ang isda at lumambot ang gulay.",
+        "I-serve na mainit direkta mula sa pan."
+      ]
+    }
+  }
+]

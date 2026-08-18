@@ -157,7 +157,16 @@
     'gallo-pinto-ligero', 'vigoron-ligero', 'sopa-de-frijoles-nicaraguense',
     'pescado-a-la-tipitapa-ligero', 'indio-viejo-ligero',
     'ropa-vieja-ligera', 'picadillo-cubano-ligero', 'ensalada-cubana-de-aguacate',
-    'pescado-a-la-plancha-con-mojo-ligero', 'potaje-de-frijoles-negros-cubano'
+    'pescado-a-la-plancha-con-mojo-ligero', 'potaje-de-frijoles-negros-cubano',
+    // Regional recipes (Dominican Republic, Puerto Rico, Central America) --
+    // fifth and final wave, same pattern as the earlier waves above. This
+    // completes all 17 restaurant regions.
+    'pescado-con-coco-ligero', 'ensalada-verde-dominicana', 'habichuelas-guisadas-ligeras',
+    'pollo-guisado-dominicano-ligero', 'chillo-al-horno-con-vegetales',
+    'pollo-al-horno-con-sazon-ligero', 'ensalada-de-bacalao-ligera', 'pescado-en-escabeche-ligero',
+    'habichuelas-guisadas-puertorriquenas', 'carne-guisada-puertorriquena-ligera',
+    'pupusas-de-frijol-ligeras', 'casado-ligero', 'sopa-de-frijoles-centroamericana',
+    'pescado-a-la-plancha-con-ensalada-centroamericana', 'pollo-en-salsa-de-tomate-centroamericano'
   ];
   FIL_AVAILABLE.push('/recipes/');
   FIL_AVAILABLE.push('/recipes/shopping-list.html');
