@@ -149,7 +149,15 @@
     'sopa-paraguaya-liviana', 'vori-vori-liviano', 'ensalada-de-poroto-paraguaya',
     'pollo-al-horno-con-verduras-paraguayo', 'guiso-de-lentejas-paraguayo',
     'sopa-de-mani-liviana', 'ensalada-de-quinoa-boliviana', 'pique-a-lo-macho-ligero',
-    'trucha-a-la-plancha-con-ensalada', 'fricase-de-cerdo-liviano'
+    'trucha-a-la-plancha-con-ensalada', 'fricase-de-cerdo-liviano',
+    // Regional recipes (Venezuela, Nicaragua, Cuba) -- fourth wave, same
+    // pattern as the earlier waves above.
+    'pabellon-criollo-ligero', 'reina-pepiada-en-hojas-de-lechuga', 'sopa-de-auyama-venezolana',
+    'pescado-a-la-plancha-con-ensalada-venezolana', 'cazuela-de-mariscos-liviana',
+    'gallo-pinto-ligero', 'vigoron-ligero', 'sopa-de-frijoles-nicaraguense',
+    'pescado-a-la-tipitapa-ligero', 'indio-viejo-ligero',
+    'ropa-vieja-ligera', 'picadillo-cubano-ligero', 'ensalada-cubana-de-aguacate',
+    'pescado-a-la-plancha-con-mojo-ligero', 'potaje-de-frijoles-negros-cubano'
   ];
   FIL_AVAILABLE.push('/recipes/');
   FIL_AVAILABLE.push('/recipes/shopping-list.html');

@@ -1,0 +1,286 @@
+[
+  {
+    "slug": "pabellon-criollo-ligero",
+    "id": 611,
+    "cuisine": "venezuelan",
+    "meal_category": "dinner",
+    "prep_min": 20,
+    "cook_min": 50,
+    "total_min": 70,
+    "servings": 4,
+    "tags": ["High-Protein", "High-Fiber", "Gluten-Free"],
+    "nutrition": {"cal": 380, "carbs": 28, "protein": 34, "fat": 14, "fiber": 8, "gi": 40},
+    "name": {
+      "en": "Light Pabellón Criollo",
+      "es": "Pabellón Criollo Ligero",
+      "fil": "Light na Pabellón Criollo"
+    },
+    "description": {
+      "en": "Venezuela's national dish -- shredded beef, black beans, and plantain -- rebalanced with a smaller plantain portion and a fresh side salad in place of white rice.",
+      "es": "El plato nacional de Venezuela -- carne mechada, caraotas negras y plátano -- reequilibrado con una porción más pequeña de plátano y una ensalada fresca en lugar de arroz blanco.",
+      "fil": "Ang national dish ng Venezuela -- shredded beef, black beans, at saging -- na-rebalance na may mas maliit na plantain portion at fresh side salad sa halip na white rice."
+    },
+    "why_it_fits": {
+      "en": "The traditional plate stacks white rice and sweet fried plantain together, both fast-digesting carbs. Keeping the real shredded beef and black beans -- the dish's flavorful, fiber-rich core -- while replacing the rice with a fresh salad and using just a small amount of plantain keeps the meal authentic while lowering its overall glycemic load.",
+      "es": "El plato tradicional apila arroz blanco y plátano frito dulce, ambos carbohidratos de digestión rápida. Mantener la verdadera carne mechada y las caraotas negras -- el núcleo sabroso y rico en fibra del plato -- mientras se reemplaza el arroz por una ensalada fresca y se usa solo una pequeña cantidad de plátano mantiene la comida auténtica mientras reduce su carga glucémica general.",
+      "fil": "Ang traditional na plate ay nagtatambak ng white rice at matamis na fried plantain nang magkasama, pareho mabilis-ma-digest na carbs. Ang pananatili ng real na shredded beef at black beans -- ang flavorful, fiber-rich na core ng dish -- habang pinapalitan ang kanin ng fresh salad at gumagamit lang ng kaunting plantain ay pinapanatiling authentic ang meal habang binabawasan ang overall glycemic load nito."
+    },
+    "ingredients": [
+      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "flank steak, cooked and shredded", "es": "falda de res, cocida y desmechada", "fil": "flank steak, niluto at tinadtad"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, sliced", "es": "cebolla, en rodajas", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, sliced", "es": "morrón rojo, en tiras", "fil": "red bell pepper, hiniwa"}},
+      {"qty_us": "3 cups", "qty_metric": "500 g", "text": {"en": "cooked black beans", "es": "caraotas negras cocidas", "fil": "lutong black beans"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small ripe plantain, sliced and baked (not fried)", "es": "plátano maduro pequeño, en rodajas y horneado (no frito)", "fil": "maliit na hinog na saging, hiniwa at inoven (hindi pinirito)"}},
+      {"qty_us": "6 cups", "qty_metric": "6 cups", "text": {"en": "mixed salad greens, for serving", "es": "hojas verdes mixtas, para servir", "fil": "mixed salad greens, pang-serve"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+    ],
+    "instructions": {
+      "en": [
+        "Sauté the onion and bell pepper in olive oil until soft, about 6 minutes.",
+        "Add the shredded beef and cook 5 more minutes to heat through and combine flavors.",
+        "Warm the black beans separately in a small pot.",
+        "Bake the plantain slices at 400°F (200°C) for 15 minutes until golden, instead of frying.",
+        "Plate the beef, black beans, and a few plantain slices alongside a large portion of mixed salad greens instead of rice."
+      ],
+      "es": [
+        "Saltea la cebolla y el morrón en aceite de oliva hasta que estén blandos, unos 6 minutos.",
+        "Agrega la carne mechada y cocina 5 minutos más para calentar y combinar los sabores.",
+        "Calienta las caraotas negras por separado en una olla pequeña.",
+        "Hornea las rodajas de plátano a 200°C durante 15 minutos hasta que estén doradas, en lugar de freírlas.",
+        "Sirve la carne, las caraotas negras y unas rodajas de plátano junto a una gran porción de hojas verdes mixtas en lugar de arroz."
+      ],
+      "fil": [
+        "Igisa ang sibuyas at bell pepper sa olive oil hanggang lumambot, mga 6 minuto.",
+        "Idagdag ang shredded beef at magluto pa ng 5 minuto para mainit at maghalo ang flavors.",
+        "Painitin nang hiwalay ang black beans sa maliit na pot.",
+        "I-bake ang plantain slices sa 200°C ng 15 minuto hanggang golden, sa halip na iprito.",
+        "I-plato ang beef, black beans, at ilang plantain slices kasama ang malaking portion ng mixed salad greens sa halip na kanin."
+      ]
+    }
+  },
+  {
+    "slug": "reina-pepiada-en-hojas-de-lechuga",
+    "id": 612,
+    "cuisine": "venezuelan",
+    "meal_category": "lunch",
+    "prep_min": 20,
+    "cook_min": 0,
+    "total_min": 20,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 260, "carbs": 8, "protein": 26, "fat": 15, "fiber": 4, "gi": 15},
+    "name": {
+      "en": "Reina Pepiada Lettuce Wraps",
+      "es": "Reina Pepiada en Hojas de Lechuga",
+      "fil": "Reina Pepiada Lettuce Wraps"
+    },
+    "description": {
+      "en": "Venezuela's beloved chicken and avocado arepa filling, served in crisp lettuce wraps instead of a corn arepa -- real reina pepiada flavor, naturally light.",
+      "es": "El querido relleno de pollo y aguacate para arepas de Venezuela, servido en hojas de lechuga crujientes en lugar de una arepa de maíz -- el verdadero sabor de la reina pepiada, naturalmente liviano.",
+      "fil": "Ang minamahal na chicken at avocado na arepa filling ng Venezuela, served sa crisp lettuce wraps sa halip na corn arepa -- real na reina pepiada flavor, naturally light."
+    },
+    "why_it_fits": {
+      "en": "The reina pepiada filling itself -- shredded chicken, mashed avocado, and mayonnaise -- is naturally low in carbohydrates. It's the corn arepa it's traditionally stuffed into that adds most of the dish's glycemic load. Wrapping the same real filling in crisp lettuce instead keeps the beloved flavor while making the whole dish essentially carb-free.",
+      "es": "El relleno de reina pepiada en sí -- pollo desmechado, aguacate machacado y mayonesa -- es naturalmente bajo en carbohidratos. Es la arepa de maíz en la que tradicionalmente se rellena la que agrega la mayor parte de la carga glucémica del plato. Envolver el mismo relleno real en lechuga crujiente en su lugar mantiene el sabor querido mientras hace que todo el plato sea esencialmente libre de carbohidratos.",
+      "fil": "Ang reina pepiada filling mismo -- shredded chicken, mashed avocado, at mayonnaise -- ay naturally mababa sa carbohydrates. Ang corn arepa na traditionally pinagfi-fillingan nito ang nagdadagdag ng karamihan ng glycemic load ng dish. Ang pag-wrap ng parehong real filling sa crisp lettuce sa halip ay pinapanatili ang minamahal na lasa habang ginagawang essentially carb-free ang buong dish."
+    },
+    "ingredients": [
+      {"qty_us": "2 cups", "qty_metric": "280 g", "text": {"en": "cooked chicken breast, shredded", "es": "pechuga de pollo cocida, desmenuzada", "fil": "lutong chicken breast, tinadtad"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "ripe avocados, mashed", "es": "aguacates maduros, machacados", "fil": "hinog na avocado, na-mash"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 g", "text": {"en": "light mayonnaise", "es": "mayonesa liviana", "fil": "light mayonnaise"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
+      {"qty_us": "2 tbsp", "qty_metric": "8 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "head of iceberg or butter lettuce, leaves separated", "es": "lechuga iceberg o mantecosa, en hojas separadas", "fil": "lettuce, hiwalay ang mga dahon"}}
+    ],
+    "instructions": {
+      "en": [
+        "In a bowl, combine the shredded chicken, mashed avocado, mayonnaise, lime juice, and cilantro.",
+        "Mix well until evenly combined, keeping some texture from the avocado.",
+        "Season with salt and pepper to taste.",
+        "Spoon the mixture into individual lettuce leaves and serve immediately as wraps."
+      ],
+      "es": [
+        "En un bol, combina el pollo desmenuzado, el aguacate machacado, la mayonesa, el jugo de limón y el cilantro.",
+        "Mezcla bien hasta que esté uniformemente combinado, dejando algo de textura del aguacate.",
+        "Sazona con sal y pimienta a gusto.",
+        "Coloca la mezcla en hojas individuales de lechuga y sirve de inmediato como wraps."
+      ],
+      "fil": [
+        "Sa bowl, ihalo ang tinadtad na chicken, mashed avocado, mayonnaise, lime juice, at cilantro.",
+        "Haluin nang mabuti hanggang pantay, iiwan ang ilang texture mula sa avocado.",
+        "I-season ng asin at paminta ayon sa panlasa.",
+        "Ilagay ang mixture sa bawat dahon ng lettuce at i-serve agad bilang wraps."
+      ]
+    }
+  },
+  {
+    "slug": "sopa-de-auyama-venezolana",
+    "id": 613,
+    "cuisine": "venezuelan",
+    "meal_category": "lunch",
+    "prep_min": 10,
+    "cook_min": 25,
+    "total_min": 35,
+    "servings": 4,
+    "tags": ["Vegetarian", "Gluten-Free", "High-Fiber"],
+    "nutrition": {"cal": 200, "carbs": 20, "protein": 5, "fat": 11, "fiber": 5, "gi": 50},
+    "name": {
+      "en": "Venezuelan Pumpkin Coconut Soup",
+      "es": "Sopa de Auyama Venezolana",
+      "fil": "Venezuelan Pumpkin Coconut Soup"
+    },
+    "description": {
+      "en": "A creamy pumpkin soup with a hint of coconut milk -- real Venezuelan auyama comfort, portioned to keep it light.",
+      "es": "Una cremosa sopa de auyama con un toque de leche de coco -- el verdadero confort venezolano de auyama, en porciones para mantenerla liviana.",
+      "fil": "Isang creamy na pumpkin soup na may kaunting coconut milk -- real na Venezuelan auyama comfort, naka-portion para manatiling light."
+    },
+    "why_it_fits": {
+      "en": "Pumpkin has a moderate glycemic index, but pureeing it with its natural fiber intact and keeping the portion modest -- rather than pairing it with arepas or bread -- means the carbs digest more gradually, while the coconut milk adds real richness without added sugar.",
+      "es": "La auyama tiene un índice glucémico moderado, pero hacerla puré conservando su fibra natural y mantener la porción moderada -- en lugar de acompañarla con arepas o pan -- hace que los carbohidratos se digieran de forma más gradual, mientras la leche de coco aporta verdadera cremosidad sin azúcar agregada.",
+      "fil": "Ang kalabasa ay may moderate na glycemic index, pero ang pag-puree dito habang buo ang natural fiber at pananatiling katamtaman ang portion -- sa halip na i-pair sa arepas o tinapay -- ay nangangahulugan na mas gradual ma-digest ang carbs, habang ang coconut milk ay nagdadagdag ng real richness na walang added sugar."
+    },
+    "ingredients": [
+      {"qty_us": "4 cups", "qty_metric": "600 g", "text": {"en": "auyama (pumpkin), cubed", "es": "auyama, en cubos", "fil": "kalabasa, dinice"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1/4 cup", "qty_metric": "60 ml", "text": {"en": "light coconut milk", "es": "leche de coco liviana", "fil": "light coconut milk"}},
+      {"qty_us": "4 cups", "qty_metric": "950 ml", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}},
+      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+    ],
+    "instructions": {
+      "en": [
+        "Heat the olive oil in a pot and sauté the onion until soft, about 5 minutes.",
+        "Add the pumpkin and broth, bring to a boil, then simmer 20 minutes until the pumpkin is very tender.",
+        "Puree with an immersion blender until smooth, then stir in the coconut milk.",
+        "Season with salt and pepper and serve hot."
+      ],
+      "es": [
+        "Calienta el aceite de oliva en una olla y saltea la cebolla hasta que esté blanda, unos 5 minutos.",
+        "Agrega la auyama y el caldo, lleva a hervor y cocina a fuego lento 20 minutos hasta que la auyama esté muy tierna.",
+        "Procesa con una licuadora de mano hasta que quede suave, luego incorpora la leche de coco.",
+        "Sazona con sal y pimienta y sirve caliente."
+      ],
+      "fil": [
+        "Painitin ang olive oil sa pot at igisa ang sibuyas hanggang lumambot, mga 5 minuto.",
+        "Idagdag ang kalabasa at broth, pakuluan, tapos pasimmerin ng 20 minuto hanggang lumambot na ang kalabasa.",
+        "I-puree gamit ang immersion blender hanggang smooth, tapos ihalo ang coconut milk.",
+        "I-season ng asin at paminta at i-serve na mainit."
+      ]
+    }
+  },
+  {
+    "slug": "pescado-a-la-plancha-con-ensalada-venezolana",
+    "id": 614,
+    "cuisine": "venezuelan",
+    "meal_category": "dinner",
+    "prep_min": 10,
+    "cook_min": 12,
+    "total_min": 22,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 280, "carbs": 8, "protein": 33, "fat": 14, "fiber": 3, "gi": 10},
+    "name": {
+      "en": "Grilled Fish with Venezuelan Salad",
+      "es": "Pescado a la Plancha con Ensalada Venezolana",
+      "fil": "Grilled Fish na may Venezuelan Salad"
+    },
+    "description": {
+      "en": "A simple pan-seared fish fillet with garlic and lime, served with avocado, tomato, and cilantro -- real coastal Venezuelan simplicity.",
+      "es": "Un sencillo filete de pescado dorado en sartén con ajo y limón, servido con aguacate, tomate y cilantro -- verdadera simplicidad costera venezolana.",
+      "fil": "Isang simple na pan-seared na fish fillet na may bawang at lime, served na may avocado, kamatis, at cilantro -- real na coastal Venezuelan simplicity."
+    },
+    "why_it_fits": {
+      "en": "A lean, pan-seared fish fillet with garlic and lime has essentially no carbs on its own, and pairing it with avocado and a fresh tomato salad instead of rice or fried plantain keeps the whole plate close to zero glycemic impact while still being a real, satisfying dinner.",
+      "es": "Un filete de pescado magro dorado en sartén con ajo y limón prácticamente no tiene carbohidratos por sí solo, y acompañarlo con aguacate y una ensalada fresca de tomate en lugar de arroz o plátano frito mantiene todo el plato con un impacto glucémico casi nulo, sin dejar de ser una cena real y satisfactoria.",
+      "fil": "Ang lean, pan-seared na fish fillet na may bawang at lime ay halos walang carbs mag-isa, at ang pag-pair nito sa avocado at fresh tomato salad sa halip na kanin o fried plantain ay pinapanatili ang buong plato na malapit sa zero glycemic impact habang isa pa ring real, satisfying na dinner."
+    },
+    "ingredients": [
+      {"qty_us": "4", "qty_metric": "4", "text": {"en": "white fish fillets (such as mero or corvina)", "es": "filetes de pescado blanco (como mero o corvina)", "fil": "white fish fillets (tulad ng mero o corvina)"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, sliced", "es": "aguacate, en rodajas", "fil": "avocado, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}}
+    ],
+    "instructions": {
+      "en": [
+        "Marinate the fish in garlic, lime juice, salt, and pepper for 10 minutes.",
+        "Heat the olive oil in a pan over medium-high heat and sear the fish 3-4 minutes per side, until golden and cooked through.",
+        "Toss the tomato and cilantro together for the salad.",
+        "Serve the fish topped with avocado slices and the fresh tomato salad."
+      ],
+      "es": [
+        "Marina el pescado en ajo, jugo de limón, sal y pimienta durante 10 minutos.",
+        "Calienta el aceite de oliva en una sartén a fuego medio-alto y dora el pescado 3-4 minutos por lado, hasta que esté dorado y cocido.",
+        "Mezcla el tomate y el cilantro para la ensalada.",
+        "Sirve el pescado cubierto con rodajas de aguacate y la ensalada fresca de tomate."
+      ],
+      "fil": [
+        "I-marinate ang isda sa bawang, lime juice, asin, at paminta ng 10 minuto.",
+        "Painitin ang olive oil sa pan sa medium-high heat at i-sear ang isda ng 3-4 minuto bawat side, hanggang golden at cooked through.",
+        "Haluin ang kamatis at cilantro para sa salad.",
+        "I-serve ang isda na may toppings na hiniwang avocado at fresh tomato salad."
+      ]
+    }
+  },
+  {
+    "slug": "cazuela-de-mariscos-liviana",
+    "id": 615,
+    "cuisine": "venezuelan",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 25,
+    "total_min": 40,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 240, "carbs": 12, "protein": 30, "fat": 8, "fiber": 2, "gi": 20},
+    "name": {
+      "en": "Light Seafood Cazuela",
+      "es": "Cazuela de Mariscos Liviana",
+      "fil": "Light na Seafood Cazuela"
+    },
+    "description": {
+      "en": "A real Venezuelan coastal seafood stew with tomato, bell pepper, and coconut milk -- naturally low in carbs and rich in lean protein.",
+      "es": "Un verdadero guiso costero venezolano de mariscos con tomate, morrón y leche de coco -- naturalmente bajo en carbohidratos y rico en proteína magra.",
+      "fil": "Isang real na Venezuelan coastal seafood stew na may kamatis, bell pepper, at coconut milk -- naturally mababa sa carbs at mayaman sa lean protein."
+    },
+    "why_it_fits": {
+      "en": "This stew is built almost entirely from shrimp, fish, tomato, and bell pepper -- there's no rice or starch mixed in, so its carbohydrate content stays naturally low while it delivers a large, satisfying portion of protein.",
+      "es": "Este guiso está hecho casi por completo de camarones, pescado, tomate y morrón -- no hay arroz ni almidón mezclado, por lo que su contenido de carbohidratos se mantiene naturalmente bajo mientras aporta una porción grande y satisfactoria de proteína.",
+      "fil": "Ang stew na ito ay gawa halos lahat sa hipon, isda, kamatis, at bell pepper -- walang kanin o starch na hinalo, kaya naturally mababa ang carbohydrate content nito habang nagbibigay ng malaki, satisfying na portion ng protein."
+    },
+    "ingredients": [
+      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "shrimp, peeled and deveined", "es": "camarones, pelados y desvenados", "fil": "hipon, balat at buto na tinanggal"}},
+      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "firm white fish fillet, cubed", "es": "filete de pescado blanco firme, en cubos", "fil": "firm white fish fillet, dinice"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, chopped", "es": "morrón rojo, picado", "fil": "red bell pepper, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1/2 cup", "qty_metric": "120 ml", "text": {"en": "light coconut milk", "es": "leche de coco liviana", "fil": "light coconut milk"}},
+      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}}
+    ],
+    "instructions": {
+      "en": [
+        "Sauté the onion, bell pepper, and garlic in a large pot until soft, about 6 minutes.",
+        "Add the tomato and cook 3 minutes more.",
+        "Stir in the coconut milk and bring to a gentle simmer.",
+        "Add the fish and shrimp, and simmer 6-8 minutes until just cooked through.",
+        "Season with salt and pepper, stir in fresh cilantro, and serve hot."
+      ],
+      "es": [
+        "Saltea la cebolla, el morrón y el ajo en una olla grande hasta que estén blandos, unos 6 minutos.",
+        "Agrega el tomate y cocina 3 minutos más.",
+        "Incorpora la leche de coco y lleva a un hervor suave.",
+        "Agrega el pescado y los camarones, y cocina a fuego lento 6-8 minutos hasta que estén apenas cocidos.",
+        "Sazona con sal y pimienta, incorpora el cilantro fresco y sirve caliente."
+      ],
+      "fil": [
+        "Igisa ang sibuyas, bell pepper, at bawang sa malaking pot hanggang lumambot, mga 6 minuto.",
+        "Idagdag ang kamatis at magluto pa ng 3 minuto.",
+        "Ihalo ang coconut milk at pakuluan nang bahagya.",
+        "Idagdag ang isda at hipon, at pasimmerin ng 6-8 minuto hanggang maluto.",
+        "I-season ng asin at paminta, ihalo ang fresh cilantro, at i-serve na mainit."
+      ]
+    }
+  }
+]

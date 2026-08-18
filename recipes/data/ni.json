@@ -1,0 +1,282 @@
+[
+  {
+    "slug": "gallo-pinto-ligero",
+    "id": 621,
+    "cuisine": "nicaraguan",
+    "meal_category": "breakfast",
+    "prep_min": 10,
+    "cook_min": 15,
+    "total_min": 25,
+    "servings": 4,
+    "tags": ["High-Fiber", "Vegetarian", "Gluten-Free"],
+    "nutrition": {"cal": 260, "carbs": 34, "protein": 10, "fat": 8, "fiber": 9, "gi": 45},
+    "name": {
+      "en": "Light Gallo Pinto",
+      "es": "Gallo Pinto Ligero",
+      "fil": "Light na Gallo Pinto"
+    },
+    "description": {
+      "en": "Nicaragua's everyday rice-and-beans breakfast -- real gallo pinto flavor, rebalanced toward more beans and less rice.",
+      "es": "El desayuno cotidiano nicaragüense de arroz con frijoles -- el verdadero sabor del gallo pinto, reequilibrado hacia más frijoles y menos arroz.",
+      "fil": "Ang everyday na rice-and-beans breakfast ng Nicaragua -- real na gallo pinto flavor, na-rebalance papuntang mas maraming beans at mas kaunting kanin."
+    },
+    "why_it_fits": {
+      "en": "Traditional gallo pinto is roughly equal parts rice and beans, but rice digests much faster than beans and drives most of the dish's glycemic impact. Shifting the ratio toward more beans -- naturally low-GI and high in fiber -- while using less rice keeps the same real, oniony gallo pinto flavor with a gentler effect on blood sugar.",
+      "es": "El gallo pinto tradicional es aproximadamente partes iguales de arroz y frijoles, pero el arroz se digiere mucho más rápido que los frijoles y genera la mayor parte del impacto glucémico del plato. Cambiar la proporción hacia más frijoles -- naturalmente de IG bajo y altos en fibra -- mientras se usa menos arroz mantiene el mismo verdadero sabor del gallo pinto con cebolla, con un efecto más suave sobre la glucémia.",
+      "fil": "Ang traditional na gallo pinto ay halos pantay na parte ng kanin at beans, pero mas mabilis ma-digest ang kanin kaysa sa beans at nagdudulot ito ng karamihan ng glycemic impact ng dish. Ang pag-shift ng ratio papunta sa mas maraming beans -- naturally low-GI at mataas sa fiber -- habang gumagamit ng mas kaunting kanin ay nagpapanatili ng parehong real, oniony na gallo pinto flavor na may mas gentle na epekto sa blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "3 cups", "qty_metric": "500 g", "text": {"en": "cooked red or black beans, with a little of their liquid", "es": "frijoles rojos o negros cocidos, con un poco de su líquido", "fil": "lutong red o black beans, na may kaunting liquid nito"}},
+      {"qty_us": "1 cup", "qty_metric": "185 g", "text": {"en": "cooked white rice", "es": "arroz blanco cocido", "fil": "lutong white rice"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, finely chopped", "es": "cebolla, picada fina", "fil": "sibuyas, pinong hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, finely chopped", "es": "morrón verde, picado fino", "fil": "green bell pepper, pinong hiniwa"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "vegetable oil", "es": "aceite vegetal", "fil": "vegetable oil"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, sliced, for serving", "es": "aguacate, en rodajas, para servir", "fil": "avocado, hiniwa, pang-serve"}}
+    ],
+    "instructions": {
+      "en": [
+        "Heat the oil in a large skillet and sauté the onion and bell pepper until soft, about 5 minutes.",
+        "Add the beans with their liquid and mash a small portion of them against the pan to thicken.",
+        "Stir in the rice and cook 5-7 minutes, stirring frequently, until everything is well combined and heated through.",
+        "Season with salt and pepper to taste and serve with avocado slices on the side."
+      ],
+      "es": [
+        "Calienta el aceite en una sartén grande y saltea la cebolla y el morrón hasta que estén blandos, unos 5 minutos.",
+        "Agrega los frijoles con su líquido y machaca una pequeña porción contra la sartén para espesar.",
+        "Incorpora el arroz y cocina 5-7 minutos, revolviendo con frecuencia, hasta que todo esté bien combinado y caliente.",
+        "Sazona con sal y pimienta a gusto y sirve con rodajas de aguacate al costado."
+      ],
+      "fil": [
+        "Painitin ang oil sa malaking kawali at igisa ang sibuyas at bell pepper hanggang lumambot, mga 5 minuto.",
+        "Idagdag ang beans kasama ang liquid nito at i-mash ang maliit na portion nito laban sa pan para lumapot.",
+        "Ihalo ang kanin at magluto ng 5-7 minuto, hinahalo madalas, hanggang well-combined at mainit lahat.",
+        "I-season ng asin at paminta ayon sa panlasa at i-serve na may hiniwang avocado sa tabi."
+      ]
+    }
+  },
+  {
+    "slug": "vigoron-ligero",
+    "id": 622,
+    "cuisine": "nicaraguan",
+    "meal_category": "lunch",
+    "prep_min": 20,
+    "cook_min": 30,
+    "total_min": 50,
+    "servings": 4,
+    "tags": ["High-Fiber", "Gluten-Free"],
+    "nutrition": {"cal": 320, "carbs": 26, "protein": 22, "fat": 15, "fiber": 5, "gi": 45},
+    "name": {
+      "en": "Light Vigorón",
+      "es": "Vigorón Ligero",
+      "fil": "Light na Vigorón"
+    },
+    "description": {
+      "en": "Nicaragua's classic yuca, pork, and cabbage salad plate -- real vigorón flavor, made with baked pork instead of fried chicharrón and a smaller yuca portion.",
+      "es": "El clásico plato nicaragüense de yuca, cerdo y ensalada de repollo -- el verdadero sabor del vigorón, hecho con cerdo horneado en lugar de chicharrón frito y una porción más pequeña de yuca.",
+      "fil": "Ang classic na yuca, pork, at cabbage salad plate ng Nicaragua -- real na vigorón flavor, gawa sa baked na pork sa halip na fried chicharrón at mas maliit na yuca portion."
+    },
+    "why_it_fits": {
+      "en": "Traditional vigorón pairs a large portion of yuca with deep-fried pork rind, both of which add significant carbs and fat. Baking the pork instead of frying it and keeping the yuca portion modest -- while piling on the tangy cabbage curtido salad, which is naturally low-GI -- preserves the dish's real tangy, hearty character with a lighter glycemic and fat load.",
+      "es": "El vigorón tradicional combina una gran porción de yuca con chicharrón de cerdo frito, ambos agregan carbohidratos y grasa significativos. Hornear el cerdo en lugar de freírlo y mantener moderada la porción de yuca -- mientras se agrega generosamente la ensalada ácida de repollo curtido, naturalmente de IG bajo -- conserva el verdadero carácter ácido y contundente del plato con una carga glucémica y de grasa más liviana.",
+      "fil": "Ang traditional na vigorón ay nagpapares ng malaking portion ng yuca sa deep-fried na pork rind, na parehong nagdadagdag ng significant na carbs at fat. Ang pag-bake ng pork sa halip na iprito ito at pananatiling katamtaman ang yuca portion -- habang malaki ang tangy cabbage curtido salad, na naturally low-GI -- ay nagpapanatili sa real, tangy, hearty na character ng dish na may mas magaan na glycemic at fat load."
+    },
+    "ingredients": [
+      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "yuca, peeled and cubed", "es": "yuca, pelada y en cubos", "fil": "yuca, binalatan at dinice"}},
+      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "pork shoulder, trimmed and cubed", "es": "paleta de cerdo, sin grasa y en cubos", "fil": "pork shoulder, tinanggalan ng taba at dinice"}},
+      {"qty_us": "3 cups", "qty_metric": "300 g", "text": {"en": "cabbage, finely shredded", "es": "repollo, en tiras finas", "fil": "repolyo, pinong tinadtad"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "1/4 cup", "qty_metric": "60 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
+      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+    ],
+    "instructions": {
+      "en": [
+        "Boil the yuca in salted water until tender, about 20 minutes, then drain.",
+        "Preheat the oven to 425°F (220°C). Toss the pork cubes with salt and pepper, and roast 25-30 minutes until crisp and cooked through, instead of frying.",
+        "Toss the cabbage and tomato with the lime juice and olive oil to make the curtido salad.",
+        "Plate the yuca and roasted pork, and top generously with the curtido cabbage salad."
+      ],
+      "es": [
+        "Hierve la yuca en agua con sal hasta que esté tierna, unos 20 minutos, y escurre.",
+        "Precalienta el horno a 220°C. Mezcla los cubos de cerdo con sal y pimienta, y hornea 25-30 minutos hasta que estén crocantes y cocidos, en lugar de freírlos.",
+        "Mezcla el repollo y el tomate con el jugo de limón y el aceite de oliva para hacer la ensalada curtido.",
+        "Sirve la yuca y el cerdo horneado, y cubre generosamente con la ensalada curtido de repollo."
+      ],
+      "fil": [
+        "Pakuluan ang yuca sa maalat na tubig hanggang lumambot, mga 20 minuto, tapos i-drain.",
+        "I-preheat ang oven sa 220°C. Haluin ang pork cubes ng asin at paminta, at i-roast ng 25-30 minuto hanggang crisp at cooked through, sa halip na iprito.",
+        "Haluin ang cabbage at kamatis kasama ang lime juice at olive oil para gawin ang curtido salad.",
+        "I-plato ang yuca at roasted na pork, at toppingan nang husto ng curtido cabbage salad."
+      ]
+    }
+  },
+  {
+    "slug": "sopa-de-frijoles-nicaraguense",
+    "id": 623,
+    "cuisine": "nicaraguan",
+    "meal_category": "lunch",
+    "prep_min": 10,
+    "cook_min": 35,
+    "total_min": 45,
+    "servings": 4,
+    "tags": ["High-Fiber", "Gluten-Free", "Vegetarian"],
+    "nutrition": {"cal": 250, "carbs": 32, "protein": 13, "fat": 7, "fiber": 11, "gi": 28},
+    "name": {
+      "en": "Nicaraguan Bean Soup",
+      "es": "Sopa de Frijoles Nicaragüense",
+      "fil": "Nicaraguan Bean Soup"
+    },
+    "description": {
+      "en": "A real, comforting Nicaraguan red bean soup with onion, bell pepper, and cumin -- everyday home cooking, naturally slow-digesting.",
+      "es": "Una verdadera y reconfortante sopa nicaragüense de frijoles rojos con cebolla, morrón y comino -- cocina casera cotidiana, naturalmente de digestión lenta.",
+      "fil": "Isang real, comforting na Nicaraguan red bean soup na may sibuyas, bell pepper, at cumin -- everyday na home cooking, naturally slow-digesting."
+    },
+    "why_it_fits": {
+      "en": "Beans are naturally low-GI and packed with soluble fiber, so this soup releases its carbohydrates gradually rather than in a quick spike. Relying entirely on the beans as the carb base, without rice or bread, makes this a genuinely gentle option for blood sugar.",
+      "es": "Los frijoles tienen naturalmente un IG bajo y están cargados de fibra soluble, por lo que esta sopa libera sus carbohidratos gradualmente en lugar de en un pico rápido. Depender por completo de los frijoles como base de carbohidratos, sin arroz ni pan, hace de esta una opción genuinamente suave para la glucémia.",
+      "fil": "Ang beans ay naturally low-GI at puno ng soluble fiber, kaya ang soup na ito ay gradually nagre-release ng carbohydrates sa halip na mabilis na spike. Ang pag-asa nang buo sa beans bilang carb base, na walang kanin o tinapay, ay ginagawa itong genuinely gentle na option para sa blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "2 cups", "qty_metric": "400 g", "text": {"en": "dried red beans, soaked overnight", "es": "frijoles rojos secos, remojados toda la noche", "fil": "dried red beans, binabad overnight"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}},
+      {"qty_us": "6 cups", "qty_metric": "1.4 L", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Drain the soaked beans and add them to a large pot with the broth, onion, bell pepper, garlic, and cumin.",
+        "Bring to a boil, then reduce heat and simmer 30-35 minutes until the beans are very tender.",
+        "Mash some of the beans against the side of the pot to thicken the soup slightly.",
+        "Season with salt and pepper to taste and serve hot."
+      ],
+      "es": [
+        "Escurre los frijoles remojados y agrégalos a una olla grande con el caldo, la cebolla, el morrón, el ajo y el comino.",
+        "Lleva a hervor, luego reduce el fuego y cocina a fuego lento 30-35 minutos hasta que los frijoles estén muy tiernos.",
+        "Machaca algunos frijoles contra el costado de la olla para espesar ligeramente la sopa.",
+        "Sazona con sal y pimienta a gusto y sirve caliente."
+      ],
+      "fil": [
+        "I-drain ang binabad na beans at idagdag sa malaking pot kasama ang broth, sibuyas, bell pepper, bawang, at cumin.",
+        "Pakuluan, tapos hinaan ang apoy at pasimmerin ng 30-35 minuto hanggang lumambot na ang beans.",
+        "I-mash ang ilan sa beans laban sa gilid ng pot para lumapot nang bahagya ang soup.",
+        "I-season ng asin at paminta ayon sa panlasa at i-serve na mainit."
+      ]
+    }
+  },
+  {
+    "slug": "pescado-a-la-tipitapa-ligero",
+    "id": 624,
+    "cuisine": "nicaraguan",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 20,
+    "total_min": 35,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 260, "carbs": 6, "protein": 34, "fat": 12, "fiber": 2, "gi": 5},
+    "name": {
+      "en": "Light Grilled Fish, Tipitapa-Style",
+      "es": "Pescado a la Tipitapa Ligero",
+      "fil": "Light na Grilled Fish, Tipitapa-Style"
+    },
+    "description": {
+      "en": "A real Nicaraguan whole-fish dish inspired by the fried fish of Tipitapa, made grilled instead of deep-fried and topped with fresh cabbage and onion.",
+      "es": "Un verdadero plato nicaragüense de pescado entero inspirado en el pescado frito de Tipitapa, hecho a la parrilla en lugar de frito y cubierto con repollo y cebolla frescos.",
+      "fil": "Isang real na Nicaraguan whole-fish dish na inspired sa fried fish ng Tipitapa, ginawang grilled sa halip na deep-fried at may toppings na fresh cabbage at sibuyas."
+    },
+    "why_it_fits": {
+      "en": "The classic Tipitapa-style fish is deep-fried whole, which adds a substantial amount of absorbed oil without adding any real carbs. Grilling the same fish instead removes that added fat while keeping the tangy cabbage-and-onion topping that gives the dish its real character, making this version lighter overall.",
+      "es": "El pescado clásico al estilo Tipitapa se fríe entero, lo que agrega una cantidad sustancial de aceite absorbido sin agregar carbohidratos reales. Asar a la parrilla el mismo pescado en su lugar elimina esa grasa agregada mientras se mantiene la cobertura ácida de repollo y cebolla que le da al plato su verdadero carácter, haciendo esta versión más liviana en general.",
+      "fil": "Ang classic na Tipitapa-style na isda ay deep-fried nang buo, na nagdadagdag ng substantial na absorbed oil na walang idinagdag na real carbs. Ang pag-grill sa parehong isda sa halip ay tinatanggal ang added fat na iyon habang pinapanatili ang tangy na cabbage-at-onion topping na nagbibigay sa dish ng real character nito, na ginagawang mas light ang version na ito overall."
+    },
+    "ingredients": [
+      {"qty_us": "4", "qty_metric": "4", "text": {"en": "whole small fish or thick fish fillets", "es": "pescados enteros pequeños o filetes gruesos", "fil": "buong maliit na isda o makapal na fish fillets"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
+      {"qty_us": "2 cups", "qty_metric": "150 g", "text": {"en": "cabbage, finely shredded", "es": "repollo, en tiras finas", "fil": "repolyo, pinong tinadtad"}},
+      {"qty_us": "1/2", "qty_metric": "1/2", "text": {"en": "onion, thinly sliced", "es": "cebolla, en juliana fina", "fil": "sibuyas, pinong hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "tomato, diced", "es": "tomate, en cubos", "fil": "kamatis, dinice"}}
+    ],
+    "instructions": {
+      "en": [
+        "Season the fish with salt, pepper, and half the lime juice.",
+        "Grill over medium-high heat, about 5-6 minutes per side, until golden and cooked through.",
+        "Toss the cabbage, onion, and tomato with the olive oil and remaining lime juice.",
+        "Serve the grilled fish topped with the fresh cabbage slaw."
+      ],
+      "es": [
+        "Sazona el pescado con sal, pimienta y la mitad del jugo de limón.",
+        "Cocina a la parrilla a fuego medio-alto, unos 5-6 minutos por lado, hasta que esté dorado y cocido.",
+        "Mezcla el repollo, la cebolla y el tomate con el aceite de oliva y el resto del jugo de limón.",
+        "Sirve el pescado a la parrilla cubierto con la ensalada fresca de repollo."
+      ],
+      "fil": [
+        "I-season ang isda ng asin, paminta, at kalahati ng lime juice.",
+        "I-grill sa medium-high heat, mga 5-6 minuto bawat side, hanggang golden at cooked through.",
+        "Haluin ang cabbage, sibuyas, at kamatis kasama ang olive oil at natitirang lime juice.",
+        "I-serve ang grilled fish na may toppings na fresh cabbage slaw."
+      ]
+    }
+  },
+  {
+    "slug": "indio-viejo-ligero",
+    "id": 625,
+    "cuisine": "nicaraguan",
+    "meal_category": "dinner",
+    "prep_min": 20,
+    "cook_min": 35,
+    "total_min": 55,
+    "servings": 4,
+    "tags": ["High-Protein", "Gluten-Free"],
+    "nutrition": {"cal": 320, "carbs": 24, "protein": 28, "fat": 13, "fiber": 5, "gi": 48},
+    "name": {
+      "en": "Light Indio Viejo",
+      "es": "Indio Viejo Ligero",
+      "fil": "Light na Indio Viejo"
+    },
+    "description": {
+      "en": "A real Nicaraguan shredded beef and cornmeal stew with mint and orange -- traditional indio viejo comfort, made with a lighter hand on the corn masa and extra vegetables.",
+      "es": "Un verdadero guiso nicaragüense de carne desmechada y masa de maíz con hierbabuena y naranja agria -- el confort tradicional del indio viejo, hecho con una mano más liviana en la masa de maíz y verduras extra.",
+      "fil": "Isang real na Nicaraguan shredded beef at cornmeal stew na may mint at orange -- traditional na indio viejo comfort, gawa na may mas magaan na kamay sa corn masa at extra gulay."
+    },
+    "why_it_fits": {
+      "en": "Traditional indio viejo uses a generous amount of corn masa to thicken the stew, which raises its glycemic load. Using a smaller amount of masa and bulking the stew up with extra vegetables and the real shredded beef keeps the dish's distinctive mint-and-citrus flavor while lowering how quickly it raises blood sugar.",
+      "es": "El indio viejo tradicional usa una cantidad generosa de masa de maíz para espesar el guiso, lo que eleva su carga glucémica. Usar una menor cantidad de masa y aumentar el guiso con verduras extra y la verdadera carne desmechada mantiene el sabor distintivo a hierbabuena y cítricos del plato mientras reduce la rapidez con la que eleva la glucémia.",
+      "fil": "Ang traditional na indio viejo ay gumagamit ng malaking halaga ng corn masa para lumapot ang stew, na nagtataas ng glycemic load nito. Ang paggamit ng mas kaunting masa at pagdaragdag ng extra gulay at real na shredded beef sa stew ay pinapanatili ang distinctive na mint-at-citrus flavor ng dish habang binabawasan kung gaano kabilis nitong itataas ang blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "beef, cooked and shredded", "es": "carne de res, cocida y desmechada", "fil": "beef, niluto at tinadtad"}},
+      {"qty_us": "1/3 cup", "qty_metric": "45 g", "text": {"en": "fine cornmeal, dissolved in a little broth", "es": "harina de maíz fina, disuelta en un poco de caldo", "fil": "fine cornmeal, tinunaw sa kaunting broth"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "fresh sour orange or lime juice", "es": "jugo de naranja agria o limón fresco", "fil": "fresh sour orange o lime juice"}},
+      {"qty_us": "2 tbsp", "qty_metric": "8 g", "text": {"en": "fresh mint, chopped", "es": "hierbabuena fresca, picada", "fil": "fresh mint, hiniwa"}},
+      {"qty_us": "4 cups", "qty_metric": "950 ml", "text": {"en": "low-sodium beef broth", "es": "caldo de carne bajo en sodio", "fil": "low-sodium beef broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Sauté the onion and bell pepper in a large pot until soft, about 6 minutes.",
+        "Add the tomato and cook 3 minutes more.",
+        "Add the shredded beef and broth, and bring to a simmer.",
+        "Stir in the dissolved cornmeal and simmer 15-20 minutes, stirring occasionally, until the stew thickens.",
+        "Stir in the sour orange juice and fresh mint just before serving, and season with salt to taste."
+      ],
+      "es": [
+        "Saltea la cebolla y el morrón en una olla grande hasta que estén blandos, unos 6 minutos.",
+        "Agrega el tomate y cocina 3 minutos más.",
+        "Agrega la carne desmechada y el caldo, y lleva a un hervor suave.",
+        "Incorpora la harina de maíz disuelta y cocina a fuego lento 15-20 minutos, revolviendo ocasionalmente, hasta que el guiso espese.",
+        "Incorpora el jugo de naranja agria y la hierbabuena fresca justo antes de servir, y sazona con sal a gusto."
+      ],
+      "fil": [
+        "Igisa ang sibuyas at bell pepper sa malaking pot hanggang lumambot, mga 6 minuto.",
+        "Idagdag ang kamatis at magluto pa ng 3 minuto.",
+        "Idagdag ang shredded beef at broth, at pasimmerin nang bahagya.",
+        "Ihalo ang tinunaw na cornmeal at pasimmerin ng 15-20 minuto, hinahalo paminsan-minsan, hanggang lumapot ang stew.",
+        "Ihalo ang sour orange juice at fresh mint bago i-serve, at i-season ng asin ayon sa panlasa."
+      ]
+    }
+  }
+]

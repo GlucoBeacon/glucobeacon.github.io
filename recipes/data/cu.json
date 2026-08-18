@@ -1,0 +1,283 @@
+[
+  {
+    "slug": "ropa-vieja-ligera",
+    "id": 631,
+    "cuisine": "cuban",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 90,
+    "total_min": 105,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 320, "carbs": 12, "protein": 36, "fat": 14, "fiber": 3, "gi": 20},
+    "name": {
+      "en": "Light Ropa Vieja",
+      "es": "Ropa Vieja Ligera",
+      "fil": "Light na Ropa Vieja"
+    },
+    "description": {
+      "en": "Cuba's iconic shredded beef in tomato and pepper sauce -- real ropa vieja flavor, served with a fresh side salad instead of white rice.",
+      "es": "El icónico plato cubano de carne desmechada en salsa de tomate y morrón -- el verdadero sabor de la ropa vieja, servido con una ensalada fresca en lugar de arroz blanco.",
+      "fil": "Ang iconic na shredded beef ng Cuba sa tomato at pepper sauce -- real na ropa vieja flavor, served na may fresh side salad sa halip na white rice."
+    },
+    "why_it_fits": {
+      "en": "Ropa vieja itself -- beef slow-braised with tomato, bell pepper, and onion -- is naturally low in carbohydrates. It's the traditional side of white rice that adds most of the meal's glycemic load. Keeping the real braised beef and swapping the rice for a fresh salad preserves the dish's true flavor while making the whole plate far gentler on blood sugar.",
+      "es": "La ropa vieja en sí -- carne braseada lentamente con tomate, morrón y cebolla -- es naturalmente baja en carbohidratos. Es el tradicional acompañamiento de arroz blanco el que agrega la mayor parte de la carga glucémica de la comida. Mantener la verdadera carne braseada y reemplazar el arroz por una ensalada fresca conserva el verdadero sabor del plato mientras hace que todo el plato sea mucho más suave para la glucémia.",
+      "fil": "Ang ropa vieja mismo -- beef na slow-braised na may kamatis, bell pepper, at sibuyas -- ay naturally mababa sa carbohydrates. Ang traditional na side ng white rice ang nagdadagdag ng karamihan ng glycemic load ng meal. Ang pananatili ng real na braised beef at pagpapalit ng kanin ng fresh salad ay nagpapanatili ng tunay na lasa ng dish habang ginagawang mas gentle ang buong plato sa blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "flank steak", "es": "falda de res", "fil": "flank steak"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, sliced", "es": "cebolla, en rodajas", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "bell peppers, sliced", "es": "morrones, en tiras", "fil": "bell peppers, hiniwa"}},
+      {"qty_us": "1 can (14 oz)", "qty_metric": "400 g", "text": {"en": "crushed tomatoes", "es": "tomate triturado", "fil": "crushed tomatoes"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}},
+      {"qty_us": "8 cups", "qty_metric": "8 cups", "text": {"en": "mixed salad greens, for serving", "es": "hojas verdes mixtas, para servir", "fil": "mixed salad greens, pang-serve"}}
+    ],
+    "instructions": {
+      "en": [
+        "Simmer the flank steak in water to cover until very tender, about 60-75 minutes. Drain, cool slightly, and shred with two forks.",
+        "In a large pan, sauté the onion, bell pepper, and garlic until soft, about 6 minutes.",
+        "Add the crushed tomatoes and cumin, and simmer 10 minutes.",
+        "Add the shredded beef and simmer 10-15 more minutes until the flavors meld.",
+        "Season with salt and pepper, and serve hot alongside a large salad instead of rice."
+      ],
+      "es": [
+        "Cocina a fuego lento la falda en agua que la cubra hasta que esté muy tierna, unos 60-75 minutos. Escurre, deja enfriar un poco y desmecha con dos tenedores.",
+        "En una sartén grande, saltea la cebolla, el morrón y el ajo hasta que estén blandos, unos 6 minutos.",
+        "Agrega el tomate triturado y el comino, y cocina a fuego lento 10 minutos.",
+        "Agrega la carne desmechada y cocina a fuego lento 10-15 minutos más hasta que los sabores se integren.",
+        "Sazona con sal y pimienta, y sirve caliente junto a una gran ensalada en lugar de arroz."
+      ],
+      "fil": [
+        "Pasimmerin ang flank steak sa tubig hanggang malambot na, mga 60-75 minuto. I-drain, hayaang lumamig nang kaunti, at tadtarin gamit ang dalawang tinidor.",
+        "Sa malaking kawali, igisa ang sibuyas, bell pepper, at bawang hanggang lumambot, mga 6 minuto.",
+        "Idagdag ang crushed tomatoes at cumin, at pasimmerin ng 10 minuto.",
+        "Idagdag ang tinadtad na beef at pasimmerin pa ng 10-15 minuto hanggang maghalo ang flavors.",
+        "I-season ng asin at paminta, at i-serve na mainit kasama ang malaking salad sa halip na kanin."
+      ]
+    }
+  },
+  {
+    "slug": "picadillo-cubano-ligero",
+    "id": 632,
+    "cuisine": "cuban",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 25,
+    "total_min": 40,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 300, "carbs": 14, "protein": 28, "fat": 16, "fiber": 3, "gi": 30},
+    "name": {
+      "en": "Light Cuban Picadillo",
+      "es": "Picadillo Cubano Ligero",
+      "fil": "Light na Cuban Picadillo"
+    },
+    "description": {
+      "en": "A real Cuban ground beef hash with olives, capers, and tomato -- classic picadillo flavor, with less raisin content and no rice served on the side.",
+      "es": "Un verdadero picadillo cubano de carne molida con aceitunas, alcaparras y tomate -- el sabor clásico del picadillo, con menos pasas y sin arroz de acompañamiento.",
+      "fil": "Isang real na Cuban ground beef hash na may olives, capers, at kamatis -- classic na picadillo flavor, na may mas kaunting raisins at walang kaninng kasama."
+    },
+    "why_it_fits": {
+      "en": "Traditional picadillo is usually served over a large mound of white rice, and often includes a generous amount of raisins, which add concentrated sugar. Cutting the raisins back to a small accent and serving the picadillo over roasted vegetables or a salad instead of rice keeps the real briny-sweet flavor balance while lowering the dish's overall glycemic load.",
+      "es": "El picadillo tradicional generalmente se sirve sobre un gran montículo de arroz blanco, y a menudo incluye una cantidad generosa de pasas, que agregan azúcar concentrada. Reducir las pasas a un pequeño toque y servir el picadillo sobre verduras asadas o una ensalada en lugar de arroz mantiene el verdadero equilibrio de sabor salado-dulce mientras reduce la carga glucémica general del plato.",
+      "fil": "Ang traditional na picadillo ay kadalasang served sa ibabaw ng malaking bunton ng white rice, at kadalasang may malaking halaga ng raisins, na nagdadagdag ng concentrated sugar. Ang pagbawas ng raisins sa maliit na accent at pag-serve ng picadillo sa ibabaw ng roasted na gulay o salad sa halip na kanin ay pinapanatili ang real na briny-sweet flavor balance habang binabawasan ang overall glycemic load ng dish."
+    },
+    "ingredients": [
+      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "lean ground beef", "es": "carne molida magra", "fil": "lean ground beef"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "1/4 cup", "qty_metric": "35 g", "text": {"en": "green olives, sliced", "es": "aceitunas verdes, en rodajas", "fil": "green olives, hiniwa"}},
+      {"qty_us": "2 tbsp", "qty_metric": "18 g", "text": {"en": "raisins", "es": "pasas", "fil": "raisins"}},
+      {"qty_us": "1 tbsp", "qty_metric": "10 g", "text": {"en": "capers", "es": "alcaparras", "fil": "capers"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}}
+    ],
+    "instructions": {
+      "en": [
+        "Brown the ground beef with the onion and bell pepper in a large pan, about 8 minutes.",
+        "Add the tomato and cumin, and simmer 10 minutes.",
+        "Stir in the olives, raisins, and capers, and simmer 8-10 more minutes until well combined.",
+        "Season with salt and pepper to taste, and serve hot over roasted vegetables or a fresh salad."
+      ],
+      "es": [
+        "Dora la carne molida con la cebolla y el morrón en una sartén grande, unos 8 minutos.",
+        "Agrega el tomate y el comino, y cocina a fuego lento 10 minutos.",
+        "Incorpora las aceitunas, las pasas y las alcaparras, y cocina a fuego lento 8-10 minutos más hasta que esté bien combinado.",
+        "Sazona con sal y pimienta a gusto, y sirve caliente sobre verduras asadas o una ensalada fresca."
+      ],
+      "fil": [
+        "I-brown ang ground beef kasama ang sibuyas at bell pepper sa malaking kawali, mga 8 minuto.",
+        "Idagdag ang kamatis at cumin, at pasimmerin ng 10 minuto.",
+        "Ihalo ang olives, raisins, at capers, at pasimmerin pa ng 8-10 minuto hanggang well-combined.",
+        "I-season ng asin at paminta ayon sa panlasa, at i-serve na mainit sa ibabaw ng roasted na gulay o fresh salad."
+      ]
+    }
+  },
+  {
+    "slug": "ensalada-cubana-de-aguacate",
+    "id": 633,
+    "cuisine": "cuban",
+    "meal_category": "lunch",
+    "prep_min": 10,
+    "cook_min": 0,
+    "total_min": 10,
+    "servings": 4,
+    "tags": ["Vegetarian", "Vegan", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 170, "carbs": 10, "protein": 2, "fat": 14, "fiber": 6, "gi": 15},
+    "name": {
+      "en": "Cuban Avocado Salad",
+      "es": "Ensalada Cubana de Aguacate",
+      "fil": "Cuban Avocado Salad"
+    },
+    "description": {
+      "en": "A simple, real Cuban side salad of avocado, tomato, and red onion with a light vinaigrette -- naturally low in carbs and fresh.",
+      "es": "Una sencilla y verdadera ensalada cubana de aguacate, tomate y cebolla morada con una vinagreta liviana -- naturalmente baja en carbohidratos y fresca.",
+      "fil": "Isang simple, real na Cuban side salad na gawa sa avocado, kamatis, at red onion na may light na vinaigrette -- naturally mababa sa carbs at fresh."
+    },
+    "why_it_fits": {
+      "en": "Avocado is rich in healthy fat and fiber with almost no digestible carbs, and tomato and onion are both low-GI vegetables, so this salad has essentially no impact on blood sugar while adding real volume and freshness to any Cuban meal.",
+      "es": "El aguacate es rico en grasa saludable y fibra con casi ningún carbohidrato digerible, y el tomate y la cebolla son ambos verduras de IG bajo, por lo que esta ensalada tiene esencialmente ningún impacto en la glucémia mientras aporta volumen y frescura real a cualquier comida cubana.",
+      "fil": "Ang avocado ay mayaman sa healthy fat at fiber na halos walang digestible carbs, at ang kamatis at sibuyas ay pareho low-GI na gulay, kaya ang salad na ito ay essentially walang epekto sa blood sugar habang nagdadagdag ng real volume at freshness sa kahit anong Cuban meal."
+    },
+    "ingredients": [
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "ripe avocados, sliced", "es": "aguacates maduros, en rodajas", "fil": "hinog na avocado, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, sliced", "es": "tomates, en rodajas", "fil": "kamatis, hiniwa"}},
+      {"qty_us": "1/4", "qty_metric": "1/4", "text": {"en": "red onion, thinly sliced", "es": "cebolla morada, en juliana fina", "fil": "red onion, pinong hiniwa"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
+      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "red wine vinegar", "es": "vinagre de vino tinto", "fil": "red wine vinegar"}}
+    ],
+    "instructions": {
+      "en": [
+        "Arrange the avocado and tomato slices on a platter, alternating.",
+        "Scatter the red onion over the top.",
+        "Whisk together the olive oil and vinegar, then drizzle over the salad.",
+        "Season with salt and pepper, and serve immediately."
+      ],
+      "es": [
+        "Acomoda las rodajas de aguacate y tomate en una fuente, alternándolas.",
+        "Esparce la cebolla morada por encima.",
+        "Bate el aceite de oliva con el vinagre, y rocía sobre la ensalada.",
+        "Sazona con sal y pimienta, y sirve de inmediato."
+      ],
+      "fil": [
+        "Ihanay ang hiniwang avocado at kamatis sa plato, palit-palit ang hiwa.",
+        "Ikalat ang red onion sa ibabaw.",
+        "I-whisk ang olive oil at vinegar, tapos ibuhos sa ibabaw ng salad.",
+        "I-season ng asin at paminta, at i-serve agad."
+      ]
+    }
+  },
+  {
+    "slug": "pescado-a-la-plancha-con-mojo-ligero",
+    "id": 634,
+    "cuisine": "cuban",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 12,
+    "total_min": 27,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 270, "carbs": 6, "protein": 33, "fat": 13, "fiber": 1, "gi": 10},
+    "name": {
+      "en": "Grilled Fish with Light Mojo",
+      "es": "Pescado a la Plancha con Mojo Ligero",
+      "fil": "Grilled Fish na may Light Mojo"
+    },
+    "description": {
+      "en": "A pan-seared fish fillet topped with Cuba's real garlic-and-citrus mojo sauce -- classic Cuban flavor, naturally light and quick.",
+      "es": "Un filete de pescado dorado en sartén cubierto con el verdadero mojo cubano de ajo y cítricos -- sabor clásico cubano, naturalmente liviano y rápido.",
+      "fil": "Isang pan-seared na fish fillet na may toppings na real na Cuban garlic-at-citrus mojo sauce -- classic na Cuban flavor, naturally light at mabilis."
+    },
+    "why_it_fits": {
+      "en": "Mojo sauce -- garlic, sour orange or lime juice, and olive oil -- has essentially no carbohydrates on its own. Paired with a lean, pan-seared fish fillet instead of fried yuca or plantain, this dish delivers the full, real mojo flavor Cuban cooking is known for while staying close to zero glycemic impact.",
+      "es": "La salsa mojo -- ajo, jugo de naranja agria o limón y aceite de oliva -- prácticamente no tiene carbohidratos por sí sola. Combinada con un filete de pescado magro dorado en sartén en lugar de yuca o plátano frito, este plato aporta todo el verdadero sabor a mojo por el que es conocida la cocina cubana, manteniéndose con un impacto glucémico casi nulo.",
+      "fil": "Ang mojo sauce -- bawang, sour orange o lime juice, at olive oil -- ay halos walang carbohydrates mag-isa. Kasama ang lean, pan-seared na fish fillet sa halip na fried yuca o plantain, ang dish na ito ay nagbibigay ng full, real na mojo flavor na kilala ang Cuban cooking dito habang nananatiling malapit sa zero glycemic impact."
+    },
+    "ingredients": [
+      {"qty_us": "4", "qty_metric": "4", "text": {"en": "white fish fillets (such as tilapia or snapper)", "es": "filetes de pescado blanco (como tilapia o pargo)", "fil": "white fish fillets (tulad ng tilapia o snapper)"}},
+      {"qty_us": "6 cloves", "qty_metric": "6 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1/3 cup", "qty_metric": "80 ml", "text": {"en": "fresh sour orange or lime juice", "es": "jugo de naranja agria o limón fresco", "fil": "fresh sour orange o lime juice"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}},
+      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}}
+    ],
+    "instructions": {
+      "en": [
+        "Season the fish with salt and pepper, and pan-sear in a little olive oil over medium-high heat, about 3-4 minutes per side, until golden and cooked through.",
+        "Meanwhile, heat the remaining olive oil in a small pan and sauté the garlic until fragrant, about 1 minute.",
+        "Add the citrus juice and cumin, and simmer 2-3 minutes to make the mojo sauce.",
+        "Pour the warm mojo sauce over the cooked fish, sprinkle with cilantro, and serve immediately."
+      ],
+      "es": [
+        "Sazona el pescado con sal y pimienta, y dora en sartén con un poco de aceite de oliva a fuego medio-alto, unos 3-4 minutos por lado, hasta que esté dorado y cocido.",
+        "Mientras tanto, calienta el resto del aceite de oliva en una sartén pequeña y saltea el ajo hasta que esté fragante, aproximadamente 1 minuto.",
+        "Agrega el jugo cítrico y el comino, y cocina a fuego lento 2-3 minutos para hacer la salsa mojo.",
+        "Vierte la salsa mojo tibia sobre el pescado cocido, espolvorea con cilantro y sirve de inmediato."
+      ],
+      "fil": [
+        "I-season ang isda ng asin at paminta, at i-pan-sear sa kaunting olive oil sa medium-high heat, mga 3-4 minuto bawat side, hanggang golden at cooked through.",
+        "Samantala, painitin ang natitirang olive oil sa maliit na pan at igisa ang bawang hanggang mabango, mga 1 minuto.",
+        "Idagdag ang citrus juice at cumin, at pasimmerin ng 2-3 minuto para gawin ang mojo sauce.",
+        "Ibuhos ang mainit na mojo sauce sa ibabaw ng lutong isda, budburan ng cilantro, at i-serve agad."
+      ]
+    }
+  },
+  {
+    "slug": "potaje-de-frijoles-negros-cubano",
+    "id": 635,
+    "cuisine": "cuban",
+    "meal_category": "lunch",
+    "prep_min": 10,
+    "cook_min": 45,
+    "total_min": 55,
+    "servings": 5,
+    "tags": ["High-Fiber", "Gluten-Free", "Vegetarian", "Plant-Protein"],
+    "nutrition": {"cal": 260, "carbs": 34, "protein": 13, "fat": 8, "fiber": 12, "gi": 30},
+    "name": {
+      "en": "Cuban Black Bean Stew",
+      "es": "Potaje de Frijoles Negros Cubano",
+      "fil": "Cuban Black Bean Stew"
+    },
+    "description": {
+      "en": "Cuba's classic black bean stew with bell pepper, cumin, and a splash of vinegar -- real potaje comfort, naturally slow-digesting and fiber-rich.",
+      "es": "El clásico potaje cubano de frijoles negros con morrón, comino y un chorrito de vinagre -- el verdadero confort del potaje, naturalmente de digestión lenta y rico en fibra.",
+      "fil": "Ang classic na Cuban black bean stew na may bell pepper, cumin, at kaunting vinegar -- real na potaje comfort, naturally slow-digesting at fiber-rich."
+    },
+    "why_it_fits": {
+      "en": "Black beans are naturally low-GI and rich in soluble fiber, so this classic Cuban staple digests gradually rather than causing a quick spike. This version relies on the beans themselves as the main carbohydrate source, without the traditional side of white rice, making it a genuinely gentle option on blood sugar.",
+      "es": "Los frijoles negros tienen naturalmente un IG bajo y son ricos en fibra soluble, por lo que este clásico plato cubano se digiere gradualmente en lugar de causar un pico rápido. Esta versión depende de los propios frijoles como fuente principal de carbohidratos, sin el tradicional acompañamiento de arroz blanco, lo que la convierte en una opción genuinamente suave para la glucémia.",
+      "fil": "Ang black beans ay naturally low-GI at mayaman sa soluble fiber, kaya ang classic na Cuban staple na ito ay gradually ma-digest sa halip na magdulot ng mabilis na spike. Ang version na ito ay umaasa sa mismong beans bilang main carbohydrate source, na walang traditional na side ng white rice, na ginagawa itong genuinely gentle na option sa blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "2 cups", "qty_metric": "400 g", "text": {"en": "dried black beans, soaked overnight", "es": "frijoles negros secos, remojados toda la noche", "fil": "dried black beans, binabad overnight"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
+      {"qty_us": "4 cloves", "qty_metric": "4 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}},
+      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "red wine vinegar", "es": "vinagre de vino tinto", "fil": "red wine vinegar"}},
+      {"qty_us": "6 cups", "qty_metric": "1.4 L", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Drain the soaked beans and add them to a large pot with the broth.",
+        "Bring to a boil, then reduce heat and simmer 30 minutes.",
+        "Add the onion, bell pepper, garlic, and cumin, and simmer 15 more minutes until the beans are tender and the stew has thickened.",
+        "Stir in the vinegar, season with salt to taste, and serve hot."
+      ],
+      "es": [
+        "Escurre los frijoles remojados y agrégalos a una olla grande con el caldo.",
+        "Lleva a hervor, luego reduce el fuego y cocina a fuego lento 30 minutos.",
+        "Agrega la cebolla, el morrón, el ajo y el comino, y cocina a fuego lento 15 minutos más hasta que los frijoles estén tiernos y el guiso haya espesado.",
+        "Incorpora el vinagre, sazona con sal a gusto y sirve caliente."
+      ],
+      "fil": [
+        "I-drain ang binabad na beans at idagdag sa malaking pot kasama ang broth.",
+        "Pakuluan, tapos hinaan ang apoy at pasimmerin ng 30 minuto.",
+        "Idagdag ang sibuyas, bell pepper, bawang, at cumin, at pasimmerin pa ng 15 minuto hanggang lumambot ang beans at lumapot ang stew.",
+        "Ihalo ang vinegar, i-season ng asin ayon sa panlasa, at i-serve na mainit."
+      ]
+    }
+  }
+]
