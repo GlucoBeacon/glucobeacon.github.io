@@ -5,6 +5,14 @@
 (function () {
   var CART_KEY = 'gb_shopping_cart';
 
+  var seg = location.pathname.split('/').filter(Boolean)[0];
+  var LANG = (seg === 'es' || seg === 'fil') ? seg : 'en';
+  var STRINGS = {
+    en: { pill: '🛒 Shopping List', added: '✓ Added to Shopping List', add: 'Add to Shopping List' },
+    es: { pill: '🛒 Lista de Compras', added: '✓ Agregado a Lista de Compras', add: 'Agregar a Lista de Compras' },
+    fil: { pill: '🛒 Shopping List', added: '✓ Naidagdag sa Shopping List', add: 'Idagdag sa Shopping List' }
+  }[LANG];
+
   function getCart() {
     try {
       var raw = localStorage.getItem(CART_KEY);
@@ -49,7 +57,7 @@
       existing.href = 'shopping-list.html';
       document.body.appendChild(existing);
     }
-    existing.textContent = '🛒 Shopping List (' + count + ')';
+    existing.textContent = STRINGS.pill + ' (' + count + ')';
   }
 
   function wireToggleButton() {
@@ -60,10 +68,10 @@
 
     function refresh() {
       if (isInCart(id)) {
-        btn.textContent = '✓ Added to Shopping List';
+        btn.textContent = STRINGS.added;
         btn.classList.add('is-added');
       } else {
-        btn.textContent = 'Add to Shopping List';
+        btn.textContent = STRINGS.add;
         btn.classList.remove('is-added');
       }
     }

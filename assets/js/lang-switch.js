@@ -127,6 +127,7 @@
     'white-bean-and-kale-soup', 'whole-wheat-pasta-al-pomodoro'
   ];
   FIL_AVAILABLE.push('/recipes/');
+  FIL_AVAILABLE.push('/recipes/shopping-list.html');
   RECIPE_SLUGS.forEach(function (slug) {
     FIL_AVAILABLE.push('/recipes/' + slug + '.html');
   });

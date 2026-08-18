@@ -3,6 +3,14 @@
 // and generates a QR code the GlucoBeacon app's Shopping List scanner
 // reads (payload: "glucobeacon-recipes:<comma-separated ids>").
 (function () {
+  var seg = location.pathname.split('/').filter(Boolean)[0];
+  var LANG = (seg === 'es' || seg === 'fil') ? seg : 'en';
+  var STRINGS = {
+    en: { remove: 'Remove', recipeFallback: 'Recipe #' },
+    es: { remove: 'Quitar', recipeFallback: 'Receta #' },
+    fil: { remove: 'Alisin', recipeFallback: 'Recipe #' }
+  }[LANG];
+
   function render(index) {
     var ids = window.gbCart.getCart();
     var emptyEl = document.getElementById('cartEmpty');
@@ -28,12 +36,12 @@
 
       var link = document.createElement('a');
       link.href = recipe ? recipe.slug + '.html' : '#';
-      link.textContent = recipe ? recipe.name : 'Recipe #' + id;
+      link.textContent = recipe ? recipe.name : STRINGS.recipeFallback + id;
       row.appendChild(link);
 
       var removeBtn = document.createElement('button');
       removeBtn.className = 'cart-remove-btn';
-      removeBtn.textContent = 'Remove';
+      removeBtn.textContent = STRINGS.remove;
       removeBtn.addEventListener('click', function () {
         window.gbCart.removeFromCart(id);
         render(index);
