@@ -1,0 +1,290 @@
+[
+  {
+    "slug": "sopa-paraguaya-liviana",
+    "id": 591,
+    "cuisine": "paraguayan",
+    "meal_category": "lunch",
+    "prep_min": 15,
+    "cook_min": 35,
+    "total_min": 50,
+    "servings": 6,
+    "tags": ["Vegetarian", "Gluten-Free"],
+    "nutrition": {"cal": 230, "carbs": 22, "protein": 12, "fat": 11, "fiber": 3, "gi": 50},
+    "name": {
+      "en": "Light Paraguayan Cornbread",
+      "es": "Sopa Paraguaya Liviana",
+      "fil": "Light na Paraguayan Cornbread"
+    },
+    "description": {
+      "en": "Paraguay's beloved savory cornbread, despite its name not actually a soup -- real sopa paraguaya flavor, made with less cornmeal and more cottage cheese and egg for protein.",
+      "es": "El querido pan de maíz salado del Paraguay, que a pesar de su nombre no es una sopa -- el verdadero sabor de la sopa paraguaya, hecha con menos harina de maíz y más queso cottage y huevo para la proteína.",
+      "fil": "Ang minamahal na savory cornbread ng Paraguay, na sa kabila ng pangalan ay hindi talaga soup -- real na sopa paraguaya flavor, gawa sa mas kaunting cornmeal at mas maraming cottage cheese at itlog para sa protina."
+    },
+    "why_it_fits": {
+      "en": "Traditional sopa paraguaya is made almost entirely from cornmeal, which digests quickly. Cutting the cornmeal back and boosting the egg and cottage cheese content raises the protein-to-carb ratio significantly, so the same beloved savory flavor comes with a gentler rise in blood sugar and a smaller portion still feels satisfying.",
+      "es": "La sopa paraguaya tradicional está hecha casi por completo de harina de maíz, que se digiere rápido. Reducir la harina de maíz y aumentar el contenido de huevo y queso cottage eleva significativamente la proporción de proteína a carbohidratos, para que el mismo sabor salado querido venga con una subida más suave de la glucémia y una porción más pequeña siga siendo satisfactoria.",
+      "fil": "Ang traditional na sopa paraguaya ay gawa halos lahat sa cornmeal, na mabilis ma-digest. Ang pagbawas ng cornmeal at pagtaas ng egg at cottage cheese content ay malaki ang pagtaas ng protein-to-carb ratio, kaya ang parehong minamahal na savory flavor ay dumarating na may mas gentle na pagtaas ng blood sugar at ang mas maliit na portion ay satisfying pa rin."
+    },
+    "ingredients": [
+      {"qty_us": "1 cup", "qty_metric": "140 g", "text": {"en": "fine cornmeal", "es": "harina de maíz fina", "fil": "fine cornmeal"}},
+      {"qty_us": "1 cup", "qty_metric": "225 g", "text": {"en": "low-fat cottage cheese", "es": "queso cottage bajo en grasa", "fil": "low-fat cottage cheese"}},
+      {"qty_us": "4", "qty_metric": "4", "text": {"en": "eggs", "es": "huevos", "fil": "itlog"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, finely chopped and sautéed", "es": "cebolla, picada fina y salteada", "fil": "sibuyas, pinong hiniwa at sinaute"}},
+      {"qty_us": "1/2 cup", "qty_metric": "60 g", "text": {"en": "shredded low-fat mozzarella", "es": "queso mozzarella bajo en grasa, rallado", "fil": "shredded low-fat mozzarella"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+    ],
+    "instructions": {
+      "en": [
+        "Preheat the oven to 375°F (190°C) and lightly oil a baking dish.",
+        "Whisk the eggs with the cottage cheese and olive oil until fairly smooth.",
+        "Stir in the cornmeal, sautéed onion, and shredded cheese, and season with salt.",
+        "Pour into the baking dish and bake 30-35 minutes until golden and set.",
+        "Let cool slightly, cut into squares, and serve warm."
+      ],
+      "es": [
+        "Precalienta el horno a 190°C y engrasa levemente una fuente para hornear.",
+        "Bate los huevos con el queso cottage y el aceite de oliva hasta que quede bastante suave.",
+        "Incorpora la harina de maíz, la cebolla salteada y el queso rallado, y sazona con sal.",
+        "Vierte en la fuente y hornea 30-35 minutos hasta que esté dorado y firme.",
+        "Deja enfriar un poco, corta en cuadrados y sirve tibio."
+      ],
+      "fil": [
+        "I-preheat ang oven sa 190°C at magaan na langisan ang baking dish.",
+        "I-whisk ang itlog kasama ang cottage cheese at olive oil hanggang medyo smooth.",
+        "Ihalo ang cornmeal, sautéed na sibuyas, at shredded cheese, at i-season ng asin.",
+        "Ibuhos sa baking dish at i-bake ng 30-35 minuto hanggang golden at matigas.",
+        "Hayaang lumamig nang kaunti, hiwain na parisukat, at i-serve na mainit-init."
+      ]
+    }
+  },
+  {
+    "slug": "vori-vori-liviano",
+    "id": 592,
+    "cuisine": "paraguayan",
+    "meal_category": "dinner",
+    "prep_min": 20,
+    "cook_min": 35,
+    "total_min": 55,
+    "servings": 4,
+    "tags": ["High-Protein", "High-Fiber"],
+    "nutrition": {"cal": 300, "carbs": 24, "protein": 26, "fat": 11, "fiber": 4, "gi": 48},
+    "name": {
+      "en": "Light Vori Vori Soup",
+      "es": "Vori Vori Liviano",
+      "fil": "Light na Vori Vori Soup"
+    },
+    "description": {
+      "en": "Paraguay's real chicken soup studded with small cornmeal-and-cheese dumplings -- true vori vori comfort, with smaller dumplings and a vegetable-packed broth.",
+      "es": "La verdadera sopa de pollo paraguaya con pequeñas bolitas de harina de maíz y queso -- el verdadero confort del vori vori, con bolitas más pequeñas y un caldo cargado de verduras.",
+      "fil": "Ang real na chicken soup ng Paraguay na may maliliit na cornmeal-at-cheese dumplings -- true na vori vori comfort, na may mas maliliit na dumplings at vegetable-packed na broth."
+    },
+    "why_it_fits": {
+      "en": "The little cornmeal dumplings are the fastest-digesting part of this soup. Making them smaller and packing the broth with extra carrot, celery, and squash means the dumplings still deliver their real vori vori texture and flavor, but they make up a smaller share of the total meal, which softens the overall effect on blood sugar.",
+      "es": "Las pequeñas bolitas de harina de maíz son la parte de digestión más rápida de esta sopa. Hacerlas más pequeñas y cargar el caldo con zanahoria, apio y zapallo extra hace que las bolitas sigan aportando su verdadera textura y sabor de vori vori, pero representan una porción menor de la comida total, lo que suaviza el efecto general sobre la glucémia.",
+      "fil": "Ang maliliit na cornmeal dumplings ang pinakamabilis-ma-digest na parte ng soup na ito. Ang paggawa ng mas maliit sa mga ito at pagdaragdag ng extra carrot, celery, at squash sa broth ay nangangahulugan na ang dumplings ay nagbibigay pa rin ng real na vori vori texture at flavor, pero mas maliit na parte na lang sila ng buong meal, na nagpapagaan sa overall na epekto sa blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "bone-in chicken thighs, skin removed", "es": "muslos de pollo con hueso, sin piel", "fil": "bone-in chicken thighs, tinanggalan ng balat"}},
+      {"qty_us": "1/2 cup", "qty_metric": "70 g", "text": {"en": "fine cornmeal", "es": "harina de maíz fina", "fil": "fine cornmeal"}},
+      {"qty_us": "1/4 cup", "qty_metric": "30 g", "text": {"en": "grated cheese", "es": "queso rallado", "fil": "grated na keso"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "egg", "es": "huevo", "fil": "itlog"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "carrots, diced", "es": "zanahorias, en cubos", "fil": "carrots, dinice"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "celery stalks, diced", "es": "tallos de apio, en cubos", "fil": "celery stalks, dinice"}},
+      {"qty_us": "1 cup", "qty_metric": "150 g", "text": {"en": "pumpkin or squash, diced", "es": "zapallo, en cubos", "fil": "kalabasa, dinice"}},
+      {"qty_us": "7 cups", "qty_metric": "1.7 L", "text": {"en": "low-sodium chicken broth", "es": "caldo de pollo bajo en sodio", "fil": "low-sodium chicken broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Simmer the chicken thighs in the broth until cooked through, about 20 minutes. Remove, shred, and set aside.",
+        "Mix the cornmeal, grated cheese, and egg into a stiff dough, and roll into small marble-sized balls.",
+        "Add the carrot, celery, and squash to the simmering broth and cook 10 minutes.",
+        "Drop the small dumplings into the simmering broth and cook 8-10 minutes until they float and are cooked through.",
+        "Return the shredded chicken to the pot, season with salt and pepper, and serve hot."
+      ],
+      "es": [
+        "Cocina a fuego lento los muslos de pollo en el caldo hasta que estén bien cocidos, unos 20 minutos. Retira, desmenuza y reserva.",
+        "Mezcla la harina de maíz, el queso rallado y el huevo hasta formar una masa firme, y forma bolitas pequeñas del tamaño de una canica.",
+        "Agrega la zanahoria, el apio y el zapallo al caldo hirviendo a fuego lento y cocina 10 minutos.",
+        "Deja caer las bolitas pequeñas en el caldo hirviendo a fuego lento y cocina 8-10 minutos hasta que floten y estén bien cocidas.",
+        "Regresa el pollo desmenuzado a la olla, sazona con sal y pimienta, y sirve caliente."
+      ],
+      "fil": [
+        "Pasimmerin ang chicken thighs sa broth hanggang maluto, mga 20 minuto. Alisin, tadtarin, at itabi.",
+        "Ihalo ang cornmeal, grated cheese, at itlog para sa stiff dough, at igulong na maliliit na bola.",
+        "Idagdag ang carrot, celery, at squash sa pasimmering broth at lutuin ng 10 minuto.",
+        "Ihulog ang maliliit na dumplings sa pasimmering broth at lutuin ng 8-10 minuto hanggang lumutang at maluto.",
+        "Ibalik ang tinadtad na chicken sa pot, i-season ng asin at paminta, at i-serve na mainit."
+      ]
+    }
+  },
+  {
+    "slug": "ensalada-de-poroto-paraguaya",
+    "id": 593,
+    "cuisine": "paraguayan",
+    "meal_category": "lunch",
+    "prep_min": 15,
+    "cook_min": 0,
+    "total_min": 15,
+    "servings": 4,
+    "tags": ["Vegetarian", "Vegan", "High-Fiber", "Gluten-Free", "Plant-Protein"],
+    "nutrition": {"cal": 250, "carbs": 30, "protein": 12, "fat": 8, "fiber": 10, "gi": 30},
+    "name": {
+      "en": "Paraguayan Bean Salad",
+      "es": "Ensalada de Poroto Paraguaya",
+      "fil": "Paraguayan Bean Salad"
+    },
+    "description": {
+      "en": "A real, simple Paraguayan bean salad with tomato, onion, and a light vinaigrette -- naturally hearty and slow-digesting.",
+      "es": "Una verdadera y sencilla ensalada paraguaya de porotos con tomate, cebolla y una vinagreta liviana -- naturalmente contundente y de digestión lenta.",
+      "fil": "Isang real, simple na Paraguayan bean salad na may kamatis, sibuyas, at light na vinaigrette -- naturally hearty at slow-digesting."
+    },
+    "why_it_fits": {
+      "en": "Beans are naturally low-GI and high in fiber, so they digest gradually and help stabilize blood sugar rather than spiking it. This salad relies on the beans as its main carb source with no rice or bread added, making it a genuinely gentle option for blood sugar.",
+      "es": "Los porotos tienen naturalmente un IG bajo y son altos en fibra, por lo que se digieren gradualmente y ayudan a estabilizar la glucémia en lugar de elevarla. Esta ensalada depende de los porotos como fuente principal de carbohidratos sin agregar arroz ni pan, lo que la convierte en una opción genuinamente suave para la glucémia.",
+      "fil": "Ang beans ay naturally low-GI at mataas sa fiber, kaya gradually itong ma-digest at tumutulong i-stabilize ang blood sugar sa halip na itaas ito. Ang salad na ito ay umaasa sa beans bilang main carb source na walang kanin o tinapay na idinagdag, na ginagawa itong genuinely gentle na option para sa blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "3 cups", "qty_metric": "500 g", "text": {"en": "cooked kidney or pinto beans", "es": "porotos colorados o pintos cocidos", "fil": "lutong kidney o pinto beans"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, finely chopped", "es": "cebolla, picada fina", "fil": "sibuyas, pinong hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, diced", "es": "morrón verde, en cubos", "fil": "green bell pepper, dinice"}},
+      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh parsley, chopped", "es": "perejil fresco, picado", "fil": "fresh parsley, hiniwa"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "olive oil and vinegar dressing", "es": "aderezo de aceite de oliva y vinagre", "fil": "olive oil at vinegar dressing"}}
+    ],
+    "instructions": {
+      "en": [
+        "Combine the beans, tomato, onion, and bell pepper in a large bowl.",
+        "Add the parsley and toss with the olive oil and vinegar dressing.",
+        "Season with salt and pepper to taste.",
+        "Let it sit 10 minutes before serving so the flavors meld."
+      ],
+      "es": [
+        "Combina los porotos, el tomate, la cebolla y el morrón en un bol grande.",
+        "Agrega el perejil y mezcla con el aderezo de aceite de oliva y vinagre.",
+        "Sazona con sal y pimienta a gusto.",
+        "Deja reposar 10 minutos antes de servir para que los sabores se integren."
+      ],
+      "fil": [
+        "Ihalo ang beans, kamatis, sibuyas, at bell pepper sa malaking bowl.",
+        "Idagdag ang parsley at haluin kasama ang olive oil at vinegar dressing.",
+        "I-season ng asin at paminta ayon sa panlasa.",
+        "Hayaang tumigil ng 10 minuto bago i-serve para maghalo ang flavors."
+      ]
+    }
+  },
+  {
+    "slug": "pollo-al-horno-con-verduras-paraguayo",
+    "id": 594,
+    "cuisine": "paraguayan",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 40,
+    "total_min": 55,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 330, "carbs": 14, "protein": 34, "fat": 15, "fiber": 4, "gi": 20},
+    "name": {
+      "en": "Roast Chicken with Vegetables",
+      "es": "Pollo al Horno con Verduras Paraguayo",
+      "fil": "Roast Chicken na may Gulay"
+    },
+    "description": {
+      "en": "A simple, real Paraguayan Sunday dinner -- oven-roasted chicken with garlic and oregano, alongside roasted seasonal vegetables.",
+      "es": "Una sencilla y verdadera cena dominical paraguaya -- pollo horneado con ajo y orégano, junto a verduras de estación asadas.",
+      "fil": "Isang simple, real na Paraguayan Sunday dinner -- oven-roasted na chicken na may bawang at oregano, kasama ang roasted na seasonal na gulay."
+    },
+    "why_it_fits": {
+      "en": "Roast chicken with a mix of roasted vegetables is naturally low in carbohydrates and free of any refined starch, so it has a mild effect on blood sugar while remaining a real, hearty family dinner.",
+      "es": "El pollo asado con una mezcla de verduras asadas es naturalmente bajo en carbohidratos y libre de cualquier almidón refinado, por lo que tiene un efecto leve sobre la glucémia mientras sigue siendo una verdadera y contundente cena familiar.",
+      "fil": "Ang roast chicken na may halo-halong roasted na gulay ay naturally mababa sa carbohydrates at walang refined starch, kaya may mild na epekto sa blood sugar habang nananatiling real, hearty na family dinner."
+    },
+    "ingredients": [
+      {"qty_us": "4", "qty_metric": "4", "text": {"en": "bone-in chicken thighs, skin removed", "es": "muslos de pollo con hueso, sin piel", "fil": "bone-in chicken thighs, tinanggalan ng balat"}},
+      {"qty_us": "4 cloves", "qty_metric": "4 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "dried oregano", "es": "orégano seco", "fil": "dried oregano"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "zucchini, sliced", "es": "zapallitos, en rodajas", "fil": "zucchini, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, sliced", "es": "morrón rojo, en tiras", "fil": "red bell pepper, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, sliced", "es": "cebolla, en rodajas", "fil": "sibuyas, hiniwa"}}
+    ],
+    "instructions": {
+      "en": [
+        "Preheat the oven to 400°F (200°C). Rub the chicken with garlic, oregano, olive oil, salt, and pepper.",
+        "Arrange the chicken on a baking sheet with the zucchini, bell pepper, and onion around it.",
+        "Roast 35-40 minutes until the chicken is cooked through and the vegetables are tender and lightly browned.",
+        "Serve hot straight from the pan."
+      ],
+      "es": [
+        "Precalienta el horno a 200°C. Frota el pollo con ajo, orégano, aceite de oliva, sal y pimienta.",
+        "Acomoda el pollo en una bandeja para hornear con los zapallitos, el morrón y la cebolla alrededor.",
+        "Hornea 35-40 minutos hasta que el pollo esté cocido y las verduras estén tiernas y ligeramente doradas.",
+        "Sirve caliente directamente de la bandeja."
+      ],
+      "fil": [
+        "I-preheat ang oven sa 200°C. Kuskusin ang chicken ng bawang, oregano, olive oil, asin, at paminta.",
+        "Ihanay ang chicken sa baking sheet na may zucchini, bell pepper, at sibuyas sa paligid.",
+        "I-roast ng 35-40 minuto hanggang maluto ang chicken at lumambot at bahagyang golden ang gulay.",
+        "I-serve na mainit direkta mula sa pan."
+      ]
+    }
+  },
+  {
+    "slug": "guiso-de-lentejas-paraguayo",
+    "id": 595,
+    "cuisine": "paraguayan",
+    "meal_category": "lunch",
+    "prep_min": 10,
+    "cook_min": 35,
+    "total_min": 45,
+    "servings": 4,
+    "tags": ["High-Fiber", "Gluten-Free", "Vegetarian"],
+    "nutrition": {"cal": 270, "carbs": 34, "protein": 15, "fat": 8, "fiber": 12, "gi": 30},
+    "name": {
+      "en": "Paraguayan Lentil Stew",
+      "es": "Guiso de Lentejas Paraguayo",
+      "fil": "Paraguayan Lentil Stew"
+    },
+    "description": {
+      "en": "A real Paraguayan home-style lentil stew with tomato, bell pepper, and cumin -- everyday comfort food, naturally slow-digesting and high in fiber.",
+      "es": "Un verdadero guiso casero paraguayo de lentejas con tomate, morrón y comino -- comida reconfortante de todos los días, naturalmente de digestión lenta y alta en fibra.",
+      "fil": "Isang real na Paraguayan home-style na lentil stew na may kamatis, bell pepper, at cumin -- everyday comfort food, naturally slow-digesting at mataas sa fiber."
+    },
+    "why_it_fits": {
+      "en": "Lentils are naturally low-GI and rich in soluble fiber, so this everyday stew digests gradually rather than spiking blood sugar. Relying on the lentils themselves as the main carb source, without adding rice, keeps this a genuinely gentle, filling meal.",
+      "es": "Las lentejas tienen naturalmente un IG bajo y son ricas en fibra soluble, por lo que este guiso cotidiano se digiere gradualmente en lugar de elevar la glucémia. Depender de las propias lentejas como fuente principal de carbohidratos, sin agregar arroz, mantiene esta comida genuinamente suave y satisfactoria.",
+      "fil": "Ang lentils ay naturally low-GI at mayaman sa soluble fiber, kaya ang everyday na stew na ito ay gradually ma-digest sa halip na magpataas ng blood sugar. Ang pag-asa sa mismong lentils bilang main carb source, na walang idinagdag na kanin, ay pinapanatili itong genuinely gentle, filling na meal."
+    },
+    "ingredients": [
+      {"qty_us": "2 cups", "qty_metric": "400 g", "text": {"en": "dried lentils, rinsed", "es": "lentejas secas, enjuagadas", "fil": "dried lentils, hinugasan"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}},
+      {"qty_us": "5 cups", "qty_metric": "1.2 L", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Sauté the onion, bell pepper, and garlic in a large pot until soft, about 5 minutes.",
+        "Add the tomato and cumin, and cook 2 minutes more.",
+        "Add the lentils and broth, and bring to a boil.",
+        "Reduce heat and simmer 30 minutes, until the lentils are tender and the stew has thickened.",
+        "Season with salt and pepper to taste and serve hot."
+      ],
+      "es": [
+        "Saltea la cebolla, el morrón y el ajo en una olla grande hasta que estén blandos, unos 5 minutos.",
+        "Agrega el tomate y el comino, y cocina 2 minutos más.",
+        "Agrega las lentejas y el caldo, y lleva a hervor.",
+        "Reduce el fuego y cocina a fuego lento 30 minutos, hasta que las lentejas estén tiernas y el guiso haya espesado.",
+        "Sazona con sal y pimienta a gusto y sirve caliente."
+      ],
+      "fil": [
+        "Igisa ang sibuyas, bell pepper, at bawang sa malaking pot hanggang lumambot, mga 5 minuto.",
+        "Idagdag ang kamatis at cumin, at magluto pa ng 2 minuto.",
+        "Idagdag ang lentils at broth, at pakuluan.",
+        "Hinaan ang apoy at pasimmerin ng 30 minuto, hanggang lumambot ang lentils at lumapot ang stew.",
+        "I-season ng asin at paminta ayon sa panlasa at i-serve na mainit."
+      ]
+    }
+  }
+]

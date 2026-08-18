@@ -1,0 +1,291 @@
+[
+  {
+    "slug": "sopa-de-mani-liviana",
+    "id": 601,
+    "cuisine": "bolivian",
+    "meal_category": "lunch",
+    "prep_min": 15,
+    "cook_min": 35,
+    "total_min": 50,
+    "servings": 4,
+    "tags": ["High-Protein", "High-Fiber", "Gluten-Free"],
+    "nutrition": {"cal": 320, "carbs": 20, "protein": 24, "fat": 17, "fiber": 5, "gi": 35},
+    "name": {
+      "en": "Light Bolivian Peanut Soup",
+      "es": "Sopa de Maní Liviana",
+      "fil": "Light na Bolivian Peanut Soup"
+    },
+    "description": {
+      "en": "Bolivia's beloved creamy peanut soup with beef and vegetables -- real sopa de maní comfort, served without the traditional fried potato straw topping.",
+      "es": "La querida y cremosa sopa boliviana de maní con carne y verduras -- el verdadero confort de la sopa de maní, servida sin la tradicional guarnición de papa frita en bastones.",
+      "fil": "Ang minamahal at creamy na Bolivian peanut soup na may beef at gulay -- real na sopa de maní comfort, served na walang traditional na fried potato straw topping."
+    },
+    "why_it_fits": {
+      "en": "Peanuts themselves have a low glycemic index and are rich in protein and healthy fat, so the soup's base is naturally gentle on blood sugar. The traditional crispy fried potato straws on top add a significant dose of fast-digesting starch and oil; leaving them off keeps the real peanut-and-vegetable flavor while removing the biggest glycemic spike in the dish.",
+      "es": "Los maníes en sí tienen un índice glucémico bajo y son ricos en proteína y grasa saludable, por lo que la base de la sopa es naturalmente suave con la glucémia. Los tradicionales bastones crujientes de papa frita encima agregan una dosis importante de almidón y aceite de digestión rápida; omitirlos mantiene el verdadero sabor a maní y verduras mientras elimina el mayor pico glucémico del plato.",
+      "fil": "Ang mismong mani ay may mababang glycemic index at mayaman sa protein at healthy fat, kaya naturally gentle sa blood sugar ang base ng soup. Ang traditional na crispy fried potato straws sa ibabaw ay nagdadagdag ng malaking dosis ng mabilis-ma-digest na starch at oil; ang pag-alis nito ay pinapanatili ang real na peanut-at-vegetable flavor habang tinatanggal ang pinakamalaking glycemic spike sa dish."
+    },
+    "ingredients": [
+      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "lean beef, cubed", "es": "carne magra, en cubos", "fil": "lean beef, dinice"}},
+      {"qty_us": "1/2 cup", "qty_metric": "125 g", "text": {"en": "natural peanut butter (no added sugar)", "es": "manteca de maní natural (sin azúcar agregada)", "fil": "natural peanut butter (walang added sugar)"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "carrot, diced", "es": "zanahoria, en cubos", "fil": "carrot, dinice"}},
+      {"qty_us": "1 cup", "qty_metric": "100 g", "text": {"en": "green peas", "es": "arvejas", "fil": "green peas"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small potato, cubed", "es": "papa pequeña, en cubos", "fil": "maliit na potato, dinice"}},
+      {"qty_us": "6 cups", "qty_metric": "1.4 L", "text": {"en": "low-sodium beef broth", "es": "caldo de carne bajo en sodio", "fil": "low-sodium beef broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Brown the beef with the onion in a large pot, about 8 minutes.",
+        "Add the broth and simmer 20 minutes until the beef is tender.",
+        "Whisk in the peanut butter until fully dissolved into the broth.",
+        "Add the carrot, potato, and peas, and simmer 15 more minutes until tender.",
+        "Season with salt and pepper to taste and serve hot, without a fried garnish."
+      ],
+      "es": [
+        "Dora la carne con la cebolla en una olla grande, unos 8 minutos.",
+        "Agrega el caldo y cocina a fuego lento 20 minutos hasta que la carne esté tierna.",
+        "Bate la manteca de maní hasta que se disuelva por completo en el caldo.",
+        "Agrega la zanahoria, la papa y las arvejas, y cocina a fuego lento 15 minutos más hasta que estén tiernas.",
+        "Sazona con sal y pimienta a gusto y sirve caliente, sin guarnición frita."
+      ],
+      "fil": [
+        "I-brown ang beef kasama ang sibuyas sa malaking pot, mga 8 minuto.",
+        "Idagdag ang broth at pasimmerin ng 20 minuto hanggang lumambot ang beef.",
+        "I-whisk ang peanut butter hanggang matunaw nang husto sa broth.",
+        "Idagdag ang carrot, potato, at peas, at pasimmerin pa ng 15 minuto hanggang lumambot.",
+        "I-season ng asin at paminta ayon sa panlasa at i-serve na mainit, na walang fried garnish."
+      ]
+    }
+  },
+  {
+    "slug": "ensalada-de-quinoa-boliviana",
+    "id": 602,
+    "cuisine": "bolivian",
+    "meal_category": "lunch",
+    "prep_min": 15,
+    "cook_min": 15,
+    "total_min": 30,
+    "servings": 4,
+    "tags": ["Vegetarian", "Vegan", "High-Fiber", "Gluten-Free"],
+    "nutrition": {"cal": 250, "carbs": 32, "protein": 9, "fat": 10, "fiber": 6, "gi": 42},
+    "name": {
+      "en": "Bolivian Quinoa Salad",
+      "es": "Ensalada de Quinoa Boliviana",
+      "fil": "Bolivian Quinoa Salad"
+    },
+    "description": {
+      "en": "A real Bolivian highland salad built on quinoa -- the grain Bolivia is famous for growing -- with tomato, corn, and lime.",
+      "es": "Una verdadera ensalada altiplánica boliviana hecha con quinua -- el grano por el que Bolivia es famosa -- con tomate, choclo y limón.",
+      "fil": "Isang real na Bolivian highland salad na base sa quinoa -- ang grain na kilala ang Bolivia sa pagtatanim -- na may kamatis, corn, at lime."
+    },
+    "why_it_fits": {
+      "en": "Quinoa is a complete protein and a whole grain with a moderate glycemic index, unlike refined white rice or pasta. Serving it cold as a salad with fresh vegetables and lime makes for a naturally slow-digesting, satisfying dish that supports steady blood sugar.",
+      "es": "La quinua es una proteína completa y un grano integral con un índice glucémico moderado, a diferencia del arroz blanco refinado o la pasta. Servirla fría en ensalada con verduras frescas y limón resulta en un plato naturalmente de digestión lenta y satisfactorio, que favorece una glucémia estable.",
+      "fil": "Ang quinoa ay complete protein at whole grain na may moderate glycemic index, hindi tulad ng refined white rice o pasta. Ang pag-serve nito na malamig bilang salad na may fresh na gulay at lime ay nagreresulta sa naturally slow-digesting, satisfying na dish na sumusuporta sa steady blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "2 cups", "qty_metric": "370 g", "text": {"en": "cooked quinoa, cooled", "es": "quinua cocida, fría", "fil": "lutong quinoa, palamig na"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "1/2 cup", "qty_metric": "75 g", "text": {"en": "corn kernels", "es": "granos de choclo", "fil": "corn kernels"}},
+      {"qty_us": "1/4", "qty_metric": "1/4", "text": {"en": "red onion, finely chopped", "es": "cebolla morada, picada fina", "fil": "red onion, pinong hiniwa"}},
+      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+    ],
+    "instructions": {
+      "en": [
+        "Combine the quinoa, tomato, corn, and red onion in a large bowl.",
+        "Whisk together the lime juice and olive oil, and pour over the salad.",
+        "Toss gently to combine and stir in fresh cilantro.",
+        "Season with salt and pepper to taste, and serve chilled or at room temperature."
+      ],
+      "es": [
+        "Combina la quinua, el tomate, el choclo y la cebolla morada en un bol grande.",
+        "Bate el jugo de limón con el aceite de oliva, y vierte sobre la ensalada.",
+        "Mezcla con cuidado e incorpora el cilantro fresco.",
+        "Sazona con sal y pimienta a gusto, y sirve fría o a temperatura ambiente."
+      ],
+      "fil": [
+        "Ihalo ang quinoa, kamatis, corn, at red onion sa malaking bowl.",
+        "I-whisk ang lime juice at olive oil, at ibuhos sa salad.",
+        "Haluin nang dahan-dahan at ihalo ang fresh cilantro.",
+        "I-season ng asin at paminta ayon sa panlasa, at i-serve na malamig o sa room temperature."
+      ]
+    }
+  },
+  {
+    "slug": "pique-a-lo-macho-ligero",
+    "id": 603,
+    "cuisine": "bolivian",
+    "meal_category": "dinner",
+    "prep_min": 20,
+    "cook_min": 25,
+    "total_min": 45,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 380, "carbs": 18, "protein": 36, "fat": 20, "fiber": 4, "gi": 25},
+    "name": {
+      "en": "Light Pique a lo Macho",
+      "es": "Pique a lo Macho Ligero",
+      "fil": "Light na Pique a lo Macho"
+    },
+    "description": {
+      "en": "Bolivia's iconic mixed meat and vegetable plate -- real pique a lo macho flavor (beef, sausage, onion, chili), served over roasted vegetables instead of a mountain of fries.",
+      "es": "El icónico plato boliviano de carnes mixtas y verduras -- el verdadero sabor del pique a lo macho (carne, chorizo, cebolla, ají), servido sobre verduras asadas en lugar de una montaña de papas fritas.",
+      "fil": "Ang iconic na mixed meat and vegetable plate ng Bolivia -- real na pique a lo macho flavor (beef, sausage, sibuyas, chili), served sa ibabaw ng roasted na gulay sa halip na bunton ng fries."
+    },
+    "why_it_fits": {
+      "en": "Restaurant pique a lo macho is famous for its enormous base of deep-fried potatoes, which is by far the largest glycemic contributor on the plate. Keeping all the same real meats, onion, tomato, and chili, but building the base from roasted bell pepper, zucchini, and onion instead of fried potato, keeps the dish's bold flavor while dramatically cutting its carb load.",
+      "es": "El pique a lo macho de restaurante es famoso por su enorme base de papas fritas, que es por lejos el mayor contribuyente glucémico del plato. Mantener las mismas carnes reales, cebolla, tomate y ají, pero construir la base con morrón, zapallito y cebolla asados en lugar de papa frita, mantiene el sabor audaz del plato mientras reduce drásticamente su carga de carbohidratos.",
+      "fil": "Ang restaurant pique a lo macho ay famous sa napakalaking base nitong deep-fried na patatas, na siyang pinakamalaking glycemic contributor sa plato. Ang pananatili ng parehong real na karne, sibuyas, kamatis, at chili, pero ang paggawa ng base mula sa roasted na bell pepper, zucchini, at sibuyas sa halip na fried potato, ay pinapanatili ang bold flavor ng dish habang malaki ang bawas sa carb load nito."
+    },
+    "ingredients": [
+      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "beef sirloin, sliced into strips", "es": "bife de lomo, en tiras", "fil": "beef sirloin, hiniwa na strips"}},
+      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "lean beef sausage, sliced", "es": "chorizo de carne magro, en rodajas", "fil": "lean beef sausage, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, sliced", "es": "cebolla, en rodajas", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, sliced", "es": "tomates, en rodajas", "fil": "kamatis, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "locoto or jalapeño chili, sliced", "es": "locoto o jalapeño, en rodajas", "fil": "locoto o jalapeño chili, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "bell peppers, sliced", "es": "morrones, en tiras", "fil": "bell peppers, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "zucchini, sliced", "es": "zapallitos, en rodajas", "fil": "zucchini, hiniwa"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "vegetable oil", "es": "aceite vegetal", "fil": "vegetable oil"}}
+    ],
+    "instructions": {
+      "en": [
+        "Preheat the oven to 425°F (220°C). Toss the bell peppers and zucchini with a little oil and roast 20 minutes.",
+        "Meanwhile, heat the remaining oil in a large skillet and sear the beef strips and sausage until browned, about 8 minutes.",
+        "Add the onion, tomato, and chili to the pan and cook 5 more minutes.",
+        "Spread the roasted vegetables on a large platter and top with the beef, sausage, and onion mixture.",
+        "Serve hot as a shared plate."
+      ],
+      "es": [
+        "Precalienta el horno a 220°C. Mezcla los morrones y los zapallitos con un poco de aceite y hornea 20 minutos.",
+        "Mientras tanto, calienta el resto del aceite en una sartén grande y sella las tiras de carne y el chorizo hasta que estén dorados, unos 8 minutos.",
+        "Agrega la cebolla, el tomate y el ají a la sartén y cocina 5 minutos más.",
+        "Extiende las verduras asadas en una fuente grande y cubre con la mezcla de carne, chorizo y cebolla.",
+        "Sirve caliente como plato para compartir."
+      ],
+      "fil": [
+        "I-preheat ang oven sa 220°C. Haluin ang bell peppers at zucchini na may kaunting oil at i-roast ng 20 minuto.",
+        "Samantala, painitin ang natitirang oil sa malaking kawali at i-sear ang beef strips at sausage hanggang browned, mga 8 minuto.",
+        "Idagdag ang sibuyas, kamatis, at chili sa pan at magluto pa ng 5 minuto.",
+        "Ikalat ang roasted na gulay sa malaking platito at toppingan ng beef, sausage, at sibuyas mixture.",
+        "I-serve na mainit bilang shared plate."
+      ]
+    }
+  },
+  {
+    "slug": "trucha-a-la-plancha-con-ensalada",
+    "id": 604,
+    "cuisine": "bolivian",
+    "meal_category": "dinner",
+    "prep_min": 10,
+    "cook_min": 12,
+    "total_min": 22,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free", "Omega-3"],
+    "nutrition": {"cal": 290, "carbs": 6, "protein": 34, "fat": 15, "fiber": 2, "gi": 5},
+    "name": {
+      "en": "Grilled Trout with Salad",
+      "es": "Trucha a la Plancha con Ensalada",
+      "fil": "Grilled Trout na may Salad"
+    },
+    "description": {
+      "en": "Fresh Lake Titicaca-style trout, pan-seared with garlic and lime -- real Bolivian highland cooking, light and quick.",
+      "es": "Trucha fresca al estilo del Lago Titicaca, dorada en sartén con ajo y limón -- verdadera cocina altiplánica boliviana, liviana y rápida.",
+      "fil": "Fresh na Lake Titicaca-style na trout, pan-seared na may bawang at lime -- real na Bolivian highland cooking, light at mabilis."
+    },
+    "why_it_fits": {
+      "en": "Trout is a lean, omega-3-rich fish with essentially no carbohydrates, so a simple pan-seared fillet has almost no effect on blood sugar. Pairing it with a fresh salad instead of rice or fried potato keeps the whole plate close to zero glycemic impact.",
+      "es": "La trucha es un pescado magro y rico en omega-3 sin prácticamente carbohidratos, por lo que un simple filete dorado en sartén tiene casi ningún efecto en la glucémia. Acompañarla con una ensalada fresca en lugar de arroz o papa frita mantiene todo el plato con un impacto glucémico casi nulo.",
+      "fil": "Ang trout ay lean, omega-3-rich na isda na halos walang carbs, kaya ang simple na pan-seared na fillet ay halos walang epekto sa blood sugar. Ang pag-pair nito sa fresh salad sa halip na kanin o fried potato ay pinapanatili ang buong plato na malapit sa zero glycemic impact."
+    },
+    "ingredients": [
+      {"qty_us": "4", "qty_metric": "4", "text": {"en": "trout fillets", "es": "filetes de trucha", "fil": "trout fillets"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
+      {"qty_us": "6 cups", "qty_metric": "6 cups", "text": {"en": "mixed salad greens", "es": "hojas verdes mixtas", "fil": "mixed salad greens"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "tomato, sliced", "es": "tomate, en rodajas", "fil": "kamatis, hiniwa"}}
+    ],
+    "instructions": {
+      "en": [
+        "Marinate the trout fillets in garlic, half the lime juice, salt, and pepper for 10 minutes.",
+        "Heat the olive oil in a pan over medium-high heat and sear the trout skin-side down first, 3-4 minutes per side, until golden and cooked through.",
+        "Toss the salad greens and tomato with the remaining lime juice.",
+        "Serve the trout hot alongside the fresh salad."
+      ],
+      "es": [
+        "Marina los filetes de trucha en ajo, la mitad del jugo de limón, sal y pimienta durante 10 minutos.",
+        "Calienta el aceite de oliva en una sartén a fuego medio-alto y dora la trucha primero con la piel hacia abajo, 3-4 minutos por lado, hasta que esté dorada y cocida.",
+        "Mezcla las hojas verdes y el tomate con el resto del jugo de limón.",
+        "Sirve la trucha caliente junto a la ensalada fresca."
+      ],
+      "fil": [
+        "I-marinate ang trout fillets sa bawang, kalahati ng lime juice, asin, at paminta ng 10 minuto.",
+        "Painitin ang olive oil sa pan sa medium-high heat at i-sear ang trout na paibaba muna ang balat, 3-4 minuto bawat side, hanggang golden at cooked through.",
+        "Haluin ang salad greens at kamatis kasama ang natitirang lime juice.",
+        "I-serve ang trout na mainit kasama ang fresh salad."
+      ]
+    }
+  },
+  {
+    "slug": "fricase-de-cerdo-liviano",
+    "id": 605,
+    "cuisine": "bolivian",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 45,
+    "total_min": 60,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 310, "carbs": 14, "protein": 32, "fat": 15, "fiber": 3, "gi": 30},
+    "name": {
+      "en": "Light Bolivian Pork Fricasé",
+      "es": "Fricasé de Cerdo Liviano",
+      "fil": "Light na Bolivian Pork Fricasé"
+    },
+    "description": {
+      "en": "A real Bolivian chili-broth pork stew -- traditional fricasé warmth, made with lean pork and a lighter hand on fat, served with extra vegetables instead of the usual bread.",
+      "es": "Un verdadero guiso boliviano de cerdo en caldo de ají -- la calidez tradicional del fricasé, hecho con cerdo magro y una mano más liviana con la grasa, servido con verduras extra en lugar del pan habitual.",
+      "fil": "Isang real na Bolivian chili-broth na pork stew -- traditional na fricasé warmth, gawa sa lean pork at mas magaan na kamay sa fat, served na may extra gulay sa halip na karaniwang tinapay."
+    },
+    "why_it_fits": {
+      "en": "Traditional fricasé is often made with fatty cuts of pork and served with bread on the side. Using lean pork loin, trimming visible fat, and serving it with extra roasted or steamed vegetables instead of bread keeps the real chili-and-hominy broth flavor while lowering both the fat and the fast-digesting carbs in the meal.",
+      "es": "El fricasé tradicional suele hacerse con cortes grasos de cerdo y servirse con pan al costado. Usar lomo de cerdo magro, quitar la grasa visible y servirlo con verduras extra asadas o al vapor en lugar de pan mantiene el verdadero sabor del caldo de ají y mote, mientras reduce tanto la grasa como los carbohidratos de digestión rápida de la comida.",
+      "fil": "Ang traditional na fricasé ay kadalasang gawa sa fatty na cuts ng baboy at served na may tinapay sa tabi. Ang paggamit ng lean pork loin, pagtanggal ng visible fat, at pag-serve nito na may extra roasted o steamed na gulay sa halip na tinapay ay pinapanatili ang real na chili-at-hominy broth flavor habang binabawasan ang fat at mabilis-ma-digest na carbs sa meal."
+    },
+    "ingredients": [
+      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "lean pork loin, cubed", "es": "lomo de cerdo magro, en cubos", "fil": "lean pork loin, dinice"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 g", "text": {"en": "aji panca or mild chili paste", "es": "pasta de ají panca o ají suave", "fil": "aji panca o mild chili paste"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1/2 cup", "qty_metric": "80 g", "text": {"en": "white hominy corn", "es": "mote de maíz blanco", "fil": "white hominy corn"}},
+      {"qty_us": "2 cups", "qty_metric": "150 g", "text": {"en": "green beans, chopped", "es": "porotos verdes, picados", "fil": "green beans, hiniwa"}},
+      {"qty_us": "5 cups", "qty_metric": "1.2 L", "text": {"en": "low-sodium broth", "es": "caldo bajo en sodio", "fil": "low-sodium broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Brown the pork cubes with the onion and garlic in a large pot, about 8 minutes.",
+        "Stir in the chili paste and cook 2 minutes more.",
+        "Add the broth and hominy, bring to a boil, then simmer 30 minutes.",
+        "Add the green beans and simmer 10 more minutes until everything is tender.",
+        "Season with salt to taste and serve hot in deep bowls."
+      ],
+      "es": [
+        "Dora los cubos de cerdo con la cebolla y el ajo en una olla grande, unos 8 minutos.",
+        "Incorpora la pasta de ají y cocina 2 minutos más.",
+        "Agrega el caldo y el mote, lleva a hervor y cocina a fuego lento 30 minutos.",
+        "Agrega los porotos verdes y cocina a fuego lento 10 minutos más hasta que todo esté tierno.",
+        "Sazona con sal a gusto y sirve caliente en platos hondos."
+      ],
+      "fil": [
+        "I-brown ang pork cubes kasama ang sibuyas at bawang sa malaking pot, mga 8 minuto.",
+        "Ihalo ang chili paste at magluto pa ng 2 minuto.",
+        "Idagdag ang broth at hominy, pakuluan, tapos pasimmerin ng 30 minuto.",
+        "Idagdag ang green beans at pasimmerin pa ng 10 minuto hanggang lumambot lahat.",
+        "I-season ng asin ayon sa panlasa at i-serve na mainit sa deep bowls."
+      ]
+    }
+  }
+]

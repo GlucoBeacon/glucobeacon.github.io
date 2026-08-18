@@ -1,0 +1,293 @@
+[
+  {
+    "slug": "ceviche-de-camaron-ecuatoriano",
+    "id": 571,
+    "cuisine": "ecuadorian",
+    "meal_category": "lunch",
+    "prep_min": 20,
+    "cook_min": 10,
+    "total_min": 30,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 200, "carbs": 14, "protein": 24, "fat": 6, "fiber": 2, "gi": 20},
+    "name": {
+      "en": "Ecuadorian Shrimp Ceviche",
+      "es": "Ceviche de Camarón Ecuatoriano",
+      "fil": "Ecuadorian Shrimp Ceviche"
+    },
+    "description": {
+      "en": "Ecuador's tangy tomato-based shrimp ceviche, distinct from its Peruvian cousin -- real coastal flavor, naturally light and protein-rich.",
+      "es": "El sabroso ceviche de camarón ecuatoriano a base de tomate, distinto de su primo peruano -- verdadero sabor costeño, naturalmente liviano y rico en proteína.",
+      "fil": "Ang tangy na tomato-based na shrimp ceviche ng Ecuador, kaiba sa Peruvian cousin nito -- real na coastal flavor, naturally light at protein-rich."
+    },
+    "why_it_fits": {
+      "en": "This ceviche is built from lean shrimp, tomato juice, lime, and onion -- there's no rice or fried garnish weighing it down, so the carbs stay low and the meal digests gently while still delivering a big serving of protein.",
+      "es": "Este ceviche está hecho con camarones magros, jugo de tomate, limón y cebolla -- no hay arroz ni guarnición frita que lo cargue, por lo que los carbohidratos se mantienen bajos y la comida se digiere suavemente mientras aporta una gran porción de proteína.",
+      "fil": "Ang ceviche na ito ay gawa sa lean shrimp, tomato juice, lime, at sibuyas -- walang kanin o fried garnish na nagpapabigat, kaya mababa ang carbs at gently ma-digest ang meal habang nagbibigay pa rin ng malaking serving ng protein."
+    },
+    "ingredients": [
+      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "shrimp, peeled, deveined, and cooked", "es": "camarones, pelados, desvenados y cocidos", "fil": "hipon, balat na tinanggal, buto na tinanggal, at niluto"}},
+      {"qty_us": "1 cup", "qty_metric": "240 ml", "text": {"en": "fresh tomato juice", "es": "jugo de tomate fresco", "fil": "fresh tomato juice"}},
+      {"qty_us": "1/2 cup", "qty_metric": "120 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red onion, thinly sliced", "es": "cebolla morada, en juliana fina", "fil": "red onion, pinong hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "tomato, diced", "es": "tomate, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, sliced, for serving", "es": "aguacate, en rodajas, para servir", "fil": "avocado, hiniwa, pang-serve"}}
+    ],
+    "instructions": {
+      "en": [
+        "Combine the tomato juice, lime juice, red onion, and diced tomato in a large bowl.",
+        "Add the cooked shrimp and toss to coat evenly.",
+        "Refrigerate 15-20 minutes so the flavors meld.",
+        "Stir in fresh cilantro and season with salt to taste.",
+        "Serve chilled with avocado slices on top."
+      ],
+      "es": [
+        "Combina el jugo de tomate, el jugo de limón, la cebolla morada y el tomate en cubos en un bol grande.",
+        "Agrega los camarones cocidos y mezcla para cubrirlos de manera uniforme.",
+        "Refrigera 15-20 minutos para que los sabores se integren.",
+        "Incorpora el cilantro fresco y sazona con sal a gusto.",
+        "Sirve bien frío con rodajas de aguacate encima."
+      ],
+      "fil": [
+        "Ihalo ang tomato juice, lime juice, red onion, at dinice na kamatis sa malaking bowl.",
+        "Idagdag ang lutong hipon at haluin nang pantay.",
+        "Ipalamig ng 15-20 minuto para maghalo ang flavors.",
+        "Ihalo ang fresh cilantro at i-season ng asin ayon sa panlasa.",
+        "I-serve na malamig na may hiniwang avocado sa ibabaw."
+      ]
+    }
+  },
+  {
+    "slug": "encebollado-liviano",
+    "id": 572,
+    "cuisine": "ecuadorian",
+    "meal_category": "lunch",
+    "prep_min": 15,
+    "cook_min": 35,
+    "total_min": 50,
+    "servings": 4,
+    "tags": ["High-Protein", "High-Fiber", "Gluten-Free"],
+    "nutrition": {"cal": 260, "carbs": 22, "protein": 26, "fat": 8, "fiber": 4, "gi": 42},
+    "name": {
+      "en": "Light Fish and Yuca Soup",
+      "es": "Encebollado Liviano",
+      "fil": "Light na Fish and Yuca Soup"
+    },
+    "description": {
+      "en": "Ecuador's beloved fish soup with pickled red onion and cilantro -- real encebollado comfort, rebalanced with a smaller yuca portion and more fish.",
+      "es": "La querida sopa de pescado ecuatoriana con cebolla morada encurtida y cilantro -- el verdadero confort del encebollado, reequilibrado con una porción más pequeña de yuca y más pescado.",
+      "fil": "Ang minamahal na fish soup ng Ecuador na may pickled red onion at cilantro -- real na encebollado comfort, na-rebalance na may mas maliit na yuca portion at mas maraming isda."
+    },
+    "why_it_fits": {
+      "en": "Encebollado traditionally uses a generous amount of yuca, a fast-digesting starchy root. Cutting the yuca back to a modest portion and increasing the fish keeps the real tangy, pickled-onion flavor of the dish while lowering how quickly it raises blood sugar.",
+      "es": "El encebollado tradicionalmente usa una cantidad generosa de yuca, un tubérculo de digestión rápida. Reducir la yuca a una porción moderada y aumentar el pescado mantiene el verdadero sabor ácido y de cebolla encurtida del plato, mientras reduce la rapidez con la que eleva la glucémia.",
+      "fil": "Ang encebollado ay traditionally gumagamit ng malaking halaga ng yuca, isang mabilis-ma-digest na starchy root. Ang pagbawas ng yuca sa katamtamang portion at pagdaragdag ng isda ay pinapanatili ang real na tangy, pickled-onion flavor ng dish habang binabawasan kung gaano kabilis nitong itataas ang blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "firm white fish fillet (such as tuna or albacore), cubed", "es": "filete de pescado blanco firme (como atún o albacora), en cubos", "fil": "firm white fish fillet (tulad ng tuna), dinice"}},
+      {"qty_us": "1 cup", "qty_metric": "150 g", "text": {"en": "yuca, peeled and cubed", "es": "yuca, pelada y en cubos", "fil": "yuca, binalatan at dinice"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red onion, thinly sliced and pickled in lime juice", "es": "cebolla morada, en juliana fina y encurtida en jugo de limón", "fil": "red onion, pinong hiniwa at pinickle sa lime juice"}},
+      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
+      {"qty_us": "6 cups", "qty_metric": "1.4 L", "text": {"en": "low-sodium fish or vegetable broth", "es": "caldo de pescado o verduras bajo en sodio", "fil": "low-sodium fish o vegetable broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Sauté the onion and tomato in a large pot until soft, about 5 minutes.",
+        "Add the broth and yuca, and simmer 20 minutes until the yuca is tender.",
+        "Add the fish and simmer 8-10 more minutes until just cooked through.",
+        "Season with salt and pepper, and ladle into bowls.",
+        "Top each bowl with pickled red onion and fresh cilantro before serving."
+      ],
+      "es": [
+        "Saltea la cebolla y el tomate en una olla grande hasta que estén blandos, unos 5 minutos.",
+        "Agrega el caldo y la yuca, y cocina a fuego lento 20 minutos hasta que la yuca esté tierna.",
+        "Agrega el pescado y cocina a fuego lento 8-10 minutos más hasta que esté apenas cocido.",
+        "Sazona con sal y pimienta, y sirve en platos hondos.",
+        "Corona cada plato con cebolla morada encurtida y cilantro fresco antes de servir."
+      ],
+      "fil": [
+        "Igisa ang sibuyas at kamatis sa malaking pot hanggang lumambot, mga 5 minuto.",
+        "Idagdag ang broth at yuca, at pasimmerin ng 20 minuto hanggang lumambot ang yuca.",
+        "Idagdag ang isda at pasimmerin pa ng 8-10 minuto hanggang maluto.",
+        "I-season ng asin at paminta, at isalin sa mga mangkok.",
+        "Topping ang bawat mangkok ng pickled red onion at fresh cilantro bago i-serve."
+      ]
+    }
+  },
+  {
+    "slug": "ensalada-de-quinoa-con-aguacate-ecuatoriana",
+    "id": 573,
+    "cuisine": "ecuadorian",
+    "meal_category": "lunch",
+    "prep_min": 15,
+    "cook_min": 15,
+    "total_min": 30,
+    "servings": 4,
+    "tags": ["Vegetarian", "Vegan", "High-Fiber", "Gluten-Free"],
+    "nutrition": {"cal": 260, "carbs": 30, "protein": 8, "fat": 12, "fiber": 7, "gi": 42},
+    "name": {
+      "en": "Quinoa and Avocado Salad",
+      "es": "Ensalada de Quinoa con Aguacate",
+      "fil": "Quinoa and Avocado Salad"
+    },
+    "description": {
+      "en": "A real Andean-style salad built on quinoa, one of Ecuador's traditional highland grains, with creamy avocado, corn, and lime.",
+      "es": "Una verdadera ensalada al estilo andino hecha con quinua, uno de los granos tradicionales de altura del Ecuador, con aguacate cremoso, choclo y limón.",
+      "fil": "Isang real na Andean-style salad na base sa quinoa, isa sa traditional na highland grains ng Ecuador, na may creamy avocado, corn, at lime."
+    },
+    "why_it_fits": {
+      "en": "Quinoa is a whole grain with a moderate glycemic index and real fiber and protein content, unlike refined white rice. Pairing it with avocado's healthy fat and fiber slows digestion further, making this a naturally gentle option on blood sugar.",
+      "es": "La quinua es un grano integral con un índice glucémico moderado y un contenido real de fibra y proteína, a diferencia del arroz blanco refinado. Combinarla con la grasa saludable y la fibra del aguacate ralentiza aún más la digestión, convirtiéndola en una opción naturalmente suave para la glucémia.",
+      "fil": "Ang quinoa ay whole grain na may moderate glycemic index at real na fiber at protein content, hindi tulad ng refined white rice. Ang pag-pair nito sa healthy fat at fiber ng avocado ay lalo pang nagpapabagal sa digestion, na ginagawa itong naturally gentle na option sa blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "2 cups", "qty_metric": "370 g", "text": {"en": "cooked quinoa, cooled", "es": "quinua cocida, fría", "fil": "lutong quinoa, palamig na"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, diced", "es": "aguacate, en cubos", "fil": "avocado, dinice"}},
+      {"qty_us": "1/2 cup", "qty_metric": "75 g", "text": {"en": "corn kernels", "es": "granos de choclo", "fil": "corn kernels"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "tomato, diced", "es": "tomate, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "1/4", "qty_metric": "1/4", "text": {"en": "red onion, finely chopped", "es": "cebolla morada, picada fina", "fil": "red onion, pinong hiniwa"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+    ],
+    "instructions": {
+      "en": [
+        "Combine the quinoa, avocado, corn, tomato, and red onion in a large bowl.",
+        "Whisk together the lime juice and olive oil, and pour over the salad.",
+        "Toss gently to combine, being careful not to mash the avocado.",
+        "Season with salt and pepper to taste, and serve at room temperature or chilled."
+      ],
+      "es": [
+        "Combina la quinua, el aguacate, el choclo, el tomate y la cebolla morada en un bol grande.",
+        "Bate el jugo de limón con el aceite de oliva, y vierte sobre la ensalada.",
+        "Mezcla con cuidado para combinar, sin aplastar el aguacate.",
+        "Sazona con sal y pimienta a gusto, y sirve a temperatura ambiente o fría."
+      ],
+      "fil": [
+        "Ihalo ang quinoa, avocado, corn, kamatis, at red onion sa malaking bowl.",
+        "I-whisk ang lime juice at olive oil, at ibuhos sa salad.",
+        "Haluin nang dahan-dahan, iwasang madurog ang avocado.",
+        "I-season ng asin at paminta ayon sa panlasa, at i-serve sa room temperature o malamig."
+      ]
+    }
+  },
+  {
+    "slug": "seco-de-pollo-ligero",
+    "id": 574,
+    "cuisine": "ecuadorian",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 35,
+    "total_min": 50,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 320, "carbs": 12, "protein": 34, "fat": 15, "fiber": 3, "gi": 25},
+    "name": {
+      "en": "Light Seco de Pollo",
+      "es": "Seco de Pollo Ligero",
+      "fil": "Light na Seco de Pollo"
+    },
+    "description": {
+      "en": "Ecuador's classic cilantro-braised chicken stew -- real seco flavor, served with extra vegetables instead of the traditional heaping side of rice.",
+      "es": "El clásico guiso ecuatoriano de pollo braseado en cilantro -- el verdadero sabor del seco, servido con verduras extra en lugar del tradicional montón de arroz.",
+      "fil": "Ang classic na cilantro-braised chicken stew ng Ecuador -- real na seco flavor, served na may extra gulay sa halip na traditional na malaking side ng kanin."
+    },
+    "why_it_fits": {
+      "en": "Seco de pollo itself -- chicken braised in a cilantro, garlic, and beer sauce -- has very little carbohydrate on its own. Restaurant versions typically pile a large mound of white rice next to it; skipping the rice and serving it with roasted or sautéed vegetables instead keeps the real braised-chicken flavor while dramatically lowering the meal's glycemic load.",
+      "es": "El seco de pollo en sí -- pollo braseado en una salsa de cilantro, ajo y cerveza -- tiene muy pocos carbohidratos por sí solo. Las versiones de restaurante suelen apilar un gran montículo de arroz blanco al lado; omitir el arroz y servirlo con verduras asadas o salteadas en su lugar mantiene el verdadero sabor del pollo braseado mientras reduce drásticamente la carga glucémica de la comida.",
+      "fil": "Ang seco de pollo mismo -- chicken na braised sa cilantro, bawang, at beer sauce -- ay may napakakaunting carbohydrate mag-isa. Ang restaurant versions ay kadalasang naglalagay ng malaking bunton ng white rice sa tabi; ang pag-skip sa kanin at pag-serve nito na may roasted o sautéed na gulay sa halip ay pinapanatili ang real na braised-chicken flavor habang malaki ang bawas sa glycemic load ng meal."
+    },
+    "ingredients": [
+      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "boneless, skinless chicken thighs", "es": "muslos de pollo sin hueso y sin piel", "fil": "boneless, skinless chicken thighs"}},
+      {"qty_us": "1 cup", "qty_metric": "40 g", "text": {"en": "fresh cilantro, blended into a paste with a little water", "es": "cilantro fresco, licuado en pasta con un poco de agua", "fil": "fresh cilantro, binlend na paste na may kaunting tubig"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1 cup", "qty_metric": "240 ml", "text": {"en": "light beer or low-sodium chicken broth", "es": "cerveza liviana o caldo de pollo bajo en sodio", "fil": "light beer o low-sodium chicken broth"}},
+      {"qty_us": "3 cups", "qty_metric": "3 cups", "text": {"en": "mixed roasted vegetables (zucchini, bell pepper, onion), for serving", "es": "verduras mixtas asadas (zapallito, morrón, cebolla), para servir", "fil": "halo-halong roasted na gulay (zucchini, bell pepper, sibuyas), pang-serve"}}
+    ],
+    "instructions": {
+      "en": [
+        "Sauté the onion and garlic in a large pot until soft, about 5 minutes.",
+        "Add the chicken thighs and brown lightly on both sides.",
+        "Stir in the cilantro paste and beer or broth, cover, and simmer 25-30 minutes until the chicken is tender.",
+        "Season with salt and pepper to taste.",
+        "Serve hot alongside a generous portion of roasted mixed vegetables instead of rice."
+      ],
+      "es": [
+        "Saltea la cebolla y el ajo en una olla grande hasta que estén blandos, unos 5 minutos.",
+        "Agrega los muslos de pollo y dora ligeramente por ambos lados.",
+        "Incorpora la pasta de cilantro y la cerveza o el caldo, tapa y cocina a fuego lento 25-30 minutos hasta que el pollo esté tierno.",
+        "Sazona con sal y pimienta a gusto.",
+        "Sirve caliente junto a una porción generosa de verduras mixtas asadas en lugar de arroz."
+      ],
+      "fil": [
+        "Igisa ang sibuyas at bawang sa malaking pot hanggang lumambot, mga 5 minuto.",
+        "Idagdag ang chicken thighs at magaan na i-brown sa parehong side.",
+        "Ihalo ang cilantro paste at beer o broth, takpan, at pasimmerin ng 25-30 minuto hanggang lumambot ang chicken.",
+        "I-season ng asin at paminta ayon sa panlasa.",
+        "I-serve na mainit kasama ang malaking portion ng roasted na halo-halong gulay sa halip na kanin."
+      ]
+    }
+  },
+  {
+    "slug": "locro-de-papa-con-coliflor",
+    "id": 575,
+    "cuisine": "ecuadorian",
+    "meal_category": "lunch",
+    "prep_min": 15,
+    "cook_min": 30,
+    "total_min": 45,
+    "servings": 4,
+    "tags": ["Vegetarian", "Gluten-Free", "Low-Carb"],
+    "nutrition": {"cal": 220, "carbs": 18, "protein": 10, "fat": 12, "fiber": 4, "gi": 40},
+    "name": {
+      "en": "Potato and Cauliflower Cheese Soup",
+      "es": "Locro de Papa con Coliflor",
+      "fil": "Potato and Cauliflower Cheese Soup"
+    },
+    "description": {
+      "en": "A lighter take on Ecuador's beloved potato-and-cheese soup -- real locro warmth and avocado garnish, with most of the potato swapped for cauliflower.",
+      "es": "Una versión más liviana de la querida sopa ecuatoriana de papa y queso -- la verdadera calidez del locro y su guarnición de aguacate, con la mayor parte de la papa reemplazada por coliflor.",
+      "fil": "Isang mas light na bersyon ng minamahal na potato-and-cheese soup ng Ecuador -- real na locro warmth at avocado garnish, na may karamihan ng potato pinalitan ng cauliflower."
+    },
+    "why_it_fits": {
+      "en": "Traditional locro is made almost entirely from potato, which is high-GI and easy to overeat in a creamy, cheesy soup. Replacing most of the potato with cauliflower -- keeping just enough for authentic texture and flavor -- cuts the carb load significantly while keeping the same comforting, cheesy soup everyone recognizes.",
+      "es": "El locro tradicional está hecho casi por completo de papa, que tiene IG alto y es fácil de comer en exceso en una sopa cremosa y quesosa. Reemplazar la mayor parte de la papa por coliflor -- conservando solo la suficiente para una textura y sabor auténticos -- reduce significativamente la carga de carbohidratos, manteniendo la misma sopa reconfortante y quesosa que todos reconocen.",
+      "fil": "Ang traditional na locro ay gawa halos lahat sa potato, na high-GI at madaling ma-overeat sa creamy, cheesy na soup. Ang pagpalit sa karamihan ng potato ng cauliflower -- na may sapat lang para sa authentic texture at flavor -- ay malaking bawas sa carb load habang pinapanatili ang parehong comforting, cheesy na soup na kilala ng lahat."
+    },
+    "ingredients": [
+      {"qty_us": "4 cups", "qty_metric": "500 g", "text": {"en": "cauliflower florets", "es": "coliflor en floretes", "fil": "cauliflower florets"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small potato, cubed", "es": "papa pequeña, en cubos", "fil": "maliit na potato, dinice"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground achiote or paprika", "es": "achiote molido o pimentón", "fil": "ground achiote o paprika"}},
+      {"qty_us": "1/2 cup", "qty_metric": "60 g", "text": {"en": "shredded low-fat mozzarella or queso fresco", "es": "queso mozzarella bajo en grasa o queso fresco, rallado", "fil": "shredded low-fat mozzarella o queso fresco"}},
+      {"qty_us": "4 cups", "qty_metric": "950 ml", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, sliced, for garnish", "es": "aguacate, en rodajas, para decorar", "fil": "avocado, hiniwa, pang-garnish"}}
+    ],
+    "instructions": {
+      "en": [
+        "Sauté the onion with achiote or paprika in a pot until soft, about 5 minutes.",
+        "Add the cauliflower, potato, and broth, and simmer 20 minutes until very tender.",
+        "Mash roughly with a potato masher, leaving some texture rather than a smooth puree.",
+        "Stir in the shredded cheese until melted.",
+        "Season with salt to taste, and serve topped with avocado slices."
+      ],
+      "es": [
+        "Saltea la cebolla con achiote o pimentón en una olla hasta que esté blanda, unos 5 minutos.",
+        "Agrega la coliflor, la papa y el caldo, y cocina a fuego lento 20 minutos hasta que estén muy tiernas.",
+        "Machaca de forma tosca con un pisapapas, dejando algo de textura en lugar de un puré suave.",
+        "Incorpora el queso rallado hasta que se derrita.",
+        "Sazona con sal a gusto y sirve coronado con rodajas de aguacate."
+      ],
+      "fil": [
+        "Igisa ang sibuyas na may achiote o paprika sa pot hanggang lumambot, mga 5 minuto.",
+        "Idagdag ang cauliflower, potato, at broth, at pasimmerin ng 20 minuto hanggang malambot na.",
+        "I-mash nang bahagya gamit ang potato masher, iiwan ang ilang texture sa halip na smooth puree.",
+        "Ihalo ang shredded cheese hanggang matunaw.",
+        "I-season ng asin ayon sa panlasa, at i-serve na may toppings na hiniwang avocado."
+      ]
+    }
+  }
+]

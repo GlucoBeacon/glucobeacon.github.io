@@ -139,7 +139,17 @@
     'ajiaco-ligero', 'sancocho-de-pollo-liviano', 'ensalada-de-aguacate-y-tomate',
     'pescado-a-la-plancha-con-ensalada-colombiana', 'lentejas-guisadas-colombianas',
     'caldillo-de-congrio', 'ensalada-chilena', 'pastel-de-choclo-liviano',
-    'pollo-al-horno-con-porotos-verdes', 'charquican-liviano'
+    'pollo-al-horno-con-porotos-verdes', 'charquican-liviano',
+    // Regional recipes (Ecuador, Uruguay, Paraguay, Bolivia) -- third wave,
+    // same pattern as the earlier waves above.
+    'ceviche-de-camaron-ecuatoriano', 'encebollado-liviano', 'ensalada-de-quinoa-con-aguacate-ecuatoriana',
+    'seco-de-pollo-ligero', 'locro-de-papa-con-coliflor',
+    'chivito-ligero', 'ensalada-de-garbanzos-uruguaya', 'pescado-a-la-parrilla-con-ensalada-uruguaya',
+    'chupin-de-pescado-liviano', 'puchero-liviano',
+    'sopa-paraguaya-liviana', 'vori-vori-liviano', 'ensalada-de-poroto-paraguaya',
+    'pollo-al-horno-con-verduras-paraguayo', 'guiso-de-lentejas-paraguayo',
+    'sopa-de-mani-liviana', 'ensalada-de-quinoa-boliviana', 'pique-a-lo-macho-ligero',
+    'trucha-a-la-plancha-con-ensalada', 'fricase-de-cerdo-liviano'
   ];
   FIL_AVAILABLE.push('/recipes/');
   FIL_AVAILABLE.push('/recipes/shopping-list.html');

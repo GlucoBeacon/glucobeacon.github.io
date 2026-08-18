@@ -1,0 +1,281 @@
+[
+  {
+    "slug": "chivito-ligero",
+    "id": 581,
+    "cuisine": "uruguayan",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 12,
+    "total_min": 27,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 380, "carbs": 8, "protein": 36, "fat": 22, "fiber": 3, "gi": 10},
+    "name": {
+      "en": "Light Chivito Plate",
+      "es": "Chivito Ligero",
+      "fil": "Light na Chivito Plate"
+    },
+    "description": {
+      "en": "Uruguay's iconic steak sandwich, deconstructed onto a plate -- real chivito toppings (steak, egg, tomato, olives) over a bed of greens instead of a bun.",
+      "es": "El icónico sándwich de chivito uruguayo, deconstruido en un plato -- los verdaderos aderezos del chivito (bife, huevo, tomate, aceitunas) sobre una cama de verdes en lugar de pan.",
+      "fil": "Ang iconic na chivito sandwich ng Uruguay, dine-deconstruct papuntang plato -- real na chivito toppings (steak, itlog, kamatis, olives) sa ibabaw ng greens sa halip na bun."
+    },
+    "why_it_fits": {
+      "en": "The chivito sandwich's real flavor comes from its toppings -- thin-sliced steak, egg, tomato, ham, and olives -- not the bread. Serving those same toppings over a big bed of salad greens instead of a large white bun keeps all the familiar flavor while removing the single biggest source of fast-digesting carbs in the dish.",
+      "es": "El verdadero sabor del sándwich de chivito viene de sus aderezos -- bife en fetas finas, huevo, tomate, jamón y aceitunas -- no del pan. Servir esos mismos aderezos sobre una gran cama de hojas verdes en lugar de un gran pan blanco mantiene todo el sabor familiar mientras elimina la mayor fuente de carbohidratos de digestión rápida del plato.",
+      "fil": "Ang real na lasa ng chivito sandwich ay galing sa toppings nito -- manipis na steak, itlog, kamatis, ham, at olives -- hindi sa tinapay. Ang pag-serve ng parehong toppings sa ibabaw ng malaking bed ng salad greens sa halip na malaking white bun ay pinapanatili ang lahat ng pamilyar na lasa habang tinatanggal ang pinakamalaking source ng mabilis-ma-digest na carbs sa dish."
+    },
+    "ingredients": [
+      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "beef sirloin, thinly sliced and grilled", "es": "bife de lomo, en fetas finas y a la parrilla", "fil": "beef sirloin, pinong hiniwa at inihaw"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "hard-boiled eggs, sliced", "es": "huevos duros, en rodajas", "fil": "hard-boiled na itlog, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, sliced", "es": "tomates, en rodajas", "fil": "kamatis, hiniwa"}},
+      {"qty_us": "8", "qty_metric": "8", "text": {"en": "green olives", "es": "aceitunas verdes", "fil": "green olives"}},
+      {"qty_us": "2 oz", "qty_metric": "60 g", "text": {"en": "lean ham, thinly sliced (optional)", "es": "jamón magro, en fetas finas (opcional)", "fil": "lean ham, pinong hiniwa (optional)"}},
+      {"qty_us": "8 cups", "qty_metric": "8 cups", "text": {"en": "mixed salad greens", "es": "hojas verdes mixtas", "fil": "mixed salad greens"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil and red wine vinegar dressing", "es": "aderezo de aceite de oliva y vinagre de vino tinto", "fil": "olive oil at red wine vinegar dressing"}}
+    ],
+    "instructions": {
+      "en": [
+        "Season the steak slices with salt and pepper and grill or pan-sear quickly, about 2 minutes per side.",
+        "Arrange the salad greens on plates as a base.",
+        "Top with the grilled steak, sliced egg, tomato, olives, and ham.",
+        "Drizzle with the olive oil and vinegar dressing and serve immediately."
+      ],
+      "es": [
+        "Sazona las fetas de bife con sal y pimienta y cocina a la parrilla o en sartén rápidamente, unos 2 minutos por lado.",
+        "Acomoda las hojas verdes en los platos como base.",
+        "Cubre con el bife a la parrilla, el huevo en rodajas, el tomate, las aceitunas y el jamón.",
+        "Rocía con el aderezo de aceite de oliva y vinagre y sirve de inmediato."
+      ],
+      "fil": [
+        "I-season ang steak slices ng asin at paminta at i-grill o i-pan-sear nang mabilis, mga 2 minuto bawat side.",
+        "Ihanay ang salad greens sa plato bilang base.",
+        "Toppingan ng grilled steak, hiniwang itlog, kamatis, olives, at ham.",
+        "Ibuhos ang olive oil at vinegar dressing at i-serve agad."
+      ]
+    }
+  },
+  {
+    "slug": "ensalada-de-garbanzos-uruguaya",
+    "id": 582,
+    "cuisine": "uruguayan",
+    "meal_category": "lunch",
+    "prep_min": 15,
+    "cook_min": 0,
+    "total_min": 15,
+    "servings": 4,
+    "tags": ["Vegetarian", "High-Fiber", "Gluten-Free", "Plant-Protein"],
+    "nutrition": {"cal": 240, "carbs": 26, "protein": 10, "fat": 10, "fiber": 8, "gi": 28},
+    "name": {
+      "en": "Uruguayan Chickpea Salad",
+      "es": "Ensalada de Garbanzos Uruguaya",
+      "fil": "Uruguayan Chickpea Salad"
+    },
+    "description": {
+      "en": "A real, everyday Uruguayan chickpea salad with bell pepper, onion, and parsley -- simple, hearty, and naturally slow-digesting.",
+      "es": "Una verdadera y cotidiana ensalada uruguaya de garbanzos con morrón, cebolla y perejil -- sencilla, contundente y naturalmente de digestión lenta.",
+      "fil": "Isang real, everyday na Uruguayan chickpea salad na may bell pepper, sibuyas, at parsley -- simple, hearty, at naturally slow-digesting."
+    },
+    "why_it_fits": {
+      "en": "Chickpeas have a low glycemic index and a strong fiber-to-carb ratio, so they release their energy slowly rather than in a quick spike. This salad relies entirely on the chickpeas as its carb source rather than bread or rice, making it a naturally gentle option on blood sugar.",
+      "es": "Los garbanzos tienen un índice glucémico bajo y una fuerte proporción de fibra a carbohidratos, por lo que liberan su energía lentamente en lugar de en un pico rápido. Esta ensalada depende por completo de los garbanzos como fuente de carbohidratos en lugar de pan o arroz, lo que la convierte en una opción naturalmente suave para la glucémia.",
+      "fil": "Ang chickpeas ay may mababang glycemic index at malakas na fiber-to-carb ratio, kaya mabagal itong nagre-release ng energy sa halip na mabilis na spike. Ang salad na ito ay umaasa lahat sa chickpeas bilang carb source sa halip na tinapay o kanin, na ginagawa itong naturally gentle na option sa blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "3 cups", "qty_metric": "500 g", "text": {"en": "cooked chickpeas", "es": "garbanzos cocidos", "fil": "lutong chickpeas"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, diced", "es": "morrón rojo, en cubos", "fil": "red bell pepper, dinice"}},
+      {"qty_us": "1/2", "qty_metric": "1/2", "text": {"en": "red onion, finely chopped", "es": "cebolla morada, picada fina", "fil": "red onion, pinong hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "tomato, diced", "es": "tomate, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh parsley, chopped", "es": "perejil fresco, picado", "fil": "fresh parsley, hiniwa"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "olive oil and red wine vinegar dressing", "es": "aderezo de aceite de oliva y vinagre de vino tinto", "fil": "olive oil at red wine vinegar dressing"}}
+    ],
+    "instructions": {
+      "en": [
+        "Combine the chickpeas, bell pepper, red onion, tomato, and parsley in a large bowl.",
+        "Toss with the olive oil and vinegar dressing.",
+        "Season with salt and pepper to taste.",
+        "Let it sit 10 minutes before serving so the flavors meld."
+      ],
+      "es": [
+        "Combina los garbanzos, el morrón, la cebolla morada, el tomate y el perejil en un bol grande.",
+        "Mezcla con el aderezo de aceite de oliva y vinagre.",
+        "Sazona con sal y pimienta a gusto.",
+        "Deja reposar 10 minutos antes de servir para que los sabores se integren."
+      ],
+      "fil": [
+        "Ihalo ang chickpeas, bell pepper, red onion, kamatis, at parsley sa malaking bowl.",
+        "Haluin kasama ang olive oil at vinegar dressing.",
+        "I-season ng asin at paminta ayon sa panlasa.",
+        "Hayaang tumigil ng 10 minuto bago i-serve para maghalo ang flavors."
+      ]
+    }
+  },
+  {
+    "slug": "pescado-a-la-parrilla-con-ensalada-uruguaya",
+    "id": 583,
+    "cuisine": "uruguayan",
+    "meal_category": "dinner",
+    "prep_min": 10,
+    "cook_min": 12,
+    "total_min": 22,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 280, "carbs": 6, "protein": 34, "fat": 14, "fiber": 2, "gi": 5},
+    "name": {
+      "en": "Grilled Fish with Uruguayan Salad",
+      "es": "Pescado a la Parrilla con Ensalada",
+      "fil": "Grilled Fish na may Uruguayan Salad"
+    },
+    "description": {
+      "en": "A simple grilled fish fillet served with a fresh Uruguayan-style salad -- real coastal simplicity, light and quick for a weeknight.",
+      "es": "Un sencillo filete de pescado a la parrilla servido con una fresca ensalada al estilo uruguayo -- verdadera simplicidad costera, liviana y rápida para entre semana.",
+      "fil": "Isang simple na grilled fish fillet na served na may fresh na Uruguayan-style salad -- real na coastal simplicity, light at mabilis para sa weeknight."
+    },
+    "why_it_fits": {
+      "en": "A grilled fish fillet with olive oil and lemon has almost no carbohydrates on its own, and pairing it with a fresh vegetable salad instead of rice or fries keeps the entire plate close to zero glycemic impact while still being a substantial, real dinner.",
+      "es": "Un filete de pescado a la parrilla con aceite de oliva y limón prácticamente no tiene carbohidratos por sí solo, y acompañarlo con una ensalada fresca de verduras en lugar de arroz o papas fritas mantiene todo el plato con un impacto glucémico casi nulo, sin dejar de ser una cena real y sustanciosa.",
+      "fil": "Ang grilled na fish fillet na may olive oil at lemon ay halos walang carbs mag-isa, at ang pag-pair nito sa fresh vegetable salad sa halip na kanin o fries ay pinapanatili ang buong plato na malapit sa zero glycemic impact habang isa pa ring substantial, real na dinner."
+    },
+    "ingredients": [
+      {"qty_us": "4", "qty_metric": "4", "text": {"en": "white fish fillets (such as merluza or sole)", "es": "filetes de pescado blanco (como merluza o lenguado)", "fil": "white fish fillets (tulad ng merluza o sole)"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "fresh lemon juice", "es": "jugo de limón fresco", "fil": "fresh lemon juice"}},
+      {"qty_us": "6 cups", "qty_metric": "6 cups", "text": {"en": "mixed salad greens", "es": "hojas verdes mixtas", "fil": "mixed salad greens"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "tomato, sliced", "es": "tomate, en rodajas", "fil": "kamatis, hiniwa"}},
+      {"qty_us": "1/2", "qty_metric": "1/2", "text": {"en": "red onion, thinly sliced", "es": "cebolla morada, en juliana fina", "fil": "red onion, pinong hiniwa"}}
+    ],
+    "instructions": {
+      "en": [
+        "Season the fish fillets with salt, pepper, and a little olive oil.",
+        "Grill or pan-sear over medium-high heat, about 3-4 minutes per side, until golden and cooked through.",
+        "Toss the salad greens, tomato, and red onion with the remaining olive oil and lemon juice.",
+        "Serve the fish hot alongside the fresh salad."
+      ],
+      "es": [
+        "Sazona los filetes de pescado con sal, pimienta y un poco de aceite de oliva.",
+        "Cocina a la parrilla o en sartén a fuego medio-alto, unos 3-4 minutos por lado, hasta que estén dorados y cocidos.",
+        "Mezcla las hojas verdes, el tomate y la cebolla morada con el resto del aceite de oliva y el jugo de limón.",
+        "Sirve el pescado caliente junto a la ensalada fresca."
+      ],
+      "fil": [
+        "I-season ang fish fillets ng asin, paminta, at kaunting olive oil.",
+        "I-grill o i-pan-sear sa medium-high heat, mga 3-4 minuto bawat side, hanggang golden at cooked through.",
+        "Haluin ang salad greens, kamatis, at red onion kasama ang natitirang olive oil at lemon juice.",
+        "I-serve ang isda na mainit kasama ang fresh salad."
+      ]
+    }
+  },
+  {
+    "slug": "chupin-de-pescado-liviano",
+    "id": 584,
+    "cuisine": "uruguayan",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 25,
+    "total_min": 40,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 260, "carbs": 12, "protein": 30, "fat": 10, "fiber": 3, "gi": 20},
+    "name": {
+      "en": "Light Uruguayan Fish Stew",
+      "es": "Chupín de Pescado Liviano",
+      "fil": "Light na Uruguayan Fish Stew"
+    },
+    "description": {
+      "en": "A real Uruguayan tomato-based fish stew with bell pepper and white wine -- everyday coastal comfort, kept light and vegetable-forward.",
+      "es": "Un verdadero guiso uruguayo de pescado a base de tomate con morrón y vino blanco -- confort costero de todos los días, mantenido liviano y con protagonismo de verduras.",
+      "fil": "Isang real na Uruguayan tomato-based na fish stew na may bell pepper at white wine -- everyday coastal comfort, pinananatiling light at vegetable-forward."
+    },
+    "why_it_fits": {
+      "en": "This stew is built on a tomato and vegetable base rather than potato or rice, so most of its bulk comes from low-GI vegetables and lean fish. That keeps the dish satisfying and full-flavored while its overall carbohydrate content -- and therefore its impact on blood sugar -- stays modest.",
+      "es": "Este guiso está hecho sobre una base de tomate y verduras en lugar de papa o arroz, por lo que la mayor parte de su volumen proviene de verduras de IG bajo y pescado magro. Eso mantiene el plato satisfactorio y lleno de sabor mientras su contenido general de carbohidratos -- y por lo tanto su impacto en la glucémia -- se mantiene moderado.",
+      "fil": "Ang stew na ito ay gawa sa tomato at vegetable base sa halip na potato o kanin, kaya karamihan ng bulk nito ay galing sa low-GI na gulay at lean fish. Nagpapanatili iyon ng dish na satisfying at full-flavored habang ang overall carbohydrate content nito -- at kaya ang epekto sa blood sugar -- ay nananatiling katamtaman."
+    },
+    "ingredients": [
+      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "firm white fish fillets, cut into chunks", "es": "filetes de pescado blanco firme, en trozos", "fil": "firm white fish fillets, hiniwa na chunks"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, sliced", "es": "morrón rojo, en tiras", "fil": "red bell pepper, hiniwa"}},
+      {"qty_us": "3", "qty_metric": "3", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1/2 cup", "qty_metric": "120 ml", "text": {"en": "dry white wine (optional)", "es": "vino blanco seco (opcional)", "fil": "dry white wine (optional)"}},
+      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh parsley, chopped", "es": "perejil fresco, picado", "fil": "fresh parsley, hiniwa"}}
+    ],
+    "instructions": {
+      "en": [
+        "Sauté the onion, bell pepper, and garlic in a large pot until soft, about 6 minutes.",
+        "Add the tomato and white wine, and simmer 10 minutes until slightly reduced.",
+        "Gently add the fish chunks and simmer 8-10 more minutes until just cooked through.",
+        "Season with salt and pepper, stir in fresh parsley, and serve hot."
+      ],
+      "es": [
+        "Saltea la cebolla, el morrón y el ajo en una olla grande hasta que estén blandos, unos 6 minutos.",
+        "Agrega el tomate y el vino blanco, y cocina a fuego lento 10 minutos hasta que reduzca un poco.",
+        "Agrega suavemente los trozos de pescado y cocina a fuego lento 8-10 minutos más hasta que estén apenas cocidos.",
+        "Sazona con sal y pimienta, incorpora el perejil fresco y sirve caliente."
+      ],
+      "fil": [
+        "Igisa ang sibuyas, bell pepper, at bawang sa malaking pot hanggang lumambot, mga 6 minuto.",
+        "Idagdag ang kamatis at white wine, at pasimmerin ng 10 minuto hanggang bahagyang lumapot.",
+        "Dahan-dahang idagdag ang fish chunks at pasimmerin pa ng 8-10 minuto hanggang maluto.",
+        "I-season ng asin at paminta, ihalo ang fresh parsley, at i-serve na mainit."
+      ]
+    }
+  },
+  {
+    "slug": "puchero-liviano",
+    "id": 585,
+    "cuisine": "uruguayan",
+    "meal_category": "dinner",
+    "prep_min": 20,
+    "cook_min": 60,
+    "total_min": 80,
+    "servings": 5,
+    "tags": ["High-Fiber", "High-Protein", "Gluten-Free"],
+    "nutrition": {"cal": 340, "carbs": 24, "protein": 32, "fat": 12, "fiber": 6, "gi": 40},
+    "name": {
+      "en": "Light Uruguayan Puchero",
+      "es": "Puchero Liviano",
+      "fil": "Light na Uruguayan Puchero"
+    },
+    "description": {
+      "en": "Uruguay's traditional boiled dinner of beef and vegetables -- real puchero comfort, rebalanced with more cabbage and green beans and a lighter hand on potato and squash.",
+      "es": "El tradicional puchero uruguayo hervido de carne y verduras -- el verdadero confort del puchero, reequilibrado con más repollo y porotos verdes y una mano más liviana con la papa y el zapallo.",
+      "fil": "Ang traditional na boiled dinner ng Uruguay na beef at gulay -- real na puchero comfort, na-rebalance na may mas maraming cabbage at green beans at mas magaan na kamay sa potato at squash."
+    },
+    "why_it_fits": {
+      "en": "A traditional puchero simmers several starchy vegetables together in one pot alongside the meat. Leaning the vegetable mix more toward cabbage and green beans -- both very low-GI -- while keeping just a modest amount of potato and squash preserves the dish's real, hearty character while lowering its overall glycemic load.",
+      "es": "Un puchero tradicional cocina a fuego lento varias verduras con almidón junto con la carne en una sola olla. Inclinar la mezcla de verduras más hacia el repollo y los porotos verdes -- ambos de IG muy bajo -- mientras se mantiene solo una cantidad moderada de papa y zapallo conserva el verdadero carácter contundente del plato mientras reduce su carga glucémica general.",
+      "fil": "Ang traditional na puchero ay pinasisimmer ang ilang starchy na gulay nang magkasama sa isang pot kasama ang meat. Ang pag-lean ng vegetable mix papunta sa cabbage at green beans -- pareho napakababa sa GI -- habang may katamtamang halaga lang ng potato at squash ay pinapanatili ang real, hearty na character ng dish habang binabawasan ang overall glycemic load nito."
+    },
+    "ingredients": [
+      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "lean beef stew meat, trimmed", "es": "carne magra para guiso, sin grasa", "fil": "lean beef na pang-guiso, tinanggalan ng taba"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small potato, cubed", "es": "papa pequeña, en cubos", "fil": "maliit na potato, dinice"}},
+      {"qty_us": "2 cups", "qty_metric": "300 g", "text": {"en": "pumpkin or winter squash, cubed", "es": "zapallo, en cubos", "fil": "kalabasa, dinice"}},
+      {"qty_us": "2 cups", "qty_metric": "150 g", "text": {"en": "cabbage, chopped", "es": "repollo, picado", "fil": "repolyo, hiniwa"}},
+      {"qty_us": "1 cup", "qty_metric": "100 g", "text": {"en": "green beans, trimmed", "es": "porotos verdes, limpios", "fil": "green beans, nilinis"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "carrots, sliced", "es": "zanahorias, en rodajas", "fil": "carrots, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, quartered", "es": "cebolla, en cuartos", "fil": "sibuyas, hiniwa na quarters"}},
+      {"qty_us": "7 cups", "qty_metric": "1.7 L", "text": {"en": "low-sodium beef broth", "es": "caldo de carne bajo en sodio", "fil": "low-sodium beef broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Bring the broth to a boil in a large pot, then add the beef and onion. Simmer 40 minutes.",
+        "Add the potato, squash, and carrot, and simmer 15 minutes.",
+        "Add the cabbage and green beans, and simmer 10-15 more minutes until everything is tender.",
+        "Season with salt and pepper to taste, and serve hot in deep bowls."
+      ],
+      "es": [
+        "Lleva el caldo a hervor en una olla grande, luego agrega la carne y la cebolla. Cocina a fuego lento 40 minutos.",
+        "Agrega la papa, el zapallo y la zanahoria, y cocina a fuego lento 15 minutos.",
+        "Agrega el repollo y los porotos verdes, y cocina a fuego lento 10-15 minutos más hasta que todo esté tierno.",
+        "Sazona con sal y pimienta a gusto, y sirve caliente en platos hondos."
+      ],
+      "fil": [
+        "Pakuluan ang broth sa malaking pot, tapos idagdag ang beef at sibuyas. Pasimmerin ng 40 minuto.",
+        "Idagdag ang potato, squash, at carrot, at pasimmerin ng 15 minuto.",
+        "Idagdag ang cabbage at green beans, at pasimmerin pa ng 10-15 minuto hanggang lumambot lahat.",
+        "I-season ng asin at paminta ayon sa panlasa, at i-serve na mainit sa deep bowls."
+      ]
+    }
+  }
+]
