@@ -102,12 +102,23 @@
     FIL_AVAILABLE.push('/recipes/' + slug + '.html');
   });
 
+  // Directory hub pages (e.g. /recipes/) are listed in FIL_AVAILABLE only in
+  // their bare-slash form, but real URLs (internal nav hrefs, bookmarks,
+  // typed-in addresses) commonly spell the exact same page as
+  // /recipes/index.html. Normalize that explicit form down to the bare-slash
+  // form before checking availability, so a directory page doesn't lose its
+  // Filipino option just because of which of the two equivalent spellings
+  // the visitor is on.
+  function normalizeBare(barePath) {
+    return barePath.replace(/index\.html$/, '');
+  }
+
   // Spanish now covers every page on the site, including the Philippines
   // region -- no exclusion needed.
   function isLangAvailable(seg, barePath) {
     if (!seg) return true; // English is the default locale for every page
     if (seg === 'es') return true;
-    if (seg === 'fil') return FIL_AVAILABLE.indexOf(barePath) !== -1;
+    if (seg === 'fil') return FIL_AVAILABLE.indexOf(normalizeBare(barePath)) !== -1;
     return true;
   }
 
