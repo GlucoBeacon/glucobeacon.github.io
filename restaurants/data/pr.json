@@ -1,0 +1,74 @@
+[
+  {
+    "chain": "El Mesón",
+    "country": "Puerto Rico",
+    "region_code": "pr",
+    "region_name": "Puerto Rico",
+    "source_note": "Real item names + descriptions pulled directly from El Mesón's own official PDF menu. No official nutrition data found; AI-estimated.",
+    "source_url": "https://www.elmesonsandwiches.com/media/pdf/menu-el-meson.pdf",
+    "items": [
+      { "name": "Chicken Rotisserie", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "shredded chicken breast + swiss cheese", "carbs": 40, "cal": 490, "gi": 57, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Pavo", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "97% fat-free turkey + swiss cheese", "carbs": 40, "cal": 460, "gi": 57, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Virginia Ham", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "virginia ham + swiss cheese", "carbs": 40, "cal": 470, "gi": 57, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Medianoche", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "pernil, virginia ham, pickle, swiss cheese", "carbs": 48, "cal": 620, "gi": 57, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Tuna Salad", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "original recipe, tomato, american cheese, served cold", "carbs": 40, "cal": 520, "gi": 57, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Mesón Special", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "sautéed onions + melted swiss (corned beef/turkey/pernil/roast beef/ham)", "carbs": 42, "cal": 540, "gi": 57, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "BBQ Chicken", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "chicken, BBQ sauce, melted cheddar", "carbs": 46, "cal": 580, "gi": 60, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Argentino", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "roast beef, chimichurri sauce, swiss cheese", "carbs": 42, "cal": 560, "gi": 57, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Cubano", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "pernil, virginia ham, pickle, swiss cheese", "carbs": 46, "cal": 640, "gi": 57, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "All Pro", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "virginia ham, pastrami, sautéed onions, swiss cheese", "carbs": 44, "cal": 600, "gi": 57, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Pepper Steak (Picante)", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "roast beef, spicy pepper sauce, swiss cheese", "carbs": 44, "cal": 590, "gi": 57, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Rubén", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "corned beef deli, sautéed onions, melted swiss, mustard, mayo, multigrain bread", "carbs": 48, "cal": 620, "gi": 57, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Caribe", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "chicken rotisserie, virginia ham, sautéed onions, melted swiss", "carbs": 46, "cal": 600, "gi": 57, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Sándwich Boricua", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "marinated steak, sautéed onions, cabbage, tomato, mayo, criollo bread", "carbs": 48, "cal": 640, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Chicken Caesar", "cat": "Salads", "display_category": "Salad", "serving": "chicken breast, romaine, croutons, parmesan, caesar dressing", "carbs": 18, "cal": 420, "gi": 35, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Cranberry Chicken Salad", "cat": "Salads", "display_category": "Salad", "serving": "chicken breast, romaine, tomato, cranberries, almonds, parmesan", "carbs": 24, "cal": 440, "gi": 40, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Veggie Max", "cat": "Burgers", "display_category": "Veggie Burger", "serving": "veggie patty, swiss cheese, criollo bread", "carbs": 44, "cal": 480, "gi": 55, "processed": 5, "veg": true, "mediterranean": false },
+      { "name": "Meso Omelette", "cat": "Breakfast", "display_category": "Breakfast", "serving": "ham, turkey, or bacon, american cheese, toast", "carbs": 20, "cal": 480, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Desayuno Bravo", "cat": "Breakfast", "display_category": "Breakfast", "serving": "fried or scrambled eggs, ham/turkey/bacon/sausage, papas bravas, toast", "carbs": 55, "cal": 650, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Mallorca", "cat": "Breakfast", "display_category": "Breakfast", "serving": "plain, ham, or cheese, sweet bread", "carbs": 38, "cal": 420, "gi": 62, "processed": 6, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Martin's BBQ",
+    "country": "Puerto Rico",
+    "region_code": "pr",
+    "region_name": "Puerto Rico",
+    "source_note": "Real item names pulled from delivery-platform listings and press coverage. No official nutrition data found; AI-estimated.",
+    "source_url": "https://www.ubereats.com/store/martins-bbq-campo-rico/A3gaN7HPQECzexPvjbcbGQ",
+    "items": [
+      { "name": "Pollo Entero", "cat": "Chicken", "display_category": "Grilled", "serving": "whole chicken (shareable, family-size)", "carbs": 5, "cal": 1150, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "1/2 Pollo Combo", "cat": "Chicken", "display_category": "Combo", "serving": "half chicken + side + drink", "carbs": 45, "cal": 780, "gi": 55, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "1/4 Pollo Combo", "cat": "Chicken", "display_category": "Combo", "serving": "quarter chicken + side + drink", "carbs": 40, "cal": 520, "gi": 55, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Combo Familiar", "cat": "Chicken", "display_category": "Combo", "serving": "1 portion of family combo", "carbs": 50, "cal": 850, "gi": 55, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Combo Carne Frita", "cat": "Entrees", "display_category": "Grilled", "serving": "fried pork + sides", "carbs": 25, "cal": 780, "gi": 45, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Combo Costillas", "cat": "Entrees", "display_category": "Ribs", "serving": "1 portion of combo", "carbs": 45, "cal": 980, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Mofongo de Yuca", "cat": "Entrees", "display_category": "Plantain", "serving": "mashed yuca w/ pork cracklings", "carbs": 58, "cal": 420, "gi": 75, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Mofongo Relleno de Pollo", "cat": "Entrees", "display_category": "Plantain", "serving": "mashed plantain filled w/ chicken", "carbs": 55, "cal": 520, "gi": 75, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Chuletas (2 piezas)", "cat": "Entrees", "display_category": "Grilled", "serving": "2 pork chops + small side + drink", "carbs": 30, "cal": 620, "gi": 45, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Costillas", "cat": "Entrees", "display_category": "Ribs", "serving": "1 order BBQ ribs", "carbs": 12, "cal": 680, "gi": 40, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Mondongo", "cat": "Soups", "display_category": "Stew", "serving": "traditional stewed pork tripe, 1 bowl", "carbs": 22, "cal": 380, "gi": 45, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Chicharrón de Cerdo", "cat": "Entrees", "display_category": "Fried Pork", "serving": "1 order fried pork chunks", "carbs": 2, "cal": 520, "gi": 30, "processed": 6, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Taco Maker",
+    "country": "Puerto Rico",
+    "region_code": "pr",
+    "region_name": "Puerto Rico",
+    "source_note": "Real item names pulled from tacomaker.com (session 96). 10 of 11 real analyzed items recoverable from the committed page's two tables (Best Choices + Approach with Caution combined, deduped) -- 1 remains unrecovered, not re-researched.",
+    "source_url": "https://glucobeacon.com/restaurants/pr/taco-maker.html",
+    "items": [
+      { "name": "Taco Suave de Carne", "cat": "Tacos", "display_category": "Taco", "serving": "1 soft taco", "carbs": 20, "cal": 220, "gi": 46, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Chaparritos", "cat": "Tacos", "display_category": "Kids Taco", "serving": "kids order", "carbs": 32, "cal": 320, "gi": 46, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Taco Duro de Pollo", "cat": "Tacos", "display_category": "Fried Taco", "serving": "1 hard taco", "carbs": 18, "cal": 210, "gi": 68, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Quesadilla de Queso", "cat": "Entrees", "display_category": "Quesadilla", "serving": "1 order", "carbs": 38, "cal": 480, "gi": 60, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Burrito de Frijoles", "cat": "Burritos", "display_category": "Burrito", "serving": "1 burrito", "carbs": 72, "cal": 580, "gi": 63, "processed": 5, "veg": true, "mediterranean": false },
+      { "name": "Burrito Clásico de Carne", "cat": "Burritos", "display_category": "Burrito", "serving": "1 burrito", "carbs": 68, "cal": 720, "gi": 63, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Burrito de Pollo", "cat": "Burritos", "display_category": "Burrito", "serving": "1 burrito", "carbs": 65, "cal": 680, "gi": 63, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Burrito Al Plato", "cat": "Burritos", "display_category": "Burrito", "serving": "1 burrito, plated w/ toppings", "carbs": 60, "cal": 780, "gi": 63, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Combo Deluxe", "cat": "Tacos", "display_category": "Combo", "serving": "1 portion of combo", "carbs": 74, "cal": 850, "gi": 66, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo Crunchy (2 tacos)", "cat": "Tacos", "display_category": "Combo", "serving": "2 tacos + sides", "carbs": 70, "cal": 780, "gi": 66, "processed": 6, "veg": false, "mediterranean": false }
+    ]
+  }
+]

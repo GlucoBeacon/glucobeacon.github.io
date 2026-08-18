@@ -28,8 +28,8 @@
       { "name": "Alitas a la Brasa (6 piezas)", "cat": "Chicken", "display_category": "Grilled", "serving": "6 wings", "carbs": 4, "cal": 380, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
       { "name": "1/2 Pollo a la Brasa", "cat": "Chicken", "display_category": "Grilled", "serving": "half chicken", "carbs": 6, "cal": 620, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
       { "name": "Sánguche de Pollo", "cat": "Sandwiches", "display_category": "Burger", "serving": "1 sandwich", "carbs": 40, "cal": 520, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
-      { "name": "Pollo con Papas y Ensalada (1/4)", "cat": "Combos", "display_category": "Combo", "serving": "quarter chicken combo", "carbs": 46, "cal": 660, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
-      { "name": "Brasa Extrema", "cat": "Combos", "display_category": "Combo", "serving": "1 combo", "carbs": 50, "cal": 720, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Pollo con Papas y Ensalada (1/4)", "cat": "Chicken", "display_category": "Combo", "serving": "quarter chicken combo", "carbs": 46, "cal": 660, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Brasa Extrema", "cat": "Chicken", "display_category": "Combo", "serving": "1 combo", "carbs": 50, "cal": 720, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
       { "name": "Arroz Chaufa", "cat": "Entrees", "display_category": "Chaufa", "serving": "1 order", "carbs": 62, "cal": 480, "gi": 74, "processed": 6, "veg": false, "mediterranean": false }
     ]
   },
@@ -44,10 +44,10 @@
       { "name": "Anticuchos (Corazón de Res)", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 6, "cal": 280, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
       { "name": "Sánguche de Pollo a la Brasa", "cat": "Sandwiches", "display_category": "Burger", "serving": "1 sandwich", "carbs": 42, "cal": 540, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
       { "name": "Causa Rellena de Pollo", "cat": "Entrees", "display_category": "Causa", "serving": "1 order", "carbs": 48, "cal": 420, "gi": 78, "processed": 5, "veg": false, "mediterranean": false },
-      { "name": "1/4 Pollo a la Brasa con Papas y Ensalada", "cat": "Combos", "display_category": "Combo", "serving": "quarter chicken combo", "carbs": 48, "cal": 680, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
-      { "name": "Pollo Entero (Combo Familiar)", "cat": "Combos", "display_category": "Combo", "serving": "1 portion of family combo", "carbs": 50, "cal": 720, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "1/4 Pollo a la Brasa con Papas y Ensalada", "cat": "Chicken", "display_category": "Combo", "serving": "quarter chicken combo", "carbs": 48, "cal": 680, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Pollo Entero (Combo Familiar)", "cat": "Chicken", "display_category": "Combo", "serving": "1 portion of family combo", "carbs": 50, "cal": 720, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
       { "name": "Arroz Chaufa", "cat": "Entrees", "display_category": "Chaufa", "serving": "1 order", "carbs": 62, "cal": 480, "gi": 74, "processed": 6, "veg": false, "mediterranean": false },
-      { "name": "1/2 Pollo a la Brasa con Papas", "cat": "Combos", "display_category": "Combo", "serving": "half chicken combo", "carbs": 54, "cal": 900, "gi": 66, "processed": 5, "veg": false, "mediterranean": false }
+      { "name": "1/2 Pollo a la Brasa con Papas", "cat": "Chicken", "display_category": "Combo", "serving": "half chicken combo", "carbs": 54, "cal": 900, "gi": 66, "processed": 5, "veg": false, "mediterranean": false }
     ]
   },
   {
@@ -62,8 +62,8 @@
       { "name": "1/4 Pollo a la Brasa", "cat": "Chicken", "display_category": "Grilled", "serving": "quarter chicken", "carbs": 3, "cal": 340, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
       { "name": "Anticuchos", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 6, "cal": 280, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
       { "name": "Chorizo Parrillero", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 4, "cal": 380, "gi": 40, "processed": 5, "veg": false, "mediterranean": false },
-      { "name": "1/2 Pollo a la Brasa, Parrillera Completa", "cat": "Combos", "display_category": "Combo", "serving": "1 portion of combo", "carbs": 45, "cal": 780, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
-      { "name": "1/2 Pollo a la Brasa Clásico", "cat": "Combos", "display_category": "Combo", "serving": "1 portion of combo", "carbs": 48, "cal": 700, "gi": 66, "processed": 5, "veg": false, "mediterranean": false }
+      { "name": "1/2 Pollo a la Brasa, Parrillera Completa", "cat": "Chicken", "display_category": "Combo", "serving": "1 portion of combo", "carbs": 45, "cal": 780, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "1/2 Pollo a la Brasa Clásico", "cat": "Chicken", "display_category": "Combo", "serving": "1 portion of combo", "carbs": 48, "cal": 700, "gi": 66, "processed": 5, "veg": false, "mediterranean": false }
     ]
   }
 ]

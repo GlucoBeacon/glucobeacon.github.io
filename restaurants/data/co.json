@@ -13,8 +13,8 @@
       { "name": "Nashville Tenders (4 piezas)", "cat": "Chicken", "display_category": "Chicken", "serving": "4 tenders", "carbs": 24, "cal": 460, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
       { "name": "Combo Frisburrito", "cat": "Burritos", "display_category": "Burrito", "serving": "1 burrito combo", "carbs": 62, "cal": 680, "gi": 63, "processed": 7, "veg": false, "mediterranean": false },
       { "name": "Arroz con Pollo", "cat": "Entrees", "display_category": "Chicken Platter", "serving": "1 platter", "carbs": 65, "cal": 620, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
-      { "name": "Combo Familiar", "cat": "Combos", "display_category": "Combo", "serving": "1 portion of family combo", "carbs": 55, "cal": 720, "gi": 66, "processed": 7, "veg": false, "mediterranean": false },
-      { "name": "Combo Frisby Tradicional", "cat": "Combos", "display_category": "Combo", "serving": "1 portion of combo", "carbs": 58, "cal": 780, "gi": 66, "processed": 7, "veg": false, "mediterranean": false }
+      { "name": "Combo Familiar", "cat": "Chicken", "display_category": "Combo", "serving": "1 portion of family combo", "carbs": 55, "cal": 720, "gi": 66, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo Frisby Tradicional", "cat": "Chicken", "display_category": "Combo", "serving": "1 portion of combo", "carbs": 58, "cal": 780, "gi": 66, "processed": 7, "veg": false, "mediterranean": false }
     ]
   },
   {
@@ -65,7 +65,7 @@
       { "name": "Alitas Kokoriko (6 piezas)", "cat": "Chicken", "display_category": "Chicken", "serving": "6 wings", "carbs": 20, "cal": 460, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
       { "name": "Ajiaco", "cat": "Soups", "display_category": "Soup", "serving": "1 bowl", "carbs": 45, "cal": 420, "gi": 45, "processed": 4, "veg": false, "mediterranean": false },
       { "name": "Hamburguesa Kokoriko", "cat": "Burgers", "display_category": "Burger", "serving": "1 burger", "carbs": 40, "cal": 560, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
-      { "name": "Combo Miti-Miti", "cat": "Combos", "display_category": "Combo", "serving": "1 portion of combo", "carbs": 50, "cal": 700, "gi": 66, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo Miti-Miti", "cat": "Chicken", "display_category": "Combo", "serving": "1 portion of combo", "carbs": 50, "cal": 700, "gi": 66, "processed": 7, "veg": false, "mediterranean": false },
       { "name": "Arroz con Pollo", "cat": "Entrees", "display_category": "Chicken Platter", "serving": "1 platter", "carbs": 62, "cal": 600, "gi": 66, "processed": 6, "veg": false, "mediterranean": false }
     ]
   }

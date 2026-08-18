@@ -1,0 +1,27 @@
+[
+  {
+    "chain": "Pollo Campero",
+    "country": "Central America",
+    "region_code": "ca",
+    "region_name": "Central America",
+    "official_data": true,
+    "official_note_en": "these are Pollo Campero's global/corporate figures (campero.com), not verified separately for each of Guatemala, El Salvador, Honduras, Costa Rica, or Panama. The chain's own guide notes formulations can vary by local supplier, country, and season.",
+    "official_note_es": "son las cifras globales/corporativas de Pollo Campero (campero.com), no verificadas por separado para Guatemala, El Salvador, Honduras, Costa Rica ni Panam&#xE1;. La propia gu&#xED;a de la cadena indica que las f&#xF3;rmulas pueden variar seg&#xFA;n el proveedor local, el pa&#xED;s y la temporada.",
+    "source_note": "All 12 real, officially-published items already captured from the committed page (Best Choices + Approach with Caution tables). Real official calorie/carb figures from Pollo Campero's own nutrition guide -- only processed/veg/mediterranean fields were inferred (not published).",
+    "source_url": "https://www.campero.com",
+    "items": [
+      { "name": "Citrus Grilled Thigh", "cat": "Chicken", "display_category": "Grilled", "serving": "1 piece", "carbs": 1, "cal": 172, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "Citrus Grilled Breast", "cat": "Chicken", "display_category": "Grilled", "serving": "1 piece", "carbs": 3, "cal": 212, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "Traditional Drumstick", "cat": "Chicken", "display_category": "Chicken", "serving": "1 piece", "carbs": 2, "cal": 167, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Campero Salad with Fried Filet (No Dressing)", "cat": "Salads", "display_category": "Salad", "serving": "1 salad", "carbs": 33, "cal": 416, "gi": 25, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Traditional Thigh", "cat": "Chicken", "display_category": "Chicken", "serving": "1 piece", "carbs": 17, "cal": 265, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Traditional Breast", "cat": "Chicken", "display_category": "Chicken", "serving": "1 piece", "carbs": 12, "cal": 392, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Campero Nuggets (6pc)", "cat": "Chicken", "display_category": "Chicken", "serving": "6 pieces", "carbs": 17, "cal": 330, "gi": 48, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Campero Chicken Empanada", "cat": "Entrees", "display_category": "Empanada", "serving": "1 empanada", "carbs": 19, "cal": 166, "gi": 60, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Breakfast Sandwich", "cat": "Breakfast", "display_category": "Sandwich", "serving": "1 sandwich", "carbs": 53, "cal": 546, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Campero Spicy Sandwich Fried Filet", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "1 sandwich", "carbs": 53, "cal": 564, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Campero Sandwich Fried Filet", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "1 sandwich", "carbs": 51, "cal": 484, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Campero Chicken Bowl, Fried Filet", "cat": "Bowls", "display_category": "Bowl", "serving": "1 bowl", "carbs": 33, "cal": 638, "gi": 66, "processed": 6, "veg": false, "mediterranean": false }
+    ]
+  }
+]
