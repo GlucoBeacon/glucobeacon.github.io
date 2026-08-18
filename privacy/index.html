@@ -46,17 +46,20 @@
     a:hover { text-decoration: underline; }
     .lang-switch { text-align: right; margin-bottom: 8px; font-size: 14px; }
     .lang-switch a { font-weight: 600; }
+    .lang-switch span { color: #9ca3af; margin: 0 6px; }
   </style>
   <script>
-    if (!location.search.includes('lang=en') && navigator.language && navigator.language.toLowerCase().startsWith('es')) {
-      location.replace('/privacy/es/');
+    if (!location.search.includes('lang=en') && navigator.language) {
+      var lang = navigator.language.toLowerCase();
+      if (lang.startsWith('es')) location.replace('/privacy/es/');
+      else if (lang.startsWith('fil') || lang.startsWith('tl')) location.replace('/privacy/fil/');
     }
   </script>
 </head>
 <body>
 <div class="container">
 
-  <div class="lang-switch"><a href="/privacy/es/">Español</a></div>
+  <div class="lang-switch"><a href="/privacy/es/">Español</a><span>|</span><a href="/privacy/fil/">Filipino</a></div>
 
   <div class="logo">
     <div class="logo-mark">

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patakaran sa Privacy – GlucoBeacon</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f9fafb;
+      color: #111827;
+      line-height: 1.7;
+      padding: 40px 20px 80px;
+    }
+    .container { max-width: 680px; margin: 0 auto; }
+    .lang-switch { text-align: right; margin-bottom: 8px; font-size: 14px; }
+    .lang-switch a { font-weight: 600; }
+    .lang-switch span { color: #9ca3af; margin: 0 6px; }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 40px;
+    }
+    .logo-mark {
+      width: 42px; height: 42px; border-radius: 10px;
+      background: #2563eb; display: flex; align-items: center; justify-content: center;
+    }
+    .logo-mark svg { width: 24px; height: 24px; fill: white; }
+    .logo-name { font-size: 20px; font-weight: 700; color: #111827; }
+    h1 { font-size: 28px; font-weight: 800; color: #111827; margin-bottom: 6px; }
+    .updated { font-size: 13px; color: #6b7280; margin-bottom: 36px; }
+    .badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #eff6ff; border: 1px solid #bfdbfe;
+      border-radius: 8px; padding: 10px 14px;
+      font-size: 14px; color: #2563eb; font-weight: 600;
+      margin-bottom: 36px;
+    }
+    .badge svg { width: 18px; height: 18px; fill: #2563eb; flex-shrink: 0; }
+    section { margin-bottom: 32px; }
+    h2 {
+      font-size: 16px; font-weight: 700; color: #111827;
+      margin-bottom: 8px;
+    }
+    p { font-size: 15px; color: #374151; }
+    hr { border: none; border-top: 1px solid #e5e7eb; margin: 36px 0; }
+    footer { font-size: 13px; color: #9ca3af; text-align: center; margin-top: 48px; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="lang-switch"><a href="/privacy/?lang=en">English</a><span>|</span><a href="/privacy/es/">Español</a></div>
+
+  <div class="logo">
+    <div class="logo-mark">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A8.001 8.001 0 0 1 4.07 11H5a1 1 0 0 1 0 2h-.93A8.001 8.001 0 0 1 11 19.93zM12 9a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+    </div>
+    <span class="logo-name">GlucoBeacon</span>
+  </div>
+
+  <h1>Patakaran sa Privacy</h1>
+  <p class="updated">Huling na-update: Hunyo 2026</p>
+
+  <div class="badge">
+    <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.25 3.75 10.15 9 11.25C17.25 21.15 21 16.25 21 11V5l-9-4z"/></svg>
+    Hindi kailanman umaalis sa device mo ang health data mo.
+  </div>
+
+  <section>
+    <h2>Nananatili ang Data Mo sa Device Mo</h2>
+    <p>Ang GlucoBeacon ay isang local-first na app. Lahat ng blood sugar reading, lifestyle log, settings, at health data mo ay naka-store lamang sa device mo gamit ang encrypted SQLite database. Wala kaming server na nag-iimbak ng health data mo, at hindi kailanman ipinapadala ang mga reading mo sa amin o sa kahit sinong third party.</p>
+  </section>
+
+  <section>
+    <h2>Ano ang Kinokolekta Namin</h2>
+    <p>Hindi kami kumokolekta ng personal na health data. Ang tanging data na pino-process sa labas ng device mo ay ang anonymized purchase receipt na vine-verify ng RevenueCat, para lang i-validate ang Pro subscription status mo. Walang health information na kasama sa process na ito. Hindi kami kumokolekta ng pangalan, email address, o anumang personally identifiable information.</p>
+  </section>
+
+  <section>
+    <h2>Mga In-App Purchase</h2>
+    <p>Pino-process nang secure ang GlucoBeacon Pro subscription sa pamamagitan ng Apple App Store o Google Play. Ang purchase validation ay hinahawakan ng RevenueCat, na tumatanggap lang ng subscription receipt mo — hindi ang health data mo. Available ang privacy policy ng RevenueCat sa <a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a>.</p>
+  </section>
+
+  <section>
+    <h2>Mga Integration sa Health Platform</h2>
+    <p>Kung pipiliin mong i-connect ang Apple Health o Google Health Connect, maaaring ma-write ang blood sugar reading na ni-log mo sa GlucoBeacon papunta sa mga platform na iyon. Ganap na optional ang integration na ito, gumagana ito sa device mo, at sinasakop ito ng kani-kanilang privacy policy ng Apple at Google. Hindi nagbabasa ang GlucoBeacon ng anumang data mula sa mga platform na ito na hindi mo explicit na in-authorize.</p>
+  </section>
+
+  <section>
+    <h2>Mga Notification</h2>
+    <p>Ang reminder at trend alert notification ay naka-schedule at ipinapadala lokal sa device mo. Hindi kailanman ipinapadala sa labas ng device mo ang laman ng notification at hindi ito accessible sa amin.</p>
+  </section>
+
+  <section>
+    <h2>Analytics at Crash Reporting</h2>
+    <p>Hindi gumagamit ang GlucoBeacon ng anumang third-party analytics o crash reporting SDK. Walang usage data, screen view, o behavioral event na kinokolekta o ipinapadala.</p>
+  </section>
+
+  <section>
+    <h2>Pagbura ng Data</h2>
+    <p>Maaari mong burahin ang lahat ng data mo anumang oras mula sa <strong>Settings → Data → Clear All Data</strong>. Kapag in-uninstall mo ang app, permanenteng mababawi ang lahat ng locally stored data sa device mo. Para burahin ang purchase record mo sa RevenueCat, makipag-ugnayan sa amin sa <a href="mailto:support@glucobeacon.app">support@glucobeacon.app</a>.</p>
+  </section>
+
+  <section>
+    <h2>Privacy ng mga Bata</h2>
+    <p>Hindi nakatuon ang GlucoBeacon sa mga batang wala pang 13 taong gulang. Hindi kami sadyang kumokolekta ng anumang impormasyon mula sa mga batang wala pang 13 taong gulang. Kung sa tingin mo ay may batang gumamit ng app, makipag-ugnayan sa amin at tutulungan ka naming tanggalin ang data.</p>
+  </section>
+
+  <section>
+    <h2>Medical Disclaimer</h2>
+    <p>Hindi medical device ang GlucoBeacon at hindi ito nagbibigay ng medical advice. Ang A1C estimate, trend alert, at pattern insight ay para sa impormasyon lamang at hindi kapalit ng propesyonal na medical judgment. Laging kumonsulta sa lisensyadong healthcare provider bago gumawa ng pagbabago sa diabetes management plan mo.</p>
+  </section>
+
+  <section>
+    <h2>Mga Pagbabago sa Patakarang Ito</h2>
+    <p>Maaari naming i-update ang patakarang ito paminsan-minsan. Anumang pagbabago ay makikita sa pag-update ng petsa ng "Huling na-update" sa itaas. Ang patuloy na paggamit ng app pagkatapos ng mga pagbabago ay nangangahulugan ng pagtanggap sa na-update na patakaran.</p>
+  </section>
+
+  <section>
+    <h2>Makipag-ugnayan</h2>
+    <p>May tanong ka ba tungkol sa patakarang ito sa privacy? Mag-email sa amin sa <a href="mailto:Admin@glucobeacon.com">Admin@glucobeacon.com</a>.</p>
+  </section>
+
+  <hr />
+  <footer>
+    &copy; 2026 GlucoBeacon. Nakalaan ang lahat ng karapatan.
+  </footer>
+
+</div>
+</body>
+</html>
