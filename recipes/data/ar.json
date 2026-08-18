@@ -1,0 +1,288 @@
+[
+  {
+    "slug": "bife-a-la-parrilla-con-chimichurri",
+    "id": 531,
+    "cuisine": "argentine",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 12,
+    "total_min": 27,
+    "servings": 2,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 460, "carbs": 6, "protein": 44, "fat": 27, "fiber": 2, "gi": 0},
+    "name": {
+      "en": "Grilled Sirloin Steak with Chimichurri",
+      "es": "Bife a la Parrilla con Chimichurri",
+      "fil": "Grilled Sirloin Steak na may Chimichurri"
+    },
+    "description": {
+      "en": "Argentina's iconic grilled steak, topped with a bright herb-and-garlic chimichurri instead of a sugary sauce -- real parrilla tradition, served with salad instead of fries.",
+      "es": "El icónico bife a la parrilla argentino, cubierto con un chimichurri fresco de hierbas y ajo en lugar de una salsa azucarada -- tradición real de parrilla, servido con ensalada en lugar de papas fritas.",
+      "fil": "Ang iconic na grilled steak ng Argentina, na may fresh na chimichurri na gawa sa herbs at garlic sa halip na matamis na sauce -- real na parrilla tradition, served na may salad sa halip na fries."
+    },
+    "why_it_fits": {
+      "en": "A well-trimmed cut of beef with a fresh oil-and-vinegar chimichurri has essentially no carbs and a glycemic index near zero, so it won't spike blood sugar on its own. Pairing it with a big green salad instead of the traditional fries or bread keeps the whole plate low-GI while staying satisfying and protein-rich.",
+      "es": "Un corte de carne bien desgrasado con un chimichurri fresco de aceite y vinagre prácticamente no tiene carbohidratos y un índice glucémico cercano a cero, por lo que no eleva la glucémia por sí solo. Acompañarlo con una gran ensalada verde en lugar de las tradicionales papas fritas o pan mantiene todo el plato con IG bajo, sin dejar de ser satisfactorio y rico en proteína.",
+      "fil": "Ang well-trimmed na beef na may fresh na oil-and-vinegar chimichurri ay halos walang carbs at malapit sa zero ang glycemic index, kaya hindi ito magpapataas ng blood sugar mag-isa. Ang pag-pair nito sa malaking green salad sa halip na traditional fries o tinapay ay pinapanatiling mababa ang GI ng buong plato, habang satisfying at mataas sa protina."
+    },
+    "ingredients": [
+      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "sirloin steak, trimmed of excess fat", "es": "bife de chorizo, sin el exceso de grasa", "fil": "sirloin steak, tinanggalan ng sobrang taba"}},
+      {"qty_us": "1 cup", "qty_metric": "40 g", "text": {"en": "fresh parsley, finely chopped", "es": "perejil fresco, picado fino", "fil": "fresh parsley, pinong hiniwa"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1/4 cup", "qty_metric": "60 ml", "text": {"en": "extra-virgin olive oil", "es": "aceite de oliva extra virgen", "fil": "extra-virgin olive oil"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "red wine vinegar", "es": "vinagre de vino tinto", "fil": "red wine vinegar"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "dried oregano", "es": "orégano seco", "fil": "dried oregano"}},
+      {"qty_us": "8 cups", "qty_metric": "8 cups", "text": {"en": "mixed salad greens, for serving", "es": "hojas verdes mixtas, para servir", "fil": "mixed salad greens, pang-serve"}}
+    ],
+    "instructions": {
+      "en": [
+        "Season the steak generously with salt and pepper and let it sit at room temperature for 15 minutes.",
+        "Whisk together parsley, garlic, olive oil, red wine vinegar, oregano, and a pinch of salt to make the chimichurri.",
+        "Grill or pan-sear the steak over high heat, about 4-6 minutes per side for medium, then let it rest 5 minutes.",
+        "Slice the steak against the grain and spoon the chimichurri generously over the top.",
+        "Serve alongside a large mixed green salad instead of bread or fries."
+      ],
+      "es": [
+        "Sazona el bife generosamente con sal y pimienta y déjalo reposar a temperatura ambiente 15 minutos.",
+        "Bate el perejil, el ajo, el aceite de oliva, el vinagre de vino tinto, el orégano y una pizca de sal para hacer el chimichurri.",
+        "Cocina el bife a la parrilla o en sartén a fuego alto, unos 4-6 minutos por lado para un término medio, y déjalo reposar 5 minutos.",
+        "Corta el bife en contra de la fibra y baña generosamente con el chimichurri.",
+        "Sirve junto a una gran ensalada verde mixta en lugar de pan o papas fritas."
+      ],
+      "fil": [
+        "I-season ang steak nang husto ng asin at paminta at hayaang mag-room temperature ng 15 minuto.",
+        "I-whisk ang parsley, bawang, olive oil, red wine vinegar, oregano, at kaunting asin para gawin ang chimichurri.",
+        "I-grill o i-pan-sear ang steak sa mataas na apoy, mga 4-6 minuto bawat side para sa medium, tapos hayaang mag-rest ng 5 minuto.",
+        "Hiwain ang steak against the grain at buhusan ng chimichurri.",
+        "I-serve kasama ang malaking mixed green salad sa halip na tinapay o fries."
+      ]
+    }
+  },
+  {
+    "slug": "locro-liviano",
+    "id": 532,
+    "cuisine": "argentine",
+    "meal_category": "dinner",
+    "prep_min": 20,
+    "cook_min": 55,
+    "total_min": 75,
+    "servings": 4,
+    "tags": ["High-Fiber", "Gluten-Free"],
+    "nutrition": {"cal": 380, "carbs": 32, "protein": 24, "fat": 14, "fiber": 9, "gi": 45},
+    "name": {
+      "en": "Light Vegetable and Bean Locro",
+      "es": "Locro Liviano",
+      "fil": "Light na Vegetable and Bean Locro"
+    },
+    "description": {
+      "en": "Argentina's classic hearty winter stew, rebalanced toward white beans, squash, and vegetables with less hominy and lean meat -- real locro comfort, higher in fiber and gentler on blood sugar.",
+      "es": "El clásico y contundente guiso invernal argentino, reequilibrado hacia porotos blancos, zapallo y verduras con menos mote y carne magra -- el verdadero confort del locro, más alto en fibra y más suave con la glucémia.",
+      "fil": "Ang classic at hearty na winter stew ng Argentina, na na-rebalance papuntang white beans, squash, at gulay na may mas kaunting hominy at lean meat -- real na locro comfort, mas mataas sa fiber at mas gentle sa blood sugar."
+    },
+    "why_it_fits": {
+      "en": "Traditional locro leans heavily on corn/hominy, which digests fast and can spike blood sugar in a large bowl. This version shifts the base toward white beans and pumpkin -- both slower-digesting and high in fiber -- so the same warming, filling stew comes with a gentler blood sugar curve.",
+      "es": "El locro tradicional se apoya mucho en el maíz/mote, que se digiere rápido y puede elevar la glucémia en un plato grande. Esta versión desplaza la base hacia porotos blancos y zapallo -- ambos de digestión más lenta y altos en fibra -- para que el mismo guiso reconfortante y abundante venga con una curva de glucémia más suave.",
+      "fil": "Ang traditional na locro ay heavy sa corn/hominy, na mabilis ma-digest at pwedeng magpataas ng blood sugar sa malaking mangkok. Ang version na ito ay ini-shift ang base papunta sa white beans at kalabasa -- pareho mas mabagal ma-digest at mataas sa fiber -- para ang parehong warming, filling na stew ay may mas gentle na blood sugar curve."
+    },
+    "ingredients": [
+      {"qty_us": "2 cups", "qty_metric": "400 g", "text": {"en": "dried white beans, soaked overnight", "es": "porotos blancos secos, remojados toda la noche", "fil": "dried white beans, binabad overnight"}},
+      {"qty_us": "3 cups", "qty_metric": "450 g", "text": {"en": "pumpkin or winter squash, cubed", "es": "zapallo, en cubos", "fil": "kalabasa, dinice"}},
+      {"qty_us": "1/2 cup", "qty_metric": "80 g", "text": {"en": "white hominy corn", "es": "mote de maíz blanco", "fil": "white hominy corn"}},
+      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "lean beef stew meat, trimmed", "es": "carne magra para guiso, sin grasa", "fil": "lean beef na pang-guiso, tinanggalan ng taba"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "smoked paprika", "es": "pimentón ahumado", "fil": "smoked paprika"}},
+      {"qty_us": "6 cups", "qty_metric": "1.4 L", "text": {"en": "low-sodium beef or vegetable broth", "es": "caldo de carne o verduras bajo en sodio", "fil": "low-sodium beef o vegetable broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Drain the soaked beans and add them to a large pot with the broth. Bring to a boil, then simmer 30 minutes.",
+        "Add the beef, onion, and paprika, and simmer another 20 minutes.",
+        "Add the pumpkin and hominy, and simmer 20-25 more minutes until the beans and squash are tender and the stew has thickened.",
+        "Season with salt and pepper to taste and serve hot in deep bowls."
+      ],
+      "es": [
+        "Escurre los porotos remojados y agrégalos a una olla grande con el caldo. Lleva a hervor y cocina a fuego lento 30 minutos.",
+        "Agrega la carne, la cebolla y el pimentón, y cocina a fuego lento 20 minutos más.",
+        "Agrega el zapallo y el mote, y cocina 20-25 minutos más hasta que los porotos y el zapallo estén tiernos y el guiso haya espesado.",
+        "Sazona con sal y pimienta a gusto y sirve caliente en platos hondos."
+      ],
+      "fil": [
+        "I-drain ang binabad na beans at idagdag sa malaking pot kasama ang broth. Pakuluan, tapos pasimmerin ng 30 minuto.",
+        "Idagdag ang beef, sibuyas, at paprika, at pasimmerin pa ng 20 minuto.",
+        "Idagdag ang kalabasa at hominy, at pasimmerin pa ng 20-25 minuto hanggang lumambot ang beans at squash at lumapot ang stew.",
+        "I-season ng asin at paminta ayon sa panlasa at i-serve na mainit sa deep bowls."
+      ]
+    }
+  },
+  {
+    "slug": "sopa-de-zapallo-especiada",
+    "id": 533,
+    "cuisine": "argentine",
+    "meal_category": "lunch",
+    "prep_min": 10,
+    "cook_min": 25,
+    "total_min": 35,
+    "servings": 4,
+    "tags": ["Vegetarian", "Gluten-Free", "High-Fiber"],
+    "nutrition": {"cal": 190, "carbs": 18, "protein": 5, "fat": 10, "fiber": 5, "gi": 50},
+    "name": {
+      "en": "Spiced Pumpkin Squash Soup",
+      "es": "Sopa de Zapallo Especiada",
+      "fil": "Spiced Pumpkin Squash Soup"
+    },
+    "description": {
+      "en": "A silky pureed pumpkin soup warmed with ginger and a touch of cream -- real Argentine cold-weather comfort food, portioned to keep it light.",
+      "es": "Una sopa de zapallo cremosa y sedosa, con el calor del jengibre y un toque de crema -- verdadera comida reconfortante argentina para el frío, en porciones para mantenerla liviana.",
+      "fil": "Isang silky na pureed pumpkin soup na may init ng ginger at kaunting cream -- real na Argentine cold-weather comfort food, naka-portion para manatiling light."
+    },
+    "why_it_fits": {
+      "en": "Pumpkin has a moderate glycemic index, but pureeing it with its natural fiber intact and keeping the portion modest -- rather than pairing it with bread -- means the carbs digest more gradually. The ginger and light cream add warmth and richness without added sugar.",
+      "es": "El zapallo tiene un índice glucémico moderado, pero hacerlo puré conservando su fibra natural y mantener la porción moderada -- en lugar de acompañarlo con pan -- hace que los carbohidratos se digieran de forma más gradual. El jengibre y un toque de crema aportan calidez y cremosidad sin azúcar agregada.",
+      "fil": "Ang kalabasa ay may moderate na glycemic index, pero ang pag-puree dito habang buo ang natural fiber at pananatiling katamtaman ang portion -- sa halip na i-pair sa tinapay -- ay nangangahulugan na mas gradual ma-digest ang carbs. Ang ginger at light cream ay nagdadagdag ng init at richness na walang added sugar."
+    },
+    "ingredients": [
+      {"qty_us": "4 cups", "qty_metric": "600 g", "text": {"en": "pumpkin or winter squash, cubed", "es": "zapallo, en cubos", "fil": "kalabasa, dinice"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1 tbsp", "qty_metric": "8 g", "text": {"en": "fresh ginger, grated", "es": "jengibre fresco, rallado", "fil": "fresh ginger, kinayod"}},
+      {"qty_us": "4 cups", "qty_metric": "950 ml", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}},
+      {"qty_us": "1/4 cup", "qty_metric": "60 ml", "text": {"en": "light cream or coconut milk", "es": "crema liviana o leche de coco", "fil": "light cream o coconut milk"}},
+      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+    ],
+    "instructions": {
+      "en": [
+        "Heat the olive oil in a pot and sauté the onion until soft, about 5 minutes.",
+        "Add the ginger and pumpkin, and cook 2 minutes more.",
+        "Add the broth, bring to a boil, then simmer 20 minutes until the pumpkin is very tender.",
+        "Puree with an immersion blender until smooth, then stir in the cream.",
+        "Season with salt and pepper and serve hot."
+      ],
+      "es": [
+        "Calienta el aceite de oliva en una olla y saltea la cebolla hasta que esté blanda, unos 5 minutos.",
+        "Agrega el jengibre y el zapallo, y cocina 2 minutos más.",
+        "Agrega el caldo, lleva a hervor y cocina a fuego lento 20 minutos hasta que el zapallo esté muy tierno.",
+        "Procesa con una licuadora de mano hasta que quede suave, luego incorpora la crema.",
+        "Sazona con sal y pimienta y sirve caliente."
+      ],
+      "fil": [
+        "Painitin ang olive oil sa pot at igisa ang sibuyas hanggang lumambot, mga 5 minuto.",
+        "Idagdag ang ginger at kalabasa, at magluto pa ng 2 minuto.",
+        "Idagdag ang broth, pakuluan, tapos pasimmerin ng 20 minuto hanggang lumambot na ang kalabasa.",
+        "I-puree gamit ang immersion blender hanggang smooth, tapos ihalo ang cream.",
+        "I-season ng asin at paminta at i-serve na mainit."
+      ]
+    }
+  },
+  {
+    "slug": "milanesa-de-pollo-al-horno-con-ensalada",
+    "id": 534,
+    "cuisine": "argentine",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 25,
+    "total_min": 40,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb"],
+    "nutrition": {"cal": 340, "carbs": 14, "protein": 38, "fat": 14, "fiber": 3, "gi": 40},
+    "name": {
+      "en": "Oven-Baked Chicken Milanesa with Salad",
+      "es": "Milanesa de Pollo al Horno con Ensalada",
+      "fil": "Oven-Baked Chicken Milanesa na may Salad"
+    },
+    "description": {
+      "en": "Argentina's everyday breaded chicken cutlet, baked instead of fried and served with a fresh salad instead of fries -- real weeknight milanesa, lighter without losing the crunch.",
+      "es": "La milanesa de pollo de todos los días en Argentina, horneada en lugar de frita y servida con una ensalada fresca en lugar de papas fritas -- la verdadera milanesa de entre semana, más liviana sin perder el crocante.",
+      "fil": "Ang everyday na breaded chicken cutlet ng Argentina, na-bake sa halip na pinirito at served na may fresh salad sa halip na fries -- real na weeknight milanesa, mas light nang hindi nawawala ang crunch."
+    },
+    "why_it_fits": {
+      "en": "Frying adds absorbed oil and often pairs with fried potatoes, both of which push up calories and glycemic load. Baking the breaded cutlet with a light coating and serving it with salad instead of fries keeps the same familiar crunch and flavor while cutting the added fat and carbs significantly.",
+      "es": "Freir agrega aceite absorbido y suele acompañarse de papas fritas, lo que aumenta las calorías y la carga glucémica. Hornear la milanesa con un empanado liviano y servirla con ensalada en lugar de papas fritas mantiene el mismo crocante y sabor familiares, reduciendo significativamente la grasa y los carbohidratos agregados.",
+      "fil": "Ang pagprito ay nagdadagdag ng absorbed oil at kadalasang pinapares sa fried potatoes, na parehong nagtataas ng calories at glycemic load. Ang pag-bake ng breaded cutlet na may light coating at pag-serve nito na may salad sa halip na fries ay pinapanatili ang parehong pamilyar na crunch at lasa habang malaki ang bawas sa added fat at carbs."
+    },
+    "ingredients": [
+      {"qty_us": "4", "qty_metric": "4", "text": {"en": "boneless, skinless chicken breasts, pounded thin", "es": "pechugas de pollo sin hueso y sin piel, aplanadas", "fil": "boneless, skinless chicken breast, pinipi na manipis"}},
+      {"qty_us": "1 cup", "qty_metric": "100 g", "text": {"en": "whole wheat breadcrumbs", "es": "pan rallado integral", "fil": "whole wheat breadcrumbs"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "eggs, beaten", "es": "huevos, batidos", "fil": "itlog, pinaghalo"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "dried oregano", "es": "orégano seco", "fil": "dried oregano"}},
+      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "olive oil, for the pan", "es": "aceite de oliva, para la fuente", "fil": "olive oil, pang-hain sa pan"}},
+      {"qty_us": "8 cups", "qty_metric": "8 cups", "text": {"en": "mixed salad greens with tomato, for serving", "es": "hojas verdes mixtas con tomate, para servir", "fil": "mixed salad greens na may kamatis, pang-serve"}}
+    ],
+    "instructions": {
+      "en": [
+        "Preheat the oven to 425°F (220°C) and lightly oil a baking sheet.",
+        "Mix the breadcrumbs with oregano, salt, and pepper.",
+        "Dip each chicken breast in beaten egg, then coat in the breadcrumb mixture, pressing gently to adhere.",
+        "Arrange on the baking sheet and bake 20-25 minutes, flipping once, until golden and cooked through.",
+        "Serve with a large fresh salad in place of the traditional fries."
+      ],
+      "es": [
+        "Precalienta el horno a 220°C y engrasa levemente una bandeja para hornear.",
+        "Mezcla el pan rallado con orégano, sal y pimienta.",
+        "Sumerge cada pechuga en huevo batido, luego pasála por la mezcla de pan rallado, presionando suavemente para que se adhiera.",
+        "Acomoda en la bandeja y hornea 20-25 minutos, dando vuelta una vez, hasta que esté dorada y cocida por dentro.",
+        "Sirve con una gran ensalada fresca en lugar de las tradicionales papas fritas."
+      ],
+      "fil": [
+        "I-preheat ang oven sa 220°C at magaan na langisan ang baking sheet.",
+        "Ihalo ang breadcrumbs sa oregano, asin, at paminta.",
+        "Isawsaw ang bawat chicken breast sa beaten egg, tapos i-coat sa breadcrumb mixture, dahan-dahang pinindot para dumikit.",
+        "Ihanay sa baking sheet at i-bake ng 20-25 minuto, binabaligtad minsan, hanggang golden at cooked through.",
+        "I-serve na may malaking fresh salad sa halip na traditional fries."
+      ]
+    }
+  },
+  {
+    "slug": "ensalada-de-lentejas-con-chorizo-magro",
+    "id": 535,
+    "cuisine": "argentine",
+    "meal_category": "lunch",
+    "prep_min": 15,
+    "cook_min": 25,
+    "total_min": 40,
+    "servings": 4,
+    "tags": ["High-Fiber", "Gluten-Free", "High-Protein"],
+    "nutrition": {"cal": 340, "carbs": 28, "protein": 22, "fat": 16, "fiber": 10, "gi": 32},
+    "name": {
+      "en": "Lentil Salad with Lean Chorizo",
+      "es": "Ensalada de Lentejas con Chorizo Magro",
+      "fil": "Lentil Salad na may Lean Chorizo"
+    },
+    "description": {
+      "en": "A hearty lentil salad with a small amount of grilled chorizo for smoky flavor -- a real everyday Argentine lunch, built around a naturally slow-digesting legume.",
+      "es": "Una contundente ensalada de lentejas con una pequeña cantidad de chorizo a la parrilla para el sabor ahumado -- un verdadero almuerzo argentino de todos los días, construido en torno a una legumbre de digestión naturalmente lenta.",
+      "fil": "Isang hearty na lentil salad na may kaunting grilled chorizo para sa smoky flavor -- real na everyday Argentine lunch, base sa naturally slow-digesting na legume."
+    },
+    "why_it_fits": {
+      "en": "Lentils have one of the lowest glycemic indexes of any staple food and are packed with fiber, so they digest slowly and help blunt blood sugar spikes. Keeping the chorizo as a small flavor accent rather than the main event keeps saturated fat in check while still delivering real smoky, savory taste.",
+      "es": "Las lentejas tienen uno de los índices glucémicos más bajos de cualquier alimento básico y están cargadas de fibra, por lo que se digieren lentamente y ayudan a suavizar los picos de glucémia. Mantener el chorizo como un pequeño toque de sabor en lugar del protagonista principal controla la grasa saturada sin dejar de aportar un verdadero sabor ahumado y sabroso.",
+      "fil": "Ang lentils ay may isa sa pinakamababang glycemic index sa lahat ng staple food at puno ng fiber, kaya mabagal itong ma-digest at tumutulong bawasan ang blood sugar spikes. Ang pananatili ng chorizo bilang maliit na flavor accent sa halip na main event ay pinapanatiling kontrolado ang saturated fat habang nagbibigay pa rin ng tunay na smoky, savory na lasa."
+    },
+    "ingredients": [
+      {"qty_us": "2 cups", "qty_metric": "400 g", "text": {"en": "cooked lentils", "es": "lentejas cocidas", "fil": "lutong lentils"}},
+      {"qty_us": "3 oz", "qty_metric": "85 g", "text": {"en": "lean chorizo or grilled sausage, diced and browned", "es": "chorizo magro o salchicha a la parrilla, en cubos y dorada", "fil": "lean chorizo o grilled sausage, dinice at pinrito hanggang golden"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, diced", "es": "morrón rojo, en cubos", "fil": "red bell pepper, dinice"}},
+      {"qty_us": "1/2", "qty_metric": "1/2", "text": {"en": "red onion, finely chopped", "es": "cebolla morada, picada fina", "fil": "red onion, pinong hiniwa"}},
+      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh parsley, chopped", "es": "perejil fresco, picado", "fil": "fresh parsley, hiniwa"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "olive oil and red wine vinegar dressing", "es": "aderezo de aceite de oliva y vinagre de vino tinto", "fil": "olive oil at red wine vinegar dressing"}}
+    ],
+    "instructions": {
+      "en": [
+        "Brown the diced chorizo in a dry pan over medium heat until crisp, about 5 minutes, then let it cool slightly.",
+        "In a large bowl, combine the cooked lentils, bell pepper, red onion, and parsley.",
+        "Add the browned chorizo and toss with the olive oil and vinegar dressing.",
+        "Season with salt and pepper to taste and serve at room temperature."
+      ],
+      "es": [
+        "Dora el chorizo en cubos en una sartén seca a fuego medio hasta que esté crocante, unos 5 minutos, y déjalo enfriar un poco.",
+        "En un bol grande, combina las lentejas cocidas, el morrón, la cebolla morada y el perejil.",
+        "Agrega el chorizo dorado y mezcla con el aderezo de aceite de oliva y vinagre.",
+        "Sazona con sal y pimienta a gusto y sirve a temperatura ambiente."
+      ],
+      "fil": [
+        "I-brown ang dinice na chorizo sa dry pan sa medium heat hanggang crisp, mga 5 minuto, tapos hayaang lumamig nang kaunti.",
+        "Sa malaking bowl, ihalo ang lutong lentils, bell pepper, red onion, at parsley.",
+        "Idagdag ang browned chorizo at haluin kasama ang olive oil at vinegar dressing.",
+        "I-season ng asin at paminta ayon sa panlasa at i-serve sa room temperature."
+      ]
+    }
+  }
+]

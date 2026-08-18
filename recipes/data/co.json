@@ -1,0 +1,289 @@
+[
+  {
+    "slug": "ajiaco-ligero",
+    "id": 551,
+    "cuisine": "colombian",
+    "meal_category": "lunch",
+    "prep_min": 20,
+    "cook_min": 40,
+    "total_min": 60,
+    "servings": 4,
+    "tags": ["High-Fiber", "Gluten-Free"],
+    "nutrition": {"cal": 320, "carbs": 30, "protein": 26, "fat": 10, "fiber": 6, "gi": 48},
+    "name": {
+      "en": "Light Chicken and Corn Ajiaco",
+      "es": "Ajiaco Ligero",
+      "fil": "Light na Chicken and Corn Ajiaco"
+    },
+    "description": {
+      "en": "Bogotá's beloved chicken and potato soup with corn and the traditional guascas herb -- real ajiaco comfort, rebalanced with more chicken and vegetables and a smaller potato portion.",
+      "es": "La querida sopa de pollo y papa de Bogotá con maíz y la tradicional hierba de guascas -- el verdadero confort del ajiaco, reequilibrado con más pollo y verduras y una porción más pequeña de papa.",
+      "fil": "Ang minamahal na chicken at potato soup ng Bogotá na may corn at ang traditional na guascas herb -- real na ajiaco comfort, na-rebalance na may mas maraming chicken at gulay at mas maliit na potato portion."
+    },
+    "why_it_fits": {
+      "en": "Restaurant ajiaco often uses three types of potato in a generous portion, which adds up to a high glycemic load. This version keeps the real guascas-and-corn flavor but cuts the potato back to one modest portion and adds extra shredded chicken and green beans, so the bowl stays filling and authentic with less impact on blood sugar.",
+      "es": "El ajiaco de restaurante suele usar tres tipos de papa en una porción generosa, lo que suma una carga glucémica alta. Esta versión mantiene el verdadero sabor de guascas y maíz, pero reduce la papa a una porción moderada y agrega pollo desmenuzado y ejotes extra, para que el plato siga siendo abundante y auténtico con menos impacto en la glucémia.",
+      "fil": "Ang restaurant ajiaco ay kadalasang gumagamit ng tatlong klase ng potato sa malaking portion, na nagdadagdag sa mataas na glycemic load. Ang version na ito ay pinapanatili ang real na guascas-at-corn flavor pero binabawasan ang potato sa isang katamtamang portion at nagdadagdag ng extra shredded chicken at green beans, para manatiling filling at authentic ang mangkok na may mas kaunting epekto sa blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "boneless chicken breast", "es": "pechuga de pollo sin hueso", "fil": "boneless chicken breast"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "medium potato, cubed", "es": "papa mediana, en cubos", "fil": "medium na potato, dinice"}},
+      {"qty_us": "1 cup", "qty_metric": "150 g", "text": {"en": "corn on the cob, cut into rounds", "es": "mazorca de maíz, en rodajas", "fil": "corn on the cob, hiniwa na rounds"}},
+      {"qty_us": "1 cup", "qty_metric": "100 g", "text": {"en": "green beans, trimmed", "es": "ejotes, limpios", "fil": "green beans, nilinis"}},
+      {"qty_us": "2 tbsp", "qty_metric": "4 g", "text": {"en": "dried guascas herb (or substitute dried oregano)", "es": "guascas secas (o sustituir por orégano seco)", "fil": "dried guascas herb (o oregano bilang substitute)"}},
+      {"qty_us": "6 cups", "qty_metric": "1.4 L", "text": {"en": "low-sodium chicken broth", "es": "caldo de pollo bajo en sodio", "fil": "low-sodium chicken broth"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, sliced, for serving", "es": "palta, en rodajas, para servir", "fil": "avocado, hiniwa, pang-serve"}}
+    ],
+    "instructions": {
+      "en": [
+        "Simmer the chicken breast in the broth with the guascas until cooked through, about 20 minutes. Remove, shred, and set aside.",
+        "Add the potato to the same broth and simmer 15 minutes.",
+        "Add the corn and green beans, and simmer 10 more minutes until everything is tender.",
+        "Return the shredded chicken to the pot and heat through.",
+        "Season with salt and pepper, and serve with avocado slices on the side."
+      ],
+      "es": [
+        "Cocina a fuego lento la pechuga de pollo en el caldo con las guascas hasta que esté bien cocida, unos 20 minutos. Retira, desmenuza y reserva.",
+        "Agrega la papa al mismo caldo y cocina a fuego lento 15 minutos.",
+        "Agrega el maíz y los ejotes, y cocina 10 minutos más hasta que todo esté tierno.",
+        "Regresa el pollo desmenuzado a la olla y calienta.",
+        "Sazona con sal y pimienta, y sirve con rodajas de palta al costado."
+      ],
+      "fil": [
+        "Pasimmerin ang chicken breast sa broth kasama ang guascas hanggang maluto, mga 20 minuto. Alisin, tadtarin, at itabi.",
+        "Idagdag ang potato sa parehong broth at pasimmerin ng 15 minuto.",
+        "Idagdag ang corn at green beans, at pasimmerin pa ng 10 minuto hanggang lumambot lahat.",
+        "Ibalik ang tinadtad na chicken sa pot at painitin.",
+        "I-season ng asin at paminta, at i-serve na may hiniwang avocado sa tabi."
+      ]
+    }
+  },
+  {
+    "slug": "sancocho-de-pollo-liviano",
+    "id": 552,
+    "cuisine": "colombian",
+    "meal_category": "dinner",
+    "prep_min": 20,
+    "cook_min": 45,
+    "total_min": 65,
+    "servings": 5,
+    "tags": ["High-Fiber", "High-Protein"],
+    "nutrition": {"cal": 340, "carbs": 28, "protein": 30, "fat": 11, "fiber": 6, "gi": 46},
+    "name": {
+      "en": "Light Chicken Sancocho",
+      "es": "Sancocho de Pollo Liviano",
+      "fil": "Light na Chicken Sancocho"
+    },
+    "description": {
+      "en": "Colombia's hearty chicken and root vegetable stew with cilantro and scallion -- real Sunday-family sancocho, rebalanced toward chicken and squash with less plantain and yuca.",
+      "es": "El contundente guiso colombiano de pollo y tubérculos con cilantro y cebollín -- el verdadero sancocho familiar de domingo, reequilibrado hacia el pollo y el zapallo con menos plátano y yuca.",
+      "fil": "Ang hearty na chicken at root vegetable stew ng Colombia na may cilantro at scallion -- real na Sunday-family sancocho, na-rebalance papuntang chicken at squash na may mas kaunting plantain at yuca."
+    },
+    "why_it_fits": {
+      "en": "Sancocho traditionally leans heavily on starchy roots like yuca and plantain, which raise its glycemic load. Shifting the balance toward more chicken, corn, and squash while keeping just a modest amount of yuca preserves the real, hearty sancocho experience while lowering how fast the meal digests.",
+      "es": "El sancocho tradicionalmente se apoya mucho en tubérculos con almidón como la yuca y el plátano, lo que eleva su carga glucémica. Cambiar el equilibrio hacia más pollo, maíz y zapallo, manteniendo solo una cantidad moderada de yuca, conserva la verdadera experiencia contundente del sancocho mientras reduce la velocidad de digestión de la comida.",
+      "fil": "Ang sancocho ay traditionally heavy sa starchy roots tulad ng yuca at plantain, na nagtataas ng glycemic load nito. Ang pag-shift ng balance papunta sa mas maraming chicken, corn, at squash habang may katamtamang halaga lang ng yuca ay nagpapanatili ng real, hearty na sancocho experience habang binabawasan kung gaano kabilis ma-digest ang meal."
+    },
+    "ingredients": [
+      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "bone-in chicken thighs, skin removed", "es": "muslos de pollo con hueso, sin piel", "fil": "bone-in chicken thighs, tinanggalan ng balat"}},
+      {"qty_us": "1/2 cup", "qty_metric": "75 g", "text": {"en": "yuca, peeled and cubed", "es": "yuca, pelada y en cubos", "fil": "yuca, binalatan at dinice"}},
+      {"qty_us": "2 cups", "qty_metric": "300 g", "text": {"en": "butternut squash, cubed", "es": "zapallo, en cubos", "fil": "butternut squash, dinice"}},
+      {"qty_us": "1 cup", "qty_metric": "150 g", "text": {"en": "corn on the cob, cut into rounds", "es": "mazorca de maíz, en rodajas", "fil": "corn on the cob, hiniwa na rounds"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
+      {"qty_us": "7 cups", "qty_metric": "1.7 L", "text": {"en": "low-sodium chicken broth", "es": "caldo de pollo bajo en sodio", "fil": "low-sodium chicken broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Bring the broth to a boil in a large pot, then add the chicken, onion, and tomato. Simmer 25 minutes.",
+        "Add the yuca and squash, and simmer 15 minutes.",
+        "Add the corn and simmer 10 more minutes until everything is tender.",
+        "Season with salt and pepper to taste, and stir in fresh cilantro before serving hot in deep bowls."
+      ],
+      "es": [
+        "Lleva el caldo a hervor en una olla grande, luego agrega el pollo, la cebolla y el tomate. Cocina a fuego lento 25 minutos.",
+        "Agrega la yuca y el zapallo, y cocina a fuego lento 15 minutos.",
+        "Agrega el maíz y cocina 10 minutos más hasta que todo esté tierno.",
+        "Sazona con sal y pimienta a gusto, e incorpora el cilantro fresco antes de servir caliente en platos hondos."
+      ],
+      "fil": [
+        "Pakuluan ang broth sa malaking pot, tapos idagdag ang chicken, sibuyas, at kamatis. Pasimmerin ng 25 minuto.",
+        "Idagdag ang yuca at squash, at pasimmerin ng 15 minuto.",
+        "Idagdag ang corn at pasimmerin pa ng 10 minuto hanggang lumambot lahat.",
+        "I-season ng asin at paminta ayon sa panlasa, at ihalo ang fresh cilantro bago i-serve na mainit sa deep bowls."
+      ]
+    }
+  },
+  {
+    "slug": "ensalada-de-aguacate-y-tomate",
+    "id": 553,
+    "cuisine": "colombian",
+    "meal_category": "lunch",
+    "prep_min": 10,
+    "cook_min": 0,
+    "total_min": 10,
+    "servings": 4,
+    "tags": ["Vegetarian", "Vegan", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 180, "carbs": 10, "protein": 3, "fat": 15, "fiber": 6, "gi": 15},
+    "name": {
+      "en": "Avocado and Tomato Salad",
+      "es": "Ensalada de Aguacate y Tomate",
+      "fil": "Avocado and Tomato Salad"
+    },
+    "description": {
+      "en": "A simple, real Colombian side salad of ripe avocado, tomato, and lime -- light, fresh, and naturally low in carbs.",
+      "es": "Una sencilla y verdadera ensalada colombiana de aguacate maduro, tomate y limón -- liviana, fresca y naturalmente baja en carbohidratos.",
+      "fil": "Isang simple, real na Colombian side salad na gawa sa hinog na avocado, kamatis, at lime -- light, fresh, at naturally low-carb."
+    },
+    "why_it_fits": {
+      "en": "Avocado is rich in healthy monounsaturated fat and fiber with almost no digestible carbs, and tomato is a low-GI vegetable, so this salad barely moves the needle on blood sugar while its fat and fiber content actually help slow the digestion of anything else on the plate.",
+      "es": "El aguacate es rico en grasa monoinsaturada saludable y fibra, con casi ningún carbohidrato digerible, y el tomate es una verdura de IG bajo, por lo que esta ensalada apenas mueve la aguja de la glucémia, mientras que su contenido de grasa y fibra ayuda a ralentizar la digestión de lo demás en el plato.",
+      "fil": "Ang avocado ay mayaman sa healthy monounsaturated fat at fiber na halos walang digestible carbs, at ang kamatis ay low-GI na gulay, kaya halos hindi ito gagalaw sa blood sugar habang ang fat at fiber content nito ay tumutulong bawasan ang digestion ng iba pang nasa plato."
+    },
+    "ingredients": [
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "ripe avocados, sliced", "es": "aguacates maduros, en rodajas", "fil": "hinog na avocado, hiniwa"}},
+      {"qty_us": "3", "qty_metric": "3", "text": {"en": "tomatoes, sliced", "es": "tomates, en rodajas", "fil": "kamatis, hiniwa"}},
+      {"qty_us": "1/4", "qty_metric": "1/4", "text": {"en": "red onion, thinly sliced", "es": "cebolla morada, en juliana fina", "fil": "red onion, pinong hiniwa"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
+      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
+      {"qty_us": "2 tbsp", "qty_metric": "8 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}}
+    ],
+    "instructions": {
+      "en": [
+        "Arrange the sliced avocado and tomato on a platter, alternating slices.",
+        "Scatter the red onion over the top.",
+        "Whisk together the lime juice and olive oil, then drizzle over the salad.",
+        "Sprinkle with cilantro, salt, and pepper, and serve immediately."
+      ],
+      "es": [
+        "Acomoda las rodajas de aguacate y tomate en una fuente, alternándolas.",
+        "Esparce la cebolla morada por encima.",
+        "Bate el jugo de limón con el aceite de oliva, y rocía sobre la ensalada.",
+        "Espolvorea con cilantro, sal y pimienta, y sirve de inmediato."
+      ],
+      "fil": [
+        "Ihanay ang hiniwang avocado at kamatis sa plato, palit-palit ang hiwa.",
+        "Ikalat ang red onion sa ibabaw.",
+        "I-whisk ang lime juice at olive oil, tapos ibuhos sa ibabaw ng salad.",
+        "Budburan ng cilantro, asin, at paminta, at i-serve agad."
+      ]
+    }
+  },
+  {
+    "slug": "pescado-a-la-plancha-con-ensalada-colombiana",
+    "id": 554,
+    "cuisine": "colombian",
+    "meal_category": "dinner",
+    "prep_min": 10,
+    "cook_min": 12,
+    "total_min": 22,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 290, "carbs": 8, "protein": 34, "fat": 14, "fiber": 3, "gi": 10},
+    "name": {
+      "en": "Grilled Fish with Colombian Salad",
+      "es": "Pescado a la Plancha con Ensalada",
+      "fil": "Grilled Fish na may Colombian Salad"
+    },
+    "description": {
+      "en": "A simple pan-seared fish fillet with lime and garlic, served with a fresh tomato-onion salad -- real Colombian coastal cooking, light and quick.",
+      "es": "Un sencillo filete de pescado dorado en sartén con limón y ajo, servido con una ensalada fresca de tomate y cebolla -- verdadera cocina costeña colombiana, liviana y rápida.",
+      "fil": "Isang simple na pan-seared na fish fillet na may lime at bawang, served na may fresh na tomato-onion salad -- real na Colombian coastal cooking, light at mabilis."
+    },
+    "why_it_fits": {
+      "en": "A lean, pan-seared fish fillet with lime and garlic has essentially no carbs on its own, and pairing it with a fresh vegetable salad instead of rice or patacones (fried plantain) keeps the whole plate close to zero glycemic impact while still being a real, satisfying coastal-style dinner.",
+      "es": "Un filete de pescado magro dorado en sartén con limón y ajo prácticamente no tiene carbohidratos por sí solo, y acompañarlo con una ensalada fresca de verduras en lugar de arroz o patacones mantiene todo el plato con un impacto glucémico casi nulo, sin dejar de ser una cena costeña real y satisfactoria.",
+      "fil": "Ang lean, pan-seared na fish fillet na may lime at bawang ay halos walang carbs mag-isa, at ang pag-pair nito sa fresh vegetable salad sa halip na kanin o patacones (fried plantain) ay pinapanatili ang buong plato na malapit sa zero glycemic impact habang isa pa ring real, satisfying na coastal-style dinner."
+    },
+    "ingredients": [
+      {"qty_us": "4", "qty_metric": "4", "text": {"en": "white fish fillets (such as tilapia or snapper)", "es": "filetes de pescado blanco (como tilapia o pargo)", "fil": "white fish fillets (tulad ng tilapia o snapper)"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "1/2", "qty_metric": "1/2", "text": {"en": "red onion, thinly sliced", "es": "cebolla morada, en juliana fina", "fil": "red onion, pinong hiniwa"}},
+      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}}
+    ],
+    "instructions": {
+      "en": [
+        "Marinate the fish fillets in lime juice, garlic, salt, and pepper for 10 minutes.",
+        "Heat the olive oil in a pan over medium-high heat and sear the fish 3-4 minutes per side, until golden and cooked through.",
+        "Meanwhile, toss the tomato, red onion, and cilantro together for the salad.",
+        "Serve the fish topped with the fresh tomato-onion salad."
+      ],
+      "es": [
+        "Marina los filetes de pescado en jugo de limón, ajo, sal y pimienta durante 10 minutos.",
+        "Calienta el aceite de oliva en una sartén a fuego medio-alto y dora el pescado 3-4 minutos por lado, hasta que esté dorado y cocido por dentro.",
+        "Mientras tanto, mezcla el tomate, la cebolla morada y el cilantro para la ensalada.",
+        "Sirve el pescado cubierto con la ensalada fresca de tomate y cebolla."
+      ],
+      "fil": [
+        "I-marinate ang fish fillets sa lime juice, bawang, asin, at paminta ng 10 minuto.",
+        "Painitin ang olive oil sa pan sa medium-high heat at i-sear ang isda ng 3-4 minuto bawat side, hanggang golden at cooked through.",
+        "Samantala, haluin ang kamatis, red onion, at cilantro para sa salad.",
+        "I-serve ang isda na may toppings na fresh tomato-onion salad."
+      ]
+    }
+  },
+  {
+    "slug": "lentejas-guisadas-colombianas",
+    "id": 555,
+    "cuisine": "colombian",
+    "meal_category": "lunch",
+    "prep_min": 10,
+    "cook_min": 35,
+    "total_min": 45,
+    "servings": 4,
+    "tags": ["High-Fiber", "Gluten-Free", "Vegetarian"],
+    "nutrition": {"cal": 260, "carbs": 32, "protein": 15, "fat": 8, "fiber": 12, "gi": 30},
+    "name": {
+      "en": "Colombian Stewed Lentils",
+      "es": "Lentejas Guisadas Colombianas",
+      "fil": "Colombian Stewed Lentils"
+    },
+    "description": {
+      "en": "A real Colombian home-style lentil stew with tomato, cumin, and cilantro -- everyday comfort food, naturally slow-digesting and high in fiber.",
+      "es": "Un verdadero guiso casero colombiano de lentejas con tomate, comino y cilantro -- comida reconfortante de todos los días, naturalmente de digestión lenta y alta en fibra.",
+      "fil": "Isang real na Colombian home-style na lentil stew na may kamatis, cumin, at cilantro -- everyday comfort food, naturally slow-digesting at mataas sa fiber."
+    },
+    "why_it_fits": {
+      "en": "Lentils are naturally low-GI and rich in soluble fiber, which slows how quickly the meal's carbohydrates are absorbed. This home-style version keeps everything about the real Colombian dish -- the sofrito base, cumin, and cilantro -- while relying on the lentils themselves as the main carb source rather than adding rice.",
+      "es": "Las lentejas tienen naturalmente un IG bajo y son ricas en fibra soluble, lo que ralentiza la rapidez con que se absorben los carbohidratos de la comida. Esta versión casera mantiene todo lo real del plato colombiano -- el sofrito base, el comino y el cilantro -- apoyándose en las propias lentejas como la fuente principal de carbohidratos en lugar de agregar arroz.",
+      "fil": "Ang lentils ay naturally low-GI at mayaman sa soluble fiber, na nagpapabagal kung gaano kabilis ma-absorb ang carbohydrates ng meal. Ang home-style na version na ito ay pinapanatili ang lahat ng real sa Colombian dish -- ang sofrito base, cumin, at cilantro -- habang umaasa sa mismong lentils bilang main carb source sa halip na magdagdag ng kanin."
+    },
+    "ingredients": [
+      {"qty_us": "2 cups", "qty_metric": "400 g", "text": {"en": "dried lentils, rinsed", "es": "lentejas secas, enjuagadas", "fil": "dried lentils, hinugasan"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, chopped", "es": "morrón rojo, picado", "fil": "red bell pepper, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "carrot, diced", "es": "zanahoria, en cubos", "fil": "carrot, dinice"}},
+      {"qty_us": "5 cups", "qty_metric": "1.2 L", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Sauté the onion, bell pepper, and garlic in a large pot until soft, about 5 minutes.",
+        "Add the tomato and cumin, and cook 2 minutes more.",
+        "Add the lentils, carrot, and broth, and bring to a boil.",
+        "Reduce heat and simmer 30 minutes, until the lentils are tender and the stew has thickened.",
+        "Season with salt and pepper to taste and serve hot."
+      ],
+      "es": [
+        "Saltea la cebolla, el morrón y el ajo en una olla grande hasta que estén blandos, unos 5 minutos.",
+        "Agrega el tomate y el comino, y cocina 2 minutos más.",
+        "Agrega las lentejas, la zanahoria y el caldo, y lleva a hervor.",
+        "Reduce el fuego y cocina a fuego lento 30 minutos, hasta que las lentejas estén tiernas y el guiso haya espesado.",
+        "Sazona con sal y pimienta a gusto y sirve caliente."
+      ],
+      "fil": [
+        "Igisa ang sibuyas, bell pepper, at bawang sa malaking pot hanggang lumambot, mga 5 minuto.",
+        "Idagdag ang kamatis at cumin, at magluto pa ng 2 minuto.",
+        "Idagdag ang lentils, carrot, at broth, at pakuluan.",
+        "Hinaan ang apoy at pasimmerin ng 30 minuto, hanggang lumambot ang lentils at lumapot ang stew.",
+        "I-season ng asin at paminta ayon sa panlasa at i-serve na mainit."
+      ]
+    }
+  }
+]

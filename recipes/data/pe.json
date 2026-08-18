@@ -1,0 +1,299 @@
+[
+  {
+    "slug": "ceviche-de-pescado",
+    "id": 541,
+    "cuisine": "peruvian",
+    "meal_category": "lunch",
+    "prep_min": 25,
+    "cook_min": 0,
+    "total_min": 25,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 210, "carbs": 10, "protein": 28, "fat": 6, "fiber": 2, "gi": 5},
+    "name": {
+      "en": "Peruvian Fish Ceviche",
+      "es": "Ceviche de Pescado",
+      "fil": "Peruvian Fish Ceviche"
+    },
+    "description": {
+      "en": "Peru's national dish: fresh white fish 'cooked' in lime juice with red onion, cilantro, and chili -- real ceviche, naturally low-carb and light.",
+      "es": "El plato nacional del Perú: pescado blanco fresco 'cocido' en jugo de limón con cebolla morada, cilantro y ají -- ceviche real, naturalmente bajo en carbohidratos y liviano.",
+      "fil": "Ang national dish ng Peru: fresh na white fish na 'niluto' sa lime juice kasama ang red onion, cilantro, at chili -- real na ceviche, naturally low-carb at light."
+    },
+    "why_it_fits": {
+      "en": "Ceviche is built almost entirely from lean fish, citrus, and vegetables -- there's no starch or added sugar in the dish at all, so it has close to zero glycemic impact while still delivering a full serving of high-quality protein.",
+      "es": "El ceviche está hecho casi por completo de pescado magro, cítricos y verduras -- no hay almidón ni azúcar agregada en el plato, por lo que tiene un impacto glucémico casi nulo mientras aporta una porción completa de proteína de alta calidad.",
+      "fil": "Ang ceviche ay gawa halos lahat sa lean fish, citrus, at gulay -- walang starch o added sugar sa dish, kaya halos zero ang glycemic impact nito habang nagbibigay pa rin ng full serving ng high-quality protein."
+    },
+    "ingredients": [
+      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "firm white fish fillet (such as sea bass or tilapia), cubed", "es": "filete de pescado blanco firme (como corvina o tilapia), en cubos", "fil": "firm white fish fillet (tulad ng sea bass o tilapia), dinice"}},
+      {"qty_us": "1 cup", "qty_metric": "240 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red onion, thinly sliced", "es": "cebolla morada, en juliana fina", "fil": "red onion, pinong hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "aji amarillo or jalapeño chili, minced", "es": "ají amarillo o jalapeño, picado", "fil": "aji amarillo o jalapeño chili, tinadtad"}},
+      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "sweet potato, boiled and sliced, for serving (optional, small portion)", "es": "camote, hervido y en rodajas, para servir (opcional, porción pequeña)", "fil": "kamote, nilaga at hiniwa, pang-serve (optional, maliit na portion)"}}
+    ],
+    "instructions": {
+      "en": [
+        "Place the cubed fish in a glass or ceramic bowl and cover with the lime juice.",
+        "Add the red onion, chili, and a pinch of salt, and toss gently.",
+        "Let it marinate ('cook' in the citrus) in the refrigerator for 10-15 minutes, until the fish turns opaque.",
+        "Stir in the cilantro right before serving.",
+        "Serve chilled, with a small slice of boiled sweet potato on the side if desired."
+      ],
+      "es": [
+        "Coloca el pescado en cubos en un bol de vidrio o cerámica y cúbrelo con el jugo de limón.",
+        "Agrega la cebolla morada, el ají y una pizca de sal, y mezcla con cuidado.",
+        "Deja marinar (que se 'cocine' en el cítrico) en el refrigerador 10-15 minutos, hasta que el pescado se vuelva opaco.",
+        "Incorpora el cilantro justo antes de servir.",
+        "Sirve bien frío, con una rodaja pequeña de camote hervido al costado si lo deseas."
+      ],
+      "fil": [
+        "Ilagay ang dinice na fish sa glass o ceramic bowl at takpan ng lime juice.",
+        "Idagdag ang red onion, chili, at kaunting asin, at haluin nang dahan-dahan.",
+        "Hayaang mag-marinate ('maluto' sa citrus) sa refrigerator ng 10-15 minuto, hanggang mag-opaque ang isda.",
+        "Ihalo ang cilantro bago i-serve.",
+        "I-serve na malamig, na may maliit na hiwa ng nilagang kamote sa tabi kung gusto."
+      ]
+    }
+  },
+  {
+    "slug": "quinoa-chaufa",
+    "id": 542,
+    "cuisine": "peruvian",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 20,
+    "total_min": 35,
+    "servings": 4,
+    "tags": ["High-Fiber", "High-Protein"],
+    "nutrition": {"cal": 380, "carbs": 38, "protein": 24, "fat": 14, "fiber": 6, "gi": 53},
+    "name": {
+      "en": "Quinoa Chaufa",
+      "es": "Quinoa Chaufa",
+      "fil": "Quinoa Chaufa"
+    },
+    "description": {
+      "en": "A quinoa-based twist on Peru's beloved Chinese-Peruvian fried rice -- real chifa flavor (soy sauce, egg, scallion) built on a whole grain instead of white rice.",
+      "es": "Una versión con quinua del querido arroz chaufa chino-peruano -- el verdadero sabor chifa (salsa de soja, huevo, cebollín) construido sobre un grano integral en lugar de arroz blanco.",
+      "fil": "Isang quinoa-based na bersyon ng minamahal na Chinese-Peruvian fried rice ng Peru -- real na chifa flavor (soy sauce, itlog, scallion) na base sa whole grain sa halip na white rice."
+    },
+    "why_it_fits": {
+      "en": "White rice chaufa digests quickly and can push blood sugar up fast in a large stir-fried portion. Quinoa is a whole grain with more fiber and protein than white rice, so swapping it in for the same beloved chifa flavors gives a noticeably gentler, more gradual rise in blood sugar.",
+      "es": "El chaufa de arroz blanco se digiere rápido y puede elevar la glucémia velozmente en una porción grande salteada. La quinua es un grano integral con más fibra y proteína que el arroz blanco, así que reemplazarlo mientras se mantienen los mismos sabores chifa que todos aman da como resultado una subida de glucémia notablemente más suave y gradual.",
+      "fil": "Ang white rice chaufa ay mabilis ma-digest at pwedeng mabilis magpataas ng blood sugar sa malaking stir-fried na portion. Ang quinoa ay whole grain na may mas maraming fiber at protein kaysa sa white rice, kaya ang pag-swap dito para sa parehong minamahal na chifa flavors ay nagbibigay ng noticeably mas gentle at gradual na pagtaas ng blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "2 cups", "qty_metric": "370 g", "text": {"en": "cooked quinoa, cooled", "es": "quinua cocida, fría", "fil": "lutong quinoa, palamig na"}},
+      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "chicken breast or shrimp, diced", "es": "pechuga de pollo o camarones, en cubos", "fil": "chicken breast o hipon, dinice"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "eggs, beaten", "es": "huevos, batidos", "fil": "itlog, pinaghalo"}},
+      {"qty_us": "3", "qty_metric": "3", "text": {"en": "scallions, sliced", "es": "cebollín, en rodajas", "fil": "scallions, hiniwa"}},
+      {"qty_us": "1/2 cup", "qty_metric": "65 g", "text": {"en": "mixed bell peppers, diced", "es": "morrones mixtos, en cubos", "fil": "halo-halong bell peppers, dinice"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "low-sodium soy sauce", "es": "salsa de soja baja en sodio", "fil": "low-sodium soy sauce"}},
+      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "sesame or vegetable oil", "es": "aceite de sésamo o vegetal", "fil": "sesame o vegetable oil"}}
+    ],
+    "instructions": {
+      "en": [
+        "Heat the oil in a wok or large skillet over high heat. Cook the chicken or shrimp until done, about 5 minutes, and set aside.",
+        "Push aside and scramble the eggs in the same pan until just set.",
+        "Add the bell peppers and scallions, and stir-fry 2 minutes.",
+        "Add the cooked quinoa and soy sauce, and stir-fry everything together until heated through and well combined.",
+        "Return the chicken or shrimp to the pan, toss to combine, and serve hot."
+      ],
+      "es": [
+        "Calienta el aceite en un wok o sartén grande a fuego alto. Cocina el pollo o los camarones hasta que estén listos, unos 5 minutos, y reserva.",
+        "Corre a un lado y revuelve los huevos en la misma sartén hasta que apenas cuajen.",
+        "Agrega los morrones y el cebollín, y saltea 2 minutos.",
+        "Agrega la quinua cocida y la salsa de soja, y saltea todo junto hasta que esté bien caliente y combinado.",
+        "Regresa el pollo o los camarones a la sartén, mezcla y sirve caliente."
+      ],
+      "fil": [
+        "Painitin ang oil sa wok o malaking kawali sa mataas na apoy. Lutuin ang chicken o hipon hanggang luto, mga 5 minuto, at itabi.",
+        "I-push sa gilid at i-scramble ang itlog sa parehong pan hanggang halos luto na.",
+        "Idagdag ang bell peppers at scallions, at i-stir-fry ng 2 minuto.",
+        "Idagdag ang lutong quinoa at soy sauce, at i-stir-fry lahat hanggang mainit at well-combined.",
+        "Ibalik ang chicken o hipon sa pan, haluin, at i-serve na mainit."
+      ]
+    }
+  },
+  {
+    "slug": "causa-de-coliflor-rellena-de-pollo",
+    "id": 543,
+    "cuisine": "peruvian",
+    "meal_category": "lunch",
+    "prep_min": 30,
+    "cook_min": 15,
+    "total_min": 45,
+    "servings": 4,
+    "tags": ["Low-Carb", "Gluten-Free", "High-Protein"],
+    "nutrition": {"cal": 280, "carbs": 20, "protein": 22, "fat": 12, "fiber": 5, "gi": 45},
+    "name": {
+      "en": "Cauliflower Causa Stuffed with Chicken",
+      "es": "Causa de Coliflor Rellena de Pollo",
+      "fil": "Cauliflower Causa na Rellenong Chicken"
+    },
+    "description": {
+      "en": "A lighter take on Peru's beloved layered potato dish -- classic aji amarillo and lime flavor, with most of the mashed potato swapped for mashed cauliflower and a chicken salad filling.",
+      "es": "Una versión más liviana del querido plato peruano de capas de papa -- el sabor clásico de ají amarillo y limón, con la mayor parte del puré de papa reemplazado por puré de coliflor y un relleno de ensalada de pollo.",
+      "fil": "Isang mas light na bersyon ng minamahal na layered potato dish ng Peru -- classic aji amarillo at lime flavor, na may karamihan ng mashed potato pinalitan ng mashed cauliflower at chicken salad filling."
+    },
+    "why_it_fits": {
+      "en": "Traditional causa is made almost entirely from mashed yellow potato, which is high-GI and easy to overeat in a rich, buttery dish. Replacing most of the potato with mashed cauliflower -- keeping just a small amount for authentic color and flavor -- cuts the carb load dramatically while keeping the same creamy, aji amarillo-spiced layers.",
+      "es": "La causa tradicional está hecha casi por completo de puré de papa amarilla, que tiene IG alto y es fácil de comer en exceso en un plato tan cremoso y untuoso. Reemplazar la mayor parte de la papa por puré de coliflor -- conservando solo una pequeña cantidad para el color y sabor auténticos -- reduce drásticamente la carga de carbohidratos, manteniendo las mismas capas cremosas y sazonadas con ají amarillo.",
+      "fil": "Ang traditional na causa ay gawa halos lahat sa mashed yellow potato, na high-GI at madaling ma-overeat sa mayaman at buttery na dish. Ang pagpalit sa karamihan ng potato ng mashed cauliflower -- na may kaunti lang para sa authentic color at flavor -- ay malaking bawas sa carb load habang pinapanatili ang parehong creamy, aji amarillo-spiced na layers."
+    },
+    "ingredients": [
+      {"qty_us": "4 cups", "qty_metric": "500 g", "text": {"en": "cauliflower florets", "es": "coliflor en floretes", "fil": "cauliflower florets"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small yellow potato, boiled and mashed", "es": "papa amarilla pequeña, hervida y hecha puré", "fil": "maliit na yellow potato, nilaga at ginawang mash"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 g", "text": {"en": "aji amarillo paste", "es": "pasta de ají amarillo", "fil": "aji amarillo paste"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
+      {"qty_us": "2 cups", "qty_metric": "280 g", "text": {"en": "cooked chicken breast, shredded", "es": "pechuga de pollo cocida, desmenuzada", "fil": "lutong chicken breast, tinadtad"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 g", "text": {"en": "light mayonnaise", "es": "mayonesa liviana", "fil": "light mayonnaise"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, sliced, for garnish", "es": "palta, en rodajas, para decorar", "fil": "avocado, hiniwa, pang-garnish"}}
+    ],
+    "instructions": {
+      "en": [
+        "Steam the cauliflower until very tender, about 12 minutes, then mash it well with the mashed potato, aji amarillo paste, and half the lime juice.",
+        "Season the cauliflower-potato mash with salt to taste.",
+        "In a separate bowl, mix the shredded chicken with the light mayonnaise and remaining lime juice.",
+        "Press half the cauliflower mash into a ring mold or bowl, layer the chicken salad on top, then top with the remaining mash.",
+        "Chill 15 minutes, unmold, and garnish with avocado slices before serving."
+      ],
+      "es": [
+        "Cocina la coliflor al vapor hasta que esté muy tierna, unos 12 minutos, y hazla puré junto con el puré de papa, la pasta de ají amarillo y la mitad del jugo de limón.",
+        "Sazona el puré de coliflor y papa con sal a gusto.",
+        "En un bol aparte, mezcla el pollo desmenuzado con la mayonesa liviana y el resto del jugo de limón.",
+        "Presiona la mitad del puré de coliflor en un molde con aro o bol, coloca encima la ensalada de pollo, y cubre con el resto del puré.",
+        "Enfría 15 minutos, desmolda y decora con rodajas de palta antes de servir."
+      ],
+      "fil": [
+        "I-steam ang cauliflower hanggang malambot na, mga 12 minuto, tapos i-mash nang mabuti kasama ang mashed potato, aji amarillo paste, at kalahati ng lime juice.",
+        "I-season ang cauliflower-potato mash ng asin ayon sa panlasa.",
+        "Sa hiwalay na bowl, ihalo ang tinadtad na chicken sa light mayonnaise at natitirang lime juice.",
+        "Idiin ang kalahati ng cauliflower mash sa ring mold o bowl, i-layer ang chicken salad sa ibabaw, tapos takpan ng natitirang mash.",
+        "Ipalamig ng 15 minuto, i-unmold, at i-garnish ng hiniwang avocado bago i-serve."
+      ]
+    }
+  },
+  {
+    "slug": "lomo-saltado-ligero",
+    "id": 544,
+    "cuisine": "peruvian",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 15,
+    "total_min": 30,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb"],
+    "nutrition": {"cal": 360, "carbs": 22, "protein": 32, "fat": 16, "fiber": 4, "gi": 40},
+    "name": {
+      "en": "Light Lomo Saltado",
+      "es": "Lomo Saltado Ligero",
+      "fil": "Light Lomo Saltado"
+    },
+    "description": {
+      "en": "Peru's iconic beef stir-fry with tomato, onion, and soy sauce -- real lomo saltado flavor, rebalanced with extra vegetables and no fries or white rice.",
+      "es": "El icónico salteado de carne peruano con tomate, cebolla y salsa de soja -- el verdadero sabor del lomo saltado, reequilibrado con verduras extra y sin papas fritas ni arroz blanco.",
+      "fil": "Ang iconic na beef stir-fry ng Peru na may kamatis, sibuyas, at soy sauce -- real na lomo saltado flavor, na-rebalance na may extra gulay at walang fries o white rice."
+    },
+    "why_it_fits": {
+      "en": "Restaurant lomo saltado is traditionally served over both french fries and white rice -- a double dose of fast-digesting starch. This version keeps the same beef, tomato, and soy sauce stir-fry but skips the fries and rice entirely, bulking the plate up with extra bell pepper and onion instead so it stays satisfying with far less impact on blood sugar.",
+      "es": "El lomo saltado de restaurante tradicionalmente se sirve sobre papas fritas y arroz blanco a la vez -- una doble dosis de almidón de digestión rápida. Esta versión mantiene el mismo salteado de carne, tomate y salsa de soja, pero omite por completo las papas fritas y el arroz, aumentando el plato con más morrón y cebolla para que siga siendo satisfactorio con mucho menos impacto en la glucémia.",
+      "fil": "Ang restaurant lomo saltado ay traditionally served sa ibabaw ng french fries at white rice nang sabay -- doble na dosis ng mabilis-ma-digest na starch. Ang version na ito ay pinapanatili ang parehong beef, kamatis, at soy sauce stir-fry pero tinatanggal ang fries at rice, sa halip dinadagdagan ang plato ng extra bell pepper at sibuyas para manatiling satisfying na may mas kaunting epekto sa blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "beef sirloin, sliced into strips", "es": "bife de lomo, en tiras", "fil": "beef sirloin, hiniwa na strips"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, cut into wedges", "es": "tomates, en gajos", "fil": "kamatis, hiniwa na wedges"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red onion, sliced into strips", "es": "cebolla morada, en tiras", "fil": "red onion, hiniwa na strips"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "yellow bell pepper, sliced", "es": "morrón amarillo, en tiras", "fil": "yellow bell pepper, hiniwa"}},
+      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "low-sodium soy sauce", "es": "salsa de soja baja en sodio", "fil": "low-sodium soy sauce"}},
+      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "red wine vinegar", "es": "vinagre de vino tinto", "fil": "red wine vinegar"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "vegetable oil", "es": "aceite vegetal", "fil": "vegetable oil"}},
+      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped, for garnish", "es": "cilantro fresco, picado, para decorar", "fil": "fresh cilantro, hiniwa, pang-garnish"}}
+    ],
+    "instructions": {
+      "en": [
+        "Heat the oil in a wok or large skillet over very high heat until almost smoking.",
+        "Sear the beef strips in batches, about 2 minutes per batch, and set aside.",
+        "In the same pan, stir-fry the onion and bell pepper for 2 minutes, then add the tomato and cook 1 minute more.",
+        "Return the beef to the pan, add the soy sauce and vinegar, and toss everything together over high heat for 1-2 minutes.",
+        "Garnish with fresh cilantro and serve immediately."
+      ],
+      "es": [
+        "Calienta el aceite en un wok o sartén grande a fuego muy alto, casi hasta que humee.",
+        "Sella la carne en tandas, unos 2 minutos por tanda, y reserva.",
+        "En la misma sartén, saltea la cebolla y el morrón 2 minutos, luego agrega el tomate y cocina 1 minuto más.",
+        "Regresa la carne a la sartén, agrega la salsa de soja y el vinagre, y mezcla todo a fuego alto 1-2 minutos.",
+        "Decora con cilantro fresco y sirve de inmediato."
+      ],
+      "fil": [
+        "Painitin ang oil sa wok o malaking kawali sa napakataas na apoy hanggang halos umuusok.",
+        "I-sear ang beef strips sa batches, mga 2 minuto bawat batch, at itabi.",
+        "Sa parehong pan, i-stir-fry ang sibuyas at bell pepper ng 2 minuto, tapos idagdag ang kamatis at magluto pa ng 1 minuto.",
+        "Ibalik ang beef sa pan, idagdag ang soy sauce at vinegar, at haluin lahat sa mataas na apoy ng 1-2 minuto.",
+        "I-garnish ng fresh cilantro at i-serve agad."
+      ]
+    }
+  },
+  {
+    "slug": "sopa-a-la-criolla-ligera",
+    "id": 545,
+    "cuisine": "peruvian",
+    "meal_category": "lunch",
+    "prep_min": 15,
+    "cook_min": 25,
+    "total_min": 40,
+    "servings": 4,
+    "tags": ["High-Fiber", "High-Protein"],
+    "nutrition": {"cal": 300, "carbs": 30, "protein": 22, "fat": 10, "fiber": 5, "gi": 48},
+    "name": {
+      "en": "Light Peruvian Creole Noodle Soup",
+      "es": "Sopa a la Criolla Ligera",
+      "fil": "Light Peruvian Creole Noodle Soup"
+    },
+    "description": {
+      "en": "A comforting beef and noodle soup with a hint of milk and oregano -- real sopa criolla warmth, made with whole wheat noodles and extra vegetables to keep it gentler on blood sugar.",
+      "es": "Una reconfortante sopa de carne y fideos con un toque de leche y orégano -- la verdadera calidez de la sopa criolla, hecha con fideos integrales y verduras extra para que sea más suave con la glucémia.",
+      "fil": "Isang comforting na beef at noodle soup na may kaunting gatas at oregano -- real na sopa criolla warmth, gawa sa whole wheat noodles at extra gulay para maging mas gentle sa blood sugar."
+    },
+    "why_it_fits": {
+      "en": "Sopa a la criolla traditionally uses a generous portion of regular wheat noodles, which digest fast in a hot broth. Swapping in whole wheat noodles, using a smaller noodle portion, and bulking the bowl up with extra vegetables slows digestion and adds fiber, while the milk and oregano keep the same comforting, familiar flavor.",
+      "es": "La sopa a la criolla tradicionalmente usa una porción generosa de fideos de trigo comunes, que se digieren rápido en un caldo caliente. Reemplazarlos por fideos integrales, usar una porción más pequeña de fideos y aumentar el plato con verduras extra ralentiza la digestión y agrega fibra, mientras que la leche y el orégano mantienen el mismo sabor reconfortante y familiar.",
+      "fil": "Ang sopa a la criolla ay traditionally gumagamit ng malaking portion ng regular wheat noodles, na mabilis ma-digest sa mainit na broth. Ang pagpalit ng whole wheat noodles, paggamit ng mas maliit na noodle portion, at pagdagdag ng extra gulay sa mangkok ay nagpapabagal sa digestion at nagdadagdag ng fiber, habang ang gatas at oregano ay nagpapanatili ng parehong comforting, pamilyar na lasa."
+    },
+    "ingredients": [
+      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "lean ground beef", "es": "carne molida magra", "fil": "lean ground beef"}},
+      {"qty_us": "6 oz", "qty_metric": "170 g", "text": {"en": "whole wheat spaghetti, broken into pieces", "es": "espagueti integral, quebrado en trozos", "fil": "whole wheat spaghetti, binali sa piraso"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "1 cup", "qty_metric": "150 g", "text": {"en": "mixed vegetables (carrots, peas), diced", "es": "verduras mixtas (zanahoria, arvejas), en cubos", "fil": "halo-halong gulay (carrots, peas), dinice"}},
+      {"qty_us": "1/2 cup", "qty_metric": "120 ml", "text": {"en": "low-fat milk", "es": "leche descremada", "fil": "low-fat na gatas"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "egg, poached, for topping (optional)", "es": "huevo, escalfado, para servir (opcional)", "fil": "itlog, poached, pang-topping (optional)"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "dried oregano", "es": "orégano seco", "fil": "dried oregano"}},
+      {"qty_us": "5 cups", "qty_metric": "1.2 L", "text": {"en": "low-sodium beef broth", "es": "caldo de carne bajo en sodio", "fil": "low-sodium beef broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Brown the ground beef with the onion in a large pot over medium heat, about 6 minutes.",
+        "Add the tomatoes, oregano, and broth, and bring to a boil.",
+        "Add the mixed vegetables and broken spaghetti, and simmer 12-15 minutes until the pasta is tender.",
+        "Stir in the milk and heat through without boiling.",
+        "Ladle into bowls and top each with a poached egg if desired."
+      ],
+      "es": [
+        "Dora la carne molida con la cebolla en una olla grande a fuego medio, unos 6 minutos.",
+        "Agrega los tomates, el orégano y el caldo, y lleva a hervor.",
+        "Agrega las verduras mixtas y el espagueti quebrado, y cocina a fuego lento 12-15 minutos hasta que la pasta esté tierna.",
+        "Incorpora la leche y calienta sin dejar hervir.",
+        "Sirve en platos hondos y corona cada uno con un huevo escalfado si lo deseas."
+      ],
+      "fil": [
+        "I-brown ang ground beef kasama ang sibuyas sa malaking pot sa medium heat, mga 6 minuto.",
+        "Idagdag ang kamatis, oregano, at broth, at pakuluan.",
+        "Idagdag ang halo-halong gulay at binaling spaghetti, at pasimmerin ng 12-15 minuto hanggang lumambot ang pasta.",
+        "Ihalo ang gatas at painitin nang hindi pinapakulo.",
+        "Isalin sa mga mangkok at topping ng poached egg kung gusto."
+      ]
+    }
+  }
+]

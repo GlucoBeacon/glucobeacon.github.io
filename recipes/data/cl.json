@@ -1,0 +1,292 @@
+[
+  {
+    "slug": "caldillo-de-congrio",
+    "id": 561,
+    "cuisine": "chilean",
+    "meal_category": "dinner",
+    "prep_min": 15,
+    "cook_min": 25,
+    "total_min": 40,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 220, "carbs": 12, "protein": 28, "fat": 6, "fiber": 2, "gi": 30},
+    "name": {
+      "en": "Chilean Fish Soup (Caldillo de Congrio)",
+      "es": "Caldillo de Congrio",
+      "fil": "Chilean Fish Soup (Caldillo de Congrio)"
+    },
+    "description": {
+      "en": "Chile's celebrated coastal fish soup, made famous by poet Pablo Neruda -- real congrio (or any firm white fish) simmered with tomato, carrot, and cilantro in a light broth.",
+      "es": "La célebre sopa de pescado costera de Chile, hecha famosa por el poeta Pablo Neruda -- congrio real (o cualquier pescado blanco firme) cocido a fuego lento con tomate, zanahoria y cilantro en un caldo liviano.",
+      "fil": "Ang celebrated na coastal fish soup ng Chile, na ginawang famous ng poet na si Pablo Neruda -- real na congrio (o kahit anong firm white fish) na pinasimmer kasama ang kamatis, carrot, at cilantro sa light na broth."
+    },
+    "why_it_fits": {
+      "en": "This soup is built on lean white fish and a light vegetable broth rather than cream or a heavy roux, so it's naturally low in carbs and fat while delivering a full serving of protein. The small amount of potato and carrot digest gradually within the broth instead of spiking blood sugar the way a starch-heavy stew would.",
+      "es": "Esta sopa está hecha con pescado blanco magro y un caldo liviano de verduras en lugar de crema o un roux pesado, por lo que es naturalmente baja en carbohidratos y grasa mientras aporta una porción completa de proteína. La pequeña cantidad de papa y zanahoria se digiere gradualmente dentro del caldo en lugar de elevar la glucémia como lo haría un guiso cargado de almidón.",
+      "fil": "Ang soup na ito ay gawa sa lean white fish at light na vegetable broth sa halip na cream o heavy roux, kaya naturally mababa sa carbs at fat habang nagbibigay ng full serving ng protein. Ang kaunting potato at carrot ay gradually ma-digest sa loob ng broth sa halip na magpataas ng blood sugar tulad ng gagawin ng starch-heavy na stew."
+    },
+    "ingredients": [
+      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "firm white fish fillets (congrio, cod, or halibut), cut into chunks", "es": "filetes de pescado blanco firme (congrio, bacalao o mero), en trozos", "fil": "firm white fish fillets (congrio, cod, o halibut), hiniwa na chunks"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small potato, cubed", "es": "papa pequeña, en cubos", "fil": "maliit na potato, dinice"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "carrot, sliced", "es": "zanahoria, en rodajas", "fil": "carrot, hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
+      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
+      {"qty_us": "5 cups", "qty_metric": "1.2 L", "text": {"en": "low-sodium fish or vegetable broth", "es": "caldo de pescado o verduras bajo en sodio", "fil": "low-sodium fish o vegetable broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "In a large pot, sauté the onion until soft, about 5 minutes.",
+        "Add the broth, tomato, potato, and carrot, and bring to a boil.",
+        "Simmer 15 minutes until the potato and carrot are tender.",
+        "Gently add the fish chunks and simmer 8-10 more minutes until just cooked through.",
+        "Stir in fresh cilantro, season with salt and pepper, and serve hot."
+      ],
+      "es": [
+        "En una olla grande, saltea la cebolla hasta que esté blanda, unos 5 minutos.",
+        "Agrega el caldo, el tomate, la papa y la zanahoria, y lleva a hervor.",
+        "Cocina a fuego lento 15 minutos hasta que la papa y la zanahoria estén tiernas.",
+        "Agrega suavemente los trozos de pescado y cocina 8-10 minutos más hasta que estén apenas cocidos.",
+        "Incorpora el cilantro fresco, sazona con sal y pimienta, y sirve caliente."
+      ],
+      "fil": [
+        "Sa malaking pot, igisa ang sibuyas hanggang lumambot, mga 5 minuto.",
+        "Idagdag ang broth, kamatis, potato, at carrot, at pakuluan.",
+        "Pasimmerin ng 15 minuto hanggang lumambot ang potato at carrot.",
+        "Dahan-dahang idagdag ang fish chunks at pasimmerin pa ng 8-10 minuto hanggang maluto.",
+        "Ihalo ang fresh cilantro, i-season ng asin at paminta, at i-serve na mainit."
+      ]
+    }
+  },
+  {
+    "slug": "ensalada-chilena",
+    "id": 562,
+    "cuisine": "chilean",
+    "meal_category": "lunch",
+    "prep_min": 10,
+    "cook_min": 0,
+    "total_min": 10,
+    "servings": 4,
+    "tags": ["Vegetarian", "Vegan", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 90, "carbs": 8, "protein": 2, "fat": 6, "fiber": 2, "gi": 15},
+    "name": {
+      "en": "Chilean Tomato and Onion Salad",
+      "es": "Ensalada Chilena",
+      "fil": "Chilean Tomato and Onion Salad"
+    },
+    "description": {
+      "en": "Chile's classic summer table salad -- sliced tomato and thinly cut onion with cilantro and oil, real everyday Chilean simplicity.",
+      "es": "La clásica ensalada veraniega de la mesa chilena -- tomate en rodajas y cebolla en corte fino con cilantro y aceite, la verdadera simplicidad chilena de todos los días.",
+      "fil": "Ang classic na summer table salad ng Chile -- hiniwang kamatis at pinong hiniwang sibuyas na may cilantro at oil, real na everyday Chilean simplicity."
+    },
+    "why_it_fits": {
+      "en": "This salad is essentially just tomato, onion, and a light oil dressing -- no starch, no added sugar, and very few carbs overall, so it has almost no effect on blood sugar while adding real volume and freshness to any meal.",
+      "es": "Esta ensalada es esencialmente solo tomate, cebolla y un aderezo liviano de aceite -- sin almidón, sin azúcar agregada y muy pocos carbohidratos en total, por lo que casi no tiene efecto sobre la glucémia mientras aporta volumen y frescura real a cualquier comida.",
+      "fil": "Ang salad na ito ay essentially tomato, sibuyas, at light na oil dressing lang -- walang starch, walang added sugar, at kakaunting carbs overall, kaya halos walang epekto sa blood sugar habang nagdadagdag ng real volume at freshness sa kahit anong meal."
+    },
+    "ingredients": [
+      {"qty_us": "4", "qty_metric": "4", "text": {"en": "ripe tomatoes, thinly sliced", "es": "tomates maduros, en rodajas finas", "fil": "hinog na kamatis, pinong hiniwa"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "white onion, very thinly sliced", "es": "cebolla blanca, en corte muy fino", "fil": "white onion, napakapinong hiniwa"}},
+      {"qty_us": "2 tbsp", "qty_metric": "8 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+    ],
+    "instructions": {
+      "en": [
+        "Rinse the sliced onion under cold water briefly to soften its bite, then pat dry.",
+        "Arrange the tomato slices on a plate and scatter the onion over the top.",
+        "Sprinkle with cilantro, drizzle with olive oil, and season with salt and pepper.",
+        "Serve immediately at room temperature."
+      ],
+      "es": [
+        "Enjuaga la cebolla en corte fino brevemente bajo agua fría para suavizar su sabor, luego seca.",
+        "Acomoda las rodajas de tomate en un plato y esparce la cebolla por encima.",
+        "Espolvorea con cilantro, rocía con aceite de oliva, y sazona con sal y pimienta.",
+        "Sirve de inmediato a temperatura ambiente."
+      ],
+      "fil": [
+        "Banlawan nang mabilis ang hiniwang sibuyas sa malamig na tubig para pagaanin ang tapang, tapos punasan.",
+        "Ihanay ang hiniwang kamatis sa plato at ikalat ang sibuyas sa ibabaw.",
+        "Budburan ng cilantro, ibuhos ang olive oil, at i-season ng asin at paminta.",
+        "I-serve agad sa room temperature."
+      ]
+    }
+  },
+  {
+    "slug": "pastel-de-choclo-liviano",
+    "id": 563,
+    "cuisine": "chilean",
+    "meal_category": "dinner",
+    "prep_min": 25,
+    "cook_min": 40,
+    "total_min": 65,
+    "servings": 4,
+    "tags": ["High-Protein", "Gluten-Free"],
+    "nutrition": {"cal": 380, "carbs": 34, "protein": 26, "fat": 16, "fiber": 5, "gi": 50},
+    "name": {
+      "en": "Light Chilean Corn and Beef Pie",
+      "es": "Pastel de Choclo Liviano",
+      "fil": "Light na Chilean Corn and Beef Pie"
+    },
+    "description": {
+      "en": "Chile's iconic layered corn and beef casserole, topped with a fresh corn crust -- real pastel de choclo comfort, made with lean beef and no added sugar in the topping.",
+      "es": "El icónico pastel chileno de capas de maíz y carne, cubierto con una capa de choclo fresco -- el verdadero confort del pastel de choclo, hecho con carne magra y sin azúcar agregada en la cubierta.",
+      "fil": "Ang iconic na layered corn and beef casserole ng Chile, na may fresh corn crust sa ibabaw -- real na pastel de choclo comfort, gawa sa lean beef at walang added sugar sa topping."
+    },
+    "why_it_fits": {
+      "en": "The traditional corn topping is often sweetened with sugar, which pushes an already corn-heavy dish even higher in glycemic load. This version skips the added sugar entirely and uses lean ground beef in the filling, so real pastel de choclo flavor comes through without the extra sugar spike.",
+      "es": "La cubierta tradicional de choclo suele endulzarse con azúcar, lo que eleva aún más la carga glucémica de un plato ya cargado de maíz. Esta versión omite por completo el azúcar agregada y usa carne magra en el relleno, para que el verdadero sabor del pastel de choclo se mantenga sin el pico extra de azúcar.",
+      "fil": "Ang traditional na corn topping ay kadalasang pinapatamis ng sugar, na nagtataas pa sa isang dish na already corn-heavy sa glycemic load. Ang version na ito ay tinatanggal nang buo ang added sugar at gumagamit ng lean ground beef sa filling, para lumabas ang real na pastel de choclo flavor na walang extra sugar spike."
+    },
+    "ingredients": [
+      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "lean ground beef", "es": "carne molida magra", "fil": "lean ground beef"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}},
+      {"qty_us": "2", "qty_metric": "2", "text": {"en": "hard-boiled eggs, sliced", "es": "huevos duros, en rodajas", "fil": "hard-boiled na itlog, hiniwa"}},
+      {"qty_us": "8", "qty_metric": "8", "text": {"en": "black olives", "es": "aceitunas negras", "fil": "black olives"}},
+      {"qty_us": "4 cups", "qty_metric": "600 g", "text": {"en": "fresh or frozen corn kernels", "es": "granos de choclo frescos o congelados", "fil": "fresh o frozen na corn kernels"}},
+      {"qty_us": "1/2 cup", "qty_metric": "120 ml", "text": {"en": "low-fat milk", "es": "leche descremada", "fil": "low-fat na gatas"}},
+      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+    ],
+    "instructions": {
+      "en": [
+        "Preheat the oven to 375°F (190°C). Brown the beef with onion and cumin in a pan, then spoon into an oven-safe dish.",
+        "Layer the sliced hard-boiled eggs and olives over the meat.",
+        "Blend the corn kernels with the milk and olive oil until you have a coarse, thick puree.",
+        "Spread the corn puree evenly over the meat layer.",
+        "Bake 30-35 minutes until the top is set and lightly golden, then serve hot."
+      ],
+      "es": [
+        "Precalienta el horno a 190°C. Dora la carne con la cebolla y el comino en una sartén, luego colócala en una fuente para horno.",
+        "Coloca en capas los huevos duros en rodajas y las aceitunas sobre la carne.",
+        "Licúa los granos de choclo con la leche y el aceite de oliva hasta obtener un puré grueso y espeso.",
+        "Extiende el puré de choclo de manera uniforme sobre la capa de carne.",
+        "Hornea 30-35 minutos hasta que la superficie esté firme y ligeramente dorada, y sirve caliente."
+      ],
+      "fil": [
+        "I-preheat ang oven sa 190°C. I-brown ang beef kasama ang sibuyas at cumin sa kawali, tapos ilagay sa oven-safe na dish.",
+        "I-layer ang hiniwang hard-boiled eggs at olives sa ibabaw ng meat.",
+        "I-blend ang corn kernels kasama ang gatas at olive oil hanggang magkaroon ng coarse, makapal na puree.",
+        "Ikalat ang corn puree nang pantay sa ibabaw ng meat layer.",
+        "I-bake ng 30-35 minuto hanggang matigas ang ibabaw at bahagyang golden, tapos i-serve na mainit."
+      ]
+    }
+  },
+  {
+    "slug": "pollo-al-horno-con-porotos-verdes",
+    "id": 564,
+    "cuisine": "chilean",
+    "meal_category": "dinner",
+    "prep_min": 10,
+    "cook_min": 35,
+    "total_min": 45,
+    "servings": 4,
+    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
+    "nutrition": {"cal": 320, "carbs": 10, "protein": 36, "fat": 14, "fiber": 4, "gi": 15},
+    "name": {
+      "en": "Baked Chicken with Green Beans",
+      "es": "Pollo al Horno con Porotos Verdes",
+      "fil": "Baked Chicken na may Green Beans"
+    },
+    "description": {
+      "en": "A simple, real Chilean weeknight dinner -- oven-roasted chicken thighs with garlic and oregano, served alongside sautéed green beans.",
+      "es": "Una sencilla y verdadera cena chilena de entre semana -- muslos de pollo horneados con ajo y orégano, servidos junto a porotos verdes salteados.",
+      "fil": "Isang simple, real na Chilean weeknight dinner -- oven-roasted na chicken thighs na may bawang at oregano, served kasama ang sautéed na green beans."
+    },
+    "why_it_fits": {
+      "en": "Roasted chicken with a green vegetable side is about as low-carb and low-GI as a hearty dinner gets -- there's no starch on the plate at all, so the meal has almost no impact on blood sugar while still delivering a large, satisfying protein portion.",
+      "es": "El pollo horneado con una guarnición de verdura verde es de lo más bajo en carbohidratos e IG que puede tener una cena contundente -- no hay ningún almidón en el plato, por lo que la comida tiene casi ningún impacto en la glucémia mientras sigue aportando una porción grande y satisfactoria de proteína.",
+      "fil": "Ang roasted na chicken na may green vegetable side ay halos pinakamababa sa carbs at GI na pwedeng makuha sa isang hearty dinner -- walang starch sa plato, kaya halos walang epekto sa blood sugar ang meal habang nagbibigay pa rin ng malaki, satisfying na protein portion."
+    },
+    "ingredients": [
+      {"qty_us": "4", "qty_metric": "4", "text": {"en": "bone-in chicken thighs, skin removed", "es": "muslos de pollo con hueso, sin piel", "fil": "bone-in chicken thighs, tinanggalan ng balat"}},
+      {"qty_us": "4 cloves", "qty_metric": "4 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "dried oregano", "es": "orégano seco", "fil": "dried oregano"}},
+      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
+      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "green beans, trimmed", "es": "porotos verdes, limpios", "fil": "green beans, nilinis"}},
+      {"qty_us": "2 cloves", "qty_metric": "2 cloves", "text": {"en": "garlic, sliced, for the beans", "es": "ajo, en láminas, para los porotos", "fil": "bawang, hiniwa, para sa green beans"}}
+    ],
+    "instructions": {
+      "en": [
+        "Preheat the oven to 400°F (200°C). Rub the chicken thighs with garlic, oregano, olive oil, salt, and pepper.",
+        "Arrange on a baking sheet and roast 30-35 minutes until cooked through and golden.",
+        "While the chicken roasts, steam or blanch the green beans until just tender, about 5 minutes.",
+        "Sauté the green beans briefly with the sliced garlic and a little olive oil.",
+        "Serve the chicken hot alongside the green beans."
+      ],
+      "es": [
+        "Precalienta el horno a 200°C. Frota los muslos de pollo con ajo, orégano, aceite de oliva, sal y pimienta.",
+        "Acomoda en una bandeja para hornear y hornea 30-35 minutos hasta que estén cocidos y dorados.",
+        "Mientras el pollo se hornea, cocina al vapor o blanquea los porotos verdes hasta que estén apenas tiernos, unos 5 minutos.",
+        "Saltea brevemente los porotos verdes con el ajo en láminas y un poco de aceite de oliva.",
+        "Sirve el pollo caliente junto a los porotos verdes."
+      ],
+      "fil": [
+        "I-preheat ang oven sa 200°C. Kuskusin ang chicken thighs ng bawang, oregano, olive oil, asin, at paminta.",
+        "Ihanay sa baking sheet at i-roast ng 30-35 minuto hanggang maluto at golden.",
+        "Habang niluluto ang chicken, i-steam o i-blanch ang green beans hanggang malambot lang, mga 5 minuto.",
+        "I-saute nang mabilis ang green beans kasama ang hiniwang bawang at kaunting olive oil.",
+        "I-serve ang chicken na mainit kasama ang green beans."
+      ]
+    }
+  },
+  {
+    "slug": "charquican-liviano",
+    "id": 565,
+    "cuisine": "chilean",
+    "meal_category": "lunch",
+    "prep_min": 20,
+    "cook_min": 35,
+    "total_min": 55,
+    "servings": 4,
+    "tags": ["High-Fiber", "Gluten-Free"],
+    "nutrition": {"cal": 300, "carbs": 30, "protein": 20, "fat": 10, "fiber": 7, "gi": 47},
+    "name": {
+      "en": "Light Charquicán",
+      "es": "Charquicán Liviano",
+      "fil": "Light na Charquicán"
+    },
+    "description": {
+      "en": "A traditional Chilean one-pot mash of squash, beef, and vegetables -- real charquicán warmth, rebalanced toward squash and green beans with less potato and corn.",
+      "es": "Un tradicional guiso chileno de olla única de zapallo, carne y verduras -- la verdadera calidez del charquicán, reequilibrado hacia el zapallo y los porotos verdes con menos papa y choclo.",
+      "fil": "Isang traditional na Chilean one-pot mash ng squash, beef, at gulay -- real na charquicán warmth, na-rebalance papuntang squash at green beans na may mas kaunting potato at corn."
+    },
+    "why_it_fits": {
+      "en": "Charquicán traditionally combines potato and corn in the same pot, stacking two fast-digesting starches together. Leaning the mash more toward squash and green beans -- both higher in fiber and lower-GI -- while keeping just a modest amount of potato preserves the dish's real hearty, mashed texture with a gentler effect on blood sugar.",
+      "es": "El charquicán tradicionalmente combina papa y choclo en la misma olla, apilando dos almidones de digestión rápida. Inclinar el puré más hacia el zapallo y los porotos verdes -- ambos más altos en fibra y con IG más bajo -- mientras se mantiene solo una cantidad moderada de papa conserva la verdadera textura contundente y de puré del plato con un efecto más suave sobre la glucémia.",
+      "fil": "Ang charquicán ay traditionally naghahalo ng potato at corn sa parehong pot, na nagtatambak ng dalawang mabilis-ma-digest na starch. Ang pag-lean ng mash papunta sa squash at green beans -- pareho mas mataas sa fiber at mas mababa ang GI -- habang may katamtaman lang na potato ay pinapanatili ang real, hearty, mashed texture ng dish na may mas gentle na epekto sa blood sugar."
+    },
+    "ingredients": [
+      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "lean beef, cubed", "es": "carne magra, en cubos", "fil": "lean beef, dinice"}},
+      {"qty_us": "3 cups", "qty_metric": "450 g", "text": {"en": "pumpkin or winter squash, cubed", "es": "zapallo, en cubos", "fil": "kalabasa, dinice"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small potato, cubed", "es": "papa pequeña, en cubos", "fil": "maliit na potato, dinice"}},
+      {"qty_us": "1 cup", "qty_metric": "100 g", "text": {"en": "green beans, chopped", "es": "porotos verdes, picados", "fil": "green beans, hiniwa"}},
+      {"qty_us": "1/2 cup", "qty_metric": "75 g", "text": {"en": "corn kernels", "es": "granos de choclo", "fil": "corn kernels"}},
+      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
+      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "smoked paprika", "es": "pimentón ahumado", "fil": "smoked paprika"}},
+      {"qty_us": "3 cups", "qty_metric": "700 ml", "text": {"en": "low-sodium beef broth", "es": "caldo de carne bajo en sodio", "fil": "low-sodium beef broth"}}
+    ],
+    "instructions": {
+      "en": [
+        "Brown the beef cubes with the onion and smoked paprika in a large pot, about 8 minutes.",
+        "Add the squash, potato, and broth, and simmer 20 minutes until tender.",
+        "Add the green beans and corn, and simmer 10 more minutes.",
+        "Mash roughly with a potato masher, leaving some texture and chunks, rather than pureeing smooth.",
+        "Season with salt and pepper to taste and serve hot."
+      ],
+      "es": [
+        "Dora los cubos de carne con la cebolla y el pimentón ahumado en una olla grande, unos 8 minutos.",
+        "Agrega el zapallo, la papa y el caldo, y cocina a fuego lento 20 minutos hasta que estén tiernos.",
+        "Agrega los porotos verdes y el choclo, y cocina a fuego lento 10 minutos más.",
+        "Machaca de forma tosca con un pisapapas, dejando algo de textura y trozos, en lugar de un puré suave.",
+        "Sazona con sal y pimienta a gusto y sirve caliente."
+      ],
+      "fil": [
+        "I-brown ang beef cubes kasama ang sibuyas at smoked paprika sa malaking pot, mga 8 minuto.",
+        "Idagdag ang squash, potato, at broth, at pasimmerin ng 20 minuto hanggang lumambot.",
+        "Idagdag ang green beans at corn, at pasimmerin pa ng 10 minuto.",
+        "I-mash nang bahagya gamit ang potato masher, iiwan ang ilang texture at chunks, sa halip na smooth puree.",
+        "I-season ng asin at paminta ayon sa panlasa at i-serve na mainit."
+      ]
+    }
+  }
+]

@@ -129,7 +129,17 @@
     // own EN/ES/FIL pages, same as the original 57.
     'chilaquiles-verdes', 'pozole-rojo', 'tacos-de-pescado', 'enchiladas-verdes', 'sopa-de-tortilla',
     'sinigang-na-baboy', 'chicken-tinola', 'inihaw-na-bangus', 'pinakbet', 'ginisang-munggo',
-    'gazpacho-andaluz', 'pisto-manchego', 'salmon-a-la-plancha-con-romesco', 'tortilla-espanola', 'ensalada-mixta'
+    'gazpacho-andaluz', 'pisto-manchego', 'salmon-a-la-plancha-con-romesco', 'tortilla-espanola', 'ensalada-mixta',
+    // Regional recipes (Argentina, Peru, Colombia, Chile) -- second wave,
+    // same pattern as the Mexico/Philippines/Spain pilot above.
+    'bife-a-la-parrilla-con-chimichurri', 'locro-liviano', 'sopa-de-zapallo-especiada',
+    'milanesa-de-pollo-al-horno-con-ensalada', 'ensalada-de-lentejas-con-chorizo-magro',
+    'ceviche-de-pescado', 'quinoa-chaufa', 'causa-de-coliflor-rellena-de-pollo',
+    'lomo-saltado-ligero', 'sopa-a-la-criolla-ligera',
+    'ajiaco-ligero', 'sancocho-de-pollo-liviano', 'ensalada-de-aguacate-y-tomate',
+    'pescado-a-la-plancha-con-ensalada-colombiana', 'lentejas-guisadas-colombianas',
+    'caldillo-de-congrio', 'ensalada-chilena', 'pastel-de-choclo-liviano',
+    'pollo-al-horno-con-porotos-verdes', 'charquican-liviano'
   ];
   FIL_AVAILABLE.push('/recipes/');
   FIL_AVAILABLE.push('/recipes/shopping-list.html');
