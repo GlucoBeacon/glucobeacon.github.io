@@ -1,0 +1,390 @@
+[
+  {
+    "chain": "Jollibee",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from jollibee.com.ph's official menu and verified press coverage (Amazing Aloha Yumburger, Jolly Hotdog, Peach Mango Pie, Champ Jr., Bacon Cheesy Yumburger all confirmed real, current items). No official nutrition data published; AI-estimated.",
+    "source_url": "https://www.jollibee.com.ph/menu/burgers",
+    "items": [
+      { "name": "Chickenjoy 1pc (Solo)", "cat": "Chicken", "display_category": "Chicken", "serving": "1 piece", "carbs": 16, "cal": 300, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Yumburger", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 30, "cal": 250, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Cheesy Yumburger", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 31, "cal": 290, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Chickenjoy 2pc", "cat": "Chicken", "display_category": "Chicken", "serving": "2 pieces", "carbs": 30, "cal": 580, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Chicken Sandwich", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "1 sandwich", "carbs": 38, "cal": 400, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Palabok", "cat": "Pasta", "display_category": "Noodles", "serving": "1 order", "carbs": 55, "cal": 380, "gi": 60, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Breakfast Hotdog Solo", "cat": "Breakfast", "display_category": "Breakfast", "serving": "1 order", "carbs": 44, "cal": 450, "gi": 65, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Jolly Spaghetti", "cat": "Pasta", "display_category": "Pasta", "serving": "1 order", "carbs": 75, "cal": 560, "gi": 50, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Chickenjoy 2pc with Rice", "cat": "Chicken", "display_category": "Chicken Platter", "serving": "2 pieces + rice", "carbs": 68, "cal": 780, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Burger Steak with Rice", "cat": "Entrees", "display_category": "Entree", "serving": "1 order + rice", "carbs": 58, "cal": 550, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Chickenjoy 1pc with Rice", "cat": "Chicken", "display_category": "Chicken Platter", "serving": "1 piece + rice", "carbs": 55, "cal": 500, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "2pc Pancakes with Butter & Syrup", "cat": "Breakfast", "display_category": "Breakfast", "serving": "2 pieces", "carbs": 60, "cal": 350, "gi": 62, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Jolly Hotdog", "cat": "Entrees", "display_category": "Hot Dog", "serving": "1 order", "carbs": 32, "cal": 380, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Peach Mango Pie", "cat": "Desserts", "display_category": "Dessert", "serving": "1 pie", "carbs": 34, "cal": 240, "gi": 60, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Amazing Aloha Yumburger", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 34, "cal": 340, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Bacon Cheesy Yumburger", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 32, "cal": 360, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Champ Jr.", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 36, "cal": 400, "gi": 55, "processed": 6, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "McDonald's",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "official_data": true,
+    "official_note_en": "official nutrition data from mcdonalds.com.ph and its own published menu pages, based on December 2019 (FNRI reference).",
+    "source_note": "Real item names + real official calorie/carb figures from mcdonalds.com.ph's own menu pages (burgers, breakfast sections) and the site's original FNRI-referenced figures.",
+    "source_url": "https://www.mcdonalds.com.ph/our-food/burgers",
+    "items": [
+      { "name": "Cheesy Eggdesal", "cat": "Breakfast", "display_category": "Breakfast", "serving": "1 order", "carbs": 31, "cal": 248, "gi": 65, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Cheeseburger", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 37, "cal": 324, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Egg McMuffin", "cat": "Breakfast", "display_category": "Breakfast", "serving": "1 sandwich", "carbs": 36, "cal": 332, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "McChicken Sandwich", "cat": "Sandwiches", "display_category": "Chicken Sandwich", "serving": "1 sandwich", "carbs": 40, "cal": 358, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Sausage McMuffin with Egg", "cat": "Breakfast", "display_category": "Breakfast", "serving": "1 sandwich", "carbs": 37, "cal": 409, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Burger McDo", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 43, "cal": 354, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "McCrispy Chicken Sandwich", "cat": "Sandwiches", "display_category": "Chicken Sandwich", "serving": "1 sandwich", "carbs": 42, "cal": 387, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Double Cheeseburger", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 39, "cal": 469, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "6pc. Chicken McNuggets with Fries", "cat": "Chicken", "display_category": "Chicken", "serving": "6 pieces + fries", "carbs": 72, "cal": 547, "gi": 68, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "2pc. Chicken McDo with Rice", "cat": "Chicken", "display_category": "Chicken Platter", "serving": "2 pieces + rice", "carbs": 72, "cal": 809, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "1pc. Chicken McDo with McSpaghetti", "cat": "Chicken", "display_category": "Chicken Platter", "serving": "1 piece + spaghetti", "carbs": 73, "cal": 679, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "1pc. Chicken McDo with Rice", "cat": "Chicken", "display_category": "Chicken Platter", "serving": "1 piece + rice", "carbs": 59, "cal": 504, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Big Mac", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 59, "cal": 752, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Quarter Pounder with Cheese", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 41, "cal": 521, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Sausage Platter with Rice", "cat": "Breakfast", "display_category": "Breakfast", "serving": "1 order", "carbs": 55, "cal": 520, "gi": 68, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Hash Browns", "cat": "Sides", "display_category": "Side", "serving": "1 order", "carbs": 10, "cal": 135, "gi": 75, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "2pc. Hotcakes with Sausage", "cat": "Breakfast", "display_category": "Breakfast", "serving": "2 pieces + sausage", "carbs": 58, "cal": 392, "gi": 62, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "2pc. Hotcakes", "cat": "Breakfast", "display_category": "Breakfast", "serving": "2 pieces", "carbs": 55, "cal": 295, "gi": 62, "processed": 5, "veg": true, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "KFC",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "official_data": true,
+    "official_note_en": "official nutrition data from corporate.kfc.com.ph for the 12 core items; 6 additional real items (buckets, combos, platters) confirmed real via press/menu-tracking sites but without precise official per-item figures -- AI-estimated for those 6 specifically, noted individually.",
+    "source_note": "Real item names + official calorie/carb figures for the core 12 items from corporate.kfc.com.ph. 6 more real items confirmed via menu-tracking sites (kfcmenuph.info) -- AI-estimated since precise official figures weren't found for those specific items. KFC Philippines' full real menu is larger still (many bucket-size/flavor permutations); this is a representative, not exhaustive, real subset.",
+    "source_url": "https://kfcmenuph.info/bucket-of-6/",
+    "items": [
+      { "name": "Regular Hot Shots / Fun Shots", "cat": "Chicken", "display_category": "Chicken", "serving": "1 order", "carbs": 4, "cal": 255, "gi": 48, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "1pc Chicken (Extra)", "cat": "Chicken", "display_category": "Chicken", "serving": "1 piece", "carbs": 14, "cal": 257, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "1-pc Chicken (no rice)", "cat": "Chicken", "display_category": "Chicken", "serving": "1 piece", "carbs": 18, "cal": 296, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Large Hot Shots / Fun Shots", "cat": "Chicken", "display_category": "Chicken", "serving": "1 order (large)", "carbs": 7, "cal": 495, "gi": 48, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Sandwich Bun", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "1 piece", "carbs": 28, "cal": 143, "gi": 55, "processed": 5, "veg": true, "mediterranean": false },
+      { "name": "a.m. Egg Pandesal", "cat": "Breakfast", "display_category": "Breakfast", "serving": "1 order", "carbs": 16, "cal": 260, "gi": 65, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Chicken Burger", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 28, "cal": 215, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Chicken Cheeseburger", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 29, "cal": 253, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Zinger Burger Fully Loaded Box", "cat": "Burgers", "display_category": "Combo", "serving": "1 box", "carbs": 125, "cal": 1322, "gi": 66, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Zinger Steak Fully Loaded Box", "cat": "Burgers", "display_category": "Combo", "serving": "1 box", "carbs": 95, "cal": 1036, "gi": 66, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "2-pc Fully Loaded Box", "cat": "Chicken", "display_category": "Combo", "serving": "1 box", "carbs": 92, "cal": 869, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Shots Fully Loaded Box", "cat": "Chicken", "display_category": "Combo", "serving": "1 box", "carbs": 83, "cal": 867, "gi": 66, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Cali Maki Twister", "cat": "Sandwiches", "display_category": "Wrap", "serving": "1 wrap", "carbs": 45, "cal": 480, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Teriyaki Chicken Burger Combo", "cat": "Burgers", "display_category": "Combo", "serving": "1 combo", "carbs": 48, "cal": 620, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Spaghetti Super Platter", "cat": "Pasta", "display_category": "Pasta", "serving": "1 order", "carbs": 65, "cal": 480, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "8-Pc Bucket Combo", "cat": "Chicken", "display_category": "Bucket", "serving": "1 portion of bucket", "carbs": 15, "cal": 320, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Bucket of 6", "cat": "Chicken", "display_category": "Bucket", "serving": "1 piece (of 6-pc bucket)", "carbs": 15, "cal": 300, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Bucket of 10", "cat": "Chicken", "display_category": "Bucket", "serving": "1 piece (of 10-pc bucket)", "carbs": 15, "cal": 300, "gi": 48, "processed": 6, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "BonChon",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "official_data": true,
+    "official_note_en": "these are BonChon's global/corporate figures (bonchon.com's official nutrition guide), not verified separately for the Philippines. Flavors (Soy Garlic, Spicy, Korean BBQ, Yangnyeom, Classic Crunch) are standardized across BonChon franchises worldwide, so it should be a close match, but the exact recipe or portions at Philippine branches may vary slightly.",
+    "source_note": "Real item names + real official calorie/carb figures pulled directly from BonChon's own official Nutrition Facts PDF (its full global menu, which the Philippines page's own sourcing note already treats as the correct reference for standardized flavors).",
+    "source_url": "https://www.bonchon.com/downloads/nutritional-information",
+    "items": [
+      { "name": "Medium Drumsticks - Spicy", "cat": "Chicken", "display_category": "Chicken", "serving": "8 pieces (medium)", "carbs": 24, "cal": 1531, "gi": 48, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Medium Drumsticks - Soy Garlic", "cat": "Chicken", "display_category": "Chicken", "serving": "8 pieces (medium)", "carbs": 24, "cal": 1611, "gi": 48, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Medium Wings - Spicy", "cat": "Chicken", "display_category": "Wings", "serving": "16 pieces (medium)", "carbs": 29, "cal": 1280, "gi": 48, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Medium Wings - Soy Garlic", "cat": "Chicken", "display_category": "Wings", "serving": "16 pieces (medium)", "carbs": 29, "cal": 1360, "gi": 48, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Medium Drumsticks - Classic Crunch", "cat": "Chicken", "display_category": "Chicken", "serving": "8 pieces (medium)", "carbs": 32, "cal": 1313, "gi": 48, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Medium Drumsticks - Korean BBQ", "cat": "Chicken", "display_category": "Chicken", "serving": "8 pieces (medium)", "carbs": 34, "cal": 1082, "gi": 48, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Medium Wings - Classic Crunch", "cat": "Chicken", "display_category": "Wings", "serving": "16 pieces (medium)", "carbs": 39, "cal": 1411, "gi": 48, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Medium Combo - Spicy", "cat": "Chicken", "display_category": "Bucket Meal", "serving": "12 pieces (medium)", "carbs": 26, "cal": 1406, "gi": 66, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Medium Boneless - Classic Crunch", "cat": "Chicken", "display_category": "Chicken", "serving": "20 pieces (medium)", "carbs": 93, "cal": 1445, "gi": 68, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Medium Boneless - Korean BBQ", "cat": "Chicken", "display_category": "Chicken", "serving": "20 pieces (medium)", "carbs": 98, "cal": 1465, "gi": 68, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Medium Boneless - Soy Garlic", "cat": "Chicken", "display_category": "Chicken", "serving": "20 pieces (medium)", "carbs": 197, "cal": 2966, "gi": 68, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Medium Boneless - Spicy", "cat": "Chicken", "display_category": "Chicken", "serving": "20 pieces (medium)", "carbs": 197, "cal": 2968, "gi": 68, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Bonchon Wrap (Chicken)", "cat": "Sandwiches", "display_category": "Wrap", "serving": "1 wrap (14.4oz)", "carbs": 82, "cal": 1080, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Korean Taco (Spicy Chicken)", "cat": "Tacos", "display_category": "Taco", "serving": "1 order (16.6oz)", "carbs": 70, "cal": 960, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Chicken Sandwich - Soy Garlic", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "1 sandwich (1oz base)", "carbs": 94, "cal": 1024, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Pork Buns", "cat": "Entrees", "display_category": "Buns", "serving": "8 pieces", "carbs": 25, "cal": 790, "gi": 65, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Bibimbap + Spicy Chicken", "cat": "Bowls", "display_category": "Bowl", "serving": "1 bowl (27.7oz)", "carbs": 127, "cal": 970, "gi": 62, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Bulgogi", "cat": "Entrees", "display_category": "Korean BBQ", "serving": "1 order (32.2oz)", "carbs": 108, "cal": 1940, "gi": 55, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Japchae", "cat": "Pasta", "display_category": "Noodles", "serving": "1 order (15.3oz)", "carbs": 115, "cal": 887, "gi": 58, "processed": 4, "veg": true, "mediterranean": false },
+      { "name": "Signature Sesame Salad - Fried Chicken", "cat": "Salads", "display_category": "Salad", "serving": "1 salad (20oz)", "carbs": 61, "cal": 753, "gi": 45, "processed": 6, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Mang Inasal",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from manginasal.ph and current menu-tracking coverage (Halo-Halo, Lumpiang Togue confirmed real current items). No official nutrition data published; AI-estimated.",
+    "source_url": "https://help.manginasal.ph/hc/en-us/articles/11361967180815-Mang-Inasal-Menu-Overview",
+    "items": [
+      { "name": "Bangus Sisig", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 12, "cal": 450, "gi": 25, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Grilled Liempo", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 5, "cal": 550, "gi": 40, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Chicken Inasal Regular", "cat": "Chicken", "display_category": "Grilled", "serving": "1 order", "carbs": 40, "cal": 350, "gi": 25, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Sizzling Liempo", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 8, "cal": 600, "gi": 40, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Pork Sisig", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 15, "cal": 650, "gi": 40, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "2pc Pork BBQ with Spiced Vinegar", "cat": "Entrees", "display_category": "Grilled", "serving": "2 pieces", "carbs": 42, "cal": 380, "gi": 40, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Palabok", "cat": "Pasta", "display_category": "Noodles", "serving": "1 order", "carbs": 55, "cal": 380, "gi": 60, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Chicken Inasal Pecho with Rice", "cat": "Chicken", "display_category": "Chicken Platter", "serving": "1 order + rice", "carbs": 45, "cal": 420, "gi": 66, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Pork Sisig Rice Meal", "cat": "Entrees", "display_category": "Rice Meal", "serving": "1 order + rice", "carbs": 58, "cal": 850, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Bangus Sisig Rice Meal", "cat": "Entrees", "display_category": "Rice Meal", "serving": "1 order + rice", "carbs": 55, "cal": 650, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Grilled Liempo Rice Meal", "cat": "Entrees", "display_category": "Rice Meal", "serving": "1 order + rice", "carbs": 50, "cal": 750, "gi": 66, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "2pc Pork BBQ with Peanut Sauce & Java Rice", "cat": "Entrees", "display_category": "Rice Meal", "serving": "2 pieces + rice", "carbs": 50, "cal": 500, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Halo-Halo", "cat": "Desserts", "display_category": "Dessert", "serving": "1 order", "carbs": 65, "cal": 380, "gi": 65, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Lumpiang Togue", "cat": "Appetizers", "display_category": "Appetizer", "serving": "1 order", "carbs": 24, "cal": 220, "gi": 55, "processed": 5, "veg": true, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Buddy's",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from buddys.com.ph (session 96). All 6 real analyzed entree items fully captured from the committed page.",
+    "source_url": "https://glucobeacon.com/restaurants/ph/buddys.html",
+    "items": [
+      { "name": "BBQ (Pork Skewers)", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 8, "cal": 380, "gi": 40, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Lechon Kawali", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 5, "cal": 700, "gi": 40, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Pizza (Filipino-Style)", "cat": "Pizza", "display_category": "Pizza", "serving": "1 slice", "carbs": 30, "cal": 300, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Hardinera", "cat": "Entrees", "display_category": "Entree", "serving": "1 order", "carbs": 30, "cal": 450, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Pancit Lucban", "cat": "Pasta", "display_category": "Noodles", "serving": "1 order", "carbs": 55, "cal": 420, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Longganisang Lucban with Rice", "cat": "Breakfast", "display_category": "Breakfast", "serving": "1 order + rice", "carbs": 40, "cal": 480, "gi": 65, "processed": 6, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Burger King",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from burgerking.com.ph (session 96). All 7 real analyzed entree items fully captured from the committed page.",
+    "source_url": "https://glucobeacon.com/restaurants/ph/burger-king.html",
+    "items": [
+      { "name": "Double Cheeseburger", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 33, "cal": 420, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Chicken King", "cat": "Sandwiches", "display_category": "Chicken Sandwich", "serving": "1 sandwich", "carbs": 42, "cal": 450, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Spicy Chicken King", "cat": "Sandwiches", "display_category": "Chicken Sandwich", "serving": "1 sandwich", "carbs": 42, "cal": 460, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "X-tra Long Chicken Sandwich", "cat": "Sandwiches", "display_category": "Chicken Sandwich", "serving": "1 sandwich", "carbs": 45, "cal": 520, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Whopper", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 49, "cal": 660, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "4-Cheese Whopper", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 50, "cal": 780, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Plant-Based Whopper", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 52, "cal": 600, "gi": 55, "processed": 6, "veg": true, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Conti's",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from contis.ph (session 96). All 5 real analyzed entree items fully captured from the committed page.",
+    "source_url": "https://glucobeacon.com/restaurants/ph/contis.html",
+    "items": [
+      { "name": "Baked Macaroni", "cat": "Pasta", "display_category": "Pasta", "serving": "1 order", "carbs": 50, "cal": 580, "gi": 50, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Lasagna", "cat": "Pasta", "display_category": "Pasta", "serving": "1 order", "carbs": 48, "cal": 620, "gi": 50, "processed": 6, "veg": false, "mediterranean": true },
+      { "name": "Pasta Carbonara", "cat": "Pasta", "display_category": "Pasta", "serving": "1 order", "carbs": 55, "cal": 650, "gi": 50, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Baked Salmon", "cat": "Entrees", "display_category": "Fish", "serving": "1 order", "carbs": 40, "cal": 550, "gi": 60, "processed": 4, "veg": false, "mediterranean": true },
+      { "name": "Truffle Mushroom Linguine", "cat": "Pasta", "display_category": "Pasta", "serving": "1 order", "carbs": 60, "cal": 600, "gi": 50, "processed": 5, "veg": true, "mediterranean": true }
+    ]
+  },
+  {
+    "chain": "Gerry's Grill",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from gerrysgrill.com (session 96). All 8 real analyzed entree items fully captured from the committed page.",
+    "source_url": "https://glucobeacon.com/restaurants/ph/gerrys-grill.html",
+    "items": [
+      { "name": "Grilled Squid", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 8, "cal": 250, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "Inihaw na Bangus", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 5, "cal": 400, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "Lechon Kawali", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 5, "cal": 700, "gi": 40, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Sizzling Bangus Sisig", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 12, "cal": 550, "gi": 40, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Sizzling Pork Sisig", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 15, "cal": 650, "gi": 40, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Crispy Pata", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 20, "cal": 950, "gi": 40, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Pancit Bihon", "cat": "Pasta", "display_category": "Noodles", "serving": "1 order", "carbs": 55, "cal": 380, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Kare-Kare", "cat": "Entrees", "display_category": "Entree", "serving": "1 order", "carbs": 35, "cal": 600, "gi": 66, "processed": 5, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Kenny Rogers",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from kennyrogersdelivery.com.ph (session 96). All 5 real analyzed entree items fully captured from the committed page.",
+    "source_url": "https://glucobeacon.com/restaurants/ph/kenny-rogers.html",
+    "items": [
+      { "name": "Hawaiian Roast Chicken (Quarter)", "cat": "Chicken", "display_category": "Grilled", "serving": "quarter chicken", "carbs": 20, "cal": 380, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "OMG Unfried Fried Chicken", "cat": "Chicken", "display_category": "Chicken", "serving": "1 order", "carbs": 12, "cal": 320, "gi": 48, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Honey Bourbon Ribs", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 35, "cal": 700, "gi": 40, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Solo A Set", "cat": "Chicken", "display_category": "Chicken Platter", "serving": "1 set", "carbs": 70, "cal": 650, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Solo B Set", "cat": "Chicken", "display_category": "Chicken Platter", "serving": "1 set", "carbs": 72, "cal": 680, "gi": 66, "processed": 5, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Kuya J",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from kuyaj.com.ph (session 96). All 5 real analyzed entree items fully captured from the committed page.",
+    "source_url": "https://glucobeacon.com/restaurants/ph/kuya-j.html",
+    "items": [
+      { "name": "Sizzling Scallops", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 10, "cal": 350, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "Sisig on Sizzling Plates", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 15, "cal": 650, "gi": 40, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Crispy Pata", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 20, "cal": 950, "gi": 40, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Crispy Catfish", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 25, "cal": 500, "gi": 40, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Kare-Kare", "cat": "Entrees", "display_category": "Entree", "serving": "1 order", "carbs": 35, "cal": 600, "gi": 66, "processed": 5, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Mesa",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from mesarestaurant.ph (session 96). All 8 real analyzed entree items fully captured from the committed page.",
+    "source_url": "https://glucobeacon.com/restaurants/ph/mesa.html",
+    "items": [
+      { "name": "Sisig (Bangus)", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 12, "cal": 450, "gi": 25, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Pork BBQ", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 10, "cal": 400, "gi": 40, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Crispy Pork Belly (Half Slab)", "cat": "Entrees", "display_category": "Grilled", "serving": "half slab", "carbs": 5, "cal": 800, "gi": 40, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Crispchon (Crispy Lechon)", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 8, "cal": 750, "gi": 40, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Grilled Liempo Mesa Way", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 8, "cal": 600, "gi": 40, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Sisig (Crunchy Pork)", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 15, "cal": 650, "gi": 40, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Pancit Canton", "cat": "Pasta", "display_category": "Noodles", "serving": "1 order", "carbs": 58, "cal": 400, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Palabok", "cat": "Pasta", "display_category": "Noodles", "serving": "1 order", "carbs": 55, "cal": 380, "gi": 60, "processed": 5, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Pizza Hut",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from pizzahut.com.ph (session 96). All 7 real analyzed entree items fully captured from the committed page.",
+    "source_url": "https://glucobeacon.com/restaurants/ph/pizza-hut.html",
+    "items": [
+      { "name": "Garlic Parmesan WingStreet (6pc)", "cat": "Chicken", "display_category": "Wings", "serving": "6 pieces", "carbs": 12, "cal": 460, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Buffalo Mild Wings (6pc)", "cat": "Chicken", "display_category": "Wings", "serving": "6 pieces", "carbs": 15, "cal": 420, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Large Super Supreme (1 slice)", "cat": "Pizza", "display_category": "Pizza", "serving": "1 slice", "carbs": 27, "cal": 300, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Pepperoni Lovers Pan Pizza (1 slice)", "cat": "Pizza", "display_category": "Pizza", "serving": "1 slice", "carbs": 28, "cal": 320, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Honey Barbecue Wings (6pc)", "cat": "Chicken", "display_category": "Wings", "serving": "6 pieces", "carbs": 30, "cal": 480, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Cheese Stuffed Crust Pizza (1 slice)", "cat": "Pizza", "display_category": "Pizza", "serving": "1 slice", "carbs": 32, "cal": 350, "gi": 55, "processed": 6, "veg": true, "mediterranean": true },
+      { "name": "Baked Spaghetti Carbonara", "cat": "Pasta", "display_category": "Pasta", "serving": "1 order", "carbs": 60, "cal": 650, "gi": 50, "processed": 6, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Wendy's",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from wendys.com.ph (session 96). All 4 real analyzed entree items fully captured from the committed page.",
+    "source_url": "https://glucobeacon.com/restaurants/ph/wendys.html",
+    "items": [
+      { "name": "Cheeseburger Deluxe (Solo)", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 42, "cal": 480, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Bacon Mushroom Melt (Solo)", "cat": "Burgers", "display_category": "Burger", "serving": "1 sandwich", "carbs": 40, "cal": 550, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Spaghetti (Solo)", "cat": "Pasta", "display_category": "Pasta", "serving": "1 order", "carbs": 65, "cal": 480, "gi": 50, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "1-Pc Fried Chicken with Rice (Solo)", "cat": "Chicken", "display_category": "Chicken Platter", "serving": "1 piece + rice", "carbs": 60, "cal": 550, "gi": 66, "processed": 6, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Classic Savory",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from classicsavory.com (session 96). All 6 real analyzed entree items fully captured from the committed page.",
+    "source_url": "https://glucobeacon.com/restaurants/ph/classic-savory.html",
+    "items": [
+      { "name": "Whole Classic Chicken (Quarter)", "cat": "Chicken", "display_category": "Grilled", "serving": "quarter chicken", "carbs": 15, "cal": 350, "gi": 25, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "General's Garlic Chicken (Quarter)", "cat": "Chicken", "display_category": "Chicken", "serving": "quarter chicken", "carbs": 18, "cal": 400, "gi": 48, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Buttered Chicken (Quarter)", "cat": "Chicken", "display_category": "Chicken", "serving": "quarter chicken", "carbs": 20, "cal": 420, "gi": 48, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Pancit Bihon Guisado", "cat": "Pasta", "display_category": "Noodles", "serving": "1 order", "carbs": 58, "cal": 380, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Long Life Pancit Canton", "cat": "Pasta", "display_category": "Noodles", "serving": "1 order", "carbs": 60, "cal": 400, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Chami", "cat": "Pasta", "display_category": "Noodles", "serving": "1 order", "carbs": 62, "cal": 420, "gi": 50, "processed": 5, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Botejyu",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from botejyu.ph (session 96). All 11 real analyzed entree items fully captured from the committed page (Best Choices + Approach with Caution combined, deduped).",
+    "source_url": "https://glucobeacon.com/restaurants/ph/botejyu.html",
+    "items": [
+      { "name": "Chicken Teriyaki (Teppan)", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 20, "cal": 400, "gi": 25, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Salmon Teriyaki Steak", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 18, "cal": 420, "gi": 25, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Diced Beef Garlic Steak", "cat": "Steaks", "display_category": "Grilled", "serving": "1 order", "carbs": 15, "cal": 550, "gi": 40, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Beef Rib with Onion Teppanyaki", "cat": "Steaks", "display_category": "Grilled", "serving": "1 order", "carbs": 20, "cal": 600, "gi": 40, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Pork Belly Yakisoba", "cat": "Pasta", "display_category": "Noodles", "serving": "1 order", "carbs": 68, "cal": 580, "gi": 50, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Seafood Mix Yakisoba", "cat": "Pasta", "display_category": "Noodles", "serving": "1 order", "carbs": 65, "cal": 550, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Seafood Mix Oko", "cat": "Entrees", "display_category": "Okonomiyaki", "serving": "1 order", "carbs": 58, "cal": 520, "gi": 62, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Pork Belly Oko (Okonomiyaki)", "cat": "Entrees", "display_category": "Okonomiyaki", "serving": "1 order", "carbs": 60, "cal": 550, "gi": 62, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Chicken Butter Rice Bowl", "cat": "Bowls", "display_category": "Rice Bowl", "serving": "1 bowl", "carbs": 82, "cal": 680, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Prawn Tempura Rice Bowl", "cat": "Bowls", "display_category": "Rice Bowl", "serving": "1 bowl", "carbs": 80, "cal": 620, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Grilled BBQ Pork Rice Bowl", "cat": "Bowls", "display_category": "Rice Bowl", "serving": "1 bowl", "carbs": 78, "cal": 650, "gi": 66, "processed": 5, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Chowking",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from chowking.ph (session 96). All 12 real analyzed entree items fully captured from the committed page (Best Choices + Approach with Caution combined, deduped).",
+    "source_url": "https://glucobeacon.com/restaurants/ph/chowking.html",
+    "items": [
+      { "name": "Chinese-Style Fried Chicken (1pc)", "cat": "Chicken", "display_category": "Chicken", "serving": "1 piece", "carbs": 17, "cal": 300, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "4pc Siomai", "cat": "Entrees", "display_category": "Dim Sum", "serving": "4 pieces", "carbs": 20, "cal": 220, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Pancit Canton", "cat": "Pasta", "display_category": "Noodles", "serving": "1 order", "carbs": 58, "cal": 380, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Lumpiang Shanghai Rice Meal", "cat": "Entrees", "display_category": "Rice Meal", "serving": "1 order + rice", "carbs": 55, "cal": 450, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Braised Beef with Rice", "cat": "Entrees", "display_category": "Rice Meal", "serving": "1 order + rice", "carbs": 50, "cal": 480, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Siomai Chao Fan", "cat": "Bowls", "display_category": "Fried Rice", "serving": "1 bowl", "carbs": 68, "cal": 520, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Pork Chao Fan", "cat": "Bowls", "display_category": "Fried Rice", "serving": "1 bowl", "carbs": 65, "cal": 500, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Spicy Chao Fan", "cat": "Bowls", "display_category": "Fried Rice", "serving": "1 bowl", "carbs": 66, "cal": 510, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Sweet & Sour Chicken Lauriat", "cat": "Entrees", "display_category": "Set Meal", "serving": "1 set", "carbs": 68, "cal": 580, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Sweet & Sour Pork Lauriat", "cat": "Entrees", "display_category": "Set Meal", "serving": "1 set", "carbs": 70, "cal": 600, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Chix 'n Sauce Lauriat", "cat": "Entrees", "display_category": "Set Meal", "serving": "1 set", "carbs": 75, "cal": 650, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Sweet & Sour Fish Lauriat", "cat": "Entrees", "display_category": "Set Meal", "serving": "1 set", "carbs": 66, "cal": 560, "gi": 66, "processed": 5, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Pepper Lunch",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from pepperlunch.ph (session 96). All 10 real analyzed entree items fully captured from the committed page (Best Choices + Approach with Caution combined, deduped).",
+    "source_url": "https://glucobeacon.com/restaurants/ph/pepper-lunch.html",
+    "items": [
+      { "name": "Rib Eye Steak", "cat": "Steaks", "display_category": "Grilled", "serving": "1 order", "carbs": 10, "cal": 550, "gi": 40, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Chicken Aglio Olio", "cat": "Pasta", "display_category": "Pasta", "serving": "1 order", "carbs": 60, "cal": 480, "gi": 50, "processed": 5, "veg": false, "mediterranean": true },
+      { "name": "Beef Aglio Olio", "cat": "Pasta", "display_category": "Pasta", "serving": "1 order", "carbs": 58, "cal": 550, "gi": 50, "processed": 5, "veg": false, "mediterranean": true },
+      { "name": "Salmon Pepper Rice", "cat": "Bowls", "display_category": "Rice Bowl", "serving": "1 bowl", "carbs": 55, "cal": 520, "gi": 66, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Chicken Pepper Rice", "cat": "Bowls", "display_category": "Rice Bowl", "serving": "1 bowl", "carbs": 58, "cal": 480, "gi": 66, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Beef Pepper Rice", "cat": "Bowls", "display_category": "Rice Bowl", "serving": "1 bowl", "carbs": 60, "cal": 550, "gi": 66, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Jumbo Beef Pepper Rice", "cat": "Bowls", "display_category": "Rice Bowl", "serving": "1 bowl (jumbo)", "carbs": 78, "cal": 750, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Beef Yakiniku with Egg", "cat": "Bowls", "display_category": "Rice Bowl", "serving": "1 bowl", "carbs": 62, "cal": 600, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Curry Beef Pepper Rice with Cheese", "cat": "Bowls", "display_category": "Rice Bowl", "serving": "1 bowl", "carbs": 70, "cal": 700, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Teriyaki Beef Pepper Rice with Egg", "cat": "Bowls", "display_category": "Rice Bowl", "serving": "1 bowl", "carbs": 65, "cal": 620, "gi": 66, "processed": 5, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Tokyo Tokyo",
+    "country": "Philippines",
+    "region_code": "ph",
+    "region_name": "Philippines",
+    "source_note": "Real item names pulled from tokyotokyo.com.ph (session 96). All 11 real analyzed entree items fully captured from the committed page (Best Choices + Approach with Caution combined, deduped).",
+    "source_url": "https://glucobeacon.com/restaurants/ph/tokyo-tokyo.html",
+    "items": [
+      { "name": "Chicken Teriyaki (Grilled)", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 15, "cal": 350, "gi": 25, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Beef Misono", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 8, "cal": 450, "gi": 40, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Fried Chicken Karaage (Cup)", "cat": "Chicken", "display_category": "Chicken", "serving": "1 cup", "carbs": 18, "cal": 320, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Steamed Gyoza (6pc)", "cat": "Entrees", "display_category": "Dumplings", "serving": "6 pieces", "carbs": 30, "cal": 280, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Spicy Chicken Ramen", "cat": "Pasta", "display_category": "Ramen", "serving": "1 bowl", "carbs": 62, "cal": 520, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Braised Pork Ramen", "cat": "Pasta", "display_category": "Ramen", "serving": "1 bowl", "carbs": 65, "cal": 550, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Best Chicken Teriyaki Bento", "cat": "Bowls", "display_category": "Bento", "serving": "1 bento", "carbs": 85, "cal": 650, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Chicken Karaage Bento", "cat": "Bowls", "display_category": "Bento", "serving": "1 bento", "carbs": 80, "cal": 700, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Unagi-Style Bangus Bento", "cat": "Bowls", "display_category": "Bento", "serving": "1 bento", "carbs": 78, "cal": 620, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Prawn Tempura Bento", "cat": "Bowls", "display_category": "Bento", "serving": "1 bento", "carbs": 82, "cal": 680, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Big Chicken Katsu Original Bento", "cat": "Bowls", "display_category": "Bento", "serving": "1 bento", "carbs": 85, "cal": 750, "gi": 66, "processed": 6, "veg": false, "mediterranean": false }
+    ]
+  }
+]
