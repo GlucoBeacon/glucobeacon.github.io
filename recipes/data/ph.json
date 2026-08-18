@@ -1,0 +1,260 @@
+[
+  {
+    "slug": "sinigang-na-baboy",
+    "id": 511,
+    "cuisine": "filipino",
+    "meal_category": "dinner",
+    "prep_min": 15, "cook_min": 45, "total_min": 60, "servings": 4,
+    "tags": ["Gluten-Free", "High-Protein"],
+    "nutrition": { "cal": 310, "carbs": 12, "protein": 26, "fat": 18, "fiber": 4, "gi": 35 },
+    "name": { "en": "Sinigang na Baboy", "es": "Sinigang na Baboy", "fil": "Sinigang na Baboy" },
+    "description": {
+      "en": "A sour tamarind-broth pork and vegetable stew -- real Filipino comfort food, tangy and light despite being hearty. Nutrition is for the stew alone; rice on the side counts separately toward your carb budget.",
+      "es": "Un guiso agrio de cerdo y verduras en caldo de tamarindo -- comida reconfortante filipina real, agria y ligera a pesar de ser abundante. La nutrici&#xF3;n es solo para el guiso; el arroz aparte cuenta por separado en tu presupuesto de carbohidratos.",
+      "fil": "Sour tamarind-broth pork at vegetable stew -- real Filipino comfort food, maasim at light kahit masustansya. Para lang sa stew ang nutrition; hiwalay ang bilang ng carbs kapag may kasamang kanin."
+    },
+    "why_it_fits": {
+      "en": "This dish is almost entirely broth, pork, and vegetables with very little starch of its own, so the carb count stays low -- just be mindful of how much rice you pair it with.",
+      "es": "Este platillo es casi todo caldo, cerdo y verduras con muy poco almid&#xF3;n propio, as&#xED; que el conteo de carbohidratos se mantiene bajo -- solo ten cuidado con cu&#xE1;nto arroz le agregas.",
+      "fil": "Halos puro broth, pork, at vegetables ang dish na ito na kaunti lang ang sariling starch, kaya mababa ang carb count -- ingat lang sa dami ng kanin na kasama."
+    },
+    "ingredients": [
+      { "qty_us": "1.5 lb", "qty_metric": "680 g", "text": { "en": "pork ribs or pork belly, cubed", "es": "costillas o panza de cerdo, en cubos", "fil": "pork ribs o pork belly, kinubo" } },
+      { "qty_us": "6 cups", "qty_metric": "1.4 L", "text": { "en": "water", "es": "agua", "fil": "tubig" } },
+      { "qty_us": "2 tbsp", "qty_metric": "30 ml", "text": { "en": "tamarind soup base (sinigang mix) or fresh tamarind pulp", "es": "base de sopa de tamarindo (mezcla para sinigang) o pulpa de tamarindo fresca", "fil": "sinigang mix o fresh tamarind" } },
+      { "qty_us": "1 medium", "qty_metric": "1 medium", "text": { "en": "radish, sliced", "es": "rabanito, en rodajas", "fil": "labanos, hiniwa" } },
+      { "qty_us": "2 cups", "qty_metric": "60 g", "text": { "en": "kangkong (water spinach) or spinach", "es": "kangkong (espinaca de agua) o espinaca", "fil": "kangkong o spinach" } },
+      { "qty_us": "1 cup", "qty_metric": "100 g", "text": { "en": "string beans, cut", "es": "ejotes, cortados", "fil": "sitaw, hiniwa" } },
+      { "qty_us": "2 medium", "qty_metric": "2 medium", "text": { "en": "tomatoes, quartered", "es": "jitomates, en cuartos", "fil": "kamatis, hinati" } },
+      { "qty_us": "1", "qty_metric": "1", "text": { "en": "onion, quartered", "es": "cebolla, en cuartos", "fil": "sibuyas, hinati" } },
+      { "qty_us": "2", "qty_metric": "2", "text": { "en": "green chilies, whole", "es": "chiles verdes, enteros", "fil": "siling pansigang" } }
+    ],
+    "instructions": {
+      "en": [
+        "Simmer the pork in water with the onion and tomatoes until tender, about 30 minutes, skimming off any foam.",
+        "Stir in the tamarind soup base until dissolved.",
+        "Add the radish and string beans, simmer 10 minutes.",
+        "Add the kangkong/spinach and green chilies, cook 2-3 minutes until just wilted.",
+        "Season with fish sauce to taste and serve hot."
+      ],
+      "es": [
+        "Cuece el cerdo a fuego lento en agua con la cebolla y los jitomates hasta que est&#xE9; suave, unos 30 minutos, retirando la espuma.",
+        "Incorpora la base de sopa de tamarindo hasta que se disuelva.",
+        "Agrega el rabanito y los ejotes, cuece 10 minutos.",
+        "Agrega el kangkong/espinaca y los chiles verdes, cocina 2-3 minutos hasta que apenas se marchiten.",
+        "Sazona con salsa de pescado al gusto y sirve caliente."
+      ],
+      "fil": [
+        "I-simmer ang pork sa tubig kasama ang sibuyas at kamatis hanggang lumambot, mga 30 minuto, tinatanggal ang bula.",
+        "Ihalo ang sinigang mix hanggang matunaw.",
+        "Idagdag ang labanos at sitaw, i-simmer ng 10 minuto.",
+        "Idagdag ang kangkong/spinach at siling pansigang, lutuin ng 2-3 minuto hanggang malanta lang.",
+        "Timplahan ng patis ayon sa panlasa at ihain nang mainit."
+      ]
+    }
+  },
+  {
+    "slug": "chicken-tinola",
+    "id": 512,
+    "cuisine": "filipino",
+    "meal_category": "dinner",
+    "prep_min": 10, "cook_min": 30, "total_min": 40, "servings": 4,
+    "tags": ["Gluten-Free", "High-Protein"],
+    "nutrition": { "cal": 240, "carbs": 8, "protein": 26, "fat": 11, "fiber": 3, "gi": 30 },
+    "name": { "en": "Chicken Tinola", "es": "Tinola de Pollo", "fil": "Chicken Tinola" },
+    "description": {
+      "en": "A gentle ginger-chicken soup with green papaya and chili leaves -- real Filipino home cooking, light and warming.",
+      "es": "Una sopa suave de pollo y jengibre con papaya verde y hojas de chile -- cocina casera filipina real, ligera y reconfortante.",
+      "fil": "Malumanay na ginger-chicken soup na may green papaya at sili leaves -- real Filipino home cooking, light at nakakapainit."
+    },
+    "why_it_fits": {
+      "en": "This is a broth-based soup with lean chicken thigh and fibrous green papaya -- very low in carbs and starch, so it fits almost any diabetes meal plan without much adjustment.",
+      "es": "Esta es una sopa a base de caldo con pollo magro y papaya verde fibrosa -- muy baja en carbohidratos y almid&#xF3;n, as&#xED; que encaja en casi cualquier plan de comidas para diab&#xE9;ticos sin mucho ajuste.",
+      "fil": "Broth-based soup ito na may lean chicken thigh at fibrous green papaya -- mababa talaga sa carbs at starch, kaya bagay ito sa halos anumang diabetes meal plan nang walang gaanong adjustment."
+    },
+    "ingredients": [
+      { "qty_us": "1.5 lb", "qty_metric": "680 g", "text": { "en": "chicken thighs, bone-in, skin removed", "es": "muslos de pollo, con hueso, sin piel", "fil": "chicken thigh, may buto, walang balat" } },
+      { "qty_us": "2 tbsp", "qty_metric": "20 g", "text": { "en": "ginger, sliced", "es": "jengibre, en rodajas", "fil": "luya, hiniwa" } },
+      { "qty_us": "1", "qty_metric": "1", "text": { "en": "onion, sliced", "es": "cebolla, en rodajas", "fil": "sibuyas, hiniwa" } },
+      { "qty_us": "2 cloves", "qty_metric": "2 cloves", "text": { "en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad" } },
+      { "qty_us": "6 cups", "qty_metric": "1.4 L", "text": { "en": "water or chicken broth", "es": "agua o caldo de pollo", "fil": "tubig o chicken broth" } },
+      { "qty_us": "2 cups", "qty_metric": "300 g", "text": { "en": "green papaya, sliced (or chayote)", "es": "papaya verde, en rodajas (o chayote)", "fil": "green papaya, hiniwa (o sayote)" } },
+      { "qty_us": "2 cups", "qty_metric": "60 g", "text": { "en": "spinach or moringa (malunggay) leaves", "es": "espinaca o hojas de moringa (malunggay)", "fil": "spinach o malunggay leaves" } }
+    ],
+    "instructions": {
+      "en": [
+        "Saut&#xE9; the ginger, onion, and garlic in a bit of oil until fragrant.",
+        "Add the chicken and sear a few minutes.",
+        "Pour in the water/broth and simmer 20 minutes until the chicken is tender.",
+        "Add the green papaya, simmer 8 minutes until slightly soft.",
+        "Stir in the spinach/moringa leaves, cook 2 minutes, and season with fish sauce."
+      ],
+      "es": [
+        "Sofr&#xED;e el jengibre, la cebolla y el ajo en un poco de aceite hasta que estén fragantes.",
+        "Agrega el pollo y sella unos minutos.",
+        "Vierte el agua/caldo y cuece a fuego lento 20 minutos hasta que el pollo est&#xE9; suave.",
+        "Agrega la papaya verde, cuece 8 minutos hasta que est&#xE9; algo suave.",
+        "Incorpora la espinaca/hojas de moringa, cocina 2 minutos y sazona con salsa de pescado."
+      ],
+      "fil": [
+        "I-saut&#xE9; ang luya, sibuyas, at bawang sa kaunting mantika hanggang mabango.",
+        "Idagdag ang manok at i-sear ng ilang minuto.",
+        "Ibuhos ang tubig/broth at i-simmer ng 20 minuto hanggang lumambot ang manok.",
+        "Idagdag ang green papaya, i-simmer ng 8 minuto hanggang medyo lumambot.",
+        "Ihalo ang spinach/malunggay leaves, lutuin ng 2 minuto, at timplahan ng patis."
+      ]
+    }
+  },
+  {
+    "slug": "inihaw-na-bangus",
+    "id": 513,
+    "cuisine": "filipino",
+    "meal_category": "dinner",
+    "prep_min": 15, "cook_min": 15, "total_min": 30, "servings": 2,
+    "tags": ["Gluten-Free", "High-Protein", "Low-Carb"],
+    "nutrition": { "cal": 320, "carbs": 6, "protein": 34, "fat": 17, "fiber": 1, "gi": 15 },
+    "name": { "en": "Inihaw na Bangus", "es": "Bangus a la Parrilla", "fil": "Inihaw na Bangus" },
+    "description": {
+      "en": "Whole grilled milkfish stuffed with tomato and onion -- real Filipino grilled-fish tradition, simple and smoky.",
+      "es": "Sabalo entero a la parrilla relleno de jitomate y cebolla -- tradici&#xF3;n real filipina de pescado asado, sencilla y ahumada.",
+      "fil": "Buong grilled milkfish na sinalinan ng kamatis at sibuyas -- real Filipino grilled-fish tradition, simple at may usok na lasa."
+    },
+    "why_it_fits": {
+      "en": "This is essentially a whole grilled fish with no starch at all -- carbs come only from the tomato and onion stuffing, making it one of the lowest-carb, highest-protein meals in this collection.",
+      "es": "Esto es esencialmente un pescado entero a la parrilla sin almid&#xF3;n alguno -- los carbohidratos vienen solo del relleno de jitomate y cebolla, convirti&#xE9;ndolo en una de las comidas m&#xE1;s bajas en carbohidratos y m&#xE1;s altas en prote&#xED;na de esta colecci&#xF3;n.",
+      "fil": "Basically buong grilled fish ito na walang starch -- galing lang sa tomato at onion stuffing ang carbs, kaya isa ito sa pinakamababang-carb at pinakamataas-protein na meal sa koleksyon na ito."
+    },
+    "ingredients": [
+      { "qty_us": "1.5 lb", "qty_metric": "680 g", "text": { "en": "whole bangus (milkfish), butterflied and deboned", "es": "sabalo entero, mariposeado y deshuesado", "fil": "buong bangus, na-butterfly at tinanggalan ng tinik" } },
+      { "qty_us": "1", "qty_metric": "1", "text": { "en": "tomato, diced", "es": "jitomate, picado", "fil": "kamatis, tinadtad" } },
+      { "qty_us": "1/2", "qty_metric": "1/2", "text": { "en": "onion, diced", "es": "cebolla, picada", "fil": "sibuyas, tinadtad" } },
+      { "qty_us": "2 tbsp", "qty_metric": "30 ml", "text": { "en": "calamansi or lime juice", "es": "jugo de calamansi o lim&#xF3;n", "fil": "calamansi o lime juice" } },
+      { "qty_us": "1 tbsp", "qty_metric": "15 ml", "text": { "en": "soy sauce", "es": "salsa de soya", "fil": "toyo" } }
+    ],
+    "instructions": {
+      "en": [
+        "Marinate the fish in calamansi juice, soy sauce, pepper, and salt for 15 minutes.",
+        "Stuff the cavity with the diced tomato and onion.",
+        "Grill over medium-high heat, 6-7 minutes per side, until cooked through and slightly charred.",
+        "Serve with extra calamansi and a side of vinegar dipping sauce."
+      ],
+      "es": [
+        "Marina el pescado en jugo de calamansi, salsa de soya, pimienta y sal durante 15 minutos.",
+        "Rellena la cavidad con el jitomate y la cebolla picados.",
+        "Asa a fuego medio-alto, 6-7 minutos por lado, hasta que est&#xE9; bien cocido y ligeramente tostado.",
+        "Sirve con calamansi extra y una salsa de vinagre para remojar."
+      ],
+      "fil": [
+        "I-marinate ang isda sa calamansi juice, toyo, paminta, at asin ng 15 minuto.",
+        "Salinan ang loob ng tinadtad na kamatis at sibuyas.",
+        "I-grill sa medium-high heat, 6-7 minuto bawat side, hanggang maluto at medyo may sunog.",
+        "Ihain kasama ang extra calamansi at suka para isawsaw."
+      ]
+    }
+  },
+  {
+    "slug": "pinakbet",
+    "id": 514,
+    "cuisine": "filipino",
+    "meal_category": "lunch",
+    "prep_min": 15, "cook_min": 20, "total_min": 35, "servings": 4,
+    "tags": ["Vegetarian", "High-Fiber", "Low-GI"],
+    "nutrition": { "cal": 140, "carbs": 18, "protein": 5, "fat": 6, "fiber": 6, "gi": 40 },
+    "name": { "en": "Pinakbet", "es": "Pinakbet", "fil": "Pinakbet" },
+    "description": {
+      "en": "A vegetable medley of squash, eggplant, okra, and bitter melon in a savory shrimp-paste sauce -- real Ilocano vegetable dish, full of fiber.",
+      "es": "Una mezcla de verduras con calabaza, berenjena, quimbomb&#xF3; y melon amargo en salsa sabrosa de pasta de camar&#xF3;n -- platillo real ilocano de verduras, lleno de fibra.",
+      "fil": "Vegetable medley ng kalabasa, talong, okra, at ampalaya sa savory bagoong sauce -- real Ilocano vegetable dish, puno ng fiber."
+    },
+    "why_it_fits": {
+      "en": "This dish is almost entirely fibrous vegetables, which slows digestion and keeps the overall glycemic impact low even though it's a hearty, filling portion.",
+      "es": "Este platillo es casi todo verduras fibrosas, lo que ralentiza la digesti&#xF3;n y mantiene bajo el impacto gluc&#xE9;mico general aunque sea una porci&#xF3;n abundante y satisfactoria.",
+      "fil": "Halos puro fibrous vegetables ang dish na ito, na nagpapabagal sa digestion at nagpapababa sa overall glycemic impact kahit malaki at busog ang portion."
+    },
+    "ingredients": [
+      { "qty_us": "1 cup", "qty_metric": "120 g", "text": { "en": "kalabasa (squash), cubed", "es": "calabaza (kalabasa), en cubos", "fil": "kalabasa, kinubo" } },
+      { "qty_us": "1", "qty_metric": "1", "text": { "en": "eggplant, sliced", "es": "berenjena, en rodajas", "fil": "talong, hiniwa" } },
+      { "qty_us": "1 cup", "qty_metric": "100 g", "text": { "en": "okra", "es": "quimbomb&#xF3;", "fil": "okra" } },
+      { "qty_us": "1 cup", "qty_metric": "100 g", "text": { "en": "ampalaya (bitter melon), sliced", "es": "melon amargo (ampalaya), en rodajas", "fil": "ampalaya, hiniwa" } },
+      { "qty_us": "1 cup", "qty_metric": "100 g", "text": { "en": "string beans, cut", "es": "ejotes, cortados", "fil": "sitaw, hiniwa" } },
+      { "qty_us": "2", "qty_metric": "2", "text": { "en": "tomatoes, chopped", "es": "jitomates, picados", "fil": "kamatis, tinadtad" } },
+      { "qty_us": "1", "qty_metric": "1", "text": { "en": "onion, sliced", "es": "cebolla, en rodajas", "fil": "sibuyas, hiniwa" } },
+      { "qty_us": "1-2 tbsp", "qty_metric": "15-30 ml", "text": { "en": "bagoong (shrimp paste) or fish sauce", "es": "bagoong (pasta de camar&#xF3;n) o salsa de pescado", "fil": "bagoong o patis" } }
+    ],
+    "instructions": {
+      "en": [
+        "Saut&#xE9; the garlic and onion in a bit of oil until fragrant.",
+        "Add the tomatoes and cook until softened.",
+        "Add the bagoong/fish sauce and a splash of water, bring to a simmer.",
+        "Add the squash first, then the eggplant, string beans, okra, and bitter melon in stages so nothing overcooks.",
+        "Simmer until the vegetables are tender but not mushy, about 10 minutes."
+      ],
+      "es": [
+        "Sofr&#xED;e el ajo y la cebolla en un poco de aceite hasta que est&#xE9;n fragantes.",
+        "Agrega los jitomates y cocina hasta que se ablanden.",
+        "Agrega el bagoong/salsa de pescado y un chorrito de agua, deja que hierva a fuego lento.",
+        "Agrega primero la calabaza, luego la berenjena, los ejotes, el quimbomb&#xF3; y el melon amargo en etapas para que nada se sobrecocine.",
+        "Cuece a fuego lento hasta que las verduras est&#xE9;n suaves pero no aguadas, unos 10 minutos."
+      ],
+      "fil": [
+        "I-saut&#xE9; ang bawang at sibuyas sa kaunting mantika hanggang mabango.",
+        "Idagdag ang kamatis at lutuin hanggang lumambot.",
+        "Idagdag ang bagoong/patis at kaunting tubig, pakuluan.",
+        "Idagdag muna ang kalabasa, tapos talong, sitaw, okra, at ampalaya nang paunti-unti para hindi maluto nang sobra.",
+        "I-simmer hanggang lumambot ang gulay pero hindi malata, mga 10 minuto."
+      ]
+    }
+  },
+  {
+    "slug": "ginisang-munggo",
+    "id": 515,
+    "cuisine": "filipino",
+    "meal_category": "lunch",
+    "prep_min": 10, "cook_min": 30, "total_min": 40, "servings": 4,
+    "tags": ["Vegetarian", "High-Fiber", "Plant-Protein"],
+    "nutrition": { "cal": 190, "carbs": 28, "protein": 12, "fat": 4, "fiber": 8, "gi": 35 },
+    "name": { "en": "Ginisang Munggo", "es": "Munggo Guisado", "fil": "Ginisang Munggo" },
+    "description": {
+      "en": "A hearty mung bean stew with spinach -- real Filipino weeknight staple, plant-protein-rich and filling.",
+      "es": "Un guiso abundante de frijol mungo con espinaca -- plato real filipino de entre semana, rico en prote&#xED;na vegetal y satisfactorio.",
+      "fil": "Masustansyang mung bean stew na may spinach -- real Filipino weeknight staple, mayaman sa plant-protein at busog."
+    },
+    "why_it_fits": {
+      "en": "Legumes like mung beans have one of the lowest glycemic indexes of any starchy food, and their fiber content further slows how fast their carbs raise blood sugar.",
+      "es": "Las legumbres como el frijol mungo tienen uno de los &#xED;ndices gluc&#xE9;micos m&#xE1;s bajos entre los alimentos con almid&#xF3;n, y su contenido de fibra ralentiza a&#xFA;n m&#xE1;s la rapidez con que sus carbohidratos elevan el az&#xFA;car en la sangre.",
+      "fil": "Isa sa pinakamababang glycemic index sa lahat ng starchy food ang mga legume gaya ng munggo, at pinapabagal pa ng fiber content nito kung gaano kabilis itaas ng carbs nito ang blood sugar."
+    },
+    "ingredients": [
+      { "qty_us": "1 cup", "qty_metric": "200 g", "text": { "en": "dried mung beans, rinsed", "es": "frijol mungo seco, enjuagado", "fil": "dried munggo, hinugasan" } },
+      { "qty_us": "4 cups", "qty_metric": "950 ml", "text": { "en": "water", "es": "agua", "fil": "tubig" } },
+      { "qty_us": "1", "qty_metric": "1", "text": { "en": "onion, diced", "es": "cebolla, picada", "fil": "sibuyas, tinadtad" } },
+      { "qty_us": "3 cloves", "qty_metric": "3 cloves", "text": { "en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad" } },
+      { "qty_us": "2", "qty_metric": "2", "text": { "en": "tomatoes, chopped", "es": "jitomates, picados", "fil": "kamatis, tinadtad" } },
+      { "qty_us": "2 cups", "qty_metric": "60 g", "text": { "en": "spinach or malunggay leaves", "es": "espinaca u hojas de malunggay", "fil": "spinach o malunggay leaves" } },
+      { "qty_us": "2 tbsp", "qty_metric": "30 ml", "text": { "en": "fish sauce (or soy sauce for vegetarian)", "es": "salsa de pescado (o salsa de soya para versi&#xF3;n vegetariana)", "fil": "patis (o toyo para vegetarian)" } }
+    ],
+    "instructions": {
+      "en": [
+        "Boil the mung beans in water until soft, about 20 minutes.",
+        "In a separate pan, saut&#xE9; the garlic, onion, and tomatoes in a bit of oil until fragrant.",
+        "Add the cooked mung beans with their liquid to the sauteed aromatics.",
+        "Season with fish sauce/soy sauce and simmer 5 minutes.",
+        "Stir in the spinach, cook until just wilted."
+      ],
+      "es": [
+        "Hierve el frijol mungo en agua hasta que est&#xE9; suave, unos 20 minutos.",
+        "En otra sart&#xE9;n, sofr&#xED;e el ajo, la cebolla y los jitomates en un poco de aceite hasta que est&#xE9;n fragantes.",
+        "Agrega el frijol mungo cocido con su l&#xED;quido a los arom&#xE1;ticos sofritos.",
+        "Sazona con salsa de pescado/soya y cuece a fuego lento 5 minutos.",
+        "Incorpora la espinaca, cocina hasta que apenas se marchite."
+      ],
+      "fil": [
+        "Ipakulo ang munggo sa tubig hanggang lumambot, mga 20 minuto.",
+        "Sa ibang kawali, i-saut&#xE9; ang bawang, sibuyas, at kamatis sa kaunting mantika hanggang mabango.",
+        "Idagdag ang lutong munggo kasama ang tubig nito sa sinaut&#xE9; na sangkap.",
+        "Timplahan ng patis/toyo at i-simmer ng 5 minuto.",
+        "Ihalo ang spinach, lutuin hanggang malanta lang."
+      ]
+    }
+  }
+]

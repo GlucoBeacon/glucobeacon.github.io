@@ -1,0 +1,265 @@
+[
+  {
+    "slug": "chilaquiles-verdes",
+    "id": 501,
+    "cuisine": "mexican",
+    "meal_category": "breakfast",
+    "prep_min": 10, "cook_min": 15, "total_min": 25, "servings": 2,
+    "tags": ["Low-GI", "Vegetarian"],
+    "nutrition": { "cal": 310, "carbs": 32, "protein": 14, "fat": 15, "fiber": 5, "gi": 50 },
+    "name": { "en": "Chilaquiles Verdes", "es": "Chilaquiles Verdes", "fil": "Chilaquiles Verdes" },
+    "description": {
+      "en": "Crispy tortilla chips simmered in tangy green salsa, topped with a fried egg and queso fresco -- a real Mexican breakfast classic, baked instead of fried to keep it lighter.",
+      "es": "Totopos crujientes cocidos a fuego lento en salsa verde, coronados con huevo frito y queso fresco -- un cl&#xE1;sico real del desayuno mexicano, horneado en lugar de frito para que sea m&#xE1;s ligero.",
+      "fil": "Crispy tortilla chips na niluto sa tangy green salsa, may fried egg at queso fresco sa ibabaw -- real Mexican breakfast classic, baked hindi fried para mas light."
+    },
+    "why_it_fits": {
+      "en": "Corn tortillas have a moderate glycemic index on their own, but baking them instead of deep-frying and pairing them with egg and cheese slows digestion and blunts the blood sugar response.",
+      "es": "Las tortillas de ma&#xED;z tienen un &#xED;ndice gluc&#xE9;mico moderado por s&#xED; solas, pero hornearlas en lugar de fre&#xED;rlas y combinarlas con huevo y queso ralentiza la digesti&#xF3;n y suaviza la respuesta del az&#xFA;car en la sangre.",
+      "fil": "Moderate ang glycemic index ng corn tortilla mag-isa, pero ang pag-bake dito imbes na pag-deep-fry, plus ang pag-pair sa egg at cheese, ay nagpapabagal sa digestion at nagpapagaan sa blood sugar response."
+    },
+    "ingredients": [
+      { "qty_us": "6", "qty_metric": "6", "text": { "en": "corn tortillas, cut into triangles", "es": "tortillas de ma&#xED;z, cortadas en tri&#xE1;ngulos", "fil": "corn tortilla, hiniwa sa triangles" } },
+      { "qty_us": "1 cup", "qty_metric": "240 ml", "text": { "en": "tomatillo salsa verde", "es": "salsa verde de tomatillo", "fil": "tomatillo salsa verde" } },
+      { "qty_us": "2 large", "qty_metric": "2 large", "text": { "en": "eggs", "es": "huevos", "fil": "itlog" } },
+      { "qty_us": "1/4 cup", "qty_metric": "60 g", "text": { "en": "queso fresco, crumbled", "es": "queso fresco, desmoronado", "fil": "queso fresco, dinurog" } },
+      { "qty_us": "2 tbsp", "qty_metric": "30 ml", "text": { "en": "crema or sour cream", "es": "crema o crema agria", "fil": "crema o sour cream" } },
+      { "qty_us": "1/4 cup", "qty_metric": "40 g", "text": { "en": "white onion, diced", "es": "cebolla blanca, picada", "fil": "white onion, tinadtad" } }
+    ],
+    "instructions": {
+      "en": [
+        "Preheat oven to 400&#xB0;F (200&#xB0;C). Arrange tortilla triangles on a baking sheet and bake 8-10 minutes until crisp.",
+        "Warm the salsa verde in a pan over medium heat for 5 minutes.",
+        "Add the baked tortilla chips to the salsa and toss gently until just coated -- they should stay slightly crisp, not soggy.",
+        "In a separate pan, fry the eggs to your liking.",
+        "Plate the chilaquiles, top with a fried egg, queso fresco, crema, and diced onion."
+      ],
+      "es": [
+        "Precalienta el horno a 200&#xB0;C. Coloca los tri&#xE1;ngulos de tortilla en una bandeja y hornea 8-10 minutos hasta que est&#xE9;n crujientes.",
+        "Calienta la salsa verde en una sart&#xE9;n a fuego medio durante 5 minutos.",
+        "Agrega los totopos horneados a la salsa y mezcla suavemente hasta cubrirlos apenas -- deben quedar algo crujientes, no aguados.",
+        "En otra sart&#xE9;n, fr&#xED;e los huevos a tu gusto.",
+        "Sirve los chilaquiles, corona con un huevo frito, queso fresco, crema y cebolla picada."
+      ],
+      "fil": [
+        "Preheat ang oven sa 400&#xB0;F (200&#xB0;C). I-arrange ang tortilla triangles sa baking sheet at i-bake ng 8-10 minuto hanggang crisp.",
+        "I-init ang salsa verde sa kawali sa medium heat ng 5 minuto.",
+        "Idagdag ang baked tortilla chips sa salsa at gently toss hanggang na-coat lang -- dapat medyo crisp pa rin, hindi malata.",
+        "Sa ibang kawali, i-fry ang itlog ayon sa gusto mo.",
+        "I-plate ang chilaquiles, lagyan ng fried egg, queso fresco, crema, at tinadtad na onion sa ibabaw."
+      ]
+    }
+  },
+  {
+    "slug": "pozole-rojo",
+    "id": 502,
+    "cuisine": "mexican",
+    "meal_category": "dinner",
+    "prep_min": 20, "cook_min": 90, "total_min": 110, "servings": 4,
+    "tags": ["Gluten-Free", "High-Protein"],
+    "nutrition": { "cal": 340, "carbs": 24, "protein": 28, "fat": 14, "fiber": 5, "gi": 45 },
+    "name": { "en": "Pozole Rojo", "es": "Pozole Rojo", "fil": "Pozole Rojo" },
+    "description": {
+      "en": "A rich, slow-simmered red chile pork and hominy stew -- real Mexican comfort food, topped fresh with cabbage, radish, and lime for crunch and acidity.",
+      "es": "Un guiso rico de cerdo y ma&#xED;z pozolero en chile rojo, cocido a fuego lento -- comida reconfortante mexicana real, coronado con col, rabanito y lim&#xF3;n frescos para textura y acidez.",
+      "fil": "Rich, slow-simmered na red chile pork at hominy stew -- real Mexican comfort food, may fresh cabbage, radish, at lime sa ibabaw para sa crunch at acidity."
+    },
+    "why_it_fits": {
+      "en": "Hominy has a lower glycemic index than most refined grains, and this dish leans heavily on protein from the pork, which slows how quickly the carbs it does have hit your bloodstream.",
+      "es": "El ma&#xED;z pozolero tiene un &#xED;ndice gluc&#xE9;mico m&#xE1;s bajo que la mayor&#xED;a de los granos refinados, y este platillo se apoya mucho en la prote&#xED;na del cerdo, lo que ralentiza qu&#xE9; tan r&#xE1;pido los carbohidratos que tiene llegan al torrente sangu&#xED;neo.",
+      "fil": "Mas mababa ang glycemic index ng hominy kumpara sa karamihan ng refined grains, at heavy sa protein mula sa pork ang dish na ito, na nagpapabagal kung gaano kabilis umakyat ang carbs sa blood sugar mo."
+    },
+    "ingredients": [
+      { "qty_us": "1.5 lb", "qty_metric": "680 g", "text": { "en": "pork shoulder, trimmed and cubed", "es": "espaldilla de cerdo, limpia y en cubos", "fil": "pork shoulder, tinabas at kinubo" } },
+      { "qty_us": "4 cups", "qty_metric": "950 ml", "text": { "en": "chicken broth", "es": "caldo de pollo", "fil": "chicken broth" } },
+      { "qty_us": "2 cups", "qty_metric": "330 g", "text": { "en": "white hominy, drained and rinsed", "es": "ma&#xED;z pozolero blanco, escurrido y enjuagado", "fil": "white hominy, sinala at hinugasan" } },
+      { "qty_us": "3", "qty_metric": "3", "text": { "en": "dried guajillo chiles, stemmed and seeded", "es": "chiles guajillo secos, sin tallo ni semillas", "fil": "dried guajillo chiles, tinanggalan ng tangkay at buto" } },
+      { "qty_us": "2", "qty_metric": "2", "text": { "en": "dried ancho chiles, stemmed and seeded", "es": "chiles ancho secos, sin tallo ni semillas", "fil": "dried ancho chiles, tinanggalan ng tangkay at buto" } },
+      { "qty_us": "3 cloves", "qty_metric": "3 cloves", "text": { "en": "garlic", "es": "ajo", "fil": "bawang" } },
+      { "qty_us": "1/2", "qty_metric": "1/2", "text": { "en": "white onion", "es": "cebolla blanca", "fil": "white onion" } },
+      { "qty_us": "1 tsp", "qty_metric": "5 ml", "text": { "en": "Mexican oregano", "es": "or&#xE9;gano mexicano", "fil": "Mexican oregano" } }
+    ],
+    "instructions": {
+      "en": [
+        "Simmer the pork in chicken broth with the onion and 1 clove of garlic until tender, about 1 hour.",
+        "Toast the dried chiles briefly in a dry pan, then soak in hot water for 10 minutes.",
+        "Blend the soaked chiles with a bit of their soaking liquid, the remaining garlic, and the oregano until smooth.",
+        "Strain the chile sauce into the pot with the pork.",
+        "Add the hominy, simmer 20 more minutes, and season with salt.",
+        "Serve hot, topped with shredded cabbage, sliced radish, diced onion, and lime wedges."
+      ],
+      "es": [
+        "Cuece el cerdo a fuego lento en el caldo de pollo con la cebolla y 1 diente de ajo hasta que est&#xE9; suave, aproximadamente 1 hora.",
+        "Tuesta brevemente los chiles secos en una sart&#xE9;n seca, luego rem&#xF3;jalos en agua caliente 10 minutos.",
+        "Licua los chiles remojados con un poco de su agua de remojo, el ajo restante y el or&#xE9;gano hasta que quede suave.",
+        "Cuela la salsa de chile hacia la olla con el cerdo.",
+        "Agrega el ma&#xED;z pozolero, cuece 20 minutos m&#xE1;s y sazona con sal.",
+        "Sirve caliente, coronado con col rallada, rabanito en rodajas, cebolla picada y lim&#xF3;n."
+      ],
+      "fil": [
+        "I-simmer ang pork sa chicken broth kasama ang onion at 1 clove na bawang hanggang lumambot, mga 1 oras.",
+        "I-toast nang mabilis ang dried chiles sa dry pan, tapos ibabad sa mainit na tubig ng 10 minuto.",
+        "I-blend ang nababad na chiles kasama ang kaunting soaking liquid nito, ang natitirang bawang, at oregano hanggang smooth.",
+        "I-strain ang chile sauce papunta sa kaldero kasama ang pork.",
+        "Idagdag ang hominy, i-simmer ng 20 pang minuto, at timplahan ng asin.",
+        "Ihain nang mainit, may shredded cabbage, hiniwang radish, tinadtad na onion, at lime sa ibabaw."
+      ]
+    }
+  },
+  {
+    "slug": "tacos-de-pescado",
+    "id": 503,
+    "cuisine": "mexican",
+    "meal_category": "lunch",
+    "prep_min": 15, "cook_min": 10, "total_min": 25, "servings": 2,
+    "tags": ["Low-GI", "High-Protein", "Gluten-Free"],
+    "nutrition": { "cal": 290, "carbs": 26, "protein": 28, "fat": 8, "fiber": 4, "gi": 46 },
+    "name": { "en": "Tacos de Pescado", "es": "Tacos de Pescado", "fil": "Tacos de Pescado" },
+    "description": {
+      "en": "Baja-style grilled fish tacos with cabbage slaw and a light lime crema -- real Baja California street food, grilled instead of fried to keep it lighter.",
+      "es": "Tacos de pescado a la parrilla estilo Baja con ensalada de col y una crema ligera de lim&#xF3;n -- comida callejera real de Baja California, a la parrilla en lugar de frita para que sea m&#xE1;s ligera.",
+      "fil": "Baja-style grilled fish tacos na may cabbage slaw at light lime crema -- real Baja California street food, grilled hindi fried para mas light."
+    },
+    "why_it_fits": {
+      "en": "Grilled white fish is lean and high in protein with almost no carbs of its own, so the meal's carb load comes mostly from the corn tortillas -- a moderate-GI base that's easy to portion.",
+      "es": "El pescado blanco a la parrilla es magro y alto en prote&#xED;na, casi sin carbohidratos propios, as&#xED; que la carga de carbohidratos de la comida viene principalmente de las tortillas de ma&#xED;z -- una base de &#xED;ndice gluc&#xE9;mico moderado f&#xE1;cil de porcionar.",
+      "fil": "Lean at mataas sa protein ang grilled white fish, halos walang carbs mismo, kaya galing sa corn tortilla ang karamihan ng carbs sa meal na ito -- moderate-GI na base na madaling i-portion."
+    },
+    "ingredients": [
+      { "qty_us": "12 oz", "qty_metric": "340 g", "text": { "en": "white fish fillets (tilapia or cod)", "es": "filetes de pescado blanco (tilapia o bacalao)", "fil": "white fish fillet (tilapia o cod)" } },
+      { "qty_us": "1 tbsp", "qty_metric": "15 ml", "text": { "en": "lime juice", "es": "jugo de lim&#xF3;n", "fil": "lime juice" } },
+      { "qty_us": "1 tsp", "qty_metric": "5 ml", "text": { "en": "chili powder", "es": "chile en polvo", "fil": "chili powder" } },
+      { "qty_us": "1/2 tsp", "qty_metric": "2.5 ml", "text": { "en": "cumin", "es": "comino", "fil": "cumin" } },
+      { "qty_us": "4 small", "qty_metric": "4 small", "text": { "en": "corn tortillas", "es": "tortillas de ma&#xED;z peque&#xF1;as", "fil": "maliit na corn tortilla" } },
+      { "qty_us": "1 cup", "qty_metric": "90 g", "text": { "en": "shredded cabbage", "es": "col rallada", "fil": "shredded cabbage" } },
+      { "qty_us": "2 tbsp", "qty_metric": "30 ml", "text": { "en": "plain Greek yogurt", "es": "yogur griego natural", "fil": "plain Greek yogurt" } },
+      { "qty_us": "1/4 cup", "qty_metric": "60 g", "text": { "en": "pico de gallo", "es": "pico de gallo", "fil": "pico de gallo" } }
+    ],
+    "instructions": {
+      "en": [
+        "Season the fish with lime juice, chili powder, cumin, and salt.",
+        "Grill or pan-sear the fish 3-4 minutes per side until it flakes easily.",
+        "Mix the Greek yogurt with a squeeze of lime juice and a pinch of salt to make the crema.",
+        "Warm the tortillas in a dry pan or over an open flame.",
+        "Flake the fish into the tortillas, top with cabbage, pico de gallo, and crema."
+      ],
+      "es": [
+        "Sazona el pescado con jugo de lim&#xF3;n, chile en polvo, comino y sal.",
+        "Asa o sella el pescado a la parrilla 3-4 minutos por lado hasta que se desmenuce f&#xE1;cilmente.",
+        "Mezcla el yogur griego con un chorrito de jugo de lim&#xF3;n y una pizca de sal para hacer la crema.",
+        "Calienta las tortillas en una sart&#xE9;n seca o al fuego directo.",
+        "Desmenuza el pescado en las tortillas, corona con col, pico de gallo y crema."
+      ],
+      "fil": [
+        "Timplahan ang isda ng lime juice, chili powder, cumin, at asin.",
+        "I-grill o pan-sear ang isda ng 3-4 minuto bawat side hanggang madaling matisod.",
+        "Haluin ang Greek yogurt sa kaunting lime juice at asin para sa crema.",
+        "Painitin ang tortilla sa dry pan o sa apoy.",
+        "I-flake ang isda papunta sa tortilla, lagyan ng cabbage, pico de gallo, at crema sa ibabaw."
+      ]
+    }
+  },
+  {
+    "slug": "enchiladas-verdes",
+    "id": 504,
+    "cuisine": "mexican",
+    "meal_category": "dinner",
+    "prep_min": 15, "cook_min": 20, "total_min": 35, "servings": 3,
+    "tags": ["Gluten-Free", "High-Protein"],
+    "nutrition": { "cal": 360, "carbs": 28, "protein": 32, "fat": 14, "fiber": 4, "gi": 48 },
+    "name": { "en": "Enchiladas Verdes", "es": "Enchiladas Verdes", "fil": "Enchiladas Verdes" },
+    "description": {
+      "en": "Corn tortillas rolled around shredded chicken, bathed in tangy tomatillo salsa verde and melted cheese -- a real Mexican family dinner staple.",
+      "es": "Tortillas de ma&#xED;z enrolladas con pollo deshebrado, ba&#xF1;adas en salsa verde de tomatillo y queso derretido -- un platillo real y cl&#xE1;sico de la cena familiar mexicana.",
+      "fil": "Corn tortilla na naka-roll sa shredded chicken, may tangy tomatillo salsa verde at melted cheese sa ibabaw -- real Mexican family dinner staple."
+    },
+    "why_it_fits": {
+      "en": "Lean shredded chicken breast keeps the protein high relative to the carbs from the tortillas and sauce, and reduced-fat cheese trims saturated fat without losing the dish's real flavor.",
+      "es": "La pechuga de pollo deshebrada y magra mantiene alta la prote&#xED;na en relaci&#xF3;n con los carbohidratos de las tortillas y la salsa, y el queso bajo en grasa reduce la grasa saturada sin perder el sabor real del platillo.",
+      "fil": "Mataas ang protein ng lean shredded chicken breast kumpara sa carbs mula sa tortilla at sauce, at binabawasan ng reduced-fat cheese ang saturated fat nang hindi nawawala ang real na lasa ng dish."
+    },
+    "ingredients": [
+      { "qty_us": "6", "qty_metric": "6", "text": { "en": "corn tortillas", "es": "tortillas de ma&#xED;z", "fil": "corn tortilla" } },
+      { "qty_us": "2 cups", "qty_metric": "280 g", "text": { "en": "shredded cooked chicken breast", "es": "pechuga de pollo cocida y deshebrada", "fil": "shredded na lutong chicken breast" } },
+      { "qty_us": "1.5 cups", "qty_metric": "360 ml", "text": { "en": "tomatillo salsa verde", "es": "salsa verde de tomatillo", "fil": "tomatillo salsa verde" } },
+      { "qty_us": "1/2 cup", "qty_metric": "60 g", "text": { "en": "shredded reduced-fat Mexican cheese blend", "es": "mezcla de quesos mexicanos rallados, bajos en grasa", "fil": "shredded reduced-fat Mexican cheese blend" } },
+      { "qty_us": "2 tbsp", "qty_metric": "30 ml", "text": { "en": "crema", "es": "crema", "fil": "crema" } },
+      { "qty_us": "2 tbsp", "qty_metric": "20 g", "text": { "en": "onion, diced", "es": "cebolla, picada", "fil": "onion, tinadtad" } }
+    ],
+    "instructions": {
+      "en": [
+        "Warm the tortillas until pliable.",
+        "Fill each tortilla with shredded chicken, roll, and place seam-down in a baking dish.",
+        "Pour the salsa verde over the top and sprinkle with cheese.",
+        "Bake at 375&#xB0;F (190&#xB0;C) for 15 minutes until the cheese melts and bubbles.",
+        "Top with crema and diced onion before serving."
+      ],
+      "es": [
+        "Calienta las tortillas hasta que est&#xE9;n flexibles.",
+        "Rellena cada tortilla con pollo deshebrado, enr&#xF3;llala y col&#xF3;cala con la uni&#xF3;n hacia abajo en un molde para hornear.",
+        "Vierte la salsa verde encima y espolvorea con queso.",
+        "Hornea a 190&#xB0;C durante 15 minutos hasta que el queso se derrita y burbujee.",
+        "Corona con crema y cebolla picada antes de servir."
+      ],
+      "fil": [
+        "Painitin ang tortilla hanggang malambot.",
+        "Lagyan ang bawat tortilla ng shredded chicken, i-roll, at ilagay nang nakadapa ang seam sa baking dish.",
+        "Ibuhos ang salsa verde sa ibabaw at budburan ng cheese.",
+        "I-bake sa 375&#xB0;F (190&#xB0;C) ng 15 minuto hanggang matunaw at bumula ang cheese.",
+        "Lagyan ng crema at tinadtad na onion sa ibabaw bago ihain."
+      ]
+    }
+  },
+  {
+    "slug": "sopa-de-tortilla",
+    "id": 505,
+    "cuisine": "mexican",
+    "meal_category": "lunch",
+    "prep_min": 10, "cook_min": 25, "total_min": 35, "servings": 3,
+    "tags": ["Low-GI"],
+    "nutrition": { "cal": 230, "carbs": 20, "protein": 10, "fat": 13, "fiber": 5, "gi": 42 },
+    "name": { "en": "Sopa de Tortilla", "es": "Sopa de Tortilla", "fil": "Sopa de Tortilla" },
+    "description": {
+      "en": "A brothy tomato-chile soup with crispy tortilla strips, avocado, and queso fresco -- real Mexico City comfort food, light but satisfying.",
+      "es": "Una sopa de tomate y chile con tiras de tortilla crujientes, aguacate y queso fresco -- comida reconfortante real de la Ciudad de M&#xE9;xico, ligera pero satisfactoria.",
+      "fil": "Brothy tomato-chile soup na may crispy tortilla strips, avocado, at queso fresco -- real Mexico City comfort food, light pero busog."
+    },
+    "why_it_fits": {
+      "en": "This soup is mostly broth and vegetables, so the carb load per bowl is modest, and the fat from avocado and cheese helps slow digestion of what carbs are there.",
+      "es": "Esta sopa es principalmente caldo y verduras, as&#xED; que la carga de carbohidratos por taz&#xF3;n es moderada, y la grasa del aguacate y el queso ayuda a ralentizar la digesti&#xF3;n de los carbohidratos que hay.",
+      "fil": "Karamihan sa soup na ito ay broth at vegetables, kaya katamtaman lang ang carbs bawat mangkok, at tumutulong ang fat mula sa avocado at cheese na pabagalin ang digestion ng carbs na naroon."
+    },
+    "ingredients": [
+      { "qty_us": "4 cups", "qty_metric": "950 ml", "text": { "en": "chicken broth", "es": "caldo de pollo", "fil": "chicken broth" } },
+      { "qty_us": "2 medium", "qty_metric": "2 medium", "text": { "en": "tomatoes, roasted", "es": "jitomates, asados", "fil": "tomato, inihaw" } },
+      { "qty_us": "1", "qty_metric": "1", "text": { "en": "dried pasilla chile, stemmed and seeded", "es": "chile pasilla seco, sin tallo ni semillas", "fil": "dried pasilla chile, tinanggalan ng tangkay at buto" } },
+      { "qty_us": "2 cloves", "qty_metric": "2 cloves", "text": { "en": "garlic", "es": "ajo", "fil": "bawang" } },
+      { "qty_us": "2", "qty_metric": "2", "text": { "en": "corn tortillas, cut into strips", "es": "tortillas de ma&#xED;z, cortadas en tiras", "fil": "corn tortilla, hiniwa nang pahaba" } },
+      { "qty_us": "1/2", "qty_metric": "1/2", "text": { "en": "avocado, sliced", "es": "aguacate, en rebanadas", "fil": "avocado, hiniwa" } },
+      { "qty_us": "1/4 cup", "qty_metric": "60 g", "text": { "en": "queso fresco", "es": "queso fresco", "fil": "queso fresco" } }
+    ],
+    "instructions": {
+      "en": [
+        "Roast the tomatoes, then blend with the pasilla chile and garlic until smooth.",
+        "Saut&#xE9; the diced onion in a bit of oil until soft, add the blended tomato mixture, and cook 5 minutes.",
+        "Add the broth, simmer 15 minutes, and season with salt.",
+        "Bake the tortilla strips at 400&#xB0;F (200&#xB0;C) for 8 minutes until crisp.",
+        "Ladle the soup into bowls and top with tortilla strips, avocado, and queso fresco."
+      ],
+      "es": [
+        "Asa los jitomates, luego licua con el chile pasilla y el ajo hasta que quede suave.",
+        "Sofr&#xED;e la cebolla picada en un poco de aceite hasta que est&#xE9; suave, agrega la mezcla de jitomate licuada y cocina 5 minutos.",
+        "Agrega el caldo, cuece a fuego lento 15 minutos y sazona con sal.",
+        "Hornea las tiras de tortilla a 200&#xB0;C durante 8 minutos hasta que est&#xE9;n crujientes.",
+        "Sirve la sopa en taz&#xF3;nes y corona con tiras de tortilla, aguacate y queso fresco."
+      ],
+      "fil": [
+        "I-roast ang tomato, tapos i-blend kasama ang pasilla chile at bawang hanggang smooth.",
+        "I-saut&#xE9; ang tinadtad na onion sa kaunting mantika hanggang lumambot, idagdag ang blended tomato mixture, at lutuin ng 5 minuto.",
+        "Idagdag ang broth, i-simmer ng 15 minuto, at timplahan ng asin.",
+        "I-bake ang tortilla strips sa 400&#xB0;F (200&#xB0;C) ng 8 minuto hanggang crisp.",
+        "Isilid ang soup sa mangkok at lagyan ng tortilla strips, avocado, at queso fresco sa ibabaw."
+      ]
+    }
+  }
+]

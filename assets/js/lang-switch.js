@@ -124,7 +124,12 @@
     'sweet-potato-hash', 'tofu-and-broccoli-stir-fry', 'trail-mix-with-dark-chocolate',
     'tuna-white-bean-salad', 'turkey-and-cheddar-roll-ups', 'turkey-and-veggie-scramble',
     'tzatziki-with-cucumber-sticks', 'vegetarian-breakfast-burrito', 'veggie-buddha-bowl',
-    'white-bean-and-kale-soup', 'whole-wheat-pasta-al-pomodoro'
+    'white-bean-and-kale-soup', 'whole-wheat-pasta-al-pomodoro',
+    // Regional recipes (Mexico, Philippines, Spain) -- added alongside their
+    // own EN/ES/FIL pages, same as the original 57.
+    'chilaquiles-verdes', 'pozole-rojo', 'tacos-de-pescado', 'enchiladas-verdes', 'sopa-de-tortilla',
+    'sinigang-na-baboy', 'chicken-tinola', 'inihaw-na-bangus', 'pinakbet', 'ginisang-munggo',
+    'gazpacho-andaluz', 'pisto-manchego', 'salmon-a-la-plancha-con-romesco', 'tortilla-espanola', 'ensalada-mixta'
   ];
   FIL_AVAILABLE.push('/recipes/');
   FIL_AVAILABLE.push('/recipes/shopping-list.html');
