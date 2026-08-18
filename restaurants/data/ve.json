@@ -1,0 +1,24 @@
+[
+  {
+    "chain": "Arturo's",
+    "country": "Venezuela",
+    "region_code": "ve",
+    "region_name": "Venezuela",
+    "source_note": "Venezuela's national fried-chicken chain since 1986, 37-72 locations nationwide (sold to Protinal, a Venezuelan agribusiness company, in August 2023 -- a clean domestic transaction, no relation to any other chain already on this site). Real item names pulled from arturos.com.ve, GuíaPana's chain listing, and recent press coverage of the 2024 PanaCrunch launch. No official nutrition data published; AI-estimated.",
+    "source_url": "https://guiapana.com/restaurantes/cadena/arturos/",
+    "items": [
+      { "name": "Pollo Frito (Pieza)", "cat": "Chicken", "display_category": "Chicken", "serving": "1 piece", "carbs": 8, "cal": 260, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Alitas Picantes", "cat": "Chicken", "display_category": "Wings", "serving": "1 order", "carbs": 10, "cal": 420, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Pechugota", "cat": "Chicken", "display_category": "Chicken", "serving": "1 large breast piece", "carbs": 14, "cal": 380, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Cuadriles", "cat": "Chicken", "display_category": "Chicken", "serving": "1 order", "carbs": 10, "cal": 400, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Muslo", "cat": "Chicken", "display_category": "Chicken", "serving": "1 piece", "carbs": 8, "cal": 280, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "PanaCrunch", "cat": "Burgers", "display_category": "Chicken Burger", "serving": "1 sandwich", "carbs": 42, "cal": 560, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo Pana 4", "cat": "Chicken", "display_category": "Combo", "serving": "1 breast + salad + drink", "carbs": 38, "cal": 520, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Combo Pana 6", "cat": "Chicken", "display_category": "Combo", "serving": "1 thigh or sirloin piece + fries + drink", "carbs": 45, "cal": 650, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Chamo Pack", "cat": "Chicken", "display_category": "Kids Combo", "serving": "1 kids meal", "carbs": 35, "cal": 480, "gi": 60, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Papas Fritas", "cat": "Sides", "display_category": "Side", "serving": "1 order", "carbs": 35, "cal": 320, "gi": 75, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Ensalada", "cat": "Salads", "display_category": "Salad", "serving": "1 order", "carbs": 12, "cal": 180, "gi": 30, "processed": 3, "veg": true, "mediterranean": false },
+      { "name": "Helados Marco Polo", "cat": "Desserts", "display_category": "Dessert", "serving": "1 scoop", "carbs": 26, "cal": 210, "gi": 58, "processed": 6, "veg": true, "mediterranean": false }
+    ]
+  }
+]

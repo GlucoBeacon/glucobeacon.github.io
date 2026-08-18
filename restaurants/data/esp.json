@@ -1,0 +1,60 @@
+[
+  {
+    "chain": "100 Montaditos",
+    "country": "Spain",
+    "region_code": "esp",
+    "region_name": "Spain",
+    "source_note": "Founded 2000 in Islantilla (Huelva) -- one of Spain's most recognizable nationwide chains, built around 100 varieties of small montadito sandwiches. Real item names, descriptions, and euro prices pulled from a live restaurant carta (Avocaty listing service). Each montadito is a small single-bite sandwich (a real serving is several ordered together, tapas-style) -- nutrition estimated per single montadito, not a full meal. No official nutrition data published; AI-estimated.",
+    "source_url": "https://carta.avocaty.io/100-montaditos-ejemplo/pqbeeGNpaHXgWMfjJJlH",
+    "items": [
+      { "name": "Jamón Gran Reserva con AOVE", "cat": "Sandwiches", "display_category": "Montadito", "serving": "1 mini sandwich (€1.30)", "carbs": 15, "cal": 160, "gi": 50, "processed": 5, "veg": false, "mediterranean": true },
+      { "name": "Tortilla de Patatas", "cat": "Sandwiches", "display_category": "Montadito", "serving": "1 mini sandwich (€1.30)", "carbs": 16, "cal": 170, "gi": 55, "processed": 4, "veg": true, "mediterranean": true },
+      { "name": "Albóndigas", "cat": "Sandwiches", "display_category": "Montadito", "serving": "1 mini sandwich (€1.30)", "carbs": 14, "cal": 180, "gi": 45, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Pollo Tandoori", "cat": "Sandwiches", "display_category": "Montadito", "serving": "1 mini sandwich (€1.30)", "carbs": 15, "cal": 170, "gi": 45, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Tortilla de Patatas y Ali-oli", "cat": "Sandwiches", "display_category": "Montadito", "serving": "1 mini sandwich (€1.60)", "carbs": 17, "cal": 200, "gi": 55, "processed": 5, "veg": true, "mediterranean": true },
+      { "name": "Tortilla de Patatas y Salsa Brava", "cat": "Sandwiches", "display_category": "Montadito", "serving": "1 mini sandwich (€1.60)", "carbs": 17, "cal": 190, "gi": 58, "processed": 5, "veg": true, "mediterranean": true },
+      { "name": "Tortilla de Patatas y Pisto", "cat": "Sandwiches", "display_category": "Montadito", "serving": "1 mini sandwich (€1.60)", "carbs": 18, "cal": 190, "gi": 55, "processed": 4, "veg": true, "mediterranean": true },
+      { "name": "Tortilla de Patatas, Lechuga, Tomate y Mayonesa", "cat": "Sandwiches", "display_category": "Montadito", "serving": "1 mini sandwich (€1.60)", "carbs": 17, "cal": 200, "gi": 55, "processed": 5, "veg": true, "mediterranean": true },
+      { "name": "Chistorra con Bacon Ahumado y Salsa Picante", "cat": "Sandwiches", "display_category": "Montadito", "serving": "1 mini sandwich (€2.00)", "carbs": 15, "cal": 220, "gi": 50, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Chistorra con Cebolla Crujiente y Alioli de Ajo", "cat": "Sandwiches", "display_category": "Montadito", "serving": "1 mini sandwich (€2.00)", "carbs": 16, "cal": 230, "gi": 52, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Chistorra con Menestra de Verduras", "cat": "Sandwiches", "display_category": "Montadito", "serving": "1 mini sandwich (€2.00)", "carbs": 16, "cal": 210, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Carrillera de Ternera al Vino Tinto con Queso Ibérico", "cat": "Sandwiches", "display_category": "Montadito", "serving": "1 mini sandwich (€2.00)", "carbs": 14, "cal": 230, "gi": 40, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Cabreado", "cat": "Sandwiches", "display_category": "Montadito", "serving": "chicken, goat cheese, caramelized onion (€2.50)", "carbs": 16, "cal": 210, "gi": 48, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Vegetal", "cat": "Sandwiches", "display_category": "Montadito", "serving": "tuna, egg, lettuce, tomato, mayo (€2.50)", "carbs": 15, "cal": 180, "gi": 42, "processed": 4, "veg": false, "mediterranean": true },
+      { "name": "Campeón", "cat": "Sandwiches", "display_category": "Montadito", "serving": "garlic pork, goat cheese, crispy onion, strawberry jam (€2.50)", "carbs": 18, "cal": 220, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Nuevo Serranito", "cat": "Sandwiches", "display_category": "Montadito", "serving": "garlic pork loin, cured ham, caramelized onion (€2.50)", "carbs": 16, "cal": 210, "gi": 48, "processed": 5, "veg": false, "mediterranean": true },
+      { "name": "Patatas Bravas", "cat": "Sides", "display_category": "Side", "serving": "1 order", "carbs": 32, "cal": 320, "gi": 75, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Crema de Chocolate", "cat": "Desserts", "display_category": "Dessert", "serving": "1 mini sandwich (€2.00)", "carbs": 20, "cal": 190, "gi": 55, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Crema de Chocolate con Galleta", "cat": "Desserts", "display_category": "Dessert", "serving": "1 mini sandwich (€2.00)", "carbs": 22, "cal": 210, "gi": 58, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Tableta de Chocolate con Leche", "cat": "Desserts", "display_category": "Dessert", "serving": "1 mini sandwich (€2.00)", "carbs": 18, "cal": 170, "gi": 55, "processed": 5, "veg": true, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Telepizza",
+    "country": "Spain",
+    "region_code": "esp",
+    "region_name": "Spain",
+    "source_note": "Founded 1987 in Madrid -- one of Spain's largest pizza delivery chains, now operating internationally. Real item names + real euro prices pulled from a delivery-aggregator listing of Telepizza's live Spain menu. No official nutrition data published; AI-estimated.",
+    "source_url": "https://fastfoodsmenu.com/precios-del-menu-de-telepizza-en-espana/",
+    "items": [
+      { "name": "Barbacoa", "cat": "Pizza", "display_category": "Pizza", "serving": "1 slice", "carbs": 40, "cal": 320, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "4 Quesos", "cat": "Pizza", "display_category": "Pizza", "serving": "1 slice", "carbs": 36, "cal": 340, "gi": 58, "processed": 6, "veg": true, "mediterranean": true },
+      { "name": "Delicheese", "cat": "Pizza", "display_category": "Pizza", "serving": "1 slice", "carbs": 38, "cal": 350, "gi": 58, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Carbonara", "cat": "Pizza", "display_category": "Pizza", "serving": "1 slice", "carbs": 38, "cal": 360, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Hawaiana", "cat": "Pizza", "display_category": "Pizza", "serving": "1 slice", "carbs": 40, "cal": 320, "gi": 60, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Formaggio", "cat": "Pizza", "display_category": "Pizza", "serving": "1 slice", "carbs": 36, "cal": 340, "gi": 58, "processed": 6, "veg": true, "mediterranean": true },
+      { "name": "Bacon Crispy", "cat": "Pizza", "display_category": "Pizza", "serving": "1 slice", "carbs": 38, "cal": 370, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "La Furiosa", "cat": "Pizza", "display_category": "Pizza", "serving": "1 slice", "carbs": 40, "cal": 360, "gi": 62, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Carrillera Maestra", "cat": "Pizza", "display_category": "Premium Pizza", "serving": "1 slice", "carbs": 38, "cal": 380, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Ibérica", "cat": "Pizza", "display_category": "Premium Pizza", "serving": "1 slice", "carbs": 36, "cal": 370, "gi": 55, "processed": 6, "veg": false, "mediterranean": true },
+      { "name": "Kebab", "cat": "Entrees", "display_category": "Kebab", "serving": "1 order", "carbs": 55, "cal": 780, "gi": 62, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Telepibox con Burger de Carne", "cat": "Burgers", "display_category": "Burger Box", "serving": "1 burger + sides", "carbs": 48, "cal": 680, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Telepibox con Burger de Pollo", "cat": "Burgers", "display_category": "Burger Box", "serving": "1 burger + sides", "carbs": 46, "cal": 620, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Alitas de Pollo Barbacoa", "cat": "Chicken", "display_category": "Wings", "serving": "1 order", "carbs": 14, "cal": 380, "gi": 50, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Tiras Crujientes de Pollo", "cat": "Chicken", "display_category": "Chicken", "serving": "1 order", "carbs": 22, "cal": 420, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Patatas Gajo", "cat": "Sides", "display_category": "Side", "serving": "1 order", "carbs": 40, "cal": 320, "gi": 75, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Pan de Ajo", "cat": "Sides", "display_category": "Side", "serving": "1 order", "carbs": 30, "cal": 260, "gi": 68, "processed": 5, "veg": true, "mediterranean": false },
+      { "name": "Sweet Pizzolinos", "cat": "Desserts", "display_category": "Dessert", "serving": "1 order", "carbs": 45, "cal": 380, "gi": 62, "processed": 7, "veg": true, "mediterranean": false }
+    ]
+  }
+]
