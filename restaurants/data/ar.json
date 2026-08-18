@@ -1,0 +1,47 @@
+[
+  {
+    "chain": "Havanna",
+    "country": "Argentina",
+    "region_code": "ar",
+    "region_name": "Argentina",
+    "source_note": "Real item names pulled from official/reseller product listings (havannaflorida602.com.ar, amigofoods.com) -- Havanna's own site (havanna.com.ar) lists categories only, no nutrition data published anywhere found.",
+    "source_url": "https://www.amigofoods.com/collections/havanna-products",
+    "items": [
+      { "name": "Alfajor Clásico de Chocolate", "cat": "Desserts", "display_category": "Dessert", "serving": "1 alfajor (~55g)", "carbs": 32, "cal": 220, "gi": 55, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Alfajor Chocolate Blanco", "cat": "Desserts", "display_category": "Dessert", "serving": "1 alfajor (~55g)", "carbs": 33, "cal": 230, "gi": 58, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Alfajor 70% Cacao", "cat": "Desserts", "display_category": "Dessert", "serving": "1 alfajor (~50g)", "carbs": 26, "cal": 200, "gi": 45, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Alfajor Merengue Clásico", "cat": "Desserts", "display_category": "Dessert", "serving": "1 alfajor (~47g)", "carbs": 30, "cal": 210, "gi": 55, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Havannet Chocolate", "cat": "Desserts", "display_category": "Dessert", "serving": "1 piece", "carbs": 35, "cal": 260, "gi": 58, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Galletitas Limón con Chocolate", "cat": "Desserts", "display_category": "Dessert", "serving": "1 cookie (of 6u box)", "carbs": 22, "cal": 160, "gi": 60, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Galletitas Limón", "cat": "Desserts", "display_category": "Dessert", "serving": "1 cookie (of 6u box)", "carbs": 18, "cal": 120, "gi": 55, "processed": 5, "veg": true, "mediterranean": false },
+      { "name": "Bombones", "cat": "Desserts", "display_category": "Dessert", "serving": "1 piece", "carbs": 9, "cal": 70, "gi": 55, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Helado Dulce de Leche", "cat": "Desserts", "display_category": "Dessert", "serving": "1 scoop (~100g of 400g tub)", "carbs": 28, "cal": 220, "gi": 55, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Helado Chocolate Belga", "cat": "Desserts", "display_category": "Dessert", "serving": "1 scoop (~100g of 400g tub)", "carbs": 26, "cal": 230, "gi": 55, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Chocolate Bar 70% Puro Cacao", "cat": "Desserts", "display_category": "Dessert", "serving": "1 bar", "carbs": 10, "cal": 110, "gi": 40, "processed": 5, "veg": true, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Mostaza",
+    "country": "Argentina",
+    "region_code": "ar",
+    "region_name": "Argentina",
+    "source_note": "Real item names + descriptions pulled from Mostaza's own live ordering site (mostaza.app/showMenu). No official nutrition data published.",
+    "source_url": "https://mostaza.app/showMenu",
+    "items": [
+      { "name": "Mega Taste Bacon", "cat": "Burgers", "display_category": "Burger", "serving": "beef, cheddar, Tasty sauce, bacon, tomato, lettuce, cucumber, onion", "carbs": 45, "cal": 680, "gi": 60, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Mega Taste", "cat": "Burgers", "display_category": "Burger", "serving": "beef, cheddar, Tasty sauce, vegetables", "carbs": 42, "cal": 620, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Mega Taste Onion Doble", "cat": "Burgers", "display_category": "Burger", "serving": "double beef, cheddar, grilled onions, peppers", "carbs": 44, "cal": 780, "gi": 58, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Pollo Taste", "cat": "Burgers", "display_category": "Chicken Burger", "serving": "crispy chicken, Tasty sauce, cheddar", "carbs": 44, "cal": 600, "gi": 60, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Mega Boom", "cat": "Burgers", "display_category": "Burger", "serving": "beef, cheddar sauce, chopped bacon, ketchup, mustard", "carbs": 46, "cal": 700, "gi": 60, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Épica Palta y Huevo", "cat": "Burgers", "display_category": "Burger", "serving": "beef, avocado sauce, egg, onion", "carbs": 40, "cal": 640, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Cuarto Mega XL", "cat": "Burgers", "display_category": "Burger", "serving": "quarter-pound beef burger", "carbs": 42, "cal": 650, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Mega Cuarto Deluxe (Doble)", "cat": "Burgers", "display_category": "Burger", "serving": "deluxe double quarter-pound", "carbs": 46, "cal": 880, "gi": 58, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Mega Bacon Cheese (Doble)", "cat": "Burgers", "display_category": "Burger", "serving": "double patty, bacon, cheese", "carbs": 44, "cal": 820, "gi": 58, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Doble Cheese Jr.", "cat": "Burgers", "display_category": "Burger", "serving": "junior double cheeseburger", "carbs": 36, "cal": 520, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Nuggets x10", "cat": "Chicken", "display_category": "Chicken", "serving": "10 chicken nuggets", "carbs": 30, "cal": 480, "gi": 65, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Wrap Pollo Cheddar", "cat": "Sandwiches", "display_category": "Wrap", "serving": "chicken and cheddar wrap", "carbs": 38, "cal": 480, "gi": 52, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Ensalada Caesar Crispy", "cat": "Salads", "display_category": "Salad", "serving": "crispy chicken caesar salad", "carbs": 20, "cal": 420, "gi": 45, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Ensalada Royal Crispy", "cat": "Salads", "display_category": "Salad", "serving": "crispy chicken salad, premium toppings", "carbs": 22, "cal": 450, "gi": 45, "processed": 5, "veg": false, "mediterranean": false }
+    ]
+  }
+]

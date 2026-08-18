@@ -1,0 +1,40 @@
+[
+  {
+    "chain": "Doggis",
+    "country": "Chile",
+    "region_code": "cl",
+    "region_name": "Chile",
+    "source_note": "Real item names pulled from delivery-platform listings (Rappi, PedidosYa) -- doggis.cl's own menu is JS-rendered and couldn't be read directly. No official nutrition data found. 3 named flavor variants (Completo/Alemán, Dinámico, Crispy) are lower-confidence -- confirmed as real named options via search snippets but not from a directly-fetched page.",
+    "source_url": "https://www.rappi.cl/restaurantes/900021048-doggis",
+    "items": [
+      { "name": "Hot Dog Italiano", "cat": "Entrees", "display_category": "Hot Dog", "serving": "pan, vienesa, tomate, palta, mayonesa", "carbs": 42, "cal": 520, "gi": 60, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Hot Dog Completo", "cat": "Entrees", "display_category": "Hot Dog", "serving": "vienesa w/ chucrut option", "carbs": 44, "cal": 540, "gi": 60, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Hot Dog Dinámico", "cat": "Entrees", "display_category": "Hot Dog", "serving": "tomate, palta, mayonesa, salsa americana", "carbs": 43, "cal": 530, "gi": 60, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Hot Dog Crispy", "cat": "Entrees", "display_category": "Hot Dog", "serving": "1 hot dog", "carbs": 45, "cal": 560, "gi": 62, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Chicken Burger", "cat": "Burgers", "display_category": "Chicken Burger", "serving": "1 burger, choice of flavor", "carbs": 44, "cal": 580, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Chicken Wrap", "cat": "Sandwiches", "display_category": "Wrap", "serving": "clásico, italiano, or BBQ", "carbs": 38, "cal": 480, "gi": 52, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Huraclón M&M", "cat": "Desserts", "display_category": "Dessert", "serving": "soft-serve ice cream w/ M&M topping", "carbs": 42, "cal": 380, "gi": 62, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Huraclón Oreo", "cat": "Desserts", "display_category": "Dessert", "serving": "soft-serve ice cream w/ crushed Oreo", "carbs": 40, "cal": 370, "gi": 62, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Chicken Box Para Compartir", "cat": "Chicken", "display_category": "Shareable", "serving": "~1/4 of shareable box (5 tenders, 6 nuggets, 4 cheese empanadas, fries)", "carbs": 28, "cal": 420, "gi": 63, "processed": 7, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Juan Maestro",
+    "country": "Chile",
+    "region_code": "cl",
+    "region_name": "Chile",
+    "source_note": "Real item names + prices pulled from a directly-fetched delivery listing (Rappi -- Juan Maestro Centro Histórico). No official nutrition data found on juanmaestro.cl.",
+    "source_url": "https://www.rappi.cl/restaurantes/900032111-juan-maestro",
+    "items": [
+      { "name": "As Churrasco", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "individual churrasco, italiano or completo", "carbs": 42, "cal": 520, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Sándwich Churrasco", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "italiano, chacarero, or luco", "carbs": 46, "cal": 620, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Completo", "cat": "Entrees", "display_category": "Hot Dog", "serving": "italiano or completo", "carbs": 42, "cal": 520, "gi": 60, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Sándwich Pollo", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "italiano, chacarero, luco, or granjero", "carbs": 44, "cal": 560, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Gran Maestro (500g)", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "choice of protein + flavor, ~500g", "carbs": 55, "cal": 780, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Sándwich Lomo", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "italiano, chacarero, or luco", "carbs": 46, "cal": 600, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Sándwich Mechada", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "italiano, chacarero, or luco", "carbs": 46, "cal": 610, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Chorrillana", "cat": "Entrees", "display_category": "Shareable", "serving": "beef/loin, fries, onion, fried eggs (shareable)", "carbs": 55, "cal": 850, "gi": 68, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Batidos Maestros", "cat": "Desserts", "display_category": "Milkshake", "serving": "500cc, chocolate/frutilla/dulce de leche/frambuesa", "carbs": 60, "cal": 480, "gi": 65, "processed": 6, "veg": true, "mediterranean": false }
+    ]
+  }
+]

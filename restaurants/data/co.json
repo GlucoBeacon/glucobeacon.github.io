@@ -1,0 +1,72 @@
+[
+  {
+    "chain": "Frisby",
+    "country": "Colombia",
+    "region_code": "co",
+    "region_name": "Colombia",
+    "source_note": "Real item names pulled from delivery-platform listings (session 96). This region's page template didn't include an 'Approach with Caution' table, so 2 of the chain's 10 real analyzed items were never persisted anywhere and are missing here -- not re-researched, per an explicit cost-conscious call in session 97 (partial data disclosed rather than spending more to fill a small gap).",
+    "source_url": "https://glucobeacon.com/restaurants/co/frisby.html",
+    "items": [
+      { "name": "Pollo Apanado (1 pieza)", "cat": "Chicken", "display_category": "Chicken", "serving": "1 piece", "carbs": 18, "cal": 320, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Alitas Apanadas (6 piezas)", "cat": "Chicken", "display_category": "Chicken", "serving": "6 wings", "carbs": 22, "cal": 480, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Pechuga Apanada Individual", "cat": "Chicken", "display_category": "Chicken", "serving": "1 breast", "carbs": 25, "cal": 420, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Nashville Tenders (4 piezas)", "cat": "Chicken", "display_category": "Chicken", "serving": "4 tenders", "carbs": 24, "cal": 460, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Combo Frisburrito", "cat": "Burritos", "display_category": "Burrito", "serving": "1 burrito combo", "carbs": 62, "cal": 680, "gi": 63, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Arroz con Pollo", "cat": "Entrees", "display_category": "Chicken Platter", "serving": "1 platter", "carbs": 65, "cal": 620, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Combo Familiar", "cat": "Combos", "display_category": "Combo", "serving": "1 portion of family combo", "carbs": 55, "cal": 720, "gi": 66, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo Frisby Tradicional", "cat": "Combos", "display_category": "Combo", "serving": "1 portion of combo", "carbs": 58, "cal": 780, "gi": 66, "processed": 7, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "El Corral",
+    "country": "Colombia",
+    "region_code": "co",
+    "region_name": "Colombia",
+    "source_note": "Real item names pulled from elcorral.com (session 96). This region's page template didn't include an 'Approach with Caution' table, so 2 of the chain's 9 real analyzed items were never persisted anywhere and are missing here -- not re-researched, per an explicit cost-conscious call in session 97.",
+    "source_url": "https://glucobeacon.com/restaurants/co/el-corral.html",
+    "items": [
+      { "name": "Pollo Parrillero", "cat": "Chicken", "display_category": "Grilled", "serving": "1 order", "carbs": 4, "cal": 340, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "Lomos de Pollo", "cat": "Chicken", "display_category": "Chicken", "serving": "1 order", "carbs": 26, "cal": 420, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Hot Dog Especial", "cat": "Burgers", "display_category": "Burger", "serving": "1 hot dog", "carbs": 36, "cal": 480, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Hamburguesa Clásica", "cat": "Burgers", "display_category": "Burger", "serving": "1 burger", "carbs": 38, "cal": 520, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Vaquero Especial", "cat": "Burgers", "display_category": "Burger", "serving": "1 burger", "carbs": 40, "cal": 620, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Hamburguesa Especial (Tocineta)", "cat": "Burgers", "display_category": "Burger", "serving": "1 burger w/ bacon", "carbs": 42, "cal": 680, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Corral Doble", "cat": "Burgers", "display_category": "Burger", "serving": "1 double burger", "carbs": 44, "cal": 780, "gi": 55, "processed": 8, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Crepes & Waffles",
+    "country": "Colombia",
+    "region_code": "co",
+    "region_name": "Colombia",
+    "source_note": "Real item names pulled from crepesywaffles.com (session 96). This region's page template didn't include an 'Approach with Caution' table, so 1 of the chain's 9 real analyzed items was never persisted anywhere and is missing here -- not re-researched, per an explicit cost-conscious call in session 97.",
+    "source_url": "https://glucobeacon.com/restaurants/co/crepes-waffles.html",
+    "items": [
+      { "name": "Ensalada César", "cat": "Salads", "display_category": "Salad", "serving": "1 salad", "carbs": 18, "cal": 380, "gi": 25, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Crepe de Lomo (Especias Árabes)", "cat": "Entrees", "display_category": "Crepe", "serving": "1 crepe", "carbs": 40, "cal": 540, "gi": 60, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Crepe de Pollo y Queso", "cat": "Entrees", "display_category": "Crepe", "serving": "1 crepe", "carbs": 42, "cal": 520, "gi": 60, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Crepe Boloñesa con Queso", "cat": "Entrees", "display_category": "Crepe", "serving": "1 crepe", "carbs": 46, "cal": 560, "gi": 60, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Crepe de Carne Mechada", "cat": "Entrees", "display_category": "Crepe", "serving": "1 crepe", "carbs": 48, "cal": 580, "gi": 60, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Mini Waffles con Arequipe (2 piezas)", "cat": "Desserts", "display_category": "Waffle", "serving": "2 mini waffles", "carbs": 48, "cal": 380, "gi": 62, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Waffle Sencillo con Crema", "cat": "Desserts", "display_category": "Waffle", "serving": "1 waffle", "carbs": 52, "cal": 420, "gi": 62, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Waffle de Maíz con Queso", "cat": "Desserts", "display_category": "Waffle", "serving": "1 waffle", "carbs": 50, "cal": 460, "gi": 62, "processed": 6, "veg": true, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Kokoriko",
+    "country": "Colombia",
+    "region_code": "co",
+    "region_name": "Colombia",
+    "source_note": "Real item names pulled from kokoriko.com.co (session 96). This region's page template didn't include an 'Approach with Caution' table, so 2 of the chain's 9 real analyzed items were never persisted anywhere and are missing here -- not re-researched, per an explicit cost-conscious call in session 97.",
+    "source_url": "https://glucobeacon.com/restaurants/co/kokoriko.html",
+    "items": [
+      { "name": "Cuarto de Pollo Asado", "cat": "Chicken", "display_category": "Grilled", "serving": "1 quarter chicken", "carbs": 3, "cal": 320, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "Cuarto de Kokorikronch (Apanado)", "cat": "Chicken", "display_category": "Chicken", "serving": "1 quarter chicken", "carbs": 22, "cal": 400, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Alitas Kokoriko (6 piezas)", "cat": "Chicken", "display_category": "Chicken", "serving": "6 wings", "carbs": 20, "cal": 460, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Ajiaco", "cat": "Soups", "display_category": "Soup", "serving": "1 bowl", "carbs": 45, "cal": 420, "gi": 45, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Hamburguesa Kokoriko", "cat": "Burgers", "display_category": "Burger", "serving": "1 burger", "carbs": 40, "cal": 560, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo Miti-Miti", "cat": "Combos", "display_category": "Combo", "serving": "1 portion of combo", "carbs": 50, "cal": 700, "gi": 66, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Arroz con Pollo", "cat": "Entrees", "display_category": "Chicken Platter", "serving": "1 platter", "carbs": 62, "cal": 600, "gi": 66, "processed": 6, "veg": false, "mediterranean": false }
+    ]
+  }
+]

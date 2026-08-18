@@ -1,0 +1,47 @@
+[
+  {
+    "chain": "Adrian Tropical",
+    "country": "Dominican Republic",
+    "region_code": "do",
+    "region_name": "Dominican Republic",
+    "source_note": "Real item names + prices pulled from Adrian Tropical's own official English menu (adriantropical.com/menu/cartaingles). No official nutrition data published.",
+    "source_url": "https://adriantropical.com/menu/cartaingles/",
+    "items": [
+      { "name": "Sabrococho", "cat": "Soups", "display_category": "Stew", "serving": "traditional stew w/ meats and tubers, w/ rice", "carbs": 55, "cal": 680, "gi": 60, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Mofongo", "cat": "Entrees", "display_category": "Plantain", "serving": "fried mashed plantain w/ chicharrón", "carbs": 58, "cal": 620, "gi": 75, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Mofongo Combi", "cat": "Entrees", "display_category": "Plantain", "serving": "mofongo w/ choice of fried beef, pork, sausage, or combination", "carbs": 60, "cal": 780, "gi": 75, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Camarofongo", "cat": "Entrees", "display_category": "Plantain", "serving": "mofongo w/ garlic shrimp", "carbs": 58, "cal": 650, "gi": 72, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Dominican-style Cocido", "cat": "Soups", "display_category": "Stew", "serving": "thick beef and pork soup w/ rice, cassava, or fried plantains", "carbs": 50, "cal": 620, "gi": 62, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Mondongo", "cat": "Soups", "display_category": "Stew", "serving": "thick beef tripe soup w/ rice, cassava, or fried plantains", "carbs": 48, "cal": 580, "gi": 60, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Adrian Mixed Grill", "cat": "Entrees", "display_category": "Grilled", "serving": "chicken, pork rib, beef steak, grilled sausage", "carbs": 15, "cal": 780, "gi": 40, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Chicken Asopao", "cat": "Soups", "display_category": "Stew", "serving": "chicken and rice stew in creole sauce", "carbs": 55, "cal": 580, "gi": 65, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Rice with Chicken", "cat": "Chicken", "display_category": "Entree", "serving": "Dominican-style", "carbs": 60, "cal": 620, "gi": 68, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Boca Chica Fish", "cat": "Entrees", "display_category": "Fried Fish", "serving": "fried fish w/ yaniqueque", "carbs": 48, "cal": 680, "gi": 65, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Fish Samaná Style", "cat": "Entrees", "display_category": "Fish", "serving": "fish in coconut milk sauce", "carbs": 30, "cal": 520, "gi": 45, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Tropical Club Sandwich", "cat": "Sandwiches", "display_category": "Sandwich", "serving": "1 sandwich", "carbs": 42, "cal": 560, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Yaniqueque", "cat": "Sides", "display_category": "Side", "serving": "crispy fried wheat-flour dough", "carbs": 35, "cal": 280, "gi": 78, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Three-Milk Cake", "cat": "Desserts", "display_category": "Dessert", "serving": "1 slice", "carbs": 48, "cal": 380, "gi": 65, "processed": 7, "veg": true, "mediterranean": false },
+      { "name": "Baked Coconut", "cat": "Desserts", "display_category": "Dessert", "serving": "1 portion", "carbs": 40, "cal": 320, "gi": 55, "processed": 5, "veg": true, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Mesón de Bari",
+    "country": "Dominican Republic",
+    "region_code": "do",
+    "region_name": "Dominican Republic",
+    "source_note": "No official menu page or delivery-platform listing exists for this restaurant (all attempts 403'd or returned no content). Item names come from corroborated mentions across independent TripAdvisor/Sluurpy reviews, not a menu listing -- lower confidence than every other chain in this series; names are real but exact composition/pricing isn't documented anywhere found.",
+    "source_url": "https://www.tripadvisor.com/Restaurant_Review-g147289-d1976045-Reviews-Meson_de_Bari-Santo_Domingo_Santo_Domingo_Province_Dominican_Republic.html",
+    "items": [
+      { "name": "Ropa Vieja", "cat": "Entrees", "display_category": "Stewed Beef", "serving": "slow-cooked shredded beef", "carbs": 20, "cal": 480, "gi": 45, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Chivo Guisado", "cat": "Entrees", "display_category": "Stewed Goat", "serving": "stewed/shredded goat", "carbs": 18, "cal": 520, "gi": 40, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Bistec Encebollado", "cat": "Steaks", "display_category": "Steak", "serving": "steak w/ onions in creole sauce", "carbs": 15, "cal": 460, "gi": 40, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Empanadas de Cangrejo", "cat": "Appetizers", "display_category": "Appetizer", "serving": "crab empanadas", "carbs": 32, "cal": 320, "gi": 65, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Catibías", "cat": "Appetizers", "display_category": "Appetizer", "serving": "fried yuca empanadas, filled w/ crab, conch, or meat", "carbs": 35, "cal": 340, "gi": 70, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Longanisa", "cat": "Entrees", "display_category": "Sausage", "serving": "Dominican sausage", "carbs": 5, "cal": 380, "gi": 35, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Pescado al Coco", "cat": "Entrees", "display_category": "Fish", "serving": "fish in coconut sauce", "carbs": 28, "cal": 480, "gi": 45, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Dulce de Coco con Leche", "cat": "Desserts", "display_category": "Dessert", "serving": "coconut-milk dessert", "carbs": 42, "cal": 340, "gi": 60, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Tostones", "cat": "Sides", "display_category": "Side", "serving": "fried green plantain", "carbs": 32, "cal": 280, "gi": 70, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Habichuelas con Arroz", "cat": "Sides", "display_category": "Side", "serving": "rice and red beans", "carbs": 55, "cal": 420, "gi": 60, "processed": 3, "veg": true, "mediterranean": false }
+    ]
+  }
+]

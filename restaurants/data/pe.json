@@ -1,0 +1,69 @@
+[
+  {
+    "chain": "Bembos",
+    "country": "Peru",
+    "region_code": "pe",
+    "region_name": "Peru",
+    "source_note": "Real item names pulled from bembos.com.pe (session 96). This region's page template didn't include an 'Approach with Caution' table, so 2 of the chain's 10 real analyzed items were never persisted anywhere and are missing here -- not re-researched, per an explicit cost-conscious call in session 97 (partial data disclosed rather than spending more to fill a small gap).",
+    "source_url": "https://glucobeacon.com/restaurants/pe/bembos.html",
+    "items": [
+      { "name": "Bembroster (Pollo Frito)", "cat": "Chicken", "display_category": "Chicken", "serving": "1 order", "carbs": 24, "cal": 420, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Hamburguesa Clásica", "cat": "Burgers", "display_category": "Burger", "serving": "1 burger", "carbs": 36, "cal": 480, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Pollo Parrillero (Sánguche)", "cat": "Sandwiches", "display_category": "Burger", "serving": "1 sandwich", "carbs": 38, "cal": 520, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Hamburguesa Hawaiana (Piña, Jamón)", "cat": "Burgers", "display_category": "Burger", "serving": "1 burger", "carbs": 40, "cal": 560, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Hamburguesa Parrillera (Chorizo, Chimichurri)", "cat": "Burgers", "display_category": "Burger", "serving": "1 burger", "carbs": 42, "cal": 720, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Hamburguesa Extrema (Doble Carne, Tocino)", "cat": "Burgers", "display_category": "Burger", "serving": "1 burger", "carbs": 44, "cal": 820, "gi": 55, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Hamburguesa Mexicana (Guacamole, Doritos)", "cat": "Burgers", "display_category": "Burger", "serving": "1 burger", "carbs": 46, "cal": 690, "gi": 55, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Hamburguesa A lo Pobre (Huevo, Plátano Frito)", "cat": "Burgers", "display_category": "Burger", "serving": "1 burger", "carbs": 52, "cal": 780, "gi": 55, "processed": 7, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Norky's",
+    "country": "Peru",
+    "region_code": "pe",
+    "region_name": "Peru",
+    "source_note": "Real item names pulled from norkys.pe (session 96). This region's page template didn't include an 'Approach with Caution' table, so 2 of the chain's 8 real analyzed items were never persisted anywhere and are missing here -- not re-researched, per an explicit cost-conscious call in session 97.",
+    "source_url": "https://glucobeacon.com/restaurants/pe/norkys.html",
+    "items": [
+      { "name": "Alitas a la Brasa (6 piezas)", "cat": "Chicken", "display_category": "Grilled", "serving": "6 wings", "carbs": 4, "cal": 380, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "1/2 Pollo a la Brasa", "cat": "Chicken", "display_category": "Grilled", "serving": "half chicken", "carbs": 6, "cal": 620, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "Sánguche de Pollo", "cat": "Sandwiches", "display_category": "Burger", "serving": "1 sandwich", "carbs": 40, "cal": 520, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Pollo con Papas y Ensalada (1/4)", "cat": "Combos", "display_category": "Combo", "serving": "quarter chicken combo", "carbs": 46, "cal": 660, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Brasa Extrema", "cat": "Combos", "display_category": "Combo", "serving": "1 combo", "carbs": 50, "cal": 720, "gi": 66, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Arroz Chaufa", "cat": "Entrees", "display_category": "Chaufa", "serving": "1 order", "carbs": 62, "cal": 480, "gi": 74, "processed": 6, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Pardo's Chicken",
+    "country": "Peru",
+    "region_code": "pe",
+    "region_name": "Peru",
+    "source_note": "Real item names pulled from pardoschicken.pe (session 96). This region's page template didn't include an 'Approach with Caution' table, so 2 of the chain's 9 real analyzed items were never persisted anywhere and are missing here -- not re-researched, per an explicit cost-conscious call in session 97.",
+    "source_url": "https://glucobeacon.com/restaurants/pe/pardos-chicken.html",
+    "items": [
+      { "name": "Anticuchos (Corazón de Res)", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 6, "cal": 280, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "Sánguche de Pollo a la Brasa", "cat": "Sandwiches", "display_category": "Burger", "serving": "1 sandwich", "carbs": 42, "cal": 540, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Causa Rellena de Pollo", "cat": "Entrees", "display_category": "Causa", "serving": "1 order", "carbs": 48, "cal": 420, "gi": 78, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "1/4 Pollo a la Brasa con Papas y Ensalada", "cat": "Combos", "display_category": "Combo", "serving": "quarter chicken combo", "carbs": 48, "cal": 680, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Pollo Entero (Combo Familiar)", "cat": "Combos", "display_category": "Combo", "serving": "1 portion of family combo", "carbs": 50, "cal": 720, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Arroz Chaufa", "cat": "Entrees", "display_category": "Chaufa", "serving": "1 order", "carbs": 62, "cal": 480, "gi": 74, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "1/2 Pollo a la Brasa con Papas", "cat": "Combos", "display_category": "Combo", "serving": "half chicken combo", "carbs": 54, "cal": 900, "gi": 66, "processed": 5, "veg": false, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "Roky's",
+    "country": "Peru",
+    "region_code": "pe",
+    "region_name": "Peru",
+    "source_note": "Real item names pulled from rokys.com (session 96). This region's page template didn't include an 'Approach with Caution' table, so 2 of the chain's 8 real analyzed items were never persisted anywhere and are missing here -- not re-researched, per an explicit cost-conscious call in session 97.",
+    "source_url": "https://glucobeacon.com/restaurants/pe/rokys.html",
+    "items": [
+      { "name": "Mollejas", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 2, "cal": 260, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "1/4 Pollo a la Brasa", "cat": "Chicken", "display_category": "Grilled", "serving": "quarter chicken", "carbs": 3, "cal": 340, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "Anticuchos", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 6, "cal": 280, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "Chorizo Parrillero", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 4, "cal": 380, "gi": 40, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "1/2 Pollo a la Brasa, Parrillera Completa", "cat": "Combos", "display_category": "Combo", "serving": "1 portion of combo", "carbs": 45, "cal": 780, "gi": 66, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "1/2 Pollo a la Brasa Clásico", "cat": "Combos", "display_category": "Combo", "serving": "1 portion of combo", "carbs": 48, "cal": 700, "gi": 66, "processed": 5, "veg": false, "mediterranean": false }
+    ]
+  }
+]

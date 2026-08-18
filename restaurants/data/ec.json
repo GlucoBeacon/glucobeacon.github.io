@@ -1,0 +1,48 @@
+[
+  {
+    "chain": "Menestras del Negro",
+    "country": "Ecuador",
+    "region_code": "ec",
+    "region_name": "Ecuador",
+    "source_note": "Real item names + prices pulled from Rappi (Menestras del Negro, Quito) and PriceListo EC. No official nutrition data published.",
+    "source_url": "https://www.rappi.com.ec/restaurantes/4909-menestras-del-negro",
+    "items": [
+      { "name": "Combo Sabor de Carne", "cat": "Entrees", "display_category": "Combo", "serving": "beef + rice/menestra + salad + plantain + soda", "carbs": 65, "cal": 780, "gi": 62, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Combo Sabor Filete de Pollo", "cat": "Chicken", "display_category": "Combo", "serving": "chicken filet + rice/menestra + salad + plantain + soda", "carbs": 62, "cal": 720, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Combo Sabor de Chuleta", "cat": "Entrees", "display_category": "Combo", "serving": "pork chop + rice/menestra + salad + plantain + soda", "carbs": 63, "cal": 800, "gi": 60, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Combo Sabor de Pescado", "cat": "Entrees", "display_category": "Combo", "serving": "fish filet + rice/menestra + salad + patacón + soda", "carbs": 60, "cal": 680, "gi": 55, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Combo Sabor de Pollo", "cat": "Chicken", "display_category": "Combo", "serving": "quarter chicken + rice/menestra + salad + plantain + soda", "carbs": 62, "cal": 750, "gi": 58, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Morito de Hogar", "cat": "Entrees", "display_category": "Rice Bowl", "serving": "protein + moro rice + salad + fried plantains", "carbs": 55, "cal": 620, "gi": 62, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Morito de Hogar Agrandado", "cat": "Entrees", "display_category": "Rice Bowl", "serving": "protein + moro rice + salad + egg + fries + soda", "carbs": 68, "cal": 850, "gi": 65, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Morito Menestra", "cat": "Entrees", "display_category": "Rice Bowl", "serving": "protein + moro rice + beans + salad + fried plantains", "carbs": 58, "cal": 650, "gi": 58, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Combos de Mi Casa", "cat": "Entrees", "display_category": "Combo", "serving": "protein + rice/menestra + salad + patacón + consomé + drink", "carbs": 62, "cal": 700, "gi": 60, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Churrasco Montado", "cat": "Steaks", "display_category": "Grilled", "serving": "grilled beef + 2 fried eggs + rice + menestra + salad + avocado + fries", "carbs": 65, "cal": 900, "gi": 65, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Mega de Carne", "cat": "Steaks", "display_category": "Combo", "serving": "mega breaded beef filet + rice/menestra + fries + salad", "carbs": 68, "cal": 950, "gi": 65, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Mega de Pollo", "cat": "Chicken", "display_category": "Combo", "serving": "mega breaded chicken filet + rice/menestra + fries + salad", "carbs": 66, "cal": 880, "gi": 62, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Parrillada Individual", "cat": "Entrees", "display_category": "Grilled", "serving": "1/8 chicken + beef filet + chorizo + rice + menestra + fries", "carbs": 45, "cal": 780, "gi": 45, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Pollo Parrillero", "cat": "Chicken", "display_category": "Grilled", "serving": "whole grilled chicken + fries + 1L soda (shareable, family-size)", "carbs": 70, "cal": 1200, "gi": 65, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Fanesca", "cat": "Soups", "display_category": "Seasonal", "serving": "1L traditional stew w/ egg, cheese, plantain, Andean grains (seasonal)", "carbs": 55, "cal": 620, "gi": 55, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Torta de Maqueño", "cat": "Desserts", "display_category": "Dessert", "serving": "house-made ripe-plantain cake", "carbs": 42, "cal": 320, "gi": 65, "processed": 6, "veg": true, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "TropiBurger",
+    "country": "Ecuador",
+    "region_code": "ec",
+    "region_name": "Ecuador",
+    "source_note": "Real item names + prices pulled from Ecuador-specific ordering platforms (Uber Eats/Rappi Ecuador, TropiBurger's own Riobamba branch site, FastFoodPrecios.mx) -- not the Venezuela chain of the same name. TropiBurger originated in Venezuela (1970) but Ecuador operates as a separate, ~25-year licensed entity under Grupo KFC Ecuador (same corporate group as Menestras del Negro), distinct ownership from the Venezuela chain. No official nutrition data published.",
+    "source_url": "https://fastfoodprecios.mx/tropiburger-precios",
+    "items": [
+      { "name": "Hamburguesa Clásica", "cat": "Burgers", "display_category": "Burger", "serving": "grilled beef, American cheese, pickles, onion rings, lettuce, tomato, mayo-ketchup", "carbs": 42, "cal": 620, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Hamburguesa de Champiñones", "cat": "Burgers", "display_category": "Burger", "serving": "beef burger with mushrooms", "carbs": 40, "cal": 600, "gi": 55, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Philly Cheese Burger", "cat": "Burgers", "display_category": "Burger", "serving": "Philly-style cheesesteak burger", "carbs": 44, "cal": 680, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Tociburger (mediana)", "cat": "Burgers", "display_category": "Burger", "serving": "smash-style beef, cheese, bacon, onions, BBQ sauce", "carbs": 38, "cal": 580, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Tociburger (grande)", "cat": "Burgers", "display_category": "Burger", "serving": "larger version of the bacon burger", "carbs": 44, "cal": 720, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Hamburguesa 3 Quesos", "cat": "Burgers", "display_category": "Burger", "serving": "triple-cheese burger", "carbs": 42, "cal": 700, "gi": 58, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Hamburguesa Toci Simple", "cat": "Burgers", "display_category": "Burger", "serving": "smash beef, bacon, cheese, single patty", "carbs": 36, "cal": 560, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Hamburguesa Toci Lover", "cat": "Burgers", "display_category": "Burger", "serving": "smash beef, double bacon/cheese", "carbs": 46, "cal": 820, "gi": 58, "processed": 8, "veg": false, "mediterranean": false },
+      { "name": "Pollo Crujiente (por presas)", "cat": "Chicken", "display_category": "Chicken", "serving": "crispy fried chicken pieces + fries + soda", "carbs": 55, "cal": 750, "gi": 62, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Combo Familiar #1", "cat": "Burgers", "display_category": "Shareable", "serving": "2 medium Tociburgers + 6 wings + fries + salad + 2 sodas (serves 2-3, shareable)", "carbs": 90, "cal": 1600, "gi": 62, "processed": 7, "veg": false, "mediterranean": false }
+    ]
+  }
+]

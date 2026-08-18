@@ -1,0 +1,42 @@
+[
+  {
+    "chain": "La Pasiva",
+    "country": "Uruguay",
+    "region_code": "uy",
+    "region_name": "Uruguay",
+    "source_note": "Real item names pulled from lapasiva.uy (session 96). All 10 real analyzed items are fully recoverable from the committed page's two tables (Best Choices + Approach with Caution combined, deduped) -- no gap, no re-research needed.",
+    "source_url": "https://glucobeacon.com/restaurants/uy/la-pasiva.html",
+    "items": [
+      { "name": "Milanesa La Pasiva", "cat": "Entrees", "display_category": "Milanesa", "serving": "1 order", "carbs": 38, "cal": 620, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Pancho con Panceta", "cat": "Entrees", "display_category": "Pancho", "serving": "1 hot dog w/ bacon", "carbs": 38, "cal": 480, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Ravioles con Salsa", "cat": "Pasta", "display_category": "Pasta", "serving": "1 order", "carbs": 68, "cal": 560, "gi": 50, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Pancho La Pasiva (2 Unidades)", "cat": "Entrees", "display_category": "Pancho", "serving": "2 hot dogs", "carbs": 48, "cal": 620, "gi": 58, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Lomito Pasiva (de Carne)", "cat": "Sandwiches", "display_category": "Chivito", "serving": "1 sandwich", "carbs": 52, "cal": 700, "gi": 60, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Chivito Común", "cat": "Sandwiches", "display_category": "Chivito", "serving": "1 sandwich", "carbs": 55, "cal": 720, "gi": 60, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Chivito de Pollo", "cat": "Sandwiches", "display_category": "Chivito", "serving": "1 sandwich", "carbs": 58, "cal": 780, "gi": 60, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Chivito Canadiense", "cat": "Sandwiches", "display_category": "Chivito", "serving": "1 sandwich", "carbs": 62, "cal": 980, "gi": 60, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Milanesa Napolitana con Papas Fritas", "cat": "Entrees", "display_category": "Combo", "serving": "1 order w/ fries", "carbs": 64, "cal": 880, "gi": 66, "processed": 7, "veg": false, "mediterranean": false },
+      { "name": "Chivito Vegetariano", "cat": "Sandwiches", "display_category": "Chivito", "serving": "1 sandwich", "carbs": 60, "cal": 620, "gi": 60, "processed": 5, "veg": true, "mediterranean": false }
+    ]
+  },
+  {
+    "chain": "El Fogón",
+    "country": "Uruguay",
+    "region_code": "uy",
+    "region_name": "Uruguay",
+    "source_note": "Real item names pulled from a live restaurant menu (session 96). All 10 real analyzed items are fully recoverable from the committed page's two tables (Best Choices + Approach with Caution combined, deduped) -- no gap, no re-research needed.",
+    "source_url": "https://glucobeacon.com/restaurants/uy/el-fogon.html",
+    "items": [
+      { "name": "Pollo (Grillado)", "cat": "Chicken", "display_category": "Grilled", "serving": "1 order", "carbs": 2, "cal": 340, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "Baby Beef", "cat": "Steaks", "display_category": "Grilled", "serving": "1 order", "carbs": 2, "cal": 420, "gi": 25, "processed": 3, "veg": false, "mediterranean": false },
+      { "name": "Chorizo", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 3, "cal": 380, "gi": 40, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Entrecot", "cat": "Steaks", "display_category": "Grilled", "serving": "1 order", "carbs": 2, "cal": 520, "gi": 40, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Asado", "cat": "Steaks", "display_category": "Grilled", "serving": "1 order", "carbs": 2, "cal": 560, "gi": 40, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Cordero", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 2, "cal": 620, "gi": 40, "processed": 4, "veg": false, "mediterranean": false },
+      { "name": "Parrillada Premium", "cat": "Entrees", "display_category": "Grilled", "serving": "1 order", "carbs": 8, "cal": 780, "gi": 40, "processed": 5, "veg": false, "mediterranean": false },
+      { "name": "Calamares", "cat": "Entrees", "display_category": "Milanesa", "serving": "1 order", "carbs": 24, "cal": 420, "gi": 48, "processed": 6, "veg": false, "mediterranean": false },
+      { "name": "Papas al Plomo con Roquefort", "cat": "Sides", "display_category": "Papas al Plomo", "serving": "1 order", "carbs": 52, "cal": 480, "gi": 80, "processed": 6, "veg": true, "mediterranean": false },
+      { "name": "Pastas Rellenas de Salmón con Salsa de Camarones", "cat": "Pasta", "display_category": "Pasta", "serving": "1 order", "carbs": 58, "cal": 640, "gi": 50, "processed": 5, "veg": false, "mediterranean": false }
+    ]
+  }
+]
