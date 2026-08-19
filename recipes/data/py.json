@@ -503,11 +503,11 @@
       "Vegetarian"
     ],
     "nutrition": {
-      "cal": 384,
-      "carbs": 70,
-      "protein": 26,
-      "fat": 1,
-      "fiber": 13,
+      "cal": 306,
+      "carbs": 43,
+      "protein": 14,
+      "fat": 9,
+      "fiber": 9,
       "gi": 30
     },
     "name": {
@@ -527,8 +527,8 @@
     },
     "ingredients": [
       {
-        "qty_us": "2 cups",
-        "qty_metric": "400 g",
+        "qty_us": "1 cup",
+        "qty_metric": "190 g",
         "text": {
           "en": "dried lentils, rinsed",
           "es": "lentejas secas, enjuagadas",
@@ -545,8 +545,8 @@
         }
       },
       {
-        "qty_us": "1",
-        "qty_metric": "1",
+        "qty_us": "1 1/2",
+        "qty_metric": "1 1/2",
         "text": {
           "en": "green bell pepper, chopped",
           "es": "morrón verde, picado",
@@ -554,8 +554,8 @@
         }
       },
       {
-        "qty_us": "2",
-        "qty_metric": "2",
+        "qty_us": "3",
+        "qty_metric": "3",
         "text": {
           "en": "tomatoes, diced",
           "es": "tomates, en cubos",
@@ -563,8 +563,8 @@
         }
       },
       {
-        "qty_us": "3 cloves",
-        "qty_metric": "3 cloves",
+        "qty_us": "3 clove",
+        "qty_metric": "9 g",
         "text": {
           "en": "garlic, minced",
           "es": "ajo, picado",
@@ -573,7 +573,7 @@
       },
       {
         "qty_us": "1 tsp",
-        "qty_metric": "1 tsp",
+        "qty_metric": "2 g",
         "text": {
           "en": "ground cumin",
           "es": "comino molido",
@@ -582,35 +582,53 @@
       },
       {
         "qty_us": "5 cups",
-        "qty_metric": "1.2 L",
+        "qty_metric": "1200 ml",
         "text": {
           "en": "low-sodium vegetable broth",
           "es": "caldo de verduras bajo en sodio",
           "fil": "low-sodium vegetable broth"
         }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "carrot, diced",
+          "es": "zanahoria, en cubos",
+          "fil": "carrot, dinice"
+        }
+      },
+      {
+        "qty_us": "2 1/2 tbsp",
+        "qty_metric": "35 ml",
+        "text": {
+          "en": "olive oil, for finishing",
+          "es": "aceite de oliva, para finalizar",
+          "fil": "olive oil, pang-tapos"
+        }
       }
     ],
     "instructions": {
       "en": [
-        "Sauté the onion, bell pepper, and garlic in a large pot until soft, about 5 minutes.",
+        "Sauté the onion, bell pepper, carrot, and garlic in a large pot until soft, about 5 minutes.",
         "Add the tomato and cumin, and cook 2 minutes more.",
         "Add the lentils and broth, and bring to a boil.",
         "Reduce heat and simmer 30 minutes, until the lentils are tender and the stew has thickened.",
-        "Season with salt and pepper to taste and serve hot."
+        "Season with salt and pepper to taste, drizzle with olive oil, and serve hot."
       ],
       "es": [
-        "Saltea la cebolla, el morrón y el ajo en una olla grande hasta que estén blandos, unos 5 minutos.",
+        "Saltea la cebolla, el morrón, la zanahoria y el ajo en una olla grande hasta que estén blandos, unos 5 minutos.",
         "Agrega el tomate y el comino, y cocina 2 minutos más.",
         "Agrega las lentejas y el caldo, y lleva a hervor.",
         "Reduce el fuego y cocina a fuego lento 30 minutos, hasta que las lentejas estén tiernas y el guiso haya espesado.",
-        "Sazona con sal y pimienta a gusto y sirve caliente."
+        "Sazona con sal y pimienta a gusto, rocía con aceite de oliva, y sirve caliente."
       ],
       "fil": [
-        "Igisa ang sibuyas, bell pepper, at bawang sa malaking pot hanggang lumambot, mga 5 minuto.",
+        "Igisa ang sibuyas, bell pepper, carrot, at bawang sa malaking pot hanggang lumambot, mga 5 minuto.",
         "Idagdag ang kamatis at cumin, at magluto pa ng 2 minuto.",
         "Idagdag ang lentils at broth, at pakuluan.",
         "Hinaan ang apoy at pasimmerin ng 30 minuto, hanggang lumambot ang lentils at lumapot ang stew.",
-        "I-season ng asin at paminta ayon sa panlasa at i-serve na mainit."
+        "I-season ng asin at paminta ayon sa panlasa, budburan ng olive oil, at i-serve na mainit."
       ]
     }
   }

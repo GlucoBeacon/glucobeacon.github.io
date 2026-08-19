@@ -139,11 +139,11 @@
       "Gluten-Free"
     ],
     "nutrition": {
-      "cal": 475,
-      "carbs": 68,
-      "protein": 39,
+      "cal": 323,
+      "carbs": 41,
+      "protein": 28,
       "fat": 6,
-      "fiber": 16,
+      "fiber": 9,
       "gi": 45
     },
     "name": {
@@ -163,8 +163,8 @@
     },
     "ingredients": [
       {
-        "qty_us": "2 cups",
-        "qty_metric": "400 g",
+        "qty_us": "1 cup",
+        "qty_metric": "185 g",
         "text": {
           "en": "dried white beans, soaked overnight",
           "es": "porotos blancos secos, remojados toda la noche",
@@ -172,8 +172,8 @@
         }
       },
       {
-        "qty_us": "3 cups",
-        "qty_metric": "450 g",
+        "qty_us": "3 1/2 cups",
+        "qty_metric": "405 g",
         "text": {
           "en": "pumpkin or winter squash, cubed",
           "es": "zapallo, en cubos",
@@ -181,8 +181,8 @@
         }
       },
       {
-        "qty_us": "1/2 cup",
-        "qty_metric": "80 g",
+        "qty_us": "3/8 cup",
+        "qty_metric": "60 g",
         "text": {
           "en": "white hominy corn",
           "es": "mote de maíz blanco",
@@ -209,7 +209,7 @@
       },
       {
         "qty_us": "1 tsp",
-        "qty_metric": "1 tsp",
+        "qty_metric": "2 g",
         "text": {
           "en": "smoked paprika",
           "es": "pimentón ahumado",
@@ -218,7 +218,7 @@
       },
       {
         "qty_us": "6 cups",
-        "qty_metric": "1.4 L",
+        "qty_metric": "1440 ml",
         "text": {
           "en": "low-sodium beef or vegetable broth",
           "es": "caldo de carne o verduras bajo en sodio",

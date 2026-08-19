@@ -14,11 +14,11 @@
       "Gluten-Free"
     ],
     "nutrition": {
-      "cal": 352,
-      "carbs": 62,
+      "cal": 300,
+      "carbs": 43,
       "protein": 15,
-      "fat": 5,
-      "fiber": 13,
+      "fat": 8,
+      "fiber": 10,
       "gi": 50
     },
     "name": {
@@ -38,8 +38,8 @@
     },
     "ingredients": [
       {
-        "qty_us": "1.5 cups",
-        "qty_metric": "180 g",
+        "qty_us": "7/8 cup",
+        "qty_metric": "115 g",
         "text": {
           "en": "masa harina (corn flour for tortillas)",
           "es": "masa harina (harina de maíz para tortillas)",
@@ -47,8 +47,8 @@
         }
       },
       {
-        "qty_us": "2 cups",
-        "qty_metric": "350 g",
+        "qty_us": "1 1/2 cups",
+        "qty_metric": "395 g",
         "text": {
           "en": "cooked and mashed refried beans",
           "es": "frijoles refritos, cocidos y machacados",
@@ -56,8 +56,8 @@
         }
       },
       {
-        "qty_us": "1/2 cup",
-        "qty_metric": "60 g",
+        "qty_us": "1 cup",
+        "qty_metric": "115 g",
         "text": {
           "en": "shredded low-fat mozzarella",
           "es": "queso mozzarella bajo en grasa, rallado",
@@ -65,8 +65,8 @@
         }
       },
       {
-        "qty_us": "2 cups",
-        "qty_metric": "150 g",
+        "qty_us": "3 cups",
+        "qty_metric": "265 g",
         "text": {
           "en": "cabbage, finely shredded, for curtido",
           "es": "repollo, en tiras finas, para el curtido",
@@ -75,7 +75,7 @@
       },
       {
         "qty_us": "1/4 cup",
-        "qty_metric": "60 ml",
+        "qty_metric": "40 ml",
         "text": {
           "en": "white vinegar",
           "es": "vinagre blanco",
@@ -90,25 +90,34 @@
           "es": "zanahoria, rallada, para el curtido",
           "fil": "carrot, kinayod, para sa curtido"
         }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "4 ml",
+        "text": {
+          "en": "olive oil, for the curtido",
+          "es": "aceite de oliva, para el curtido",
+          "fil": "olive oil, para sa curtido"
+        }
       }
     ],
     "instructions": {
       "en": [
-        "Toss the cabbage and carrot with the vinegar and a pinch of salt, and let sit at least 20 minutes to make the curtido.",
+        "Toss the cabbage and carrot with the vinegar, olive oil, and a pinch of salt, and let sit at least 20 minutes to make the curtido.",
         "Mix the masa harina with warm water until it forms a soft, pliable dough.",
         "Combine the mashed beans and cheese for the filling.",
         "Form small balls of dough, flatten into a disc, place a spoonful of filling in the center, and fold and pat back into a small flat cake.",
         "Cook on a hot, lightly oiled griddle 3-4 minutes per side until golden with brown spots, and serve with the curtido."
       ],
       "es": [
-        "Mezcla el repollo y la zanahoria con el vinagre y una pizca de sal, y deja reposar al menos 20 minutos para hacer el curtido.",
+        "Mezcla el repollo y la zanahoria con el vinagre, el aceite de oliva y una pizca de sal, y deja reposar al menos 20 minutos para hacer el curtido.",
         "Mezcla la masa harina con agua tibia hasta formar una masa suave y manejable.",
         "Combina los frijoles machacados y el queso para el relleno.",
         "Forma pequeñas bolas de masa, aplánalas en un disco, coloca una cucharada de relleno en el centro, y dobla y aplana de nuevo en una torta pequeña y plana.",
         "Cocina en un comal caliente y ligeramente aceitado 3-4 minutos por lado hasta que estén doradas con manchas marrones, y sirve con el curtido."
       ],
       "fil": [
-        "Haluin ang cabbage at carrot kasama ang vinegar at kaunting asin, at hayaang tumigil ng hindi bababa sa 20 minuto para gawin ang curtido.",
+        "Haluin ang cabbage at carrot kasama ang vinegar, olive oil, at kaunting asin, at hayaang tumigil ng hindi bababa sa 20 minuto para gawin ang curtido.",
         "Ihalo ang masa harina sa maligamgam na tubig hanggang magkaroon ng malambot, pliable na dough.",
         "Ihalo ang mashed beans at keso para sa filling.",
         "Gumawa ng maliliit na bola ng dough, patagin bilang disc, ilagay ang isang kutsarang filling sa gitna, tapos tiklupin at patagin ulit bilang maliit na patag na cake.",
@@ -131,11 +140,11 @@
       "Gluten-Free"
     ],
     "nutrition": {
-      "cal": 430,
-      "carbs": 50,
-      "protein": 36,
-      "fat": 11,
-      "fiber": 11,
+      "cal": 381,
+      "carbs": 40,
+      "protein": 34,
+      "fat": 10,
+      "fiber": 9,
       "gi": 45
     },
     "name": {
@@ -156,7 +165,7 @@
     "ingredients": [
       {
         "qty_us": "1 lb",
-        "qty_metric": "450 g",
+        "qty_metric": "455 g",
         "text": {
           "en": "chicken breast or lean beef, grilled",
           "es": "pechuga de pollo o carne magra, a la parrilla",
@@ -164,8 +173,8 @@
         }
       },
       {
-        "qty_us": "3/4 cup",
-        "qty_metric": "140 g",
+        "qty_us": "1/2 cup",
+        "qty_metric": "80 g",
         "text": {
           "en": "cooked white rice",
           "es": "arroz blanco cocido",
@@ -173,8 +182,8 @@
         }
       },
       {
-        "qty_us": "2 cups",
-        "qty_metric": "330 g",
+        "qty_us": "1 1/2 cups",
+        "qty_metric": "260 g",
         "text": {
           "en": "cooked black beans",
           "es": "frijoles negros cocidos",
@@ -182,8 +191,8 @@
         }
       },
       {
-        "qty_us": "3 cups",
-        "qty_metric": "220 g",
+        "qty_us": "4 cups",
+        "qty_metric": "355 g",
         "text": {
           "en": "cabbage, shredded",
           "es": "repollo, en tiras",
@@ -200,8 +209,8 @@
         }
       },
       {
-        "qty_us": "1",
-        "qty_metric": "1",
+        "qty_us": "3/4",
+        "qty_metric": "3/4",
         "text": {
           "en": "small ripe plantain, sliced and baked",
           "es": "plátano maduro pequeño, en rodajas y horneado",
@@ -210,7 +219,7 @@
       },
       {
         "qty_us": "2 tbsp",
-        "qty_metric": "30 ml",
+        "qty_metric": "25 ml",
         "text": {
           "en": "olive oil and lime dressing",
           "es": "aderezo de aceite de oliva y limón",
@@ -257,11 +266,11 @@
       "Vegetarian"
     ],
     "nutrition": {
-      "cal": 361,
-      "carbs": 63,
-      "protein": 21,
-      "fat": 3,
-      "fiber": 15,
+      "cal": 325,
+      "carbs": 43,
+      "protein": 14,
+      "fat": 11,
+      "fiber": 10,
       "gi": 28
     },
     "name": {
@@ -281,8 +290,8 @@
     },
     "ingredients": [
       {
-        "qty_us": "2 cups",
-        "qty_metric": "400 g",
+        "qty_us": "1 1/4 cups",
+        "qty_metric": "230 g",
         "text": {
           "en": "dried black beans, soaked overnight",
           "es": "frijoles negros secos, remojados toda la noche",
@@ -299,8 +308,8 @@
         }
       },
       {
-        "qty_us": "3 cloves",
-        "qty_metric": "3 cloves",
+        "qty_us": "3 clove",
+        "qty_metric": "9 g",
         "text": {
           "en": "garlic, minced",
           "es": "ajo, picado",
@@ -309,7 +318,7 @@
       },
       {
         "qty_us": "1 tsp",
-        "qty_metric": "1 tsp",
+        "qty_metric": "2 g",
         "text": {
           "en": "ground cumin",
           "es": "comino molido",
@@ -318,7 +327,7 @@
       },
       {
         "qty_us": "6 cups",
-        "qty_metric": "1.4 L",
+        "qty_metric": "1440 ml",
         "text": {
           "en": "low-sodium vegetable broth",
           "es": "caldo de verduras bajo en sodio",
@@ -326,33 +335,51 @@
         }
       },
       {
-        "qty_us": "1/4 cup",
-        "qty_metric": "60 g",
+        "qty_us": "6 tbsp",
+        "qty_metric": "70 ml",
         "text": {
           "en": "light sour cream, for serving",
           "es": "crema agria liviana, para servir",
           "fil": "light sour cream, pang-serve"
         }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "tomato, diced",
+          "es": "tomate, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "25 ml",
+        "text": {
+          "en": "olive oil, for finishing",
+          "es": "aceite de oliva, para finalizar",
+          "fil": "olive oil, pang-tapos"
+        }
       }
     ],
     "instructions": {
       "en": [
-        "Drain the soaked beans and add them to a large pot with the broth, onion, garlic, and cumin.",
+        "Drain the soaked beans and add them to a large pot with the broth, tomato, onion, garlic, and cumin.",
         "Bring to a boil, then reduce heat and simmer 30-35 minutes until the beans are very tender.",
         "Puree half the soup with an immersion blender for a thicker texture, leaving the rest chunky.",
-        "Season with salt and pepper to taste, and serve hot with a small dollop of light sour cream."
+        "Season with salt and pepper to taste, drizzle with olive oil, and serve hot with a small dollop of light sour cream."
       ],
       "es": [
-        "Escurre los frijoles remojados y agrégalos a una olla grande con el caldo, la cebolla, el ajo y el comino.",
+        "Escurre los frijoles remojados y agrégalos a una olla grande con el caldo, el tomate, la cebolla, el ajo y el comino.",
         "Lleva a hervor, luego reduce el fuego y cocina a fuego lento 30-35 minutos hasta que los frijoles estén muy tiernos.",
         "Procesa la mitad de la sopa con una licuadora de mano para una textura más espesa, dejando el resto con trozos.",
-        "Sazona con sal y pimienta a gusto, y sirve caliente con una pequeña cucharada de crema agria liviana."
+        "Sazona con sal y pimienta a gusto, rocía con aceite de oliva, y sirve caliente con una pequeña cucharada de crema agria liviana."
       ],
       "fil": [
-        "I-drain ang binabad na beans at idagdag sa malaking pot kasama ang broth, sibuyas, bawang, at cumin.",
+        "I-drain ang binabad na beans at idagdag sa malaking pot kasama ang broth, kamatis, sibuyas, bawang, at cumin.",
         "Pakuluan, tapos hinaan ang apoy at pasimmerin ng 30-35 minuto hanggang lumambot na ang beans.",
         "I-puree ang kalahati ng soup gamit ang immersion blender para sa mas makapal na texture, iiwan ang natitira na chunky.",
-        "I-season ng asin at paminta ayon sa panlasa, at i-serve na mainit na may maliit na light sour cream."
+        "I-season ng asin at paminta ayon sa panlasa, budburan ng olive oil, at i-serve na mainit na may maliit na light sour cream."
       ]
     }
   },

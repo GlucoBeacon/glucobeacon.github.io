@@ -14,11 +14,11 @@
       "Gluten-Free"
     ],
     "nutrition": {
-      "cal": 601,
-      "carbs": 50,
-      "protein": 49,
+      "cal": 563,
+      "carbs": 42,
+      "protein": 48,
       "fat": 23,
-      "fiber": 14,
+      "fiber": 12,
       "gi": 40
     },
     "name": {
@@ -38,8 +38,8 @@
     },
     "ingredients": [
       {
-        "qty_us": "1.5 lb",
-        "qty_metric": "675 g",
+        "qty_us": "1 1/2 lb",
+        "qty_metric": "680 g",
         "text": {
           "en": "flank steak, cooked and shredded",
           "es": "falda de res, cocida y desmechada",
@@ -65,8 +65,8 @@
         }
       },
       {
-        "qty_us": "3 cups",
-        "qty_metric": "500 g",
+        "qty_us": "2 1/2 cups",
+        "qty_metric": "430 g",
         "text": {
           "en": "cooked black beans",
           "es": "caraotas negras cocidas",
@@ -74,8 +74,8 @@
         }
       },
       {
-        "qty_us": "1",
-        "qty_metric": "1",
+        "qty_us": "3/4",
+        "qty_metric": "3/4",
         "text": {
           "en": "small ripe plantain, sliced and baked (not fried)",
           "es": "plátano maduro pequeño, en rodajas y horneado (no frito)",
@@ -83,8 +83,8 @@
         }
       },
       {
-        "qty_us": "6 cups",
-        "qty_metric": "6 cups",
+        "qty_us": "8 cups",
+        "qty_metric": "290 g",
         "text": {
           "en": "mixed salad greens, for serving",
           "es": "hojas verdes mixtas, para servir",
@@ -93,7 +93,7 @@
       },
       {
         "qty_us": "2 tbsp",
-        "qty_metric": "30 ml",
+        "qty_metric": "25 ml",
         "text": {
           "en": "olive oil",
           "es": "aceite de oliva",

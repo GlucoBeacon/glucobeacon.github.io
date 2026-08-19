@@ -493,11 +493,11 @@
       "Plant-Protein"
     ],
     "nutrition": {
-      "cal": 283,
-      "carbs": 52,
-      "protein": 17,
-      "fat": 1,
-      "fiber": 12,
+      "cal": 305,
+      "carbs": 41,
+      "protein": 13,
+      "fat": 10,
+      "fiber": 10,
       "gi": 30
     },
     "name": {
@@ -517,8 +517,8 @@
     },
     "ingredients": [
       {
-        "qty_us": "2 cups",
-        "qty_metric": "400 g",
+        "qty_us": "1 1/2 cups",
+        "qty_metric": "280 g",
         "text": {
           "en": "dried black beans, soaked overnight",
           "es": "frijoles negros secos, remojados toda la noche",
@@ -535,8 +535,8 @@
         }
       },
       {
-        "qty_us": "1",
-        "qty_metric": "1",
+        "qty_us": "1 1/4",
+        "qty_metric": "1 1/4",
         "text": {
           "en": "green bell pepper, chopped",
           "es": "morrón verde, picado",
@@ -544,8 +544,8 @@
         }
       },
       {
-        "qty_us": "4 cloves",
-        "qty_metric": "4 cloves",
+        "qty_us": "4 clove",
+        "qty_metric": "12 g",
         "text": {
           "en": "garlic, minced",
           "es": "ajo, picado",
@@ -554,7 +554,7 @@
       },
       {
         "qty_us": "1 tsp",
-        "qty_metric": "1 tsp",
+        "qty_metric": "2 g",
         "text": {
           "en": "ground cumin",
           "es": "comino molido",
@@ -572,11 +572,20 @@
       },
       {
         "qty_us": "6 cups",
-        "qty_metric": "1.4 L",
+        "qty_metric": "1440 ml",
         "text": {
           "en": "low-sodium vegetable broth",
           "es": "caldo de verduras bajo en sodio",
           "fil": "low-sodium vegetable broth"
+        }
+      },
+      {
+        "qty_us": "3 1/2 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "olive oil, for finishing",
+          "es": "aceite de oliva, para finalizar",
+          "fil": "olive oil, pang-tapos"
         }
       }
     ],
@@ -585,19 +594,19 @@
         "Drain the soaked beans and add them to a large pot with the broth.",
         "Bring to a boil, then reduce heat and simmer 30 minutes.",
         "Add the onion, bell pepper, garlic, and cumin, and simmer 15 more minutes until the beans are tender and the stew has thickened.",
-        "Stir in the vinegar, season with salt to taste, and serve hot."
+        "Stir in the vinegar, season with salt to taste, drizzle with olive oil, and serve hot."
       ],
       "es": [
         "Escurre los frijoles remojados y agrégalos a una olla grande con el caldo.",
         "Lleva a hervor, luego reduce el fuego y cocina a fuego lento 30 minutos.",
         "Agrega la cebolla, el morrón, el ajo y el comino, y cocina a fuego lento 15 minutos más hasta que los frijoles estén tiernos y el guiso haya espesado.",
-        "Incorpora el vinagre, sazona con sal a gusto y sirve caliente."
+        "Incorpora el vinagre, sazona con sal a gusto, rocía con aceite de oliva, y sirve caliente."
       ],
       "fil": [
         "I-drain ang binabad na beans at idagdag sa malaking pot kasama ang broth.",
         "Pakuluan, tapos hinaan ang apoy at pasimmerin ng 30 minuto.",
         "Idagdag ang sibuyas, bell pepper, bawang, at cumin, at pasimmerin pa ng 15 minuto hanggang lumambot ang beans at lumapot ang stew.",
-        "Ihalo ang vinegar, i-season ng asin ayon sa panlasa, at i-serve na mainit."
+        "Ihalo ang vinegar, i-season ng asin ayon sa panlasa, budburan ng olive oil, at i-serve na mainit."
       ]
     }
   }

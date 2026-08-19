@@ -14,11 +14,11 @@
       "Gluten-Free"
     ],
     "nutrition": {
-      "cal": 362,
-      "carbs": 50,
-      "protein": 14,
+      "cal": 325,
+      "carbs": 42,
+      "protein": 12,
       "fat": 13,
-      "fiber": 15,
+      "fiber": 13,
       "gi": 45
     },
     "name": {
@@ -38,8 +38,8 @@
     },
     "ingredients": [
       {
-        "qty_us": "3 cups",
-        "qty_metric": "500 g",
+        "qty_us": "2 1/2 cups",
+        "qty_metric": "430 g",
         "text": {
           "en": "cooked red or black beans, with a little of their liquid",
           "es": "frijoles rojos o negros cocidos, con un poco de su líquido",
@@ -47,8 +47,8 @@
         }
       },
       {
-        "qty_us": "1 cup",
-        "qty_metric": "185 g",
+        "qty_us": "3/4 cup",
+        "qty_metric": "120 g",
         "text": {
           "en": "cooked white rice",
           "es": "arroz blanco cocido",
@@ -65,8 +65,8 @@
         }
       },
       {
-        "qty_us": "1",
-        "qty_metric": "1",
+        "qty_us": "1 1/2",
+        "qty_metric": "1 1/2",
         "text": {
           "en": "green bell pepper, finely chopped",
           "es": "morrón verde, picado fino",
@@ -75,7 +75,7 @@
       },
       {
         "qty_us": "2 tbsp",
-        "qty_metric": "30 ml",
+        "qty_metric": "25 ml",
         "text": {
           "en": "vegetable oil",
           "es": "aceite vegetal",
@@ -127,11 +127,11 @@
       "Gluten-Free"
     ],
     "nutrition": {
-      "cal": 377,
-      "carbs": 50,
+      "cal": 340,
+      "carbs": 42,
       "protein": 28,
       "fat": 7,
-      "fiber": 4,
+      "fiber": 5,
       "gi": 45
     },
     "name": {
@@ -151,8 +151,8 @@
     },
     "ingredients": [
       {
-        "qty_us": "1 lb",
-        "qty_metric": "450 g",
+        "qty_us": "3/4 lb",
+        "qty_metric": "340 g",
         "text": {
           "en": "yuca, peeled and cubed",
           "es": "yuca, pelada y en cubos",
@@ -161,7 +161,7 @@
       },
       {
         "qty_us": "1 lb",
-        "qty_metric": "450 g",
+        "qty_metric": "455 g",
         "text": {
           "en": "pork shoulder, trimmed and cubed",
           "es": "paleta de cerdo, sin grasa y en cubos",
@@ -169,8 +169,8 @@
         }
       },
       {
-        "qty_us": "3 cups",
-        "qty_metric": "300 g",
+        "qty_us": "4 cups",
+        "qty_metric": "355 g",
         "text": {
           "en": "cabbage, finely shredded",
           "es": "repollo, en tiras finas",
@@ -178,8 +178,8 @@
         }
       },
       {
-        "qty_us": "2",
-        "qty_metric": "2",
+        "qty_us": "2 1/2",
+        "qty_metric": "2 1/2",
         "text": {
           "en": "tomatoes, diced",
           "es": "tomates, en cubos",
@@ -188,7 +188,7 @@
       },
       {
         "qty_us": "1/4 cup",
-        "qty_metric": "60 ml",
+        "qty_metric": "40 ml",
         "text": {
           "en": "fresh lime juice",
           "es": "jugo de limón fresco",
@@ -197,7 +197,7 @@
       },
       {
         "qty_us": "1 tbsp",
-        "qty_metric": "15 ml",
+        "qty_metric": "14 ml",
         "text": {
           "en": "olive oil",
           "es": "aceite de oliva",
@@ -241,11 +241,11 @@
       "Vegetarian"
     ],
     "nutrition": {
-      "cal": 344,
-      "carbs": 63,
-      "protein": 23,
-      "fat": 1,
-      "fiber": 15,
+      "cal": 306,
+      "carbs": 39,
+      "protein": 13,
+      "fat": 12,
+      "fiber": 10,
       "gi": 28
     },
     "name": {
@@ -265,8 +265,8 @@
     },
     "ingredients": [
       {
-        "qty_us": "2 cups",
-        "qty_metric": "400 g",
+        "qty_us": "1 cup",
+        "qty_metric": "185 g",
         "text": {
           "en": "dried red beans, soaked overnight",
           "es": "frijoles rojos secos, remojados toda la noche",
@@ -283,8 +283,8 @@
         }
       },
       {
-        "qty_us": "1",
-        "qty_metric": "1",
+        "qty_us": "1 1/2",
+        "qty_metric": "1 1/2",
         "text": {
           "en": "green bell pepper, chopped",
           "es": "morrón verde, picado",
@@ -292,8 +292,8 @@
         }
       },
       {
-        "qty_us": "3 cloves",
-        "qty_metric": "3 cloves",
+        "qty_us": "3 clove",
+        "qty_metric": "9 g",
         "text": {
           "en": "garlic, minced",
           "es": "ajo, picado",
@@ -302,7 +302,7 @@
       },
       {
         "qty_us": "1 tsp",
-        "qty_metric": "1 tsp",
+        "qty_metric": "2 g",
         "text": {
           "en": "ground cumin",
           "es": "comino molido",
@@ -311,32 +311,59 @@
       },
       {
         "qty_us": "6 cups",
-        "qty_metric": "1.4 L",
+        "qty_metric": "1440 ml",
         "text": {
           "en": "low-sodium vegetable broth",
           "es": "caldo de verduras bajo en sodio",
           "fil": "low-sodium vegetable broth"
         }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "carrot, diced",
+          "es": "zanahoria, en cubos",
+          "fil": "carrot, dinice"
+        }
+      },
+      {
+        "qty_us": "2 1/2 tbsp",
+        "qty_metric": "35 ml",
+        "text": {
+          "en": "olive oil, for finishing",
+          "es": "aceite de oliva, para finalizar",
+          "fil": "olive oil, pang-tapos"
+        }
+      },
+      {
+        "qty_us": "1/2",
+        "qty_metric": "1/2",
+        "text": {
+          "en": "avocado, diced",
+          "es": "aguacate, en cubos",
+          "fil": "avocado, dinice"
+        }
       }
     ],
     "instructions": {
       "en": [
-        "Drain the soaked beans and add them to a large pot with the broth, onion, bell pepper, garlic, and cumin.",
+        "Drain the soaked beans and add them to a large pot with the broth, onion, bell pepper, carrot, garlic, and cumin.",
         "Bring to a boil, then reduce heat and simmer 30-35 minutes until the beans are very tender.",
         "Mash some of the beans against the side of the pot to thicken the soup slightly.",
-        "Season with salt and pepper to taste and serve hot."
+        "Season with salt and pepper to taste, top with diced avocado, drizzle with olive oil, and serve hot."
       ],
       "es": [
-        "Escurre los frijoles remojados y agrégalos a una olla grande con el caldo, la cebolla, el morrón, el ajo y el comino.",
+        "Escurre los frijoles remojados y agrégalos a una olla grande con el caldo, la cebolla, el morrón, la zanahoria, el ajo y el comino.",
         "Lleva a hervor, luego reduce el fuego y cocina a fuego lento 30-35 minutos hasta que los frijoles estén muy tiernos.",
         "Machaca algunos frijoles contra el costado de la olla para espesar ligeramente la sopa.",
-        "Sazona con sal y pimienta a gusto y sirve caliente."
+        "Sazona con sal y pimienta a gusto, agrega el aguacate en cubos por encima, rocía con aceite de oliva, y sirve caliente."
       ],
       "fil": [
-        "I-drain ang binabad na beans at idagdag sa malaking pot kasama ang broth, sibuyas, bell pepper, bawang, at cumin.",
+        "I-drain ang binabad na beans at idagdag sa malaking pot kasama ang broth, sibuyas, bell pepper, carrot, bawang, at cumin.",
         "Pakuluan, tapos hinaan ang apoy at pasimmerin ng 30-35 minuto hanggang lumambot na ang beans.",
         "I-mash ang ilan sa beans laban sa gilid ng pot para lumapot nang bahagya ang soup.",
-        "I-season ng asin at paminta ayon sa panlasa at i-serve na mainit."
+        "I-season ng asin at paminta ayon sa panlasa, patungan ng diced avocado, budburan ng olive oil, at i-serve na mainit."
       ]
     }
   },

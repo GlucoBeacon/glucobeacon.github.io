@@ -128,11 +128,11 @@
       "Gluten-Free"
     ],
     "nutrition": {
-      "cal": 287,
-      "carbs": 7,
-      "protein": 28,
-      "fat": 17,
-      "fiber": 4,
+      "cal": 305,
+      "carbs": 10,
+      "protein": 22,
+      "fat": 21,
+      "fiber": 5,
       "gi": 15
     },
     "name": {
@@ -152,8 +152,8 @@
     },
     "ingredients": [
       {
-        "qty_us": "1 lb",
-        "qty_metric": "450 g",
+        "qty_us": "3/4 lb",
+        "qty_metric": "340 g",
         "text": {
           "en": "salt cod, soaked overnight and rinsed well",
           "es": "bacalao salado, remojado toda la noche y bien enjuagado",
@@ -161,8 +161,8 @@
         }
       },
       {
-        "qty_us": "2",
-        "qty_metric": "2",
+        "qty_us": "2 1/2",
+        "qty_metric": "2 1/2",
         "text": {
           "en": "tomatoes, diced",
           "es": "tomates, en cubos",
@@ -179,8 +179,8 @@
         }
       },
       {
-        "qty_us": "1",
-        "qty_metric": "1",
+        "qty_us": "1 1/2",
+        "qty_metric": "1 1/2",
         "text": {
           "en": "avocado, diced",
           "es": "aguacate, en cubos",
@@ -188,7 +188,7 @@
         }
       },
       {
-        "qty_us": "3 tbsp",
+        "qty_us": "3 1/2 tbsp",
         "qty_metric": "45 ml",
         "text": {
           "en": "olive oil",
