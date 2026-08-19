@@ -129,11 +129,11 @@
       "High-Fiber"
     ],
     "nutrition": {
-      "cal": 300,
-      "carbs": 24,
-      "protein": 26,
-      "fat": 11,
-      "fiber": 4,
+      "cal": 343,
+      "carbs": 20,
+      "protein": 39,
+      "fat": 12,
+      "fiber": 2,
       "gi": 48
     },
     "name": {
@@ -380,8 +380,8 @@
       "Gluten-Free"
     ],
     "nutrition": {
-      "cal": 246,
-      "carbs": 8,
+      "cal": 240,
+      "carbs": 7,
       "protein": 24,
       "fat": 13,
       "fiber": 2,

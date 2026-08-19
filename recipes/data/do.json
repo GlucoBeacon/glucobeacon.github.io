@@ -14,11 +14,11 @@
       "Gluten-Free"
     ],
     "nutrition": {
-      "cal": 302,
-      "carbs": 10,
-      "protein": 37,
+      "cal": 296,
+      "carbs": 9,
+      "protein": 36,
       "fat": 14,
-      "fiber": 3,
+      "fiber": 2,
       "gi": 15
     },
     "name": {
@@ -141,11 +141,11 @@
       "Gluten-Free"
     ],
     "nutrition": {
-      "cal": 110,
+      "cal": 143,
       "carbs": 8,
-      "protein": 3,
-      "fat": 8,
-      "fiber": 3,
+      "protein": 2,
+      "fat": 13,
+      "fiber": 4,
       "gi": 15
     },
     "name": {
@@ -507,11 +507,11 @@
       "Gluten-Free"
     ],
     "nutrition": {
-      "cal": 260,
-      "carbs": 10,
-      "protein": 32,
-      "fat": 10,
-      "fiber": 3,
+      "cal": 138,
+      "carbs": 8,
+      "protein": 10,
+      "fat": 8,
+      "fiber": 2,
       "gi": 15
     },
     "name": {

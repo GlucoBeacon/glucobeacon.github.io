@@ -495,11 +495,11 @@
       "High-Protein"
     ],
     "nutrition": {
-      "cal": 340,
-      "carbs": 28,
-      "protein": 22,
-      "fat": 16,
-      "fiber": 10,
+      "cal": 265,
+      "carbs": 22,
+      "protein": 12,
+      "fat": 15,
+      "fiber": 8,
       "gi": 32
     },
     "name": {

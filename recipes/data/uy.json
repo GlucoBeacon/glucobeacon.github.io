@@ -138,11 +138,11 @@
       "Plant-Protein"
     ],
     "nutrition": {
-      "cal": 311,
-      "carbs": 38,
+      "cal": 306,
+      "carbs": 37,
       "protein": 12,
-      "fat": 14,
-      "fiber": 11,
+      "fat": 13,
+      "fiber": 10,
       "gi": 28
     },
     "name": {
@@ -366,8 +366,8 @@
       "Gluten-Free"
     ],
     "nutrition": {
-      "cal": 228,
-      "carbs": 9,
+      "cal": 223,
+      "carbs": 8,
       "protein": 36,
       "fat": 3,
       "fiber": 2,

@@ -14,11 +14,11 @@
       "Low-GI"
     ],
     "nutrition": {
-      "cal": 110,
+      "cal": 115,
       "carbs": 12,
-      "protein": 2,
+      "protein": 3,
       "fat": 7,
-      "fiber": 3,
+      "fiber": 4,
       "gi": 30
     },
     "name": {
@@ -140,11 +140,11 @@
       "High-Fiber"
     ],
     "nutrition": {
-      "cal": 160,
-      "carbs": 16,
+      "cal": 147,
+      "carbs": 12,
       "protein": 3,
-      "fat": 10,
-      "fiber": 5,
+      "fat": 11,
+      "fiber": 4,
       "gi": 35
     },
     "name": {
@@ -266,11 +266,11 @@
       "High-Protein"
     ],
     "nutrition": {
-      "cal": 430,
-      "carbs": 8,
-      "protein": 34,
-      "fat": 30,
-      "fiber": 2,
+      "cal": 356,
+      "carbs": 6,
+      "protein": 10,
+      "fat": 33,
+      "fiber": 3,
       "gi": 15
     },
     "name": {
@@ -501,10 +501,10 @@
       "Low-Carb"
     ],
     "nutrition": {
-      "cal": 340,
-      "carbs": 10,
-      "protein": 28,
-      "fat": 22,
+      "cal": 382,
+      "carbs": 8,
+      "protein": 26,
+      "fat": 28,
       "fiber": 3,
       "gi": 15
     },
