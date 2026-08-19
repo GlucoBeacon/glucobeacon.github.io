@@ -8,8 +8,19 @@
     "cook_min": 10,
     "total_min": 30,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 200, "carbs": 14, "protein": 24, "fat": 6, "fiber": 2, "gi": 20},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 205,
+      "carbs": 11,
+      "protein": 29,
+      "fat": 6,
+      "fiber": 4,
+      "gi": 20
+    },
     "name": {
       "en": "Ecuadorian Shrimp Ceviche",
       "es": "Ceviche de Camarón Ecuatoriano",
@@ -26,13 +37,69 @@
       "fil": "Ang ceviche na ito ay gawa sa lean shrimp, tomato juice, lime, at sibuyas -- walang kanin o fried garnish na nagpapabigat, kaya mababa ang carbs at gently ma-digest ang meal habang nagbibigay pa rin ng malaking serving ng protein."
     },
     "ingredients": [
-      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "shrimp, peeled, deveined, and cooked", "es": "camarones, pelados, desvenados y cocidos", "fil": "hipon, balat na tinanggal, buto na tinanggal, at niluto"}},
-      {"qty_us": "1 cup", "qty_metric": "240 ml", "text": {"en": "fresh tomato juice", "es": "jugo de tomate fresco", "fil": "fresh tomato juice"}},
-      {"qty_us": "1/2 cup", "qty_metric": "120 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red onion, thinly sliced", "es": "cebolla morada, en juliana fina", "fil": "red onion, pinong hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "tomato, diced", "es": "tomate, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, sliced, for serving", "es": "aguacate, en rodajas, para servir", "fil": "avocado, hiniwa, pang-serve"}}
+      {
+        "qty_us": "1 lb",
+        "qty_metric": "450 g",
+        "text": {
+          "en": "shrimp, peeled, deveined, and cooked",
+          "es": "camarones, pelados, desvenados y cocidos",
+          "fil": "hipon, balat na tinanggal, buto na tinanggal, at niluto"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "240 ml",
+        "text": {
+          "en": "fresh tomato juice",
+          "es": "jugo de tomate fresco",
+          "fil": "fresh tomato juice"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "120 ml",
+        "text": {
+          "en": "fresh lime juice",
+          "es": "jugo de limón fresco",
+          "fil": "fresh lime juice"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "red onion, thinly sliced",
+          "es": "cebolla morada, en juliana fina",
+          "fil": "red onion, pinong hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "tomato, diced",
+          "es": "tomate, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "10 g",
+        "text": {
+          "en": "fresh cilantro, chopped",
+          "es": "cilantro fresco, picado",
+          "fil": "fresh cilantro, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "avocado, sliced, for serving",
+          "es": "aguacate, en rodajas, para servir",
+          "fil": "avocado, hiniwa, pang-serve"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -67,8 +134,19 @@
     "cook_min": 35,
     "total_min": 50,
     "servings": 4,
-    "tags": ["High-Protein", "High-Fiber", "Gluten-Free"],
-    "nutrition": {"cal": 260, "carbs": 22, "protein": 26, "fat": 8, "fiber": 4, "gi": 42},
+    "tags": [
+      "High-Protein",
+      "High-Fiber",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 260,
+      "carbs": 22,
+      "protein": 26,
+      "fat": 8,
+      "fiber": 4,
+      "gi": 42
+    },
     "name": {
       "en": "Light Fish and Yuca Soup",
       "es": "Encebollado Liviano",
@@ -85,13 +163,69 @@
       "fil": "Ang encebollado ay traditionally gumagamit ng malaking halaga ng yuca, isang mabilis-ma-digest na starchy root. Ang pagbawas ng yuca sa katamtamang portion at pagdaragdag ng isda ay pinapanatili ang real na tangy, pickled-onion flavor ng dish habang binabawasan kung gaano kabilis nitong itataas ang blood sugar."
     },
     "ingredients": [
-      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "firm white fish fillet (such as tuna or albacore), cubed", "es": "filete de pescado blanco firme (como atún o albacora), en cubos", "fil": "firm white fish fillet (tulad ng tuna), dinice"}},
-      {"qty_us": "1 cup", "qty_metric": "150 g", "text": {"en": "yuca, peeled and cubed", "es": "yuca, pelada y en cubos", "fil": "yuca, binalatan at dinice"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red onion, thinly sliced and pickled in lime juice", "es": "cebolla morada, en juliana fina y encurtida en jugo de limón", "fil": "red onion, pinong hiniwa at pinickle sa lime juice"}},
-      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
-      {"qty_us": "6 cups", "qty_metric": "1.4 L", "text": {"en": "low-sodium fish or vegetable broth", "es": "caldo de pescado o verduras bajo en sodio", "fil": "low-sodium fish o vegetable broth"}}
+      {
+        "qty_us": "1 lb",
+        "qty_metric": "450 g",
+        "text": {
+          "en": "firm white fish fillet (such as tuna or albacore), cubed",
+          "es": "filete de pescado blanco firme (como atún o albacora), en cubos",
+          "fil": "firm white fish fillet (tulad ng tuna), dinice"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "150 g",
+        "text": {
+          "en": "yuca, peeled and cubed",
+          "es": "yuca, pelada y en cubos",
+          "fil": "yuca, binalatan at dinice"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "red onion, thinly sliced and pickled in lime juice",
+          "es": "cebolla morada, en juliana fina y encurtida en jugo de limón",
+          "fil": "red onion, pinong hiniwa at pinickle sa lime juice"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "10 g",
+        "text": {
+          "en": "fresh cilantro, chopped",
+          "es": "cilantro fresco, picado",
+          "fil": "fresh cilantro, hiniwa"
+        }
+      },
+      {
+        "qty_us": "6 cups",
+        "qty_metric": "1.4 L",
+        "text": {
+          "en": "low-sodium fish or vegetable broth",
+          "es": "caldo de pescado o verduras bajo en sodio",
+          "fil": "low-sodium fish o vegetable broth"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -126,8 +260,20 @@
     "cook_min": 15,
     "total_min": 30,
     "servings": 4,
-    "tags": ["Vegetarian", "Vegan", "High-Fiber", "Gluten-Free"],
-    "nutrition": {"cal": 260, "carbs": 30, "protein": 8, "fat": 12, "fiber": 7, "gi": 42},
+    "tags": [
+      "Vegetarian",
+      "Vegan",
+      "High-Fiber",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 260,
+      "carbs": 30,
+      "protein": 8,
+      "fat": 12,
+      "fiber": 7,
+      "gi": 42
+    },
     "name": {
       "en": "Quinoa and Avocado Salad",
       "es": "Ensalada de Quinoa con Aguacate",
@@ -144,13 +290,69 @@
       "fil": "Ang quinoa ay whole grain na may moderate glycemic index at real na fiber at protein content, hindi tulad ng refined white rice. Ang pag-pair nito sa healthy fat at fiber ng avocado ay lalo pang nagpapabagal sa digestion, na ginagawa itong naturally gentle na option sa blood sugar."
     },
     "ingredients": [
-      {"qty_us": "2 cups", "qty_metric": "370 g", "text": {"en": "cooked quinoa, cooled", "es": "quinua cocida, fría", "fil": "lutong quinoa, palamig na"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, diced", "es": "aguacate, en cubos", "fil": "avocado, dinice"}},
-      {"qty_us": "1/2 cup", "qty_metric": "75 g", "text": {"en": "corn kernels", "es": "granos de choclo", "fil": "corn kernels"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "tomato, diced", "es": "tomate, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "1/4", "qty_metric": "1/4", "text": {"en": "red onion, finely chopped", "es": "cebolla morada, picada fina", "fil": "red onion, pinong hiniwa"}},
-      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "370 g",
+        "text": {
+          "en": "cooked quinoa, cooled",
+          "es": "quinua cocida, fría",
+          "fil": "lutong quinoa, palamig na"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "avocado, diced",
+          "es": "aguacate, en cubos",
+          "fil": "avocado, dinice"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "75 g",
+        "text": {
+          "en": "corn kernels",
+          "es": "granos de choclo",
+          "fil": "corn kernels"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "tomato, diced",
+          "es": "tomate, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "1/4",
+        "qty_metric": "1/4",
+        "text": {
+          "en": "red onion, finely chopped",
+          "es": "cebolla morada, picada fina",
+          "fil": "red onion, pinong hiniwa"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "fresh lime juice",
+          "es": "jugo de limón fresco",
+          "fil": "fresh lime juice"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -182,8 +384,19 @@
     "cook_min": 35,
     "total_min": 50,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 320, "carbs": 12, "protein": 34, "fat": 15, "fiber": 3, "gi": 25},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 238,
+      "carbs": 6,
+      "protein": 40,
+      "fat": 5,
+      "fiber": 2,
+      "gi": 25
+    },
     "name": {
       "en": "Light Seco de Pollo",
       "es": "Seco de Pollo Ligero",
@@ -200,12 +413,60 @@
       "fil": "Ang seco de pollo mismo -- chicken na braised sa cilantro, bawang, at beer sauce -- ay may napakakaunting carbohydrate mag-isa. Ang restaurant versions ay kadalasang naglalagay ng malaking bunton ng white rice sa tabi; ang pag-skip sa kanin at pag-serve nito na may roasted o sautéed na gulay sa halip ay pinapanatili ang real na braised-chicken flavor habang malaki ang bawas sa glycemic load ng meal."
     },
     "ingredients": [
-      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "boneless, skinless chicken thighs", "es": "muslos de pollo sin hueso y sin piel", "fil": "boneless, skinless chicken thighs"}},
-      {"qty_us": "1 cup", "qty_metric": "40 g", "text": {"en": "fresh cilantro, blended into a paste with a little water", "es": "cilantro fresco, licuado en pasta con un poco de agua", "fil": "fresh cilantro, binlend na paste na may kaunting tubig"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "1 cup", "qty_metric": "240 ml", "text": {"en": "light beer or low-sodium chicken broth", "es": "cerveza liviana o caldo de pollo bajo en sodio", "fil": "light beer o low-sodium chicken broth"}},
-      {"qty_us": "3 cups", "qty_metric": "3 cups", "text": {"en": "mixed roasted vegetables (zucchini, bell pepper, onion), for serving", "es": "verduras mixtas asadas (zapallito, morrón, cebolla), para servir", "fil": "halo-halong roasted na gulay (zucchini, bell pepper, sibuyas), pang-serve"}}
+      {
+        "qty_us": "1.5 lb",
+        "qty_metric": "675 g",
+        "text": {
+          "en": "boneless, skinless chicken thighs",
+          "es": "muslos de pollo sin hueso y sin piel",
+          "fil": "boneless, skinless chicken thighs"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "40 g",
+        "text": {
+          "en": "fresh cilantro, blended into a paste with a little water",
+          "es": "cilantro fresco, licuado en pasta con un poco de agua",
+          "fil": "fresh cilantro, binlend na paste na may kaunting tubig"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "240 ml",
+        "text": {
+          "en": "light beer or low-sodium chicken broth",
+          "es": "cerveza liviana o caldo de pollo bajo en sodio",
+          "fil": "light beer o low-sodium chicken broth"
+        }
+      },
+      {
+        "qty_us": "3 cups",
+        "qty_metric": "3 cups",
+        "text": {
+          "en": "mixed roasted vegetables (zucchini, bell pepper, onion), for serving",
+          "es": "verduras mixtas asadas (zapallito, morrón, cebolla), para servir",
+          "fil": "halo-halong roasted na gulay (zucchini, bell pepper, sibuyas), pang-serve"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -240,8 +501,19 @@
     "cook_min": 30,
     "total_min": 45,
     "servings": 4,
-    "tags": ["Vegetarian", "Gluten-Free", "Low-Carb"],
-    "nutrition": {"cal": 220, "carbs": 18, "protein": 10, "fat": 12, "fiber": 4, "gi": 40},
+    "tags": [
+      "Vegetarian",
+      "Gluten-Free",
+      "Low-Carb"
+    ],
+    "nutrition": {
+      "cal": 220,
+      "carbs": 18,
+      "protein": 10,
+      "fat": 12,
+      "fiber": 4,
+      "gi": 40
+    },
     "name": {
       "en": "Potato and Cauliflower Cheese Soup",
       "es": "Locro de Papa con Coliflor",
@@ -258,13 +530,69 @@
       "fil": "Ang traditional na locro ay gawa halos lahat sa potato, na high-GI at madaling ma-overeat sa creamy, cheesy na soup. Ang pagpalit sa karamihan ng potato ng cauliflower -- na may sapat lang para sa authentic texture at flavor -- ay malaking bawas sa carb load habang pinapanatili ang parehong comforting, cheesy na soup na kilala ng lahat."
     },
     "ingredients": [
-      {"qty_us": "4 cups", "qty_metric": "500 g", "text": {"en": "cauliflower florets", "es": "coliflor en floretes", "fil": "cauliflower florets"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small potato, cubed", "es": "papa pequeña, en cubos", "fil": "maliit na potato, dinice"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground achiote or paprika", "es": "achiote molido o pimentón", "fil": "ground achiote o paprika"}},
-      {"qty_us": "1/2 cup", "qty_metric": "60 g", "text": {"en": "shredded low-fat mozzarella or queso fresco", "es": "queso mozzarella bajo en grasa o queso fresco, rallado", "fil": "shredded low-fat mozzarella o queso fresco"}},
-      {"qty_us": "4 cups", "qty_metric": "950 ml", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, sliced, for garnish", "es": "aguacate, en rodajas, para decorar", "fil": "avocado, hiniwa, pang-garnish"}}
+      {
+        "qty_us": "4 cups",
+        "qty_metric": "500 g",
+        "text": {
+          "en": "cauliflower florets",
+          "es": "coliflor en floretes",
+          "fil": "cauliflower florets"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "small potato, cubed",
+          "es": "papa pequeña, en cubos",
+          "fil": "maliit na potato, dinice"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "ground achiote or paprika",
+          "es": "achiote molido o pimentón",
+          "fil": "ground achiote o paprika"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "60 g",
+        "text": {
+          "en": "shredded low-fat mozzarella or queso fresco",
+          "es": "queso mozzarella bajo en grasa o queso fresco, rallado",
+          "fil": "shredded low-fat mozzarella o queso fresco"
+        }
+      },
+      {
+        "qty_us": "4 cups",
+        "qty_metric": "950 ml",
+        "text": {
+          "en": "low-sodium vegetable broth",
+          "es": "caldo de verduras bajo en sodio",
+          "fil": "low-sodium vegetable broth"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "avocado, sliced, for garnish",
+          "es": "aguacate, en rodajas, para decorar",
+          "fil": "avocado, hiniwa, pang-garnish"
+        }
+      }
     ],
     "instructions": {
       "en": [

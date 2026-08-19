@@ -8,8 +8,19 @@
     "cook_min": 35,
     "total_min": 50,
     "servings": 4,
-    "tags": ["High-Protein", "High-Fiber", "Gluten-Free"],
-    "nutrition": {"cal": 320, "carbs": 20, "protein": 24, "fat": 17, "fiber": 5, "gi": 35},
+    "tags": [
+      "High-Protein",
+      "High-Fiber",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 320,
+      "carbs": 20,
+      "protein": 24,
+      "fat": 17,
+      "fiber": 5,
+      "gi": 35
+    },
     "name": {
       "en": "Light Bolivian Peanut Soup",
       "es": "Sopa de Maní Liviana",
@@ -26,13 +37,69 @@
       "fil": "Ang mismong mani ay may mababang glycemic index at mayaman sa protein at healthy fat, kaya naturally gentle sa blood sugar ang base ng soup. Ang traditional na crispy fried potato straws sa ibabaw ay nagdadagdag ng malaking dosis ng mabilis-ma-digest na starch at oil; ang pag-alis nito ay pinapanatili ang real na peanut-at-vegetable flavor habang tinatanggal ang pinakamalaking glycemic spike sa dish."
     },
     "ingredients": [
-      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "lean beef, cubed", "es": "carne magra, en cubos", "fil": "lean beef, dinice"}},
-      {"qty_us": "1/2 cup", "qty_metric": "125 g", "text": {"en": "natural peanut butter (no added sugar)", "es": "manteca de maní natural (sin azúcar agregada)", "fil": "natural peanut butter (walang added sugar)"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "carrot, diced", "es": "zanahoria, en cubos", "fil": "carrot, dinice"}},
-      {"qty_us": "1 cup", "qty_metric": "100 g", "text": {"en": "green peas", "es": "arvejas", "fil": "green peas"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small potato, cubed", "es": "papa pequeña, en cubos", "fil": "maliit na potato, dinice"}},
-      {"qty_us": "6 cups", "qty_metric": "1.4 L", "text": {"en": "low-sodium beef broth", "es": "caldo de carne bajo en sodio", "fil": "low-sodium beef broth"}}
+      {
+        "qty_us": "1/2 lb",
+        "qty_metric": "225 g",
+        "text": {
+          "en": "lean beef, cubed",
+          "es": "carne magra, en cubos",
+          "fil": "lean beef, dinice"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "125 g",
+        "text": {
+          "en": "natural peanut butter (no added sugar)",
+          "es": "manteca de maní natural (sin azúcar agregada)",
+          "fil": "natural peanut butter (walang added sugar)"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "carrot, diced",
+          "es": "zanahoria, en cubos",
+          "fil": "carrot, dinice"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "100 g",
+        "text": {
+          "en": "green peas",
+          "es": "arvejas",
+          "fil": "green peas"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "small potato, cubed",
+          "es": "papa pequeña, en cubos",
+          "fil": "maliit na potato, dinice"
+        }
+      },
+      {
+        "qty_us": "6 cups",
+        "qty_metric": "1.4 L",
+        "text": {
+          "en": "low-sodium beef broth",
+          "es": "caldo de carne bajo en sodio",
+          "fil": "low-sodium beef broth"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -67,8 +134,20 @@
     "cook_min": 15,
     "total_min": 30,
     "servings": 4,
-    "tags": ["Vegetarian", "Vegan", "High-Fiber", "Gluten-Free"],
-    "nutrition": {"cal": 250, "carbs": 32, "protein": 9, "fat": 10, "fiber": 6, "gi": 42},
+    "tags": [
+      "Vegetarian",
+      "Vegan",
+      "High-Fiber",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 250,
+      "carbs": 32,
+      "protein": 9,
+      "fat": 10,
+      "fiber": 6,
+      "gi": 42
+    },
     "name": {
       "en": "Bolivian Quinoa Salad",
       "es": "Ensalada de Quinoa Boliviana",
@@ -85,13 +164,69 @@
       "fil": "Ang quinoa ay complete protein at whole grain na may moderate glycemic index, hindi tulad ng refined white rice o pasta. Ang pag-serve nito na malamig bilang salad na may fresh na gulay at lime ay nagreresulta sa naturally slow-digesting, satisfying na dish na sumusuporta sa steady blood sugar."
     },
     "ingredients": [
-      {"qty_us": "2 cups", "qty_metric": "370 g", "text": {"en": "cooked quinoa, cooled", "es": "quinua cocida, fría", "fil": "lutong quinoa, palamig na"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "1/2 cup", "qty_metric": "75 g", "text": {"en": "corn kernels", "es": "granos de choclo", "fil": "corn kernels"}},
-      {"qty_us": "1/4", "qty_metric": "1/4", "text": {"en": "red onion, finely chopped", "es": "cebolla morada, picada fina", "fil": "red onion, pinong hiniwa"}},
-      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
-      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "370 g",
+        "text": {
+          "en": "cooked quinoa, cooled",
+          "es": "quinua cocida, fría",
+          "fil": "lutong quinoa, palamig na"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "75 g",
+        "text": {
+          "en": "corn kernels",
+          "es": "granos de choclo",
+          "fil": "corn kernels"
+        }
+      },
+      {
+        "qty_us": "1/4",
+        "qty_metric": "1/4",
+        "text": {
+          "en": "red onion, finely chopped",
+          "es": "cebolla morada, picada fina",
+          "fil": "red onion, pinong hiniwa"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "10 g",
+        "text": {
+          "en": "fresh cilantro, chopped",
+          "es": "cilantro fresco, picado",
+          "fil": "fresh cilantro, hiniwa"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "fresh lime juice",
+          "es": "jugo de limón fresco",
+          "fil": "fresh lime juice"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -123,8 +258,19 @@
     "cook_min": 25,
     "total_min": 45,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 380, "carbs": 18, "protein": 36, "fat": 20, "fiber": 4, "gi": 25},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 365,
+      "carbs": 12,
+      "protein": 23,
+      "fat": 25,
+      "fiber": 3,
+      "gi": 25
+    },
     "name": {
       "en": "Light Pique a lo Macho",
       "es": "Pique a lo Macho Ligero",
@@ -141,14 +287,78 @@
       "fil": "Ang restaurant pique a lo macho ay famous sa napakalaking base nitong deep-fried na patatas, na siyang pinakamalaking glycemic contributor sa plato. Ang pananatili ng parehong real na karne, sibuyas, kamatis, at chili, pero ang paggawa ng base mula sa roasted na bell pepper, zucchini, at sibuyas sa halip na fried potato, ay pinapanatili ang bold flavor ng dish habang malaki ang bawas sa carb load nito."
     },
     "ingredients": [
-      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "beef sirloin, sliced into strips", "es": "bife de lomo, en tiras", "fil": "beef sirloin, hiniwa na strips"}},
-      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "lean beef sausage, sliced", "es": "chorizo de carne magro, en rodajas", "fil": "lean beef sausage, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, sliced", "es": "cebolla, en rodajas", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, sliced", "es": "tomates, en rodajas", "fil": "kamatis, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "locoto or jalapeño chili, sliced", "es": "locoto o jalapeño, en rodajas", "fil": "locoto o jalapeño chili, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "bell peppers, sliced", "es": "morrones, en tiras", "fil": "bell peppers, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "zucchini, sliced", "es": "zapallitos, en rodajas", "fil": "zucchini, hiniwa"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "vegetable oil", "es": "aceite vegetal", "fil": "vegetable oil"}}
+      {
+        "qty_us": "1/2 lb",
+        "qty_metric": "225 g",
+        "text": {
+          "en": "beef sirloin, sliced into strips",
+          "es": "bife de lomo, en tiras",
+          "fil": "beef sirloin, hiniwa na strips"
+        }
+      },
+      {
+        "qty_us": "1/2 lb",
+        "qty_metric": "225 g",
+        "text": {
+          "en": "lean beef sausage, sliced",
+          "es": "chorizo de carne magro, en rodajas",
+          "fil": "lean beef sausage, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, sliced",
+          "es": "cebolla, en rodajas",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, sliced",
+          "es": "tomates, en rodajas",
+          "fil": "kamatis, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "locoto or jalapeño chili, sliced",
+          "es": "locoto o jalapeño, en rodajas",
+          "fil": "locoto o jalapeño chili, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "bell peppers, sliced",
+          "es": "morrones, en tiras",
+          "fil": "bell peppers, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "zucchini, sliced",
+          "es": "zapallitos, en rodajas",
+          "fil": "zucchini, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "vegetable oil",
+          "es": "aceite vegetal",
+          "fil": "vegetable oil"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -183,8 +393,20 @@
     "cook_min": 12,
     "total_min": 22,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free", "Omega-3"],
-    "nutrition": {"cal": 290, "carbs": 6, "protein": 34, "fat": 15, "fiber": 2, "gi": 5},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free",
+      "Omega-3"
+    ],
+    "nutrition": {
+      "cal": 290,
+      "carbs": 6,
+      "protein": 34,
+      "fat": 15,
+      "fiber": 2,
+      "gi": 5
+    },
     "name": {
       "en": "Grilled Trout with Salad",
       "es": "Trucha a la Plancha con Ensalada",
@@ -201,12 +423,60 @@
       "fil": "Ang trout ay lean, omega-3-rich na isda na halos walang carbs, kaya ang simple na pan-seared na fillet ay halos walang epekto sa blood sugar. Ang pag-pair nito sa fresh salad sa halip na kanin o fried potato ay pinapanatili ang buong plato na malapit sa zero glycemic impact."
     },
     "ingredients": [
-      {"qty_us": "4", "qty_metric": "4", "text": {"en": "trout fillets", "es": "filetes de trucha", "fil": "trout fillets"}},
-      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
-      {"qty_us": "6 cups", "qty_metric": "6 cups", "text": {"en": "mixed salad greens", "es": "hojas verdes mixtas", "fil": "mixed salad greens"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "tomato, sliced", "es": "tomate, en rodajas", "fil": "kamatis, hiniwa"}}
+      {
+        "qty_us": "4",
+        "qty_metric": "4",
+        "text": {
+          "en": "trout fillets",
+          "es": "filetes de trucha",
+          "fil": "trout fillets"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "fresh lime juice",
+          "es": "jugo de limón fresco",
+          "fil": "fresh lime juice"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      },
+      {
+        "qty_us": "6 cups",
+        "qty_metric": "6 cups",
+        "text": {
+          "en": "mixed salad greens",
+          "es": "hojas verdes mixtas",
+          "fil": "mixed salad greens"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "tomato, sliced",
+          "es": "tomate, en rodajas",
+          "fil": "kamatis, hiniwa"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -238,8 +508,19 @@
     "cook_min": 45,
     "total_min": 60,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 310, "carbs": 14, "protein": 32, "fat": 15, "fiber": 3, "gi": 30},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 257,
+      "carbs": 11,
+      "protein": 39,
+      "fat": 5,
+      "fiber": 3,
+      "gi": 30
+    },
     "name": {
       "en": "Light Bolivian Pork Fricasé",
       "es": "Fricasé de Cerdo Liviano",
@@ -256,13 +537,69 @@
       "fil": "Ang traditional na fricasé ay kadalasang gawa sa fatty na cuts ng baboy at served na may tinapay sa tabi. Ang paggamit ng lean pork loin, pagtanggal ng visible fat, at pag-serve nito na may extra roasted o steamed na gulay sa halip na tinapay ay pinapanatili ang real na chili-at-hominy broth flavor habang binabawasan ang fat at mabilis-ma-digest na carbs sa meal."
     },
     "ingredients": [
-      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "lean pork loin, cubed", "es": "lomo de cerdo magro, en cubos", "fil": "lean pork loin, dinice"}},
-      {"qty_us": "3 tbsp", "qty_metric": "45 g", "text": {"en": "aji panca or mild chili paste", "es": "pasta de ají panca o ají suave", "fil": "aji panca o mild chili paste"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "1/2 cup", "qty_metric": "80 g", "text": {"en": "white hominy corn", "es": "mote de maíz blanco", "fil": "white hominy corn"}},
-      {"qty_us": "2 cups", "qty_metric": "150 g", "text": {"en": "green beans, chopped", "es": "porotos verdes, picados", "fil": "green beans, hiniwa"}},
-      {"qty_us": "5 cups", "qty_metric": "1.2 L", "text": {"en": "low-sodium broth", "es": "caldo bajo en sodio", "fil": "low-sodium broth"}}
+      {
+        "qty_us": "1.5 lb",
+        "qty_metric": "675 g",
+        "text": {
+          "en": "lean pork loin, cubed",
+          "es": "lomo de cerdo magro, en cubos",
+          "fil": "lean pork loin, dinice"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 g",
+        "text": {
+          "en": "aji panca or mild chili paste",
+          "es": "pasta de ají panca o ají suave",
+          "fil": "aji panca o mild chili paste"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "80 g",
+        "text": {
+          "en": "white hominy corn",
+          "es": "mote de maíz blanco",
+          "fil": "white hominy corn"
+        }
+      },
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "150 g",
+        "text": {
+          "en": "green beans, chopped",
+          "es": "porotos verdes, picados",
+          "fil": "green beans, hiniwa"
+        }
+      },
+      {
+        "qty_us": "5 cups",
+        "qty_metric": "1.2 L",
+        "text": {
+          "en": "low-sodium broth",
+          "es": "caldo bajo en sodio",
+          "fil": "low-sodium broth"
+        }
+      }
     ],
     "instructions": {
       "en": [

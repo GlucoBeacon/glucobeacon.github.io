@@ -4,10 +4,27 @@
     "id": 501,
     "cuisine": "mexican",
     "meal_category": "breakfast",
-    "prep_min": 10, "cook_min": 15, "total_min": 25, "servings": 2,
-    "tags": ["Low-GI", "Vegetarian"],
-    "nutrition": { "cal": 310, "carbs": 32, "protein": 14, "fat": 15, "fiber": 5, "gi": 50 },
-    "name": { "en": "Chilaquiles Verdes", "es": "Chilaquiles Verdes", "fil": "Chilaquiles Verdes" },
+    "prep_min": 10,
+    "cook_min": 15,
+    "total_min": 25,
+    "servings": 2,
+    "tags": [
+      "Low-GI",
+      "Vegetarian"
+    ],
+    "nutrition": {
+      "cal": 364,
+      "carbs": 47,
+      "protein": 16,
+      "fat": 14,
+      "fiber": 7,
+      "gi": 50
+    },
+    "name": {
+      "en": "Chilaquiles Verdes",
+      "es": "Chilaquiles Verdes",
+      "fil": "Chilaquiles Verdes"
+    },
     "description": {
       "en": "Crispy tortilla chips simmered in tangy green salsa, topped with a fried egg and queso fresco -- a real Mexican breakfast classic, baked instead of fried to keep it lighter.",
       "es": "Totopos crujientes cocidos a fuego lento en salsa verde, coronados con huevo frito y queso fresco -- un cl&#xE1;sico real del desayuno mexicano, horneado en lugar de frito para que sea m&#xE1;s ligero.",
@@ -19,12 +36,60 @@
       "fil": "Moderate ang glycemic index ng corn tortilla mag-isa, pero ang pag-bake dito imbes na pag-deep-fry, plus ang pag-pair sa egg at cheese, ay nagpapabagal sa digestion at nagpapagaan sa blood sugar response."
     },
     "ingredients": [
-      { "qty_us": "6", "qty_metric": "6", "text": { "en": "corn tortillas, cut into triangles", "es": "tortillas de ma&#xED;z, cortadas en tri&#xE1;ngulos", "fil": "corn tortilla, hiniwa sa triangles" } },
-      { "qty_us": "1 cup", "qty_metric": "240 ml", "text": { "en": "tomatillo salsa verde", "es": "salsa verde de tomatillo", "fil": "tomatillo salsa verde" } },
-      { "qty_us": "2 large", "qty_metric": "2 large", "text": { "en": "eggs", "es": "huevos", "fil": "itlog" } },
-      { "qty_us": "1/4 cup", "qty_metric": "60 g", "text": { "en": "queso fresco, crumbled", "es": "queso fresco, desmoronado", "fil": "queso fresco, dinurog" } },
-      { "qty_us": "2 tbsp", "qty_metric": "30 ml", "text": { "en": "crema or sour cream", "es": "crema o crema agria", "fil": "crema o sour cream" } },
-      { "qty_us": "1/4 cup", "qty_metric": "40 g", "text": { "en": "white onion, diced", "es": "cebolla blanca, picada", "fil": "white onion, tinadtad" } }
+      {
+        "qty_us": "6",
+        "qty_metric": "6",
+        "text": {
+          "en": "corn tortillas, cut into triangles",
+          "es": "tortillas de ma&#xED;z, cortadas en tri&#xE1;ngulos",
+          "fil": "corn tortilla, hiniwa sa triangles"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "240 ml",
+        "text": {
+          "en": "tomatillo salsa verde",
+          "es": "salsa verde de tomatillo",
+          "fil": "tomatillo salsa verde"
+        }
+      },
+      {
+        "qty_us": "2 large",
+        "qty_metric": "2 large",
+        "text": {
+          "en": "eggs",
+          "es": "huevos",
+          "fil": "itlog"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "60 g",
+        "text": {
+          "en": "queso fresco, crumbled",
+          "es": "queso fresco, desmoronado",
+          "fil": "queso fresco, dinurog"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "crema or sour cream",
+          "es": "crema o crema agria",
+          "fil": "crema o sour cream"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "40 g",
+        "text": {
+          "en": "white onion, diced",
+          "es": "cebolla blanca, picada",
+          "fil": "white onion, tinadtad"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -55,10 +120,27 @@
     "id": 502,
     "cuisine": "mexican",
     "meal_category": "dinner",
-    "prep_min": 20, "cook_min": 90, "total_min": 110, "servings": 4,
-    "tags": ["Gluten-Free", "High-Protein"],
-    "nutrition": { "cal": 340, "carbs": 24, "protein": 28, "fat": 14, "fiber": 5, "gi": 45 },
-    "name": { "en": "Pozole Rojo", "es": "Pozole Rojo", "fil": "Pozole Rojo" },
+    "prep_min": 20,
+    "cook_min": 90,
+    "total_min": 110,
+    "servings": 4,
+    "tags": [
+      "Gluten-Free",
+      "High-Protein"
+    ],
+    "nutrition": {
+      "cal": 284,
+      "carbs": 16,
+      "protein": 41,
+      "fat": 6,
+      "fiber": 3,
+      "gi": 45
+    },
+    "name": {
+      "en": "Pozole Rojo",
+      "es": "Pozole Rojo",
+      "fil": "Pozole Rojo"
+    },
     "description": {
       "en": "A rich, slow-simmered red chile pork and hominy stew -- real Mexican comfort food, topped fresh with cabbage, radish, and lime for crunch and acidity.",
       "es": "Un guiso rico de cerdo y ma&#xED;z pozolero en chile rojo, cocido a fuego lento -- comida reconfortante mexicana real, coronado con col, rabanito y lim&#xF3;n frescos para textura y acidez.",
@@ -70,14 +152,78 @@
       "fil": "Mas mababa ang glycemic index ng hominy kumpara sa karamihan ng refined grains, at heavy sa protein mula sa pork ang dish na ito, na nagpapabagal kung gaano kabilis umakyat ang carbs sa blood sugar mo."
     },
     "ingredients": [
-      { "qty_us": "1.5 lb", "qty_metric": "680 g", "text": { "en": "pork shoulder, trimmed and cubed", "es": "espaldilla de cerdo, limpia y en cubos", "fil": "pork shoulder, tinabas at kinubo" } },
-      { "qty_us": "4 cups", "qty_metric": "950 ml", "text": { "en": "chicken broth", "es": "caldo de pollo", "fil": "chicken broth" } },
-      { "qty_us": "2 cups", "qty_metric": "330 g", "text": { "en": "white hominy, drained and rinsed", "es": "ma&#xED;z pozolero blanco, escurrido y enjuagado", "fil": "white hominy, sinala at hinugasan" } },
-      { "qty_us": "3", "qty_metric": "3", "text": { "en": "dried guajillo chiles, stemmed and seeded", "es": "chiles guajillo secos, sin tallo ni semillas", "fil": "dried guajillo chiles, tinanggalan ng tangkay at buto" } },
-      { "qty_us": "2", "qty_metric": "2", "text": { "en": "dried ancho chiles, stemmed and seeded", "es": "chiles ancho secos, sin tallo ni semillas", "fil": "dried ancho chiles, tinanggalan ng tangkay at buto" } },
-      { "qty_us": "3 cloves", "qty_metric": "3 cloves", "text": { "en": "garlic", "es": "ajo", "fil": "bawang" } },
-      { "qty_us": "1/2", "qty_metric": "1/2", "text": { "en": "white onion", "es": "cebolla blanca", "fil": "white onion" } },
-      { "qty_us": "1 tsp", "qty_metric": "5 ml", "text": { "en": "Mexican oregano", "es": "or&#xE9;gano mexicano", "fil": "Mexican oregano" } }
+      {
+        "qty_us": "1.5 lb",
+        "qty_metric": "680 g",
+        "text": {
+          "en": "pork shoulder, trimmed and cubed",
+          "es": "espaldilla de cerdo, limpia y en cubos",
+          "fil": "pork shoulder, tinabas at kinubo"
+        }
+      },
+      {
+        "qty_us": "4 cups",
+        "qty_metric": "950 ml",
+        "text": {
+          "en": "chicken broth",
+          "es": "caldo de pollo",
+          "fil": "chicken broth"
+        }
+      },
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "330 g",
+        "text": {
+          "en": "white hominy, drained and rinsed",
+          "es": "ma&#xED;z pozolero blanco, escurrido y enjuagado",
+          "fil": "white hominy, sinala at hinugasan"
+        }
+      },
+      {
+        "qty_us": "3",
+        "qty_metric": "3",
+        "text": {
+          "en": "dried guajillo chiles, stemmed and seeded",
+          "es": "chiles guajillo secos, sin tallo ni semillas",
+          "fil": "dried guajillo chiles, tinanggalan ng tangkay at buto"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "dried ancho chiles, stemmed and seeded",
+          "es": "chiles ancho secos, sin tallo ni semillas",
+          "fil": "dried ancho chiles, tinanggalan ng tangkay at buto"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic",
+          "es": "ajo",
+          "fil": "bawang"
+        }
+      },
+      {
+        "qty_us": "1/2",
+        "qty_metric": "1/2",
+        "text": {
+          "en": "white onion",
+          "es": "cebolla blanca",
+          "fil": "white onion"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "5 ml",
+        "text": {
+          "en": "Mexican oregano",
+          "es": "or&#xE9;gano mexicano",
+          "fil": "Mexican oregano"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -111,10 +257,28 @@
     "id": 503,
     "cuisine": "mexican",
     "meal_category": "lunch",
-    "prep_min": 15, "cook_min": 10, "total_min": 25, "servings": 2,
-    "tags": ["Low-GI", "High-Protein", "Gluten-Free"],
-    "nutrition": { "cal": 290, "carbs": 26, "protein": 28, "fat": 8, "fiber": 4, "gi": 46 },
-    "name": { "en": "Tacos de Pescado", "es": "Tacos de Pescado", "fil": "Tacos de Pescado" },
+    "prep_min": 15,
+    "cook_min": 10,
+    "total_min": 25,
+    "servings": 2,
+    "tags": [
+      "Low-GI",
+      "High-Protein",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 290,
+      "carbs": 26,
+      "protein": 28,
+      "fat": 8,
+      "fiber": 4,
+      "gi": 46
+    },
+    "name": {
+      "en": "Tacos de Pescado",
+      "es": "Tacos de Pescado",
+      "fil": "Tacos de Pescado"
+    },
     "description": {
       "en": "Baja-style grilled fish tacos with cabbage slaw and a light lime crema -- real Baja California street food, grilled instead of fried to keep it lighter.",
       "es": "Tacos de pescado a la parrilla estilo Baja con ensalada de col y una crema ligera de lim&#xF3;n -- comida callejera real de Baja California, a la parrilla en lugar de frita para que sea m&#xE1;s ligera.",
@@ -126,14 +290,78 @@
       "fil": "Lean at mataas sa protein ang grilled white fish, halos walang carbs mismo, kaya galing sa corn tortilla ang karamihan ng carbs sa meal na ito -- moderate-GI na base na madaling i-portion."
     },
     "ingredients": [
-      { "qty_us": "12 oz", "qty_metric": "340 g", "text": { "en": "white fish fillets (tilapia or cod)", "es": "filetes de pescado blanco (tilapia o bacalao)", "fil": "white fish fillet (tilapia o cod)" } },
-      { "qty_us": "1 tbsp", "qty_metric": "15 ml", "text": { "en": "lime juice", "es": "jugo de lim&#xF3;n", "fil": "lime juice" } },
-      { "qty_us": "1 tsp", "qty_metric": "5 ml", "text": { "en": "chili powder", "es": "chile en polvo", "fil": "chili powder" } },
-      { "qty_us": "1/2 tsp", "qty_metric": "2.5 ml", "text": { "en": "cumin", "es": "comino", "fil": "cumin" } },
-      { "qty_us": "4 small", "qty_metric": "4 small", "text": { "en": "corn tortillas", "es": "tortillas de ma&#xED;z peque&#xF1;as", "fil": "maliit na corn tortilla" } },
-      { "qty_us": "1 cup", "qty_metric": "90 g", "text": { "en": "shredded cabbage", "es": "col rallada", "fil": "shredded cabbage" } },
-      { "qty_us": "2 tbsp", "qty_metric": "30 ml", "text": { "en": "plain Greek yogurt", "es": "yogur griego natural", "fil": "plain Greek yogurt" } },
-      { "qty_us": "1/4 cup", "qty_metric": "60 g", "text": { "en": "pico de gallo", "es": "pico de gallo", "fil": "pico de gallo" } }
+      {
+        "qty_us": "12 oz",
+        "qty_metric": "340 g",
+        "text": {
+          "en": "white fish fillets (tilapia or cod)",
+          "es": "filetes de pescado blanco (tilapia o bacalao)",
+          "fil": "white fish fillet (tilapia o cod)"
+        }
+      },
+      {
+        "qty_us": "1 tbsp",
+        "qty_metric": "15 ml",
+        "text": {
+          "en": "lime juice",
+          "es": "jugo de lim&#xF3;n",
+          "fil": "lime juice"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "5 ml",
+        "text": {
+          "en": "chili powder",
+          "es": "chile en polvo",
+          "fil": "chili powder"
+        }
+      },
+      {
+        "qty_us": "1/2 tsp",
+        "qty_metric": "2.5 ml",
+        "text": {
+          "en": "cumin",
+          "es": "comino",
+          "fil": "cumin"
+        }
+      },
+      {
+        "qty_us": "4 small",
+        "qty_metric": "4 small",
+        "text": {
+          "en": "corn tortillas",
+          "es": "tortillas de ma&#xED;z peque&#xF1;as",
+          "fil": "maliit na corn tortilla"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "90 g",
+        "text": {
+          "en": "shredded cabbage",
+          "es": "col rallada",
+          "fil": "shredded cabbage"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "plain Greek yogurt",
+          "es": "yogur griego natural",
+          "fil": "plain Greek yogurt"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "60 g",
+        "text": {
+          "en": "pico de gallo",
+          "es": "pico de gallo",
+          "fil": "pico de gallo"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -164,10 +392,27 @@
     "id": 504,
     "cuisine": "mexican",
     "meal_category": "dinner",
-    "prep_min": 15, "cook_min": 20, "total_min": 35, "servings": 3,
-    "tags": ["Gluten-Free", "High-Protein"],
-    "nutrition": { "cal": 360, "carbs": 28, "protein": 32, "fat": 14, "fiber": 4, "gi": 48 },
-    "name": { "en": "Enchiladas Verdes", "es": "Enchiladas Verdes", "fil": "Enchiladas Verdes" },
+    "prep_min": 15,
+    "cook_min": 20,
+    "total_min": 35,
+    "servings": 3,
+    "tags": [
+      "Gluten-Free",
+      "High-Protein"
+    ],
+    "nutrition": {
+      "cal": 360,
+      "carbs": 28,
+      "protein": 32,
+      "fat": 14,
+      "fiber": 4,
+      "gi": 48
+    },
+    "name": {
+      "en": "Enchiladas Verdes",
+      "es": "Enchiladas Verdes",
+      "fil": "Enchiladas Verdes"
+    },
     "description": {
       "en": "Corn tortillas rolled around shredded chicken, bathed in tangy tomatillo salsa verde and melted cheese -- a real Mexican family dinner staple.",
       "es": "Tortillas de ma&#xED;z enrolladas con pollo deshebrado, ba&#xF1;adas en salsa verde de tomatillo y queso derretido -- un platillo real y cl&#xE1;sico de la cena familiar mexicana.",
@@ -179,12 +424,60 @@
       "fil": "Mataas ang protein ng lean shredded chicken breast kumpara sa carbs mula sa tortilla at sauce, at binabawasan ng reduced-fat cheese ang saturated fat nang hindi nawawala ang real na lasa ng dish."
     },
     "ingredients": [
-      { "qty_us": "6", "qty_metric": "6", "text": { "en": "corn tortillas", "es": "tortillas de ma&#xED;z", "fil": "corn tortilla" } },
-      { "qty_us": "2 cups", "qty_metric": "280 g", "text": { "en": "shredded cooked chicken breast", "es": "pechuga de pollo cocida y deshebrada", "fil": "shredded na lutong chicken breast" } },
-      { "qty_us": "1.5 cups", "qty_metric": "360 ml", "text": { "en": "tomatillo salsa verde", "es": "salsa verde de tomatillo", "fil": "tomatillo salsa verde" } },
-      { "qty_us": "1/2 cup", "qty_metric": "60 g", "text": { "en": "shredded reduced-fat Mexican cheese blend", "es": "mezcla de quesos mexicanos rallados, bajos en grasa", "fil": "shredded reduced-fat Mexican cheese blend" } },
-      { "qty_us": "2 tbsp", "qty_metric": "30 ml", "text": { "en": "crema", "es": "crema", "fil": "crema" } },
-      { "qty_us": "2 tbsp", "qty_metric": "20 g", "text": { "en": "onion, diced", "es": "cebolla, picada", "fil": "onion, tinadtad" } }
+      {
+        "qty_us": "6",
+        "qty_metric": "6",
+        "text": {
+          "en": "corn tortillas",
+          "es": "tortillas de ma&#xED;z",
+          "fil": "corn tortilla"
+        }
+      },
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "280 g",
+        "text": {
+          "en": "shredded cooked chicken breast",
+          "es": "pechuga de pollo cocida y deshebrada",
+          "fil": "shredded na lutong chicken breast"
+        }
+      },
+      {
+        "qty_us": "1.5 cups",
+        "qty_metric": "360 ml",
+        "text": {
+          "en": "tomatillo salsa verde",
+          "es": "salsa verde de tomatillo",
+          "fil": "tomatillo salsa verde"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "60 g",
+        "text": {
+          "en": "shredded reduced-fat Mexican cheese blend",
+          "es": "mezcla de quesos mexicanos rallados, bajos en grasa",
+          "fil": "shredded reduced-fat Mexican cheese blend"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "crema",
+          "es": "crema",
+          "fil": "crema"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "20 g",
+        "text": {
+          "en": "onion, diced",
+          "es": "cebolla, picada",
+          "fil": "onion, tinadtad"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -215,10 +508,26 @@
     "id": 505,
     "cuisine": "mexican",
     "meal_category": "lunch",
-    "prep_min": 10, "cook_min": 25, "total_min": 35, "servings": 3,
-    "tags": ["Low-GI"],
-    "nutrition": { "cal": 230, "carbs": 20, "protein": 10, "fat": 13, "fiber": 5, "gi": 42 },
-    "name": { "en": "Sopa de Tortilla", "es": "Sopa de Tortilla", "fil": "Sopa de Tortilla" },
+    "prep_min": 10,
+    "cook_min": 25,
+    "total_min": 35,
+    "servings": 3,
+    "tags": [
+      "Low-GI"
+    ],
+    "nutrition": {
+      "cal": 230,
+      "carbs": 20,
+      "protein": 10,
+      "fat": 13,
+      "fiber": 5,
+      "gi": 42
+    },
+    "name": {
+      "en": "Sopa de Tortilla",
+      "es": "Sopa de Tortilla",
+      "fil": "Sopa de Tortilla"
+    },
     "description": {
       "en": "A brothy tomato-chile soup with crispy tortilla strips, avocado, and queso fresco -- real Mexico City comfort food, light but satisfying.",
       "es": "Una sopa de tomate y chile con tiras de tortilla crujientes, aguacate y queso fresco -- comida reconfortante real de la Ciudad de M&#xE9;xico, ligera pero satisfactoria.",
@@ -230,13 +539,69 @@
       "fil": "Karamihan sa soup na ito ay broth at vegetables, kaya katamtaman lang ang carbs bawat mangkok, at tumutulong ang fat mula sa avocado at cheese na pabagalin ang digestion ng carbs na naroon."
     },
     "ingredients": [
-      { "qty_us": "4 cups", "qty_metric": "950 ml", "text": { "en": "chicken broth", "es": "caldo de pollo", "fil": "chicken broth" } },
-      { "qty_us": "2 medium", "qty_metric": "2 medium", "text": { "en": "tomatoes, roasted", "es": "jitomates, asados", "fil": "tomato, inihaw" } },
-      { "qty_us": "1", "qty_metric": "1", "text": { "en": "dried pasilla chile, stemmed and seeded", "es": "chile pasilla seco, sin tallo ni semillas", "fil": "dried pasilla chile, tinanggalan ng tangkay at buto" } },
-      { "qty_us": "2 cloves", "qty_metric": "2 cloves", "text": { "en": "garlic", "es": "ajo", "fil": "bawang" } },
-      { "qty_us": "2", "qty_metric": "2", "text": { "en": "corn tortillas, cut into strips", "es": "tortillas de ma&#xED;z, cortadas en tiras", "fil": "corn tortilla, hiniwa nang pahaba" } },
-      { "qty_us": "1/2", "qty_metric": "1/2", "text": { "en": "avocado, sliced", "es": "aguacate, en rebanadas", "fil": "avocado, hiniwa" } },
-      { "qty_us": "1/4 cup", "qty_metric": "60 g", "text": { "en": "queso fresco", "es": "queso fresco", "fil": "queso fresco" } }
+      {
+        "qty_us": "4 cups",
+        "qty_metric": "950 ml",
+        "text": {
+          "en": "chicken broth",
+          "es": "caldo de pollo",
+          "fil": "chicken broth"
+        }
+      },
+      {
+        "qty_us": "2 medium",
+        "qty_metric": "2 medium",
+        "text": {
+          "en": "tomatoes, roasted",
+          "es": "jitomates, asados",
+          "fil": "tomato, inihaw"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "dried pasilla chile, stemmed and seeded",
+          "es": "chile pasilla seco, sin tallo ni semillas",
+          "fil": "dried pasilla chile, tinanggalan ng tangkay at buto"
+        }
+      },
+      {
+        "qty_us": "2 cloves",
+        "qty_metric": "2 cloves",
+        "text": {
+          "en": "garlic",
+          "es": "ajo",
+          "fil": "bawang"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "corn tortillas, cut into strips",
+          "es": "tortillas de ma&#xED;z, cortadas en tiras",
+          "fil": "corn tortilla, hiniwa nang pahaba"
+        }
+      },
+      {
+        "qty_us": "1/2",
+        "qty_metric": "1/2",
+        "text": {
+          "en": "avocado, sliced",
+          "es": "aguacate, en rebanadas",
+          "fil": "avocado, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "60 g",
+        "text": {
+          "en": "queso fresco",
+          "es": "queso fresco",
+          "fil": "queso fresco"
+        }
+      }
     ],
     "instructions": {
       "en": [

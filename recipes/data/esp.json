@@ -4,10 +4,28 @@
     "id": 521,
     "cuisine": "spanish",
     "meal_category": "lunch",
-    "prep_min": 15, "cook_min": 0, "total_min": 75, "servings": 4,
-    "tags": ["Vegan", "Gluten-Free", "Low-GI"],
-    "nutrition": { "cal": 110, "carbs": 12, "protein": 2, "fat": 7, "fiber": 3, "gi": 30 },
-    "name": { "en": "Gazpacho Andaluz", "es": "Gazpacho Andaluz", "fil": "Gazpacho Andaluz" },
+    "prep_min": 15,
+    "cook_min": 0,
+    "total_min": 75,
+    "servings": 4,
+    "tags": [
+      "Vegan",
+      "Gluten-Free",
+      "Low-GI"
+    ],
+    "nutrition": {
+      "cal": 110,
+      "carbs": 12,
+      "protein": 2,
+      "fat": 7,
+      "fiber": 3,
+      "gi": 30
+    },
+    "name": {
+      "en": "Gazpacho Andaluz",
+      "es": "Gazpacho Andaluz",
+      "fil": "Gazpacho Andaluz"
+    },
     "description": {
       "en": "A chilled raw tomato and vegetable soup -- real Andalusian summer classic, refreshing and full of fiber. Mostly chilling time, minutes of real work.",
       "es": "Una sopa fr&#xED;a de jitomate y verduras crudas -- cl&#xE1;sico real del verano andaluz, refrescante y lleno de fibra. Es principalmente tiempo de refrigeraci&#xF3;n, minutos de trabajo real.",
@@ -19,13 +37,69 @@
       "fil": "Halos puro raw vegetables ang soup na ito na walang added sugar o starch, kaya naturally mababa sa carbs at calories pero busog pa rin dahil sa fiber at healthy fat mula sa olive oil."
     },
     "ingredients": [
-      { "qty_us": "2 lb", "qty_metric": "900 g", "text": { "en": "ripe tomatoes, roughly chopped", "es": "jitomates maduros, picados grueso", "fil": "hinog na kamatis, magaspang na tinadtad" } },
-      { "qty_us": "1", "qty_metric": "1", "text": { "en": "cucumber, peeled and chopped", "es": "pepino, pelado y picado", "fil": "pipino, binalatan at tinadtad" } },
-      { "qty_us": "1", "qty_metric": "1", "text": { "en": "green bell pepper, chopped", "es": "pimiento verde, picado", "fil": "green bell pepper, tinadtad" } },
-      { "qty_us": "1/4", "qty_metric": "1/4", "text": { "en": "red onion", "es": "cebolla morada", "fil": "red onion" } },
-      { "qty_us": "1 clove", "qty_metric": "1 clove", "text": { "en": "garlic", "es": "ajo", "fil": "bawang" } },
-      { "qty_us": "2 tbsp", "qty_metric": "30 ml", "text": { "en": "extra virgin olive oil", "es": "aceite de oliva extra virgen", "fil": "extra virgin olive oil" } },
-      { "qty_us": "1 tbsp", "qty_metric": "15 ml", "text": { "en": "sherry vinegar", "es": "vinagre de jerez", "fil": "sherry vinegar" } }
+      {
+        "qty_us": "2 lb",
+        "qty_metric": "900 g",
+        "text": {
+          "en": "ripe tomatoes, roughly chopped",
+          "es": "jitomates maduros, picados grueso",
+          "fil": "hinog na kamatis, magaspang na tinadtad"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "cucumber, peeled and chopped",
+          "es": "pepino, pelado y picado",
+          "fil": "pipino, binalatan at tinadtad"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "green bell pepper, chopped",
+          "es": "pimiento verde, picado",
+          "fil": "green bell pepper, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1/4",
+        "qty_metric": "1/4",
+        "text": {
+          "en": "red onion",
+          "es": "cebolla morada",
+          "fil": "red onion"
+        }
+      },
+      {
+        "qty_us": "1 clove",
+        "qty_metric": "1 clove",
+        "text": {
+          "en": "garlic",
+          "es": "ajo",
+          "fil": "bawang"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "extra virgin olive oil",
+          "es": "aceite de oliva extra virgen",
+          "fil": "extra virgin olive oil"
+        }
+      },
+      {
+        "qty_us": "1 tbsp",
+        "qty_metric": "15 ml",
+        "text": {
+          "en": "sherry vinegar",
+          "es": "vinagre de jerez",
+          "fil": "sherry vinegar"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -56,10 +130,28 @@
     "id": 522,
     "cuisine": "spanish",
     "meal_category": "lunch",
-    "prep_min": 15, "cook_min": 35, "total_min": 50, "servings": 4,
-    "tags": ["Vegan", "Gluten-Free", "High-Fiber"],
-    "nutrition": { "cal": 160, "carbs": 16, "protein": 3, "fat": 10, "fiber": 5, "gi": 35 },
-    "name": { "en": "Pisto Manchego", "es": "Pisto Manchego", "fil": "Pisto Manchego" },
+    "prep_min": 15,
+    "cook_min": 35,
+    "total_min": 50,
+    "servings": 4,
+    "tags": [
+      "Vegan",
+      "Gluten-Free",
+      "High-Fiber"
+    ],
+    "nutrition": {
+      "cal": 160,
+      "carbs": 16,
+      "protein": 3,
+      "fat": 10,
+      "fiber": 5,
+      "gi": 35
+    },
+    "name": {
+      "en": "Pisto Manchego",
+      "es": "Pisto Manchego",
+      "fil": "Pisto Manchego"
+    },
     "description": {
       "en": "A slow-cooked medley of zucchini, peppers, and tomato -- Spain's answer to ratatouille, from La Mancha.",
       "es": "Una mezcla cocida a fuego lento de calabac&#xED;n, pimientos y jitomate -- la versi&#xF3;n espa&#xF1;ola del ratatouille, de La Mancha.",
@@ -71,13 +163,69 @@
       "fil": "Halos gawa sa fibrous, mababa-sa-starch na vegetables na niluto sa olive oil ang dish na ito, kaya mababa ang glycemic impact nito at may sapat na healthy fat para busog ka."
     },
     "ingredients": [
-      { "qty_us": "2", "qty_metric": "2", "text": { "en": "zucchini, diced", "es": "calabac&#xED;n, en cubos", "fil": "zucchini, kinubo" } },
-      { "qty_us": "1", "qty_metric": "1", "text": { "en": "eggplant, diced", "es": "berenjena, en cubos", "fil": "talong, kinubo" } },
-      { "qty_us": "1", "qty_metric": "1", "text": { "en": "red bell pepper, diced", "es": "pimiento rojo, en cubos", "fil": "red bell pepper, kinubo" } },
-      { "qty_us": "1", "qty_metric": "1", "text": { "en": "green bell pepper, diced", "es": "pimiento verde, en cubos", "fil": "green bell pepper, kinubo" } },
-      { "qty_us": "1", "qty_metric": "1", "text": { "en": "onion, diced", "es": "cebolla, picada", "fil": "onion, tinadtad" } },
-      { "qty_us": "3", "qty_metric": "3", "text": { "en": "tomatoes, chopped (or 1 can crushed tomatoes)", "es": "jitomates, picados (o 1 lata de jitomate triturado)", "fil": "kamatis, tinadtad (o 1 lata crushed tomatoes)" } },
-      { "qty_us": "3 tbsp", "qty_metric": "45 ml", "text": { "en": "olive oil", "es": "aceite de oliva", "fil": "olive oil" } }
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "zucchini, diced",
+          "es": "calabac&#xED;n, en cubos",
+          "fil": "zucchini, kinubo"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "eggplant, diced",
+          "es": "berenjena, en cubos",
+          "fil": "talong, kinubo"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "red bell pepper, diced",
+          "es": "pimiento rojo, en cubos",
+          "fil": "red bell pepper, kinubo"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "green bell pepper, diced",
+          "es": "pimiento verde, en cubos",
+          "fil": "green bell pepper, kinubo"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, diced",
+          "es": "cebolla, picada",
+          "fil": "onion, tinadtad"
+        }
+      },
+      {
+        "qty_us": "3",
+        "qty_metric": "3",
+        "text": {
+          "en": "tomatoes, chopped (or 1 can crushed tomatoes)",
+          "es": "jitomates, picados (o 1 lata de jitomate triturado)",
+          "fil": "kamatis, tinadtad (o 1 lata crushed tomatoes)"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -108,10 +256,28 @@
     "id": 523,
     "cuisine": "spanish",
     "meal_category": "dinner",
-    "prep_min": 15, "cook_min": 15, "total_min": 30, "servings": 2,
-    "tags": ["Low-Carb", "Gluten-Free", "High-Protein"],
-    "nutrition": { "cal": 430, "carbs": 8, "protein": 34, "fat": 30, "fiber": 2, "gi": 15 },
-    "name": { "en": "Salmón a la Plancha con Romesco", "es": "Salm&#xF3;n a la Plancha con Romesco", "fil": "Salmón a la Plancha con Romesco" },
+    "prep_min": 15,
+    "cook_min": 15,
+    "total_min": 30,
+    "servings": 2,
+    "tags": [
+      "Low-Carb",
+      "Gluten-Free",
+      "High-Protein"
+    ],
+    "nutrition": {
+      "cal": 430,
+      "carbs": 8,
+      "protein": 34,
+      "fat": 30,
+      "fiber": 2,
+      "gi": 15
+    },
+    "name": {
+      "en": "Salmón a la Plancha con Romesco",
+      "es": "Salm&#xF3;n a la Plancha con Romesco",
+      "fil": "Salmón a la Plancha con Romesco"
+    },
     "description": {
       "en": "Pan-seared salmon with a smoky almond-red pepper romesco sauce -- real Catalan flavor, rich in omega-3s.",
       "es": "Salm&#xF3;n sellado a la plancha con una salsa romesco ahumada de almendra y pimiento rojo -- sabor real catal&#xE1;n, rico en omega-3.",
@@ -123,13 +289,69 @@
       "fil": "Mataas sa protein at omega-3 fats ang salmon na halos walang carbs, at nagdaragdag ng lasa ang romesco sauce nang walang added sugar -- isa sa pinakamababang-carb at pinaka-heart-healthy na meal sa koleksyon na ito."
     },
     "ingredients": [
-      { "qty_us": "2 fillets", "qty_metric": "2 fillets (170 g each)", "text": { "en": "salmon (6 oz each)", "es": "salm&#xF3;n (170 g cada uno)", "fil": "salmon (170 g bawat isa)" } },
-      { "qty_us": "1", "qty_metric": "1", "text": { "en": "roasted red bell pepper", "es": "pimiento rojo asado", "fil": "roasted red bell pepper" } },
-      { "qty_us": "1/4 cup", "qty_metric": "35 g", "text": { "en": "almonds, toasted", "es": "almendras, tostadas", "fil": "almonds, tinostada" } },
-      { "qty_us": "1 clove", "qty_metric": "1 clove", "text": { "en": "garlic", "es": "ajo", "fil": "bawang" } },
-      { "qty_us": "1 tbsp", "qty_metric": "15 ml", "text": { "en": "sherry vinegar", "es": "vinagre de jerez", "fil": "sherry vinegar" } },
-      { "qty_us": "3 tbsp", "qty_metric": "45 ml", "text": { "en": "olive oil", "es": "aceite de oliva", "fil": "olive oil" } },
-      { "qty_us": "1/2 tsp", "qty_metric": "2.5 ml", "text": { "en": "smoked paprika", "es": "piment&#xF3;n ahumado", "fil": "smoked paprika" } }
+      {
+        "qty_us": "2 fillets",
+        "qty_metric": "2 fillets (170 g each)",
+        "text": {
+          "en": "salmon (6 oz each)",
+          "es": "salm&#xF3;n (170 g cada uno)",
+          "fil": "salmon (170 g bawat isa)"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "roasted red bell pepper",
+          "es": "pimiento rojo asado",
+          "fil": "roasted red bell pepper"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "35 g",
+        "text": {
+          "en": "almonds, toasted",
+          "es": "almendras, tostadas",
+          "fil": "almonds, tinostada"
+        }
+      },
+      {
+        "qty_us": "1 clove",
+        "qty_metric": "1 clove",
+        "text": {
+          "en": "garlic",
+          "es": "ajo",
+          "fil": "bawang"
+        }
+      },
+      {
+        "qty_us": "1 tbsp",
+        "qty_metric": "15 ml",
+        "text": {
+          "en": "sherry vinegar",
+          "es": "vinagre de jerez",
+          "fil": "sherry vinegar"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      },
+      {
+        "qty_us": "1/2 tsp",
+        "qty_metric": "2.5 ml",
+        "text": {
+          "en": "smoked paprika",
+          "es": "piment&#xF3;n ahumado",
+          "fil": "smoked paprika"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -160,10 +382,29 @@
     "id": 524,
     "cuisine": "spanish",
     "meal_category": "breakfast",
-    "prep_min": 15, "cook_min": 20, "total_min": 35, "servings": 4,
-    "tags": ["Vegetarian", "Gluten-Free", "High-Protein", "Low-GI"],
-    "nutrition": { "cal": 210, "carbs": 9, "protein": 11, "fat": 14, "fiber": 2, "gi": 40 },
-    "name": { "en": "Tortilla Española", "es": "Tortilla Espa&#xF1;ola", "fil": "Tortilla Española" },
+    "prep_min": 15,
+    "cook_min": 20,
+    "total_min": 35,
+    "servings": 4,
+    "tags": [
+      "Vegetarian",
+      "Gluten-Free",
+      "High-Protein",
+      "Low-GI"
+    ],
+    "nutrition": {
+      "cal": 251,
+      "carbs": 12,
+      "protein": 11,
+      "fat": 17,
+      "fiber": 2,
+      "gi": 40
+    },
+    "name": {
+      "en": "Tortilla Española",
+      "es": "Tortilla Espa&#xF1;ola",
+      "fil": "Tortilla Española"
+    },
     "description": {
       "en": "The classic Spanish potato and egg omelette, real-adapted for a lower glycemic load -- half the usual potato, extra egg, and cauliflower filling in the gap, so it keeps the real texture without the real spike.",
       "es": "La cl&#xE1;sica tortilla espa&#xF1;ola de papa y huevo, adaptada de verdad para una carga gluc&#xE9;mica m&#xE1;s baja -- la mitad de la papa habitual, huevo extra, y coliflor llenando el espacio, para mantener la textura real sin el pico real.",
@@ -175,11 +416,51 @@
       "fil": "Ang pagbawas ng potato sa kalahati at pagpuno ng volume ng cauliflower ay nagpapanatili sa totoong texture ng dish habang makabuluhang pinapababa ang total carbs at glycemic load kumpara sa traditional all-potato version -- ang extra na itlog ay nagdadagdag ng protein na lalong nagpapabagal kung gaano kabilis umabot sa dugo ang natitirang carbs."
     },
     "ingredients": [
-      { "qty_us": "6 large", "qty_metric": "6 large", "text": { "en": "eggs", "es": "huevos", "fil": "itlog" } },
-      { "qty_us": "1 medium", "qty_metric": "1 medium", "text": { "en": "potato, thinly sliced", "es": "papa, en rodajas finas", "fil": "patatas, manipis na hiniwa" } },
-      { "qty_us": "1.5 cups", "qty_metric": "150 g", "text": { "en": "cauliflower florets, thinly sliced", "es": "flores de coliflor, en rodajas finas", "fil": "cauliflower florets, manipis na hiniwa" } },
-      { "qty_us": "1 small", "qty_metric": "1 small", "text": { "en": "onion, thinly sliced", "es": "cebolla peque&#xF1;a, en rodajas finas", "fil": "maliit na sibuyas, manipis na hiniwa" } },
-      { "qty_us": "3 tbsp", "qty_metric": "45 ml", "text": { "en": "olive oil", "es": "aceite de oliva", "fil": "olive oil" } }
+      {
+        "qty_us": "6 large",
+        "qty_metric": "6 large",
+        "text": {
+          "en": "eggs",
+          "es": "huevos",
+          "fil": "itlog"
+        }
+      },
+      {
+        "qty_us": "1 medium",
+        "qty_metric": "1 medium",
+        "text": {
+          "en": "potato, thinly sliced",
+          "es": "papa, en rodajas finas",
+          "fil": "patatas, manipis na hiniwa"
+        }
+      },
+      {
+        "qty_us": "1.5 cups",
+        "qty_metric": "150 g",
+        "text": {
+          "en": "cauliflower florets, thinly sliced",
+          "es": "flores de coliflor, en rodajas finas",
+          "fil": "cauliflower florets, manipis na hiniwa"
+        }
+      },
+      {
+        "qty_us": "1 small",
+        "qty_metric": "1 small",
+        "text": {
+          "en": "onion, thinly sliced",
+          "es": "cebolla peque&#xF1;a, en rodajas finas",
+          "fil": "maliit na sibuyas, manipis na hiniwa"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -210,10 +491,28 @@
     "id": 525,
     "cuisine": "spanish",
     "meal_category": "lunch",
-    "prep_min": 15, "cook_min": 0, "total_min": 15, "servings": 2,
-    "tags": ["High-Protein", "Gluten-Free", "Low-Carb"],
-    "nutrition": { "cal": 340, "carbs": 10, "protein": 28, "fat": 22, "fiber": 3, "gi": 15 },
-    "name": { "en": "Ensalada Mixta", "es": "Ensalada Mixta", "fil": "Ensalada Mixta" },
+    "prep_min": 15,
+    "cook_min": 0,
+    "total_min": 15,
+    "servings": 2,
+    "tags": [
+      "High-Protein",
+      "Gluten-Free",
+      "Low-Carb"
+    ],
+    "nutrition": {
+      "cal": 340,
+      "carbs": 10,
+      "protein": 28,
+      "fat": 22,
+      "fiber": 3,
+      "gi": 15
+    },
+    "name": {
+      "en": "Ensalada Mixta",
+      "es": "Ensalada Mixta",
+      "fil": "Ensalada Mixta"
+    },
     "description": {
       "en": "A simple mixed salad with tomato, olives, and tuna -- real everyday Spanish lunch, light and satisfying.",
       "es": "Una ensalada mixta sencilla con jitomate, aceitunas y at&#xFA;n -- almuerzo real cotidiano espa&#xF1;ol, ligero y satisfactorio.",
@@ -225,13 +524,69 @@
       "fil": "Halos puro protein at healthy fat mula sa tuna, itlog, at olive oil ang salad na ito, konti lang na carbs mula sa vegetables -- isa sa pinakamababang-carb na meal sa koleksyon."
     },
     "ingredients": [
-      { "qty_us": "4 cups", "qty_metric": "120 g", "text": { "en": "mixed greens", "es": "verduras mixtas", "fil": "mixed greens" } },
-      { "qty_us": "1", "qty_metric": "1", "text": { "en": "tomato, sliced", "es": "jitomate, en rodajas", "fil": "kamatis, hiniwa" } },
-      { "qty_us": "1/4", "qty_metric": "1/4", "text": { "en": "red onion, thinly sliced", "es": "cebolla morada, en rodajas finas", "fil": "red onion, manipis na hiniwa" } },
-      { "qty_us": "1/4 cup", "qty_metric": "35 g", "text": { "en": "Kalamata olives", "es": "aceitunas Kalamata", "fil": "Kalamata olives" } },
-      { "qty_us": "1 can", "qty_metric": "1 can", "text": { "en": "tuna in olive oil, drained", "es": "at&#xFA;n en aceite de oliva, escurrido", "fil": "tuna sa olive oil, sinala" } },
-      { "qty_us": "2", "qty_metric": "2", "text": { "en": "hard-boiled eggs, quartered", "es": "huevos duros, en cuartos", "fil": "hard-boiled na itlog, hinati" } },
-      { "qty_us": "2 tbsp", "qty_metric": "30 ml", "text": { "en": "olive oil", "es": "aceite de oliva", "fil": "olive oil" } }
+      {
+        "qty_us": "4 cups",
+        "qty_metric": "120 g",
+        "text": {
+          "en": "mixed greens",
+          "es": "verduras mixtas",
+          "fil": "mixed greens"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "tomato, sliced",
+          "es": "jitomate, en rodajas",
+          "fil": "kamatis, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1/4",
+        "qty_metric": "1/4",
+        "text": {
+          "en": "red onion, thinly sliced",
+          "es": "cebolla morada, en rodajas finas",
+          "fil": "red onion, manipis na hiniwa"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "35 g",
+        "text": {
+          "en": "Kalamata olives",
+          "es": "aceitunas Kalamata",
+          "fil": "Kalamata olives"
+        }
+      },
+      {
+        "qty_us": "1 can",
+        "qty_metric": "1 can",
+        "text": {
+          "en": "tuna in olive oil, drained",
+          "es": "at&#xFA;n en aceite de oliva, escurrido",
+          "fil": "tuna sa olive oil, sinala"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "hard-boiled eggs, quartered",
+          "es": "huevos duros, en cuartos",
+          "fil": "hard-boiled na itlog, hinati"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      }
     ],
     "instructions": {
       "en": [

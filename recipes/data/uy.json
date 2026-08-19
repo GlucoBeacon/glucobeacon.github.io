@@ -8,8 +8,19 @@
     "cook_min": 12,
     "total_min": 27,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 380, "carbs": 8, "protein": 36, "fat": 22, "fiber": 3, "gi": 10},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 380,
+      "carbs": 6,
+      "protein": 33,
+      "fat": 26,
+      "fiber": 2,
+      "gi": 10
+    },
     "name": {
       "en": "Light Chivito Plate",
       "es": "Chivito Ligero",
@@ -26,13 +37,69 @@
       "fil": "Ang real na lasa ng chivito sandwich ay galing sa toppings nito -- manipis na steak, itlog, kamatis, ham, at olives -- hindi sa tinapay. Ang pag-serve ng parehong toppings sa ibabaw ng malaking bed ng salad greens sa halip na malaking white bun ay pinapanatili ang lahat ng pamilyar na lasa habang tinatanggal ang pinakamalaking source ng mabilis-ma-digest na carbs sa dish."
     },
     "ingredients": [
-      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "beef sirloin, thinly sliced and grilled", "es": "bife de lomo, en fetas finas y a la parrilla", "fil": "beef sirloin, pinong hiniwa at inihaw"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "hard-boiled eggs, sliced", "es": "huevos duros, en rodajas", "fil": "hard-boiled na itlog, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, sliced", "es": "tomates, en rodajas", "fil": "kamatis, hiniwa"}},
-      {"qty_us": "8", "qty_metric": "8", "text": {"en": "green olives", "es": "aceitunas verdes", "fil": "green olives"}},
-      {"qty_us": "2 oz", "qty_metric": "60 g", "text": {"en": "lean ham, thinly sliced (optional)", "es": "jamón magro, en fetas finas (opcional)", "fil": "lean ham, pinong hiniwa (optional)"}},
-      {"qty_us": "8 cups", "qty_metric": "8 cups", "text": {"en": "mixed salad greens", "es": "hojas verdes mixtas", "fil": "mixed salad greens"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil and red wine vinegar dressing", "es": "aderezo de aceite de oliva y vinagre de vino tinto", "fil": "olive oil at red wine vinegar dressing"}}
+      {
+        "qty_us": "1 lb",
+        "qty_metric": "450 g",
+        "text": {
+          "en": "beef sirloin, thinly sliced and grilled",
+          "es": "bife de lomo, en fetas finas y a la parrilla",
+          "fil": "beef sirloin, pinong hiniwa at inihaw"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "hard-boiled eggs, sliced",
+          "es": "huevos duros, en rodajas",
+          "fil": "hard-boiled na itlog, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, sliced",
+          "es": "tomates, en rodajas",
+          "fil": "kamatis, hiniwa"
+        }
+      },
+      {
+        "qty_us": "8",
+        "qty_metric": "8",
+        "text": {
+          "en": "green olives",
+          "es": "aceitunas verdes",
+          "fil": "green olives"
+        }
+      },
+      {
+        "qty_us": "2 oz",
+        "qty_metric": "60 g",
+        "text": {
+          "en": "lean ham, thinly sliced (optional)",
+          "es": "jamón magro, en fetas finas (opcional)",
+          "fil": "lean ham, pinong hiniwa (optional)"
+        }
+      },
+      {
+        "qty_us": "8 cups",
+        "qty_metric": "8 cups",
+        "text": {
+          "en": "mixed salad greens",
+          "es": "hojas verdes mixtas",
+          "fil": "mixed salad greens"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil and red wine vinegar dressing",
+          "es": "aderezo de aceite de oliva y vinagre de vino tinto",
+          "fil": "olive oil at red wine vinegar dressing"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -64,8 +131,20 @@
     "cook_min": 0,
     "total_min": 15,
     "servings": 4,
-    "tags": ["Vegetarian", "High-Fiber", "Gluten-Free", "Plant-Protein"],
-    "nutrition": {"cal": 240, "carbs": 26, "protein": 10, "fat": 10, "fiber": 8, "gi": 28},
+    "tags": [
+      "Vegetarian",
+      "High-Fiber",
+      "Gluten-Free",
+      "Plant-Protein"
+    ],
+    "nutrition": {
+      "cal": 311,
+      "carbs": 38,
+      "protein": 12,
+      "fat": 14,
+      "fiber": 11,
+      "gi": 28
+    },
     "name": {
       "en": "Uruguayan Chickpea Salad",
       "es": "Ensalada de Garbanzos Uruguaya",
@@ -82,12 +161,60 @@
       "fil": "Ang chickpeas ay may mababang glycemic index at malakas na fiber-to-carb ratio, kaya mabagal itong nagre-release ng energy sa halip na mabilis na spike. Ang salad na ito ay umaasa lahat sa chickpeas bilang carb source sa halip na tinapay o kanin, na ginagawa itong naturally gentle na option sa blood sugar."
     },
     "ingredients": [
-      {"qty_us": "3 cups", "qty_metric": "500 g", "text": {"en": "cooked chickpeas", "es": "garbanzos cocidos", "fil": "lutong chickpeas"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, diced", "es": "morrón rojo, en cubos", "fil": "red bell pepper, dinice"}},
-      {"qty_us": "1/2", "qty_metric": "1/2", "text": {"en": "red onion, finely chopped", "es": "cebolla morada, picada fina", "fil": "red onion, pinong hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "tomato, diced", "es": "tomate, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh parsley, chopped", "es": "perejil fresco, picado", "fil": "fresh parsley, hiniwa"}},
-      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "olive oil and red wine vinegar dressing", "es": "aderezo de aceite de oliva y vinagre de vino tinto", "fil": "olive oil at red wine vinegar dressing"}}
+      {
+        "qty_us": "3 cups",
+        "qty_metric": "500 g",
+        "text": {
+          "en": "cooked chickpeas",
+          "es": "garbanzos cocidos",
+          "fil": "lutong chickpeas"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "red bell pepper, diced",
+          "es": "morrón rojo, en cubos",
+          "fil": "red bell pepper, dinice"
+        }
+      },
+      {
+        "qty_us": "1/2",
+        "qty_metric": "1/2",
+        "text": {
+          "en": "red onion, finely chopped",
+          "es": "cebolla morada, picada fina",
+          "fil": "red onion, pinong hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "tomato, diced",
+          "es": "tomate, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "10 g",
+        "text": {
+          "en": "fresh parsley, chopped",
+          "es": "perejil fresco, picado",
+          "fil": "fresh parsley, hiniwa"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "olive oil and red wine vinegar dressing",
+          "es": "aderezo de aceite de oliva y vinagre de vino tinto",
+          "fil": "olive oil at red wine vinegar dressing"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -119,8 +246,19 @@
     "cook_min": 12,
     "total_min": 22,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 280, "carbs": 6, "protein": 34, "fat": 14, "fiber": 2, "gi": 5},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 280,
+      "carbs": 6,
+      "protein": 34,
+      "fat": 14,
+      "fiber": 2,
+      "gi": 5
+    },
     "name": {
       "en": "Grilled Fish with Uruguayan Salad",
       "es": "Pescado a la Parrilla con Ensalada",
@@ -137,12 +275,60 @@
       "fil": "Ang grilled na fish fillet na may olive oil at lemon ay halos walang carbs mag-isa, at ang pag-pair nito sa fresh vegetable salad sa halip na kanin o fries ay pinapanatili ang buong plato na malapit sa zero glycemic impact habang isa pa ring substantial, real na dinner."
     },
     "ingredients": [
-      {"qty_us": "4", "qty_metric": "4", "text": {"en": "white fish fillets (such as merluza or sole)", "es": "filetes de pescado blanco (como merluza o lenguado)", "fil": "white fish fillets (tulad ng merluza o sole)"}},
-      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "fresh lemon juice", "es": "jugo de limón fresco", "fil": "fresh lemon juice"}},
-      {"qty_us": "6 cups", "qty_metric": "6 cups", "text": {"en": "mixed salad greens", "es": "hojas verdes mixtas", "fil": "mixed salad greens"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "tomato, sliced", "es": "tomate, en rodajas", "fil": "kamatis, hiniwa"}},
-      {"qty_us": "1/2", "qty_metric": "1/2", "text": {"en": "red onion, thinly sliced", "es": "cebolla morada, en juliana fina", "fil": "red onion, pinong hiniwa"}}
+      {
+        "qty_us": "4",
+        "qty_metric": "4",
+        "text": {
+          "en": "white fish fillets (such as merluza or sole)",
+          "es": "filetes de pescado blanco (como merluza o lenguado)",
+          "fil": "white fish fillets (tulad ng merluza o sole)"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "fresh lemon juice",
+          "es": "jugo de limón fresco",
+          "fil": "fresh lemon juice"
+        }
+      },
+      {
+        "qty_us": "6 cups",
+        "qty_metric": "6 cups",
+        "text": {
+          "en": "mixed salad greens",
+          "es": "hojas verdes mixtas",
+          "fil": "mixed salad greens"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "tomato, sliced",
+          "es": "tomate, en rodajas",
+          "fil": "kamatis, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1/2",
+        "qty_metric": "1/2",
+        "text": {
+          "en": "red onion, thinly sliced",
+          "es": "cebolla morada, en juliana fina",
+          "fil": "red onion, pinong hiniwa"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -174,8 +360,19 @@
     "cook_min": 25,
     "total_min": 40,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 260, "carbs": 12, "protein": 30, "fat": 10, "fiber": 3, "gi": 20},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 228,
+      "carbs": 9,
+      "protein": 36,
+      "fat": 3,
+      "fiber": 2,
+      "gi": 20
+    },
     "name": {
       "en": "Light Uruguayan Fish Stew",
       "es": "Chupín de Pescado Liviano",
@@ -192,13 +389,69 @@
       "fil": "Ang stew na ito ay gawa sa tomato at vegetable base sa halip na potato o kanin, kaya karamihan ng bulk nito ay galing sa low-GI na gulay at lean fish. Nagpapanatili iyon ng dish na satisfying at full-flavored habang ang overall carbohydrate content nito -- at kaya ang epekto sa blood sugar -- ay nananatiling katamtaman."
     },
     "ingredients": [
-      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "firm white fish fillets, cut into chunks", "es": "filetes de pescado blanco firme, en trozos", "fil": "firm white fish fillets, hiniwa na chunks"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, sliced", "es": "morrón rojo, en tiras", "fil": "red bell pepper, hiniwa"}},
-      {"qty_us": "3", "qty_metric": "3", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "1/2 cup", "qty_metric": "120 ml", "text": {"en": "dry white wine (optional)", "es": "vino blanco seco (opcional)", "fil": "dry white wine (optional)"}},
-      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh parsley, chopped", "es": "perejil fresco, picado", "fil": "fresh parsley, hiniwa"}}
+      {
+        "qty_us": "1.5 lb",
+        "qty_metric": "675 g",
+        "text": {
+          "en": "firm white fish fillets, cut into chunks",
+          "es": "filetes de pescado blanco firme, en trozos",
+          "fil": "firm white fish fillets, hiniwa na chunks"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "red bell pepper, sliced",
+          "es": "morrón rojo, en tiras",
+          "fil": "red bell pepper, hiniwa"
+        }
+      },
+      {
+        "qty_us": "3",
+        "qty_metric": "3",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "120 ml",
+        "text": {
+          "en": "dry white wine (optional)",
+          "es": "vino blanco seco (opcional)",
+          "fil": "dry white wine (optional)"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "10 g",
+        "text": {
+          "en": "fresh parsley, chopped",
+          "es": "perejil fresco, picado",
+          "fil": "fresh parsley, hiniwa"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -230,8 +483,19 @@
     "cook_min": 60,
     "total_min": 80,
     "servings": 5,
-    "tags": ["High-Fiber", "High-Protein", "Gluten-Free"],
-    "nutrition": {"cal": 340, "carbs": 24, "protein": 32, "fat": 12, "fiber": 6, "gi": 40},
+    "tags": [
+      "High-Fiber",
+      "High-Protein",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 330,
+      "carbs": 18,
+      "protein": 34,
+      "fat": 12,
+      "fiber": 4,
+      "gi": 40
+    },
     "name": {
       "en": "Light Uruguayan Puchero",
       "es": "Puchero Liviano",
@@ -248,14 +512,78 @@
       "fil": "Ang traditional na puchero ay pinasisimmer ang ilang starchy na gulay nang magkasama sa isang pot kasama ang meat. Ang pag-lean ng vegetable mix papunta sa cabbage at green beans -- pareho napakababa sa GI -- habang may katamtamang halaga lang ng potato at squash ay pinapanatili ang real, hearty na character ng dish habang binabawasan ang overall glycemic load nito."
     },
     "ingredients": [
-      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "lean beef stew meat, trimmed", "es": "carne magra para guiso, sin grasa", "fil": "lean beef na pang-guiso, tinanggalan ng taba"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small potato, cubed", "es": "papa pequeña, en cubos", "fil": "maliit na potato, dinice"}},
-      {"qty_us": "2 cups", "qty_metric": "300 g", "text": {"en": "pumpkin or winter squash, cubed", "es": "zapallo, en cubos", "fil": "kalabasa, dinice"}},
-      {"qty_us": "2 cups", "qty_metric": "150 g", "text": {"en": "cabbage, chopped", "es": "repollo, picado", "fil": "repolyo, hiniwa"}},
-      {"qty_us": "1 cup", "qty_metric": "100 g", "text": {"en": "green beans, trimmed", "es": "porotos verdes, limpios", "fil": "green beans, nilinis"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "carrots, sliced", "es": "zanahorias, en rodajas", "fil": "carrots, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, quartered", "es": "cebolla, en cuartos", "fil": "sibuyas, hiniwa na quarters"}},
-      {"qty_us": "7 cups", "qty_metric": "1.7 L", "text": {"en": "low-sodium beef broth", "es": "caldo de carne bajo en sodio", "fil": "low-sodium beef broth"}}
+      {
+        "qty_us": "1.5 lb",
+        "qty_metric": "675 g",
+        "text": {
+          "en": "lean beef stew meat, trimmed",
+          "es": "carne magra para guiso, sin grasa",
+          "fil": "lean beef na pang-guiso, tinanggalan ng taba"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "small potato, cubed",
+          "es": "papa pequeña, en cubos",
+          "fil": "maliit na potato, dinice"
+        }
+      },
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "300 g",
+        "text": {
+          "en": "pumpkin or winter squash, cubed",
+          "es": "zapallo, en cubos",
+          "fil": "kalabasa, dinice"
+        }
+      },
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "150 g",
+        "text": {
+          "en": "cabbage, chopped",
+          "es": "repollo, picado",
+          "fil": "repolyo, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "100 g",
+        "text": {
+          "en": "green beans, trimmed",
+          "es": "porotos verdes, limpios",
+          "fil": "green beans, nilinis"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "carrots, sliced",
+          "es": "zanahorias, en rodajas",
+          "fil": "carrots, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, quartered",
+          "es": "cebolla, en cuartos",
+          "fil": "sibuyas, hiniwa na quarters"
+        }
+      },
+      {
+        "qty_us": "7 cups",
+        "qty_metric": "1.7 L",
+        "text": {
+          "en": "low-sodium beef broth",
+          "es": "caldo de carne bajo en sodio",
+          "fil": "low-sodium beef broth"
+        }
+      }
     ],
     "instructions": {
       "en": [

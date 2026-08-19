@@ -8,8 +8,19 @@
     "cook_min": 50,
     "total_min": 70,
     "servings": 4,
-    "tags": ["High-Protein", "High-Fiber", "Gluten-Free"],
-    "nutrition": {"cal": 380, "carbs": 28, "protein": 34, "fat": 14, "fiber": 8, "gi": 40},
+    "tags": [
+      "High-Protein",
+      "High-Fiber",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 607,
+      "carbs": 51,
+      "protein": 49,
+      "fat": 23,
+      "fiber": 14,
+      "gi": 40
+    },
     "name": {
       "en": "Light Pabellón Criollo",
       "es": "Pabellón Criollo Ligero",
@@ -26,13 +37,69 @@
       "fil": "Ang traditional na plate ay nagtatambak ng white rice at matamis na fried plantain nang magkasama, pareho mabilis-ma-digest na carbs. Ang pananatili ng real na shredded beef at black beans -- ang flavorful, fiber-rich na core ng dish -- habang pinapalitan ang kanin ng fresh salad at gumagamit lang ng kaunting plantain ay pinapanatiling authentic ang meal habang binabawasan ang overall glycemic load nito."
     },
     "ingredients": [
-      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "flank steak, cooked and shredded", "es": "falda de res, cocida y desmechada", "fil": "flank steak, niluto at tinadtad"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, sliced", "es": "cebolla, en rodajas", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, sliced", "es": "morrón rojo, en tiras", "fil": "red bell pepper, hiniwa"}},
-      {"qty_us": "3 cups", "qty_metric": "500 g", "text": {"en": "cooked black beans", "es": "caraotas negras cocidas", "fil": "lutong black beans"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small ripe plantain, sliced and baked (not fried)", "es": "plátano maduro pequeño, en rodajas y horneado (no frito)", "fil": "maliit na hinog na saging, hiniwa at inoven (hindi pinirito)"}},
-      {"qty_us": "6 cups", "qty_metric": "6 cups", "text": {"en": "mixed salad greens, for serving", "es": "hojas verdes mixtas, para servir", "fil": "mixed salad greens, pang-serve"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+      {
+        "qty_us": "1.5 lb",
+        "qty_metric": "675 g",
+        "text": {
+          "en": "flank steak, cooked and shredded",
+          "es": "falda de res, cocida y desmechada",
+          "fil": "flank steak, niluto at tinadtad"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, sliced",
+          "es": "cebolla, en rodajas",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "red bell pepper, sliced",
+          "es": "morrón rojo, en tiras",
+          "fil": "red bell pepper, hiniwa"
+        }
+      },
+      {
+        "qty_us": "3 cups",
+        "qty_metric": "500 g",
+        "text": {
+          "en": "cooked black beans",
+          "es": "caraotas negras cocidas",
+          "fil": "lutong black beans"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "small ripe plantain, sliced and baked (not fried)",
+          "es": "plátano maduro pequeño, en rodajas y horneado (no frito)",
+          "fil": "maliit na hinog na saging, hiniwa at inoven (hindi pinirito)"
+        }
+      },
+      {
+        "qty_us": "6 cups",
+        "qty_metric": "6 cups",
+        "text": {
+          "en": "mixed salad greens, for serving",
+          "es": "hojas verdes mixtas, para servir",
+          "fil": "mixed salad greens, pang-serve"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -67,8 +134,19 @@
     "cook_min": 0,
     "total_min": 20,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 260, "carbs": 8, "protein": 26, "fat": 15, "fiber": 4, "gi": 15},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 260,
+      "carbs": 8,
+      "protein": 26,
+      "fat": 15,
+      "fiber": 4,
+      "gi": 15
+    },
     "name": {
       "en": "Reina Pepiada Lettuce Wraps",
       "es": "Reina Pepiada en Hojas de Lechuga",
@@ -85,12 +163,60 @@
       "fil": "Ang reina pepiada filling mismo -- shredded chicken, mashed avocado, at mayonnaise -- ay naturally mababa sa carbohydrates. Ang corn arepa na traditionally pinagfi-fillingan nito ang nagdadagdag ng karamihan ng glycemic load ng dish. Ang pag-wrap ng parehong real filling sa crisp lettuce sa halip ay pinapanatili ang minamahal na lasa habang ginagawang essentially carb-free ang buong dish."
     },
     "ingredients": [
-      {"qty_us": "2 cups", "qty_metric": "280 g", "text": {"en": "cooked chicken breast, shredded", "es": "pechuga de pollo cocida, desmenuzada", "fil": "lutong chicken breast, tinadtad"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "ripe avocados, mashed", "es": "aguacates maduros, machacados", "fil": "hinog na avocado, na-mash"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 g", "text": {"en": "light mayonnaise", "es": "mayonesa liviana", "fil": "light mayonnaise"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
-      {"qty_us": "2 tbsp", "qty_metric": "8 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "head of iceberg or butter lettuce, leaves separated", "es": "lechuga iceberg o mantecosa, en hojas separadas", "fil": "lettuce, hiwalay ang mga dahon"}}
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "280 g",
+        "text": {
+          "en": "cooked chicken breast, shredded",
+          "es": "pechuga de pollo cocida, desmenuzada",
+          "fil": "lutong chicken breast, tinadtad"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "ripe avocados, mashed",
+          "es": "aguacates maduros, machacados",
+          "fil": "hinog na avocado, na-mash"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 g",
+        "text": {
+          "en": "light mayonnaise",
+          "es": "mayonesa liviana",
+          "fil": "light mayonnaise"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "fresh lime juice",
+          "es": "jugo de limón fresco",
+          "fil": "fresh lime juice"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "8 g",
+        "text": {
+          "en": "fresh cilantro, chopped",
+          "es": "cilantro fresco, picado",
+          "fil": "fresh cilantro, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "head of iceberg or butter lettuce, leaves separated",
+          "es": "lechuga iceberg o mantecosa, en hojas separadas",
+          "fil": "lettuce, hiwalay ang mga dahon"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -122,8 +248,19 @@
     "cook_min": 25,
     "total_min": 35,
     "servings": 4,
-    "tags": ["Vegetarian", "Gluten-Free", "High-Fiber"],
-    "nutrition": {"cal": 200, "carbs": 20, "protein": 5, "fat": 11, "fiber": 5, "gi": 50},
+    "tags": [
+      "Vegetarian",
+      "Gluten-Free",
+      "High-Fiber"
+    ],
+    "nutrition": {
+      "cal": 113,
+      "carbs": 12,
+      "protein": 2,
+      "fat": 7,
+      "fiber": 1,
+      "gi": 50
+    },
     "name": {
       "en": "Venezuelan Pumpkin Coconut Soup",
       "es": "Sopa de Auyama Venezolana",
@@ -140,11 +277,51 @@
       "fil": "Ang kalabasa ay may moderate na glycemic index, pero ang pag-puree dito habang buo ang natural fiber at pananatiling katamtaman ang portion -- sa halip na i-pair sa arepas o tinapay -- ay nangangahulugan na mas gradual ma-digest ang carbs, habang ang coconut milk ay nagdadagdag ng real richness na walang added sugar."
     },
     "ingredients": [
-      {"qty_us": "4 cups", "qty_metric": "600 g", "text": {"en": "auyama (pumpkin), cubed", "es": "auyama, en cubos", "fil": "kalabasa, dinice"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1/4 cup", "qty_metric": "60 ml", "text": {"en": "light coconut milk", "es": "leche de coco liviana", "fil": "light coconut milk"}},
-      {"qty_us": "4 cups", "qty_metric": "950 ml", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}},
-      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+      {
+        "qty_us": "4 cups",
+        "qty_metric": "600 g",
+        "text": {
+          "en": "auyama (pumpkin), cubed",
+          "es": "auyama, en cubos",
+          "fil": "kalabasa, dinice"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "60 ml",
+        "text": {
+          "en": "light coconut milk",
+          "es": "leche de coco liviana",
+          "fil": "light coconut milk"
+        }
+      },
+      {
+        "qty_us": "4 cups",
+        "qty_metric": "950 ml",
+        "text": {
+          "en": "low-sodium vegetable broth",
+          "es": "caldo de verduras bajo en sodio",
+          "fil": "low-sodium vegetable broth"
+        }
+      },
+      {
+        "qty_us": "1 tbsp",
+        "qty_metric": "15 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -176,8 +353,19 @@
     "cook_min": 12,
     "total_min": 22,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 280, "carbs": 8, "protein": 33, "fat": 14, "fiber": 3, "gi": 10},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 280,
+      "carbs": 8,
+      "protein": 33,
+      "fat": 14,
+      "fiber": 3,
+      "gi": 10
+    },
     "name": {
       "en": "Grilled Fish with Venezuelan Salad",
       "es": "Pescado a la Plancha con Ensalada Venezolana",
@@ -194,13 +382,69 @@
       "fil": "Ang lean, pan-seared na fish fillet na may bawang at lime ay halos walang carbs mag-isa, at ang pag-pair nito sa avocado at fresh tomato salad sa halip na kanin o fried plantain ay pinapanatili ang buong plato na malapit sa zero glycemic impact habang isa pa ring real, satisfying na dinner."
     },
     "ingredients": [
-      {"qty_us": "4", "qty_metric": "4", "text": {"en": "white fish fillets (such as mero or corvina)", "es": "filetes de pescado blanco (como mero o corvina)", "fil": "white fish fillets (tulad ng mero o corvina)"}},
-      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, sliced", "es": "aguacate, en rodajas", "fil": "avocado, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}}
+      {
+        "qty_us": "4",
+        "qty_metric": "4",
+        "text": {
+          "en": "white fish fillets (such as mero or corvina)",
+          "es": "filetes de pescado blanco (como mero o corvina)",
+          "fil": "white fish fillets (tulad ng mero o corvina)"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "fresh lime juice",
+          "es": "jugo de limón fresco",
+          "fil": "fresh lime juice"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "avocado, sliced",
+          "es": "aguacate, en rodajas",
+          "fil": "avocado, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "10 g",
+        "text": {
+          "en": "fresh cilantro, chopped",
+          "es": "cilantro fresco, picado",
+          "fil": "fresh cilantro, hiniwa"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -232,8 +476,19 @@
     "cook_min": 25,
     "total_min": 40,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 240, "carbs": 12, "protein": 30, "fat": 8, "fiber": 2, "gi": 20},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 213,
+      "carbs": 9,
+      "protein": 27,
+      "fat": 9,
+      "fiber": 2,
+      "gi": 20
+    },
     "name": {
       "en": "Light Seafood Cazuela",
       "es": "Cazuela de Mariscos Liviana",
@@ -250,14 +505,78 @@
       "fil": "Ang stew na ito ay gawa halos lahat sa hipon, isda, kamatis, at bell pepper -- walang kanin o starch na hinalo, kaya naturally mababa ang carbohydrate content nito habang nagbibigay ng malaki, satisfying na portion ng protein."
     },
     "ingredients": [
-      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "shrimp, peeled and deveined", "es": "camarones, pelados y desvenados", "fil": "hipon, balat at buto na tinanggal"}},
-      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "firm white fish fillet, cubed", "es": "filete de pescado blanco firme, en cubos", "fil": "firm white fish fillet, dinice"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, chopped", "es": "morrón rojo, picado", "fil": "red bell pepper, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "1/2 cup", "qty_metric": "120 ml", "text": {"en": "light coconut milk", "es": "leche de coco liviana", "fil": "light coconut milk"}},
-      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}}
+      {
+        "qty_us": "1/2 lb",
+        "qty_metric": "225 g",
+        "text": {
+          "en": "shrimp, peeled and deveined",
+          "es": "camarones, pelados y desvenados",
+          "fil": "hipon, balat at buto na tinanggal"
+        }
+      },
+      {
+        "qty_us": "1/2 lb",
+        "qty_metric": "225 g",
+        "text": {
+          "en": "firm white fish fillet, cubed",
+          "es": "filete de pescado blanco firme, en cubos",
+          "fil": "firm white fish fillet, dinice"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "red bell pepper, chopped",
+          "es": "morrón rojo, picado",
+          "fil": "red bell pepper, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "120 ml",
+        "text": {
+          "en": "light coconut milk",
+          "es": "leche de coco liviana",
+          "fil": "light coconut milk"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "10 g",
+        "text": {
+          "en": "fresh cilantro, chopped",
+          "es": "cilantro fresco, picado",
+          "fil": "fresh cilantro, hiniwa"
+        }
+      }
     ],
     "instructions": {
       "en": [

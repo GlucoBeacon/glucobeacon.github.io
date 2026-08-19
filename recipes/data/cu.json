@@ -8,8 +8,19 @@
     "cook_min": 90,
     "total_min": 105,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 320, "carbs": 12, "protein": 36, "fat": 14, "fiber": 3, "gi": 20},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 320,
+      "carbs": 12,
+      "protein": 36,
+      "fat": 14,
+      "fiber": 3,
+      "gi": 20
+    },
     "name": {
       "en": "Light Ropa Vieja",
       "es": "Ropa Vieja Ligera",
@@ -26,13 +37,69 @@
       "fil": "Ang ropa vieja mismo -- beef na slow-braised na may kamatis, bell pepper, at sibuyas -- ay naturally mababa sa carbohydrates. Ang traditional na side ng white rice ang nagdadagdag ng karamihan ng glycemic load ng meal. Ang pananatili ng real na braised beef at pagpapalit ng kanin ng fresh salad ay nagpapanatili ng tunay na lasa ng dish habang ginagawang mas gentle ang buong plato sa blood sugar."
     },
     "ingredients": [
-      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "flank steak", "es": "falda de res", "fil": "flank steak"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, sliced", "es": "cebolla, en rodajas", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "bell peppers, sliced", "es": "morrones, en tiras", "fil": "bell peppers, hiniwa"}},
-      {"qty_us": "1 can (14 oz)", "qty_metric": "400 g", "text": {"en": "crushed tomatoes", "es": "tomate triturado", "fil": "crushed tomatoes"}},
-      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}},
-      {"qty_us": "8 cups", "qty_metric": "8 cups", "text": {"en": "mixed salad greens, for serving", "es": "hojas verdes mixtas, para servir", "fil": "mixed salad greens, pang-serve"}}
+      {
+        "qty_us": "1.5 lb",
+        "qty_metric": "675 g",
+        "text": {
+          "en": "flank steak",
+          "es": "falda de res",
+          "fil": "flank steak"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, sliced",
+          "es": "cebolla, en rodajas",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "bell peppers, sliced",
+          "es": "morrones, en tiras",
+          "fil": "bell peppers, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1 can (14 oz)",
+        "qty_metric": "400 g",
+        "text": {
+          "en": "crushed tomatoes",
+          "es": "tomate triturado",
+          "fil": "crushed tomatoes"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "ground cumin",
+          "es": "comino molido",
+          "fil": "ground cumin"
+        }
+      },
+      {
+        "qty_us": "8 cups",
+        "qty_metric": "8 cups",
+        "text": {
+          "en": "mixed salad greens, for serving",
+          "es": "hojas verdes mixtas, para servir",
+          "fil": "mixed salad greens, pang-serve"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -67,8 +134,19 @@
     "cook_min": 25,
     "total_min": 40,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 300, "carbs": 14, "protein": 28, "fat": 16, "fiber": 3, "gi": 30},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 484,
+      "carbs": 11,
+      "protein": 46,
+      "fat": 27,
+      "fiber": 2,
+      "gi": 30
+    },
     "name": {
       "en": "Light Cuban Picadillo",
       "es": "Picadillo Cubano Ligero",
@@ -85,14 +163,78 @@
       "fil": "Ang traditional na picadillo ay kadalasang served sa ibabaw ng malaking bunton ng white rice, at kadalasang may malaking halaga ng raisins, na nagdadagdag ng concentrated sugar. Ang pagbawas ng raisins sa maliit na accent at pag-serve ng picadillo sa ibabaw ng roasted na gulay o salad sa halip na kanin ay pinapanatili ang real na briny-sweet flavor balance habang binabawasan ang overall glycemic load ng dish."
     },
     "ingredients": [
-      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "lean ground beef", "es": "carne molida magra", "fil": "lean ground beef"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "1/4 cup", "qty_metric": "35 g", "text": {"en": "green olives, sliced", "es": "aceitunas verdes, en rodajas", "fil": "green olives, hiniwa"}},
-      {"qty_us": "2 tbsp", "qty_metric": "18 g", "text": {"en": "raisins", "es": "pasas", "fil": "raisins"}},
-      {"qty_us": "1 tbsp", "qty_metric": "10 g", "text": {"en": "capers", "es": "alcaparras", "fil": "capers"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}}
+      {
+        "qty_us": "1.5 lb",
+        "qty_metric": "675 g",
+        "text": {
+          "en": "lean ground beef",
+          "es": "carne molida magra",
+          "fil": "lean ground beef"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "green bell pepper, chopped",
+          "es": "morrón verde, picado",
+          "fil": "green bell pepper, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "35 g",
+        "text": {
+          "en": "green olives, sliced",
+          "es": "aceitunas verdes, en rodajas",
+          "fil": "green olives, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "18 g",
+        "text": {
+          "en": "raisins",
+          "es": "pasas",
+          "fil": "raisins"
+        }
+      },
+      {
+        "qty_us": "1 tbsp",
+        "qty_metric": "10 g",
+        "text": {
+          "en": "capers",
+          "es": "alcaparras",
+          "fil": "capers"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "ground cumin",
+          "es": "comino molido",
+          "fil": "ground cumin"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -124,8 +266,20 @@
     "cook_min": 0,
     "total_min": 10,
     "servings": 4,
-    "tags": ["Vegetarian", "Vegan", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 170, "carbs": 10, "protein": 2, "fat": 14, "fiber": 6, "gi": 15},
+    "tags": [
+      "Vegetarian",
+      "Vegan",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 170,
+      "carbs": 10,
+      "protein": 2,
+      "fat": 14,
+      "fiber": 6,
+      "gi": 15
+    },
     "name": {
       "en": "Cuban Avocado Salad",
       "es": "Ensalada Cubana de Aguacate",
@@ -142,11 +296,51 @@
       "fil": "Ang avocado ay mayaman sa healthy fat at fiber na halos walang digestible carbs, at ang kamatis at sibuyas ay pareho low-GI na gulay, kaya ang salad na ito ay essentially walang epekto sa blood sugar habang nagdadagdag ng real volume at freshness sa kahit anong Cuban meal."
     },
     "ingredients": [
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "ripe avocados, sliced", "es": "aguacates maduros, en rodajas", "fil": "hinog na avocado, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, sliced", "es": "tomates, en rodajas", "fil": "kamatis, hiniwa"}},
-      {"qty_us": "1/4", "qty_metric": "1/4", "text": {"en": "red onion, thinly sliced", "es": "cebolla morada, en juliana fina", "fil": "red onion, pinong hiniwa"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
-      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "red wine vinegar", "es": "vinagre de vino tinto", "fil": "red wine vinegar"}}
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "ripe avocados, sliced",
+          "es": "aguacates maduros, en rodajas",
+          "fil": "hinog na avocado, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, sliced",
+          "es": "tomates, en rodajas",
+          "fil": "kamatis, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1/4",
+        "qty_metric": "1/4",
+        "text": {
+          "en": "red onion, thinly sliced",
+          "es": "cebolla morada, en juliana fina",
+          "fil": "red onion, pinong hiniwa"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      },
+      {
+        "qty_us": "1 tbsp",
+        "qty_metric": "15 ml",
+        "text": {
+          "en": "red wine vinegar",
+          "es": "vinagre de vino tinto",
+          "fil": "red wine vinegar"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -178,8 +372,19 @@
     "cook_min": 12,
     "total_min": 27,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 270, "carbs": 6, "protein": 33, "fat": 13, "fiber": 1, "gi": 10},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 265,
+      "carbs": 3,
+      "protein": 35,
+      "fat": 13,
+      "fiber": 0,
+      "gi": 10
+    },
     "name": {
       "en": "Grilled Fish with Light Mojo",
       "es": "Pescado a la Plancha con Mojo Ligero",
@@ -196,12 +401,60 @@
       "fil": "Ang mojo sauce -- bawang, sour orange o lime juice, at olive oil -- ay halos walang carbohydrates mag-isa. Kasama ang lean, pan-seared na fish fillet sa halip na fried yuca o plantain, ang dish na ito ay nagbibigay ng full, real na mojo flavor na kilala ang Cuban cooking dito habang nananatiling malapit sa zero glycemic impact."
     },
     "ingredients": [
-      {"qty_us": "4", "qty_metric": "4", "text": {"en": "white fish fillets (such as tilapia or snapper)", "es": "filetes de pescado blanco (como tilapia o pargo)", "fil": "white fish fillets (tulad ng tilapia o snapper)"}},
-      {"qty_us": "6 cloves", "qty_metric": "6 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "1/3 cup", "qty_metric": "80 ml", "text": {"en": "fresh sour orange or lime juice", "es": "jugo de naranja agria o limón fresco", "fil": "fresh sour orange o lime juice"}},
-      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}},
-      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}}
+      {
+        "qty_us": "4",
+        "qty_metric": "4",
+        "text": {
+          "en": "white fish fillets (such as tilapia or snapper)",
+          "es": "filetes de pescado blanco (como tilapia o pargo)",
+          "fil": "white fish fillets (tulad ng tilapia o snapper)"
+        }
+      },
+      {
+        "qty_us": "6 cloves",
+        "qty_metric": "6 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1/3 cup",
+        "qty_metric": "80 ml",
+        "text": {
+          "en": "fresh sour orange or lime juice",
+          "es": "jugo de naranja agria o limón fresco",
+          "fil": "fresh sour orange o lime juice"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "ground cumin",
+          "es": "comino molido",
+          "fil": "ground cumin"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "10 g",
+        "text": {
+          "en": "fresh cilantro, chopped",
+          "es": "cilantro fresco, picado",
+          "fil": "fresh cilantro, hiniwa"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -233,8 +486,20 @@
     "cook_min": 45,
     "total_min": 55,
     "servings": 5,
-    "tags": ["High-Fiber", "Gluten-Free", "Vegetarian", "Plant-Protein"],
-    "nutrition": {"cal": 260, "carbs": 34, "protein": 13, "fat": 8, "fiber": 12, "gi": 30},
+    "tags": [
+      "High-Fiber",
+      "Gluten-Free",
+      "Vegetarian",
+      "Plant-Protein"
+    ],
+    "nutrition": {
+      "cal": 283,
+      "carbs": 52,
+      "protein": 17,
+      "fat": 1,
+      "fiber": 12,
+      "gi": 30
+    },
     "name": {
       "en": "Cuban Black Bean Stew",
       "es": "Potaje de Frijoles Negros Cubano",
@@ -251,13 +516,69 @@
       "fil": "Ang black beans ay naturally low-GI at mayaman sa soluble fiber, kaya ang classic na Cuban staple na ito ay gradually ma-digest sa halip na magdulot ng mabilis na spike. Ang version na ito ay umaasa sa mismong beans bilang main carbohydrate source, na walang traditional na side ng white rice, na ginagawa itong genuinely gentle na option sa blood sugar."
     },
     "ingredients": [
-      {"qty_us": "2 cups", "qty_metric": "400 g", "text": {"en": "dried black beans, soaked overnight", "es": "frijoles negros secos, remojados toda la noche", "fil": "dried black beans, binabad overnight"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
-      {"qty_us": "4 cloves", "qty_metric": "4 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}},
-      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "red wine vinegar", "es": "vinagre de vino tinto", "fil": "red wine vinegar"}},
-      {"qty_us": "6 cups", "qty_metric": "1.4 L", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}}
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "400 g",
+        "text": {
+          "en": "dried black beans, soaked overnight",
+          "es": "frijoles negros secos, remojados toda la noche",
+          "fil": "dried black beans, binabad overnight"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "green bell pepper, chopped",
+          "es": "morrón verde, picado",
+          "fil": "green bell pepper, hiniwa"
+        }
+      },
+      {
+        "qty_us": "4 cloves",
+        "qty_metric": "4 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "ground cumin",
+          "es": "comino molido",
+          "fil": "ground cumin"
+        }
+      },
+      {
+        "qty_us": "1 tbsp",
+        "qty_metric": "15 ml",
+        "text": {
+          "en": "red wine vinegar",
+          "es": "vinagre de vino tinto",
+          "fil": "red wine vinegar"
+        }
+      },
+      {
+        "qty_us": "6 cups",
+        "qty_metric": "1.4 L",
+        "text": {
+          "en": "low-sodium vegetable broth",
+          "es": "caldo de verduras bajo en sodio",
+          "fil": "low-sodium vegetable broth"
+        }
+      }
     ],
     "instructions": {
       "en": [

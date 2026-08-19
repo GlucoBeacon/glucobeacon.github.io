@@ -8,8 +8,19 @@
     "cook_min": 12,
     "total_min": 27,
     "servings": 2,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 460, "carbs": 6, "protein": 44, "fat": 27, "fiber": 2, "gi": 0},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 673,
+      "carbs": 9,
+      "protein": 53,
+      "fat": 48,
+      "fiber": 4,
+      "gi": 0
+    },
     "name": {
       "en": "Grilled Sirloin Steak with Chimichurri",
       "es": "Bife a la Parrilla con Chimichurri",
@@ -26,13 +37,69 @@
       "fil": "Ang well-trimmed na beef na may fresh na oil-and-vinegar chimichurri ay halos walang carbs at malapit sa zero ang glycemic index, kaya hindi ito magpapataas ng blood sugar mag-isa. Ang pag-pair nito sa malaking green salad sa halip na traditional fries o tinapay ay pinapanatiling mababa ang GI ng buong plato, habang satisfying at mataas sa protina."
     },
     "ingredients": [
-      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "sirloin steak, trimmed of excess fat", "es": "bife de chorizo, sin el exceso de grasa", "fil": "sirloin steak, tinanggalan ng sobrang taba"}},
-      {"qty_us": "1 cup", "qty_metric": "40 g", "text": {"en": "fresh parsley, finely chopped", "es": "perejil fresco, picado fino", "fil": "fresh parsley, pinong hiniwa"}},
-      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "1/4 cup", "qty_metric": "60 ml", "text": {"en": "extra-virgin olive oil", "es": "aceite de oliva extra virgen", "fil": "extra-virgin olive oil"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "red wine vinegar", "es": "vinagre de vino tinto", "fil": "red wine vinegar"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "dried oregano", "es": "orégano seco", "fil": "dried oregano"}},
-      {"qty_us": "8 cups", "qty_metric": "8 cups", "text": {"en": "mixed salad greens, for serving", "es": "hojas verdes mixtas, para servir", "fil": "mixed salad greens, pang-serve"}}
+      {
+        "qty_us": "1 lb",
+        "qty_metric": "450 g",
+        "text": {
+          "en": "sirloin steak, trimmed of excess fat",
+          "es": "bife de chorizo, sin el exceso de grasa",
+          "fil": "sirloin steak, tinanggalan ng sobrang taba"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "40 g",
+        "text": {
+          "en": "fresh parsley, finely chopped",
+          "es": "perejil fresco, picado fino",
+          "fil": "fresh parsley, pinong hiniwa"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "60 ml",
+        "text": {
+          "en": "extra-virgin olive oil",
+          "es": "aceite de oliva extra virgen",
+          "fil": "extra-virgin olive oil"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "red wine vinegar",
+          "es": "vinagre de vino tinto",
+          "fil": "red wine vinegar"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "dried oregano",
+          "es": "orégano seco",
+          "fil": "dried oregano"
+        }
+      },
+      {
+        "qty_us": "8 cups",
+        "qty_metric": "8 cups",
+        "text": {
+          "en": "mixed salad greens, for serving",
+          "es": "hojas verdes mixtas, para servir",
+          "fil": "mixed salad greens, pang-serve"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -67,8 +134,18 @@
     "cook_min": 55,
     "total_min": 75,
     "servings": 4,
-    "tags": ["High-Fiber", "Gluten-Free"],
-    "nutrition": {"cal": 380, "carbs": 32, "protein": 24, "fat": 14, "fiber": 9, "gi": 45},
+    "tags": [
+      "High-Fiber",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 475,
+      "carbs": 68,
+      "protein": 39,
+      "fat": 6,
+      "fiber": 16,
+      "gi": 45
+    },
     "name": {
       "en": "Light Vegetable and Bean Locro",
       "es": "Locro Liviano",
@@ -85,13 +162,69 @@
       "fil": "Ang traditional na locro ay heavy sa corn/hominy, na mabilis ma-digest at pwedeng magpataas ng blood sugar sa malaking mangkok. Ang version na ito ay ini-shift ang base papunta sa white beans at kalabasa -- pareho mas mabagal ma-digest at mataas sa fiber -- para ang parehong warming, filling na stew ay may mas gentle na blood sugar curve."
     },
     "ingredients": [
-      {"qty_us": "2 cups", "qty_metric": "400 g", "text": {"en": "dried white beans, soaked overnight", "es": "porotos blancos secos, remojados toda la noche", "fil": "dried white beans, binabad overnight"}},
-      {"qty_us": "3 cups", "qty_metric": "450 g", "text": {"en": "pumpkin or winter squash, cubed", "es": "zapallo, en cubos", "fil": "kalabasa, dinice"}},
-      {"qty_us": "1/2 cup", "qty_metric": "80 g", "text": {"en": "white hominy corn", "es": "mote de maíz blanco", "fil": "white hominy corn"}},
-      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "lean beef stew meat, trimmed", "es": "carne magra para guiso, sin grasa", "fil": "lean beef na pang-guiso, tinanggalan ng taba"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "smoked paprika", "es": "pimentón ahumado", "fil": "smoked paprika"}},
-      {"qty_us": "6 cups", "qty_metric": "1.4 L", "text": {"en": "low-sodium beef or vegetable broth", "es": "caldo de carne o verduras bajo en sodio", "fil": "low-sodium beef o vegetable broth"}}
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "400 g",
+        "text": {
+          "en": "dried white beans, soaked overnight",
+          "es": "porotos blancos secos, remojados toda la noche",
+          "fil": "dried white beans, binabad overnight"
+        }
+      },
+      {
+        "qty_us": "3 cups",
+        "qty_metric": "450 g",
+        "text": {
+          "en": "pumpkin or winter squash, cubed",
+          "es": "zapallo, en cubos",
+          "fil": "kalabasa, dinice"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "80 g",
+        "text": {
+          "en": "white hominy corn",
+          "es": "mote de maíz blanco",
+          "fil": "white hominy corn"
+        }
+      },
+      {
+        "qty_us": "1/2 lb",
+        "qty_metric": "225 g",
+        "text": {
+          "en": "lean beef stew meat, trimmed",
+          "es": "carne magra para guiso, sin grasa",
+          "fil": "lean beef na pang-guiso, tinanggalan ng taba"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "smoked paprika",
+          "es": "pimentón ahumado",
+          "fil": "smoked paprika"
+        }
+      },
+      {
+        "qty_us": "6 cups",
+        "qty_metric": "1.4 L",
+        "text": {
+          "en": "low-sodium beef or vegetable broth",
+          "es": "caldo de carne o verduras bajo en sodio",
+          "fil": "low-sodium beef o vegetable broth"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -123,8 +256,19 @@
     "cook_min": 25,
     "total_min": 35,
     "servings": 4,
-    "tags": ["Vegetarian", "Gluten-Free", "High-Fiber"],
-    "nutrition": {"cal": 190, "carbs": 18, "protein": 5, "fat": 10, "fiber": 5, "gi": 50},
+    "tags": [
+      "Vegetarian",
+      "Gluten-Free",
+      "High-Fiber"
+    ],
+    "nutrition": {
+      "cal": 116,
+      "carbs": 13,
+      "protein": 2,
+      "fat": 7,
+      "fiber": 1,
+      "gi": 50
+    },
     "name": {
       "en": "Spiced Pumpkin Squash Soup",
       "es": "Sopa de Zapallo Especiada",
@@ -141,12 +285,60 @@
       "fil": "Ang kalabasa ay may moderate na glycemic index, pero ang pag-puree dito habang buo ang natural fiber at pananatiling katamtaman ang portion -- sa halip na i-pair sa tinapay -- ay nangangahulugan na mas gradual ma-digest ang carbs. Ang ginger at light cream ay nagdadagdag ng init at richness na walang added sugar."
     },
     "ingredients": [
-      {"qty_us": "4 cups", "qty_metric": "600 g", "text": {"en": "pumpkin or winter squash, cubed", "es": "zapallo, en cubos", "fil": "kalabasa, dinice"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1 tbsp", "qty_metric": "8 g", "text": {"en": "fresh ginger, grated", "es": "jengibre fresco, rallado", "fil": "fresh ginger, kinayod"}},
-      {"qty_us": "4 cups", "qty_metric": "950 ml", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}},
-      {"qty_us": "1/4 cup", "qty_metric": "60 ml", "text": {"en": "light cream or coconut milk", "es": "crema liviana o leche de coco", "fil": "light cream o coconut milk"}},
-      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+      {
+        "qty_us": "4 cups",
+        "qty_metric": "600 g",
+        "text": {
+          "en": "pumpkin or winter squash, cubed",
+          "es": "zapallo, en cubos",
+          "fil": "kalabasa, dinice"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1 tbsp",
+        "qty_metric": "8 g",
+        "text": {
+          "en": "fresh ginger, grated",
+          "es": "jengibre fresco, rallado",
+          "fil": "fresh ginger, kinayod"
+        }
+      },
+      {
+        "qty_us": "4 cups",
+        "qty_metric": "950 ml",
+        "text": {
+          "en": "low-sodium vegetable broth",
+          "es": "caldo de verduras bajo en sodio",
+          "fil": "low-sodium vegetable broth"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "60 ml",
+        "text": {
+          "en": "light cream or coconut milk",
+          "es": "crema liviana o leche de coco",
+          "fil": "light cream o coconut milk"
+        }
+      },
+      {
+        "qty_us": "1 tbsp",
+        "qty_metric": "15 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -181,8 +373,18 @@
     "cook_min": 25,
     "total_min": 40,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb"],
-    "nutrition": {"cal": 340, "carbs": 14, "protein": 38, "fat": 14, "fiber": 3, "gi": 40},
+    "tags": [
+      "High-Protein",
+      "Low-Carb"
+    ],
+    "nutrition": {
+      "cal": 420,
+      "carbs": 30,
+      "protein": 48,
+      "fat": 12,
+      "fiber": 4,
+      "gi": 40
+    },
     "name": {
       "en": "Oven-Baked Chicken Milanesa with Salad",
       "es": "Milanesa de Pollo al Horno con Ensalada",
@@ -199,12 +401,60 @@
       "fil": "Ang pagprito ay nagdadagdag ng absorbed oil at kadalasang pinapares sa fried potatoes, na parehong nagtataas ng calories at glycemic load. Ang pag-bake ng breaded cutlet na may light coating at pag-serve nito na may salad sa halip na fries ay pinapanatili ang parehong pamilyar na crunch at lasa habang malaki ang bawas sa added fat at carbs."
     },
     "ingredients": [
-      {"qty_us": "4", "qty_metric": "4", "text": {"en": "boneless, skinless chicken breasts, pounded thin", "es": "pechugas de pollo sin hueso y sin piel, aplanadas", "fil": "boneless, skinless chicken breast, pinipi na manipis"}},
-      {"qty_us": "1 cup", "qty_metric": "100 g", "text": {"en": "whole wheat breadcrumbs", "es": "pan rallado integral", "fil": "whole wheat breadcrumbs"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "eggs, beaten", "es": "huevos, batidos", "fil": "itlog, pinaghalo"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "dried oregano", "es": "orégano seco", "fil": "dried oregano"}},
-      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "olive oil, for the pan", "es": "aceite de oliva, para la fuente", "fil": "olive oil, pang-hain sa pan"}},
-      {"qty_us": "8 cups", "qty_metric": "8 cups", "text": {"en": "mixed salad greens with tomato, for serving", "es": "hojas verdes mixtas con tomate, para servir", "fil": "mixed salad greens na may kamatis, pang-serve"}}
+      {
+        "qty_us": "4",
+        "qty_metric": "4",
+        "text": {
+          "en": "boneless, skinless chicken breasts, pounded thin",
+          "es": "pechugas de pollo sin hueso y sin piel, aplanadas",
+          "fil": "boneless, skinless chicken breast, pinipi na manipis"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "100 g",
+        "text": {
+          "en": "whole wheat breadcrumbs",
+          "es": "pan rallado integral",
+          "fil": "whole wheat breadcrumbs"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "eggs, beaten",
+          "es": "huevos, batidos",
+          "fil": "itlog, pinaghalo"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "dried oregano",
+          "es": "orégano seco",
+          "fil": "dried oregano"
+        }
+      },
+      {
+        "qty_us": "1 tbsp",
+        "qty_metric": "15 ml",
+        "text": {
+          "en": "olive oil, for the pan",
+          "es": "aceite de oliva, para la fuente",
+          "fil": "olive oil, pang-hain sa pan"
+        }
+      },
+      {
+        "qty_us": "8 cups",
+        "qty_metric": "8 cups",
+        "text": {
+          "en": "mixed salad greens with tomato, for serving",
+          "es": "hojas verdes mixtas con tomate, para servir",
+          "fil": "mixed salad greens na may kamatis, pang-serve"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -239,8 +489,19 @@
     "cook_min": 25,
     "total_min": 40,
     "servings": 4,
-    "tags": ["High-Fiber", "Gluten-Free", "High-Protein"],
-    "nutrition": {"cal": 340, "carbs": 28, "protein": 22, "fat": 16, "fiber": 10, "gi": 32},
+    "tags": [
+      "High-Fiber",
+      "Gluten-Free",
+      "High-Protein"
+    ],
+    "nutrition": {
+      "cal": 340,
+      "carbs": 28,
+      "protein": 22,
+      "fat": 16,
+      "fiber": 10,
+      "gi": 32
+    },
     "name": {
       "en": "Lentil Salad with Lean Chorizo",
       "es": "Ensalada de Lentejas con Chorizo Magro",
@@ -257,12 +518,60 @@
       "fil": "Ang lentils ay may isa sa pinakamababang glycemic index sa lahat ng staple food at puno ng fiber, kaya mabagal itong ma-digest at tumutulong bawasan ang blood sugar spikes. Ang pananatili ng chorizo bilang maliit na flavor accent sa halip na main event ay pinapanatiling kontrolado ang saturated fat habang nagbibigay pa rin ng tunay na smoky, savory na lasa."
     },
     "ingredients": [
-      {"qty_us": "2 cups", "qty_metric": "400 g", "text": {"en": "cooked lentils", "es": "lentejas cocidas", "fil": "lutong lentils"}},
-      {"qty_us": "3 oz", "qty_metric": "85 g", "text": {"en": "lean chorizo or grilled sausage, diced and browned", "es": "chorizo magro o salchicha a la parrilla, en cubos y dorada", "fil": "lean chorizo o grilled sausage, dinice at pinrito hanggang golden"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, diced", "es": "morrón rojo, en cubos", "fil": "red bell pepper, dinice"}},
-      {"qty_us": "1/2", "qty_metric": "1/2", "text": {"en": "red onion, finely chopped", "es": "cebolla morada, picada fina", "fil": "red onion, pinong hiniwa"}},
-      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh parsley, chopped", "es": "perejil fresco, picado", "fil": "fresh parsley, hiniwa"}},
-      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "olive oil and red wine vinegar dressing", "es": "aderezo de aceite de oliva y vinagre de vino tinto", "fil": "olive oil at red wine vinegar dressing"}}
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "400 g",
+        "text": {
+          "en": "cooked lentils",
+          "es": "lentejas cocidas",
+          "fil": "lutong lentils"
+        }
+      },
+      {
+        "qty_us": "3 oz",
+        "qty_metric": "85 g",
+        "text": {
+          "en": "lean chorizo or grilled sausage, diced and browned",
+          "es": "chorizo magro o salchicha a la parrilla, en cubos y dorada",
+          "fil": "lean chorizo o grilled sausage, dinice at pinrito hanggang golden"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "red bell pepper, diced",
+          "es": "morrón rojo, en cubos",
+          "fil": "red bell pepper, dinice"
+        }
+      },
+      {
+        "qty_us": "1/2",
+        "qty_metric": "1/2",
+        "text": {
+          "en": "red onion, finely chopped",
+          "es": "cebolla morada, picada fina",
+          "fil": "red onion, pinong hiniwa"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "10 g",
+        "text": {
+          "en": "fresh parsley, chopped",
+          "es": "perejil fresco, picado",
+          "fil": "fresh parsley, hiniwa"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "olive oil and red wine vinegar dressing",
+          "es": "aderezo de aceite de oliva y vinagre de vino tinto",
+          "fil": "olive oil at red wine vinegar dressing"
+        }
+      }
     ],
     "instructions": {
       "en": [

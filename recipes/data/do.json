@@ -8,8 +8,19 @@
     "cook_min": 20,
     "total_min": 35,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 280, "carbs": 8, "protein": 32, "fat": 14, "fiber": 2, "gi": 15},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 302,
+      "carbs": 10,
+      "protein": 37,
+      "fat": 14,
+      "fiber": 3,
+      "gi": 15
+    },
     "name": {
       "en": "Light Fish in Coconut Sauce",
       "es": "Pescado con Coco Ligero",
@@ -26,13 +37,69 @@
       "fil": "Ang dish na ito ay gawa sa lean fish at coconut-tomato sauce na walang added starch, kaya naturally mababa ang carbohydrate content nito. Ang paggamit ng light coconut milk sa halip na full-fat version ay pinapanatili ang real na tropical richness ng sauce habang binabawasan ang excess saturated fat."
     },
     "ingredients": [
-      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "white fish fillets (such as tilapia or mahi-mahi)", "es": "filetes de pescado blanco (como tilapia o dorado)", "fil": "white fish fillets (tulad ng tilapia o mahi-mahi)"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, sliced", "es": "cebolla, en rodajas", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, sliced", "es": "morrón rojo, en tiras", "fil": "red bell pepper, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "3/4 cup", "qty_metric": "180 ml", "text": {"en": "light coconut milk", "es": "leche de coco liviana", "fil": "light coconut milk"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}}
+      {
+        "qty_us": "1.5 lb",
+        "qty_metric": "675 g",
+        "text": {
+          "en": "white fish fillets (such as tilapia or mahi-mahi)",
+          "es": "filetes de pescado blanco (como tilapia o dorado)",
+          "fil": "white fish fillets (tulad ng tilapia o mahi-mahi)"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, sliced",
+          "es": "cebolla, en rodajas",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "red bell pepper, sliced",
+          "es": "morrón rojo, en tiras",
+          "fil": "red bell pepper, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "3/4 cup",
+        "qty_metric": "180 ml",
+        "text": {
+          "en": "light coconut milk",
+          "es": "leche de coco liviana",
+          "fil": "light coconut milk"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "fresh lime juice",
+          "es": "jugo de limón fresco",
+          "fil": "fresh lime juice"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -67,8 +134,20 @@
     "cook_min": 0,
     "total_min": 10,
     "servings": 4,
-    "tags": ["Vegetarian", "Vegan", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 110, "carbs": 8, "protein": 3, "fat": 8, "fiber": 3, "gi": 15},
+    "tags": [
+      "Vegetarian",
+      "Vegan",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 110,
+      "carbs": 8,
+      "protein": 3,
+      "fat": 8,
+      "fiber": 3,
+      "gi": 15
+    },
     "name": {
       "en": "Dominican Green Salad",
       "es": "Ensalada Verde Dominicana",
@@ -85,12 +164,60 @@
       "fil": "Ang salad na ito ay gawa nang buo sa non-starchy na gulay at avocado, na walang kanin, tinapay, o added sugar, kaya halos walang epekto sa blood sugar habang nagdadagdag ng real volume, freshness, at healthy fat sa kahit anong Dominican meal."
     },
     "ingredients": [
-      {"qty_us": "4 cups", "qty_metric": "4 cups", "text": {"en": "romaine lettuce, chopped", "es": "lechuga romana, picada", "fil": "romaine lettuce, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "cucumber, sliced", "es": "pepino, en rodajas", "fil": "pipino, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, diced", "es": "aguacate, en cubos", "fil": "avocado, dinice"}},
-      {"qty_us": "1/4", "qty_metric": "1/4", "text": {"en": "red onion, thinly sliced", "es": "cebolla morada, en juliana fina", "fil": "red onion, pinong hiniwa"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil and vinegar dressing", "es": "aderezo de aceite de oliva y vinagre", "fil": "olive oil at vinegar dressing"}}
+      {
+        "qty_us": "4 cups",
+        "qty_metric": "4 cups",
+        "text": {
+          "en": "romaine lettuce, chopped",
+          "es": "lechuga romana, picada",
+          "fil": "romaine lettuce, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "cucumber, sliced",
+          "es": "pepino, en rodajas",
+          "fil": "pipino, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "avocado, diced",
+          "es": "aguacate, en cubos",
+          "fil": "avocado, dinice"
+        }
+      },
+      {
+        "qty_us": "1/4",
+        "qty_metric": "1/4",
+        "text": {
+          "en": "red onion, thinly sliced",
+          "es": "cebolla morada, en juliana fina",
+          "fil": "red onion, pinong hiniwa"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil and vinegar dressing",
+          "es": "aderezo de aceite de oliva y vinagre",
+          "fil": "olive oil at vinegar dressing"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -122,8 +249,19 @@
     "cook_min": 35,
     "total_min": 45,
     "servings": 4,
-    "tags": ["High-Fiber", "Gluten-Free", "Vegetarian"],
-    "nutrition": {"cal": 250, "carbs": 32, "protein": 13, "fat": 7, "fiber": 11, "gi": 30},
+    "tags": [
+      "High-Fiber",
+      "Gluten-Free",
+      "Vegetarian"
+    ],
+    "nutrition": {
+      "cal": 210,
+      "carbs": 40,
+      "protein": 13,
+      "fat": 1,
+      "fiber": 13,
+      "gi": 30
+    },
     "name": {
       "en": "Light Dominican Stewed Beans",
       "es": "Habichuelas Guisadas Ligeras",
@@ -140,13 +278,69 @@
       "fil": "Ang beans ay naturally low-GI at mayaman sa soluble fiber, kaya ang real na Dominican staple na ito ay gradually ma-digest. Ang pag-asa sa mismong beans bilang main carbohydrate source, na walang traditional na side ng white rice, ay ginagawa itong genuinely gentle na option para sa blood sugar."
     },
     "ingredients": [
-      {"qty_us": "3 cups", "qty_metric": "500 g", "text": {"en": "cooked red beans, with a little of their liquid", "es": "habichuelas rojas cocidas, con un poco de su líquido", "fil": "lutong red beans, na may kaunting liquid nito"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
-      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "1 cup", "qty_metric": "150 g", "text": {"en": "auyama (pumpkin), cubed", "es": "auyama, en cubos", "fil": "kalabasa, dinice"}},
-      {"qty_us": "1 tbsp", "qty_metric": "30 g", "text": {"en": "tomato paste", "es": "pasta de tomate", "fil": "tomato paste"}},
-      {"qty_us": "3 cups", "qty_metric": "700 ml", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}}
+      {
+        "qty_us": "3 cups",
+        "qty_metric": "500 g",
+        "text": {
+          "en": "cooked red beans, with a little of their liquid",
+          "es": "habichuelas rojas cocidas, con un poco de su líquido",
+          "fil": "lutong red beans, na may kaunting liquid nito"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "green bell pepper, chopped",
+          "es": "morrón verde, picado",
+          "fil": "green bell pepper, hiniwa"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "150 g",
+        "text": {
+          "en": "auyama (pumpkin), cubed",
+          "es": "auyama, en cubos",
+          "fil": "kalabasa, dinice"
+        }
+      },
+      {
+        "qty_us": "1 tbsp",
+        "qty_metric": "30 g",
+        "text": {
+          "en": "tomato paste",
+          "es": "pasta de tomate",
+          "fil": "tomato paste"
+        }
+      },
+      {
+        "qty_us": "3 cups",
+        "qty_metric": "700 ml",
+        "text": {
+          "en": "low-sodium vegetable broth",
+          "es": "caldo de verduras bajo en sodio",
+          "fil": "low-sodium vegetable broth"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -181,8 +375,19 @@
     "cook_min": 35,
     "total_min": 50,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 310, "carbs": 12, "protein": 33, "fat": 15, "fiber": 3, "gi": 20},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 257,
+      "carbs": 9,
+      "protein": 34,
+      "fat": 9,
+      "fiber": 3,
+      "gi": 20
+    },
     "name": {
       "en": "Light Dominican Chicken Stew",
       "es": "Pollo Guisado Dominicano Ligero",
@@ -199,13 +404,69 @@
       "fil": "Ang pollo guisado mismo -- chicken na braised sa sofrito at tomato sauce -- ay naturally mababa sa carbohydrates. Ang pag-serve nito na may roasted o steamed na gulay sa halip na traditional na white rice ay pinapanatili ang real, savory na lasa ng dish habang ginagawang mas gentle ang buong plato sa blood sugar."
     },
     "ingredients": [
-      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "bone-in chicken thighs, skin removed", "es": "muslos de pollo con hueso, sin piel", "fil": "bone-in chicken thighs, tinanggalan ng balat"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "4 cloves", "qty_metric": "4 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "8", "qty_metric": "8", "text": {"en": "green olives", "es": "aceitunas verdes", "fil": "green olives"}},
-      {"qty_us": "3 cups", "qty_metric": "3 cups", "text": {"en": "steamed mixed vegetables, for serving", "es": "verduras mixtas al vapor, para servir", "fil": "steamed na halo-halong gulay, pang-serve"}}
+      {
+        "qty_us": "1.5 lb",
+        "qty_metric": "675 g",
+        "text": {
+          "en": "bone-in chicken thighs, skin removed",
+          "es": "muslos de pollo con hueso, sin piel",
+          "fil": "bone-in chicken thighs, tinanggalan ng balat"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "green bell pepper, chopped",
+          "es": "morrón verde, picado",
+          "fil": "green bell pepper, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "4 cloves",
+        "qty_metric": "4 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "8",
+        "qty_metric": "8",
+        "text": {
+          "en": "green olives",
+          "es": "aceitunas verdes",
+          "fil": "green olives"
+        }
+      },
+      {
+        "qty_us": "3 cups",
+        "qty_metric": "3 cups",
+        "text": {
+          "en": "steamed mixed vegetables, for serving",
+          "es": "verduras mixtas al vapor, para servir",
+          "fil": "steamed na halo-halong gulay, pang-serve"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -240,8 +501,19 @@
     "cook_min": 25,
     "total_min": 40,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 260, "carbs": 10, "protein": 32, "fat": 10, "fiber": 3, "gi": 15},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 260,
+      "carbs": 10,
+      "protein": 32,
+      "fat": 10,
+      "fiber": 3,
+      "gi": 15
+    },
     "name": {
       "en": "Baked Red Snapper with Vegetables",
       "es": "Chillo al Horno con Vegetales",
@@ -258,13 +530,69 @@
       "fil": "Ang buong baked na isda na may bawang at lime ay halos walang carbs mag-isa, at ang pag-roast nito kasama ang gulay sa halip na i-serve na may kanin o fried plantain ay pinapanatili ang buong meal na malapit sa zero glycemic impact habang isa pa ring real, satisfying na dinner."
     },
     "ingredients": [
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "whole red snapper (about 2 lb / 900 g), cleaned", "es": "chillo entero (aprox. 900 g), limpio", "fil": "buong red snapper (mga 900 g), nilinis"}},
-      {"qty_us": "4 cloves", "qty_metric": "4 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, sliced", "es": "morrón rojo, en tiras", "fil": "red bell pepper, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, sliced", "es": "cebolla, en rodajas", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "zucchini, sliced", "es": "zapallitos, en rodajas", "fil": "zucchini, hiniwa"}}
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "whole red snapper (about 2 lb / 900 g), cleaned",
+          "es": "chillo entero (aprox. 900 g), limpio",
+          "fil": "buong red snapper (mga 900 g), nilinis"
+        }
+      },
+      {
+        "qty_us": "4 cloves",
+        "qty_metric": "4 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "fresh lime juice",
+          "es": "jugo de limón fresco",
+          "fil": "fresh lime juice"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "red bell pepper, sliced",
+          "es": "morrón rojo, en tiras",
+          "fil": "red bell pepper, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, sliced",
+          "es": "cebolla, en rodajas",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "zucchini, sliced",
+          "es": "zapallitos, en rodajas",
+          "fil": "zucchini, hiniwa"
+        }
+      }
     ],
     "instructions": {
       "en": [

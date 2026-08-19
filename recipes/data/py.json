@@ -8,8 +8,18 @@
     "cook_min": 35,
     "total_min": 50,
     "servings": 6,
-    "tags": ["Vegetarian", "Gluten-Free"],
-    "nutrition": {"cal": 230, "carbs": 22, "protein": 12, "fat": 11, "fiber": 3, "gi": 50},
+    "tags": [
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 230,
+      "carbs": 22,
+      "protein": 12,
+      "fat": 11,
+      "fiber": 3,
+      "gi": 50
+    },
     "name": {
       "en": "Light Paraguayan Cornbread",
       "es": "Sopa Paraguaya Liviana",
@@ -26,12 +36,60 @@
       "fil": "Ang traditional na sopa paraguaya ay gawa halos lahat sa cornmeal, na mabilis ma-digest. Ang pagbawas ng cornmeal at pagtaas ng egg at cottage cheese content ay malaki ang pagtaas ng protein-to-carb ratio, kaya ang parehong minamahal na savory flavor ay dumarating na may mas gentle na pagtaas ng blood sugar at ang mas maliit na portion ay satisfying pa rin."
     },
     "ingredients": [
-      {"qty_us": "1 cup", "qty_metric": "140 g", "text": {"en": "fine cornmeal", "es": "harina de maíz fina", "fil": "fine cornmeal"}},
-      {"qty_us": "1 cup", "qty_metric": "225 g", "text": {"en": "low-fat cottage cheese", "es": "queso cottage bajo en grasa", "fil": "low-fat cottage cheese"}},
-      {"qty_us": "4", "qty_metric": "4", "text": {"en": "eggs", "es": "huevos", "fil": "itlog"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, finely chopped and sautéed", "es": "cebolla, picada fina y salteada", "fil": "sibuyas, pinong hiniwa at sinaute"}},
-      {"qty_us": "1/2 cup", "qty_metric": "60 g", "text": {"en": "shredded low-fat mozzarella", "es": "queso mozzarella bajo en grasa, rallado", "fil": "shredded low-fat mozzarella"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "140 g",
+        "text": {
+          "en": "fine cornmeal",
+          "es": "harina de maíz fina",
+          "fil": "fine cornmeal"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "225 g",
+        "text": {
+          "en": "low-fat cottage cheese",
+          "es": "queso cottage bajo en grasa",
+          "fil": "low-fat cottage cheese"
+        }
+      },
+      {
+        "qty_us": "4",
+        "qty_metric": "4",
+        "text": {
+          "en": "eggs",
+          "es": "huevos",
+          "fil": "itlog"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, finely chopped and sautéed",
+          "es": "cebolla, picada fina y salteada",
+          "fil": "sibuyas, pinong hiniwa at sinaute"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "60 g",
+        "text": {
+          "en": "shredded low-fat mozzarella",
+          "es": "queso mozzarella bajo en grasa, rallado",
+          "fil": "shredded low-fat mozzarella"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -66,8 +124,18 @@
     "cook_min": 35,
     "total_min": 55,
     "servings": 4,
-    "tags": ["High-Protein", "High-Fiber"],
-    "nutrition": {"cal": 300, "carbs": 24, "protein": 26, "fat": 11, "fiber": 4, "gi": 48},
+    "tags": [
+      "High-Protein",
+      "High-Fiber"
+    ],
+    "nutrition": {
+      "cal": 300,
+      "carbs": 24,
+      "protein": 26,
+      "fat": 11,
+      "fiber": 4,
+      "gi": 48
+    },
     "name": {
       "en": "Light Vori Vori Soup",
       "es": "Vori Vori Liviano",
@@ -84,14 +152,78 @@
       "fil": "Ang maliliit na cornmeal dumplings ang pinakamabilis-ma-digest na parte ng soup na ito. Ang paggawa ng mas maliit sa mga ito at pagdaragdag ng extra carrot, celery, at squash sa broth ay nangangahulugan na ang dumplings ay nagbibigay pa rin ng real na vori vori texture at flavor, pero mas maliit na parte na lang sila ng buong meal, na nagpapagaan sa overall na epekto sa blood sugar."
     },
     "ingredients": [
-      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "bone-in chicken thighs, skin removed", "es": "muslos de pollo con hueso, sin piel", "fil": "bone-in chicken thighs, tinanggalan ng balat"}},
-      {"qty_us": "1/2 cup", "qty_metric": "70 g", "text": {"en": "fine cornmeal", "es": "harina de maíz fina", "fil": "fine cornmeal"}},
-      {"qty_us": "1/4 cup", "qty_metric": "30 g", "text": {"en": "grated cheese", "es": "queso rallado", "fil": "grated na keso"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "egg", "es": "huevo", "fil": "itlog"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "carrots, diced", "es": "zanahorias, en cubos", "fil": "carrots, dinice"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "celery stalks, diced", "es": "tallos de apio, en cubos", "fil": "celery stalks, dinice"}},
-      {"qty_us": "1 cup", "qty_metric": "150 g", "text": {"en": "pumpkin or squash, diced", "es": "zapallo, en cubos", "fil": "kalabasa, dinice"}},
-      {"qty_us": "7 cups", "qty_metric": "1.7 L", "text": {"en": "low-sodium chicken broth", "es": "caldo de pollo bajo en sodio", "fil": "low-sodium chicken broth"}}
+      {
+        "qty_us": "1.5 lb",
+        "qty_metric": "675 g",
+        "text": {
+          "en": "bone-in chicken thighs, skin removed",
+          "es": "muslos de pollo con hueso, sin piel",
+          "fil": "bone-in chicken thighs, tinanggalan ng balat"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "70 g",
+        "text": {
+          "en": "fine cornmeal",
+          "es": "harina de maíz fina",
+          "fil": "fine cornmeal"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "30 g",
+        "text": {
+          "en": "grated cheese",
+          "es": "queso rallado",
+          "fil": "grated na keso"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "egg",
+          "es": "huevo",
+          "fil": "itlog"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "carrots, diced",
+          "es": "zanahorias, en cubos",
+          "fil": "carrots, dinice"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "celery stalks, diced",
+          "es": "tallos de apio, en cubos",
+          "fil": "celery stalks, dinice"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "150 g",
+        "text": {
+          "en": "pumpkin or squash, diced",
+          "es": "zapallo, en cubos",
+          "fil": "kalabasa, dinice"
+        }
+      },
+      {
+        "qty_us": "7 cups",
+        "qty_metric": "1.7 L",
+        "text": {
+          "en": "low-sodium chicken broth",
+          "es": "caldo de pollo bajo en sodio",
+          "fil": "low-sodium chicken broth"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -126,8 +258,21 @@
     "cook_min": 0,
     "total_min": 15,
     "servings": 4,
-    "tags": ["Vegetarian", "Vegan", "High-Fiber", "Gluten-Free", "Plant-Protein"],
-    "nutrition": {"cal": 250, "carbs": 30, "protein": 12, "fat": 8, "fiber": 10, "gi": 30},
+    "tags": [
+      "Vegetarian",
+      "Vegan",
+      "High-Fiber",
+      "Gluten-Free",
+      "Plant-Protein"
+    ],
+    "nutrition": {
+      "cal": 291,
+      "carbs": 37,
+      "protein": 13,
+      "fat": 11,
+      "fiber": 10,
+      "gi": 30
+    },
     "name": {
       "en": "Paraguayan Bean Salad",
       "es": "Ensalada de Poroto Paraguaya",
@@ -144,12 +289,60 @@
       "fil": "Ang beans ay naturally low-GI at mataas sa fiber, kaya gradually itong ma-digest at tumutulong i-stabilize ang blood sugar sa halip na itaas ito. Ang salad na ito ay umaasa sa beans bilang main carb source na walang kanin o tinapay na idinagdag, na ginagawa itong genuinely gentle na option para sa blood sugar."
     },
     "ingredients": [
-      {"qty_us": "3 cups", "qty_metric": "500 g", "text": {"en": "cooked kidney or pinto beans", "es": "porotos colorados o pintos cocidos", "fil": "lutong kidney o pinto beans"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, finely chopped", "es": "cebolla, picada fina", "fil": "sibuyas, pinong hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, diced", "es": "morrón verde, en cubos", "fil": "green bell pepper, dinice"}},
-      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh parsley, chopped", "es": "perejil fresco, picado", "fil": "fresh parsley, hiniwa"}},
-      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "olive oil and vinegar dressing", "es": "aderezo de aceite de oliva y vinagre", "fil": "olive oil at vinegar dressing"}}
+      {
+        "qty_us": "3 cups",
+        "qty_metric": "500 g",
+        "text": {
+          "en": "cooked kidney or pinto beans",
+          "es": "porotos colorados o pintos cocidos",
+          "fil": "lutong kidney o pinto beans"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, finely chopped",
+          "es": "cebolla, picada fina",
+          "fil": "sibuyas, pinong hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "green bell pepper, diced",
+          "es": "morrón verde, en cubos",
+          "fil": "green bell pepper, dinice"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "10 g",
+        "text": {
+          "en": "fresh parsley, chopped",
+          "es": "perejil fresco, picado",
+          "fil": "fresh parsley, hiniwa"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "olive oil and vinegar dressing",
+          "es": "aderezo de aceite de oliva y vinagre",
+          "fil": "olive oil at vinegar dressing"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -181,8 +374,19 @@
     "cook_min": 40,
     "total_min": 55,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 330, "carbs": 14, "protein": 34, "fat": 15, "fiber": 4, "gi": 20},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 246,
+      "carbs": 8,
+      "protein": 24,
+      "fat": 13,
+      "fiber": 2,
+      "gi": 20
+    },
     "name": {
       "en": "Roast Chicken with Vegetables",
       "es": "Pollo al Horno con Verduras Paraguayo",
@@ -199,13 +403,69 @@
       "fil": "Ang roast chicken na may halo-halong roasted na gulay ay naturally mababa sa carbohydrates at walang refined starch, kaya may mild na epekto sa blood sugar habang nananatiling real, hearty na family dinner."
     },
     "ingredients": [
-      {"qty_us": "4", "qty_metric": "4", "text": {"en": "bone-in chicken thighs, skin removed", "es": "muslos de pollo con hueso, sin piel", "fil": "bone-in chicken thighs, tinanggalan ng balat"}},
-      {"qty_us": "4 cloves", "qty_metric": "4 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "dried oregano", "es": "orégano seco", "fil": "dried oregano"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "zucchini, sliced", "es": "zapallitos, en rodajas", "fil": "zucchini, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, sliced", "es": "morrón rojo, en tiras", "fil": "red bell pepper, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, sliced", "es": "cebolla, en rodajas", "fil": "sibuyas, hiniwa"}}
+      {
+        "qty_us": "4",
+        "qty_metric": "4",
+        "text": {
+          "en": "bone-in chicken thighs, skin removed",
+          "es": "muslos de pollo con hueso, sin piel",
+          "fil": "bone-in chicken thighs, tinanggalan ng balat"
+        }
+      },
+      {
+        "qty_us": "4 cloves",
+        "qty_metric": "4 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "dried oregano",
+          "es": "orégano seco",
+          "fil": "dried oregano"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "zucchini, sliced",
+          "es": "zapallitos, en rodajas",
+          "fil": "zucchini, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "red bell pepper, sliced",
+          "es": "morrón rojo, en tiras",
+          "fil": "red bell pepper, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, sliced",
+          "es": "cebolla, en rodajas",
+          "fil": "sibuyas, hiniwa"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -237,8 +497,19 @@
     "cook_min": 35,
     "total_min": 45,
     "servings": 4,
-    "tags": ["High-Fiber", "Gluten-Free", "Vegetarian"],
-    "nutrition": {"cal": 270, "carbs": 34, "protein": 15, "fat": 8, "fiber": 12, "gi": 30},
+    "tags": [
+      "High-Fiber",
+      "Gluten-Free",
+      "Vegetarian"
+    ],
+    "nutrition": {
+      "cal": 384,
+      "carbs": 70,
+      "protein": 26,
+      "fat": 1,
+      "fiber": 13,
+      "gi": 30
+    },
     "name": {
       "en": "Paraguayan Lentil Stew",
       "es": "Guiso de Lentejas Paraguayo",
@@ -255,13 +526,69 @@
       "fil": "Ang lentils ay naturally low-GI at mayaman sa soluble fiber, kaya ang everyday na stew na ito ay gradually ma-digest sa halip na magpataas ng blood sugar. Ang pag-asa sa mismong lentils bilang main carb source, na walang idinagdag na kanin, ay pinapanatili itong genuinely gentle, filling na meal."
     },
     "ingredients": [
-      {"qty_us": "2 cups", "qty_metric": "400 g", "text": {"en": "dried lentils, rinsed", "es": "lentejas secas, enjuagadas", "fil": "dried lentils, hinugasan"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}},
-      {"qty_us": "5 cups", "qty_metric": "1.2 L", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}}
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "400 g",
+        "text": {
+          "en": "dried lentils, rinsed",
+          "es": "lentejas secas, enjuagadas",
+          "fil": "dried lentils, hinugasan"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "green bell pepper, chopped",
+          "es": "morrón verde, picado",
+          "fil": "green bell pepper, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "ground cumin",
+          "es": "comino molido",
+          "fil": "ground cumin"
+        }
+      },
+      {
+        "qty_us": "5 cups",
+        "qty_metric": "1.2 L",
+        "text": {
+          "en": "low-sodium vegetable broth",
+          "es": "caldo de verduras bajo en sodio",
+          "fil": "low-sodium vegetable broth"
+        }
+      }
     ],
     "instructions": {
       "en": [

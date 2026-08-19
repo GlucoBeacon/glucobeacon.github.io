@@ -8,8 +8,19 @@
     "cook_min": 25,
     "total_min": 40,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 220, "carbs": 12, "protein": 28, "fat": 6, "fiber": 2, "gi": 30},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 234,
+      "carbs": 15,
+      "protein": 36,
+      "fat": 3,
+      "fiber": 3,
+      "gi": 30
+    },
     "name": {
       "en": "Chilean Fish Soup (Caldillo de Congrio)",
       "es": "Caldillo de Congrio",
@@ -26,13 +37,69 @@
       "fil": "Ang soup na ito ay gawa sa lean white fish at light na vegetable broth sa halip na cream o heavy roux, kaya naturally mababa sa carbs at fat habang nagbibigay ng full serving ng protein. Ang kaunting potato at carrot ay gradually ma-digest sa loob ng broth sa halip na magpataas ng blood sugar tulad ng gagawin ng starch-heavy na stew."
     },
     "ingredients": [
-      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "firm white fish fillets (congrio, cod, or halibut), cut into chunks", "es": "filetes de pescado blanco firme (congrio, bacalao o mero), en trozos", "fil": "firm white fish fillets (congrio, cod, o halibut), hiniwa na chunks"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small potato, cubed", "es": "papa pequeña, en cubos", "fil": "maliit na potato, dinice"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "carrot, sliced", "es": "zanahoria, en rodajas", "fil": "carrot, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
-      {"qty_us": "5 cups", "qty_metric": "1.2 L", "text": {"en": "low-sodium fish or vegetable broth", "es": "caldo de pescado o verduras bajo en sodio", "fil": "low-sodium fish o vegetable broth"}}
+      {
+        "qty_us": "1.5 lb",
+        "qty_metric": "675 g",
+        "text": {
+          "en": "firm white fish fillets (congrio, cod, or halibut), cut into chunks",
+          "es": "filetes de pescado blanco firme (congrio, bacalao o mero), en trozos",
+          "fil": "firm white fish fillets (congrio, cod, o halibut), hiniwa na chunks"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "small potato, cubed",
+          "es": "papa pequeña, en cubos",
+          "fil": "maliit na potato, dinice"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "carrot, sliced",
+          "es": "zanahoria, en rodajas",
+          "fil": "carrot, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "10 g",
+        "text": {
+          "en": "fresh cilantro, chopped",
+          "es": "cilantro fresco, picado",
+          "fil": "fresh cilantro, hiniwa"
+        }
+      },
+      {
+        "qty_us": "5 cups",
+        "qty_metric": "1.2 L",
+        "text": {
+          "en": "low-sodium fish or vegetable broth",
+          "es": "caldo de pescado o verduras bajo en sodio",
+          "fil": "low-sodium fish o vegetable broth"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -67,8 +134,20 @@
     "cook_min": 0,
     "total_min": 10,
     "servings": 4,
-    "tags": ["Vegetarian", "Vegan", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 90, "carbs": 8, "protein": 2, "fat": 6, "fiber": 2, "gi": 15},
+    "tags": [
+      "Vegetarian",
+      "Vegan",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 90,
+      "carbs": 8,
+      "protein": 2,
+      "fat": 6,
+      "fiber": 2,
+      "gi": 15
+    },
     "name": {
       "en": "Chilean Tomato and Onion Salad",
       "es": "Ensalada Chilena",
@@ -85,10 +164,42 @@
       "fil": "Ang salad na ito ay essentially tomato, sibuyas, at light na oil dressing lang -- walang starch, walang added sugar, at kakaunting carbs overall, kaya halos walang epekto sa blood sugar habang nagdadagdag ng real volume at freshness sa kahit anong meal."
     },
     "ingredients": [
-      {"qty_us": "4", "qty_metric": "4", "text": {"en": "ripe tomatoes, thinly sliced", "es": "tomates maduros, en rodajas finas", "fil": "hinog na kamatis, pinong hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "white onion, very thinly sliced", "es": "cebolla blanca, en corte muy fino", "fil": "white onion, napakapinong hiniwa"}},
-      {"qty_us": "2 tbsp", "qty_metric": "8 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+      {
+        "qty_us": "4",
+        "qty_metric": "4",
+        "text": {
+          "en": "ripe tomatoes, thinly sliced",
+          "es": "tomates maduros, en rodajas finas",
+          "fil": "hinog na kamatis, pinong hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "white onion, very thinly sliced",
+          "es": "cebolla blanca, en corte muy fino",
+          "fil": "white onion, napakapinong hiniwa"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "8 g",
+        "text": {
+          "en": "fresh cilantro, chopped",
+          "es": "cilantro fresco, picado",
+          "fil": "fresh cilantro, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -120,8 +231,18 @@
     "cook_min": 40,
     "total_min": 65,
     "servings": 4,
-    "tags": ["High-Protein", "Gluten-Free"],
-    "nutrition": {"cal": 380, "carbs": 34, "protein": 26, "fat": 16, "fiber": 5, "gi": 50},
+    "tags": [
+      "High-Protein",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 380,
+      "carbs": 34,
+      "protein": 26,
+      "fat": 16,
+      "fiber": 5,
+      "gi": 50
+    },
     "name": {
       "en": "Light Chilean Corn and Beef Pie",
       "es": "Pastel de Choclo Liviano",
@@ -138,14 +259,78 @@
       "fil": "Ang traditional na corn topping ay kadalasang pinapatamis ng sugar, na nagtataas pa sa isang dish na already corn-heavy sa glycemic load. Ang version na ito ay tinatanggal nang buo ang added sugar at gumagamit ng lean ground beef sa filling, para lumabas ang real na pastel de choclo flavor na walang extra sugar spike."
     },
     "ingredients": [
-      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "lean ground beef", "es": "carne molida magra", "fil": "lean ground beef"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "hard-boiled eggs, sliced", "es": "huevos duros, en rodajas", "fil": "hard-boiled na itlog, hiniwa"}},
-      {"qty_us": "8", "qty_metric": "8", "text": {"en": "black olives", "es": "aceitunas negras", "fil": "black olives"}},
-      {"qty_us": "4 cups", "qty_metric": "600 g", "text": {"en": "fresh or frozen corn kernels", "es": "granos de choclo frescos o congelados", "fil": "fresh o frozen na corn kernels"}},
-      {"qty_us": "1/2 cup", "qty_metric": "120 ml", "text": {"en": "low-fat milk", "es": "leche descremada", "fil": "low-fat na gatas"}},
-      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+      {
+        "qty_us": "1 lb",
+        "qty_metric": "450 g",
+        "text": {
+          "en": "lean ground beef",
+          "es": "carne molida magra",
+          "fil": "lean ground beef"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "ground cumin",
+          "es": "comino molido",
+          "fil": "ground cumin"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "hard-boiled eggs, sliced",
+          "es": "huevos duros, en rodajas",
+          "fil": "hard-boiled na itlog, hiniwa"
+        }
+      },
+      {
+        "qty_us": "8",
+        "qty_metric": "8",
+        "text": {
+          "en": "black olives",
+          "es": "aceitunas negras",
+          "fil": "black olives"
+        }
+      },
+      {
+        "qty_us": "4 cups",
+        "qty_metric": "600 g",
+        "text": {
+          "en": "fresh or frozen corn kernels",
+          "es": "granos de choclo frescos o congelados",
+          "fil": "fresh o frozen na corn kernels"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "120 ml",
+        "text": {
+          "en": "low-fat milk",
+          "es": "leche descremada",
+          "fil": "low-fat na gatas"
+        }
+      },
+      {
+        "qty_us": "1 tbsp",
+        "qty_metric": "15 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -180,8 +365,19 @@
     "cook_min": 35,
     "total_min": 45,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 320, "carbs": 10, "protein": 36, "fat": 14, "fiber": 4, "gi": 15},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 320,
+      "carbs": 10,
+      "protein": 36,
+      "fat": 14,
+      "fiber": 4,
+      "gi": 15
+    },
     "name": {
       "en": "Baked Chicken with Green Beans",
       "es": "Pollo al Horno con Porotos Verdes",
@@ -198,12 +394,60 @@
       "fil": "Ang roasted na chicken na may green vegetable side ay halos pinakamababa sa carbs at GI na pwedeng makuha sa isang hearty dinner -- walang starch sa plato, kaya halos walang epekto sa blood sugar ang meal habang nagbibigay pa rin ng malaki, satisfying na protein portion."
     },
     "ingredients": [
-      {"qty_us": "4", "qty_metric": "4", "text": {"en": "bone-in chicken thighs, skin removed", "es": "muslos de pollo con hueso, sin piel", "fil": "bone-in chicken thighs, tinanggalan ng balat"}},
-      {"qty_us": "4 cloves", "qty_metric": "4 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "dried oregano", "es": "orégano seco", "fil": "dried oregano"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
-      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "green beans, trimmed", "es": "porotos verdes, limpios", "fil": "green beans, nilinis"}},
-      {"qty_us": "2 cloves", "qty_metric": "2 cloves", "text": {"en": "garlic, sliced, for the beans", "es": "ajo, en láminas, para los porotos", "fil": "bawang, hiniwa, para sa green beans"}}
+      {
+        "qty_us": "4",
+        "qty_metric": "4",
+        "text": {
+          "en": "bone-in chicken thighs, skin removed",
+          "es": "muslos de pollo con hueso, sin piel",
+          "fil": "bone-in chicken thighs, tinanggalan ng balat"
+        }
+      },
+      {
+        "qty_us": "4 cloves",
+        "qty_metric": "4 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "dried oregano",
+          "es": "orégano seco",
+          "fil": "dried oregano"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      },
+      {
+        "qty_us": "1 lb",
+        "qty_metric": "450 g",
+        "text": {
+          "en": "green beans, trimmed",
+          "es": "porotos verdes, limpios",
+          "fil": "green beans, nilinis"
+        }
+      },
+      {
+        "qty_us": "2 cloves",
+        "qty_metric": "2 cloves",
+        "text": {
+          "en": "garlic, sliced, for the beans",
+          "es": "ajo, en láminas, para los porotos",
+          "fil": "bawang, hiniwa, para sa green beans"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -238,8 +482,18 @@
     "cook_min": 35,
     "total_min": 55,
     "servings": 4,
-    "tags": ["High-Fiber", "Gluten-Free"],
-    "nutrition": {"cal": 300, "carbs": 30, "protein": 20, "fat": 10, "fiber": 7, "gi": 47},
+    "tags": [
+      "High-Fiber",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 219,
+      "carbs": 22,
+      "protein": 17,
+      "fat": 8,
+      "fiber": 3,
+      "gi": 47
+    },
     "name": {
       "en": "Light Charquicán",
       "es": "Charquicán Liviano",
@@ -256,14 +510,78 @@
       "fil": "Ang charquicán ay traditionally naghahalo ng potato at corn sa parehong pot, na nagtatambak ng dalawang mabilis-ma-digest na starch. Ang pag-lean ng mash papunta sa squash at green beans -- pareho mas mataas sa fiber at mas mababa ang GI -- habang may katamtaman lang na potato ay pinapanatili ang real, hearty, mashed texture ng dish na may mas gentle na epekto sa blood sugar."
     },
     "ingredients": [
-      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "lean beef, cubed", "es": "carne magra, en cubos", "fil": "lean beef, dinice"}},
-      {"qty_us": "3 cups", "qty_metric": "450 g", "text": {"en": "pumpkin or winter squash, cubed", "es": "zapallo, en cubos", "fil": "kalabasa, dinice"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small potato, cubed", "es": "papa pequeña, en cubos", "fil": "maliit na potato, dinice"}},
-      {"qty_us": "1 cup", "qty_metric": "100 g", "text": {"en": "green beans, chopped", "es": "porotos verdes, picados", "fil": "green beans, hiniwa"}},
-      {"qty_us": "1/2 cup", "qty_metric": "75 g", "text": {"en": "corn kernels", "es": "granos de choclo", "fil": "corn kernels"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "smoked paprika", "es": "pimentón ahumado", "fil": "smoked paprika"}},
-      {"qty_us": "3 cups", "qty_metric": "700 ml", "text": {"en": "low-sodium beef broth", "es": "caldo de carne bajo en sodio", "fil": "low-sodium beef broth"}}
+      {
+        "qty_us": "1/2 lb",
+        "qty_metric": "225 g",
+        "text": {
+          "en": "lean beef, cubed",
+          "es": "carne magra, en cubos",
+          "fil": "lean beef, dinice"
+        }
+      },
+      {
+        "qty_us": "3 cups",
+        "qty_metric": "450 g",
+        "text": {
+          "en": "pumpkin or winter squash, cubed",
+          "es": "zapallo, en cubos",
+          "fil": "kalabasa, dinice"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "small potato, cubed",
+          "es": "papa pequeña, en cubos",
+          "fil": "maliit na potato, dinice"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "100 g",
+        "text": {
+          "en": "green beans, chopped",
+          "es": "porotos verdes, picados",
+          "fil": "green beans, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "75 g",
+        "text": {
+          "en": "corn kernels",
+          "es": "granos de choclo",
+          "fil": "corn kernels"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "smoked paprika",
+          "es": "pimentón ahumado",
+          "fil": "smoked paprika"
+        }
+      },
+      {
+        "qty_us": "3 cups",
+        "qty_metric": "700 ml",
+        "text": {
+          "en": "low-sodium beef broth",
+          "es": "caldo de carne bajo en sodio",
+          "fil": "low-sodium beef broth"
+        }
+      }
     ],
     "instructions": {
       "en": [

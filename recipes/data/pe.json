@@ -8,8 +8,19 @@
     "cook_min": 0,
     "total_min": 25,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 210, "carbs": 10, "protein": 28, "fat": 6, "fiber": 2, "gi": 5},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 210,
+      "carbs": 10,
+      "protein": 28,
+      "fat": 6,
+      "fiber": 2,
+      "gi": 5
+    },
     "name": {
       "en": "Peruvian Fish Ceviche",
       "es": "Ceviche de Pescado",
@@ -26,12 +37,60 @@
       "fil": "Ang ceviche ay gawa halos lahat sa lean fish, citrus, at gulay -- walang starch o added sugar sa dish, kaya halos zero ang glycemic impact nito habang nagbibigay pa rin ng full serving ng high-quality protein."
     },
     "ingredients": [
-      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "firm white fish fillet (such as sea bass or tilapia), cubed", "es": "filete de pescado blanco firme (como corvina o tilapia), en cubos", "fil": "firm white fish fillet (tulad ng sea bass o tilapia), dinice"}},
-      {"qty_us": "1 cup", "qty_metric": "240 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red onion, thinly sliced", "es": "cebolla morada, en juliana fina", "fil": "red onion, pinong hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "aji amarillo or jalapeño chili, minced", "es": "ají amarillo o jalapeño, picado", "fil": "aji amarillo o jalapeño chili, tinadtad"}},
-      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "sweet potato, boiled and sliced, for serving (optional, small portion)", "es": "camote, hervido y en rodajas, para servir (opcional, porción pequeña)", "fil": "kamote, nilaga at hiniwa, pang-serve (optional, maliit na portion)"}}
+      {
+        "qty_us": "1 lb",
+        "qty_metric": "450 g",
+        "text": {
+          "en": "firm white fish fillet (such as sea bass or tilapia), cubed",
+          "es": "filete de pescado blanco firme (como corvina o tilapia), en cubos",
+          "fil": "firm white fish fillet (tulad ng sea bass o tilapia), dinice"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "240 ml",
+        "text": {
+          "en": "fresh lime juice",
+          "es": "jugo de limón fresco",
+          "fil": "fresh lime juice"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "red onion, thinly sliced",
+          "es": "cebolla morada, en juliana fina",
+          "fil": "red onion, pinong hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "aji amarillo or jalapeño chili, minced",
+          "es": "ají amarillo o jalapeño, picado",
+          "fil": "aji amarillo o jalapeño chili, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "10 g",
+        "text": {
+          "en": "fresh cilantro, chopped",
+          "es": "cilantro fresco, picado",
+          "fil": "fresh cilantro, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "sweet potato, boiled and sliced, for serving (optional, small portion)",
+          "es": "camote, hervido y en rodajas, para servir (opcional, porción pequeña)",
+          "fil": "kamote, nilaga at hiniwa, pang-serve (optional, maliit na portion)"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -66,8 +125,18 @@
     "cook_min": 20,
     "total_min": 35,
     "servings": 4,
-    "tags": ["High-Fiber", "High-Protein"],
-    "nutrition": {"cal": 380, "carbs": 38, "protein": 24, "fat": 14, "fiber": 6, "gi": 53},
+    "tags": [
+      "High-Fiber",
+      "High-Protein"
+    ],
+    "nutrition": {
+      "cal": 255,
+      "carbs": 22,
+      "protein": 21,
+      "fat": 9,
+      "fiber": 3,
+      "gi": 53
+    },
     "name": {
       "en": "Quinoa Chaufa",
       "es": "Quinoa Chaufa",
@@ -84,13 +153,69 @@
       "fil": "Ang white rice chaufa ay mabilis ma-digest at pwedeng mabilis magpataas ng blood sugar sa malaking stir-fried na portion. Ang quinoa ay whole grain na may mas maraming fiber at protein kaysa sa white rice, kaya ang pag-swap dito para sa parehong minamahal na chifa flavors ay nagbibigay ng noticeably mas gentle at gradual na pagtaas ng blood sugar."
     },
     "ingredients": [
-      {"qty_us": "2 cups", "qty_metric": "370 g", "text": {"en": "cooked quinoa, cooled", "es": "quinua cocida, fría", "fil": "lutong quinoa, palamig na"}},
-      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "chicken breast or shrimp, diced", "es": "pechuga de pollo o camarones, en cubos", "fil": "chicken breast o hipon, dinice"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "eggs, beaten", "es": "huevos, batidos", "fil": "itlog, pinaghalo"}},
-      {"qty_us": "3", "qty_metric": "3", "text": {"en": "scallions, sliced", "es": "cebollín, en rodajas", "fil": "scallions, hiniwa"}},
-      {"qty_us": "1/2 cup", "qty_metric": "65 g", "text": {"en": "mixed bell peppers, diced", "es": "morrones mixtos, en cubos", "fil": "halo-halong bell peppers, dinice"}},
-      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "low-sodium soy sauce", "es": "salsa de soja baja en sodio", "fil": "low-sodium soy sauce"}},
-      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "sesame or vegetable oil", "es": "aceite de sésamo o vegetal", "fil": "sesame o vegetable oil"}}
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "370 g",
+        "text": {
+          "en": "cooked quinoa, cooled",
+          "es": "quinua cocida, fría",
+          "fil": "lutong quinoa, palamig na"
+        }
+      },
+      {
+        "qty_us": "1/2 lb",
+        "qty_metric": "225 g",
+        "text": {
+          "en": "chicken breast or shrimp, diced",
+          "es": "pechuga de pollo o camarones, en cubos",
+          "fil": "chicken breast o hipon, dinice"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "eggs, beaten",
+          "es": "huevos, batidos",
+          "fil": "itlog, pinaghalo"
+        }
+      },
+      {
+        "qty_us": "3",
+        "qty_metric": "3",
+        "text": {
+          "en": "scallions, sliced",
+          "es": "cebollín, en rodajas",
+          "fil": "scallions, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "65 g",
+        "text": {
+          "en": "mixed bell peppers, diced",
+          "es": "morrones mixtos, en cubos",
+          "fil": "halo-halong bell peppers, dinice"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "low-sodium soy sauce",
+          "es": "salsa de soja baja en sodio",
+          "fil": "low-sodium soy sauce"
+        }
+      },
+      {
+        "qty_us": "1 tbsp",
+        "qty_metric": "15 ml",
+        "text": {
+          "en": "sesame or vegetable oil",
+          "es": "aceite de sésamo o vegetal",
+          "fil": "sesame o vegetable oil"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -125,8 +250,19 @@
     "cook_min": 15,
     "total_min": 45,
     "servings": 4,
-    "tags": ["Low-Carb", "Gluten-Free", "High-Protein"],
-    "nutrition": {"cal": 280, "carbs": 20, "protein": 22, "fat": 12, "fiber": 5, "gi": 45},
+    "tags": [
+      "Low-Carb",
+      "Gluten-Free",
+      "High-Protein"
+    ],
+    "nutrition": {
+      "cal": 280,
+      "carbs": 20,
+      "protein": 22,
+      "fat": 12,
+      "fiber": 5,
+      "gi": 45
+    },
     "name": {
       "en": "Cauliflower Causa Stuffed with Chicken",
       "es": "Causa de Coliflor Rellena de Pollo",
@@ -143,13 +279,69 @@
       "fil": "Ang traditional na causa ay gawa halos lahat sa mashed yellow potato, na high-GI at madaling ma-overeat sa mayaman at buttery na dish. Ang pagpalit sa karamihan ng potato ng mashed cauliflower -- na may kaunti lang para sa authentic color at flavor -- ay malaking bawas sa carb load habang pinapanatili ang parehong creamy, aji amarillo-spiced na layers."
     },
     "ingredients": [
-      {"qty_us": "4 cups", "qty_metric": "500 g", "text": {"en": "cauliflower florets", "es": "coliflor en floretes", "fil": "cauliflower florets"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small yellow potato, boiled and mashed", "es": "papa amarilla pequeña, hervida y hecha puré", "fil": "maliit na yellow potato, nilaga at ginawang mash"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 g", "text": {"en": "aji amarillo paste", "es": "pasta de ají amarillo", "fil": "aji amarillo paste"}},
-      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
-      {"qty_us": "2 cups", "qty_metric": "280 g", "text": {"en": "cooked chicken breast, shredded", "es": "pechuga de pollo cocida, desmenuzada", "fil": "lutong chicken breast, tinadtad"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 g", "text": {"en": "light mayonnaise", "es": "mayonesa liviana", "fil": "light mayonnaise"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, sliced, for garnish", "es": "palta, en rodajas, para decorar", "fil": "avocado, hiniwa, pang-garnish"}}
+      {
+        "qty_us": "4 cups",
+        "qty_metric": "500 g",
+        "text": {
+          "en": "cauliflower florets",
+          "es": "coliflor en floretes",
+          "fil": "cauliflower florets"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "small yellow potato, boiled and mashed",
+          "es": "papa amarilla pequeña, hervida y hecha puré",
+          "fil": "maliit na yellow potato, nilaga at ginawang mash"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 g",
+        "text": {
+          "en": "aji amarillo paste",
+          "es": "pasta de ají amarillo",
+          "fil": "aji amarillo paste"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "fresh lime juice",
+          "es": "jugo de limón fresco",
+          "fil": "fresh lime juice"
+        }
+      },
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "280 g",
+        "text": {
+          "en": "cooked chicken breast, shredded",
+          "es": "pechuga de pollo cocida, desmenuzada",
+          "fil": "lutong chicken breast, tinadtad"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 g",
+        "text": {
+          "en": "light mayonnaise",
+          "es": "mayonesa liviana",
+          "fil": "light mayonnaise"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "avocado, sliced, for garnish",
+          "es": "palta, en rodajas, para decorar",
+          "fil": "avocado, hiniwa, pang-garnish"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -184,8 +376,18 @@
     "cook_min": 15,
     "total_min": 30,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb"],
-    "nutrition": {"cal": 360, "carbs": 22, "protein": 32, "fat": 16, "fiber": 4, "gi": 40},
+    "tags": [
+      "High-Protein",
+      "Low-Carb"
+    ],
+    "nutrition": {
+      "cal": 321,
+      "carbs": 7,
+      "protein": 26,
+      "fat": 21,
+      "fiber": 2,
+      "gi": 40
+    },
     "name": {
       "en": "Light Lomo Saltado",
       "es": "Lomo Saltado Ligero",
@@ -202,14 +404,78 @@
       "fil": "Ang restaurant lomo saltado ay traditionally served sa ibabaw ng french fries at white rice nang sabay -- doble na dosis ng mabilis-ma-digest na starch. Ang version na ito ay pinapanatili ang parehong beef, kamatis, at soy sauce stir-fry pero tinatanggal ang fries at rice, sa halip dinadagdagan ang plato ng extra bell pepper at sibuyas para manatiling satisfying na may mas kaunting epekto sa blood sugar."
     },
     "ingredients": [
-      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "beef sirloin, sliced into strips", "es": "bife de lomo, en tiras", "fil": "beef sirloin, hiniwa na strips"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, cut into wedges", "es": "tomates, en gajos", "fil": "kamatis, hiniwa na wedges"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red onion, sliced into strips", "es": "cebolla morada, en tiras", "fil": "red onion, hiniwa na strips"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "yellow bell pepper, sliced", "es": "morrón amarillo, en tiras", "fil": "yellow bell pepper, hiniwa"}},
-      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "low-sodium soy sauce", "es": "salsa de soja baja en sodio", "fil": "low-sodium soy sauce"}},
-      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "red wine vinegar", "es": "vinagre de vino tinto", "fil": "red wine vinegar"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "vegetable oil", "es": "aceite vegetal", "fil": "vegetable oil"}},
-      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped, for garnish", "es": "cilantro fresco, picado, para decorar", "fil": "fresh cilantro, hiniwa, pang-garnish"}}
+      {
+        "qty_us": "1 lb",
+        "qty_metric": "450 g",
+        "text": {
+          "en": "beef sirloin, sliced into strips",
+          "es": "bife de lomo, en tiras",
+          "fil": "beef sirloin, hiniwa na strips"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, cut into wedges",
+          "es": "tomates, en gajos",
+          "fil": "kamatis, hiniwa na wedges"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "red onion, sliced into strips",
+          "es": "cebolla morada, en tiras",
+          "fil": "red onion, hiniwa na strips"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "yellow bell pepper, sliced",
+          "es": "morrón amarillo, en tiras",
+          "fil": "yellow bell pepper, hiniwa"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "low-sodium soy sauce",
+          "es": "salsa de soja baja en sodio",
+          "fil": "low-sodium soy sauce"
+        }
+      },
+      {
+        "qty_us": "1 tbsp",
+        "qty_metric": "15 ml",
+        "text": {
+          "en": "red wine vinegar",
+          "es": "vinagre de vino tinto",
+          "fil": "red wine vinegar"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "vegetable oil",
+          "es": "aceite vegetal",
+          "fil": "vegetable oil"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "10 g",
+        "text": {
+          "en": "fresh cilantro, chopped, for garnish",
+          "es": "cilantro fresco, picado, para decorar",
+          "fil": "fresh cilantro, hiniwa, pang-garnish"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -244,8 +510,18 @@
     "cook_min": 25,
     "total_min": 40,
     "servings": 4,
-    "tags": ["High-Fiber", "High-Protein"],
-    "nutrition": {"cal": 300, "carbs": 30, "protein": 22, "fat": 10, "fiber": 5, "gi": 48},
+    "tags": [
+      "High-Fiber",
+      "High-Protein"
+    ],
+    "nutrition": {
+      "cal": 398,
+      "carbs": 42,
+      "protein": 29,
+      "fat": 13,
+      "fiber": 7,
+      "gi": 48
+    },
     "name": {
       "en": "Light Peruvian Creole Noodle Soup",
       "es": "Sopa a la Criolla Ligera",
@@ -262,15 +538,87 @@
       "fil": "Ang sopa a la criolla ay traditionally gumagamit ng malaking portion ng regular wheat noodles, na mabilis ma-digest sa mainit na broth. Ang pagpalit ng whole wheat noodles, paggamit ng mas maliit na noodle portion, at pagdagdag ng extra gulay sa mangkok ay nagpapabagal sa digestion at nagdadagdag ng fiber, habang ang gatas at oregano ay nagpapanatili ng parehong comforting, pamilyar na lasa."
     },
     "ingredients": [
-      {"qty_us": "1/2 lb", "qty_metric": "225 g", "text": {"en": "lean ground beef", "es": "carne molida magra", "fil": "lean ground beef"}},
-      {"qty_us": "6 oz", "qty_metric": "170 g", "text": {"en": "whole wheat spaghetti, broken into pieces", "es": "espagueti integral, quebrado en trozos", "fil": "whole wheat spaghetti, binali sa piraso"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "1 cup", "qty_metric": "150 g", "text": {"en": "mixed vegetables (carrots, peas), diced", "es": "verduras mixtas (zanahoria, arvejas), en cubos", "fil": "halo-halong gulay (carrots, peas), dinice"}},
-      {"qty_us": "1/2 cup", "qty_metric": "120 ml", "text": {"en": "low-fat milk", "es": "leche descremada", "fil": "low-fat na gatas"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "egg, poached, for topping (optional)", "es": "huevo, escalfado, para servir (opcional)", "fil": "itlog, poached, pang-topping (optional)"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "dried oregano", "es": "orégano seco", "fil": "dried oregano"}},
-      {"qty_us": "5 cups", "qty_metric": "1.2 L", "text": {"en": "low-sodium beef broth", "es": "caldo de carne bajo en sodio", "fil": "low-sodium beef broth"}}
+      {
+        "qty_us": "1/2 lb",
+        "qty_metric": "225 g",
+        "text": {
+          "en": "lean ground beef",
+          "es": "carne molida magra",
+          "fil": "lean ground beef"
+        }
+      },
+      {
+        "qty_us": "6 oz",
+        "qty_metric": "170 g",
+        "text": {
+          "en": "whole wheat spaghetti, broken into pieces",
+          "es": "espagueti integral, quebrado en trozos",
+          "fil": "whole wheat spaghetti, binali sa piraso"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "150 g",
+        "text": {
+          "en": "mixed vegetables (carrots, peas), diced",
+          "es": "verduras mixtas (zanahoria, arvejas), en cubos",
+          "fil": "halo-halong gulay (carrots, peas), dinice"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "120 ml",
+        "text": {
+          "en": "low-fat milk",
+          "es": "leche descremada",
+          "fil": "low-fat na gatas"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "egg, poached, for topping (optional)",
+          "es": "huevo, escalfado, para servir (opcional)",
+          "fil": "itlog, poached, pang-topping (optional)"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "dried oregano",
+          "es": "orégano seco",
+          "fil": "dried oregano"
+        }
+      },
+      {
+        "qty_us": "5 cups",
+        "qty_metric": "1.2 L",
+        "text": {
+          "en": "low-sodium beef broth",
+          "es": "caldo de carne bajo en sodio",
+          "fil": "low-sodium beef broth"
+        }
+      }
     ],
     "instructions": {
       "en": [

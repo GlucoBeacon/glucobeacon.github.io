@@ -8,8 +8,19 @@
     "cook_min": 15,
     "total_min": 25,
     "servings": 4,
-    "tags": ["High-Fiber", "Vegetarian", "Gluten-Free"],
-    "nutrition": {"cal": 260, "carbs": 34, "protein": 10, "fat": 8, "fiber": 9, "gi": 45},
+    "tags": [
+      "High-Fiber",
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 362,
+      "carbs": 50,
+      "protein": 14,
+      "fat": 13,
+      "fiber": 15,
+      "gi": 45
+    },
     "name": {
       "en": "Light Gallo Pinto",
       "es": "Gallo Pinto Ligero",
@@ -26,12 +37,60 @@
       "fil": "Ang traditional na gallo pinto ay halos pantay na parte ng kanin at beans, pero mas mabilis ma-digest ang kanin kaysa sa beans at nagdudulot ito ng karamihan ng glycemic impact ng dish. Ang pag-shift ng ratio papunta sa mas maraming beans -- naturally low-GI at mataas sa fiber -- habang gumagamit ng mas kaunting kanin ay nagpapanatili ng parehong real, oniony na gallo pinto flavor na may mas gentle na epekto sa blood sugar."
     },
     "ingredients": [
-      {"qty_us": "3 cups", "qty_metric": "500 g", "text": {"en": "cooked red or black beans, with a little of their liquid", "es": "frijoles rojos o negros cocidos, con un poco de su líquido", "fil": "lutong red o black beans, na may kaunting liquid nito"}},
-      {"qty_us": "1 cup", "qty_metric": "185 g", "text": {"en": "cooked white rice", "es": "arroz blanco cocido", "fil": "lutong white rice"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, finely chopped", "es": "cebolla, picada fina", "fil": "sibuyas, pinong hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, finely chopped", "es": "morrón verde, picado fino", "fil": "green bell pepper, pinong hiniwa"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "vegetable oil", "es": "aceite vegetal", "fil": "vegetable oil"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, sliced, for serving", "es": "aguacate, en rodajas, para servir", "fil": "avocado, hiniwa, pang-serve"}}
+      {
+        "qty_us": "3 cups",
+        "qty_metric": "500 g",
+        "text": {
+          "en": "cooked red or black beans, with a little of their liquid",
+          "es": "frijoles rojos o negros cocidos, con un poco de su líquido",
+          "fil": "lutong red o black beans, na may kaunting liquid nito"
+        }
+      },
+      {
+        "qty_us": "1 cup",
+        "qty_metric": "185 g",
+        "text": {
+          "en": "cooked white rice",
+          "es": "arroz blanco cocido",
+          "fil": "lutong white rice"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, finely chopped",
+          "es": "cebolla, picada fina",
+          "fil": "sibuyas, pinong hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "green bell pepper, finely chopped",
+          "es": "morrón verde, picado fino",
+          "fil": "green bell pepper, pinong hiniwa"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "vegetable oil",
+          "es": "aceite vegetal",
+          "fil": "vegetable oil"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "avocado, sliced, for serving",
+          "es": "aguacate, en rodajas, para servir",
+          "fil": "avocado, hiniwa, pang-serve"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -63,8 +122,18 @@
     "cook_min": 30,
     "total_min": 50,
     "servings": 4,
-    "tags": ["High-Fiber", "Gluten-Free"],
-    "nutrition": {"cal": 320, "carbs": 26, "protein": 22, "fat": 15, "fiber": 5, "gi": 45},
+    "tags": [
+      "High-Fiber",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 377,
+      "carbs": 50,
+      "protein": 28,
+      "fat": 7,
+      "fiber": 4,
+      "gi": 45
+    },
     "name": {
       "en": "Light Vigorón",
       "es": "Vigorón Ligero",
@@ -81,12 +150,60 @@
       "fil": "Ang traditional na vigorón ay nagpapares ng malaking portion ng yuca sa deep-fried na pork rind, na parehong nagdadagdag ng significant na carbs at fat. Ang pag-bake ng pork sa halip na iprito ito at pananatiling katamtaman ang yuca portion -- habang malaki ang tangy cabbage curtido salad, na naturally low-GI -- ay nagpapanatili sa real, tangy, hearty na character ng dish na may mas magaan na glycemic at fat load."
     },
     "ingredients": [
-      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "yuca, peeled and cubed", "es": "yuca, pelada y en cubos", "fil": "yuca, binalatan at dinice"}},
-      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "pork shoulder, trimmed and cubed", "es": "paleta de cerdo, sin grasa y en cubos", "fil": "pork shoulder, tinanggalan ng taba at dinice"}},
-      {"qty_us": "3 cups", "qty_metric": "300 g", "text": {"en": "cabbage, finely shredded", "es": "repollo, en tiras finas", "fil": "repolyo, pinong tinadtad"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "1/4 cup", "qty_metric": "60 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
-      {"qty_us": "1 tbsp", "qty_metric": "15 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}}
+      {
+        "qty_us": "1 lb",
+        "qty_metric": "450 g",
+        "text": {
+          "en": "yuca, peeled and cubed",
+          "es": "yuca, pelada y en cubos",
+          "fil": "yuca, binalatan at dinice"
+        }
+      },
+      {
+        "qty_us": "1 lb",
+        "qty_metric": "450 g",
+        "text": {
+          "en": "pork shoulder, trimmed and cubed",
+          "es": "paleta de cerdo, sin grasa y en cubos",
+          "fil": "pork shoulder, tinanggalan ng taba at dinice"
+        }
+      },
+      {
+        "qty_us": "3 cups",
+        "qty_metric": "300 g",
+        "text": {
+          "en": "cabbage, finely shredded",
+          "es": "repollo, en tiras finas",
+          "fil": "repolyo, pinong tinadtad"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "60 ml",
+        "text": {
+          "en": "fresh lime juice",
+          "es": "jugo de limón fresco",
+          "fil": "fresh lime juice"
+        }
+      },
+      {
+        "qty_us": "1 tbsp",
+        "qty_metric": "15 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -118,8 +235,19 @@
     "cook_min": 35,
     "total_min": 45,
     "servings": 4,
-    "tags": ["High-Fiber", "Gluten-Free", "Vegetarian"],
-    "nutrition": {"cal": 250, "carbs": 32, "protein": 13, "fat": 7, "fiber": 11, "gi": 28},
+    "tags": [
+      "High-Fiber",
+      "Gluten-Free",
+      "Vegetarian"
+    ],
+    "nutrition": {
+      "cal": 344,
+      "carbs": 63,
+      "protein": 23,
+      "fat": 1,
+      "fiber": 15,
+      "gi": 28
+    },
     "name": {
       "en": "Nicaraguan Bean Soup",
       "es": "Sopa de Frijoles Nicaragüense",
@@ -136,12 +264,60 @@
       "fil": "Ang beans ay naturally low-GI at puno ng soluble fiber, kaya ang soup na ito ay gradually nagre-release ng carbohydrates sa halip na mabilis na spike. Ang pag-asa nang buo sa beans bilang carb base, na walang kanin o tinapay, ay ginagawa itong genuinely gentle na option para sa blood sugar."
     },
     "ingredients": [
-      {"qty_us": "2 cups", "qty_metric": "400 g", "text": {"en": "dried red beans, soaked overnight", "es": "frijoles rojos secos, remojados toda la noche", "fil": "dried red beans, binabad overnight"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
-      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}},
-      {"qty_us": "6 cups", "qty_metric": "1.4 L", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}}
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "400 g",
+        "text": {
+          "en": "dried red beans, soaked overnight",
+          "es": "frijoles rojos secos, remojados toda la noche",
+          "fil": "dried red beans, binabad overnight"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "green bell pepper, chopped",
+          "es": "morrón verde, picado",
+          "fil": "green bell pepper, hiniwa"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "ground cumin",
+          "es": "comino molido",
+          "fil": "ground cumin"
+        }
+      },
+      {
+        "qty_us": "6 cups",
+        "qty_metric": "1.4 L",
+        "text": {
+          "en": "low-sodium vegetable broth",
+          "es": "caldo de verduras bajo en sodio",
+          "fil": "low-sodium vegetable broth"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -173,8 +349,19 @@
     "cook_min": 20,
     "total_min": 35,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 260, "carbs": 6, "protein": 34, "fat": 12, "fiber": 2, "gi": 5},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 260,
+      "carbs": 6,
+      "protein": 34,
+      "fat": 12,
+      "fiber": 2,
+      "gi": 5
+    },
     "name": {
       "en": "Light Grilled Fish, Tipitapa-Style",
       "es": "Pescado a la Tipitapa Ligero",
@@ -191,12 +378,60 @@
       "fil": "Ang classic na Tipitapa-style na isda ay deep-fried nang buo, na nagdadagdag ng substantial na absorbed oil na walang idinagdag na real carbs. Ang pag-grill sa parehong isda sa halip ay tinatanggal ang added fat na iyon habang pinapanatili ang tangy na cabbage-at-onion topping na nagbibigay sa dish ng real character nito, na ginagawang mas light ang version na ito overall."
     },
     "ingredients": [
-      {"qty_us": "4", "qty_metric": "4", "text": {"en": "whole small fish or thick fish fillets", "es": "pescados enteros pequeños o filetes gruesos", "fil": "buong maliit na isda o makapal na fish fillets"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
-      {"qty_us": "2 cups", "qty_metric": "150 g", "text": {"en": "cabbage, finely shredded", "es": "repollo, en tiras finas", "fil": "repolyo, pinong tinadtad"}},
-      {"qty_us": "1/2", "qty_metric": "1/2", "text": {"en": "onion, thinly sliced", "es": "cebolla, en juliana fina", "fil": "sibuyas, pinong hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "tomato, diced", "es": "tomate, en cubos", "fil": "kamatis, dinice"}}
+      {
+        "qty_us": "4",
+        "qty_metric": "4",
+        "text": {
+          "en": "whole small fish or thick fish fillets",
+          "es": "pescados enteros pequeños o filetes gruesos",
+          "fil": "buong maliit na isda o makapal na fish fillets"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "fresh lime juice",
+          "es": "jugo de limón fresco",
+          "fil": "fresh lime juice"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      },
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "150 g",
+        "text": {
+          "en": "cabbage, finely shredded",
+          "es": "repollo, en tiras finas",
+          "fil": "repolyo, pinong tinadtad"
+        }
+      },
+      {
+        "qty_us": "1/2",
+        "qty_metric": "1/2",
+        "text": {
+          "en": "onion, thinly sliced",
+          "es": "cebolla, en juliana fina",
+          "fil": "sibuyas, pinong hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "tomato, diced",
+          "es": "tomate, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -228,8 +463,18 @@
     "cook_min": 35,
     "total_min": 55,
     "servings": 4,
-    "tags": ["High-Protein", "Gluten-Free"],
-    "nutrition": {"cal": 320, "carbs": 24, "protein": 28, "fat": 13, "fiber": 5, "gi": 48},
+    "tags": [
+      "High-Protein",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 387,
+      "carbs": 18,
+      "protein": 40,
+      "fat": 16,
+      "fiber": 3,
+      "gi": 48
+    },
     "name": {
       "en": "Light Indio Viejo",
       "es": "Indio Viejo Ligero",
@@ -246,14 +491,78 @@
       "fil": "Ang traditional na indio viejo ay gumagamit ng malaking halaga ng corn masa para lumapot ang stew, na nagtataas ng glycemic load nito. Ang paggamit ng mas kaunting masa at pagdaragdag ng extra gulay at real na shredded beef sa stew ay pinapanatili ang distinctive na mint-at-citrus flavor ng dish habang binabawasan kung gaano kabilis nitong itataas ang blood sugar."
     },
     "ingredients": [
-      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "beef, cooked and shredded", "es": "carne de res, cocida y desmechada", "fil": "beef, niluto at tinadtad"}},
-      {"qty_us": "1/3 cup", "qty_metric": "45 g", "text": {"en": "fine cornmeal, dissolved in a little broth", "es": "harina de maíz fina, disuelta en un poco de caldo", "fil": "fine cornmeal, tinunaw sa kaunting broth"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "green bell pepper, chopped", "es": "morrón verde, picado", "fil": "green bell pepper, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "fresh sour orange or lime juice", "es": "jugo de naranja agria o limón fresco", "fil": "fresh sour orange o lime juice"}},
-      {"qty_us": "2 tbsp", "qty_metric": "8 g", "text": {"en": "fresh mint, chopped", "es": "hierbabuena fresca, picada", "fil": "fresh mint, hiniwa"}},
-      {"qty_us": "4 cups", "qty_metric": "950 ml", "text": {"en": "low-sodium beef broth", "es": "caldo de carne bajo en sodio", "fil": "low-sodium beef broth"}}
+      {
+        "qty_us": "1.5 lb",
+        "qty_metric": "675 g",
+        "text": {
+          "en": "beef, cooked and shredded",
+          "es": "carne de res, cocida y desmechada",
+          "fil": "beef, niluto at tinadtad"
+        }
+      },
+      {
+        "qty_us": "1/3 cup",
+        "qty_metric": "45 g",
+        "text": {
+          "en": "fine cornmeal, dissolved in a little broth",
+          "es": "harina de maíz fina, disuelta en un poco de caldo",
+          "fil": "fine cornmeal, tinunaw sa kaunting broth"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "green bell pepper, chopped",
+          "es": "morrón verde, picado",
+          "fil": "green bell pepper, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "fresh sour orange or lime juice",
+          "es": "jugo de naranja agria o limón fresco",
+          "fil": "fresh sour orange o lime juice"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "8 g",
+        "text": {
+          "en": "fresh mint, chopped",
+          "es": "hierbabuena fresca, picada",
+          "fil": "fresh mint, hiniwa"
+        }
+      },
+      {
+        "qty_us": "4 cups",
+        "qty_metric": "950 ml",
+        "text": {
+          "en": "low-sodium beef broth",
+          "es": "caldo de carne bajo en sodio",
+          "fil": "low-sodium beef broth"
+        }
+      }
     ],
     "instructions": {
       "en": [

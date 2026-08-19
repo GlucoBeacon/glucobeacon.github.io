@@ -8,8 +8,19 @@
     "cook_min": 20,
     "total_min": 45,
     "servings": 4,
-    "tags": ["Vegetarian", "High-Fiber", "Gluten-Free"],
-    "nutrition": {"cal": 260, "carbs": 30, "protein": 11, "fat": 10, "fiber": 6, "gi": 50},
+    "tags": [
+      "Vegetarian",
+      "High-Fiber",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 352,
+      "carbs": 62,
+      "protein": 15,
+      "fat": 5,
+      "fiber": 13,
+      "gi": 50
+    },
     "name": {
       "en": "Light Bean Pupusas",
       "es": "Pupusas de Frijol Ligeras",
@@ -26,12 +37,60 @@
       "fil": "Ang pupusas ay traditionally gawa halos lahat sa corn masa, na mabilis ma-digest. Ang paggawa ng mas maliit na pupusas na may generous na bean filling ay ini-shift ang ratio papunta sa beans -- naturally low-GI at mataas sa fiber -- kaya ang parehong minamahal na flavor ay dumarating na may mas gentle na pagtaas ng blood sugar, lalo na kapag pinares sa tangy, low-carb na curtido sa ibabaw."
     },
     "ingredients": [
-      {"qty_us": "1.5 cups", "qty_metric": "180 g", "text": {"en": "masa harina (corn flour for tortillas)", "es": "masa harina (harina de maíz para tortillas)", "fil": "masa harina (corn flour para sa tortillas)"}},
-      {"qty_us": "2 cups", "qty_metric": "350 g", "text": {"en": "cooked and mashed refried beans", "es": "frijoles refritos, cocidos y machacados", "fil": "lutong at mashed na refried beans"}},
-      {"qty_us": "1/2 cup", "qty_metric": "60 g", "text": {"en": "shredded low-fat mozzarella", "es": "queso mozzarella bajo en grasa, rallado", "fil": "shredded low-fat mozzarella"}},
-      {"qty_us": "2 cups", "qty_metric": "150 g", "text": {"en": "cabbage, finely shredded, for curtido", "es": "repollo, en tiras finas, para el curtido", "fil": "repolyo, pinong tinadtad, para sa curtido"}},
-      {"qty_us": "1/4 cup", "qty_metric": "60 ml", "text": {"en": "white vinegar", "es": "vinagre blanco", "fil": "white vinegar"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "carrot, shredded, for curtido", "es": "zanahoria, rallada, para el curtido", "fil": "carrot, kinayod, para sa curtido"}}
+      {
+        "qty_us": "1.5 cups",
+        "qty_metric": "180 g",
+        "text": {
+          "en": "masa harina (corn flour for tortillas)",
+          "es": "masa harina (harina de maíz para tortillas)",
+          "fil": "masa harina (corn flour para sa tortillas)"
+        }
+      },
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "350 g",
+        "text": {
+          "en": "cooked and mashed refried beans",
+          "es": "frijoles refritos, cocidos y machacados",
+          "fil": "lutong at mashed na refried beans"
+        }
+      },
+      {
+        "qty_us": "1/2 cup",
+        "qty_metric": "60 g",
+        "text": {
+          "en": "shredded low-fat mozzarella",
+          "es": "queso mozzarella bajo en grasa, rallado",
+          "fil": "shredded low-fat mozzarella"
+        }
+      },
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "150 g",
+        "text": {
+          "en": "cabbage, finely shredded, for curtido",
+          "es": "repollo, en tiras finas, para el curtido",
+          "fil": "repolyo, pinong tinadtad, para sa curtido"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "60 ml",
+        "text": {
+          "en": "white vinegar",
+          "es": "vinagre blanco",
+          "fil": "white vinegar"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "carrot, shredded, for curtido",
+          "es": "zanahoria, rallada, para el curtido",
+          "fil": "carrot, kinayod, para sa curtido"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -66,8 +125,19 @@
     "cook_min": 25,
     "total_min": 45,
     "servings": 4,
-    "tags": ["High-Protein", "High-Fiber", "Gluten-Free"],
-    "nutrition": {"cal": 380, "carbs": 32, "protein": 32, "fat": 14, "fiber": 8, "gi": 45},
+    "tags": [
+      "High-Protein",
+      "High-Fiber",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 430,
+      "carbs": 50,
+      "protein": 36,
+      "fat": 11,
+      "fiber": 11,
+      "gi": 45
+    },
     "name": {
       "en": "Light Casado Plate",
       "es": "Casado Ligero",
@@ -84,13 +154,69 @@
       "fil": "Ang traditional na casado ay nagtatambak ng white rice, beans, at matamis na plantain nang magkasama sa isang plato -- maraming carbohydrate variety sa isang upuan. Ang pagbawas ng rice portion, pananatili ng beans (naturally low-GI) bilang main starch, at pagdaragdag ng extra cabbage salad ay pinapanatili ang real, balanced na casado experience habang binabawasan ang overall glycemic load ng plato."
     },
     "ingredients": [
-      {"qty_us": "1 lb", "qty_metric": "450 g", "text": {"en": "chicken breast or lean beef, grilled", "es": "pechuga de pollo o carne magra, a la parrilla", "fil": "chicken breast o lean beef, inihaw"}},
-      {"qty_us": "3/4 cup", "qty_metric": "140 g", "text": {"en": "cooked white rice", "es": "arroz blanco cocido", "fil": "lutong white rice"}},
-      {"qty_us": "2 cups", "qty_metric": "330 g", "text": {"en": "cooked black beans", "es": "frijoles negros cocidos", "fil": "lutong black beans"}},
-      {"qty_us": "3 cups", "qty_metric": "220 g", "text": {"en": "cabbage, shredded", "es": "repollo, en tiras", "fil": "repolyo, tinadtad"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, sliced", "es": "tomates, en rodajas", "fil": "kamatis, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "small ripe plantain, sliced and baked", "es": "plátano maduro pequeño, en rodajas y horneado", "fil": "maliit na hinog na saging, hiniwa at inoven"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil and lime dressing", "es": "aderezo de aceite de oliva y limón", "fil": "olive oil at lime dressing"}}
+      {
+        "qty_us": "1 lb",
+        "qty_metric": "450 g",
+        "text": {
+          "en": "chicken breast or lean beef, grilled",
+          "es": "pechuga de pollo o carne magra, a la parrilla",
+          "fil": "chicken breast o lean beef, inihaw"
+        }
+      },
+      {
+        "qty_us": "3/4 cup",
+        "qty_metric": "140 g",
+        "text": {
+          "en": "cooked white rice",
+          "es": "arroz blanco cocido",
+          "fil": "lutong white rice"
+        }
+      },
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "330 g",
+        "text": {
+          "en": "cooked black beans",
+          "es": "frijoles negros cocidos",
+          "fil": "lutong black beans"
+        }
+      },
+      {
+        "qty_us": "3 cups",
+        "qty_metric": "220 g",
+        "text": {
+          "en": "cabbage, shredded",
+          "es": "repollo, en tiras",
+          "fil": "repolyo, tinadtad"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, sliced",
+          "es": "tomates, en rodajas",
+          "fil": "kamatis, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "small ripe plantain, sliced and baked",
+          "es": "plátano maduro pequeño, en rodajas y horneado",
+          "fil": "maliit na hinog na saging, hiniwa at inoven"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil and lime dressing",
+          "es": "aderezo de aceite de oliva y limón",
+          "fil": "olive oil at lime dressing"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -125,8 +251,19 @@
     "cook_min": 35,
     "total_min": 45,
     "servings": 4,
-    "tags": ["High-Fiber", "Gluten-Free", "Vegetarian"],
-    "nutrition": {"cal": 250, "carbs": 32, "protein": 13, "fat": 7, "fiber": 11, "gi": 28},
+    "tags": [
+      "High-Fiber",
+      "Gluten-Free",
+      "Vegetarian"
+    ],
+    "nutrition": {
+      "cal": 361,
+      "carbs": 63,
+      "protein": 21,
+      "fat": 3,
+      "fiber": 15,
+      "gi": 28
+    },
     "name": {
       "en": "Central American Bean Soup",
       "es": "Sopa de Frijoles Centroamericana",
@@ -143,12 +280,60 @@
       "fil": "Ang black beans ay naturally low-GI at mayaman sa soluble fiber, kaya ang soup na ito ay gradually ma-digest sa halip na mabilis na spike. Ang pag-asa nang buo sa beans bilang carb source, na may maliit lang na sour cream para sa richness, ay pinapanatili itong genuinely gentle, filling na meal."
     },
     "ingredients": [
-      {"qty_us": "2 cups", "qty_metric": "400 g", "text": {"en": "dried black beans, soaked overnight", "es": "frijoles negros secos, remojados toda la noche", "fil": "dried black beans, binabad overnight"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "1 tsp", "qty_metric": "1 tsp", "text": {"en": "ground cumin", "es": "comino molido", "fil": "ground cumin"}},
-      {"qty_us": "6 cups", "qty_metric": "1.4 L", "text": {"en": "low-sodium vegetable broth", "es": "caldo de verduras bajo en sodio", "fil": "low-sodium vegetable broth"}},
-      {"qty_us": "1/4 cup", "qty_metric": "60 g", "text": {"en": "light sour cream, for serving", "es": "crema agria liviana, para servir", "fil": "light sour cream, pang-serve"}}
+      {
+        "qty_us": "2 cups",
+        "qty_metric": "400 g",
+        "text": {
+          "en": "dried black beans, soaked overnight",
+          "es": "frijoles negros secos, remojados toda la noche",
+          "fil": "dried black beans, binabad overnight"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1 tsp",
+        "qty_metric": "1 tsp",
+        "text": {
+          "en": "ground cumin",
+          "es": "comino molido",
+          "fil": "ground cumin"
+        }
+      },
+      {
+        "qty_us": "6 cups",
+        "qty_metric": "1.4 L",
+        "text": {
+          "en": "low-sodium vegetable broth",
+          "es": "caldo de verduras bajo en sodio",
+          "fil": "low-sodium vegetable broth"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "60 g",
+        "text": {
+          "en": "light sour cream, for serving",
+          "es": "crema agria liviana, para servir",
+          "fil": "light sour cream, pang-serve"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -180,8 +365,19 @@
     "cook_min": 12,
     "total_min": 22,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 270, "carbs": 8, "protein": 33, "fat": 13, "fiber": 3, "gi": 10},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 270,
+      "carbs": 8,
+      "protein": 33,
+      "fat": 13,
+      "fiber": 3,
+      "gi": 10
+    },
     "name": {
       "en": "Grilled Fish with Central American Salad",
       "es": "Pescado a la Plancha con Ensalada Centroamericana",
@@ -198,12 +394,60 @@
       "fil": "Ang lean, pan-seared na fish fillet na may lime at bawang ay halos walang carbs mag-isa, at ang pag-pair nito sa avocado at fresh tomato salad sa halip na kanin o fried plantain ay pinapanatili ang buong plato na malapit sa zero glycemic impact habang isa pa ring real, satisfying na dinner."
     },
     "ingredients": [
-      {"qty_us": "4", "qty_metric": "4", "text": {"en": "white fish fillets (such as tilapia or corvina)", "es": "filetes de pescado blanco (como tilapia o corvina)", "fil": "white fish fillets (tulad ng tilapia o corvina)"}},
-      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "3 tbsp", "qty_metric": "45 ml", "text": {"en": "fresh lime juice", "es": "jugo de limón fresco", "fil": "fresh lime juice"}},
-      {"qty_us": "2 tbsp", "qty_metric": "30 ml", "text": {"en": "olive oil", "es": "aceite de oliva", "fil": "olive oil"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "avocado, sliced", "es": "aguacate, en rodajas", "fil": "avocado, hiniwa"}},
-      {"qty_us": "2", "qty_metric": "2", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}}
+      {
+        "qty_us": "4",
+        "qty_metric": "4",
+        "text": {
+          "en": "white fish fillets (such as tilapia or corvina)",
+          "es": "filetes de pescado blanco (como tilapia o corvina)",
+          "fil": "white fish fillets (tulad ng tilapia o corvina)"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "3 tbsp",
+        "qty_metric": "45 ml",
+        "text": {
+          "en": "fresh lime juice",
+          "es": "jugo de limón fresco",
+          "fil": "fresh lime juice"
+        }
+      },
+      {
+        "qty_us": "2 tbsp",
+        "qty_metric": "30 ml",
+        "text": {
+          "en": "olive oil",
+          "es": "aceite de oliva",
+          "fil": "olive oil"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "avocado, sliced",
+          "es": "aguacate, en rodajas",
+          "fil": "avocado, hiniwa"
+        }
+      },
+      {
+        "qty_us": "2",
+        "qty_metric": "2",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      }
     ],
     "instructions": {
       "en": [
@@ -235,8 +479,19 @@
     "cook_min": 35,
     "total_min": 50,
     "servings": 4,
-    "tags": ["High-Protein", "Low-Carb", "Gluten-Free"],
-    "nutrition": {"cal": 310, "carbs": 12, "protein": 34, "fat": 14, "fiber": 3, "gi": 20},
+    "tags": [
+      "High-Protein",
+      "Low-Carb",
+      "Gluten-Free"
+    ],
+    "nutrition": {
+      "cal": 250,
+      "carbs": 9,
+      "protein": 34,
+      "fat": 9,
+      "fiber": 3,
+      "gi": 20
+    },
     "name": {
       "en": "Chicken in Central American Tomato Sauce",
       "es": "Pollo en Salsa de Tomate Centroamericano",
@@ -253,13 +508,69 @@
       "fil": "Ang braised chicken dish na ito ay naturally mababa sa carbohydrates mag-isa -- ang tomato at bell pepper sauce ay walang added starch o sugar. Ang pag-serve nito na may steamed o roasted na gulay sa halip na traditional na white rice ay pinapanatili ang real, savory na lasa habang ginagawang mas gentle ang buong plato sa blood sugar."
     },
     "ingredients": [
-      {"qty_us": "1.5 lb", "qty_metric": "675 g", "text": {"en": "bone-in chicken thighs, skin removed", "es": "muslos de pollo con hueso, sin piel", "fil": "bone-in chicken thighs, tinanggalan ng balat"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "onion, chopped", "es": "cebolla, picada", "fil": "sibuyas, hiniwa"}},
-      {"qty_us": "1", "qty_metric": "1", "text": {"en": "red bell pepper, chopped", "es": "morrón rojo, picado", "fil": "red bell pepper, hiniwa"}},
-      {"qty_us": "3", "qty_metric": "3", "text": {"en": "tomatoes, diced", "es": "tomates, en cubos", "fil": "kamatis, dinice"}},
-      {"qty_us": "3 cloves", "qty_metric": "3 cloves", "text": {"en": "garlic, minced", "es": "ajo, picado", "fil": "bawang, tinadtad"}},
-      {"qty_us": "1/4 cup", "qty_metric": "10 g", "text": {"en": "fresh cilantro, chopped", "es": "cilantro fresco, picado", "fil": "fresh cilantro, hiniwa"}},
-      {"qty_us": "3 cups", "qty_metric": "3 cups", "text": {"en": "steamed mixed vegetables, for serving", "es": "verduras mixtas al vapor, para servir", "fil": "steamed na halo-halong gulay, pang-serve"}}
+      {
+        "qty_us": "1.5 lb",
+        "qty_metric": "675 g",
+        "text": {
+          "en": "bone-in chicken thighs, skin removed",
+          "es": "muslos de pollo con hueso, sin piel",
+          "fil": "bone-in chicken thighs, tinanggalan ng balat"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "onion, chopped",
+          "es": "cebolla, picada",
+          "fil": "sibuyas, hiniwa"
+        }
+      },
+      {
+        "qty_us": "1",
+        "qty_metric": "1",
+        "text": {
+          "en": "red bell pepper, chopped",
+          "es": "morrón rojo, picado",
+          "fil": "red bell pepper, hiniwa"
+        }
+      },
+      {
+        "qty_us": "3",
+        "qty_metric": "3",
+        "text": {
+          "en": "tomatoes, diced",
+          "es": "tomates, en cubos",
+          "fil": "kamatis, dinice"
+        }
+      },
+      {
+        "qty_us": "3 cloves",
+        "qty_metric": "3 cloves",
+        "text": {
+          "en": "garlic, minced",
+          "es": "ajo, picado",
+          "fil": "bawang, tinadtad"
+        }
+      },
+      {
+        "qty_us": "1/4 cup",
+        "qty_metric": "10 g",
+        "text": {
+          "en": "fresh cilantro, chopped",
+          "es": "cilantro fresco, picado",
+          "fil": "fresh cilantro, hiniwa"
+        }
+      },
+      {
+        "qty_us": "3 cups",
+        "qty_metric": "3 cups",
+        "text": {
+          "en": "steamed mixed vegetables, for serving",
+          "es": "verduras mixtas al vapor, para servir",
+          "fil": "steamed na halo-halong gulay, pang-serve"
+        }
+      }
     ],
     "instructions": {
       "en": [
