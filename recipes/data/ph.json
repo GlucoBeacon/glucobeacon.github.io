@@ -158,7 +158,7 @@
     "cuisine": "filipino",
     "meal_category": "lunch",
     "prep_min": 15, "cook_min": 20, "total_min": 35, "servings": 4,
-    "tags": ["Vegetarian", "High-Fiber", "Low-GI"],
+    "tags": ["High-Fiber", "Low-GI"],
     "nutrition": { "cal": 140, "carbs": 18, "protein": 5, "fat": 6, "fiber": 6, "gi": 40 },
     "name": { "en": "Pinakbet", "es": "Pinakbet", "fil": "Pinakbet" },
     "description": {
@@ -211,7 +211,7 @@
     "cuisine": "filipino",
     "meal_category": "lunch",
     "prep_min": 10, "cook_min": 30, "total_min": 40, "servings": 4,
-    "tags": ["Vegetarian", "High-Fiber", "Plant-Protein"],
+    "tags": ["High-Fiber", "Plant-Protein"],
     "nutrition": { "cal": 190, "carbs": 28, "protein": 12, "fat": 4, "fiber": 8, "gi": 35 },
     "name": { "en": "Ginisang Munggo", "es": "Munggo Guisado", "fil": "Ginisang Munggo" },
     "description": {
