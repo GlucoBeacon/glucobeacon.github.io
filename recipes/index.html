@@ -132,15 +132,18 @@
 <div style="max-width:1040px; margin: 8px auto 0; padding: 0 5%;">
   <div class="recipe-filter-bar recipe-filter-bar-secondary" id="regionFilterBar">
     <button class="recipe-filter-btn is-active" data-region-filter="all">All Regions (142)</button>
+    <button class="recipe-filter-btn" data-region-filter="north-america">North America (31)</button>
     <button class="recipe-filter-btn" data-region-filter="latam">Latin America (75)</button>
-    <button class="recipe-filter-btn" data-region-filter="asia">Asia (5)</button>
-    <button class="recipe-filter-btn" data-region-filter="europe">Europe (5)</button>
+    <button class="recipe-filter-btn" data-region-filter="europe">Europe (22)</button>
+    <button class="recipe-filter-btn" data-region-filter="middle-east">Middle East (5)</button>
+    <button class="recipe-filter-btn" data-region-filter="asia">Asia (9)</button>
   </div>
 </div>
 
 <div style="max-width:1040px; margin: 8px auto 0; padding: 0 5%;" id="cuisineFilterWrap" hidden>
   <div class="recipe-filter-bar recipe-filter-bar-secondary" id="cuisineFilterBar">
     <button class="recipe-filter-btn is-active" data-cuisine-filter="all">All Countries</button>
+    <button class="recipe-filter-btn" data-cuisine-filter="american" data-region-group="north-america">American (31)</button>
     <button class="recipe-filter-btn" data-cuisine-filter="mexican" data-region-group="latam">Mexican (5)</button>
     <button class="recipe-filter-btn" data-cuisine-filter="central-american" data-region-group="latam">Central American (5)</button>
     <button class="recipe-filter-btn" data-cuisine-filter="cuban" data-region-group="latam">Cuban (5)</button>
@@ -156,405 +159,411 @@
     <button class="recipe-filter-btn" data-cuisine-filter="argentine" data-region-group="latam">Argentine (5)</button>
     <button class="recipe-filter-btn" data-cuisine-filter="paraguayan" data-region-group="latam">Paraguayan (5)</button>
     <button class="recipe-filter-btn" data-cuisine-filter="uruguayan" data-region-group="latam">Uruguayan (5)</button>
-    <button class="recipe-filter-btn" data-cuisine-filter="filipino" data-region-group="asia">Filipino (5)</button>
     <button class="recipe-filter-btn" data-cuisine-filter="spanish" data-region-group="europe">Spanish (5)</button>
+    <button class="recipe-filter-btn" data-cuisine-filter="greek" data-region-group="europe">Greek (8)</button>
+    <button class="recipe-filter-btn" data-cuisine-filter="italian" data-region-group="europe">Italian (9)</button>
+    <button class="recipe-filter-btn" data-cuisine-filter="middle-eastern" data-region-group="middle-east">Middle Eastern (4)</button>
+    <button class="recipe-filter-btn" data-cuisine-filter="moroccan" data-region-group="middle-east">Moroccan (1)</button>
+    <button class="recipe-filter-btn" data-cuisine-filter="filipino" data-region-group="asia">Filipino (5)</button>
+    <button class="recipe-filter-btn" data-cuisine-filter="indian" data-region-group="asia">Indian (2)</button>
+    <button class="recipe-filter-btn" data-cuisine-filter="east-asian" data-region-group="asia">East Asian (2)</button>
   </div>
 </div>
 
 <div class="recipe-grid" id="recipeGrid">
-  <a class="recipe-card" href="steel-cut-oats-with-berries.html" data-category="breakfast" data-diet="vegan">
+  <a class="recipe-card" href="steel-cut-oats-with-berries.html" data-category="breakfast" data-diet="vegan" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/steel-cut-oats-with-berries.jpg" alt="Steel-Cut Oats with Berries" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Steel-Cut Oats with Berries</h2>
     <p>Nutty steel-cut oats topped with fresh berries and warming cinnamon.</p>
     <div class="recipe-card-stats"><span>70g carbs</span><span>435 cal</span><span>30 min</span></div>
   </a>
-  <a class="recipe-card" href="avocado-and-egg-toast.html" data-category="breakfast" data-diet="">
+  <a class="recipe-card" href="avocado-and-egg-toast.html" data-category="breakfast" data-diet="" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/avocado-and-egg-toast.jpg" alt="Avocado and Egg Toast" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Avocado and Egg Toast</h2>
     <p>Creamy avocado on whole grain toast topped with a perfectly cooked egg.</p>
     <div class="recipe-card-stats"><span>24g carbs</span><span>290 cal</span><span>10 min</span></div>
   </a>
-  <a class="recipe-card" href="greek-yogurt-parfait-with-walnuts.html" data-category="breakfast" data-diet="">
+  <a class="recipe-card" href="greek-yogurt-parfait-with-walnuts.html" data-category="breakfast" data-diet="" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/greek-yogurt-parfait-with-walnuts.jpg" alt="Greek Yogurt Parfait with Walnuts" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Greek Yogurt Parfait with Walnuts</h2>
     <p>Creamy Greek yogurt layered with blueberries, crunchy walnuts, and cinnamon.</p>
     <div class="recipe-card-stats"><span>22g carbs</span><span>240 cal</span><span>5 min</span></div>
   </a>
-  <a class="recipe-card" href="spinach-and-mushroom-frittata.html" data-category="breakfast" data-diet="keto low_carb mediterranean">
+  <a class="recipe-card" href="spinach-and-mushroom-frittata.html" data-category="breakfast" data-diet="keto low_carb mediterranean" data-cuisine="italian" data-region="europe">
     <img class="recipe-card-img" src="img/spinach-and-mushroom-frittata.jpg" alt="Spinach and Mushroom Frittata" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Spinach and Mushroom Frittata</h2>
     <p>Baked egg frittata loaded with spinach, mushrooms, and feta — great for meal prep.</p>
     <div class="recipe-card-stats"><span>5g carbs</span><span>252 cal</span><span>30 min</span></div>
   </a>
-  <a class="recipe-card" href="chia-seed-pudding.html" data-category="breakfast" data-diet="low_carb vegan">
+  <a class="recipe-card" href="chia-seed-pudding.html" data-category="breakfast" data-diet="low_carb vegan" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/chia-seed-pudding.jpg" alt="Chia Seed Pudding" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Chia Seed Pudding</h2>
     <p>Silky chia pudding made overnight with almond milk and topped with fresh strawberries.</p>
     <div class="recipe-card-stats"><span>23g carbs</span><span>243 cal</span><span>5 min</span></div>
   </a>
-  <a class="recipe-card" href="almond-flour-pancakes.html" data-category="breakfast" data-diet="keto low_carb">
+  <a class="recipe-card" href="almond-flour-pancakes.html" data-category="breakfast" data-diet="keto low_carb" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/almond-flour-pancakes.jpg" alt="Almond Flour Pancakes" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Almond Flour Pancakes</h2>
     <p>Fluffy grain-free pancakes made with almond flour — low GI and satisfying.</p>
     <div class="recipe-card-stats"><span>14g carbs</span><span>320 cal</span><span>20 min</span></div>
   </a>
-  <a class="recipe-card" href="turkey-and-veggie-scramble.html" data-category="breakfast" data-diet="low_carb mediterranean">
+  <a class="recipe-card" href="turkey-and-veggie-scramble.html" data-category="breakfast" data-diet="low_carb mediterranean" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/turkey-and-veggie-scramble.jpg" alt="Turkey and Veggie Scramble" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Turkey and Veggie Scramble</h2>
     <p>Hearty morning scramble with lean turkey and colorful vegetables.</p>
     <div class="recipe-card-stats"><span>8g carbs</span><span>310 cal</span><span>15 min</span></div>
   </a>
-  <a class="recipe-card" href="overnight-oats-with-flaxseed.html" data-category="breakfast" data-diet="">
+  <a class="recipe-card" href="overnight-oats-with-flaxseed.html" data-category="breakfast" data-diet="" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/overnight-oats-with-flaxseed.jpg" alt="Overnight Oats with Flaxseed" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Overnight Oats with Flaxseed</h2>
     <p>Make-ahead oats packed with omega-3 flaxseed for a filling, blood-sugar-friendly breakfast.</p>
     <div class="recipe-card-stats"><span>40g carbs</span><span>290 cal</span><span>5 min</span></div>
   </a>
-  <a class="recipe-card" href="sweet-potato-hash.html" data-category="breakfast" data-diet="">
+  <a class="recipe-card" href="sweet-potato-hash.html" data-category="breakfast" data-diet="" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/sweet-potato-hash.jpg" alt="Sweet Potato Hash" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Sweet Potato Hash</h2>
     <p>Colorful sweet potato hash with bell peppers and eggs — a satisfying weekend breakfast.</p>
     <div class="recipe-card-stats"><span>40g carbs</span><span>340 cal</span><span>30 min</span></div>
   </a>
-  <a class="recipe-card" href="quinoa-breakfast-bowl.html" data-category="breakfast" data-diet="">
+  <a class="recipe-card" href="quinoa-breakfast-bowl.html" data-category="breakfast" data-diet="" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/quinoa-breakfast-bowl.jpg" alt="Quinoa Breakfast Bowl" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Quinoa Breakfast Bowl</h2>
     <p>Warm quinoa topped with almond butter, banana, and berries for lasting energy.</p>
     <div class="recipe-card-stats"><span>77g carbs</span><span>495 cal</span><span>20 min</span></div>
   </a>
-  <a class="recipe-card" href="bacon-egg-and-cheese-bites.html" data-category="breakfast" data-diet="keto low_carb">
+  <a class="recipe-card" href="bacon-egg-and-cheese-bites.html" data-category="breakfast" data-diet="keto low_carb" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/bacon-egg-and-cheese-bites.jpg" alt="Bacon Egg and Cheese Bites" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Bacon Egg and Cheese Bites</h2>
     <p>Oven-baked egg muffins loaded with bacon and cheddar — a grab-and-go keto breakfast.</p>
     <div class="recipe-card-stats"><span>1g carbs</span><span>234 cal</span><span>30 min</span></div>
   </a>
-  <a class="recipe-card" href="denver-omelet.html" data-category="breakfast" data-diet="keto low_carb">
+  <a class="recipe-card" href="denver-omelet.html" data-category="breakfast" data-diet="keto low_carb" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/denver-omelet.jpg" alt="Denver Omelet" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Denver Omelet</h2>
     <p>A classic diner omelet with ham, bell pepper, onion, and melted cheddar.</p>
     <div class="recipe-card-stats"><span>8g carbs</span><span>430 cal</span><span>20 min</span></div>
   </a>
-  <a class="recipe-card" href="vegetarian-breakfast-burrito.html" data-category="breakfast" data-diet="">
+  <a class="recipe-card" href="vegetarian-breakfast-burrito.html" data-category="breakfast" data-diet="" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/vegetarian-breakfast-burrito.jpg" alt="Vegetarian Breakfast Burrito" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Vegetarian Breakfast Burrito</h2>
     <p>A hearty scrambled egg, black bean, and cheese burrito wrapped up for a grab-and-go morning.</p>
     <div class="recipe-card-stats"><span>42g carbs</span><span>495 cal</span><span>20 min</span></div>
   </a>
-  <a class="recipe-card" href="shakshuka.html" data-category="breakfast" data-diet="mediterranean">
+  <a class="recipe-card" href="shakshuka.html" data-category="breakfast" data-diet="mediterranean" data-cuisine="middle-eastern" data-region="middle-east">
     <img class="recipe-card-img" src="img/shakshuka.jpg" alt="Shakshuka" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Shakshuka</h2>
     <p>Eggs poached in a spiced tomato and bell pepper sauce — a one-pan breakfast with real vegetables at its base.</p>
     <div class="recipe-card-stats"><span>16g carbs</span><span>273 cal</span><span>28 min</span></div>
   </a>
-  <a class="recipe-card" href="steak-eggs.html" data-category="breakfast" data-diet="keto low_carb">
+  <a class="recipe-card" href="steak-eggs.html" data-category="breakfast" data-diet="keto low_carb" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/steak-eggs.jpg" alt="Steak &amp; Eggs" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Steak &amp; Eggs</h2>
     <p>A pan-seared steak with two eggs any style — the classic high-protein keto breakfast.</p>
     <div class="recipe-card-stats"><span>1g carbs</span><span>480 cal</span><span>15 min</span></div>
   </a>
-  <a class="recipe-card" href="apple-slices-with-almond-butter.html" data-category="snack" data-diet="">
+  <a class="recipe-card" href="apple-slices-with-almond-butter.html" data-category="snack" data-diet="" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/apple-slices-with-almond-butter.jpg" alt="Apple Slices with Almond Butter" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>Apple Slices with Almond Butter</h2>
     <p>Crisp apple slices with creamy natural almond butter — a perfectly balanced snack.</p>
     <div class="recipe-card-stats"><span>30g carbs</span><span>230 cal</span><span>3 min</span></div>
   </a>
-  <a class="recipe-card" href="hummus-and-veggie-sticks.html" data-category="snack" data-diet="vegan">
+  <a class="recipe-card" href="hummus-and-veggie-sticks.html" data-category="snack" data-diet="vegan" data-cuisine="middle-eastern" data-region="middle-east">
     <img class="recipe-card-img" src="img/hummus-and-veggie-sticks.jpg" alt="Hummus and Veggie Sticks" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>Hummus and Veggie Sticks</h2>
     <p>Creamy hummus paired with a rainbow of raw vegetable sticks for dipping.</p>
     <div class="recipe-card-stats"><span>29g carbs</span><span>194 cal</span><span>5 min</span></div>
   </a>
-  <a class="recipe-card" href="hard-boiled-eggs.html" data-category="snack" data-diet="keto low_carb">
+  <a class="recipe-card" href="hard-boiled-eggs.html" data-category="snack" data-diet="keto low_carb" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/hard-boiled-eggs.jpg" alt="Hard Boiled Eggs" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>Hard Boiled Eggs</h2>
     <p>Simple protein-packed hard-boiled eggs — the ultimate portable, no-spike snack.</p>
     <div class="recipe-card-stats"><span>1g carbs</span><span>145 cal</span><span>13 min</span></div>
   </a>
-  <a class="recipe-card" href="edamame.html" data-category="snack" data-diet="low_carb vegan">
+  <a class="recipe-card" href="edamame.html" data-category="snack" data-diet="low_carb vegan" data-cuisine="east-asian" data-region="asia">
     <img class="recipe-card-img" src="img/edamame.jpg" alt="Edamame" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>Edamame</h2>
     <p>Steamed edamame lightly salted — high protein, high fiber, satisfying, and blood-sugar friendly.</p>
     <div class="recipe-card-stats"><span>12g carbs</span><span>150 cal</span><span>6 min</span></div>
   </a>
-  <a class="recipe-card" href="roasted-chickpeas.html" data-category="snack" data-diet="vegan mediterranean">
+  <a class="recipe-card" href="roasted-chickpeas.html" data-category="snack" data-diet="vegan mediterranean" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/roasted-chickpeas.jpg" alt="Roasted Chickpeas" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>Roasted Chickpeas</h2>
     <p>Crunchy spiced roasted chickpeas — a satisfying chip alternative with fiber and protein.</p>
     <div class="recipe-card-stats"><span>18g carbs</span><span>126 cal</span><span>40 min</span></div>
   </a>
-  <a class="recipe-card" href="dark-chocolate-and-almonds.html" data-category="snack" data-diet="vegan">
+  <a class="recipe-card" href="dark-chocolate-and-almonds.html" data-category="snack" data-diet="vegan" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/dark-chocolate-and-almonds.jpg" alt="Dark Chocolate and Almonds" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>Dark Chocolate and Almonds</h2>
     <p>A small portion of dark chocolate with raw almonds — antioxidants meet healthy fats.</p>
     <div class="recipe-card-stats"><span>18g carbs</span><span>270 cal</span><span>1 min</span></div>
   </a>
-  <a class="recipe-card" href="turkey-and-cheddar-roll-ups.html" data-category="snack" data-diet="keto low_carb">
+  <a class="recipe-card" href="turkey-and-cheddar-roll-ups.html" data-category="snack" data-diet="keto low_carb" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/turkey-and-cheddar-roll-ups.jpg" alt="Turkey and Cheddar Roll-Ups" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>Turkey and Cheddar Roll-Ups</h2>
     <p>Deli turkey rolled around cream cheese and cheddar — a two-minute keto snack.</p>
     <div class="recipe-card-stats"><span>3g carbs</span><span>300 cal</span><span>5 min</span></div>
   </a>
-  <a class="recipe-card" href="keto-deviled-eggs.html" data-category="snack" data-diet="keto low_carb">
+  <a class="recipe-card" href="keto-deviled-eggs.html" data-category="snack" data-diet="keto low_carb" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/keto-deviled-eggs.jpg" alt="Keto Deviled Eggs" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>Keto Deviled Eggs</h2>
     <p>Classic creamy deviled eggs with a dusting of paprika.</p>
     <div class="recipe-card-stats"><span>1g carbs</span><span>241 cal</span><span>15 min</span></div>
   </a>
-  <a class="recipe-card" href="guacamole-with-pepper-strips.html" data-category="snack" data-diet="keto low_carb vegan">
+  <a class="recipe-card" href="guacamole-with-pepper-strips.html" data-category="snack" data-diet="keto low_carb vegan" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/guacamole-with-pepper-strips.jpg" alt="Guacamole with Pepper Strips" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>Guacamole with Pepper Strips</h2>
     <p>Fresh homemade guacamole served with crisp bell pepper strips instead of chips.</p>
     <div class="recipe-card-stats"><span>12g carbs</span><span>146 cal</span><span>10 min</span></div>
   </a>
-  <a class="recipe-card" href="trail-mix-with-dark-chocolate.html" data-category="snack" data-diet="vegan">
+  <a class="recipe-card" href="trail-mix-with-dark-chocolate.html" data-category="snack" data-diet="vegan" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/trail-mix-with-dark-chocolate.jpg" alt="Trail Mix with Dark Chocolate" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>Trail Mix with Dark Chocolate</h2>
     <p>A simple mix of nuts, dried fruit, and dark chocolate chips.</p>
     <div class="recipe-card-stats"><span>25g carbs</span><span>317 cal</span><span>5 min</span></div>
   </a>
-  <a class="recipe-card" href="caprese-skewers.html" data-category="snack" data-diet="keto low_carb mediterranean">
+  <a class="recipe-card" href="caprese-skewers.html" data-category="snack" data-diet="keto low_carb mediterranean" data-cuisine="italian" data-region="europe">
     <img class="recipe-card-img" src="img/caprese-skewers.jpg" alt="Caprese Skewers" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>Caprese Skewers</h2>
     <p>Mini mozzarella balls, cherry tomatoes, and basil on a skewer with balsamic glaze.</p>
     <div class="recipe-card-stats"><span>6g carbs</span><span>199 cal</span><span>10 min</span></div>
   </a>
-  <a class="recipe-card" href="no-sugar-beef-jerky-almonds.html" data-category="snack" data-diet="low_carb">
+  <a class="recipe-card" href="no-sugar-beef-jerky-almonds.html" data-category="snack" data-diet="low_carb" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/no-sugar-beef-jerky-almonds.jpg" alt="No-Sugar Beef Jerky &amp; Almonds" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>No-Sugar Beef Jerky &amp; Almonds</h2>
     <p>A portable, no-prep pairing of no-sugar-added beef jerky and raw almonds.</p>
     <div class="recipe-card-stats"><span>10g carbs</span><span>278 cal</span><span>1 min</span></div>
   </a>
-  <a class="recipe-card" href="celery-with-peanut-butter.html" data-category="snack" data-diet="keto low_carb">
+  <a class="recipe-card" href="celery-with-peanut-butter.html" data-category="snack" data-diet="keto low_carb" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/celery-with-peanut-butter.jpg" alt="Celery with Peanut Butter" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>Celery with Peanut Butter</h2>
     <p>Classic ants on a log — celery sticks filled with natural peanut butter.</p>
     <div class="recipe-card-stats"><span>10g carbs</span><span>207 cal</span><span>3 min</span></div>
   </a>
-  <a class="recipe-card" href="red-lentil-soup.html" data-category="lunch" data-diet="mediterranean">
+  <a class="recipe-card" href="red-lentil-soup.html" data-category="lunch" data-diet="mediterranean" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/red-lentil-soup.jpg" alt="Red Lentil Soup" width="300" height="225" />
     <span class="recipe-card-tag">Lunch</span>
     <h2>Red Lentil Soup</h2>
     <p>Warming red lentil soup with cumin and turmeric — rich in fiber and plant protein.</p>
     <div class="recipe-card-stats"><span>40g carbs</span><span>234 cal</span><span>35 min</span></div>
   </a>
-  <a class="recipe-card" href="falafel-bowl-with-tahini.html" data-category="lunch" data-diet="vegan mediterranean">
+  <a class="recipe-card" href="falafel-bowl-with-tahini.html" data-category="lunch" data-diet="vegan mediterranean" data-cuisine="middle-eastern" data-region="middle-east">
     <img class="recipe-card-img" src="img/falafel-bowl-with-tahini.jpg" alt="Falafel Bowl with Tahini" width="300" height="225" />
     <span class="recipe-card-tag">Lunch</span>
     <h2>Falafel Bowl with Tahini</h2>
     <p>Crispy baked falafel over greens with hummus, veggies, and a tahini drizzle.</p>
     <div class="recipe-card-stats"><span>51g carbs</span><span>476 cal</span><span>35 min</span></div>
   </a>
-  <a class="recipe-card" href="tofu-and-broccoli-stir-fry.html" data-category="dinner" data-diet="vegan">
+  <a class="recipe-card" href="tofu-and-broccoli-stir-fry.html" data-category="dinner" data-diet="vegan" data-cuisine="east-asian" data-region="asia">
     <img class="recipe-card-img" src="img/tofu-and-broccoli-stir-fry.jpg" alt="Tofu and Broccoli Stir-Fry" width="300" height="225" />
     <span class="recipe-card-tag">Dinner</span>
     <h2>Tofu and Broccoli Stir-Fry</h2>
     <p>Crispy pan-fried tofu tossed with broccoli and bell pepper in a garlic-soy sauce.</p>
     <div class="recipe-card-stats"><span>15g carbs</span><span>151 cal</span><span>30 min</span></div>
   </a>
-  <a class="recipe-card" href="roasted-garlic-cauliflower.html" data-category="side" data-diet="keto low_carb vegan mediterranean">
+  <a class="recipe-card" href="roasted-garlic-cauliflower.html" data-category="side" data-diet="keto low_carb vegan mediterranean" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/roasted-garlic-cauliflower.jpg" alt="Roasted Garlic Cauliflower" width="300" height="225" />
     <span class="recipe-card-tag">Side</span>
     <h2>Roasted Garlic Cauliflower</h2>
     <p>Golden roasted cauliflower with garlic and lemon — a versatile low-carb side.</p>
     <div class="recipe-card-stats"><span>8g carbs</span><span>96 cal</span><span>30 min</span></div>
   </a>
-  <a class="recipe-card" href="quinoa-tabbouleh.html" data-category="lunch" data-diet="vegan mediterranean">
+  <a class="recipe-card" href="quinoa-tabbouleh.html" data-category="lunch" data-diet="vegan mediterranean" data-cuisine="middle-eastern" data-region="middle-east">
     <img class="recipe-card-img" src="img/quinoa-tabbouleh.jpg" alt="Quinoa Tabbouleh" width="300" height="225" />
     <span class="recipe-card-tag">Lunch</span>
     <h2>Quinoa Tabbouleh</h2>
     <p>Refreshing Middle Eastern salad swapping bulgur for quinoa for added protein.</p>
     <div class="recipe-card-stats"><span>34g carbs</span><span>247 cal</span><span>30 min</span></div>
   </a>
-  <a class="recipe-card" href="white-bean-and-kale-soup.html" data-category="lunch" data-diet="mediterranean">
+  <a class="recipe-card" href="white-bean-and-kale-soup.html" data-category="lunch" data-diet="mediterranean" data-cuisine="italian" data-region="europe">
     <img class="recipe-card-img" src="img/white-bean-and-kale-soup.jpg" alt="White Bean and Kale Soup" width="300" height="225" />
     <span class="recipe-card-tag">Lunch</span>
     <h2>White Bean and Kale Soup</h2>
     <p>Hearty Italian white bean soup with kale — filling, fiber-rich, and blood-pressure friendly.</p>
     <div class="recipe-card-stats"><span>28g carbs</span><span>162 cal</span><span>35 min</span></div>
   </a>
-  <a class="recipe-card" href="peanut-butter-banana-overnight-oats.html" data-category="breakfast" data-diet="">
+  <a class="recipe-card" href="peanut-butter-banana-overnight-oats.html" data-category="breakfast" data-diet="" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/peanut-butter-banana-overnight-oats.jpg" alt="Peanut Butter Banana Overnight Oats" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Peanut Butter Banana Overnight Oats</h2>
     <p>No-cook oats soaked overnight with peanut butter, banana, and chia.</p>
     <div class="recipe-card-stats"><span>49g carbs</span><span>388 cal</span><span>5 min</span></div>
   </a>
-  <a class="recipe-card" href="veggie-buddha-bowl.html" data-category="lunch" data-diet="vegan mediterranean">
+  <a class="recipe-card" href="veggie-buddha-bowl.html" data-category="lunch" data-diet="vegan mediterranean" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/veggie-buddha-bowl.jpg" alt="Veggie Buddha Bowl" width="300" height="225" />
     <span class="recipe-card-tag">Lunch</span>
     <h2>Veggie Buddha Bowl</h2>
     <p>A colorful bowl of quinoa, roasted chickpeas, sweet potato, and kale with tahini dressing.</p>
     <div class="recipe-card-stats"><span>69g carbs</span><span>514 cal</span><span>40 min</span></div>
   </a>
-  <a class="recipe-card" href="curried-red-lentil-dal.html" data-category="lunch" data-diet="mediterranean">
+  <a class="recipe-card" href="curried-red-lentil-dal.html" data-category="lunch" data-diet="mediterranean" data-cuisine="indian" data-region="asia">
     <img class="recipe-card-img" src="img/curried-red-lentil-dal.jpg" alt="Curried Red Lentil Dal" width="300" height="225" />
     <span class="recipe-card-tag">Lunch</span>
     <h2>Curried Red Lentil Dal</h2>
     <p>Warmly spiced red lentils simmered with coconut milk and garam masala.</p>
     <div class="recipe-card-stats"><span>56g carbs</span><span>546 cal</span><span>35 min</span></div>
   </a>
-  <a class="recipe-card" href="chickpea-tikka-masala.html" data-category="dinner" data-diet="vegan mediterranean">
+  <a class="recipe-card" href="chickpea-tikka-masala.html" data-category="dinner" data-diet="vegan mediterranean" data-cuisine="indian" data-region="asia">
     <img class="recipe-card-img" src="img/chickpea-tikka-masala.jpg" alt="Chickpea Tikka Masala" width="300" height="225" />
     <span class="recipe-card-tag">Dinner</span>
     <h2>Chickpea Tikka Masala</h2>
     <p>Chickpeas simmered in a spiced tomato-coconut curry sauce, served over rice.</p>
     <div class="recipe-card-stats"><span>82g carbs</span><span>614 cal</span><span>35 min</span></div>
   </a>
-  <a class="recipe-card" href="quinoa-pilaf.html" data-category="side" data-diet="mediterranean">
+  <a class="recipe-card" href="quinoa-pilaf.html" data-category="side" data-diet="mediterranean" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/quinoa-pilaf.jpg" alt="Quinoa Pilaf" width="300" height="225" />
     <span class="recipe-card-tag">Side</span>
     <h2>Quinoa Pilaf</h2>
     <p>Fluffy herb-seasoned quinoa pilaf cooked in vegetable broth — a protein-rich grain side.</p>
     <div class="recipe-card-stats"><span>31g carbs</span><span>194 cal</span><span>25 min</span></div>
   </a>
-  <a class="recipe-card" href="greek-pasta-salad.html" data-category="lunch" data-diet="mediterranean">
+  <a class="recipe-card" href="greek-pasta-salad.html" data-category="lunch" data-diet="mediterranean" data-cuisine="greek" data-region="europe">
     <img class="recipe-card-img" src="img/greek-pasta-salad.jpg" alt="Greek Pasta Salad" width="300" height="225" />
     <span class="recipe-card-tag">Lunch</span>
     <h2>Greek Pasta Salad</h2>
     <p>Cold pasta salad with feta, cucumber, olives, and a bright lemon-herb dressing.</p>
     <div class="recipe-card-stats"><span>62g carbs</span><span>501 cal</span><span>25 min</span></div>
   </a>
-  <a class="recipe-card" href="caprese-sandwich.html" data-category="lunch" data-diet="mediterranean">
+  <a class="recipe-card" href="caprese-sandwich.html" data-category="lunch" data-diet="mediterranean" data-cuisine="italian" data-region="europe">
     <img class="recipe-card-img" src="img/caprese-sandwich.jpg" alt="Caprese Sandwich" width="300" height="225" />
     <span class="recipe-card-tag">Lunch</span>
     <h2>Caprese Sandwich</h2>
     <p>Fresh mozzarella, tomato, and basil on crusty bread with a balsamic drizzle.</p>
     <div class="recipe-card-stats"><span>31g carbs</span><span>373 cal</span><span>10 min</span></div>
   </a>
-  <a class="recipe-card" href="eggplant-parmesan.html" data-category="dinner" data-diet="mediterranean">
+  <a class="recipe-card" href="eggplant-parmesan.html" data-category="dinner" data-diet="mediterranean" data-cuisine="italian" data-region="europe">
     <img class="recipe-card-img" src="img/eggplant-parmesan.jpg" alt="Eggplant Parmesan" width="300" height="225" />
     <span class="recipe-card-tag">Dinner</span>
     <h2>Eggplant Parmesan</h2>
     <p>Breaded eggplant layered with marinara and melted mozzarella.</p>
     <div class="recipe-card-stats"><span>34g carbs</span><span>340 cal</span><span>45 min</span></div>
   </a>
-  <a class="recipe-card" href="mushroom-risotto.html" data-category="dinner" data-diet="">
+  <a class="recipe-card" href="mushroom-risotto.html" data-category="dinner" data-diet="" data-cuisine="italian" data-region="europe">
     <img class="recipe-card-img" src="img/mushroom-risotto.jpg" alt="Mushroom Risotto" width="300" height="225" />
     <span class="recipe-card-tag">Dinner</span>
     <h2>Mushroom Risotto</h2>
     <p>Creamy arborio rice slowly simmered with mushrooms, parmesan, and white wine.</p>
     <div class="recipe-card-stats"><span>67g carbs</span><span>479 cal</span><span>45 min</span></div>
   </a>
-  <a class="recipe-card" href="chickpea-frittata-muffins.html" data-category="breakfast" data-diet="low_carb">
+  <a class="recipe-card" href="chickpea-frittata-muffins.html" data-category="breakfast" data-diet="low_carb" data-cuisine="italian" data-region="europe">
     <img class="recipe-card-img" src="img/chickpea-frittata-muffins.jpg" alt="Chickpea Frittata Muffins" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Chickpea Frittata Muffins</h2>
     <p>Make-ahead egg muffins with chickpea flour, spinach, and feta.</p>
     <div class="recipe-card-stats"><span>5g carbs</span><span>123 cal</span><span>30 min</span></div>
   </a>
-  <a class="recipe-card" href="classic-greek-salad.html" data-category="lunch" data-diet="keto low_carb mediterranean">
+  <a class="recipe-card" href="classic-greek-salad.html" data-category="lunch" data-diet="keto low_carb mediterranean" data-cuisine="greek" data-region="europe">
     <img class="recipe-card-img" src="img/classic-greek-salad.jpg" alt="Classic Greek Salad" width="300" height="225" />
     <span class="recipe-card-tag">Lunch</span>
     <h2>Classic Greek Salad</h2>
     <p>Cucumber, tomato, red onion, olives, and feta in a simple olive oil and red wine vinegar dressing.</p>
     <div class="recipe-card-stats"><span>9g carbs</span><span>236 cal</span><span>15 min</span></div>
   </a>
-  <a class="recipe-card" href="greek-lentil-soup-faki.html" data-category="lunch" data-diet="mediterranean">
+  <a class="recipe-card" href="greek-lentil-soup-faki.html" data-category="lunch" data-diet="mediterranean" data-cuisine="greek" data-region="europe">
     <img class="recipe-card-img" src="img/greek-lentil-soup-faki.jpg" alt="Greek Lentil Soup (Faki)" width="300" height="225" />
     <span class="recipe-card-tag">Lunch</span>
     <h2>Greek Lentil Soup (Faki)</h2>
     <p>A hearty brown lentil soup simmered with carrot, celery, and tomato, finished with a splash of vinegar.</p>
     <div class="recipe-card-stats"><span>54g carbs</span><span>386 cal</span><span>45 min</span></div>
   </a>
-  <a class="recipe-card" href="baked-salmon-with-lemon-herbs.html" data-category="dinner" data-diet="keto low_carb mediterranean">
+  <a class="recipe-card" href="baked-salmon-with-lemon-herbs.html" data-category="dinner" data-diet="keto low_carb mediterranean" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/baked-salmon-with-lemon-herbs.jpg" alt="Baked Salmon with Lemon &amp; Herbs" width="300" height="225" />
     <span class="recipe-card-tag">Dinner</span>
     <h2>Baked Salmon with Lemon &amp; Herbs</h2>
     <p>Salmon fillets rubbed with garlic and dill, baked until flaky, and finished with fresh lemon.</p>
     <div class="recipe-card-stats"><span>4g carbs</span><span>428 cal</span><span>20 min</span></div>
   </a>
-  <a class="recipe-card" href="grilled-chicken-souvlaki-wrap.html" data-category="lunch" data-diet="mediterranean">
+  <a class="recipe-card" href="grilled-chicken-souvlaki-wrap.html" data-category="lunch" data-diet="mediterranean" data-cuisine="greek" data-region="europe">
     <img class="recipe-card-img" src="img/grilled-chicken-souvlaki-wrap.jpg" alt="Grilled Chicken Souvlaki Wrap" width="300" height="225" />
     <span class="recipe-card-tag">Lunch</span>
     <h2>Grilled Chicken Souvlaki Wrap</h2>
     <p>Lemon-oregano marinated grilled chicken wrapped in whole wheat pita with tzatziki, tomato, and onion.</p>
     <div class="recipe-card-stats"><span>37g carbs</span><span>605 cal</span><span>25 min</span></div>
   </a>
-  <a class="recipe-card" href="marinated-olives-feta.html" data-category="snack" data-diet="keto low_carb mediterranean">
+  <a class="recipe-card" href="marinated-olives-feta.html" data-category="snack" data-diet="keto low_carb mediterranean" data-cuisine="greek" data-region="europe">
     <img class="recipe-card-img" src="img/marinated-olives-feta.jpg" alt="Marinated Olives &amp; Feta" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>Marinated Olives &amp; Feta</h2>
     <p>Mixed olives and feta marinated in olive oil, lemon zest, and chili flakes.</p>
     <div class="recipe-card-stats"><span>3g carbs</span><span>204 cal</span><span>10 min</span></div>
   </a>
-  <a class="recipe-card" href="tuna-white-bean-salad.html" data-category="lunch" data-diet="mediterranean">
+  <a class="recipe-card" href="tuna-white-bean-salad.html" data-category="lunch" data-diet="mediterranean" data-cuisine="italian" data-region="europe">
     <img class="recipe-card-img" src="img/tuna-white-bean-salad.jpg" alt="Tuna &amp; White Bean Salad" width="300" height="225" />
     <span class="recipe-card-tag">Lunch</span>
     <h2>Tuna &amp; White Bean Salad</h2>
     <p>Canned tuna and cannellini beans tossed with red onion, parsley, and lemon.</p>
     <div class="recipe-card-stats"><span>27g carbs</span><span>366 cal</span><span>10 min</span></div>
   </a>
-  <a class="recipe-card" href="chicken-chickpea-tagine.html" data-category="dinner" data-diet="mediterranean">
+  <a class="recipe-card" href="chicken-chickpea-tagine.html" data-category="dinner" data-diet="mediterranean" data-cuisine="moroccan" data-region="middle-east">
     <img class="recipe-card-img" src="img/chicken-chickpea-tagine.jpg" alt="Chicken &amp; Chickpea Tagine" width="300" height="225" />
     <span class="recipe-card-tag">Dinner</span>
     <h2>Chicken &amp; Chickpea Tagine</h2>
     <p>Chicken thighs braised with chickpeas, tomato, apricots, and warm spices.</p>
     <div class="recipe-card-stats"><span>29g carbs</span><span>417 cal</span><span>45 min</span></div>
   </a>
-  <a class="recipe-card" href="whole-wheat-pasta-al-pomodoro.html" data-category="dinner" data-diet="mediterranean">
+  <a class="recipe-card" href="whole-wheat-pasta-al-pomodoro.html" data-category="dinner" data-diet="mediterranean" data-cuisine="italian" data-region="europe">
     <img class="recipe-card-img" src="img/whole-wheat-pasta-al-pomodoro.jpg" alt="Whole Wheat Pasta al Pomodoro" width="300" height="225" />
     <span class="recipe-card-tag">Dinner</span>
     <h2>Whole Wheat Pasta al Pomodoro</h2>
     <p>Whole wheat pasta in a simple San Marzano tomato and basil sauce.</p>
     <div class="recipe-card-stats"><span>71g carbs</span><span>480 cal</span><span>30 min</span></div>
   </a>
-  <a class="recipe-card" href="tzatziki-with-cucumber-sticks.html" data-category="snack" data-diet="low_carb mediterranean">
+  <a class="recipe-card" href="tzatziki-with-cucumber-sticks.html" data-category="snack" data-diet="low_carb mediterranean" data-cuisine="greek" data-region="europe">
     <img class="recipe-card-img" src="img/tzatziki-with-cucumber-sticks.jpg" alt="Tzatziki with Cucumber Sticks" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>Tzatziki with Cucumber Sticks</h2>
     <p>Cool Greek yogurt dip with grated cucumber, garlic, and dill, served with fresh cucumber sticks.</p>
     <div class="recipe-card-stats"><span>7g carbs</span><span>78 cal</span><span>10 min</span></div>
   </a>
-  <a class="recipe-card" href="baked-cinnamon-oranges.html" data-category="snack" data-diet="mediterranean">
+  <a class="recipe-card" href="baked-cinnamon-oranges.html" data-category="snack" data-diet="mediterranean" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/baked-cinnamon-oranges.jpg" alt="Baked Cinnamon Oranges" width="300" height="225" />
     <span class="recipe-card-tag">Snack</span>
     <h2>Baked Cinnamon Oranges</h2>
     <p>Broiled orange slices dusted with cinnamon and topped with pistachios and a light honey drizzle.</p>
     <div class="recipe-card-stats"><span>21g carbs</span><span>119 cal</span><span>10 min</span></div>
   </a>
-  <a class="recipe-card" href="fig-almond-overnight-oats.html" data-category="breakfast" data-diet="mediterranean">
+  <a class="recipe-card" href="fig-almond-overnight-oats.html" data-category="breakfast" data-diet="mediterranean" data-cuisine="american" data-region="north-america">
     <img class="recipe-card-img" src="img/fig-almond-overnight-oats.jpg" alt="Fig &amp; Almond Overnight Oats" width="300" height="225" />
     <span class="recipe-card-tag">Breakfast</span>
     <h2>Fig &amp; Almond Overnight Oats</h2>
     <p>Rolled oats soaked overnight with Greek yogurt, chopped dried figs, and sliced almonds.</p>
     <div class="recipe-card-stats"><span>43g carbs</span><span>304 cal</span><span>10 min</span></div>
   </a>
-  <a class="recipe-card" href="greek-orzo-with-shrimp.html" data-category="lunch" data-diet="mediterranean">
+  <a class="recipe-card" href="greek-orzo-with-shrimp.html" data-category="lunch" data-diet="mediterranean" data-cuisine="greek" data-region="europe">
     <img class="recipe-card-img" src="img/greek-orzo-with-shrimp.jpg" alt="Greek Orzo with Shrimp" width="300" height="225" />
     <span class="recipe-card-tag">Lunch</span>
     <h2>Greek Orzo with Shrimp</h2>
     <p>Whole wheat orzo tossed with shrimp, cherry tomatoes, feta, and fresh dill in a lemon-olive oil dressing.</p>
     <div class="recipe-card-stats"><span>43g carbs</span><span>583 cal</span><span>25 min</span></div>
   </a>
-  <a class="recipe-card" href="mediterranean-stuffed-peppers-with-lamb-rice.html" data-category="dinner" data-diet="mediterranean">
+  <a class="recipe-card" href="mediterranean-stuffed-peppers-with-lamb-rice.html" data-category="dinner" data-diet="mediterranean" data-cuisine="greek" data-region="europe">
     <img class="recipe-card-img" src="img/mediterranean-stuffed-peppers-with-lamb-rice.jpg" alt="Mediterranean Stuffed Peppers with Lamb &amp; Rice" width="300" height="225" />
     <span class="recipe-card-tag">Dinner</span>
     <h2>Mediterranean Stuffed Peppers with Lamb &amp; Rice</h2>
