@@ -73,6 +73,7 @@
   HI_RECIPE_SLUGS.forEach(function (slug) {
     HI_AVAILABLE.push('/recipes/' + slug + '.html');
   });
+  HI_AVAILABLE.push('/restaurants/');
 
   // Bare (locale-stripped) paths that have real Filipino content today.
   // Filipino is being rolled out page by page -- until a path is listed
@@ -156,6 +157,12 @@
     FIL_AVAILABLE.push('/restaurants/us/' + slug + '.html');
   });
   FIL_AVAILABLE.push('/restaurants/us/');
+
+  // Hindi restaurant pages use the flat/ES-style convention (no /us/
+  // nesting), so this is a plain push -- no remap needed, unlike FIL above.
+  US_CHAIN_SLUGS.forEach(function (slug) {
+    HI_AVAILABLE.push('/restaurants/' + slug + '.html');
+  });
 
   FIL_AVAILABLE.push('/carb-calculator.html');
 
