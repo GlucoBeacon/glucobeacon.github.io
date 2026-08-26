@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>विशेषताएं — डायबिटीज़ के मरीज़ों के लिए, एक डायबिटीज़ के मरीज़ द्वारा बनाई गईं | GlucoBeacon</title>
+  <meta name="description" content="GlucoBeacon असल में क्या करता है और क्यों, इस पर एक गहरी नज़र — मील-हिस्ट्री ब्लड शुगर सहसंबंध, फास्टिंग इनसाइट्स, AI फूड स्कैनिंग, एक निजी AI असिस्टेंट, रेस्टोरेंट मार्गदर्शन, दवा रिमाइंडर, एक्टिविटी ट्रैकिंग, और अपॉइंटमेंट — एक टाइप 2 डायबिटीज़ के मरीज़ द्वारा बनाया गया जिसे यह सब खुद चाहिए था।" />
+  <link rel="canonical" href="https://glucobeacon.com/hi/features.html" />
+  <link rel="alternate" hreflang="en" href="https://glucobeacon.com/features.html" />
+  <link rel="alternate" hreflang="es" href="https://glucobeacon.com/es/features.html" />
+  <link rel="alternate" hreflang="fil" href="https://glucobeacon.com/fil/features.html" />
+  <link rel="alternate" hreflang="hi" href="https://glucobeacon.com/hi/features.html" />
+  <link rel="alternate" hreflang="x-default" href="https://glucobeacon.com/features.html" />
+  <link rel="icon" type="image/png" href="../img/icon.png" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="विशेषताएं — डायबिटीज़ के मरीज़ों के लिए, एक डायबिटीज़ के मरीज़ द्वारा | GlucoBeacon" />
+  <meta property="og:description" content="मील-हिस्ट्री सहसंबंध, फास्टिंग इनसाइट्स, AI फूड स्कैनिंग, एक निजी AI असिस्टेंट, और बहुत कुछ — GlucoBeacon क्या करता है और हर फीचर के पीछे की असली परेशानी।" />
+  <meta property="og:image" content="https://glucobeacon.com/img/screen-dashboard.png" />
+  <meta property="og:url" content="https://glucobeacon.com/hi/features.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="विशेषताएं — डायबिटीज़ के मरीज़ों के लिए, एक डायबिटीज़ के मरीज़ द्वारा | GlucoBeacon" />
+  <meta name="twitter:description" content="मील-हिस्ट्री सहसंबंध, फास्टिंग इनसाइट्स, AI फूड स्कैनिंग, एक निजी AI असिस्टेंट, और बहुत कुछ — GlucoBeacon क्या करता है और हर फीचर के पीछे की असली परेशानी।" />
+  <meta name="twitter:image" content="https://glucobeacon.com/img/screen-dashboard.png" />
+  <style>
+    .beacon-bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+    .beacon-frame { position: absolute; top: 130px; left: 0; width: 100%; height: 100vh; }
+    .beacon-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+    .beacon-lamp {
+      position: absolute; top: 16.8%; left: 50%; width: 46px; height: 46px; border-radius: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(255,251,235,1) 0%, rgba(253,214,150,0.9) 40%, rgba(249,168,90,0.5) 65%, rgba(249,168,90,0) 80%);
+      filter: blur(2px);
+      animation: beaconPulse 2.3s ease-in-out infinite, beaconFlash 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    .beacon-beam {
+      position: absolute; top: 16.8%; left: 50%; width: 46vw; max-width: 640px; height: 90px;
+      transform-origin: 0% 50%;
+      transform: translateY(-50%) scaleX(1);
+      background: linear-gradient(90deg,
+        rgba(255,251,235,0.95) 0%,
+        rgba(253,200,130,0.55) 40%,
+        rgba(253,200,130,0.15) 75%,
+        transparent 100%);
+      clip-path: polygon(0% 38%, 100% 0%, 100% 100%, 0% 62%);
+      filter: blur(6px);
+      animation: beaconSweep 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    @keyframes beaconSweep {
+      0%   { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+      22%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      25%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      28%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      50%  { transform: translateY(-50%) scaleX(-1);    opacity: 0.95; }
+      72%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      75%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      78%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      100% { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+    }
+    @keyframes beaconFlash {
+      0%, 20%, 30%, 70%, 80%, 100% { filter: blur(2px) brightness(1); }
+      25%, 75% { filter: blur(2px) brightness(1.9); }
+    }
+    @keyframes beaconPulse {
+      0%, 100% { opacity: 0.85; transform: translate(-50%, -50%) scale(1); }
+      50%      { opacity: 1;    transform: translate(-50%, -50%) scale(1.15); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .beacon-lamp, .beacon-beam { animation: none; }
+    }
+
+    .tool-head {
+      position: relative; overflow: hidden;
+      background: linear-gradient(100deg, rgba(9,20,36,0.62) 0%, rgba(9,20,36,0.4) 55%, rgba(9,20,36,0.2) 100%);
+      color: var(--white); padding: 64px 5% 44px; text-align: center;
+    }
+    .tool-head .container { max-width: 760px; }
+    .tool-head h1 { font-size: clamp(1.8rem, 3.8vw, 2.7rem); font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; }
+    .tool-head h1 span { color: var(--orange-light); }
+    .tool-head p { color: rgba(255,255,255,0.75); font-size: 1.05rem; line-height: 1.6; }
+    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 22px; }
+    .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--white); }
+
+    .founder-strip { background: var(--white); border-bottom: 1px solid var(--border); padding: 30px 5%; }
+    .founder-strip .inner { max-width: 760px; margin: 0 auto; display: flex; gap: 18px; align-items: flex-start; }
+    .founder-strip .mark {
+      flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: var(--navy);
+      display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 800; font-size: 0.85rem;
+    }
+    .founder-strip p { font-size: 0.95rem; line-height: 1.6; color: var(--text); }
+    .founder-strip p b { color: var(--orange2); }
+    .founder-strip .attr { font-size: 0.8rem; color: var(--muted); margin-top: 8px; }
+    .founder-strip .attr strong { color: var(--navy); }
+
+    .wrap { max-width: 920px; margin: 0 auto; padding: 48px 5% 24px; }
+
+    .feat-section { margin-bottom: 56px; scroll-margin-top: 110px; }
+    .feat-head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; flex-wrap: wrap; }
+    .feat-icon { width: 48px; height: 48px; border-radius: 14px; background: linear-gradient(135deg, #FFF3E8, #FFE4CC); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; }
+    .feat-head h2 { font-size: 1.4rem; font-weight: 800; color: var(--navy); }
+    .feat-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); overflow: hidden; }
+    .feat-cols { display: grid; grid-template-columns: 1fr 1.15fr; }
+    @media (max-width: 720px) { .feat-cols { grid-template-columns: 1fr; } }
+    .feat-col { padding: 26px 28px; }
+    .feat-col.frustration { background: var(--bg); border-right: 1px solid var(--border); }
+    @media (max-width: 720px) { .feat-col.frustration { border-right: none; border-bottom: 1px solid var(--border); } }
+    .feat-col.frustration .label { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 10px; }
+    .feat-col.frustration p { font-size: 0.98rem; line-height: 1.65; color: var(--text); font-style: italic; }
+    .feat-col.frustration p b { color: var(--orange2); font-style: normal; }
+    .feat-col.solution .label { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: var(--good); margin-bottom: 10px; }
+    .feat-col.solution ul { padding-left: 18px; font-size: 0.9rem; line-height: 1.65; color: var(--text); }
+    .feat-col.solution ul li { margin-bottom: 8px; }
+    .feat-col.solution ul li:last-child { margin-bottom: 0; }
+    .feat-col.solution ul li b { color: var(--navy); }
+    .feat-note { font-size: 0.82rem; color: var(--muted); margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); line-height: 1.55; }
+
+    .cta-band { position: relative; overflow: hidden; background: linear-gradient(120deg, var(--orange2), var(--orange)); text-align: center; padding: 60px 5%; }
+    .cta-band h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .cta-band p { color: rgba(255,255,255,0.9); font-size: 1rem; margin-bottom: 28px; }
+    .cta-band .btn-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+<div class="beacon-bg" aria-hidden="true">
+  <div class="beacon-frame">
+    <img src="../img/beacon-hero.jpg" alt="" />
+    <div class="beacon-lamp"></div>
+    <div class="beacon-beam"></div>
+  </div>
+</div>
+
+<a href="#main" class="skip-link">सामग्री पर जाएं</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">
+      <img src="../img/icon.png" alt="GlucoBeacon लोगो" />
+      <span>GlucoBeacon<sup>&trade;</sup></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="features.html" class="active">विशेषताएं</a>
+      <a href="recipes/index.html">पोषण</a>
+      <a href="restaurants/index.html">रेस्टोरेंट</a>
+      <a href="carb-calculator.html">कार्ब कैलकुलेटर</a>
+      <a href="compare.html">तुलना करें</a>
+      <a href="index.html#pro">कीमत</a>
+      <a href="blog/index.html">ब्लॉग</a>
+      <span id="lang-switch" class="nav-lang"></span>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<div class="tool-head">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">होम</a> / विशेषताएं</div>
+    <div class="eyebrow eyebrow-light" style="justify-content:center;">डायबिटीज़ के मरीज़ों के लिए बनाया गया · एक डायबिटीज़ के मरीज़ द्वारा</div>
+    <h1>हर फीचर इसलिए मौजूद है क्योंकि <span>कोई असली चीज़ परेशान कर रही थी</span></h1>
+    <p>कोई स्पेक शीट नहीं — वे असली पल जिनकी वजह से GlucoBeacon का हर हिस्सा बना, और इसे पाने के बाद क्या बदलता है।</p>
+  </div>
+</div>
+
+<div class="founder-strip">
+  <div class="inner reveal">
+    <div class="mark">GB</div>
+    <div>
+      <p>मुझे <b>20 साल से ज़्यादा समय से टाइप 2</b> है। नीचे दिया हर फीचर एक ही तरह से शुरू हुआ — डायबिटीज़ मैनेज करने में कुछ न कुछ वाकई परेशान करने वाला, गलतियों से भरा, या मेरे आज़माए हर ऐप में बस गायब था, इसलिए मैंने वह हिस्सा खुद बना लिया जो गायब था। यह किसी और के ऐप से मुकाबला करने के लिए भरी गई चेकलिस्ट नहीं है। यह वही ऐप है जो मुझे असल में चाहिए था।</p>
+      <div class="attr"><strong>Michael</strong> — टाइप 2 डायबिटीज़ के मरीज़, 20+ साल, संस्थापक, GlucoBeacon</div>
+    </div>
+  </div>
+</div>
+
+<div class="subnav-wrap">
+  <div class="subnav">
+    <a href="#meal-history">मील हिस्ट्री</a>
+    <a href="#fasting">फास्टिंग</a>
+    <a href="#food-scan">फूड स्कैन</a>
+    <a href="#ai-assistant">AI असिस्टेंट</a>
+    <a href="#restaurant-advisor">रेस्टोरेंट एडवाइज़र</a>
+    <a href="#medication">दवा</a>
+    <a href="#activity">एक्टिविटी</a>
+    <a href="#appointments">अपॉइंटमेंट</a>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- MEAL HISTORY -->
+  <section class="feat-section reveal" id="meal-history">
+    <div class="feat-head">
+      <div class="feat-icon">🕰️</div>
+      <h2>मील हिस्ट्री — "आप यह पहले भी खा चुके हैं"</h2>
+      <span class="tag tag-pro">Pro</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">परेशानी</div>
+          <p>P.F. Chang's में, AI फूड स्कैनर ने एक प्लेट को "श्रिंप लो मीन" पढ़ा — असल में वह चिकन था। दोबारा स्कैन करके ठीक करना आसान था। असली समस्या एग रोल एपेटाइज़र थी: मेन्यू में बस "ऑर्डर" लिखा है, कितने टुकड़े या एक टुकड़े में असल में कितने कार्ब्स हैं यह नहीं। <b>ऐप छोड़कर, Chrome खोलकर, खाने के बीच में इसे मैन्युअल रूप से खोजना पड़ा।</b> और तब भी, ऐप में अगली बार के लिए कुछ भी याद नहीं रहा।</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">GlucoBeacon कैसे मदद करता है</div>
+          <ul>
+            <li>आपके लॉग किए हर खाने को अपने आप <b>हर उस बार से मिलाया जाता है जब आपने ठीक वही खाना लॉग किया था</b> — कोई सेटअप ज़रूरी नहीं।</li>
+            <li>आपकी भोजन-से-पहले की रीडिंग, पहले ली गई कोई दवा, असली बढ़ोतरी के साथ भोजन-के-बाद की रीडिंग, और बाद में की गई एक्टिविटी ने फर्क डाला या नहीं — पूरी तस्वीर, सिर्फ एक नंबर नहीं।</li>
+            <li><b>रेस्टोरेंट-अवेयर:</b> दो अलग-अलग रेस्टोरेंट में — या घर पर बनी — वही डिश का नाम अलग-अलग ट्रैक किया जाता है, क्योंकि घर की चिकन लो मीन और रेस्टोरेंट का वर्ज़न एक जैसा भोजन नहीं है।</li>
+            <li>पिछली 3 बार, ठीक वहीं जब आप इसे दोबारा लॉग करने वाले हों — कौर लेने से पहले, बाद में नहीं।</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feat-note" style="margin: 0 28px 22px;">हमारे <a href="compare.html">तुलना पेज</a> के लिए रिसर्च किए गए mySugr, Carb Manager, MyFitnessPal, या अन्य ऐप्स में यह मौजूद नहीं मिला — ज़्यादातर यह ट्रैक करते हैं कि आपने क्या खाया, यह नहीं कि पिछली बार उसने आप पर असल में क्या असर डाला।</div>
+    </div>
+  </section>
+
+  <!-- FASTING -->
+  <section class="feat-section reveal" id="fasting">
+    <div class="feat-head">
+      <div class="feat-icon">🌙</div>
+      <h2>फास्टिंग — जानें कि यह असल में सुरक्षित थी या नहीं</h2>
+      <span class="tag tag-free">Free</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">परेशानी</div>
+          <p>इंटरमिटेंट फास्टिंग टाइप 2 प्रबंधन के लिए एक आम सलाह है — पर इंसुलिन या कुछ अन्य दवाओं पर रहने वालों के लिए, रातभर की फास्ट में असली हाइपोग्लाइसीमिया जोखिम होता है। ज़्यादातर फास्टिंग-टाइमर ऐप्स (Zero, DoFasting, और बाकी) हर यूज़र को एक जैसा मानते हैं और उन्हें <b>कोई अंदाज़ा नहीं होता कि घड़ी चलने के दौरान आपका ब्लड शुगर असल में क्या करता रहा</b>।</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">GlucoBeacon कैसे मदद करता है</div>
+          <ul>
+            <li>एक टैप में फास्ट शुरू करें — 16:8, 18:6, 20:4, OMAD, या कस्टम विंडो — लाइव काउंटडाउन और प्रोग्रेस रिंग के साथ, और आपका होम स्क्रीन विजेट भी साथ-साथ गिनती करता है।</li>
+            <li>हर पूरी हुई फास्ट असली क्लिनिकल आंकड़े दिखाती है: <b>औसत, रेंज, % टाइम इन रेंज, ग्लूकोज़ वेरिएबिलिटी (CV%)</b>, और असली क्लिनिकल गंभीरता से फ्लैग किया गया हाइपोग्लाइसीमिया, अंदाज़े से नहीं।</li>
+            <li>अगर आप इंसुलिन या सल्फोनिल्यूरिया लॉग कर रहे हैं, तो किसी भी लो रीडिंग के आसपास की सेफ्टी फ्रेमिंग अपने आप ज़्यादा सख्त हो जाती है।</li>
+            <li>कुछ फास्ट पूरी करने के बाद, GlucoBeacon आपके फास्टिंग विंडो के दौरान के नियंत्रण की तुलना बाकी दिन से करता है — और, समय के साथ, बताता है कि कौन-सी विंडो (जैसे 16:8 बनाम 20:4) असल में <i>आपके</i> नंबरों के लिए सबसे अच्छा काम कर रही है।</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feat-note" style="margin: 0 28px 22px;">उसी अंतरराष्ट्रीय टाइम-इन-रेंज सहमति (Battelino et al., 2019) पर आधारित जिसे खुद ADA का Standards of Care इस्तेमाल करता है — कोई गढ़ी हुई सीमा नहीं।</div>
+    </div>
+  </section>
+
+  <!-- FOOD SCAN + RESTAURANT ATTACHMENT -->
+  <section class="feat-section reveal" id="food-scan">
+    <div class="feat-head">
+      <div class="feat-icon">📸</div>
+      <h2>फूड स्कैनिंग और रेस्टोरेंट अटैचमेंट</h2>
+      <span class="tag tag-pro">Pro</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">परेशानी</div>
+          <p>रेस्टोरेंट के खाने पर बारकोड नहीं होता। और आपकी पसंदीदा लोकल जगह — परिवार की चलाई मैक्सिकन दुकान, वह डाइनर जिसके बारे में आपके मोहल्ले के बाहर किसी ने नहीं सुना — किसी डेटाबेस में नहीं है और कभी नहीं होगी। ज़्यादातर ऐप्स या तो आपसे सब कुछ शुरू से टाइप करवाते हैं या "चेन नहीं है" के लिए कोई जवाब ही नहीं रखते।</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">GlucoBeacon कैसे मदद करता है</div>
+          <ul>
+            <li>एक फोटो लें, आइटम-वार ब्रेकडाउन पाएं — स्कैन में जो छूट गया वह जोड़ें, जो असल में प्लेट में नहीं है वह हटाएं, और यह तुरंत दोबारा गणना कर देता है।</li>
+            <li>"Scan Barcode" के बगल में एक खास <b>"Scan Food"</b> बटन, क्योंकि रेस्टोरेंट के खाने पर कभी बारकोड नहीं होने वाला था।</li>
+            <li>किसी भी एंट्री में रेस्टोरेंट का नाम और "बार-बार ऑर्डर करने वाला" जैसा निजी लेबल जोड़ें — लॉग करते समय, या भूल गए तो बाद में।</li>
+            <li>किसी चेन का मेन्यू ब्राउज़ कर रहे हैं और वह नहीं दिख रहा जो आपने असल में लिया? <b>"जो ऑर्डर किया वह नहीं दिख रहा? इसे स्कैन करें"</b> स्कैनर को रेस्टोरेंट पहले से भरा हुआ खोल देता है।</li>
+            <li>उस लोकल जगह के लिए जो किसी डेटाबेस में नहीं है: <b>"सूची में नहीं है — मैन्युअल रूप से डालें"</b> साथ ही एक ऑप्ट-इन "इस रेस्टोरेंट को याद रखें" — एक बार लॉग करें और यह तब से एक असली चेन की तरह व्यवहार करता है।</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feat-note" style="margin: 0 28px 22px;">हम जानबूझकर वेब सर्च करके स्वतंत्र रेस्टोरेंट के लिए AI से पोषण का अंदाज़ा नहीं लगाते — ज़्यादातर इसे कहीं प्रकाशित ही नहीं करते, इसलिए सर्च आमतौर पर खाली ही आती। बेहतर है कि आप हमें एक बार बता दें और हम उसे याद रखें।</div>
+    </div>
+  </section>
+
+  <!-- AI ASSISTANT -->
+  <section class="feat-section reveal" id="ai-assistant">
+    <div class="feat-head">
+      <div class="feat-icon">🤖</div>
+      <h2>AI असिस्टेंट — कोई जो असल में आपके नंबर जानता है</h2>
+      <span class="tag tag-pro">Pro</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">परेशानी</div>
+          <p>रात के 11 बजे हैं, डिनर के बाद रीडिंग 240 है, और आप जानना चाहते हैं कि आज रात इसकी चिंता करनी चाहिए या बस नज़र रखनी चाहिए। इसे गूगल करने पर सामान्य रेंज मिलती हैं जिन्होंने कभी आपकी असली हिस्ट्री, आपकी दवाएं, या आपके लिए "सामान्य" का मतलब भी नहीं देखा।</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">GlucoBeacon कैसे मदद करता है</div>
+          <ul>
+            <li>एक असली सवाल पूछें और <b>आपकी असली रीडिंग, A1C अनुमान, दवाओं, और लक्ष्यों</b> पर आधारित जवाब पाएं — सामान्य सलाह नहीं, और ट्रेनिंग डेटा के लिए किसी तीसरे पक्ष को नहीं भेजा जाता।</li>
+            <li>यह असली काम कर सकता है, सिर्फ बात नहीं: एक भोजन, दवा, गतिविधि, या ब्लड शुगर रीडिंग लॉग करें, या अपॉइंटमेंट बुक करें — टाइप करके या आवाज़ से, होम स्क्रीन विजेट से हाथों के इस्तेमाल के बिना।</li>
+            <li>असिस्टेंट के ज़रिए दवा और ब्लड शुगर लॉगिंग हमेशा मुफ्त और असीमित है — आपकी मुफ्त क्वेरीज़ इस्तेमाल करने से पहले भी।</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feat-note" style="margin: 0 28px 22px;">इसे आज़माने के लिए 3 मुफ्त लाइफटाइम क्वेरीज़, Pro पर 15/दिन। Claude से संचालित, आपके अपने ऑन-डिवाइस डेटा पर चलता है — आपकी हेल्थ हिस्ट्री के बारे में कुछ भी किसी और की विज्ञापन प्रोफाइल बनाने के लिए आपके नियंत्रण से बाहर नहीं जाता।</div>
+    </div>
+  </section>
+
+  <!-- RESTAURANT ADVISOR -->
+  <section class="feat-section reveal" id="restaurant-advisor">
+    <div class="feat-head">
+      <div class="feat-icon">🍔</div>
+      <h2>रेस्टोरेंट एडवाइज़र — ऑर्डर करने से पहले जानें</h2>
+      <span class="tag tag-pro">Pro</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">परेशानी</div>
+          <p>कैशियर के पीछे 40-आइटम वाले मेन्यू बोर्ड के सामने खड़े होकर और पीछे लाइन लगी होने पर दिमाग में ग्लाइसेमिक असर का अंदाज़ा लगाना वाकई बुरी जगह है — इसलिए ज़्यादातर लोग बस वह ऑर्डर करते हैं जो ठीक लगे और नंबर बाद में पता चलता है।</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">GlucoBeacon कैसे मदद करता है</div>
+          <ul>
+            <li><b>53 असली रेस्टोरेंट चेन, 3,700+ मेन्यू आइटम</b> — ग्लाइसेमिक असर, कार्ब्स, कैलोरी, और आइटम कितना प्रोसेस्ड है, इसके लिए स्कोर किए गए, सिर्फ कैलोरी गिनती नहीं।</li>
+            <li>असली मेन्यू खोलने से पहले ही आइटम बेस्ट चॉइसेज़, गुड ऑप्शन्स, और हायर कार्ब में बांटे गए।</li>
+            <li>असली वैल्यू-मील और कॉम्बो कीमतें शामिल — सिर्फ अलग-अलग आइटम नहीं, क्योंकि ज़्यादातर लोग असल में ऐसे ही ऑर्डर करते हैं।</li>
+            <li>कीटो और वेजिटेरियन फिट टैग पहले से मौजूद, ताकि डाइट का तरीका और ग्लाइसेमिक लक्ष्य अलग-अलग जांचने न पड़ें।</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDICATION -->
+  <section class="feat-section reveal" id="medication">
+    <div class="feat-head">
+      <div class="feat-icon">💊</div>
+      <h2>दवा — "क्या मैंने यह पहले ही ले ली?"</h2>
+      <span class="tag tag-free">Free</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">परेशानी</div>
+          <p>रोज़ाना की गोलियां याद रखना आसान है। हफ्ते में एक बार का GLP-1 इंजेक्शन या महीने में एक बार का B12 शॉट अलग बात है — और यह पक्का न होना कि आपने पहले ही कुछ ले लिया है, विटामिन की तुलना में इंजेक्शन के साथ कहीं ज़्यादा बुरा एहसास होता है।</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">GlucoBeacon कैसे मदद करता है</div>
+          <ul>
+            <li>रिमाइंडर जो असल में दवा के असली प्रिस्क्रिप्शन से मेल खाते हैं — दिन में 3 बार तक, या साप्ताहिक, मासिक, या कस्टम हर-N-दिन शेड्यूल।</li>
+            <li>दवा <i>किस लिए</i> है (भोजन से पहले, भोजन के बाद, शाम को) उससे जुड़े टैग, न कि एक तय घड़ी के समय से, ताकि यह आपकी असली दिनचर्या से मेल खाए।</li>
+            <li>इसे जल्दी लॉग करें और ऐप उस दिन का रिमाइंडर अपने आप रद्द कर देता है — जो आप पहले ही कर चुके हैं उसके लिए कोई तंग करने वाला नोटिफिकेशन नहीं।</li>
+            <li>अगर आपके फोन का रिमाइंडर कभी न बजे — फोन कभी-कभी ऐसा करते हैं — GlucoBeacon कुछ मिनटों में इसे नोटिस कर लेता है और फिर भी आपको याद दिलाता है, ताकि छूटी हुई खुराक एक छूटे हुए रिमाइंडर में न बदल जाए।</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTIVITY -->
+  <section class="feat-section reveal" id="activity">
+    <div class="feat-head">
+      <div class="feat-icon">🏃</div>
+      <h2>एक्टिविटी — व्यायाम जो असल में गिना जाता है</h2>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">परेशानी</div>
+          <p>एक असली वॉक, जिसे घड़ी ने ट्रैक किया, पर ऐप में कभी नहीं दिखती क्योंकि फोन पूरे समय काउंटर पर पड़ा रहा और उसके अपने पेडोमीटर ने लगभग कुछ नहीं गिना। या यह सोचना कि क्या अभी वर्कआउट करना सुरक्षित है, यह देखते हुए कि आपका ब्लड शुगर कहां है, जबकि ऐप में इसका जवाब देने के लिए कुछ भी नहीं बना।</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">GlucoBeacon कैसे मदद करता है</div>
+          <ul>
+            <li>स्टेप ट्रैकिंग और वियरेबल सिंक (Fitbit, Garmin, Samsung, Wear OS, Google Fit) <span class="tag tag-free" style="vertical-align:middle;">Free</span> हैं — साथ ही "घड़ी ने गिना, फोन ने नहीं" वाली स्थिति के लिए एक मैन्युअल एंट्री फॉलबैक, और यह चुनने की सेटिंग कि आप असल में किस स्रोत पर भरोसा करते हैं।</li>
+            <li><b>18 सबूत-आधारित वर्कआउट रूटीन</b> (शुरुआती से एक्सपर्ट तक), हर एक में बिल्ट-इन डायबिटीज़ सेफ्टी रिमाइंडर और गाइडेड टाइमर-आधारित प्लेयर — Pro का हिस्सा।</li>
+            <li>हर लॉग की गई एक्टिविटी आपके ब्लड शुगर से उसी तरह सहसंबंधित होती है जैसे खाना — तो "क्या व्यायाम असल में मेरे नंबर बदलता है" कुछ ऐसा बन जाता है जिसे आप असल में देख सकते हैं, अंदाज़ा नहीं लगाना पड़ता।</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPOINTMENTS -->
+  <section class="feat-section reveal" id="appointments">
+    <div class="feat-head">
+      <div class="feat-icon">📅</div>
+      <h2>अपॉइंटमेंट — तैयार होकर पहुंचें</h2>
+      <span class="tag tag-pro">Pro</span>
+    </div>
+    <div class="feat-card">
+      <div class="feat-cols">
+        <div class="feat-col frustration">
+          <div class="label">परेशानी</div>
+          <p>आपका एंडोक्राइनोलॉजिस्ट पूछता है कि पिछले तीन महीने कैसे रहे, और ईमानदार जवाब है "ठीक, शायद?" — क्योंकि असली डेटा एक लॉगिंग ऐप, एक सामान्य कैलेंडर जो यह नहीं जानता कि फॉलो-अप डायबिटीज़-प्रासंगिक है, और याददाश्त में बिखरा पड़ा है।</p>
+        </div>
+        <div class="feat-col solution">
+          <div class="label">GlucoBeacon कैसे मदद करता है</div>
+          <ul>
+            <li>हर डायबिटीज़-प्रासंगिक अपॉइंटमेंट के लिए एक असली बिल्ट-इन कैलेंडर, रिमाइंडर और दो के टकराने पर अपने आप चेतावनी के साथ।</li>
+            <li>AI असिस्टेंट से आवाज़ से एक बुक करने को कहें — "अगले मंगलवार 2 बजे Dr. Chen के साथ फॉलो-अप शेड्यूल करो" — और यह कैलेंडर में आ जाता है।</li>
+            <li>इसे <b>डॉक्टर PDF रिपोर्ट</b> के साथ जोड़ें — उस अपॉइंटमेंट में अपनी असली रीडिंग, पैटर्न, और ट्रेंड पहले से व्यवस्थित लेकर जाएं, "ज़्यादातर ठीक रहा" की धुंधली याद के बजाय।</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<section class="cta-band">
+  <h2>देखें कि यह सब कैसे साथ काम करता है</h2>
+  <p>एक ऐप, आपके असली ब्लड शुगर से जुड़ा — ग्यारह अलग-अलग ऐप्स नहीं जो आपस में बात भी नहीं करते।</p>
+  <div class="btn-row">
+    <a class="btn btn-white" href="index.html#pro">कीमत देखें →</a>
+    <a class="btn-ghost" href="compare.html" style="color:rgba(255,255,255,0.9); border-color: rgba(255,255,255,0.4);">दूसरे ऐप्स से हमारी तुलना →</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand-col">
+      <div class="footer-brand">
+        <img src="../img/icon.png" alt="GlucoBeacon" />
+        <span>GlucoBeacon&trade;</span>
+      </div>
+      <p>Android के लिए एक निजी, ऑन-डिवाइस डायबिटीज़ मैनेजमेंट ऐप — ब्लड शुगर, A1C, दवाएं, खाना, और बहुत कुछ, सब एक ही जगह।</p>
+    </div>
+    <div class="footer-col">
+      <h5>प्रोडक्ट</h5>
+      <a href="features.html">विशेषताएं</a>
+      <a href="index.html#screenshots">स्क्रीनशॉट्स</a>
+      <a href="index.html#pro">कीमत</a>
+      <a href="index.html#privacy">गोपनीयता</a>
+    </div>
+    <div class="footer-col">
+      <h5>मुफ्त टूल्स</h5>
+      <a href="carb-calculator.html">कार्ब कैलकुलेटर</a>
+      <a href="compare.html">तुलना करें</a>
+      <a href="recipes/index.html">पोषण</a>
+      <a href="blog/index.html">ब्लॉग</a>
+    </div>
+    <div class="footer-col">
+      <h5>कंपनी</h5>
+      <a href="index.html#faq">सामान्य प्रश्न</a>
+      <a href="mailto:admin@glucobeacon.com">संपर्क करें</a>
+      <a href="https://glucobeacon.com/privacy/es/">गोपनीयता नीति</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 GAMZ Holdings LLC. सर्वाधिकार सुरक्षित। रेसिपी और पोषण डेटा सहित सामग्री को बिना लिखित अनुमति के स्क्रैप, पुनरुत्पादित, या AI/मशीन लर्निंग मॉडल को प्रशिक्षित करने के लिए उपयोग नहीं किया जा सकता।</p>
+    <div class="legal-links">
+      <a href="https://glucobeacon.com/privacy/es/">गोपनीयता नीति</a>
+      <a href="mailto:admin@glucobeacon.com">संपर्क करें</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="ऊपर जाएं">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="../assets/js/site.js"></script>
+<script src="../assets/js/lang-switch.js"></script>
+</body>
+</html>

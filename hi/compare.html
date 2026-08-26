@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlucoBeacon बनाम mySugr, MyFitnessPal, Carb Manager और अन्य — डायबिटीज़ ऐप तुलना</title>
+  <meta name="description" content="GlucoBeacon की 9 लोकप्रिय डायबिटीज़ और ग्लूकोज़-ट्रैकिंग ऐप्स — mySugr, Glooko, Dario, Carb Manager, Glucose Buddy, One Drop, Diabetes:M, Sugarmate, और MyFitnessPal — से ईमानदार, तथ्य-जांचित तुलना। असली कीमतें, असली फीचर्स, बढ़ा-चढ़ाकर पेश किए गए आंकड़े नहीं।" />
+  <link rel="canonical" href="https://glucobeacon.com/hi/compare.html" />
+  <link rel="alternate" hreflang="en" href="https://glucobeacon.com/compare.html" />
+  <link rel="alternate" hreflang="es" href="https://glucobeacon.com/es/compare.html" />
+  <link rel="alternate" hreflang="fil" href="https://glucobeacon.com/fil/compare.html" />
+  <link rel="alternate" hreflang="hi" href="https://glucobeacon.com/hi/compare.html" />
+  <link rel="alternate" hreflang="x-default" href="https://glucobeacon.com/compare.html" />
+  <link rel="icon" type="image/png" href="../img/icon.png" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GlucoBeacon बनाम mySugr, MyFitnessPal, Carb Manager और अन्य" />
+  <meta property="og:description" content="GlucoBeacon की 9 लोकप्रिय डायबिटीज़ और ग्लूकोज़-ट्रैकिंग ऐप्स से ईमानदार, तथ्य-जांचित तुलना। असली कीमतें, असली फीचर्स।" />
+  <meta property="og:image" content="https://glucobeacon.com/img/screen-dashboard.png" />
+  <meta property="og:url" content="https://glucobeacon.com/hi/compare.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GlucoBeacon बनाम mySugr, MyFitnessPal, Carb Manager और अन्य" />
+  <meta name="twitter:description" content="GlucoBeacon की 9 लोकप्रिय डायबिटीज़ और ग्लूकोज़-ट्रैकिंग ऐप्स से ईमानदार, तथ्य-जांचित तुलना। असली कीमतें, असली फीचर्स।" />
+  <meta name="twitter:image" content="https://glucobeacon.com/img/screen-dashboard.png" />
+  <style>
+    /* Same persistent beacon backdrop as every other page — see index.html for the full rationale. */
+    .beacon-bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+    .beacon-frame { position: absolute; top: 130px; left: 0; width: 100%; height: 100vh; }
+    .beacon-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+    .beacon-lamp {
+      position: absolute; top: 16.8%; left: 50%; width: 46px; height: 46px; border-radius: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(255,251,235,1) 0%, rgba(253,214,150,0.9) 40%, rgba(249,168,90,0.5) 65%, rgba(249,168,90,0) 80%);
+      filter: blur(2px);
+      animation: beaconPulse 2.3s ease-in-out infinite, beaconFlash 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    .beacon-beam {
+      position: absolute; top: 16.8%; left: 50%; width: 46vw; max-width: 640px; height: 90px;
+      transform-origin: 0% 50%;
+      transform: translateY(-50%) scaleX(1);
+      background: linear-gradient(90deg,
+        rgba(255,251,235,0.95) 0%,
+        rgba(253,200,130,0.55) 40%,
+        rgba(253,200,130,0.15) 75%,
+        transparent 100%);
+      clip-path: polygon(0% 38%, 100% 0%, 100% 100%, 0% 62%);
+      filter: blur(6px);
+      animation: beaconSweep 10s linear infinite;
+      mix-blend-mode: screen;
+    }
+    @keyframes beaconSweep {
+      0%   { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+      22%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      25%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      28%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      50%  { transform: translateY(-50%) scaleX(-1);    opacity: 0.95; }
+      72%  { transform: translateY(-50%) scaleX(-0.12); opacity: 0.25; }
+      75%  { transform: translateY(-50%) scaleX(0);     opacity: 0; }
+      78%  { transform: translateY(-50%) scaleX(0.12);  opacity: 0.25; }
+      100% { transform: translateY(-50%) scaleX(1);     opacity: 0.95; }
+    }
+    @keyframes beaconFlash {
+      0%, 20%, 30%, 70%, 80%, 100% { filter: blur(2px) brightness(1); }
+      25%, 75% { filter: blur(2px) brightness(1.9); }
+    }
+    @keyframes beaconPulse {
+      0%, 100% { opacity: 0.85; transform: translate(-50%, -50%) scale(1); }
+      50%      { opacity: 1;    transform: translate(-50%, -50%) scale(1.15); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .beacon-lamp, .beacon-beam { animation: none; }
+    }
+
+    .tool-head {
+      position: relative; overflow: hidden;
+      background: linear-gradient(100deg, rgba(9,20,36,0.62) 0%, rgba(9,20,36,0.4) 55%, rgba(9,20,36,0.2) 100%);
+      color: var(--white); padding: 64px 5% 56px; text-align: center;
+    }
+    .tool-head .container { max-width: 720px; }
+    .tool-head h1 { font-size: clamp(1.7rem, 3.6vw, 2.5rem); font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; }
+    .tool-head h1 span { color: var(--orange-light); }
+    .tool-head p { color: rgba(255,255,255,0.75); font-size: 1.03rem; }
+    .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 22px; }
+    .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--white); }
+
+    .wrap { max-width: 920px; margin: 0 auto; padding: 56px 5% 24px; }
+    .tool-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 40px;
+    }
+    .tool-card h2 { font-size: 1.28rem; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+    .tool-card .card-sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 22px; line-height: 1.55; }
+
+    /* ─── Pricing table ──────────────────────────────── */
+    .table-scroll { overflow-x: auto; border-radius: var(--radius-sm); border: 1px solid var(--border); }
+    table.cmp { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 640px; }
+    table.cmp th, table.cmp td { padding: 13px 16px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    table.cmp th:first-child, table.cmp td:first-child { white-space: normal; min-width: 160px; }
+    table.cmp.cmp-wrap { min-width: 0; }
+    table.cmp.cmp-wrap th, table.cmp.cmp-wrap td { white-space: normal; }
+    table.cmp.cmp-wrap td:nth-child(2), table.cmp.cmp-wrap td:nth-child(3) { min-width: 200px; }
+    table.cmp thead th { background: var(--bg); color: var(--muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.4px; font-weight: 700; }
+    table.cmp tbody tr:last-child td { border-bottom: none; }
+    table.cmp tbody tr.is-us { background: linear-gradient(90deg, rgba(249,115,22,0.07), rgba(249,115,22,0.02)); }
+    table.cmp tbody tr.is-us td:first-child { font-weight: 800; color: var(--navy); }
+    table.cmp .app-name { font-weight: 700; color: var(--text); }
+    table.cmp .app-note { display: block; font-size: 0.76rem; color: var(--muted); font-weight: 400; white-space: normal; margin-top: 2px; }
+    .yes { color: var(--good); font-weight: 800; }
+    .no  { color: var(--border-strong); font-weight: 800; }
+
+    /* ─── Head-to-head cards ─────────────────────────── */
+    .h2h { display: grid; gap: 14px; margin-top: 6px; }
+    .h2h-card { border: 1px solid var(--border); border-radius: var(--radius-md); padding: 22px 24px; }
+    .h2h-card h3 { font-size: 1.02rem; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
+    .h2h-card .h2h-price { font-size: 0.8rem; color: var(--orange2); font-weight: 700; margin-bottom: 12px; }
+    .h2h-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    @media (max-width: 640px) { .h2h-cols { grid-template-columns: 1fr; } }
+    .h2h-col h4 { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.4px; color: var(--muted); margin-bottom: 8px; }
+    .h2h-col.win h4 { color: var(--good); }
+    .h2h-col.theirs h4 { color: var(--muted); }
+    .h2h-col ul { padding-left: 18px; font-size: 0.88rem; line-height: 1.6; color: var(--text); }
+
+    .honesty-note { display: flex; gap: 12px; align-items: flex-start; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 18px 20px; font-size: 0.88rem; color: var(--muted); line-height: 1.6; margin-top: 20px; }
+    .honesty-note svg { flex-shrink: 0; margin-top: 2px; color: var(--orange); }
+
+    .cta-band { position: relative; overflow: hidden; background: linear-gradient(120deg, var(--orange2), var(--orange)); text-align: center; padding: 60px 5%; }
+    .cta-band h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .cta-band p { color: rgba(255,255,255,0.9); font-size: 1rem; margin-bottom: 28px; }
+  </style>
+</head>
+<body>
+
+<div class="beacon-bg" aria-hidden="true">
+  <div class="beacon-frame">
+    <img src="../img/beacon-hero.jpg" alt="" />
+    <div class="beacon-lamp"></div>
+    <div class="beacon-beam"></div>
+  </div>
+</div>
+
+<a href="#main" class="skip-link">सामग्री पर जाएं</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">
+      <img src="../img/icon.png" alt="GlucoBeacon लोगो" />
+      <span>GlucoBeacon<sup>&trade;</sup></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="features.html">विशेषताएं</a>
+      <a href="recipes/index.html">पोषण</a>
+      <a href="restaurants/index.html">रेस्टोरेंट</a>
+      <a href="carb-calculator.html">कार्ब कैलकुलेटर</a>
+      <a href="compare.html" class="active">तुलना करें</a>
+      <a href="index.html#pro">कीमत</a>
+      <a href="blog/index.html">ब्लॉग</a>
+      <span id="lang-switch" class="nav-lang"></span>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<div class="tool-head">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">होम</a> / तुलना</div>
+    <div class="eyebrow eyebrow-light" style="justify-content:center;">ईमानदार तुलना · असली आंकड़े</div>
+    <h1>GlucoBeacon की तुलना <span>9 लोकप्रिय डायबिटीज़ ऐप्स</span> से कैसे होती है</h1>
+    <p>नीचे दी गई हर कीमत और फीचर की पुष्टि हर कंपनी की अपनी साइट या ऐप स्टोर लिस्टिंग से की गई है। जहां कोई प्रतिस्पर्धी वाकई हमसे बेहतर कुछ करता है — ज़्यादातर रियल-टाइम CGM स्ट्रीमिंग — हम वह बात खुलकर कहते हैं। न बढ़ा-चढ़ाकर पेश किए गए आंकड़े, न गढ़ी हुई कमज़ोरियां।</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="tool-card reveal">
+    <h2>बाकी सब कुछ, जिसकी कोशिश भी ये ऐप्स नहीं करते</h2>
+    <p class="card-sub">यह कोई चेकबॉक्स तुलना नहीं है — नीचे दी गई ज़्यादातर चीज़ों के लिए, दूसरी तरफ चेक करने को कुछ है ही नहीं। ये वो चीज़ें हैं जो इस पेज पर मौजूद कोई भी ऐप बिल्कुल नहीं करता, सिर्फ कमज़ोर तरीके से नहीं करता।</p>
+    <div class="h2h">
+      <div class="h2h-card">
+        <h3>AI डायबिटीज़ असिस्टेंट</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">एक चैट और वॉयस असिस्टेंट जो वाकई आपका डेटा जानता है — आपकी असली रीडिंग्स, A1C, दवाएं, और लक्ष्य — कोई सामान्य चैटबॉट नहीं। इससे कोई सवाल पूछें, या बस "मेरी मेटफॉर्मिन लॉग करो" या "मैंने लंच में 40 कार्ब्स खाए" कहें और यह अपने आप लॉग कर देगा।</p>
+      </div>
+      <div class="h2h-card">
+        <h3>फास्टिंग ट्रैकर + ग्लूकोज़ सहसंबंध</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">16:8, 18:6, 20:4, OMAD या कस्टम विंडो के लिए लाइव काउंटडाउन, साथ ही हर फास्ट के लिए टाइम-इन-रेंज और हाइपोग्लाइसीमिया आंकड़े — और एक क्रॉस-फास्ट इनसाइट जो आपके फास्टिंग विंडो के दौरान और बाहर के ग्लूकोज़ की तुलना करता है, एक बार जब आपने असली पैटर्न देखने लायक फास्ट लॉग कर लिए हों।</p>
+      </div>
+      <div class="h2h-card">
+        <h3>मील हिस्ट्री और पैटर्न डिटेक्शन</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">एक बार खाना लॉग करें और GlucoBeacon याद रखता है कि उसने आप पर क्या असर डाला — "पिछली बार जब आपने यह खाया था, आपकी रीडिंग 210 थी।" ऑटोमैटिक पैटर्न डिटेक्शन उन खाद्य पदार्थों को फ्लैग करता है जो लगातार आपकी शुगर बढ़ाते हैं, 14 अलग-अलग पैटर्न प्रकारों में।</p>
+      </div>
+      <div class="h2h-card">
+        <h3>रेस्टोरेंट एडवाइज़र</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">53 असली चेन, 3,700+ मेन्यू आइटम पहले से ग्लाइसेमिक असर के हिसाब से बेस्ट चॉइसेज़ / गुड ऑप्शन्स / हायर कार्ब में स्कोर किए गए — साथ ही किसी भी ऐसे रेस्टोरेंट के लिए AI न्यूट्रिशन अनुमान जो अभी डेटाबेस में नहीं है। आपका पसंदीदा लोकल दुकान भी नहीं छूटती: उसे एक बार अपने सामान्य व्यंजनों के साथ याद कर लें, और वह तब से किसी भी अन्य चेन जैसा ही व्यवहार करता है।</p>
+      </div>
+      <div class="h2h-card">
+        <h3>पैंट्री, रेसिपी और शॉपिंग लिस्ट</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">किराने का सामान स्कैन करके पैंट्री में डालें जो खाना बनाते समय अपने आप घट जाती है। असली कीटो/वेजिटेरियन फ़िल्टरिंग वाली 120-रेसिपी लाइब्रेरी दिखाती है कि आप अभी घर में मौजूद सामान से क्या बना सकते हैं।</p>
+      </div>
+      <div class="h2h-card">
+        <h3>अपॉइंटमेंट, आवाज़ से शेड्यूल करें</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">कॉन्फ्लिक्ट चेतावनी वाला असली कैलेंडर — और आप बस कह सकते हैं "अगले मंगलवार दोपहर 2 बजे मेरे एंडोक्राइनोलॉजिस्ट के लिए शेड्यूल करो" और यह बिना टाइप किए कैलेंडर में आ जाता है।</p>
+      </div>
+      <div class="h2h-card">
+        <h3>डाइट-टाइप इंटेलिजेंस</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">असली कीटो और वेजिटेरियन बैज असली नेट-कार्ब गणित से निकाले गए, अंदाज़े से नहीं — साथ ही किसी भी डिश को आपकी डाइट में फिट करने के लिए एक-टैप AI सुझाव ("इसे लेट्यूस-रैप्ड बनाकर मांगें")।</p>
+      </div>
+      <div class="h2h-card">
+        <h3>होम स्क्रीन विजेट</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">आपकी नवीनतम रीडिंग, स्टेप्स, और कैलोरी एक नज़र में — होम स्क्रीन से सीधे एक-टैप AI वॉयस शॉर्टकट के साथ, ऐप खोलने की भी ज़रूरत नहीं।</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tool-card reveal">
+    <h2>कीमत, साथ-साथ</h2>
+    <p class="card-sub">इस सूची में GlucoBeacon अकेला ऐप है जिसमें एक-बार वाला लाइफटाइम विकल्प है — बाकी सभी यहां रिकरिंग सब्सक्रिप्शन हैं जब तक आप उसे इस्तेमाल करते हैं। और नीचे "फ्री" पूरी कहानी नहीं है: <a href="#real-cost">असली ऑल-इन-कॉस्ट कॉलम देखें</a> — इन सभी ऐप्स को अभी भी आपको किसी न किसी चीज़ से टेस्ट करने की ज़रूरत है, और वह शायद ही कभी मुफ्त होती है।</p>
+    <div class="table-scroll">
+      <table class="cmp cmp-wrap">
+        <thead>
+          <tr><th>ऐप</th><th>ऐप कीमत</th><th id="real-cost">असली ऑल-इन-कॉस्ट/माह*</th></tr>
+        </thead>
+        <tbody>
+          <tr class="is-us">
+            <td>GlucoBeacon</td>
+            <td><span data-usd="4.99">$4.99</span>/माह · <span data-usd="49.99">$49.99</span>/साल · <b><span data-usd="79.99">$79.99</span> लाइफटाइम</b></td>
+            <td><span data-usd="4.99">$4.99</span> + जिससे भी आप पहले से टेस्ट करते हैं</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Glooko</span><span class="app-note">100+ मीटर/पंप/CGM सिंक, क्लिनिक-केंद्रित</span></td>
+            <td>मुफ्त</td>
+            <td>~$28–$580 (ऐप मुफ्त, पर फिर भी मीटर या CGM चाहिए)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Sugarmate</span><span class="app-note">केवल CGM डिस्प्ले/अलर्ट — Dexcom ज़रूरी</span></td>
+            <td>मुफ्त</td>
+            <td>~$350–$580 (ऐप मुफ्त, पर Dexcom के बिना इस्तेमाल ही नहीं हो सकता)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">mySugr</span><span class="app-note">PRO से रिमाइंडर, PDF एक्सपोर्ट, बोलस कैलकुलेटर† मिलते हैं</span></td>
+            <td>मुफ्त, या PRO $2.99/माह</td>
+            <td>~$28–$580 + $0–2.99 (ऐप मुफ्त/सस्ता, टेस्टिंग सप्लाई नहीं)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Diabetes:M</span><span class="app-note">सब्सक्रिप्शन मुख्यतः विज्ञापन हटाता है</span></td>
+            <td>मुफ्त, या $4.99/माह ($49.99/साल)</td>
+            <td>~$28–$580 + $0–4.99</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Carb Manager</span><span class="app-note">कीटो/मैक्रो केंद्रित, डायबिटीज़-विशिष्ट नहीं</span></td>
+            <td>मुफ्त, या प्रीमियम ~$39.99/साल</td>
+            <td>~$28–$580 + $0–3.33 (ग्लूकोज़ रीडिंग भी लॉग नहीं करता)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">MyFitnessPal</span><span class="app-note">सामान्य कैलोरी काउंटर, ग्लूकोज़ लॉगिंग नहीं</span></td>
+            <td>मुफ्त, या $19.99/माह ($79.99/साल)</td>
+            <td>~$28–$580 + $0–19.99 (ग्लूकोज़ भी लॉग नहीं करता)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Glucose Buddy</span><span class="app-note">Dexcom सिंक, कोचिंग ऐड-ऑन</span></td>
+            <td>$19/माह से शुरू</td>
+            <td>~$350–$580 + $19 (Dexcom-निर्भर, Sugarmate जैसा ही)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">One Drop</span><span class="app-note">कोचिंग + टेस्ट-स्ट्रिप सब्सक्रिप्शन बंडल</span></td>
+            <td>$19.99/माह, +$21–$80/माह स्ट्रिप्स के लिए</td>
+            <td>$41–$100 (इसके बारे में खुलकर बताने वाला अकेला ऐप)</td>
+          </tr>
+          <tr>
+            <td><span class="app-name">Dario</span><span class="app-note">उनका अपना मीटर खरीदना ज़रूरी</span></td>
+            <td>$25–$70/माह</td>
+            <td>$25–$70 (मीटर की कीमत पहले से शामिल)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem; color:var(--muted); margin-top:12px;">*असली ऑल-इन-कॉस्ट = ऐप की अपनी कीमत प्लस बिना इंश्योरेंस के एक सामान्य CGM या फिंगर-स्टिक स्ट्रिप की कीमत (अगले सेक्शन में पूरी सोर्सिंग और डिवाइस-वार ब्रेकडाउन है)। रेंज इतनी चौड़ी इसलिए है क्योंकि CGM ($220–$580/माह) और फिंगर-स्टिक स्ट्रिप्स ($28–$117/माह) बहुत अलग कीमत के हैं — कौन सी बिल्कुल, नीचे देखें। † mySugr का बोलस कैलकुलेटर UK, ऑस्ट्रेलिया और यूरोप के कुछ हिस्सों में मिलता है — US ऐप में उपलब्ध नहीं है। कीमतें प्रकाशन के समय की हैं; सालाना/क्षेत्रीय कीमतें बदल सकती हैं — फैसला लेने से पहले हर कंपनी की अपनी साइट देखें।</p>
+  </div>
+
+  <div class="tool-card reveal">
+    <h2>वह खर्च जो ऐप स्टोर पेज पर कोई नहीं दिखाता</h2>
+    <p class="card-sub">किसी ऐप की अपनी कीमत बिल की सिर्फ आधी कहानी है। जिससे आप असल में टेस्ट करते हैं — CGM सेंसर या फिंगर-स्टिक स्ट्रिप्स — आमतौर पर इन ऐप्स से (GlucoBeacon सहित) कहीं ज़्यादा प्रति माह खर्च होता है। यहां हर एक की असली, सोर्स्ड रेंज है।</p>
+    <div class="table-scroll">
+      <table class="cmp">
+        <thead>
+          <tr><th>आप किससे टेस्ट कर रहे हैं</th><th>सामान्य मासिक खर्च, बिना इंश्योरेंस</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="app-name">Dexcom G7</span><span class="app-note">नकद रिटेल कीमत, फार्मेसी के अनुसार बदलती है</span></td><td>$350–$580</td></tr>
+          <tr><td><span class="app-name">FreeStyle Libre 2 या 3</span><span class="app-note">रिटेल; GoodRx/SingleCare कूपन के साथ ~$130–$175</span></td><td>$220–$260</td></tr>
+          <tr><td><span class="app-name">OneTouch Verio स्ट्रिप्स</span><span class="app-note">दिन में 3× टेस्टिंग, मीटर आमतौर पर मुफ्त</span></td><td>$63–$117</td></tr>
+          <tr><td><span class="app-name">Contour Next स्ट्रिप्स</span><span class="app-note">दिन में 3× टेस्टिंग, मीटर आमतौर पर मुफ्त</span></td><td>$28–$34</td></tr>
+          <tr class="is-us"><td>GlucoBeacon</td><td><span data-usd="4.99">$4.99</span>/माह · <span data-usd="49.99">$49.99</span>/साल · <span data-usd="79.99">$79.99</span> एक बार — जिससे भी आप पहले से टेस्ट करते हैं उसके ऊपर</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem; color:var(--muted); margin-top:12px;">GoodRx, SingleCare, और निर्माता की कीमत वाले पेजों से लिया गया; असली नकद कीमत फार्मेसी, क्षेत्र, और कूपन के इस्तेमाल के अनुसार बदलती है। Dexcom का एक पेशेंट असिस्टेंस प्रोग्राम भी है जो योग्य कम-आय वाले मरीज़ों के लिए कीमत को ~$45 प्रति 90-दिन सप्लाई तक ला सकता है।</p>
+
+    <div class="honesty-note" style="margin-top:24px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      <div>आप जिससे भी टेस्ट करें, वह हार्डवेयर याद नहीं रखता कि पिछली बार किसी डिश ने आप पर क्या असर डाला, यह नहीं बताता कि कल रात की फास्ट सुरक्षित थी या नहीं, और आपकी दवाओं और अपॉइंटमेंट को आपकी रीडिंग के साथ एक ही जगह नहीं रखता — यह एक सॉफ्टवेयर समस्या है, सेंसर की नहीं। GlucoBeacon किसी भी तरीके के ऊपर <b><span data-usd="4.99">$4.99</span>/माह</b> है, उसकी जगह नहीं, और चाहे आपका टेस्ट $30 प्रति माह का हो या $500 का, यह वही काम करता है। हमारे <a href="features.html">फीचर्स पेज</a> पर वह सब देखें जो यह जोड़ता है।</div>
+    </div>
+  </div>
+
+  <div class="tool-card reveal">
+    <h2>आपको असल में क्या मिलता है</h2>
+    <p class="card-sub">इनमें से ज़्यादातर ऐप्स एक ही काम के इर्द-गिर्द बने हैं — ग्लूकोज़ लॉगिंग, CGM डिस्प्ले, या कैलोरी काउंटिंग। GlucoBeacon की शर्त संपूर्ण-स्वास्थ्य की चौड़ाई है: वही ऐप जो आपकी रीडिंग लॉग करता है वह आपकी दवाएं, ब्लड प्रेशर, नींद, और अपॉइंटमेंट भी ट्रैक करता है, और इन सबको आपके ग्लूकोज़ के साथ सहसंबंधित करता है — निजी तौर पर, आपके डिवाइस पर। हर फीचर असल में क्या करता है, इसका पूरा ब्रेकडाउन हमारे <a href="features.html">फीचर्स पेज</a> पर देखें।</p>
+    <div class="table-scroll">
+      <table class="cmp">
+        <thead>
+          <tr><th>ऐप</th><th>दवाएं / BP / नींद / अपॉइंटमेंट</th><th>ऑन-डिवाइस, बिना अकाउंट</th><th>डॉक्टर PDF रिपोर्ट</th><th>एक-बार लाइफटाइम विकल्प</th><th>ग्लाइसेमिक असर के हिसाब से स्कोर किए गए रेस्टोरेंट आइटम</th><th>बोलस कैलकुलेटर</th><th>रियल-टाइम CGM सिंक</th></tr>
+        </thead>
+        <tbody>
+          <tr class="is-us">
+            <td>GlucoBeacon</td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="yes">✓</span></td>
+            <td><span class="no">✕</span></td>
+            <td><span class="no">✕</span></td>
+          </tr>
+          <tr><td><span class="app-name">Glooko</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td><span class="app-name">Sugarmate</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td><span class="app-name">mySugr</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓†</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td><span class="app-name">Diabetes:M</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td><span class="app-name">Carb Manager</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td></tr>
+          <tr><td><span class="app-name">MyFitnessPal</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td></tr>
+          <tr><td><span class="app-name">Glucose Buddy</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="yes">✓</span></td></tr>
+          <tr><td><span class="app-name">One Drop</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td></tr>
+          <tr><td><span class="app-name">Dario</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="yes">✓</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td><td><span class="no">✕</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.78rem; color:var(--muted); margin-top:12px;">† mySugr का बोलस कैलकुलेटर UK, ऑस्ट्रेलिया और यूरोप के कुछ हिस्सों में मिलता है — US ऐप में उपलब्ध नहीं है। "ग्लाइसेमिक असर के हिसाब से स्कोर किए गए रेस्टोरेंट आइटम" का मतलब है आइटम GI/कार्ब/कैलोरी/प्रोसेस्ड-स्कोर से रैंक किए गए, सिर्फ एक फूड डेटाबेस नहीं — Carb Manager और MyFitnessPal दोनों के पास बड़े सामान्य फूड/रेसिपी डेटाबेस हैं, बस ग्लाइसेमिक स्कोरिंग नहीं।</p>
+  </div>
+
+  <div class="tool-card reveal">
+    <h2>हमारे आंकड़ों के पीछे का विज्ञान</h2>
+    <p class="card-sub">GlucoBeacon में हर गणना किसी प्रकाशित क्लिनिकल स्रोत तक जाती है — कोई अंदाज़ा नहीं, कोई मार्केटिंग नंबर नहीं।</p>
+    <div class="h2h">
+      <div class="h2h-card">
+        <h3>A1C अनुमान</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">Nathan/ADA फॉर्मूला: <code>(भारित औसत + 46.7) ÷ 28.7</code>, आपकी पिछली 90 दिनों की रीडिंग के सबसे-हाल के/बीच के/सबसे पुराने तिहाई के लिए 1.0/0.5/0.25 भारित — हाल का नियंत्रण 3 महीने पुरानी रीडिंग से ज़्यादा मायने रखता है। अनुमान दिखाने के लिए कम से कम 7 रीडिंग ज़रूरी।</p>
+      </div>
+      <div class="h2h-card">
+        <h3>टाइम इन रेंज और ग्लूकोज़ वेरिएबिलिटी</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">कंटीन्यूअस ग्लूकोज़ मॉनिटरिंग मेट्रिक्स पर अंतरराष्ट्रीय सहमति (Battelino et al., <i>Diabetes Care</i> 2019) पर आधारित, जिसे ADA स्टैंडर्ड्स ऑफ केयर में अपनाया गया: 70–180 mg/dL (3.9–10.0 mmol/L) टारगेट रेंज के रूप में, हाइपोग्लाइसीमिया को लेवल 1 (&lt;70 mg/dL / &lt;3.9 mmol/L) और क्लिनिकली महत्वपूर्ण लेवल 2 (&lt;54 mg/dL / &lt;3.0 mmol/L) में बांटा गया, और दिन-प्रतिदिन स्थिरता के लिए कोएफिशिएंट ऑफ वेरिएशन — इंसुलिन या सल्फोनिल्यूरिया लॉग होने पर &lt;33% तक सख्त, उन दवा वर्गों के हाइपोग्लाइसीमिया जोखिम पर ADA मार्गदर्शन के अनुसार।</p>
+      </div>
+      <div class="h2h-card">
+        <h3>ग्लाइसेमिक इंडेक्स डेटा</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">हमारा क्यूरेटेड 176-फूड डेटाबेस असली लैब-टेस्टेड GI मानों तक जाता है (ISO 26642 पद्धति: फास्टेड विषय, 50 ग्राम-कार्ब पोर्शन, 2 घंटे तक ब्लड ग्लूकोज़ को ग्लूकोज़ रेफरेंस के मुकाबले ट्रैक किया गया)। कभी पूरी डिश के रूप में टेस्ट न किए गए मिश्रित व्यंजनों के लिए — किसी ने "चिकन एनचिलादास" पर क्लिनिकल ट्रायल नहीं चलाया — हम एक कार्ब-भारित अनुमान निकालते हैं और उसे अनुमान के रूप में लेबल करते हैं, क्योंकि यह मानक तकनीक भी असली लैब-मापित परिणाम से 22–50% अलग हो सकती है।</p>
+      </div>
+      <div class="h2h-card">
+        <h3>दैनिक कार्ब बजट</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">बेसल मेटाबॉलिक रेट के लिए Mifflin-St Jeor समीकरण, गतिविधि स्तर और लक्ष्य के अनुसार समायोजित, फिर आपके चुने हुए कार्ब-दृष्टिकोण प्रतिशत से विभाजित — वही मुफ्त टूल जो हमारे <a href="carb-calculator.html">कार्ब कैलकुलेटर</a> पेज पर उपलब्ध है।</p>
+      </div>
+      <div class="h2h-card">
+        <h3>नेट कार्ब्स</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">मानक परंपरा: <code>कुल कार्ब्स − फाइबर − (शुगर अल्कोहल ÷ 2)</code> — फाइबर ग्लूकोज़ में नहीं पचता, और शुगर अल्कोहल केवल आंशिक रूप से अवशोषित होते हैं।</p>
+      </div>
+      <div class="h2h-card">
+        <h3>प्रोसेस्ड फूड स्कोर</h3>
+        <p style="font-size:0.88rem; line-height:1.6; margin-top:6px;">NOVA फूड क्लासिफिकेशन सिस्टम (Monteiro et al.) से प्रेरित 1–10 का स्कोर, हर GI फूड, रेस्टोरेंट आइटम, और बारकोड-स्कैन किए गए प्रोडक्ट पर लागू — कार्ब्स और ग्लाइसेमिक इंडेक्स के साथ, क्योंकि कोई खाद्य पदार्थ कितना प्रोसेस्ड है यह सिर्फ उसकी कार्ब गिनती से ज़्यादा असर डालता है।</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<section class="cta-band">
+  <h2>खुद देखिए</h2>
+  <p>एक कीमत, चाहें तो एक बार चुकाएं — अपनी डायबिटीज़ मैनेज करने के लिए बार-बार बिल की ज़रूरत नहीं।</p>
+  <a class="btn btn-white" href="index.html#pro">GlucoBeacon की कीमत देखें →</a>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand-col">
+      <div class="footer-brand">
+        <img src="../img/icon.png" alt="GlucoBeacon" />
+        <span>GlucoBeacon&trade;</span>
+      </div>
+      <p>Android के लिए एक निजी, ऑन-डिवाइस डायबिटीज़ मैनेजमेंट ऐप — ब्लड शुगर, A1C, दवाएं, खाना, और बहुत कुछ, सब एक ही जगह।</p>
+    </div>
+    <div class="footer-col">
+      <h5>प्रोडक्ट</h5>
+      <a href="features.html">विशेषताएं</a>
+      <a href="index.html#screenshots">स्क्रीनशॉट्स</a>
+      <a href="index.html#pro">कीमत</a>
+      <a href="index.html#privacy">गोपनीयता</a>
+    </div>
+    <div class="footer-col">
+      <h5>मुफ्त टूल्स</h5>
+      <a href="carb-calculator.html">कार्ब कैलकुलेटर</a>
+      <a href="compare.html">तुलना करें</a>
+      <a href="recipes/index.html">पोषण</a>
+      <a href="blog/index.html">ब्लॉग</a>
+    </div>
+    <div class="footer-col">
+      <h5>कंपनी</h5>
+      <a href="index.html#faq">सामान्य प्रश्न</a>
+      <a href="mailto:admin@glucobeacon.com">संपर्क करें</a>
+      <a href="https://glucobeacon.com/privacy/es/">गोपनीयता नीति</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 GAMZ Holdings LLC. सर्वाधिकार सुरक्षित। रेसिपी और पोषण डेटा सहित सामग्री को बिना लिखित अनुमति के स्क्रैप, पुनरुत्पादित, या AI/मशीन लर्निंग मॉडल को प्रशिक्षित करने के लिए उपयोग नहीं किया जा सकता।</p>
+    <div class="legal-links">
+      <a href="https://glucobeacon.com/privacy/es/">गोपनीयता नीति</a>
+      <a href="mailto:admin@glucobeacon.com">संपर्क करें</a>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="ऊपर जाएं">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="../assets/js/site.js"></script>
+<script src="../assets/js/lang-switch.js"></script>
+</body>
+</html>

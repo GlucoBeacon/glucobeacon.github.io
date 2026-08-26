@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A1C की गणना कैसे होती है (और आपका नंबर असल में क्या मतलब रखता है) | GlucoBeacon</title>
+  <meta name="description" content="A1C आपकी ब्लड शुगर रीडिंग का सरल औसत नहीं है। यहां है कि इसकी गणना असल में कैसे होती है, हाल के दिन पुराने दिनों से ज़्यादा क्यों मायने रखते हैं, और यह नंबर आपकी सेहत के लिए क्या मतलब रखता है।" />
+  <link rel="canonical" href="https://glucobeacon.com/hi/blog/how-a1c-is-calculated.html" />
+  <link rel="alternate" hreflang="en" href="https://glucobeacon.com/blog/how-a1c-is-calculated.html" />
+  <link rel="alternate" hreflang="es" href="https://glucobeacon.com/es/blog/how-a1c-is-calculated.html" />
+  <link rel="alternate" hreflang="fil" href="https://glucobeacon.com/fil/blog/how-a1c-is-calculated.html" />
+  <link rel="alternate" hreflang="hi" href="https://glucobeacon.com/hi/blog/how-a1c-is-calculated.html" />
+  <link rel="alternate" hreflang="x-default" href="https://glucobeacon.com/blog/how-a1c-is-calculated.html" />
+  <link rel="icon" type="image/png" href="../img/icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:title" content="A1C की गणना कैसे होती है (और आपका नंबर असल में क्या मतलब रखता है)" />
+  <meta property="og:image" content="https://glucobeacon.com/marketing/pins-batch6-facts/how-a1c-is-calculated.jpg" />
+  <meta property="og:url" content="https://glucobeacon.com/hi/blog/how-a1c-is-calculated.html" />
+  <meta property="og:description" content="A1C कोई दैनिक औसत नहीं है — यह भारित है। यहां है वह असली गणित जो आपके डॉक्टर के सबसे ज़्यादा ध्यान देने वाले नंबर के पीछे है।" />
+  <meta property="og:type" content="article" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "A1C की गणना कैसे होती है (और आपका नंबर असल में क्या मतलब रखता है)",
+    "author": { "@type": "Organization", "name": "GlucoBeacon" },
+    "publisher": { "@type": "Organization", "name": "GAMZ Holdings LLC" },
+    "mainEntityOfPage": "https://glucobeacon.com/hi/blog/how-a1c-is-calculated.html"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "क्या A1C ब्लड शुगर का सरल औसत है?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "नहीं। A1C एक रीसेंसी-भारित औसत है, सपाट नहीं। सबसे हाल के 30 दिन आपके A1C में सबसे ज़्यादा योगदान देते हैं, 31-60 दिन मध्यम योगदान देते हैं, और 61-90 दिन सबसे कम योगदान देते हैं। एक जैसे 90-दिन के औसत ब्लड शुगर वाले दो लोगों को अलग A1C नतीजे मिल सकते हैं अगर उनका हाल का पैटर्न अलग रहा हो।"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A1C को औसत ब्लड शुगर (eAG) में कैसे बदलें?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "mg/dL में अनुमानित औसत ग्लूकोज़ आपके A1C प्रतिशत का 28.7 गुना, माइनस 46.7 है (eAG = 28.7 x A1C - 46.7); mmol/L में यह A1C का 1.59 गुना माइनस 2.59 है। उदाहरण के लिए, 7.0% का A1C लगभग 154 mg/dL (8.5 mmol/L) के बराबर है, और 6.5% का A1C लगभग 140 mg/dL (7.8 mmol/L) के बराबर है।"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "कौन-सा A1C स्तर डायबिटीज़ या प्री-डायबिटीज़ दिखाता है?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ADA संदर्भ रेंज के अनुसार, 5.7% से कम सामान्य माना जाता है, 5.7% से 6.4% प्री-डायबिटीज़ रेंज है, और दो अलग-अलग टेस्ट में 6.5% या उससे ज़्यादा डायबिटीज़ का निदान करने के लिए इस्तेमाल होता है। डायबिटीज़ वाले ज़्यादातर वयस्कों को एक व्यक्तिगत लक्ष्य दिया जाता है, आमतौर पर लगभग 7%।"
+        }
+      }
+    ]
+  }
+  </script>
+  <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+
+<div class="beacon-bg" aria-hidden="true">
+  <div class="beacon-frame">
+    <img src="../img/beacon-hero.jpg" alt="" />
+    <div class="beacon-lamp"></div>
+    <div class="beacon-beam"></div>
+  </div>
+</div>
+
+<header class="site-header">
+<nav>
+  <a class="nav-brand" href="../index.html">
+    <img src="../img/icon.png" alt="GlucoBeacon लोगो" />
+    <span>GlucoBeacon</span>
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-menu" id="navMenu">
+      <a href="../features.html">विशेषताएं</a>
+      <a href="../recipes/index.html">पोषण</a>
+      <a href="../restaurants/index.html">रेस्टोरेंट</a>
+      <a href="../carb-calculator.html">कार्ब कैलकुलेटर</a>
+      <a href="../compare.html">तुलना करें</a>
+      <a href="../index.html#pro">कीमत</a>
+      <a href="../index.html#privacy">गोपनीयता</a>
+      <a href="index.html" class="active">ब्लॉग</a>
+      <span id="lang-switch" class="nav-lang"></span>
+    </div>
+  <div class="nav-store-badges">
+      <a class="nav-store-play" href="https://play.google.com/store/apps/details?id=com.glucobeacon.app" target="_blank" rel="noopener"><img src="../img/google-play-badge.png" alt="Google Play पर पाएं" /></a>
+      <span class="nav-store-ios">iOS &mdash; जल्द आ रहा है</span>
+    </div>
+</nav>
+</header>
+
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <div class="breadcrumb"><a href="index.html">ब्लॉग</a> / A1C</div>
+    <div class="article-eyebrow">A1C</div>
+    <h1>A1C की गणना कैसे होती है (और आपका नंबर असल में क्या मतलब रखता है)</h1>
+    <div class="article-meta">6 मिनट का पठन</div>
+  </div>
+</div>
+
+<div class="article-body">
+
+  <p><strong>A1C पिछले 3 महीनों के आपके ब्लड शुगर का सपाट औसत नहीं है — यह एक रीसेंसी-भारित औसत है, जहां सबसे हाल के 30 दिन सबसे पुराने दिनों से ज़्यादा गिने जाते हैं।</strong> आपका A1C शायद वह अकेला नंबर है जिस पर आपका डॉक्टर सबसे ज़्यादा नज़र रखता है, और सबसे कम समझा जाने वाला भी। ज़्यादातर लोग मान लेते हैं कि यह बस "पिछले 3 महीनों के आपके ब्लड शुगर का औसत" है। यह लगभग सही है, पर बिल्कुल नहीं, और यह अंतर असल में मायने रखता है।</p>
+
+  <h2>A1C असल में क्या मापता है</h2>
+
+  <p>A1C (जिसे HbA1c भी कहते हैं) आपके हीमोग्लोबिन — लाल रक्त कोशिकाओं में ऑक्सीजन ले जाने वाला प्रोटीन — का वह प्रतिशत मापता है जिसमें ग्लूकोज़ जुड़ा हुआ है। जब ब्लड शुगर ज़्यादा होता है, ज़्यादा ग्लूकोज़ हीमोग्लोबिन से जुड़ता है। चूंकि लाल रक्त कोशिकाएं लगभग 2–3 महीने जीती हैं, A1C टेस्ट उस पूरी अवधि में आपके औसत ब्लड शुगर की एक चलती-फिरती झलक पकड़ता है, सिर्फ पिछले कुछ दिनों की नहीं।</p>
+
+  <h2>यह सपाट औसत क्यों नहीं है</h2>
+
+  <p>यहां है वह हिस्सा जिसे ज़्यादातर समझाइशें छोड़ देती हैं: पिछले तीन महीने बराबर नहीं गिने जाते। चूंकि लाल रक्त कोशिकाएं लगातार बदली जाती रहती हैं, <strong>हाल के ब्लड शुगर स्तर आपके A1C पर पुराने स्तरों से ज़्यादा असर डालते हैं।</strong> एक सामान्य, अक्सर बताया जाने वाला ब्रेकडाउन कुछ ऐसा दिखता है:</p>
+
+  <ul>
+    <li><strong>सबसे हाल के 30 दिन</strong> — आपके A1C में सबसे ज़्यादा योगदान देते हैं</li>
+    <li><strong>31–60 दिन पहले</strong> — मध्यम योगदान देते हैं</li>
+    <li><strong>61–90 दिन पहले</strong> — सबसे कम योगदान देते हैं</li>
+  </ul>
+
+  <p>यही वजह है कि 90 दिनों में एक जैसे औसत ब्लड शुगर वाले दो लोगों को अलग A1C नतीजे मिल सकते हैं अगर उनका <em>पैटर्न</em> अलग रहा हो — जो व्यक्ति शुरुआत में हाई था और हाल ही में सुधरा है वह आमतौर पर उस व्यक्ति से बेहतर टेस्ट करेगा जिसका नियंत्रण फिसल रहा है, भले ही कुल औसत एक जैसा हो।</p>
+
+  <h2>A1C को अनुमानित औसत ग्लूकोज़ में बदलना</h2>
+
+  <p>आपके A1C प्रतिशत को ADA के एक फॉर्मूला (Nathan et al. फॉर्मूला पर आधारित) से अनुमानित औसत ग्लूकोज़ (eAG) में बदला जा सकता है — mg/dL में, या उसी अध्ययन के वैकल्पिक फॉर्मूला से सीधे mmol/L में:</p>
+
+  <p style="text-align:center; font-weight:700; color:var(--navy); font-size:1.1rem; margin: 24px 0;">eAG (mg/dL) = (28.7 × A1C) − 46.7<br><span style="font-size:0.85rem; color:var(--muted); font-weight:600;">eAG (mmol/L) = (1.59 × A1C) − 2.59</span></p>
+
+  <table>
+    <thead><tr><th>A1C</th><th>अनुमानित औसत ग्लूकोज़ (mg/dL)</th><th>अनुमानित औसत ग्लूकोज़ (mmol/L)</th></tr></thead>
+    <tbody>
+      <tr><td>5.0%</td><td>~97 mg/dL</td><td>~5.4 mmol/L</td></tr>
+      <tr><td>5.7% (प्री-डायबिटीज़ सीमा)</td><td>~117 mg/dL</td><td>~6.5 mmol/L</td></tr>
+      <tr><td>6.5% (डायबिटीज़ सीमा)</td><td>~140 mg/dL</td><td>~7.8 mmol/L</td></tr>
+      <tr><td>7.0%</td><td>~154 mg/dL</td><td>~8.5 mmol/L</td></tr>
+      <tr><td>8.0%</td><td>~183 mg/dL</td><td>~10.2 mmol/L</td></tr>
+      <tr><td>9.0%</td><td>~212 mg/dL</td><td>~11.8 mmol/L</td></tr>
+    </tbody>
+  </table>
+
+  <p>सामान्य ADA संदर्भ रेंज: 5.7% से कम सामान्य माना जाता है, 5.7%–6.4% प्री-डायबिटीज़ रेंज है, और दो अलग-अलग टेस्ट में 6.5% या उससे ज़्यादा डायबिटीज़ का निदान करने के लिए इस्तेमाल होता है। डायबिटीज़ वाले ज़्यादातर वयस्कों को एक व्यक्तिगत लक्ष्य दिया जाता है, आमतौर पर लगभग 7%, हालांकि आपका डॉक्टर आपकी उम्र, अन्य स्वास्थ्य स्थितियों, और लो ब्लड शुगर के जोखिम के आधार पर अलग लक्ष्य तय कर सकता है।</p>
+
+  <h2>अकेला A1C पूरी तस्वीर क्यों नहीं है</h2>
+
+  <p>A1C एक अकेला नंबर है, पर एक ही A1C बहुत अलग रोज़मर्रा की हकीकतों को छुपा सकता है। जिसका ब्लड शुगर मध्यम रेंज में स्थिर रहता है और जिसका ब्लड शुगर बहुत कम और बहुत ज़्यादा के बीच बुरी तरह झूलता है, दोनों का A1C औसत एक जैसा आ सकता है — भले ही एक स्थिति रोज़मर्रा में कहीं ज़्यादा जोखिम भरी हो। यही वजह है कि अब ज़्यादा डॉक्टर A1C के साथ-साथ <strong>टाइम इन रेंज</strong> (वह प्रतिशत समय जब आपका ग्लूकोज़ लक्ष्य में रहता है) भी देखते हैं, इसकी जगह नहीं।</p>
+
+  <div class="callout">
+    <div class="callout-label">GlucoBeacon में</div>
+    <p>GlucoBeacon का A1C एस्टिमेटर आपकी लॉग की गई रीडिंग पर यही रीसेंसी-भारित फॉर्मूला लागू करता है — ताकि लैब टेस्ट के बीच, आप देख सकें कि आपका नंबर किस ओर जा रहा है, सिर्फ अंदाज़ा न लगाएं। इसे टाइम इन रेंज व्यू के साथ जोड़ें ताकि वह पूरी तस्वीर मिले जो अकेला A1C नंबर नहीं दिखा सकता।</p>
+  </div>
+
+  <h2>निचोड़</h2>
+  <p>A1C एक वाकई उपयोगी दीर्घकालिक संकेतक है, पर यह एक पिछड़ता, भारित औसत है — कोई लाइव रीडआउट नहीं, और अपने आप में पूरी कहानी भी नहीं। इस देरी को समझना बताता है कि आज का बड़ा जीवनशैली बदलाव हफ्तों तक लैब नतीजे में क्यों नहीं दिखेगा, और क्यों लगातार बने रहना किसी एक अच्छे (या बुरे) हफ्ते से ज़्यादा मायने रखता है।</p>
+
+</div>
+
+<p class="disclaimer">यह लेख केवल सामान्य शैक्षिक उद्देश्यों के लिए है और पेशेवर चिकित्सा सलाह का विकल्प नहीं है। A1C लक्ष्य व्यक्ति के अनुसार बदलते हैं — हमेशा अपने स्वास्थ्य सेवा प्रदाता द्वारा तय खास लक्ष्य का पालन करें, किसी सामान्य संदर्भ रेंज का नहीं।</p>
+
+<div class="back-link"><a href="index.html">← सभी लेखों पर वापस जाएं</a></div>
+
+<footer>
+  <div class="footer-brand">
+    <img src="../img/icon.png" alt="GlucoBeacon" />
+    <span>GlucoBeacon</span>
+  </div>
+  <p>&copy; 2026 GAMZ Holdings LLC. सर्वाधिकार सुरक्षित। रेसिपी और पोषण डेटा सहित सामग्री को बिना लिखित अनुमति के स्क्रैप, पुनरुत्पादित, या AI/मशीन लर्निंग मॉडल को प्रशिक्षित करने के लिए उपयोग नहीं किया जा सकता।</p>
+  <div class="footer-links">
+    <a href="https://glucobeacon.com/privacy/es/">गोपनीयता नीति</a>
+    <a href="mailto:admin@glucobeacon.com">संपर्क करें</a>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+<script src="../assets/js/lang-switch.js"></script>
+
+</body>
+</html>
