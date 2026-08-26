@@ -164,6 +164,21 @@
     HI_AVAILABLE.push('/restaurants/' + slug + '.html');
   });
 
+  // India is the first restaurant region with a real Hindi translation
+  // (built alongside the region itself, not a later fast-follow like the
+  // other 17 regions) -- listed explicitly since it isn't part of any
+  // broader per-region loop here.
+  var HI_INDIA_CHAIN_SLUGS = [
+    'barbeque-nation', 'bikanervala', 'burger-king-india', 'cafe-coffee-day',
+    'chaayos', 'dominos-pizza-india', 'haldirams', 'kfc-india', 'mcdonalds-india',
+    'nirulas', 'pizza-hut-india', 'sagar-ratna', 'saravana-bhavan',
+    'subway-india', 'wow-momo'
+  ];
+  HI_AVAILABLE.push('/restaurants/in/');
+  HI_INDIA_CHAIN_SLUGS.forEach(function (slug) {
+    HI_AVAILABLE.push('/restaurants/in/' + slug + '.html');
+  });
+
   FIL_AVAILABLE.push('/carb-calculator.html');
 
   var BLOG_SLUGS = [
