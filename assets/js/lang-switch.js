@@ -7,9 +7,72 @@
   var LANGS = [
     { code: 'en', seg: null, label: 'English', short: 'EN' },
     { code: 'es', seg: 'es', label: 'Español', short: 'ES' },
-    { code: 'fil', seg: 'fil', label: 'Filipino', short: 'FIL' }
+    { code: 'fil', seg: 'fil', label: 'Filipino', short: 'FIL' },
+    { code: 'hi', seg: 'hi', label: 'हिन्दी', short: 'HI' }
   ];
   var SUPPORTED_SEGS = LANGS.filter(function (l) { return l.seg; }).map(function (l) { return l.seg; });
+
+  // Hindi is being rolled out page by page, same rollout model as Filipino
+  // (FIL_AVAILABLE below) -- until a bare path is listed here, the Hindi
+  // option is hidden on that page rather than offering a link that 404s.
+  // Unlike Filipino, Hindi's recipe AND restaurant pages both use the flat/
+  // ES-style URL convention (no /us/ nesting for the 53 US chains), so no
+  // remap function is needed for Hindi in pathFor() below.
+  var HI_AVAILABLE = ['/recipes/'];
+  var HI_RECIPE_SLUGS = [
+    'almond-flour-pancakes', 'apple-slices-with-almond-butter', 'avocado-and-egg-toast',
+    'bacon-egg-and-cheese-bites', 'baked-cinnamon-oranges', 'baked-salmon-with-lemon-herbs',
+    'caprese-sandwich', 'caprese-skewers', 'celery-with-peanut-butter', 'chia-seed-pudding',
+    'chicken-chickpea-tagine', 'chickpea-frittata-muffins', 'chickpea-tikka-masala',
+    'classic-greek-salad', 'curried-red-lentil-dal', 'dark-chocolate-and-almonds',
+    'denver-omelet', 'edamame', 'eggplant-parmesan', 'falafel-bowl-with-tahini',
+    'fig-almond-overnight-oats', 'greek-lentil-soup-faki', 'greek-orzo-with-shrimp',
+    'greek-pasta-salad', 'greek-yogurt-parfait-with-walnuts', 'grilled-chicken-souvlaki-wrap',
+    'guacamole-with-pepper-strips', 'hard-boiled-eggs', 'hummus-and-veggie-sticks',
+    'keto-deviled-eggs', 'marinated-olives-feta', 'mediterranean-stuffed-peppers-with-lamb-rice',
+    'mushroom-risotto', 'no-sugar-beef-jerky-almonds', 'overnight-oats-with-flaxseed',
+    'peanut-butter-banana-overnight-oats', 'quinoa-breakfast-bowl', 'quinoa-pilaf',
+    'quinoa-tabbouleh', 'red-lentil-soup', 'roasted-chickpeas', 'roasted-garlic-cauliflower',
+    'shakshuka', 'spinach-and-mushroom-frittata', 'steak-eggs', 'steel-cut-oats-with-berries',
+    'sweet-potato-hash', 'tofu-and-broccoli-stir-fry', 'trail-mix-with-dark-chocolate',
+    'tuna-white-bean-salad', 'turkey-and-cheddar-roll-ups', 'turkey-and-veggie-scramble',
+    'tzatziki-with-cucumber-sticks', 'vegetarian-breakfast-burrito', 'veggie-buddha-bowl',
+    'white-bean-and-kale-soup', 'whole-wheat-pasta-al-pomodoro',
+    'chilaquiles-verdes', 'pozole-rojo', 'tacos-de-pescado', 'enchiladas-verdes', 'sopa-de-tortilla',
+    'sinigang-na-baboy', 'chicken-tinola', 'inihaw-na-bangus', 'pinakbet', 'ginisang-munggo',
+    'gazpacho-andaluz', 'pisto-manchego', 'salmon-a-la-plancha-con-romesco', 'tortilla-espanola', 'ensalada-mixta',
+    'bife-a-la-parrilla-con-chimichurri', 'locro-liviano', 'sopa-de-zapallo-especiada',
+    'milanesa-de-pollo-al-horno-con-ensalada', 'ensalada-de-lentejas-con-chorizo-magro',
+    'ceviche-de-pescado', 'quinoa-chaufa', 'causa-de-coliflor-rellena-de-pollo',
+    'lomo-saltado-ligero', 'sopa-a-la-criolla-ligera',
+    'ajiaco-ligero', 'sancocho-de-pollo-liviano', 'ensalada-de-aguacate-y-tomate',
+    'pescado-a-la-plancha-con-ensalada-colombiana', 'lentejas-guisadas-colombianas',
+    'caldillo-de-congrio', 'ensalada-chilena', 'pastel-de-choclo-liviano',
+    'pollo-al-horno-con-porotos-verdes', 'charquican-liviano',
+    'ceviche-de-camaron-ecuatoriano', 'encebollado-liviano', 'ensalada-de-quinoa-con-aguacate-ecuatoriana',
+    'seco-de-pollo-ligero', 'locro-de-papa-con-coliflor',
+    'chivito-ligero', 'ensalada-de-garbanzos-uruguaya', 'pescado-a-la-parrilla-con-ensalada-uruguaya',
+    'chupin-de-pescado-liviano', 'puchero-liviano',
+    'sopa-paraguaya-liviana', 'vori-vori-liviano', 'ensalada-de-poroto-paraguaya',
+    'pollo-al-horno-con-verduras-paraguayo', 'guiso-de-lentejas-paraguayo',
+    'sopa-de-mani-liviana', 'ensalada-de-quinoa-boliviana', 'pique-a-lo-macho-ligero',
+    'trucha-a-la-plancha-con-ensalada', 'fricase-de-cerdo-liviano',
+    'pabellon-criollo-ligero', 'reina-pepiada-en-hojas-de-lechuga', 'sopa-de-auyama-venezolana',
+    'pescado-a-la-plancha-con-ensalada-venezolana', 'cazuela-de-mariscos-liviana',
+    'gallo-pinto-ligero', 'vigoron-ligero', 'sopa-de-frijoles-nicaraguense',
+    'pescado-a-la-tipitapa-ligero', 'indio-viejo-ligero',
+    'ropa-vieja-ligera', 'picadillo-cubano-ligero', 'ensalada-cubana-de-aguacate',
+    'pescado-a-la-plancha-con-mojo-ligero', 'potaje-de-frijoles-negros-cubano',
+    'pescado-con-coco-ligero', 'ensalada-verde-dominicana', 'habichuelas-guisadas-ligeras',
+    'pollo-guisado-dominicano-ligero', 'chillo-al-horno-con-vegetales',
+    'pollo-al-horno-con-sazon-ligero', 'ensalada-de-bacalao-ligera', 'pescado-en-escabeche-ligero',
+    'habichuelas-guisadas-puertorriquenas', 'carne-guisada-puertorriquena-ligera',
+    'pupusas-de-frijol-ligeras', 'casado-ligero', 'sopa-de-frijoles-centroamericana',
+    'pescado-a-la-plancha-con-ensalada-centroamericana', 'pollo-en-salsa-de-tomate-centroamericano'
+  ];
+  HI_RECIPE_SLUGS.forEach(function (slug) {
+    HI_AVAILABLE.push('/recipes/' + slug + '.html');
+  });
 
   // Bare (locale-stripped) paths that have real Filipino content today.
   // Filipino is being rolled out page by page -- until a path is listed
@@ -191,6 +254,7 @@
     if (!seg) return true; // English is the default locale for every page
     if (seg === 'es') return true;
     if (seg === 'fil') return FIL_AVAILABLE.indexOf(normalizeBare(barePath)) !== -1;
+    if (seg === 'hi') return HI_AVAILABLE.indexOf(normalizeBare(barePath)) !== -1;
     return true;
   }
 
