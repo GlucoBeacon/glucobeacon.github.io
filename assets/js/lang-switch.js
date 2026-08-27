@@ -68,12 +68,34 @@
     'pollo-al-horno-con-sazon-ligero', 'ensalada-de-bacalao-ligera', 'pescado-en-escabeche-ligero',
     'habichuelas-guisadas-puertorriquenas', 'carne-guisada-puertorriquena-ligera',
     'pupusas-de-frijol-ligeras', 'casado-ligero', 'sopa-de-frijoles-centroamericana',
-    'pescado-a-la-plancha-con-ensalada-centroamericana', 'pollo-en-salsa-de-tomate-centroamericano'
+    'pescado-a-la-plancha-con-ensalada-centroamericana', 'pollo-en-salsa-de-tomate-centroamericano',
+    // Regional recipes (India) -- added alongside the India recipes/
+    // restaurant region and its real Hindi translations.
+    'moong-dal-cheela', 'vegetable-besan-chilla', 'light-vegetable-daliya', 'masala-egg-bhurji',
+    'paneer-bhurji', 'light-palak-paneer', 'dal-tadka', 'chana-masala-light', 'bhindi-masala',
+    'rajma-light', 'baingan-bharta', 'vegetable-khichdi-light', 'kadhi', 'palak-dal',
+    'cucumber-raita', 'tandoori-chicken-light', 'chicken-tikka-masala-light',
+    'fish-curry-kerala-style-light', 'chicken-curry-light', 'paneer-tikka-skewers',
+    'egg-curry-light', 'methi-chicken', 'lauki-chana-dal', 'karela-sabzi', 'grilled-fish-tikka',
+    'roasted-makhana', 'sprouts-chaat', 'masala-roasted-chana', 'sprouted-moong-salad',
+    'vegetable-soup-indian-spiced'
   ];
   HI_RECIPE_SLUGS.forEach(function (slug) {
     HI_AVAILABLE.push('/recipes/' + slug + '.html');
   });
   HI_AVAILABLE.push('/restaurants/');
+  // Core static pages that got a real Hindi build alongside the recipe/
+  // restaurant tiers (session 106) -- previously built but never wired into
+  // the switcher, so Hindi was undiscoverable from the English versions.
+  HI_AVAILABLE.push('/', '/features.html', '/compare.html', '/carb-calculator.html', '/blog/', '/feedback.html', '/privacy/');
+  var HI_BLOG_SLUGS = [
+    'dawn-phenomenon-explained', 'fast-food-diabetes-guide', 'how-a1c-is-calculated',
+    'intermittent-fasting-and-blood-sugar', 'low-gi-foods-type-2-diabetes',
+    'prediabetes-warning-signs', 'which-foods-actually-spike-your-blood-sugar'
+  ];
+  HI_BLOG_SLUGS.forEach(function (slug) {
+    HI_AVAILABLE.push('/blog/' + slug + '.html');
+  });
 
   // Bare (locale-stripped) paths that have real Filipino content today.
   // Filipino is being rolled out page by page -- until a path is listed
@@ -122,7 +144,13 @@
     py: ['amandau', 'lomilitos'],
     bo: ['alexander-coffee', 'pollos-copacabana'],
     pr: ['el-meson', 'martins-bbq', 'taco-maker'],
-    ca: ['pollo-campero']
+    ca: ['pollo-campero'],
+    in: [
+      'barbeque-nation', 'bikanervala', 'burger-king-india', 'cafe-coffee-day',
+      'chaayos', 'dominos-pizza-india', 'haldirams', 'kfc-india', 'mcdonalds-india',
+      'nirulas', 'pizza-hut-india', 'sagar-ratna', 'saravana-bhavan',
+      'subway-india', 'wow-momo'
+    ]
   };
   Object.keys(REGION_CHAIN_SLUGS).forEach(function (code) {
     FIL_AVAILABLE.push('/restaurants/' + code + '/');
@@ -251,7 +279,17 @@
     'pollo-al-horno-con-sazon-ligero', 'ensalada-de-bacalao-ligera', 'pescado-en-escabeche-ligero',
     'habichuelas-guisadas-puertorriquenas', 'carne-guisada-puertorriquena-ligera',
     'pupusas-de-frijol-ligeras', 'casado-ligero', 'sopa-de-frijoles-centroamericana',
-    'pescado-a-la-plancha-con-ensalada-centroamericana', 'pollo-en-salsa-de-tomate-centroamericano'
+    'pescado-a-la-plancha-con-ensalada-centroamericana', 'pollo-en-salsa-de-tomate-centroamericano',
+    // Regional recipes (India) -- sixth wave, same pattern as the earlier
+    // waves above.
+    'moong-dal-cheela', 'vegetable-besan-chilla', 'light-vegetable-daliya', 'masala-egg-bhurji',
+    'paneer-bhurji', 'light-palak-paneer', 'dal-tadka', 'chana-masala-light', 'bhindi-masala',
+    'rajma-light', 'baingan-bharta', 'vegetable-khichdi-light', 'kadhi', 'palak-dal',
+    'cucumber-raita', 'tandoori-chicken-light', 'chicken-tikka-masala-light',
+    'fish-curry-kerala-style-light', 'chicken-curry-light', 'paneer-tikka-skewers',
+    'egg-curry-light', 'methi-chicken', 'lauki-chana-dal', 'karela-sabzi', 'grilled-fish-tikka',
+    'roasted-makhana', 'sprouts-chaat', 'masala-roasted-chana', 'sprouted-moong-salad',
+    'vegetable-soup-indian-spiced'
   ];
   FIL_AVAILABLE.push('/recipes/');
   FIL_AVAILABLE.push('/recipes/shopping-list.html');
