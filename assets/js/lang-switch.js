@@ -207,6 +207,35 @@
     HI_AVAILABLE.push('/restaurants/in/' + slug + '.html');
   });
 
+  // The other 17 restaurant regions -- real Hindi translations added as a
+  // fast-follow once India (above) was verified. Same flat/ES-style URL
+  // convention, no /us/-style remap needed.
+  var HI_REGION_CHAIN_SLUGS = {
+    ph: ['bonchon', 'botejyu', 'buddys', 'burger-king', 'chowking', 'classic-savory', 'contis', 'gerrys-grill', 'jollibee', 'kenny-rogers', 'kfc', 'kuya-j', 'mang-inasal', 'mcdonalds', 'mesa', 'pepper-lunch', 'pizza-hut', 'tokyo-tokyo', 'wendys'],
+    mx: ['burger-king', 'carls-jr', 'cielito-querido', 'dominos', 'el-fogoncito', 'el-pollo-loco', 'kfc', 'la-casa-de-tono', 'mcdonalds', 'pollo-feliz', 'sanborns', 'toks', 'vips', 'wings-army'],
+    pr: ['el-meson', 'martins-bbq', 'taco-maker'],
+    ca: ['pollo-campero'],
+    co: ['crepes-waffles', 'el-corral', 'frisby', 'kokoriko'],
+    pe: ['bembos', 'norkys', 'pardos-chicken', 'rokys'],
+    ar: ['havanna', 'mostaza'],
+    cl: ['doggis', 'juan-maestro'],
+    ec: ['menestras-del-negro', 'tropiburger'],
+    do: ['adrian-tropical', 'meson-de-bari'],
+    uy: ['el-fogon', 'la-pasiva'],
+    bo: ['alexander-coffee', 'pollos-copacabana'],
+    py: ['amandau', 'lomilitos'],
+    ni: ['tip-top'],
+    cu: ['el-rapido'],
+    ve: ['arturos'],
+    esp: ['100-montaditos', 'telepizza']
+  };
+  Object.keys(HI_REGION_CHAIN_SLUGS).forEach(function (code) {
+    HI_AVAILABLE.push('/restaurants/' + code + '/');
+    HI_REGION_CHAIN_SLUGS[code].forEach(function (slug) {
+      HI_AVAILABLE.push('/restaurants/' + code + '/' + slug + '.html');
+    });
+  });
+
   FIL_AVAILABLE.push('/carb-calculator.html');
 
   var BLOG_SLUGS = [
