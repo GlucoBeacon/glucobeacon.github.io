@@ -1,352 +1,352 @@
 [
   {
     "id": 1,
-    "name": "Veggie Egg White Omelette",
+    "name": "Tortilla de Claras con Verduras",
     "slug": "veggie-egg-white-omelette"
   },
   {
     "id": 2,
-    "name": "Steel-Cut Oats with Berries",
+    "name": "Avena Cortada con Frutos Rojos",
     "slug": "steel-cut-oats-with-berries"
   },
   {
     "id": 3,
-    "name": "Avocado and Egg Toast",
+    "name": "Tostada de Aguacate y Huevo",
     "slug": "avocado-and-egg-toast"
   },
   {
     "id": 4,
-    "name": "Greek Yogurt Parfait with Walnuts",
+    "name": "Parfait de Yogur Griego con Nueces",
     "slug": "greek-yogurt-parfait-with-walnuts"
   },
   {
     "id": 5,
-    "name": "Spinach and Mushroom Frittata",
+    "name": "Frittata de Espinaca y Champiñones",
     "slug": "spinach-and-mushroom-frittata"
   },
   {
     "id": 6,
-    "name": "Chia Seed Pudding",
+    "name": "Pudín de Semillas de Chía",
     "slug": "chia-seed-pudding"
   },
   {
     "id": 7,
-    "name": "Almond Flour Pancakes",
+    "name": "Panqueques de Harina de Almendra",
     "slug": "almond-flour-pancakes"
   },
   {
     "id": 8,
-    "name": "Smoked Salmon Cucumber Bites",
+    "name": "Bocaditos de Pepino con Salmón Ahumado",
     "slug": "smoked-salmon-cucumber-bites"
   },
   {
     "id": 9,
-    "name": "Turkey and Veggie Scramble",
+    "name": "Revuelto de Pavo y Verduras",
     "slug": "turkey-and-veggie-scramble"
   },
   {
     "id": 10,
-    "name": "Overnight Oats with Flaxseed",
+    "name": "Avena Overnight con Linaza",
     "slug": "overnight-oats-with-flaxseed"
   },
   {
     "id": 11,
-    "name": "Cottage Cheese Berry Bowl",
+    "name": "Tazón de Requesón con Frutos Rojos",
     "slug": "cottage-cheese-berry-bowl"
   },
   {
     "id": 12,
-    "name": "Sweet Potato Hash",
+    "name": "Hash de Camote",
     "slug": "sweet-potato-hash"
   },
   {
     "id": 13,
-    "name": "Green Smoothie Bowl",
+    "name": "Tazón de Batido Verde",
     "slug": "green-smoothie-bowl"
   },
   {
     "id": 14,
-    "name": "Zucchini Egg Muffins",
+    "name": "Muffins de Huevo y Calabacín",
     "slug": "zucchini-egg-muffins"
   },
   {
     "id": 15,
-    "name": "Quinoa Breakfast Bowl",
+    "name": "Tazón de Quinoa para el Desayuno",
     "slug": "quinoa-breakfast-bowl"
   },
   {
     "id": 16,
-    "name": "Grilled Chicken Caesar Salad",
+    "name": "Ensalada César con Pollo a la Parrilla",
     "slug": "grilled-chicken-caesar-salad"
   },
   {
     "id": 17,
-    "name": "Red Lentil Soup",
+    "name": "Sopa de Lentejas Rojas",
     "slug": "red-lentil-soup"
   },
   {
     "id": 18,
-    "name": "Turkey Lettuce Wraps",
+    "name": "Envueltos de Lechuga con Pavo",
     "slug": "turkey-lettuce-wraps"
   },
   {
     "id": 19,
-    "name": "Tuna Stuffed Avocado",
+    "name": "Aguacate Relleno de Atún",
     "slug": "tuna-stuffed-avocado"
   },
   {
     "id": 20,
-    "name": "Black Bean Veggie Bowl",
+    "name": "Tazón de Frijoles Negros con Verduras",
     "slug": "black-bean-veggie-bowl"
   },
   {
     "id": 21,
-    "name": "Chicken Vegetable Soup",
+    "name": "Sopa de Pollo con Verduras",
     "slug": "chicken-vegetable-soup"
   },
   {
     "id": 22,
-    "name": "Quinoa Tabbouleh",
+    "name": "Tabulé de Quinoa",
     "slug": "quinoa-tabbouleh"
   },
   {
     "id": 23,
-    "name": "Salmon Nicoise Salad",
+    "name": "Ensalada Niçoise de Salmón",
     "slug": "salmon-nicoise-salad"
   },
   {
     "id": 24,
-    "name": "Cauliflower Fried Rice",
+    "name": "Arroz Frito de Coliflor",
     "slug": "cauliflower-fried-rice"
   },
   {
     "id": 25,
-    "name": "Mediterranean Chickpea Salad",
+    "name": "Ensalada Mediterránea de Garbanzos",
     "slug": "mediterranean-chickpea-salad"
   },
   {
     "id": 26,
-    "name": "White Bean and Kale Soup",
+    "name": "Sopa de Frijoles Blancos y Col Rizada",
     "slug": "white-bean-and-kale-soup"
   },
   {
     "id": 27,
-    "name": "Asian Chicken Lettuce Cups",
+    "name": "Copas de Lechuga con Pollo Asiático",
     "slug": "asian-chicken-lettuce-cups"
   },
   {
     "id": 28,
-    "name": "Grilled Veggie Hummus Plate",
+    "name": "Plato de Verduras Asadas con Hummus",
     "slug": "grilled-veggie-hummus-plate"
   },
   {
     "id": 29,
-    "name": "Shrimp and Avocado Salad",
+    "name": "Ensalada de Camarones y Aguacate",
     "slug": "shrimp-and-avocado-salad"
   },
   {
     "id": 30,
-    "name": "Edamame Brown Rice Bowl",
+    "name": "Tazón de Edamame y Arroz Integral",
     "slug": "edamame-brown-rice-bowl"
   },
   {
     "id": 31,
-    "name": "Turkey Spinach Salad",
+    "name": "Ensalada de Pavo y Espinaca",
     "slug": "turkey-spinach-salad"
   },
   {
     "id": 32,
-    "name": "Low-Sodium Broccoli Cheddar Soup",
+    "name": "Sopa de Brócoli y Cheddar Baja en Sodio",
     "slug": "low-sodium-broccoli-cheddar-soup"
   },
   {
     "id": 33,
-    "name": "Egg Salad Cucumber Rounds",
+    "name": "Rodajas de Pepino con Ensalada de Huevo",
     "slug": "egg-salad-cucumber-rounds"
   },
   {
     "id": 34,
-    "name": "Zucchini Noodle Soup",
+    "name": "Sopa de Fideos de Calabacín",
     "slug": "zucchini-noodle-soup"
   },
   {
     "id": 35,
-    "name": "Lemon Herb Chickpea Bowl",
+    "name": "Tazón de Garbanzos con Limón y Hierbas",
     "slug": "lemon-herb-chickpea-bowl"
   },
   {
     "id": 36,
-    "name": "Baked Salmon with Asparagus",
+    "name": "Salmón al Horno con Espárragos",
     "slug": "baked-salmon-with-asparagus"
   },
   {
     "id": 37,
-    "name": "Grilled Chicken with Roasted Vegetables",
+    "name": "Pollo a la Parrilla con Verduras Asadas",
     "slug": "grilled-chicken-with-roasted-vegetables"
   },
   {
     "id": 38,
-    "name": "Turkey Meatballs with Zucchini Noodles",
+    "name": "Albóndigas de Pavo con Fideos de Calabacín",
     "slug": "turkey-meatballs-with-zucchini-noodles"
   },
   {
     "id": 39,
-    "name": "Baked Cod with Lemon and Herbs",
+    "name": "Bacalao al Horno con Limón y Hierbas",
     "slug": "baked-cod-with-lemon-and-herbs"
   },
   {
     "id": 40,
-    "name": "Chicken Broccoli Stir-Fry",
+    "name": "Salteado de Pollo y Brócoli",
     "slug": "chicken-broccoli-stir-fry"
   },
   {
     "id": 41,
-    "name": "Lean Beef and Vegetable Stew",
+    "name": "Guiso de Res y Verduras Magro",
     "slug": "lean-beef-and-vegetable-stew"
   },
   {
     "id": 42,
-    "name": "Shrimp Tacos with Cabbage Slaw",
+    "name": "Tacos de Camarones con Ensalada de Repollo",
     "slug": "shrimp-tacos-with-cabbage-slaw"
   },
   {
     "id": 43,
-    "name": "Lemon Herb Roasted Chicken Thighs",
+    "name": "Muslos de Pollo Asados con Limón y Hierbas",
     "slug": "lemon-herb-roasted-chicken-thighs"
   },
   {
     "id": 44,
-    "name": "Stuffed Bell Peppers with Turkey",
+    "name": "Pimientos Rellenos con Pavo",
     "slug": "stuffed-bell-peppers-with-turkey"
   },
   {
     "id": 45,
-    "name": "Salmon Patties",
+    "name": "Hamburguesas de Salmón",
     "slug": "salmon-patties"
   },
   {
     "id": 46,
-    "name": "Chicken Vegetable Kabobs",
+    "name": "Brochetas de Pollo y Verduras",
     "slug": "chicken-vegetable-kabobs"
   },
   {
     "id": 47,
-    "name": "Baked Tilapia with Fresh Salsa",
+    "name": "Tilapia al Horno con Salsa Fresca",
     "slug": "baked-tilapia-with-fresh-salsa"
   },
   {
     "id": 48,
-    "name": "Turkey Chili",
+    "name": "Chile de Pavo",
     "slug": "turkey-chili"
   },
   {
     "id": 49,
-    "name": "Pork Tenderloin with Apple",
+    "name": "Lomo de Cerdo con Manzana",
     "slug": "pork-tenderloin-with-apple"
   },
   {
     "id": 50,
-    "name": "Lemon Garlic Shrimp and Cauliflower Rice",
+    "name": "Camarones al Ajo y Limón con Arroz de Coliflor",
     "slug": "lemon-garlic-shrimp-and-cauliflower-rice"
   },
   {
     "id": 51,
-    "name": "Turkey Burger Lettuce Wrap",
+    "name": "Hamburguesa de Pavo en Envuelto de Lechuga",
     "slug": "turkey-burger-lettuce-wrap"
   },
   {
     "id": 52,
-    "name": "Sesame Ginger Chicken",
+    "name": "Pollo con Sésamo y Jengibre",
     "slug": "sesame-ginger-chicken"
   },
   {
     "id": 53,
-    "name": "Spaghetti Squash Turkey Bolognese",
+    "name": "Boloñesa de Pavo con Calabaza Espagueti",
     "slug": "spaghetti-squash-turkey-bolognese"
   },
   {
     "id": 54,
-    "name": "Baked Chicken Parmesan Light",
+    "name": "Pollo a la Parmesana Ligero al Horno",
     "slug": "baked-chicken-parmesan-light"
   },
   {
     "id": 55,
-    "name": "Stuffed Portobello Mushrooms",
+    "name": "Champiñones Portobello Rellenos",
     "slug": "stuffed-portobello-mushrooms"
   },
   {
     "id": 56,
-    "name": "Chicken Piccata",
+    "name": "Pollo a la Piccata",
     "slug": "chicken-piccata"
   },
   {
     "id": 57,
-    "name": "Beef and Broccoli",
+    "name": "Res con Brócoli",
     "slug": "beef-and-broccoli"
   },
   {
     "id": 58,
-    "name": "Garlic Herb Pork Tenderloin",
+    "name": "Lomo de Cerdo con Ajo y Hierbas",
     "slug": "garlic-herb-pork-tenderloin"
   },
   {
     "id": 59,
-    "name": "Herb Roasted Halibut",
+    "name": "Halibut Asado con Hierbas",
     "slug": "herb-roasted-halibut"
   },
   {
     "id": 60,
-    "name": "Veggie Stuffed Sweet Potato",
+    "name": "Camote Relleno de Verduras",
     "slug": "veggie-stuffed-sweet-potato"
   },
   {
     "id": 61,
-    "name": "Tuna Steak with Avocado",
+    "name": "Filete de Atún con Aguacate",
     "slug": "tuna-steak-with-avocado"
   },
   {
     "id": 62,
-    "name": "Thai Basil Chicken",
+    "name": "Pollo con Albahaca Thai",
     "slug": "thai-basil-chicken"
   },
   {
     "id": 63,
-    "name": "Lemon Herb Baked Chicken",
+    "name": "Pollo al Horno con Limón y Hierbas",
     "slug": "lemon-herb-baked-chicken"
   },
   {
     "id": 64,
-    "name": "Black Bean Enchiladas",
+    "name": "Enchiladas de Frijoles Negros",
     "slug": "black-bean-enchiladas"
   },
   {
     "id": 65,
-    "name": "Salmon with Dijon Crust",
+    "name": "Salmón con Costra de Mostaza Dijon",
     "slug": "salmon-with-dijon-crust"
   },
   {
     "id": 66,
-    "name": "Apple Slices with Almond Butter",
+    "name": "Rodajas de Manzana con Mantequilla de Almendra",
     "slug": "apple-slices-with-almond-butter"
   },
   {
     "id": 67,
-    "name": "Celery with Peanut Butter",
+    "name": "Apio con Mantequilla de Maní",
     "slug": "celery-with-peanut-butter"
   },
   {
     "id": 68,
-    "name": "Mixed Nuts",
+    "name": "Frutos Secos Mixtos",
     "slug": "mixed-nuts"
   },
   {
     "id": 69,
-    "name": "Hummus and Veggie Sticks",
+    "name": "Hummus con Bastones de Verduras",
     "slug": "hummus-and-veggie-sticks"
   },
   {
     "id": 70,
-    "name": "Hard Boiled Eggs",
+    "name": "Huevos Duros",
     "slug": "hard-boiled-eggs"
   },
   {
@@ -356,272 +356,272 @@
   },
   {
     "id": 72,
-    "name": "Cottage Cheese with Pineapple",
+    "name": "Requesón con Piña",
     "slug": "cottage-cheese-with-pineapple"
   },
   {
     "id": 73,
-    "name": "Guacamole with Pepper Strips",
+    "name": "Guacamole con Tiras de Pimiento",
     "slug": "guacamole-with-pepper-strips"
   },
   {
     "id": 74,
-    "name": "Roasted Chickpeas",
+    "name": "Garbanzos Asados",
     "slug": "roasted-chickpeas"
   },
   {
     "id": 75,
-    "name": "Dark Chocolate and Almonds",
+    "name": "Chocolate Oscuro con Almendras",
     "slug": "dark-chocolate-and-almonds"
   },
   {
     "id": 76,
-    "name": "Roasted Garlic Cauliflower",
+    "name": "Coliflor Asada con Ajo",
     "slug": "roasted-garlic-cauliflower"
   },
   {
     "id": 77,
-    "name": "Sautéed Garlic Spinach",
+    "name": "Espinaca Salteada con Ajo",
     "slug": "sauted-garlic-spinach"
   },
   {
     "id": 78,
-    "name": "Roasted Brussels Sprouts",
+    "name": "Coles de Bruselas Asadas",
     "slug": "roasted-brussels-sprouts"
   },
   {
     "id": 79,
-    "name": "Quinoa Pilaf",
+    "name": "Pilaf de Quinoa",
     "slug": "quinoa-pilaf"
   },
   {
     "id": 80,
-    "name": "Steamed Broccoli with Lemon",
+    "name": "Brócoli al Vapor con Limón",
     "slug": "steamed-broccoli-with-lemon"
   },
   {
     "id": 81,
-    "name": "Bacon Egg and Cheese Bites",
+    "name": "Bocaditos de Huevo, Tocino y Queso",
     "slug": "bacon-egg-and-cheese-bites"
   },
   {
     "id": 82,
-    "name": "Almond Flour Keto Pancakes",
+    "name": "Panqueques Keto de Harina de Almendra",
     "slug": "almond-flour-keto-pancakes"
   },
   {
     "id": 83,
-    "name": "Denver Omelet",
+    "name": "Omelet Denver",
     "slug": "denver-omelet"
   },
   {
     "id": 84,
-    "name": "Avocado Baked Eggs",
+    "name": "Huevos al Horno en Aguacate",
     "slug": "avocado-baked-eggs"
   },
   {
     "id": 85,
-    "name": "Keto Chia Coconut Pudding",
+    "name": "Pudín Keto de Chía y Coco",
     "slug": "keto-chia-coconut-pudding"
   },
   {
     "id": 86,
-    "name": "Egg Salad Lettuce Boats",
+    "name": "Barcos de Lechuga con Ensalada de Huevo",
     "slug": "egg-salad-lettuce-boats"
   },
   {
     "id": 87,
-    "name": "Tuna Salad Avocado Boats",
+    "name": "Barcos de Aguacate con Ensalada de Atún",
     "slug": "tuna-salad-avocado-boats"
   },
   {
     "id": 88,
-    "name": "Garlic Butter Shrimp Zoodles",
+    "name": "Zoodles de Camarones con Mantequilla de Ajo",
     "slug": "garlic-butter-shrimp-zoodles"
   },
   {
     "id": 89,
-    "name": "Chicken Caesar Lettuce Wraps",
+    "name": "Envueltos de Lechuga César con Pollo",
     "slug": "chicken-caesar-lettuce-wraps"
   },
   {
     "id": 90,
-    "name": "Cauliflower Mash with Sausage Crumble",
+    "name": "Puré de Coliflor con Chorizo Desmenuzado",
     "slug": "cauliflower-mash-with-sausage-crumble"
   },
   {
     "id": 91,
-    "name": "Bacon-Wrapped Chicken Thighs",
+    "name": "Muslos de Pollo Envueltos en Tocino",
     "slug": "bacon-wrapped-chicken-thighs"
   },
   {
     "id": 92,
-    "name": "Zoodles with Basil Pesto",
+    "name": "Zoodles con Pesto de Albahaca",
     "slug": "zoodles-with-basil-pesto"
   },
   {
     "id": 93,
-    "name": "Garlic Butter Steak Bites with Mushrooms",
+    "name": "Bocados de Bistec con Mantequilla de Ajo y Champiñones",
     "slug": "garlic-butter-steak-bites-with-mushrooms"
   },
   {
     "id": 94,
-    "name": "Baked Salmon with Cream Cheese Spinach",
+    "name": "Salmón al Horno con Espinaca y Queso Crema",
     "slug": "baked-salmon-with-cream-cheese-spinach"
   },
   {
     "id": 95,
-    "name": "Keto Cheeseburger Bowl",
+    "name": "Tazón Keto de Hamburguesa con Queso",
     "slug": "keto-cheeseburger-bowl"
   },
   {
     "id": 96,
-    "name": "Turkey and Cheddar Roll-Ups",
+    "name": "Rollitos de Pavo y Queso Cheddar",
     "slug": "turkey-and-cheddar-roll-ups"
   },
   {
     "id": 97,
-    "name": "Keto Deviled Eggs",
+    "name": "Huevos Rellenos Keto",
     "slug": "keto-deviled-eggs"
   },
   {
     "id": 98,
-    "name": "Olives and Feta Snack Plate",
+    "name": "Plato de Aceitunas y Queso Feta",
     "slug": "olives-and-feta-snack-plate"
   },
   {
     "id": 99,
-    "name": "Celery with Cream Cheese and Everything Seasoning",
+    "name": "Apio con Queso Crema y Condimento Everything",
     "slug": "celery-with-cream-cheese-and-everything-seasoning"
   },
   {
     "id": 100,
-    "name": "Keto Peanut Butter Chocolate Fat Bombs",
+    "name": "Bombas de Grasa Keto de Mantequilla de Maní y Chocolate",
     "slug": "keto-peanut-butter-chocolate-fat-bombs"
   },
   {
     "id": 101,
-    "name": "Vegetarian Breakfast Burrito",
+    "name": "Burrito Vegetariano de Desayuno",
     "slug": "vegetarian-breakfast-burrito"
   },
   {
     "id": 102,
-    "name": "Cottage Cheese Pancakes",
+    "name": "Panqueques de Requesón",
     "slug": "cottage-cheese-pancakes"
   },
   {
     "id": 103,
-    "name": "Chickpea Frittata Muffins",
+    "name": "Muffins de Frittata de Garbanzo",
     "slug": "chickpea-frittata-muffins"
   },
   {
     "id": 104,
-    "name": "Peanut Butter Banana Overnight Oats",
+    "name": "Avena Overnight de Mantequilla de Maní y Plátano",
     "slug": "peanut-butter-banana-overnight-oats"
   },
   {
     "id": 105,
-    "name": "Veggie and Egg Breakfast Scramble",
+    "name": "Revuelto de Desayuno con Verduras y Huevo",
     "slug": "veggie-and-egg-breakfast-scramble"
   },
   {
     "id": 106,
-    "name": "Falafel Bowl with Tahini",
+    "name": "Tazón de Falafel con Tahini",
     "slug": "falafel-bowl-with-tahini"
   },
   {
     "id": 107,
-    "name": "Greek Pasta Salad",
+    "name": "Ensalada Griega de Pasta",
     "slug": "greek-pasta-salad"
   },
   {
     "id": 108,
-    "name": "Caprese Sandwich",
+    "name": "Sándwich Caprese",
     "slug": "caprese-sandwich"
   },
   {
     "id": 109,
-    "name": "Veggie Buddha Bowl",
+    "name": "Tazón Buddha de Verduras",
     "slug": "veggie-buddha-bowl"
   },
   {
     "id": 110,
-    "name": "Curried Red Lentil Dal",
+    "name": "Dal de Lentejas Rojas al Curry",
     "slug": "curried-red-lentil-dal"
   },
   {
     "id": 111,
-    "name": "Chickpea Tikka Masala",
+    "name": "Garbanzos Tikka Masala",
     "slug": "chickpea-tikka-masala"
   },
   {
     "id": 112,
-    "name": "Tofu and Broccoli Stir-Fry",
+    "name": "Salteado de Tofu y Brócoli",
     "slug": "tofu-and-broccoli-stir-fry"
   },
   {
     "id": 113,
-    "name": "Eggplant Parmesan",
+    "name": "Berenjena a la Parmesana",
     "slug": "eggplant-parmesan"
   },
   {
     "id": 114,
-    "name": "Black Bean Tacos",
+    "name": "Tacos de Frijoles Negros",
     "slug": "black-bean-tacos"
   },
   {
     "id": 115,
-    "name": "Mushroom Risotto",
+    "name": "Risotto de Champiñones",
     "slug": "mushroom-risotto"
   },
   {
     "id": 116,
-    "name": "Roasted Edamame Snack",
+    "name": "Snack de Edamame Asado",
     "slug": "roasted-edamame-snack"
   },
   {
     "id": 117,
-    "name": "Hummus Veggie Wrap",
+    "name": "Wrap de Hummus y Verduras",
     "slug": "hummus-veggie-wrap"
   },
   {
     "id": 118,
-    "name": "Trail Mix with Dark Chocolate",
+    "name": "Mezcla de Frutos Secos con Chocolate Oscuro",
     "slug": "trail-mix-with-dark-chocolate"
   },
   {
     "id": 119,
-    "name": "Caprese Skewers",
+    "name": "Brochetas Caprese",
     "slug": "caprese-skewers"
   },
   {
     "id": 120,
-    "name": "Peanut Butter Banana Rice Cakes",
+    "name": "Tortas de Arroz con Mantequilla de Maní y Plátano",
     "slug": "peanut-butter-banana-rice-cakes"
   },
   {
     "id": 121,
-    "name": "Smoked Salmon & Cream Cheese Plate",
+    "name": "Plato de Salmón Ahumado y Queso Crema",
     "slug": "smoked-salmon-cream-cheese-plate"
   },
   {
     "id": 122,
-    "name": "Sage Sausage & Kale Skillet",
+    "name": "Sartén de Salchicha y Col Rizada",
     "slug": "sage-sausage-kale-skillet"
   },
   {
     "id": 123,
-    "name": "Steak & Eggs",
+    "name": "Bistec con Huevos",
     "slug": "steak-eggs"
   },
   {
     "id": 124,
-    "name": "Smoked Trout & Soft-Boiled Egg Plate",
+    "name": "Plato de Trucha Ahumada y Huevo Mollet",
     "slug": "smoked-trout-soft-boiled-egg-plate"
   },
   {
     "id": 125,
-    "name": "Turkey, Egg & Avocado Bowl",
+    "name": "Tazón de Pavo, Huevo y Aguacate",
     "slug": "turkey-egg-avocado-bowl"
   },
   {
@@ -631,202 +631,202 @@
   },
   {
     "id": 127,
-    "name": "Breakfast Salad with Bacon & Soft-Boiled Egg",
+    "name": "Ensalada de Desayuno con Tocino y Huevo Mollet",
     "slug": "breakfast-salad-with-bacon-soft-boiled-egg"
   },
   {
     "id": 128,
-    "name": "Zucchini Noodles & Seasoned Beef",
+    "name": "Fideos de Calabacín con Carne Sazonada",
     "slug": "zucchini-noodles-seasoned-beef"
   },
   {
     "id": 129,
-    "name": "Cobb Salad",
+    "name": "Ensalada Cobb",
     "slug": "cobb-salad"
   },
   {
     "id": 130,
-    "name": "Greek Salad with Grilled Shrimp",
+    "name": "Ensalada Griega con Camarones a la Parrilla",
     "slug": "greek-salad-with-grilled-shrimp"
   },
   {
     "id": 131,
-    "name": "Taco Salad Bowl",
+    "name": "Tazón de Ensalada de Tacos",
     "slug": "taco-salad-bowl"
   },
   {
     "id": 132,
-    "name": "Mediterranean Hummus & Veggie Plate",
+    "name": "Plato Mediterráneo de Hummus y Vegetales",
     "slug": "mediterranean-hummus-veggie-plate"
   },
   {
     "id": 133,
-    "name": "Cauliflower Rice Chicken Bowl",
+    "name": "Tazón de Pollo con Arroz de Coliflor",
     "slug": "cauliflower-rice-chicken-bowl"
   },
   {
     "id": 134,
-    "name": "Cabbage & Pork Stir-Fry Bowl",
+    "name": "Tazón de Repollo con Cerdo Salteado",
     "slug": "cabbage-pork-stir-fry-bowl"
   },
   {
     "id": 135,
-    "name": "Buffalo Chicken Lettuce Wraps",
+    "name": "Envueltos de Lechuga con Pollo Buffalo",
     "slug": "buffalo-chicken-lettuce-wraps"
   },
   {
     "id": 136,
-    "name": "Steak Salad with Blue Cheese",
+    "name": "Ensalada de Bistec con Queso Azul",
     "slug": "steak-salad-with-blue-cheese"
   },
   {
     "id": 137,
-    "name": "Braised Chicken Thighs, Cabbage & Mushroom",
+    "name": "Muslos de Pollo Braseados con Repollo y Champiñones",
     "slug": "braised-chicken-thighs-cabbage-mushroom"
   },
   {
     "id": 138,
-    "name": "Garlic Butter Pork Chops & Green Beans",
+    "name": "Chuletas de Cerdo con Mantequilla de Ajo y Ejotes",
     "slug": "garlic-butter-pork-chops-green-beans"
   },
   {
     "id": 139,
-    "name": "Beef Pot Roast, Turnip & Cabbage",
+    "name": "Carne Mechada con Nabo y Repollo",
     "slug": "beef-pot-roast-turnip-cabbage"
   },
   {
     "id": 140,
-    "name": "Chicken Fajita Skillet",
+    "name": "Sartén de Fajitas de Pollo",
     "slug": "chicken-fajita-skillet"
   },
   {
     "id": 141,
-    "name": "Grilled Shrimp Skewers with Chimichurri",
+    "name": "Brochetas de Camarones a la Parrilla con Chimichurri",
     "slug": "grilled-shrimp-skewers-with-chimichurri"
   },
   {
     "id": 142,
-    "name": "Rosemary Garlic Chicken Thighs & Brussels Sprouts",
+    "name": "Muslos de Pollo con Romero y Ajo y Coles de Bruselas",
     "slug": "rosemary-garlic-chicken-thighs-brussels-sprouts"
   },
   {
     "id": 143,
-    "name": "Stuffed Bell Peppers (Beef & Cauliflower Rice)",
+    "name": "Pimientos Rellenos (Carne y Arroz de Coliflor)",
     "slug": "stuffed-bell-peppers-beef-cauliflower-rice"
   },
   {
     "id": 144,
-    "name": "Pan-Seared Scallops, Garlic Butter Spinach",
+    "name": "Vieiras Selladas con Espinaca en Mantequilla de Ajo",
     "slug": "pan-seared-scallops-garlic-butter-spinach"
   },
   {
     "id": 145,
-    "name": "Lamb Chops, Mint Gremolata & Asparagus",
+    "name": "Chuletas de Cordero, Gremolata de Menta y Espárragos",
     "slug": "lamb-chops-mint-gremolata-asparagus"
   },
   {
     "id": 146,
-    "name": "Macadamias & Olives",
+    "name": "Macadamias y Aceitunas",
     "slug": "macadamias-olives"
   },
   {
     "id": 147,
-    "name": "Cheese & Cucumber",
+    "name": "Queso y Pepino",
     "slug": "cheese-cucumber"
   },
   {
     "id": 148,
-    "name": "Tuna Salad Cucumber Bites",
+    "name": "Bocaditos de Pepino con Ensalada de Atún",
     "slug": "tuna-salad-cucumber-bites"
   },
   {
     "id": 149,
-    "name": "Prosciutto-Wrapped Asparagus",
+    "name": "Espárragos Envueltos en Prosciutto",
     "slug": "prosciutto-wrapped-asparagus"
   },
   {
     "id": 150,
-    "name": "Olives, Feta & Cherry Tomato Skewers",
+    "name": "Brochetas de Aceitunas, Feta y Tomate Cherry",
     "slug": "olives-feta-cherry-tomato-skewers"
   },
   {
     "id": 151,
-    "name": "Roasted Pumpkin Seeds with Sea Salt",
+    "name": "Semillas de Calabaza Asadas con Sal Marina",
     "slug": "roasted-pumpkin-seeds-with-sea-salt"
   },
   {
     "id": 152,
-    "name": "Avocado Half, Olive Oil & Sea Salt",
+    "name": "Mitad de Aguacate con Aceite de Oliva y Sal Marina",
     "slug": "avocado-half-olive-oil-sea-salt"
   },
   {
     "id": 153,
-    "name": "No-Sugar Beef Jerky & Almonds",
+    "name": "Cecina de Res Sin Azúcar y Almendras",
     "slug": "no-sugar-beef-jerky-almonds"
   },
   {
     "id": 154,
-    "name": "Classic Greek Salad",
+    "name": "Ensalada Griega Clásica",
     "slug": "classic-greek-salad"
   },
   {
     "id": 155,
-    "name": "Greek Lentil Soup (Faki)",
+    "name": "Sopa Griega de Lentejas (Faki)",
     "slug": "greek-lentil-soup-faki"
   },
   {
     "id": 156,
-    "name": "Baked Salmon with Lemon & Herbs",
+    "name": "Salmón al Horno con Limón y Hierbas",
     "slug": "baked-salmon-with-lemon-herbs"
   },
   {
     "id": 157,
-    "name": "Grilled Chicken Souvlaki Wrap",
+    "name": "Wrap de Pollo Souvlaki a la Parrilla",
     "slug": "grilled-chicken-souvlaki-wrap"
   },
   {
     "id": 158,
-    "name": "Marinated Olives & Feta",
+    "name": "Aceitunas y Queso Feta Marinados",
     "slug": "marinated-olives-feta"
   },
   {
     "id": 159,
-    "name": "Tuna & White Bean Salad",
+    "name": "Ensalada de Atún y Frijoles Blancos",
     "slug": "tuna-white-bean-salad"
   },
   {
     "id": 160,
-    "name": "Chicken & Chickpea Tagine",
+    "name": "Tagine de Pollo y Garbanzos",
     "slug": "chicken-chickpea-tagine"
   },
   {
     "id": 161,
-    "name": "Whole Wheat Pasta al Pomodoro",
+    "name": "Pasta Integral al Pomodoro",
     "slug": "whole-wheat-pasta-al-pomodoro"
   },
   {
     "id": 162,
-    "name": "Tzatziki with Cucumber Sticks",
+    "name": "Tzatziki con Bastones de Pepino",
     "slug": "tzatziki-with-cucumber-sticks"
   },
   {
     "id": 163,
-    "name": "Baked Cinnamon Oranges",
+    "name": "Naranjas Horneadas con Canela",
     "slug": "baked-cinnamon-oranges"
   },
   {
     "id": 164,
-    "name": "Fig & Almond Overnight Oats",
+    "name": "Avena Overnight con Higos y Almendras",
     "slug": "fig-almond-overnight-oats"
   },
   {
     "id": 165,
-    "name": "Greek Orzo with Shrimp",
+    "name": "Orzo Griego con Camarones",
     "slug": "greek-orzo-with-shrimp"
   },
   {
     "id": 166,
-    "name": "Mediterranean Stuffed Peppers with Lamb & Rice",
+    "name": "Pimientos Mediterráneos Rellenos de Cordero y Arroz",
     "slug": "mediterranean-stuffed-peppers-with-lamb-rice"
   },
   {
@@ -861,12 +861,12 @@
   },
   {
     "id": 512,
-    "name": "Chicken Tinola",
+    "name": "Tinola de Pollo",
     "slug": "chicken-tinola"
   },
   {
     "id": 513,
-    "name": "Inihaw na Bangus",
+    "name": "Bangus a la Parrilla",
     "slug": "inihaw-na-bangus"
   },
   {
@@ -876,7 +876,7 @@
   },
   {
     "id": 515,
-    "name": "Ginisang Munggo",
+    "name": "Munggo Guisado",
     "slug": "ginisang-munggo"
   },
   {
@@ -892,12 +892,12 @@
   {
     "id": 523,
     "name": "Salmón a la Plancha con Romesco",
-    "slug": "salmn-a-la-plancha-con-romesco"
+    "slug": "salmon-a-la-plancha-con-romesco"
   },
   {
     "id": 524,
     "name": "Tortilla Española",
-    "slug": "tortilla-espaola"
+    "slug": "tortilla-espanola"
   },
   {
     "id": 525,
@@ -906,33 +906,33 @@
   },
   {
     "id": 531,
-    "name": "Grilled Sirloin Steak with Chimichurri",
-    "slug": "grilled-sirloin-steak-with-chimichurri"
+    "name": "Bife a la Parrilla con Chimichurri",
+    "slug": "bife-a-la-parrilla-con-chimichurri"
   },
   {
     "id": 532,
-    "name": "Light Vegetable and Bean Locro",
-    "slug": "light-vegetable-and-bean-locro"
+    "name": "Locro Liviano",
+    "slug": "locro-liviano"
   },
   {
     "id": 533,
-    "name": "Spiced Pumpkin Squash Soup",
-    "slug": "spiced-pumpkin-squash-soup"
+    "name": "Sopa de Zapallo Especiada",
+    "slug": "sopa-de-zapallo-especiada"
   },
   {
     "id": 534,
-    "name": "Oven-Baked Chicken Milanesa with Salad",
-    "slug": "oven-baked-chicken-milanesa-with-salad"
+    "name": "Milanesa de Pollo al Horno con Ensalada",
+    "slug": "milanesa-de-pollo-al-horno-con-ensalada"
   },
   {
     "id": 535,
-    "name": "Lentil Salad with Lean Chorizo",
-    "slug": "lentil-salad-with-lean-chorizo"
+    "name": "Ensalada de Lentejas con Chorizo Magro",
+    "slug": "ensalada-de-lentejas-con-chorizo-magro"
   },
   {
     "id": 541,
-    "name": "Peruvian Fish Ceviche",
-    "slug": "peruvian-fish-ceviche"
+    "name": "Ceviche de Pescado",
+    "slug": "ceviche-de-pescado"
   },
   {
     "id": 542,
@@ -941,317 +941,467 @@
   },
   {
     "id": 543,
-    "name": "Cauliflower Causa Stuffed with Chicken",
-    "slug": "cauliflower-causa-stuffed-with-chicken"
+    "name": "Causa de Coliflor Rellena de Pollo",
+    "slug": "causa-de-coliflor-rellena-de-pollo"
   },
   {
     "id": 544,
-    "name": "Light Lomo Saltado",
-    "slug": "light-lomo-saltado"
+    "name": "Lomo Saltado Ligero",
+    "slug": "lomo-saltado-ligero"
   },
   {
     "id": 545,
-    "name": "Light Peruvian Creole Noodle Soup",
-    "slug": "light-peruvian-creole-noodle-soup"
+    "name": "Sopa a la Criolla Ligera",
+    "slug": "sopa-a-la-criolla-ligera"
   },
   {
     "id": 551,
-    "name": "Light Chicken and Corn Ajiaco",
-    "slug": "light-chicken-and-corn-ajiaco"
+    "name": "Ajiaco Ligero",
+    "slug": "ajiaco-ligero"
   },
   {
     "id": 552,
-    "name": "Light Chicken Sancocho",
-    "slug": "light-chicken-sancocho"
+    "name": "Sancocho de Pollo Liviano",
+    "slug": "sancocho-de-pollo-liviano"
   },
   {
     "id": 553,
-    "name": "Avocado and Tomato Salad",
-    "slug": "avocado-and-tomato-salad"
+    "name": "Ensalada de Aguacate y Tomate",
+    "slug": "ensalada-de-aguacate-y-tomate"
   },
   {
     "id": 554,
-    "name": "Grilled Fish with Colombian Salad",
-    "slug": "grilled-fish-with-colombian-salad"
+    "name": "Pescado a la Plancha con Ensalada",
+    "slug": "pescado-a-la-plancha-con-ensalada-colombiana"
   },
   {
     "id": 555,
-    "name": "Colombian Stewed Lentils",
-    "slug": "colombian-stewed-lentils"
+    "name": "Lentejas Guisadas Colombianas",
+    "slug": "lentejas-guisadas-colombianas"
   },
   {
     "id": 561,
-    "name": "Chilean Fish Soup (Caldillo de Congrio)",
-    "slug": "chilean-fish-soup-caldillo-de-congrio"
+    "name": "Caldillo de Congrio",
+    "slug": "caldillo-de-congrio"
   },
   {
     "id": 562,
-    "name": "Chilean Tomato and Onion Salad",
-    "slug": "chilean-tomato-and-onion-salad"
+    "name": "Ensalada Chilena",
+    "slug": "ensalada-chilena"
   },
   {
     "id": 563,
-    "name": "Light Chilean Corn and Beef Pie",
-    "slug": "light-chilean-corn-and-beef-pie"
+    "name": "Pastel de Choclo Liviano",
+    "slug": "pastel-de-choclo-liviano"
   },
   {
     "id": 564,
-    "name": "Baked Chicken with Green Beans",
-    "slug": "baked-chicken-with-green-beans"
+    "name": "Pollo al Horno con Porotos Verdes",
+    "slug": "pollo-al-horno-con-porotos-verdes"
   },
   {
     "id": 565,
-    "name": "Light Charquicán",
-    "slug": "light-charquicn"
+    "name": "Charquicán Liviano",
+    "slug": "charquican-liviano"
   },
   {
     "id": 571,
-    "name": "Ecuadorian Shrimp Ceviche",
-    "slug": "ecuadorian-shrimp-ceviche"
+    "name": "Ceviche de Camarón Ecuatoriano",
+    "slug": "ceviche-de-camaron-ecuatoriano"
   },
   {
     "id": 572,
-    "name": "Light Fish and Yuca Soup",
-    "slug": "light-fish-and-yuca-soup"
+    "name": "Encebollado Liviano",
+    "slug": "encebollado-liviano"
   },
   {
     "id": 573,
-    "name": "Quinoa and Avocado Salad",
-    "slug": "quinoa-and-avocado-salad"
+    "name": "Ensalada de Quinoa con Aguacate",
+    "slug": "ensalada-de-quinoa-con-aguacate-ecuatoriana"
   },
   {
     "id": 574,
-    "name": "Light Seco de Pollo",
-    "slug": "light-seco-de-pollo"
+    "name": "Seco de Pollo Ligero",
+    "slug": "seco-de-pollo-ligero"
   },
   {
     "id": 575,
-    "name": "Potato and Cauliflower Cheese Soup",
-    "slug": "potato-and-cauliflower-cheese-soup"
+    "name": "Locro de Papa con Coliflor",
+    "slug": "locro-de-papa-con-coliflor"
   },
   {
     "id": 581,
-    "name": "Light Chivito Plate",
-    "slug": "light-chivito-plate"
+    "name": "Chivito Ligero",
+    "slug": "chivito-ligero"
   },
   {
     "id": 582,
-    "name": "Uruguayan Chickpea Salad",
-    "slug": "uruguayan-chickpea-salad"
+    "name": "Ensalada de Garbanzos Uruguaya",
+    "slug": "ensalada-de-garbanzos-uruguaya"
   },
   {
     "id": 583,
-    "name": "Grilled Fish with Uruguayan Salad",
-    "slug": "grilled-fish-with-uruguayan-salad"
+    "name": "Pescado a la Parrilla con Ensalada",
+    "slug": "pescado-a-la-parrilla-con-ensalada-uruguaya"
   },
   {
     "id": 584,
-    "name": "Light Uruguayan Fish Stew",
-    "slug": "light-uruguayan-fish-stew"
+    "name": "Chupín de Pescado Liviano",
+    "slug": "chupin-de-pescado-liviano"
   },
   {
     "id": 585,
-    "name": "Light Uruguayan Puchero",
-    "slug": "light-uruguayan-puchero"
+    "name": "Puchero Liviano",
+    "slug": "puchero-liviano"
   },
   {
     "id": 591,
-    "name": "Light Paraguayan Cornbread",
-    "slug": "light-paraguayan-cornbread"
+    "name": "Sopa Paraguaya Liviana",
+    "slug": "sopa-paraguaya-liviana"
   },
   {
     "id": 592,
-    "name": "Light Vori Vori Soup",
-    "slug": "light-vori-vori-soup"
+    "name": "Vori Vori Liviano",
+    "slug": "vori-vori-liviano"
   },
   {
     "id": 593,
-    "name": "Paraguayan Bean Salad",
-    "slug": "paraguayan-bean-salad"
+    "name": "Ensalada de Poroto Paraguaya",
+    "slug": "ensalada-de-poroto-paraguaya"
   },
   {
     "id": 594,
-    "name": "Roast Chicken with Vegetables",
-    "slug": "roast-chicken-with-vegetables"
+    "name": "Pollo al Horno con Verduras Paraguayo",
+    "slug": "pollo-al-horno-con-verduras-paraguayo"
   },
   {
     "id": 595,
-    "name": "Paraguayan Lentil Stew",
-    "slug": "paraguayan-lentil-stew"
+    "name": "Guiso de Lentejas Paraguayo",
+    "slug": "guiso-de-lentejas-paraguayo"
   },
   {
     "id": 601,
-    "name": "Light Bolivian Peanut Soup",
-    "slug": "light-bolivian-peanut-soup"
+    "name": "Sopa de Maní Liviana",
+    "slug": "sopa-de-mani-liviana"
   },
   {
     "id": 602,
-    "name": "Bolivian Quinoa Salad",
-    "slug": "bolivian-quinoa-salad"
+    "name": "Ensalada de Quinoa Boliviana",
+    "slug": "ensalada-de-quinoa-boliviana"
   },
   {
     "id": 603,
-    "name": "Light Pique a lo Macho",
-    "slug": "light-pique-a-lo-macho"
+    "name": "Pique a lo Macho Ligero",
+    "slug": "pique-a-lo-macho-ligero"
   },
   {
     "id": 604,
-    "name": "Grilled Trout with Salad",
-    "slug": "grilled-trout-with-salad"
+    "name": "Trucha a la Plancha con Ensalada",
+    "slug": "trucha-a-la-plancha-con-ensalada"
   },
   {
     "id": 605,
-    "name": "Light Bolivian Pork Fricasé",
-    "slug": "light-bolivian-pork-fricas"
+    "name": "Fricasé de Cerdo Liviano",
+    "slug": "fricase-de-cerdo-liviano"
   },
   {
     "id": 611,
-    "name": "Light Pabellón Criollo",
-    "slug": "light-pabelln-criollo"
+    "name": "Pabellón Criollo Ligero",
+    "slug": "pabellon-criollo-ligero"
   },
   {
     "id": 612,
-    "name": "Reina Pepiada Lettuce Wraps",
-    "slug": "reina-pepiada-lettuce-wraps"
+    "name": "Reina Pepiada en Hojas de Lechuga",
+    "slug": "reina-pepiada-en-hojas-de-lechuga"
   },
   {
     "id": 613,
-    "name": "Venezuelan Pumpkin Coconut Soup",
-    "slug": "venezuelan-pumpkin-coconut-soup"
+    "name": "Sopa de Auyama Venezolana",
+    "slug": "sopa-de-auyama-venezolana"
   },
   {
     "id": 614,
-    "name": "Grilled Fish with Venezuelan Salad",
-    "slug": "grilled-fish-with-venezuelan-salad"
+    "name": "Pescado a la Plancha con Ensalada Venezolana",
+    "slug": "pescado-a-la-plancha-con-ensalada-venezolana"
   },
   {
     "id": 615,
-    "name": "Light Seafood Cazuela",
-    "slug": "light-seafood-cazuela"
+    "name": "Cazuela de Mariscos Liviana",
+    "slug": "cazuela-de-mariscos-liviana"
   },
   {
     "id": 621,
-    "name": "Light Gallo Pinto",
-    "slug": "light-gallo-pinto"
+    "name": "Gallo Pinto Ligero",
+    "slug": "gallo-pinto-ligero"
   },
   {
     "id": 622,
-    "name": "Light Vigorón",
-    "slug": "light-vigorn"
+    "name": "Vigorón Ligero",
+    "slug": "vigoron-ligero"
   },
   {
     "id": 623,
-    "name": "Nicaraguan Bean Soup",
-    "slug": "nicaraguan-bean-soup"
+    "name": "Sopa de Frijoles Nicaragüense",
+    "slug": "sopa-de-frijoles-nicaraguense"
   },
   {
     "id": 624,
-    "name": "Light Grilled Fish, Tipitapa-Style",
-    "slug": "light-grilled-fish-tipitapa-style"
+    "name": "Pescado a la Tipitapa Ligero",
+    "slug": "pescado-a-la-tipitapa-ligero"
   },
   {
     "id": 625,
-    "name": "Light Indio Viejo",
-    "slug": "light-indio-viejo"
+    "name": "Indio Viejo Ligero",
+    "slug": "indio-viejo-ligero"
   },
   {
     "id": 631,
-    "name": "Light Ropa Vieja",
-    "slug": "light-ropa-vieja"
+    "name": "Ropa Vieja Ligera",
+    "slug": "ropa-vieja-ligera"
   },
   {
     "id": 632,
-    "name": "Light Cuban Picadillo",
-    "slug": "light-cuban-picadillo"
+    "name": "Picadillo Cubano Ligero",
+    "slug": "picadillo-cubano-ligero"
   },
   {
     "id": 633,
-    "name": "Cuban Avocado Salad",
-    "slug": "cuban-avocado-salad"
+    "name": "Ensalada Cubana de Aguacate",
+    "slug": "ensalada-cubana-de-aguacate"
   },
   {
     "id": 634,
-    "name": "Grilled Fish with Light Mojo",
-    "slug": "grilled-fish-with-light-mojo"
+    "name": "Pescado a la Plancha con Mojo Ligero",
+    "slug": "pescado-a-la-plancha-con-mojo-ligero"
   },
   {
     "id": 635,
-    "name": "Cuban Black Bean Stew",
-    "slug": "cuban-black-bean-stew"
+    "name": "Potaje de Frijoles Negros Cubano",
+    "slug": "potaje-de-frijoles-negros-cubano"
   },
   {
     "id": 641,
-    "name": "Light Fish in Coconut Sauce",
-    "slug": "light-fish-in-coconut-sauce"
+    "name": "Pescado con Coco Ligero",
+    "slug": "pescado-con-coco-ligero"
   },
   {
     "id": 642,
-    "name": "Dominican Green Salad",
-    "slug": "dominican-green-salad"
+    "name": "Ensalada Verde Dominicana",
+    "slug": "ensalada-verde-dominicana"
   },
   {
     "id": 643,
-    "name": "Light Dominican Stewed Beans",
-    "slug": "light-dominican-stewed-beans"
+    "name": "Habichuelas Guisadas Ligeras",
+    "slug": "habichuelas-guisadas-ligeras"
   },
   {
     "id": 644,
-    "name": "Light Dominican Chicken Stew",
-    "slug": "light-dominican-chicken-stew"
+    "name": "Pollo Guisado Dominicano Ligero",
+    "slug": "pollo-guisado-dominicano-ligero"
   },
   {
     "id": 645,
-    "name": "Baked Red Snapper with Vegetables",
-    "slug": "baked-red-snapper-with-vegetables"
+    "name": "Chillo al Horno con Vegetales",
+    "slug": "chillo-al-horno-con-vegetales"
   },
   {
     "id": 651,
-    "name": "Roast Chicken with Puerto Rican Sazón",
-    "slug": "roast-chicken-with-puerto-rican-sazn"
+    "name": "Pollo al Horno con Sazón Ligero",
+    "slug": "pollo-al-horno-con-sazon-ligero"
   },
   {
     "id": 652,
-    "name": "Light Salt Cod Salad",
-    "slug": "light-salt-cod-salad"
+    "name": "Ensalada de Bacalao Ligera",
+    "slug": "ensalada-de-bacalao-ligera"
   },
   {
     "id": 653,
-    "name": "Light Pickled Fish Escabeche",
-    "slug": "light-pickled-fish-escabeche"
+    "name": "Pescado en Escabeche Ligero",
+    "slug": "pescado-en-escabeche-ligero"
   },
   {
     "id": 654,
-    "name": "Puerto Rican Stewed Beans",
-    "slug": "puerto-rican-stewed-beans"
+    "name": "Habichuelas Guisadas Puertorriqueñas",
+    "slug": "habichuelas-guisadas-puertorriquenas"
   },
   {
     "id": 655,
-    "name": "Light Puerto Rican Beef Stew",
-    "slug": "light-puerto-rican-beef-stew"
+    "name": "Carne Guisada Puertorriqueña Ligera",
+    "slug": "carne-guisada-puertorriquena-ligera"
   },
   {
     "id": 661,
-    "name": "Light Bean Pupusas",
-    "slug": "light-bean-pupusas"
+    "name": "Pupusas de Frijol Ligeras",
+    "slug": "pupusas-de-frijol-ligeras"
   },
   {
     "id": 662,
-    "name": "Light Casado Plate",
-    "slug": "light-casado-plate"
+    "name": "Casado Ligero",
+    "slug": "casado-ligero"
   },
   {
     "id": 663,
-    "name": "Central American Bean Soup",
-    "slug": "central-american-bean-soup"
+    "name": "Sopa de Frijoles Centroamericana",
+    "slug": "sopa-de-frijoles-centroamericana"
   },
   {
     "id": 664,
-    "name": "Grilled Fish with Central American Salad",
-    "slug": "grilled-fish-with-central-american-salad"
+    "name": "Pescado a la Plancha con Ensalada Centroamericana",
+    "slug": "pescado-a-la-plancha-con-ensalada-centroamericana"
   },
   {
     "id": 665,
-    "name": "Chicken in Central American Tomato Sauce",
-    "slug": "chicken-in-central-american-tomato-sauce"
+    "name": "Pollo en Salsa de Tomate Centroamericano",
+    "slug": "pollo-en-salsa-de-tomate-centroamericano"
+  },
+  {
+    "id": 701,
+    "name": "Cheela de Dal de Moong",
+    "slug": "moong-dal-cheela"
+  },
+  {
+    "id": 702,
+    "name": "Chilla de Besan con Verduras",
+    "slug": "vegetable-besan-chilla"
+  },
+  {
+    "id": 703,
+    "name": "Daliya de Verduras, Ligero",
+    "slug": "light-vegetable-daliya"
+  },
+  {
+    "id": 704,
+    "name": "Bhurji de Huevo con Masala",
+    "slug": "masala-egg-bhurji"
+  },
+  {
+    "id": 705,
+    "name": "Bhurji de Paneer",
+    "slug": "paneer-bhurji"
+  },
+  {
+    "id": 706,
+    "name": "Palak Paneer Ligero",
+    "slug": "light-palak-paneer"
+  },
+  {
+    "id": 707,
+    "name": "Dal Tadka",
+    "slug": "dal-tadka"
+  },
+  {
+    "id": 708,
+    "name": "Chana Masala, Ligero",
+    "slug": "chana-masala-light"
+  },
+  {
+    "id": 709,
+    "name": "Bhindi Masala",
+    "slug": "bhindi-masala"
+  },
+  {
+    "id": 710,
+    "name": "Rajma, Ligero",
+    "slug": "rajma-light"
+  },
+  {
+    "id": 711,
+    "name": "Baingan Bharta",
+    "slug": "baingan-bharta"
+  },
+  {
+    "id": 712,
+    "name": "Khichdi de Verduras, Ligero",
+    "slug": "vegetable-khichdi-light"
+  },
+  {
+    "id": 713,
+    "name": "Kadhi",
+    "slug": "kadhi"
+  },
+  {
+    "id": 714,
+    "name": "Palak Dal",
+    "slug": "palak-dal"
+  },
+  {
+    "id": 715,
+    "name": "Raita de Pepino",
+    "slug": "cucumber-raita"
+  },
+  {
+    "id": 716,
+    "name": "Pollo Tandoori, Ligero",
+    "slug": "tandoori-chicken-light"
+  },
+  {
+    "id": 717,
+    "name": "Chicken Tikka Masala, Ligero",
+    "slug": "chicken-tikka-masala-light"
+  },
+  {
+    "id": 718,
+    "name": "Curry de Pescado, Estilo Kerala Ligero",
+    "slug": "fish-curry-kerala-style-light"
+  },
+  {
+    "id": 719,
+    "name": "Curry de Pollo, Ligero",
+    "slug": "chicken-curry-light"
+  },
+  {
+    "id": 720,
+    "name": "Brochetas de Paneer Tikka",
+    "slug": "paneer-tikka-skewers"
+  },
+  {
+    "id": 721,
+    "name": "Curry de Huevo, Ligero",
+    "slug": "egg-curry-light"
+  },
+  {
+    "id": 722,
+    "name": "Pollo con Metí (Fenogreco)",
+    "slug": "methi-chicken"
+  },
+  {
+    "id": 723,
+    "name": "Dal de Chana con Lauki",
+    "slug": "lauki-chana-dal"
+  },
+  {
+    "id": 724,
+    "name": "Sabzi de Karela",
+    "slug": "karela-sabzi"
+  },
+  {
+    "id": 725,
+    "name": "Tikka de Pescado a la Parrilla",
+    "slug": "grilled-fish-tikka"
+  },
+  {
+    "id": 726,
+    "name": "Makhana Tostado",
+    "slug": "roasted-makhana"
+  },
+  {
+    "id": 727,
+    "name": "Chaat de Brotes",
+    "slug": "sprouts-chaat"
+  },
+  {
+    "id": 728,
+    "name": "Chana Tostado con Masala",
+    "slug": "masala-roasted-chana"
+  },
+  {
+    "id": 729,
+    "name": "Ensalada de Moong Germinado",
+    "slug": "sprouted-moong-salad"
+  },
+  {
+    "id": 730,
+    "name": "Sopa de Verduras, Especiada al Estilo Indio",
+    "slug": "vegetable-soup-indian-spiced"
   }
 ]

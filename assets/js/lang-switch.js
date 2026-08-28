@@ -18,7 +18,7 @@
   // Unlike Filipino, Hindi's recipe AND restaurant pages both use the flat/
   // ES-style URL convention (no /us/ nesting for the 53 US chains), so no
   // remap function is needed for Hindi in pathFor() below.
-  var HI_AVAILABLE = ['/recipes/'];
+  var HI_AVAILABLE = ['/recipes/', '/recipes/shopping-list.html'];
   var HI_RECIPE_SLUGS = [
     'almond-flour-pancakes', 'apple-slices-with-almond-butter', 'avocado-and-egg-toast',
     'bacon-egg-and-cheese-bites', 'baked-cinnamon-oranges', 'baked-salmon-with-lemon-herbs',

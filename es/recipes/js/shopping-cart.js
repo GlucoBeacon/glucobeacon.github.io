@@ -6,11 +6,12 @@
   var CART_KEY = 'gb_shopping_cart';
 
   var seg = location.pathname.split('/').filter(Boolean)[0];
-  var LANG = (seg === 'es' || seg === 'fil') ? seg : 'en';
+  var LANG = (seg === 'es' || seg === 'fil' || seg === 'hi') ? seg : 'en';
   var STRINGS = {
     en: { pill: '🛒 Shopping List', added: '✓ Added to Shopping List', add: 'Add to Shopping List' },
     es: { pill: '🛒 Lista de Compras', added: '✓ Agregado a Lista de Compras', add: 'Agregar a Lista de Compras' },
-    fil: { pill: '🛒 Shopping List', added: '✓ Naidagdag sa Shopping List', add: 'Idagdag sa Shopping List' }
+    fil: { pill: '🛒 Shopping List', added: '✓ Naidagdag sa Shopping List', add: 'Idagdag sa Shopping List' },
+    hi: { pill: '🛒 शॉपिंग लिस्ट', added: '✓ शॉपिंग लिस्ट में जोड़ा गया', add: 'शॉपिंग लिस्ट में जोड़ें' }
   }[LANG];
 
   function getCart() {

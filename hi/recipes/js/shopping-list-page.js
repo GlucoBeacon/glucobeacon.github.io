@@ -4,11 +4,12 @@
 // reads (payload: "glucobeacon-recipes:<comma-separated ids>").
 (function () {
   var seg = location.pathname.split('/').filter(Boolean)[0];
-  var LANG = (seg === 'es' || seg === 'fil') ? seg : 'en';
+  var LANG = (seg === 'es' || seg === 'fil' || seg === 'hi') ? seg : 'en';
   var STRINGS = {
     en: { remove: 'Remove', recipeFallback: 'Recipe #' },
     es: { remove: 'Quitar', recipeFallback: 'Receta #' },
-    fil: { remove: 'Alisin', recipeFallback: 'Recipe #' }
+    fil: { remove: 'Alisin', recipeFallback: 'Recipe #' },
+    hi: { remove: 'हटाएं', recipeFallback: 'रेसिपी #' }
   }[LANG];
 
   function render(index) {

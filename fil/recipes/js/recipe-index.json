@@ -11,12 +11,12 @@
   },
   {
     "id": 3,
-    "name": "Avocado and Egg Toast",
+    "name": "Toast na Avocado at Itlog",
     "slug": "avocado-and-egg-toast"
   },
   {
     "id": 4,
-    "name": "Greek Yogurt Parfait with Walnuts",
+    "name": "Greek Yogurt Parfait na may Walnuts",
     "slug": "greek-yogurt-parfait-with-walnuts"
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "id": 7,
-    "name": "Almond Flour Pancakes",
+    "name": "Pancake na Almond Flour",
     "slug": "almond-flour-pancakes"
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "id": 10,
-    "name": "Overnight Oats with Flaxseed",
+    "name": "Overnight Oats na may Flaxseed",
     "slug": "overnight-oats-with-flaxseed"
   },
   {
@@ -326,12 +326,12 @@
   },
   {
     "id": 66,
-    "name": "Apple Slices with Almond Butter",
+    "name": "Mansanas na May Almond Butter",
     "slug": "apple-slices-with-almond-butter"
   },
   {
     "id": 67,
-    "name": "Celery with Peanut Butter",
+    "name": "Celery na may Peanut Butter",
     "slug": "celery-with-peanut-butter"
   },
   {
@@ -341,12 +341,12 @@
   },
   {
     "id": 69,
-    "name": "Hummus and Veggie Sticks",
+    "name": "Hummus na may Veggie Sticks",
     "slug": "hummus-and-veggie-sticks"
   },
   {
     "id": 70,
-    "name": "Hard Boiled Eggs",
+    "name": "Nilagang Itlog",
     "slug": "hard-boiled-eggs"
   },
   {
@@ -361,7 +361,7 @@
   },
   {
     "id": 73,
-    "name": "Guacamole with Pepper Strips",
+    "name": "Guacamole na may Bell Pepper Strips",
     "slug": "guacamole-with-pepper-strips"
   },
   {
@@ -371,7 +371,7 @@
   },
   {
     "id": 75,
-    "name": "Dark Chocolate and Almonds",
+    "name": "Dark Chocolate at Almonds",
     "slug": "dark-chocolate-and-almonds"
   },
   {
@@ -401,7 +401,7 @@
   },
   {
     "id": 81,
-    "name": "Bacon Egg and Cheese Bites",
+    "name": "Bacon, Egg, at Cheese Bites",
     "slug": "bacon-egg-and-cheese-bites"
   },
   {
@@ -526,7 +526,7 @@
   },
   {
     "id": 106,
-    "name": "Falafel Bowl with Tahini",
+    "name": "Falafel Bowl na may Tahini",
     "slug": "falafel-bowl-with-tahini"
   },
   {
@@ -546,7 +546,7 @@
   },
   {
     "id": 110,
-    "name": "Curried Red Lentil Dal",
+    "name": "Curry na Red Lentil Dal",
     "slug": "curried-red-lentil-dal"
   },
   {
@@ -611,7 +611,7 @@
   },
   {
     "id": 123,
-    "name": "Steak & Eggs",
+    "name": "Steak and Eggs",
     "slug": "steak-eggs"
   },
   {
@@ -761,7 +761,7 @@
   },
   {
     "id": 153,
-    "name": "No-Sugar Beef Jerky & Almonds",
+    "name": "No-Sugar Beef Jerky at Almonds",
     "slug": "no-sugar-beef-jerky-almonds"
   },
   {
@@ -776,7 +776,7 @@
   },
   {
     "id": 156,
-    "name": "Baked Salmon with Lemon & Herbs",
+    "name": "Baked Salmon na may Lemon at Herbs",
     "slug": "baked-salmon-with-lemon-herbs"
   },
   {
@@ -786,17 +786,17 @@
   },
   {
     "id": 158,
-    "name": "Marinated Olives & Feta",
+    "name": "Marinated Olives at Feta",
     "slug": "marinated-olives-feta"
   },
   {
     "id": 159,
-    "name": "Tuna & White Bean Salad",
+    "name": "Tuna White Bean Salad",
     "slug": "tuna-white-bean-salad"
   },
   {
     "id": 160,
-    "name": "Chicken & Chickpea Tagine",
+    "name": "Chicken Tagine na may Chickpeas",
     "slug": "chicken-chickpea-tagine"
   },
   {
@@ -811,22 +811,22 @@
   },
   {
     "id": 163,
-    "name": "Baked Cinnamon Oranges",
+    "name": "Baked na Orange na May Kanela",
     "slug": "baked-cinnamon-oranges"
   },
   {
     "id": 164,
-    "name": "Fig & Almond Overnight Oats",
+    "name": "Overnight Oats na may Igos at Almonds",
     "slug": "fig-almond-overnight-oats"
   },
   {
     "id": 165,
-    "name": "Greek Orzo with Shrimp",
+    "name": "Greek Orzo na may Shrimp",
     "slug": "greek-orzo-with-shrimp"
   },
   {
     "id": 166,
-    "name": "Mediterranean Stuffed Peppers with Lamb & Rice",
+    "name": "Mediterranean Stuffed Peppers na may Lamb at Rice",
     "slug": "mediterranean-stuffed-peppers-with-lamb-rice"
   },
   {
@@ -892,12 +892,12 @@
   {
     "id": 523,
     "name": "Salmón a la Plancha con Romesco",
-    "slug": "salmn-a-la-plancha-con-romesco"
+    "slug": "salmon-a-la-plancha-con-romesco"
   },
   {
     "id": 524,
     "name": "Tortilla Española",
-    "slug": "tortilla-espaola"
+    "slug": "tortilla-espanola"
   },
   {
     "id": 525,
@@ -906,33 +906,33 @@
   },
   {
     "id": 531,
-    "name": "Grilled Sirloin Steak with Chimichurri",
-    "slug": "grilled-sirloin-steak-with-chimichurri"
+    "name": "Grilled Sirloin Steak na may Chimichurri",
+    "slug": "bife-a-la-parrilla-con-chimichurri"
   },
   {
     "id": 532,
-    "name": "Light Vegetable and Bean Locro",
-    "slug": "light-vegetable-and-bean-locro"
+    "name": "Light na Vegetable and Bean Locro",
+    "slug": "locro-liviano"
   },
   {
     "id": 533,
     "name": "Spiced Pumpkin Squash Soup",
-    "slug": "spiced-pumpkin-squash-soup"
+    "slug": "sopa-de-zapallo-especiada"
   },
   {
     "id": 534,
-    "name": "Oven-Baked Chicken Milanesa with Salad",
-    "slug": "oven-baked-chicken-milanesa-with-salad"
+    "name": "Oven-Baked Chicken Milanesa na may Salad",
+    "slug": "milanesa-de-pollo-al-horno-con-ensalada"
   },
   {
     "id": 535,
-    "name": "Lentil Salad with Lean Chorizo",
-    "slug": "lentil-salad-with-lean-chorizo"
+    "name": "Lentil Salad na may Lean Chorizo",
+    "slug": "ensalada-de-lentejas-con-chorizo-magro"
   },
   {
     "id": 541,
     "name": "Peruvian Fish Ceviche",
-    "slug": "peruvian-fish-ceviche"
+    "slug": "ceviche-de-pescado"
   },
   {
     "id": 542,
@@ -941,317 +941,467 @@
   },
   {
     "id": 543,
-    "name": "Cauliflower Causa Stuffed with Chicken",
-    "slug": "cauliflower-causa-stuffed-with-chicken"
+    "name": "Cauliflower Causa na Rellenong Chicken",
+    "slug": "causa-de-coliflor-rellena-de-pollo"
   },
   {
     "id": 544,
     "name": "Light Lomo Saltado",
-    "slug": "light-lomo-saltado"
+    "slug": "lomo-saltado-ligero"
   },
   {
     "id": 545,
     "name": "Light Peruvian Creole Noodle Soup",
-    "slug": "light-peruvian-creole-noodle-soup"
+    "slug": "sopa-a-la-criolla-ligera"
   },
   {
     "id": 551,
-    "name": "Light Chicken and Corn Ajiaco",
-    "slug": "light-chicken-and-corn-ajiaco"
+    "name": "Light na Chicken and Corn Ajiaco",
+    "slug": "ajiaco-ligero"
   },
   {
     "id": 552,
-    "name": "Light Chicken Sancocho",
-    "slug": "light-chicken-sancocho"
+    "name": "Light na Chicken Sancocho",
+    "slug": "sancocho-de-pollo-liviano"
   },
   {
     "id": 553,
     "name": "Avocado and Tomato Salad",
-    "slug": "avocado-and-tomato-salad"
+    "slug": "ensalada-de-aguacate-y-tomate"
   },
   {
     "id": 554,
-    "name": "Grilled Fish with Colombian Salad",
-    "slug": "grilled-fish-with-colombian-salad"
+    "name": "Grilled Fish na may Colombian Salad",
+    "slug": "pescado-a-la-plancha-con-ensalada-colombiana"
   },
   {
     "id": 555,
     "name": "Colombian Stewed Lentils",
-    "slug": "colombian-stewed-lentils"
+    "slug": "lentejas-guisadas-colombianas"
   },
   {
     "id": 561,
     "name": "Chilean Fish Soup (Caldillo de Congrio)",
-    "slug": "chilean-fish-soup-caldillo-de-congrio"
+    "slug": "caldillo-de-congrio"
   },
   {
     "id": 562,
     "name": "Chilean Tomato and Onion Salad",
-    "slug": "chilean-tomato-and-onion-salad"
+    "slug": "ensalada-chilena"
   },
   {
     "id": 563,
-    "name": "Light Chilean Corn and Beef Pie",
-    "slug": "light-chilean-corn-and-beef-pie"
+    "name": "Light na Chilean Corn and Beef Pie",
+    "slug": "pastel-de-choclo-liviano"
   },
   {
     "id": 564,
-    "name": "Baked Chicken with Green Beans",
-    "slug": "baked-chicken-with-green-beans"
+    "name": "Baked Chicken na may Green Beans",
+    "slug": "pollo-al-horno-con-porotos-verdes"
   },
   {
     "id": 565,
-    "name": "Light Charquicán",
-    "slug": "light-charquicn"
+    "name": "Light na Charquicán",
+    "slug": "charquican-liviano"
   },
   {
     "id": 571,
     "name": "Ecuadorian Shrimp Ceviche",
-    "slug": "ecuadorian-shrimp-ceviche"
+    "slug": "ceviche-de-camaron-ecuatoriano"
   },
   {
     "id": 572,
-    "name": "Light Fish and Yuca Soup",
-    "slug": "light-fish-and-yuca-soup"
+    "name": "Light na Fish and Yuca Soup",
+    "slug": "encebollado-liviano"
   },
   {
     "id": 573,
     "name": "Quinoa and Avocado Salad",
-    "slug": "quinoa-and-avocado-salad"
+    "slug": "ensalada-de-quinoa-con-aguacate-ecuatoriana"
   },
   {
     "id": 574,
-    "name": "Light Seco de Pollo",
-    "slug": "light-seco-de-pollo"
+    "name": "Light na Seco de Pollo",
+    "slug": "seco-de-pollo-ligero"
   },
   {
     "id": 575,
     "name": "Potato and Cauliflower Cheese Soup",
-    "slug": "potato-and-cauliflower-cheese-soup"
+    "slug": "locro-de-papa-con-coliflor"
   },
   {
     "id": 581,
-    "name": "Light Chivito Plate",
-    "slug": "light-chivito-plate"
+    "name": "Light na Chivito Plate",
+    "slug": "chivito-ligero"
   },
   {
     "id": 582,
     "name": "Uruguayan Chickpea Salad",
-    "slug": "uruguayan-chickpea-salad"
+    "slug": "ensalada-de-garbanzos-uruguaya"
   },
   {
     "id": 583,
-    "name": "Grilled Fish with Uruguayan Salad",
-    "slug": "grilled-fish-with-uruguayan-salad"
+    "name": "Grilled Fish na may Uruguayan Salad",
+    "slug": "pescado-a-la-parrilla-con-ensalada-uruguaya"
   },
   {
     "id": 584,
-    "name": "Light Uruguayan Fish Stew",
-    "slug": "light-uruguayan-fish-stew"
+    "name": "Light na Uruguayan Fish Stew",
+    "slug": "chupin-de-pescado-liviano"
   },
   {
     "id": 585,
-    "name": "Light Uruguayan Puchero",
-    "slug": "light-uruguayan-puchero"
+    "name": "Light na Uruguayan Puchero",
+    "slug": "puchero-liviano"
   },
   {
     "id": 591,
-    "name": "Light Paraguayan Cornbread",
-    "slug": "light-paraguayan-cornbread"
+    "name": "Light na Paraguayan Cornbread",
+    "slug": "sopa-paraguaya-liviana"
   },
   {
     "id": 592,
-    "name": "Light Vori Vori Soup",
-    "slug": "light-vori-vori-soup"
+    "name": "Light na Vori Vori Soup",
+    "slug": "vori-vori-liviano"
   },
   {
     "id": 593,
     "name": "Paraguayan Bean Salad",
-    "slug": "paraguayan-bean-salad"
+    "slug": "ensalada-de-poroto-paraguaya"
   },
   {
     "id": 594,
-    "name": "Roast Chicken with Vegetables",
-    "slug": "roast-chicken-with-vegetables"
+    "name": "Roast Chicken na may Gulay",
+    "slug": "pollo-al-horno-con-verduras-paraguayo"
   },
   {
     "id": 595,
     "name": "Paraguayan Lentil Stew",
-    "slug": "paraguayan-lentil-stew"
+    "slug": "guiso-de-lentejas-paraguayo"
   },
   {
     "id": 601,
-    "name": "Light Bolivian Peanut Soup",
-    "slug": "light-bolivian-peanut-soup"
+    "name": "Light na Bolivian Peanut Soup",
+    "slug": "sopa-de-mani-liviana"
   },
   {
     "id": 602,
     "name": "Bolivian Quinoa Salad",
-    "slug": "bolivian-quinoa-salad"
+    "slug": "ensalada-de-quinoa-boliviana"
   },
   {
     "id": 603,
-    "name": "Light Pique a lo Macho",
-    "slug": "light-pique-a-lo-macho"
+    "name": "Light na Pique a lo Macho",
+    "slug": "pique-a-lo-macho-ligero"
   },
   {
     "id": 604,
-    "name": "Grilled Trout with Salad",
-    "slug": "grilled-trout-with-salad"
+    "name": "Grilled Trout na may Salad",
+    "slug": "trucha-a-la-plancha-con-ensalada"
   },
   {
     "id": 605,
-    "name": "Light Bolivian Pork Fricasé",
-    "slug": "light-bolivian-pork-fricas"
+    "name": "Light na Bolivian Pork Fricasé",
+    "slug": "fricase-de-cerdo-liviano"
   },
   {
     "id": 611,
-    "name": "Light Pabellón Criollo",
-    "slug": "light-pabelln-criollo"
+    "name": "Light na Pabellón Criollo",
+    "slug": "pabellon-criollo-ligero"
   },
   {
     "id": 612,
     "name": "Reina Pepiada Lettuce Wraps",
-    "slug": "reina-pepiada-lettuce-wraps"
+    "slug": "reina-pepiada-en-hojas-de-lechuga"
   },
   {
     "id": 613,
     "name": "Venezuelan Pumpkin Coconut Soup",
-    "slug": "venezuelan-pumpkin-coconut-soup"
+    "slug": "sopa-de-auyama-venezolana"
   },
   {
     "id": 614,
-    "name": "Grilled Fish with Venezuelan Salad",
-    "slug": "grilled-fish-with-venezuelan-salad"
+    "name": "Grilled Fish na may Venezuelan Salad",
+    "slug": "pescado-a-la-plancha-con-ensalada-venezolana"
   },
   {
     "id": 615,
-    "name": "Light Seafood Cazuela",
-    "slug": "light-seafood-cazuela"
+    "name": "Light na Seafood Cazuela",
+    "slug": "cazuela-de-mariscos-liviana"
   },
   {
     "id": 621,
-    "name": "Light Gallo Pinto",
-    "slug": "light-gallo-pinto"
+    "name": "Light na Gallo Pinto",
+    "slug": "gallo-pinto-ligero"
   },
   {
     "id": 622,
-    "name": "Light Vigorón",
-    "slug": "light-vigorn"
+    "name": "Light na Vigorón",
+    "slug": "vigoron-ligero"
   },
   {
     "id": 623,
     "name": "Nicaraguan Bean Soup",
-    "slug": "nicaraguan-bean-soup"
+    "slug": "sopa-de-frijoles-nicaraguense"
   },
   {
     "id": 624,
-    "name": "Light Grilled Fish, Tipitapa-Style",
-    "slug": "light-grilled-fish-tipitapa-style"
+    "name": "Light na Grilled Fish, Tipitapa-Style",
+    "slug": "pescado-a-la-tipitapa-ligero"
   },
   {
     "id": 625,
-    "name": "Light Indio Viejo",
-    "slug": "light-indio-viejo"
+    "name": "Light na Indio Viejo",
+    "slug": "indio-viejo-ligero"
   },
   {
     "id": 631,
-    "name": "Light Ropa Vieja",
-    "slug": "light-ropa-vieja"
+    "name": "Light na Ropa Vieja",
+    "slug": "ropa-vieja-ligera"
   },
   {
     "id": 632,
-    "name": "Light Cuban Picadillo",
-    "slug": "light-cuban-picadillo"
+    "name": "Light na Cuban Picadillo",
+    "slug": "picadillo-cubano-ligero"
   },
   {
     "id": 633,
     "name": "Cuban Avocado Salad",
-    "slug": "cuban-avocado-salad"
+    "slug": "ensalada-cubana-de-aguacate"
   },
   {
     "id": 634,
-    "name": "Grilled Fish with Light Mojo",
-    "slug": "grilled-fish-with-light-mojo"
+    "name": "Grilled Fish na may Light Mojo",
+    "slug": "pescado-a-la-plancha-con-mojo-ligero"
   },
   {
     "id": 635,
     "name": "Cuban Black Bean Stew",
-    "slug": "cuban-black-bean-stew"
+    "slug": "potaje-de-frijoles-negros-cubano"
   },
   {
     "id": 641,
-    "name": "Light Fish in Coconut Sauce",
-    "slug": "light-fish-in-coconut-sauce"
+    "name": "Light na Fish in Coconut Sauce",
+    "slug": "pescado-con-coco-ligero"
   },
   {
     "id": 642,
     "name": "Dominican Green Salad",
-    "slug": "dominican-green-salad"
+    "slug": "ensalada-verde-dominicana"
   },
   {
     "id": 643,
-    "name": "Light Dominican Stewed Beans",
-    "slug": "light-dominican-stewed-beans"
+    "name": "Light na Dominican Stewed Beans",
+    "slug": "habichuelas-guisadas-ligeras"
   },
   {
     "id": 644,
-    "name": "Light Dominican Chicken Stew",
-    "slug": "light-dominican-chicken-stew"
+    "name": "Light na Dominican Chicken Stew",
+    "slug": "pollo-guisado-dominicano-ligero"
   },
   {
     "id": 645,
-    "name": "Baked Red Snapper with Vegetables",
-    "slug": "baked-red-snapper-with-vegetables"
+    "name": "Baked Red Snapper na may Gulay",
+    "slug": "chillo-al-horno-con-vegetales"
   },
   {
     "id": 651,
-    "name": "Roast Chicken with Puerto Rican Sazón",
-    "slug": "roast-chicken-with-puerto-rican-sazn"
+    "name": "Roast Chicken na may Puerto Rican Sazón",
+    "slug": "pollo-al-horno-con-sazon-ligero"
   },
   {
     "id": 652,
-    "name": "Light Salt Cod Salad",
-    "slug": "light-salt-cod-salad"
+    "name": "Light na Salt Cod Salad",
+    "slug": "ensalada-de-bacalao-ligera"
   },
   {
     "id": 653,
-    "name": "Light Pickled Fish Escabeche",
-    "slug": "light-pickled-fish-escabeche"
+    "name": "Light na Pickled Fish Escabeche",
+    "slug": "pescado-en-escabeche-ligero"
   },
   {
     "id": 654,
     "name": "Puerto Rican Stewed Beans",
-    "slug": "puerto-rican-stewed-beans"
+    "slug": "habichuelas-guisadas-puertorriquenas"
   },
   {
     "id": 655,
-    "name": "Light Puerto Rican Beef Stew",
-    "slug": "light-puerto-rican-beef-stew"
+    "name": "Light na Puerto Rican Beef Stew",
+    "slug": "carne-guisada-puertorriquena-ligera"
   },
   {
     "id": 661,
-    "name": "Light Bean Pupusas",
-    "slug": "light-bean-pupusas"
+    "name": "Light na Bean Pupusas",
+    "slug": "pupusas-de-frijol-ligeras"
   },
   {
     "id": 662,
-    "name": "Light Casado Plate",
-    "slug": "light-casado-plate"
+    "name": "Light na Casado Plate",
+    "slug": "casado-ligero"
   },
   {
     "id": 663,
     "name": "Central American Bean Soup",
-    "slug": "central-american-bean-soup"
+    "slug": "sopa-de-frijoles-centroamericana"
   },
   {
     "id": 664,
-    "name": "Grilled Fish with Central American Salad",
-    "slug": "grilled-fish-with-central-american-salad"
+    "name": "Grilled Fish na may Central American Salad",
+    "slug": "pescado-a-la-plancha-con-ensalada-centroamericana"
   },
   {
     "id": 665,
-    "name": "Chicken in Central American Tomato Sauce",
-    "slug": "chicken-in-central-american-tomato-sauce"
+    "name": "Chicken sa Central American Tomato Sauce",
+    "slug": "pollo-en-salsa-de-tomate-centroamericano"
+  },
+  {
+    "id": 701,
+    "name": "Moong Dal Cheela",
+    "slug": "moong-dal-cheela"
+  },
+  {
+    "id": 702,
+    "name": "Besan Chilla na may Gulay",
+    "slug": "vegetable-besan-chilla"
+  },
+  {
+    "id": 703,
+    "name": "Light na Vegetable Daliya",
+    "slug": "light-vegetable-daliya"
+  },
+  {
+    "id": 704,
+    "name": "Egg Bhurji na may Masala",
+    "slug": "masala-egg-bhurji"
+  },
+  {
+    "id": 705,
+    "name": "Paneer Bhurji",
+    "slug": "paneer-bhurji"
+  },
+  {
+    "id": 706,
+    "name": "Light na Palak Paneer",
+    "slug": "light-palak-paneer"
+  },
+  {
+    "id": 707,
+    "name": "Dal Tadka",
+    "slug": "dal-tadka"
+  },
+  {
+    "id": 708,
+    "name": "Chana Masala, Light",
+    "slug": "chana-masala-light"
+  },
+  {
+    "id": 709,
+    "name": "Bhindi Masala",
+    "slug": "bhindi-masala"
+  },
+  {
+    "id": 710,
+    "name": "Rajma, Light",
+    "slug": "rajma-light"
+  },
+  {
+    "id": 711,
+    "name": "Baingan Bharta",
+    "slug": "baingan-bharta"
+  },
+  {
+    "id": 712,
+    "name": "Vegetable Khichdi, Light",
+    "slug": "vegetable-khichdi-light"
+  },
+  {
+    "id": 713,
+    "name": "Kadhi",
+    "slug": "kadhi"
+  },
+  {
+    "id": 714,
+    "name": "Palak Dal",
+    "slug": "palak-dal"
+  },
+  {
+    "id": 715,
+    "name": "Cucumber Raita",
+    "slug": "cucumber-raita"
+  },
+  {
+    "id": 716,
+    "name": "Tandoori Chicken, Light",
+    "slug": "tandoori-chicken-light"
+  },
+  {
+    "id": 717,
+    "name": "Chicken Tikka Masala, Light",
+    "slug": "chicken-tikka-masala-light"
+  },
+  {
+    "id": 718,
+    "name": "Fish Curry, Kerala-Style Light",
+    "slug": "fish-curry-kerala-style-light"
+  },
+  {
+    "id": 719,
+    "name": "Chicken Curry, Light",
+    "slug": "chicken-curry-light"
+  },
+  {
+    "id": 720,
+    "name": "Paneer Tikka Skewers",
+    "slug": "paneer-tikka-skewers"
+  },
+  {
+    "id": 721,
+    "name": "Egg Curry, Light",
+    "slug": "egg-curry-light"
+  },
+  {
+    "id": 722,
+    "name": "Methi Chicken",
+    "slug": "methi-chicken"
+  },
+  {
+    "id": 723,
+    "name": "Lauki Chana Dal",
+    "slug": "lauki-chana-dal"
+  },
+  {
+    "id": 724,
+    "name": "Karela Sabzi",
+    "slug": "karela-sabzi"
+  },
+  {
+    "id": 725,
+    "name": "Inihaw na Fish Tikka",
+    "slug": "grilled-fish-tikka"
+  },
+  {
+    "id": 726,
+    "name": "Inasar na Makhana",
+    "slug": "roasted-makhana"
+  },
+  {
+    "id": 727,
+    "name": "Sprouts Chaat",
+    "slug": "sprouts-chaat"
+  },
+  {
+    "id": 728,
+    "name": "Inasar na Chana na may Masala",
+    "slug": "masala-roasted-chana"
+  },
+  {
+    "id": 729,
+    "name": "Sprouted Moong Salad",
+    "slug": "sprouted-moong-salad"
+  },
+  {
+    "id": 730,
+    "name": "Vegetable Soup, Estilong Indian",
+    "slug": "vegetable-soup-indian-spiced"
   }
 ]

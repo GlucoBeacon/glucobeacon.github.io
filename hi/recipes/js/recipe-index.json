@@ -1,1257 +1,1407 @@
 [
   {
     "id": 1,
-    "name": "Veggie Egg White Omelette",
+    "name": "वेजी एग व्हाइट ऑमलेट",
     "slug": "veggie-egg-white-omelette"
   },
   {
     "id": 2,
-    "name": "Steel-Cut Oats with Berries",
+    "name": "स्टील-कट ओट्स विद बेरीज़",
     "slug": "steel-cut-oats-with-berries"
   },
   {
     "id": 3,
-    "name": "Avocado and Egg Toast",
+    "name": "एवोकाडो एंड एग टोस्ट",
     "slug": "avocado-and-egg-toast"
   },
   {
     "id": 4,
-    "name": "Greek Yogurt Parfait with Walnuts",
+    "name": "ग्रीक योगर्ट परफे विद वॉलनट्स",
     "slug": "greek-yogurt-parfait-with-walnuts"
   },
   {
     "id": 5,
-    "name": "Spinach and Mushroom Frittata",
+    "name": "स्पिनच एंड मशरूम फ्रिटाटा",
     "slug": "spinach-and-mushroom-frittata"
   },
   {
     "id": 6,
-    "name": "Chia Seed Pudding",
+    "name": "चिया सीड पुडिंग",
     "slug": "chia-seed-pudding"
   },
   {
     "id": 7,
-    "name": "Almond Flour Pancakes",
+    "name": "आमंड फ्लोर पैनकेक्स",
     "slug": "almond-flour-pancakes"
   },
   {
     "id": 8,
-    "name": "Smoked Salmon Cucumber Bites",
+    "name": "स्मोक्ड सैल्मन कुकुम्बर बाइट्स",
     "slug": "smoked-salmon-cucumber-bites"
   },
   {
     "id": 9,
-    "name": "Turkey and Veggie Scramble",
+    "name": "टर्की एंड वेजी स्क्रैम्बल",
     "slug": "turkey-and-veggie-scramble"
   },
   {
     "id": 10,
-    "name": "Overnight Oats with Flaxseed",
+    "name": "ओवरनाइट ओट्स विद फ्लैक्ससीड",
     "slug": "overnight-oats-with-flaxseed"
   },
   {
     "id": 11,
-    "name": "Cottage Cheese Berry Bowl",
+    "name": "कॉटेज चीज़ बेरी बाउल",
     "slug": "cottage-cheese-berry-bowl"
   },
   {
     "id": 12,
-    "name": "Sweet Potato Hash",
+    "name": "स्वीट पोटैटो हैश",
     "slug": "sweet-potato-hash"
   },
   {
     "id": 13,
-    "name": "Green Smoothie Bowl",
+    "name": "ग्रीन स्मूदी बाउल",
     "slug": "green-smoothie-bowl"
   },
   {
     "id": 14,
-    "name": "Zucchini Egg Muffins",
+    "name": "ज़ुकीनी एग मफिन्स",
     "slug": "zucchini-egg-muffins"
   },
   {
     "id": 15,
-    "name": "Quinoa Breakfast Bowl",
+    "name": "क्विनोआ ब्रेकफास्ट बाउल",
     "slug": "quinoa-breakfast-bowl"
   },
   {
     "id": 16,
-    "name": "Grilled Chicken Caesar Salad",
+    "name": "ग्रिल्ड चिकन सीज़र सलाद",
     "slug": "grilled-chicken-caesar-salad"
   },
   {
     "id": 17,
-    "name": "Red Lentil Soup",
+    "name": "रेड लेंटिल सूप",
     "slug": "red-lentil-soup"
   },
   {
     "id": 18,
-    "name": "Turkey Lettuce Wraps",
+    "name": "टर्की लेट्यूस रैप्स",
     "slug": "turkey-lettuce-wraps"
   },
   {
     "id": 19,
-    "name": "Tuna Stuffed Avocado",
+    "name": "टूना स्टफ्ड एवोकाडो",
     "slug": "tuna-stuffed-avocado"
   },
   {
     "id": 20,
-    "name": "Black Bean Veggie Bowl",
+    "name": "ब्लैक बीन वेजी बाउल",
     "slug": "black-bean-veggie-bowl"
   },
   {
     "id": 21,
-    "name": "Chicken Vegetable Soup",
+    "name": "चिकन वेजिटेबल सूप",
     "slug": "chicken-vegetable-soup"
   },
   {
     "id": 22,
-    "name": "Quinoa Tabbouleh",
+    "name": "क्विनोआ तबूले",
     "slug": "quinoa-tabbouleh"
   },
   {
     "id": 23,
-    "name": "Salmon Nicoise Salad",
+    "name": "सैल्मन निकोइज़ सलाद",
     "slug": "salmon-nicoise-salad"
   },
   {
     "id": 24,
-    "name": "Cauliflower Fried Rice",
+    "name": "कॉलीफ्लावर फ्राइड राइस",
     "slug": "cauliflower-fried-rice"
   },
   {
     "id": 25,
-    "name": "Mediterranean Chickpea Salad",
+    "name": "मेडिटेरेनियन चिकपी सलाद",
     "slug": "mediterranean-chickpea-salad"
   },
   {
     "id": 26,
-    "name": "White Bean and Kale Soup",
+    "name": "व्हाइट बीन एंड केल सूप",
     "slug": "white-bean-and-kale-soup"
   },
   {
     "id": 27,
-    "name": "Asian Chicken Lettuce Cups",
+    "name": "एशियन चिकन लेट्यूस कप्स",
     "slug": "asian-chicken-lettuce-cups"
   },
   {
     "id": 28,
-    "name": "Grilled Veggie Hummus Plate",
+    "name": "ग्रिल्ड वेजी हुमस प्लेट",
     "slug": "grilled-veggie-hummus-plate"
   },
   {
     "id": 29,
-    "name": "Shrimp and Avocado Salad",
+    "name": "श्रिम्प एंड एवोकाडो सलाद",
     "slug": "shrimp-and-avocado-salad"
   },
   {
     "id": 30,
-    "name": "Edamame Brown Rice Bowl",
+    "name": "एडामामे ब्राउन राइस बाउल",
     "slug": "edamame-brown-rice-bowl"
   },
   {
     "id": 31,
-    "name": "Turkey Spinach Salad",
+    "name": "टर्की स्पिनच सलाद",
     "slug": "turkey-spinach-salad"
   },
   {
     "id": 32,
-    "name": "Low-Sodium Broccoli Cheddar Soup",
+    "name": "लो-सोडियम ब्रोकली चेडर सूप",
     "slug": "low-sodium-broccoli-cheddar-soup"
   },
   {
     "id": 33,
-    "name": "Egg Salad Cucumber Rounds",
+    "name": "एग सलाद कुकुम्बर राउंड्स",
     "slug": "egg-salad-cucumber-rounds"
   },
   {
     "id": 34,
-    "name": "Zucchini Noodle Soup",
+    "name": "ज़ुकीनी नूडल सूप",
     "slug": "zucchini-noodle-soup"
   },
   {
     "id": 35,
-    "name": "Lemon Herb Chickpea Bowl",
+    "name": "लेमन हर्ब चिकपी बाउल",
     "slug": "lemon-herb-chickpea-bowl"
   },
   {
     "id": 36,
-    "name": "Baked Salmon with Asparagus",
+    "name": "बेक्ड सैल्मन विद एस्पैरागस",
     "slug": "baked-salmon-with-asparagus"
   },
   {
     "id": 37,
-    "name": "Grilled Chicken with Roasted Vegetables",
+    "name": "ग्रिल्ड चिकन विद रोस्टेड वेजिटेबल्स",
     "slug": "grilled-chicken-with-roasted-vegetables"
   },
   {
     "id": 38,
-    "name": "Turkey Meatballs with Zucchini Noodles",
+    "name": "टर्की मीटबॉल्स विद ज़ुकीनी नूडल्स",
     "slug": "turkey-meatballs-with-zucchini-noodles"
   },
   {
     "id": 39,
-    "name": "Baked Cod with Lemon and Herbs",
+    "name": "बेक्ड कॉड विद लेमन एंड हर्ब्स",
     "slug": "baked-cod-with-lemon-and-herbs"
   },
   {
     "id": 40,
-    "name": "Chicken Broccoli Stir-Fry",
+    "name": "चिकन ब्रोकली स्टिर-फ्राई",
     "slug": "chicken-broccoli-stir-fry"
   },
   {
     "id": 41,
-    "name": "Lean Beef and Vegetable Stew",
+    "name": "लीन बीफ एंड वेजिटेबल स्ट्यू",
     "slug": "lean-beef-and-vegetable-stew"
   },
   {
     "id": 42,
-    "name": "Shrimp Tacos with Cabbage Slaw",
+    "name": "श्रिम्प टैकोज़ विद कैबेज स्लॉ",
     "slug": "shrimp-tacos-with-cabbage-slaw"
   },
   {
     "id": 43,
-    "name": "Lemon Herb Roasted Chicken Thighs",
+    "name": "लेमन हर्ब रोस्टेड चिकन थाई",
     "slug": "lemon-herb-roasted-chicken-thighs"
   },
   {
     "id": 44,
-    "name": "Stuffed Bell Peppers with Turkey",
+    "name": "स्टफ्ड बेल पेपर्स विद टर्की",
     "slug": "stuffed-bell-peppers-with-turkey"
   },
   {
     "id": 45,
-    "name": "Salmon Patties",
+    "name": "सैल्मन पैटीज़",
     "slug": "salmon-patties"
   },
   {
     "id": 46,
-    "name": "Chicken Vegetable Kabobs",
+    "name": "चिकन वेजिटेबल कबॉब्स",
     "slug": "chicken-vegetable-kabobs"
   },
   {
     "id": 47,
-    "name": "Baked Tilapia with Fresh Salsa",
+    "name": "बेक्ड तिलापिया विद फ्रेश साल्सा",
     "slug": "baked-tilapia-with-fresh-salsa"
   },
   {
     "id": 48,
-    "name": "Turkey Chili",
+    "name": "टर्की चिली",
     "slug": "turkey-chili"
   },
   {
     "id": 49,
-    "name": "Pork Tenderloin with Apple",
+    "name": "पोर्क टेंडरलॉइन विद एप्पल",
     "slug": "pork-tenderloin-with-apple"
   },
   {
     "id": 50,
-    "name": "Lemon Garlic Shrimp and Cauliflower Rice",
+    "name": "लेमन गार्लिक श्रिम्प एंड कॉलीफ्लावर राइस",
     "slug": "lemon-garlic-shrimp-and-cauliflower-rice"
   },
   {
     "id": 51,
-    "name": "Turkey Burger Lettuce Wrap",
+    "name": "टर्की बर्गर लेट्यूस रैप",
     "slug": "turkey-burger-lettuce-wrap"
   },
   {
     "id": 52,
-    "name": "Sesame Ginger Chicken",
+    "name": "सीसेम जिंजर चिकन",
     "slug": "sesame-ginger-chicken"
   },
   {
     "id": 53,
-    "name": "Spaghetti Squash Turkey Bolognese",
+    "name": "स्पेगेटी स्क्वैश टर्की बोलोनीज़",
     "slug": "spaghetti-squash-turkey-bolognese"
   },
   {
     "id": 54,
-    "name": "Baked Chicken Parmesan Light",
+    "name": "बेक्ड चिकन परमेज़न लाइट",
     "slug": "baked-chicken-parmesan-light"
   },
   {
     "id": 55,
-    "name": "Stuffed Portobello Mushrooms",
+    "name": "स्टफ्ड पोर्टोबेलो मशरूम्स",
     "slug": "stuffed-portobello-mushrooms"
   },
   {
     "id": 56,
-    "name": "Chicken Piccata",
+    "name": "चिकन पिकाटा",
     "slug": "chicken-piccata"
   },
   {
     "id": 57,
-    "name": "Beef and Broccoli",
+    "name": "बीफ एंड ब्रोकली",
     "slug": "beef-and-broccoli"
   },
   {
     "id": 58,
-    "name": "Garlic Herb Pork Tenderloin",
+    "name": "गार्लिक हर्ब पोर्क टेंडरलॉइन",
     "slug": "garlic-herb-pork-tenderloin"
   },
   {
     "id": 59,
-    "name": "Herb Roasted Halibut",
+    "name": "हर्ब रोस्टेड हैलिबट",
     "slug": "herb-roasted-halibut"
   },
   {
     "id": 60,
-    "name": "Veggie Stuffed Sweet Potato",
+    "name": "वेजी स्टफ्ड स्वीट पोटैटो",
     "slug": "veggie-stuffed-sweet-potato"
   },
   {
     "id": 61,
-    "name": "Tuna Steak with Avocado",
+    "name": "टूना स्टेक विद एवोकाडो",
     "slug": "tuna-steak-with-avocado"
   },
   {
     "id": 62,
-    "name": "Thai Basil Chicken",
+    "name": "थाई बेसिल चिकन",
     "slug": "thai-basil-chicken"
   },
   {
     "id": 63,
-    "name": "Lemon Herb Baked Chicken",
+    "name": "लेमन हर्ब बेक्ड चिकन",
     "slug": "lemon-herb-baked-chicken"
   },
   {
     "id": 64,
-    "name": "Black Bean Enchiladas",
+    "name": "ब्लैक बीन एनचिलाडास",
     "slug": "black-bean-enchiladas"
   },
   {
     "id": 65,
-    "name": "Salmon with Dijon Crust",
+    "name": "सैल्मन विद डाइजॉन क्रस्ट",
     "slug": "salmon-with-dijon-crust"
   },
   {
     "id": 66,
-    "name": "Apple Slices with Almond Butter",
+    "name": "एप्पल स्लाइसेज़ विद आमंड बटर",
     "slug": "apple-slices-with-almond-butter"
   },
   {
     "id": 67,
-    "name": "Celery with Peanut Butter",
+    "name": "सेलेरी विद पीनट बटर",
     "slug": "celery-with-peanut-butter"
   },
   {
     "id": 68,
-    "name": "Mixed Nuts",
+    "name": "मिक्स्ड नट्स",
     "slug": "mixed-nuts"
   },
   {
     "id": 69,
-    "name": "Hummus and Veggie Sticks",
+    "name": "हुमस एंड वेजी स्टिक्स",
     "slug": "hummus-and-veggie-sticks"
   },
   {
     "id": 70,
-    "name": "Hard Boiled Eggs",
+    "name": "हार्ड बॉइल्ड एग्स",
     "slug": "hard-boiled-eggs"
   },
   {
     "id": 71,
-    "name": "Edamame",
+    "name": "एडामामे",
     "slug": "edamame"
   },
   {
     "id": 72,
-    "name": "Cottage Cheese with Pineapple",
+    "name": "कॉटेज चीज़ विद पाइनएप्पल",
     "slug": "cottage-cheese-with-pineapple"
   },
   {
     "id": 73,
-    "name": "Guacamole with Pepper Strips",
+    "name": "ग्वाकामोले विद पेपर स्ट्रिप्स",
     "slug": "guacamole-with-pepper-strips"
   },
   {
     "id": 74,
-    "name": "Roasted Chickpeas",
+    "name": "रोस्टेड चिकपीज़",
     "slug": "roasted-chickpeas"
   },
   {
     "id": 75,
-    "name": "Dark Chocolate and Almonds",
+    "name": "डार्क चॉकलेट एंड आमंड्स",
     "slug": "dark-chocolate-and-almonds"
   },
   {
     "id": 76,
-    "name": "Roasted Garlic Cauliflower",
+    "name": "रोस्टेड गार्लिक कॉलीफ्लावर",
     "slug": "roasted-garlic-cauliflower"
   },
   {
     "id": 77,
-    "name": "Sautéed Garlic Spinach",
+    "name": "सॉते गार्लिक स्पिनच",
     "slug": "sauted-garlic-spinach"
   },
   {
     "id": 78,
-    "name": "Roasted Brussels Sprouts",
+    "name": "रोस्टेड ब्रसेल स्प्राउट्स",
     "slug": "roasted-brussels-sprouts"
   },
   {
     "id": 79,
-    "name": "Quinoa Pilaf",
+    "name": "क्विनोआ पिलाफ",
     "slug": "quinoa-pilaf"
   },
   {
     "id": 80,
-    "name": "Steamed Broccoli with Lemon",
+    "name": "स्टीम्ड ब्रोकली विद लेमन",
     "slug": "steamed-broccoli-with-lemon"
   },
   {
     "id": 81,
-    "name": "Bacon Egg and Cheese Bites",
+    "name": "बेकन एग एंड चीज़ बाइट्स",
     "slug": "bacon-egg-and-cheese-bites"
   },
   {
     "id": 82,
-    "name": "Almond Flour Keto Pancakes",
+    "name": "आमंड फ्लोर कीटो पैनकेक्स",
     "slug": "almond-flour-keto-pancakes"
   },
   {
     "id": 83,
-    "name": "Denver Omelet",
+    "name": "डेनवर ऑमलेट",
     "slug": "denver-omelet"
   },
   {
     "id": 84,
-    "name": "Avocado Baked Eggs",
+    "name": "एवोकाडो बेक्ड एग्स",
     "slug": "avocado-baked-eggs"
   },
   {
     "id": 85,
-    "name": "Keto Chia Coconut Pudding",
+    "name": "कीटो चिया कोकोनट पुडिंग",
     "slug": "keto-chia-coconut-pudding"
   },
   {
     "id": 86,
-    "name": "Egg Salad Lettuce Boats",
+    "name": "एग सलाद लेट्यूस बोट्स",
     "slug": "egg-salad-lettuce-boats"
   },
   {
     "id": 87,
-    "name": "Tuna Salad Avocado Boats",
+    "name": "टूना सलाद एवोकाडो बोट्स",
     "slug": "tuna-salad-avocado-boats"
   },
   {
     "id": 88,
-    "name": "Garlic Butter Shrimp Zoodles",
+    "name": "गार्लिक बटर श्रिम्प ज़ूडल्स",
     "slug": "garlic-butter-shrimp-zoodles"
   },
   {
     "id": 89,
-    "name": "Chicken Caesar Lettuce Wraps",
+    "name": "चिकन सीज़र लेट्यूस रैप्स",
     "slug": "chicken-caesar-lettuce-wraps"
   },
   {
     "id": 90,
-    "name": "Cauliflower Mash with Sausage Crumble",
+    "name": "कॉलीफ्लावर मैश विद सॉसेज क्रम्बल",
     "slug": "cauliflower-mash-with-sausage-crumble"
   },
   {
     "id": 91,
-    "name": "Bacon-Wrapped Chicken Thighs",
+    "name": "बेकन-रैप्ड चिकन थाई",
     "slug": "bacon-wrapped-chicken-thighs"
   },
   {
     "id": 92,
-    "name": "Zoodles with Basil Pesto",
+    "name": "ज़ूडल्स विद बेसिल पेस्टो",
     "slug": "zoodles-with-basil-pesto"
   },
   {
     "id": 93,
-    "name": "Garlic Butter Steak Bites with Mushrooms",
+    "name": "गार्लिक बटर स्टेक बाइट्स विद मशरूम्स",
     "slug": "garlic-butter-steak-bites-with-mushrooms"
   },
   {
     "id": 94,
-    "name": "Baked Salmon with Cream Cheese Spinach",
+    "name": "बेक्ड सैल्मन विद क्रीम चीज़ स्पिनच",
     "slug": "baked-salmon-with-cream-cheese-spinach"
   },
   {
     "id": 95,
-    "name": "Keto Cheeseburger Bowl",
+    "name": "कीटो चीज़बर्गर बाउल",
     "slug": "keto-cheeseburger-bowl"
   },
   {
     "id": 96,
-    "name": "Turkey and Cheddar Roll-Ups",
+    "name": "टर्की एंड चेडर रोल-अप्स",
     "slug": "turkey-and-cheddar-roll-ups"
   },
   {
     "id": 97,
-    "name": "Keto Deviled Eggs",
+    "name": "कीटो डेविल्ड एग्स",
     "slug": "keto-deviled-eggs"
   },
   {
     "id": 98,
-    "name": "Olives and Feta Snack Plate",
+    "name": "ऑलिव्स एंड फेटा स्नैक प्लेट",
     "slug": "olives-and-feta-snack-plate"
   },
   {
     "id": 99,
-    "name": "Celery with Cream Cheese and Everything Seasoning",
+    "name": "सेलेरी विद क्रीम चीज़ एंड एवरीथिंग सीज़निंग",
     "slug": "celery-with-cream-cheese-and-everything-seasoning"
   },
   {
     "id": 100,
-    "name": "Keto Peanut Butter Chocolate Fat Bombs",
+    "name": "कीटो पीनट बटर चॉकलेट फैट बॉम्ब्स",
     "slug": "keto-peanut-butter-chocolate-fat-bombs"
   },
   {
     "id": 101,
-    "name": "Vegetarian Breakfast Burrito",
+    "name": "वेजिटेरियन ब्रेकफास्ट बरिटो",
     "slug": "vegetarian-breakfast-burrito"
   },
   {
     "id": 102,
-    "name": "Cottage Cheese Pancakes",
+    "name": "कॉटेज चीज़ पैनकेक्स",
     "slug": "cottage-cheese-pancakes"
   },
   {
     "id": 103,
-    "name": "Chickpea Frittata Muffins",
+    "name": "चिकपी फ्रिटाटा मफिन्स",
     "slug": "chickpea-frittata-muffins"
   },
   {
     "id": 104,
-    "name": "Peanut Butter Banana Overnight Oats",
+    "name": "पीनट बटर बनाना ओवरनाइट ओट्स",
     "slug": "peanut-butter-banana-overnight-oats"
   },
   {
     "id": 105,
-    "name": "Veggie and Egg Breakfast Scramble",
+    "name": "वेजी एंड एग ब्रेकफास्ट स्क्रैम्बल",
     "slug": "veggie-and-egg-breakfast-scramble"
   },
   {
     "id": 106,
-    "name": "Falafel Bowl with Tahini",
+    "name": "फलाफेल बाउल विद ताहिनी",
     "slug": "falafel-bowl-with-tahini"
   },
   {
     "id": 107,
-    "name": "Greek Pasta Salad",
+    "name": "ग्रीक पास्ता सलाद",
     "slug": "greek-pasta-salad"
   },
   {
     "id": 108,
-    "name": "Caprese Sandwich",
+    "name": "कैप्रेस सैंडविच",
     "slug": "caprese-sandwich"
   },
   {
     "id": 109,
-    "name": "Veggie Buddha Bowl",
+    "name": "वेजी बुद्धा बाउल",
     "slug": "veggie-buddha-bowl"
   },
   {
     "id": 110,
-    "name": "Curried Red Lentil Dal",
+    "name": "करीड रेड लेंटिल दाल",
     "slug": "curried-red-lentil-dal"
   },
   {
     "id": 111,
-    "name": "Chickpea Tikka Masala",
+    "name": "चिकपी टिक्का मसाला",
     "slug": "chickpea-tikka-masala"
   },
   {
     "id": 112,
-    "name": "Tofu and Broccoli Stir-Fry",
+    "name": "टोफू एंड ब्रोकली स्टिर-फ्राई",
     "slug": "tofu-and-broccoli-stir-fry"
   },
   {
     "id": 113,
-    "name": "Eggplant Parmesan",
+    "name": "एगप्लांट परमेज़न",
     "slug": "eggplant-parmesan"
   },
   {
     "id": 114,
-    "name": "Black Bean Tacos",
+    "name": "ब्लैक बीन टैकोज़",
     "slug": "black-bean-tacos"
   },
   {
     "id": 115,
-    "name": "Mushroom Risotto",
+    "name": "मशरूम रिसोट्टो",
     "slug": "mushroom-risotto"
   },
   {
     "id": 116,
-    "name": "Roasted Edamame Snack",
+    "name": "रोस्टेड एडामामे स्नैक",
     "slug": "roasted-edamame-snack"
   },
   {
     "id": 117,
-    "name": "Hummus Veggie Wrap",
+    "name": "हुमस वेजी रैप",
     "slug": "hummus-veggie-wrap"
   },
   {
     "id": 118,
-    "name": "Trail Mix with Dark Chocolate",
+    "name": "ट्रेल मिक्स विद डार्क चॉकलेट",
     "slug": "trail-mix-with-dark-chocolate"
   },
   {
     "id": 119,
-    "name": "Caprese Skewers",
+    "name": "कैप्रेस स्क्युअर्स",
     "slug": "caprese-skewers"
   },
   {
     "id": 120,
-    "name": "Peanut Butter Banana Rice Cakes",
+    "name": "पीनट बटर बनाना राइस केक्स",
     "slug": "peanut-butter-banana-rice-cakes"
   },
   {
     "id": 121,
-    "name": "Smoked Salmon & Cream Cheese Plate",
+    "name": "स्मोक्ड सैल्मन एंड क्रीम चीज़ प्लेट",
     "slug": "smoked-salmon-cream-cheese-plate"
   },
   {
     "id": 122,
-    "name": "Sage Sausage & Kale Skillet",
+    "name": "सेज सॉसेज एंड केल स्किलेट",
     "slug": "sage-sausage-kale-skillet"
   },
   {
     "id": 123,
-    "name": "Steak & Eggs",
+    "name": "स्टेक एंड एग्स",
     "slug": "steak-eggs"
   },
   {
     "id": 124,
-    "name": "Smoked Trout & Soft-Boiled Egg Plate",
+    "name": "स्मोक्ड ट्राउट एंड सॉफ्ट-बॉइल्ड एग प्लेट",
     "slug": "smoked-trout-soft-boiled-egg-plate"
   },
   {
     "id": 125,
-    "name": "Turkey, Egg & Avocado Bowl",
+    "name": "टर्की, एग एंड एवोकाडो बाउल",
     "slug": "turkey-egg-avocado-bowl"
   },
   {
     "id": 126,
-    "name": "Shakshuka",
+    "name": "शक्शुका",
     "slug": "shakshuka"
   },
   {
     "id": 127,
-    "name": "Breakfast Salad with Bacon & Soft-Boiled Egg",
+    "name": "ब्रेकफास्ट सलाद विद बेकन एंड सॉफ्ट-बॉइल्ड एग",
     "slug": "breakfast-salad-with-bacon-soft-boiled-egg"
   },
   {
     "id": 128,
-    "name": "Zucchini Noodles & Seasoned Beef",
+    "name": "ज़ुकीनी नूडल्स एंड सीज़न्ड बीफ",
     "slug": "zucchini-noodles-seasoned-beef"
   },
   {
     "id": 129,
-    "name": "Cobb Salad",
+    "name": "कॉब सलाद",
     "slug": "cobb-salad"
   },
   {
     "id": 130,
-    "name": "Greek Salad with Grilled Shrimp",
+    "name": "ग्रीक सलाद विद ग्रिल्ड श्रिम्प",
     "slug": "greek-salad-with-grilled-shrimp"
   },
   {
     "id": 131,
-    "name": "Taco Salad Bowl",
+    "name": "टैको सलाद बाउल",
     "slug": "taco-salad-bowl"
   },
   {
     "id": 132,
-    "name": "Mediterranean Hummus & Veggie Plate",
+    "name": "मेडिटेरेनियन हुमस एंड वेजी प्लेट",
     "slug": "mediterranean-hummus-veggie-plate"
   },
   {
     "id": 133,
-    "name": "Cauliflower Rice Chicken Bowl",
+    "name": "कॉलीफ्लावर राइस चिकन बाउल",
     "slug": "cauliflower-rice-chicken-bowl"
   },
   {
     "id": 134,
-    "name": "Cabbage & Pork Stir-Fry Bowl",
+    "name": "कैबेज एंड पोर्क स्टिर-फ्राई बाउल",
     "slug": "cabbage-pork-stir-fry-bowl"
   },
   {
     "id": 135,
-    "name": "Buffalo Chicken Lettuce Wraps",
+    "name": "बफेलो चिकन लेट्यूस रैप्स",
     "slug": "buffalo-chicken-lettuce-wraps"
   },
   {
     "id": 136,
-    "name": "Steak Salad with Blue Cheese",
+    "name": "स्टेक सलाद विद ब्लू चीज़",
     "slug": "steak-salad-with-blue-cheese"
   },
   {
     "id": 137,
-    "name": "Braised Chicken Thighs, Cabbage & Mushroom",
+    "name": "ब्रेज़्ड चिकन थाई, कैबेज एंड मशरूम",
     "slug": "braised-chicken-thighs-cabbage-mushroom"
   },
   {
     "id": 138,
-    "name": "Garlic Butter Pork Chops & Green Beans",
+    "name": "गार्लिक बटर पोर्क चॉप्स एंड ग्रीन बीन्स",
     "slug": "garlic-butter-pork-chops-green-beans"
   },
   {
     "id": 139,
-    "name": "Beef Pot Roast, Turnip & Cabbage",
+    "name": "बीफ पॉट रोस्ट, टर्निप एंड कैबेज",
     "slug": "beef-pot-roast-turnip-cabbage"
   },
   {
     "id": 140,
-    "name": "Chicken Fajita Skillet",
+    "name": "चिकन फजिटा स्किलेट",
     "slug": "chicken-fajita-skillet"
   },
   {
     "id": 141,
-    "name": "Grilled Shrimp Skewers with Chimichurri",
+    "name": "ग्रिल्ड श्रिम्प स्क्युअर्स विद चिमिचुरी",
     "slug": "grilled-shrimp-skewers-with-chimichurri"
   },
   {
     "id": 142,
-    "name": "Rosemary Garlic Chicken Thighs & Brussels Sprouts",
+    "name": "रोज़मेरी गार्लिक चिकन थाई एंड ब्रसेल स्प्राउट्स",
     "slug": "rosemary-garlic-chicken-thighs-brussels-sprouts"
   },
   {
     "id": 143,
-    "name": "Stuffed Bell Peppers (Beef & Cauliflower Rice)",
+    "name": "स्टफ्ड बेल पेपर्स (बीफ एंड कॉलीफ्लावर राइस)",
     "slug": "stuffed-bell-peppers-beef-cauliflower-rice"
   },
   {
     "id": 144,
-    "name": "Pan-Seared Scallops, Garlic Butter Spinach",
+    "name": "पैन-सियर्ड स्कैलप्स, गार्लिक बटर स्पिनच",
     "slug": "pan-seared-scallops-garlic-butter-spinach"
   },
   {
     "id": 145,
-    "name": "Lamb Chops, Mint Gremolata & Asparagus",
+    "name": "लैंब चॉप्स, मिंट ग्रेमोलाटा एंड एस्पैरागस",
     "slug": "lamb-chops-mint-gremolata-asparagus"
   },
   {
     "id": 146,
-    "name": "Macadamias & Olives",
+    "name": "मैकाडेमियास एंड ऑलिव्स",
     "slug": "macadamias-olives"
   },
   {
     "id": 147,
-    "name": "Cheese & Cucumber",
+    "name": "चीज़ एंड कुकुम्बर",
     "slug": "cheese-cucumber"
   },
   {
     "id": 148,
-    "name": "Tuna Salad Cucumber Bites",
+    "name": "टूना सलाद कुकुम्बर बाइट्स",
     "slug": "tuna-salad-cucumber-bites"
   },
   {
     "id": 149,
-    "name": "Prosciutto-Wrapped Asparagus",
+    "name": "प्रोशियुत्तो-रैप्ड एस्पैरागस",
     "slug": "prosciutto-wrapped-asparagus"
   },
   {
     "id": 150,
-    "name": "Olives, Feta & Cherry Tomato Skewers",
+    "name": "ऑलिव्स, फेटा एंड चेरी टोमैटो स्क्युअर्स",
     "slug": "olives-feta-cherry-tomato-skewers"
   },
   {
     "id": 151,
-    "name": "Roasted Pumpkin Seeds with Sea Salt",
+    "name": "रोस्टेड पम्पकिन सीड्स विद सी सॉल्ट",
     "slug": "roasted-pumpkin-seeds-with-sea-salt"
   },
   {
     "id": 152,
-    "name": "Avocado Half, Olive Oil & Sea Salt",
+    "name": "एवोकाडो हाफ, ऑलिव ऑयल एंड सी सॉल्ट",
     "slug": "avocado-half-olive-oil-sea-salt"
   },
   {
     "id": 153,
-    "name": "No-Sugar Beef Jerky & Almonds",
+    "name": "नो-शुगर बीफ जर्की एंड आमंड्स",
     "slug": "no-sugar-beef-jerky-almonds"
   },
   {
     "id": 154,
-    "name": "Classic Greek Salad",
+    "name": "क्लासिक ग्रीक सलाद",
     "slug": "classic-greek-salad"
   },
   {
     "id": 155,
-    "name": "Greek Lentil Soup (Faki)",
+    "name": "ग्रीक लेंटिल सूप (फाकी)",
     "slug": "greek-lentil-soup-faki"
   },
   {
     "id": 156,
-    "name": "Baked Salmon with Lemon & Herbs",
+    "name": "बेक्ड सैल्मन विद लेमन एंड हर्ब्स",
     "slug": "baked-salmon-with-lemon-herbs"
   },
   {
     "id": 157,
-    "name": "Grilled Chicken Souvlaki Wrap",
+    "name": "ग्रिल्ड चिकन सूवलाकी रैप",
     "slug": "grilled-chicken-souvlaki-wrap"
   },
   {
     "id": 158,
-    "name": "Marinated Olives & Feta",
+    "name": "मैरिनेटेड ऑलिव्स एंड फेटा",
     "slug": "marinated-olives-feta"
   },
   {
     "id": 159,
-    "name": "Tuna & White Bean Salad",
+    "name": "टूना एंड व्हाइट बीन सलाद",
     "slug": "tuna-white-bean-salad"
   },
   {
     "id": 160,
-    "name": "Chicken & Chickpea Tagine",
+    "name": "चिकन एंड चिकपी टैजिन",
     "slug": "chicken-chickpea-tagine"
   },
   {
     "id": 161,
-    "name": "Whole Wheat Pasta al Pomodoro",
+    "name": "होल व्हीट पास्ता अल पोमोडोरो",
     "slug": "whole-wheat-pasta-al-pomodoro"
   },
   {
     "id": 162,
-    "name": "Tzatziki with Cucumber Sticks",
+    "name": "त्ज़त्ज़िकी विद कुकुम्बर स्टिक्स",
     "slug": "tzatziki-with-cucumber-sticks"
   },
   {
     "id": 163,
-    "name": "Baked Cinnamon Oranges",
+    "name": "बेक्ड सिनेमन ऑरेंजेज़",
     "slug": "baked-cinnamon-oranges"
   },
   {
     "id": 164,
-    "name": "Fig & Almond Overnight Oats",
+    "name": "फिग एंड आमंड ओवरनाइट ओट्स",
     "slug": "fig-almond-overnight-oats"
   },
   {
     "id": 165,
-    "name": "Greek Orzo with Shrimp",
+    "name": "ग्रीक ऑर्ज़ो विद श्रिम्प",
     "slug": "greek-orzo-with-shrimp"
   },
   {
     "id": 166,
-    "name": "Mediterranean Stuffed Peppers with Lamb & Rice",
+    "name": "मेडिटेरेनियन स्टफ्ड पेपर्स विद लैंब एंड राइस",
     "slug": "mediterranean-stuffed-peppers-with-lamb-rice"
   },
   {
     "id": 501,
-    "name": "Chilaquiles Verdes",
+    "name": "चिलाकिलेस वेर्देस",
     "slug": "chilaquiles-verdes"
   },
   {
     "id": 502,
-    "name": "Pozole Rojo",
+    "name": "पोज़ोले रोहो",
     "slug": "pozole-rojo"
   },
   {
     "id": 503,
-    "name": "Tacos de Pescado",
+    "name": "टैकोज़ डी पेस्काडो",
     "slug": "tacos-de-pescado"
   },
   {
     "id": 504,
-    "name": "Enchiladas Verdes",
+    "name": "एनचिलाडास वेर्देस",
     "slug": "enchiladas-verdes"
   },
   {
     "id": 505,
-    "name": "Sopa de Tortilla",
+    "name": "सोपा दे टॉर्टिला",
     "slug": "sopa-de-tortilla"
   },
   {
     "id": 511,
-    "name": "Sinigang na Baboy",
+    "name": "सिनिगांग ना बाबॉय",
     "slug": "sinigang-na-baboy"
   },
   {
     "id": 512,
-    "name": "Chicken Tinola",
+    "name": "चिकन टिनोला",
     "slug": "chicken-tinola"
   },
   {
     "id": 513,
-    "name": "Inihaw na Bangus",
+    "name": "इनिहॉ ना बांगुस",
     "slug": "inihaw-na-bangus"
   },
   {
     "id": 514,
-    "name": "Pinakbet",
+    "name": "पिनाकबेट",
     "slug": "pinakbet"
   },
   {
     "id": 515,
-    "name": "Ginisang Munggo",
+    "name": "गिनिसांग मुंग्गो",
     "slug": "ginisang-munggo"
   },
   {
     "id": 521,
-    "name": "Gazpacho Andaluz",
+    "name": "गाज़्पाचो अंदालुज़",
     "slug": "gazpacho-andaluz"
   },
   {
     "id": 522,
-    "name": "Pisto Manchego",
+    "name": "पिस्तो मानचेगो",
     "slug": "pisto-manchego"
   },
   {
     "id": 523,
-    "name": "Salmón a la Plancha con Romesco",
-    "slug": "salmn-a-la-plancha-con-romesco"
+    "name": "सैल्मन अ ला प्लांचा कॉन रोमेस्को",
+    "slug": "salmon-a-la-plancha-con-romesco"
   },
   {
     "id": 524,
-    "name": "Tortilla Española",
-    "slug": "tortilla-espaola"
+    "name": "टॉर्टिला एस्पान्योला",
+    "slug": "tortilla-espanola"
   },
   {
     "id": 525,
-    "name": "Ensalada Mixta",
+    "name": "एनसलादा मिक्स्टा",
     "slug": "ensalada-mixta"
   },
   {
     "id": 531,
-    "name": "Grilled Sirloin Steak with Chimichurri",
-    "slug": "grilled-sirloin-steak-with-chimichurri"
+    "name": "ग्रिल्ड सिरलॉइन स्टेक विद चिमिचुरी",
+    "slug": "bife-a-la-parrilla-con-chimichurri"
   },
   {
     "id": 532,
-    "name": "Light Vegetable and Bean Locro",
-    "slug": "light-vegetable-and-bean-locro"
+    "name": "लाइट वेजिटेबल एंड बीन लोक्रो",
+    "slug": "locro-liviano"
   },
   {
     "id": 533,
-    "name": "Spiced Pumpkin Squash Soup",
-    "slug": "spiced-pumpkin-squash-soup"
+    "name": "स्पाइस्ड पम्पकिन स्क्वैश सूप",
+    "slug": "sopa-de-zapallo-especiada"
   },
   {
     "id": 534,
-    "name": "Oven-Baked Chicken Milanesa with Salad",
-    "slug": "oven-baked-chicken-milanesa-with-salad"
+    "name": "ओवन-बेक्ड चिकन मिलानेसा विद सलाद",
+    "slug": "milanesa-de-pollo-al-horno-con-ensalada"
   },
   {
     "id": 535,
-    "name": "Lentil Salad with Lean Chorizo",
-    "slug": "lentil-salad-with-lean-chorizo"
+    "name": "लेंटिल सलाद विद लीन चोरिज़ो",
+    "slug": "ensalada-de-lentejas-con-chorizo-magro"
   },
   {
     "id": 541,
-    "name": "Peruvian Fish Ceviche",
-    "slug": "peruvian-fish-ceviche"
+    "name": "पेरुवियन फिश सेविचे",
+    "slug": "ceviche-de-pescado"
   },
   {
     "id": 542,
-    "name": "Quinoa Chaufa",
+    "name": "क्विनोआ चौफा",
     "slug": "quinoa-chaufa"
   },
   {
     "id": 543,
-    "name": "Cauliflower Causa Stuffed with Chicken",
-    "slug": "cauliflower-causa-stuffed-with-chicken"
+    "name": "कॉलीफ्लावर कौसा स्टफ्ड विद चिकन",
+    "slug": "causa-de-coliflor-rellena-de-pollo"
   },
   {
     "id": 544,
-    "name": "Light Lomo Saltado",
-    "slug": "light-lomo-saltado"
+    "name": "लाइट लोमो साल्टाडो",
+    "slug": "lomo-saltado-ligero"
   },
   {
     "id": 545,
-    "name": "Light Peruvian Creole Noodle Soup",
-    "slug": "light-peruvian-creole-noodle-soup"
+    "name": "लाइट पेरुवियन क्रियोल नूडल सूप",
+    "slug": "sopa-a-la-criolla-ligera"
   },
   {
     "id": 551,
-    "name": "Light Chicken and Corn Ajiaco",
-    "slug": "light-chicken-and-corn-ajiaco"
+    "name": "लाइट चिकन एंड कॉर्न अजियाको",
+    "slug": "ajiaco-ligero"
   },
   {
     "id": 552,
-    "name": "Light Chicken Sancocho",
-    "slug": "light-chicken-sancocho"
+    "name": "लाइट चिकन सान्कोचो",
+    "slug": "sancocho-de-pollo-liviano"
   },
   {
     "id": 553,
-    "name": "Avocado and Tomato Salad",
-    "slug": "avocado-and-tomato-salad"
+    "name": "एवोकाडो एंड टोमैटो सलाद",
+    "slug": "ensalada-de-aguacate-y-tomate"
   },
   {
     "id": 554,
-    "name": "Grilled Fish with Colombian Salad",
-    "slug": "grilled-fish-with-colombian-salad"
+    "name": "ग्रिल्ड फिश विद कोलंबियन सलाद",
+    "slug": "pescado-a-la-plancha-con-ensalada-colombiana"
   },
   {
     "id": 555,
-    "name": "Colombian Stewed Lentils",
-    "slug": "colombian-stewed-lentils"
+    "name": "कोलंबियन स्ट्यूड लेंटिल्स",
+    "slug": "lentejas-guisadas-colombianas"
   },
   {
     "id": 561,
-    "name": "Chilean Fish Soup (Caldillo de Congrio)",
-    "slug": "chilean-fish-soup-caldillo-de-congrio"
+    "name": "चिलियन फिश सूप (कालदियो दे कोंग्रियो)",
+    "slug": "caldillo-de-congrio"
   },
   {
     "id": 562,
-    "name": "Chilean Tomato and Onion Salad",
-    "slug": "chilean-tomato-and-onion-salad"
+    "name": "चिलियन टोमैटो एंड अनियन सलाद",
+    "slug": "ensalada-chilena"
   },
   {
     "id": 563,
-    "name": "Light Chilean Corn and Beef Pie",
-    "slug": "light-chilean-corn-and-beef-pie"
+    "name": "लाइट चिलियन कॉर्न एंड बीफ पाई",
+    "slug": "pastel-de-choclo-liviano"
   },
   {
     "id": 564,
-    "name": "Baked Chicken with Green Beans",
-    "slug": "baked-chicken-with-green-beans"
+    "name": "बेक्ड चिकन विद ग्रीन बीन्स",
+    "slug": "pollo-al-horno-con-porotos-verdes"
   },
   {
     "id": 565,
-    "name": "Light Charquicán",
-    "slug": "light-charquicn"
+    "name": "लाइट चारकिकान",
+    "slug": "charquican-liviano"
   },
   {
     "id": 571,
-    "name": "Ecuadorian Shrimp Ceviche",
-    "slug": "ecuadorian-shrimp-ceviche"
+    "name": "इक्वाडोरियन श्रिम्प सेविचे",
+    "slug": "ceviche-de-camaron-ecuatoriano"
   },
   {
     "id": 572,
-    "name": "Light Fish and Yuca Soup",
-    "slug": "light-fish-and-yuca-soup"
+    "name": "लाइट फिश एंड युका सूप",
+    "slug": "encebollado-liviano"
   },
   {
     "id": 573,
-    "name": "Quinoa and Avocado Salad",
-    "slug": "quinoa-and-avocado-salad"
+    "name": "क्विनोआ एंड एवोकाडो सलाद",
+    "slug": "ensalada-de-quinoa-con-aguacate-ecuatoriana"
   },
   {
     "id": 574,
-    "name": "Light Seco de Pollo",
-    "slug": "light-seco-de-pollo"
+    "name": "लाइट सेको डे पोयो",
+    "slug": "seco-de-pollo-ligero"
   },
   {
     "id": 575,
-    "name": "Potato and Cauliflower Cheese Soup",
-    "slug": "potato-and-cauliflower-cheese-soup"
+    "name": "पोटैटो एंड कॉलीफ्लावर चीज़ सूप",
+    "slug": "locro-de-papa-con-coliflor"
   },
   {
     "id": 581,
-    "name": "Light Chivito Plate",
-    "slug": "light-chivito-plate"
+    "name": "लाइट चिविटो प्लेट",
+    "slug": "chivito-ligero"
   },
   {
     "id": 582,
-    "name": "Uruguayan Chickpea Salad",
-    "slug": "uruguayan-chickpea-salad"
+    "name": "उरुग्वेयन चिकपी सलाद",
+    "slug": "ensalada-de-garbanzos-uruguaya"
   },
   {
     "id": 583,
-    "name": "Grilled Fish with Uruguayan Salad",
-    "slug": "grilled-fish-with-uruguayan-salad"
+    "name": "ग्रिल्ड फिश विद उरुग्वेयन सलाद",
+    "slug": "pescado-a-la-parrilla-con-ensalada-uruguaya"
   },
   {
     "id": 584,
-    "name": "Light Uruguayan Fish Stew",
-    "slug": "light-uruguayan-fish-stew"
+    "name": "लाइट उरुग्वेयन फिश स्ट्यू",
+    "slug": "chupin-de-pescado-liviano"
   },
   {
     "id": 585,
-    "name": "Light Uruguayan Puchero",
-    "slug": "light-uruguayan-puchero"
+    "name": "लाइट उरुग्वेयन पुचेरो",
+    "slug": "puchero-liviano"
   },
   {
     "id": 591,
-    "name": "Light Paraguayan Cornbread",
-    "slug": "light-paraguayan-cornbread"
+    "name": "लाइट पैराग्वेयन कॉर्नब्रेड",
+    "slug": "sopa-paraguaya-liviana"
   },
   {
     "id": 592,
-    "name": "Light Vori Vori Soup",
-    "slug": "light-vori-vori-soup"
+    "name": "लाइट वोरी वोरी सूप",
+    "slug": "vori-vori-liviano"
   },
   {
     "id": 593,
-    "name": "Paraguayan Bean Salad",
-    "slug": "paraguayan-bean-salad"
+    "name": "पैराग्वेयन बीन सलाद",
+    "slug": "ensalada-de-poroto-paraguaya"
   },
   {
     "id": 594,
-    "name": "Roast Chicken with Vegetables",
-    "slug": "roast-chicken-with-vegetables"
+    "name": "रोस्ट चिकन विद वेजिटेबल्स",
+    "slug": "pollo-al-horno-con-verduras-paraguayo"
   },
   {
     "id": 595,
-    "name": "Paraguayan Lentil Stew",
-    "slug": "paraguayan-lentil-stew"
+    "name": "पैराग्वेयन लेंटिल स्ट्यू",
+    "slug": "guiso-de-lentejas-paraguayo"
   },
   {
     "id": 601,
-    "name": "Light Bolivian Peanut Soup",
-    "slug": "light-bolivian-peanut-soup"
+    "name": "लाइट बोलिवियन पीनट सूप",
+    "slug": "sopa-de-mani-liviana"
   },
   {
     "id": 602,
-    "name": "Bolivian Quinoa Salad",
-    "slug": "bolivian-quinoa-salad"
+    "name": "बोलिवियन क्विनोआ सलाद",
+    "slug": "ensalada-de-quinoa-boliviana"
   },
   {
     "id": 603,
-    "name": "Light Pique a lo Macho",
-    "slug": "light-pique-a-lo-macho"
+    "name": "लाइट पिके अ लो माचो",
+    "slug": "pique-a-lo-macho-ligero"
   },
   {
     "id": 604,
-    "name": "Grilled Trout with Salad",
-    "slug": "grilled-trout-with-salad"
+    "name": "ग्रिल्ड ट्राउट विद सलाद",
+    "slug": "trucha-a-la-plancha-con-ensalada"
   },
   {
     "id": 605,
-    "name": "Light Bolivian Pork Fricasé",
-    "slug": "light-bolivian-pork-fricas"
+    "name": "लाइट बोलिवियन पोर्क फ्रिकासे",
+    "slug": "fricase-de-cerdo-liviano"
   },
   {
     "id": 611,
-    "name": "Light Pabellón Criollo",
-    "slug": "light-pabelln-criollo"
+    "name": "लाइट पाबेयोन क्रियोयो",
+    "slug": "pabellon-criollo-ligero"
   },
   {
     "id": 612,
-    "name": "Reina Pepiada Lettuce Wraps",
-    "slug": "reina-pepiada-lettuce-wraps"
+    "name": "रीना पेपियादा लेट्यूस रैप्स",
+    "slug": "reina-pepiada-en-hojas-de-lechuga"
   },
   {
     "id": 613,
-    "name": "Venezuelan Pumpkin Coconut Soup",
-    "slug": "venezuelan-pumpkin-coconut-soup"
+    "name": "वेनेज़ुएलन पम्पकिन कोकोनट सूप",
+    "slug": "sopa-de-auyama-venezolana"
   },
   {
     "id": 614,
-    "name": "Grilled Fish with Venezuelan Salad",
-    "slug": "grilled-fish-with-venezuelan-salad"
+    "name": "ग्रिल्ड फिश विद वेनेज़ुएलन सलाद",
+    "slug": "pescado-a-la-plancha-con-ensalada-venezolana"
   },
   {
     "id": 615,
-    "name": "Light Seafood Cazuela",
-    "slug": "light-seafood-cazuela"
+    "name": "लाइट सीफूड कासुएला",
+    "slug": "cazuela-de-mariscos-liviana"
   },
   {
     "id": 621,
-    "name": "Light Gallo Pinto",
-    "slug": "light-gallo-pinto"
+    "name": "लाइट गायो पिंटो",
+    "slug": "gallo-pinto-ligero"
   },
   {
     "id": 622,
-    "name": "Light Vigorón",
-    "slug": "light-vigorn"
+    "name": "लाइट विगोरोन",
+    "slug": "vigoron-ligero"
   },
   {
     "id": 623,
-    "name": "Nicaraguan Bean Soup",
-    "slug": "nicaraguan-bean-soup"
+    "name": "निकारागुआन बीन सूप",
+    "slug": "sopa-de-frijoles-nicaraguense"
   },
   {
     "id": 624,
-    "name": "Light Grilled Fish, Tipitapa-Style",
-    "slug": "light-grilled-fish-tipitapa-style"
+    "name": "लाइट ग्रिल्ड फिश, टिपिटापा-स्टाइल",
+    "slug": "pescado-a-la-tipitapa-ligero"
   },
   {
     "id": 625,
-    "name": "Light Indio Viejo",
-    "slug": "light-indio-viejo"
+    "name": "लाइट इंडियो व्येहो",
+    "slug": "indio-viejo-ligero"
   },
   {
     "id": 631,
-    "name": "Light Ropa Vieja",
-    "slug": "light-ropa-vieja"
+    "name": "लाइट रोपा विएखा",
+    "slug": "ropa-vieja-ligera"
   },
   {
     "id": 632,
-    "name": "Light Cuban Picadillo",
-    "slug": "light-cuban-picadillo"
+    "name": "लाइट क्यूबन पिकादियो",
+    "slug": "picadillo-cubano-ligero"
   },
   {
     "id": 633,
-    "name": "Cuban Avocado Salad",
-    "slug": "cuban-avocado-salad"
+    "name": "क्यूबन एवोकाडो सलाद",
+    "slug": "ensalada-cubana-de-aguacate"
   },
   {
     "id": 634,
-    "name": "Grilled Fish with Light Mojo",
-    "slug": "grilled-fish-with-light-mojo"
+    "name": "लाइट मोहो के साथ ग्रिल्ड फिश",
+    "slug": "pescado-a-la-plancha-con-mojo-ligero"
   },
   {
     "id": 635,
-    "name": "Cuban Black Bean Stew",
-    "slug": "cuban-black-bean-stew"
+    "name": "क्यूबन ब्लैक बीन स्ट्यू",
+    "slug": "potaje-de-frijoles-negros-cubano"
   },
   {
     "id": 641,
-    "name": "Light Fish in Coconut Sauce",
-    "slug": "light-fish-in-coconut-sauce"
+    "name": "लाइट नारियल की चटनी में फिश",
+    "slug": "pescado-con-coco-ligero"
   },
   {
     "id": 642,
-    "name": "Dominican Green Salad",
-    "slug": "dominican-green-salad"
+    "name": "डोमिनिकन ग्रीन सलाद",
+    "slug": "ensalada-verde-dominicana"
   },
   {
     "id": 643,
-    "name": "Light Dominican Stewed Beans",
-    "slug": "light-dominican-stewed-beans"
+    "name": "लाइट डोमिनिकन स्ट्यूड बीन्स",
+    "slug": "habichuelas-guisadas-ligeras"
   },
   {
     "id": 644,
-    "name": "Light Dominican Chicken Stew",
-    "slug": "light-dominican-chicken-stew"
+    "name": "लाइट डोमिनिकन चिकन स्ट्यू",
+    "slug": "pollo-guisado-dominicano-ligero"
   },
   {
     "id": 645,
-    "name": "Baked Red Snapper with Vegetables",
-    "slug": "baked-red-snapper-with-vegetables"
+    "name": "सब्ज़ियों के साथ बेक्ड रेड स्नैपर",
+    "slug": "chillo-al-horno-con-vegetales"
   },
   {
     "id": 651,
-    "name": "Roast Chicken with Puerto Rican Sazón",
-    "slug": "roast-chicken-with-puerto-rican-sazn"
+    "name": "प्वेर्तो रिकान साज़ोन के साथ रोस्ट चिकन",
+    "slug": "pollo-al-horno-con-sazon-ligero"
   },
   {
     "id": 652,
-    "name": "Light Salt Cod Salad",
-    "slug": "light-salt-cod-salad"
+    "name": "लाइट साल्ट कॉड सलाद",
+    "slug": "ensalada-de-bacalao-ligera"
   },
   {
     "id": 653,
-    "name": "Light Pickled Fish Escabeche",
-    "slug": "light-pickled-fish-escabeche"
+    "name": "लाइट पिकल्ड फिश एस्काबेचे",
+    "slug": "pescado-en-escabeche-ligero"
   },
   {
     "id": 654,
-    "name": "Puerto Rican Stewed Beans",
-    "slug": "puerto-rican-stewed-beans"
+    "name": "प्वेर्तो रिकान स्ट्यूड बीन्स",
+    "slug": "habichuelas-guisadas-puertorriquenas"
   },
   {
     "id": 655,
-    "name": "Light Puerto Rican Beef Stew",
-    "slug": "light-puerto-rican-beef-stew"
+    "name": "लाइट प्वेर्तो रिकान बीफ स्ट्यू",
+    "slug": "carne-guisada-puertorriquena-ligera"
   },
   {
     "id": 661,
-    "name": "Light Bean Pupusas",
-    "slug": "light-bean-pupusas"
+    "name": "लाइट बीन पुपुसास",
+    "slug": "pupusas-de-frijol-ligeras"
   },
   {
     "id": 662,
-    "name": "Light Casado Plate",
-    "slug": "light-casado-plate"
+    "name": "लाइट कासादो प्लेट",
+    "slug": "casado-ligero"
   },
   {
     "id": 663,
-    "name": "Central American Bean Soup",
-    "slug": "central-american-bean-soup"
+    "name": "सेंट्रल अमेरिकन बीन सूप",
+    "slug": "sopa-de-frijoles-centroamericana"
   },
   {
     "id": 664,
-    "name": "Grilled Fish with Central American Salad",
-    "slug": "grilled-fish-with-central-american-salad"
+    "name": "सेंट्रल अमेरिकन सलाद के साथ ग्रिल्ड फिश",
+    "slug": "pescado-a-la-plancha-con-ensalada-centroamericana"
   },
   {
     "id": 665,
-    "name": "Chicken in Central American Tomato Sauce",
-    "slug": "chicken-in-central-american-tomato-sauce"
+    "name": "सेंट्रल अमेरिकन टमाटर की चटनी में चिकन",
+    "slug": "pollo-en-salsa-de-tomate-centroamericano"
+  },
+  {
+    "id": 701,
+    "name": "मूंग दाल चीला",
+    "slug": "moong-dal-cheela"
+  },
+  {
+    "id": 702,
+    "name": "वेजिटेबल बेसन चीला",
+    "slug": "vegetable-besan-chilla"
+  },
+  {
+    "id": 703,
+    "name": "लाइट वेजिटेबल दलिया",
+    "slug": "light-vegetable-daliya"
+  },
+  {
+    "id": 704,
+    "name": "मसाला एग भुर्जी",
+    "slug": "masala-egg-bhurji"
+  },
+  {
+    "id": 705,
+    "name": "पनीर भुर्जी",
+    "slug": "paneer-bhurji"
+  },
+  {
+    "id": 706,
+    "name": "लाइट पालक पनीर",
+    "slug": "light-palak-paneer"
+  },
+  {
+    "id": 707,
+    "name": "दाल तड़का",
+    "slug": "dal-tadka"
+  },
+  {
+    "id": 708,
+    "name": "चना मसाला, लाइट",
+    "slug": "chana-masala-light"
+  },
+  {
+    "id": 709,
+    "name": "भिंडी मसाला",
+    "slug": "bhindi-masala"
+  },
+  {
+    "id": 710,
+    "name": "राजमा, लाइट",
+    "slug": "rajma-light"
+  },
+  {
+    "id": 711,
+    "name": "बैंगन भरता",
+    "slug": "baingan-bharta"
+  },
+  {
+    "id": 712,
+    "name": "वेजिटेबल खिचड़ी, लाइट",
+    "slug": "vegetable-khichdi-light"
+  },
+  {
+    "id": 713,
+    "name": "कढ़ी",
+    "slug": "kadhi"
+  },
+  {
+    "id": 714,
+    "name": "पालक दाल",
+    "slug": "palak-dal"
+  },
+  {
+    "id": 715,
+    "name": "ककड़ी रायता",
+    "slug": "cucumber-raita"
+  },
+  {
+    "id": 716,
+    "name": "तंदूरी चिकन, लाइट",
+    "slug": "tandoori-chicken-light"
+  },
+  {
+    "id": 717,
+    "name": "चिकन टिक्का मसाला, लाइट",
+    "slug": "chicken-tikka-masala-light"
+  },
+  {
+    "id": 718,
+    "name": "फिश करी, केरल-स्टाइल लाइट",
+    "slug": "fish-curry-kerala-style-light"
+  },
+  {
+    "id": 719,
+    "name": "चिकन करी, लाइट",
+    "slug": "chicken-curry-light"
+  },
+  {
+    "id": 720,
+    "name": "पनीर टिक्का स्कीवर्स",
+    "slug": "paneer-tikka-skewers"
+  },
+  {
+    "id": 721,
+    "name": "एग करी, लाइट",
+    "slug": "egg-curry-light"
+  },
+  {
+    "id": 722,
+    "name": "मेथी चिकन",
+    "slug": "methi-chicken"
+  },
+  {
+    "id": 723,
+    "name": "लौकी चना दाल",
+    "slug": "lauki-chana-dal"
+  },
+  {
+    "id": 724,
+    "name": "करेला सब्ज़ी",
+    "slug": "karela-sabzi"
+  },
+  {
+    "id": 725,
+    "name": "ग्रिल्ड फिश टिक्का",
+    "slug": "grilled-fish-tikka"
+  },
+  {
+    "id": 726,
+    "name": "रोस्टेड मखाना",
+    "slug": "roasted-makhana"
+  },
+  {
+    "id": 727,
+    "name": "स्प्राउट्स चाट",
+    "slug": "sprouts-chaat"
+  },
+  {
+    "id": 728,
+    "name": "मसाला रोस्टेड चना",
+    "slug": "masala-roasted-chana"
+  },
+  {
+    "id": 729,
+    "name": "स्प्राउटेड मूंग सलाद",
+    "slug": "sprouted-moong-salad"
+  },
+  {
+    "id": 730,
+    "name": "वेजिटेबल सूप, इंडियन-स्पाइस्ड",
+    "slug": "vegetable-soup-indian-spiced"
   }
 ]
