@@ -328,6 +328,14 @@
       .bento-tile.span-6[style] .tile-tags { margin-left: 0 !important; }
       .cta-band { padding: 52px 6%; }
       .cta-band p { font-size: 1rem; margin-bottom: 26px; }
+
+      /* Drop the lighthouse backdrop on phones (same as the content
+         pages) — over the bright sunset the faded trust line and the
+         section eyebrows lose contrast. Restore solid section fills. */
+      .beacon-bg { display: none; }
+      .hero { background: linear-gradient(120deg, var(--navy) 0%, var(--navy2) 100%); }
+      #screenshots, #privacy { background: linear-gradient(160deg, var(--navy2), var(--navy)); }
+      #features, #tools, #faq { background: var(--bg); }
     }
   </style>
   <script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
