@@ -331,6 +331,16 @@ footer p { font-size: 0.82rem; }
   .article-hero { padding: 40px 6% 34px; }
 
   body.has-appbar { padding-bottom: 60px; }
+
+  /* The fixed lighthouse backdrop is a desktop flourish. On a phone the
+     photo fills the whole narrow column, so section headings and the
+     disclaimer text — which sit directly on it with no scrim — become
+     unreadable over the bright sunset. Drop it and give the heroes a
+     solid fill so their white text keeps its contrast. */
+  .beacon-bg { display: none; }
+  .article-hero, .blog-hero {
+    background: linear-gradient(160deg, var(--navy2) 0%, var(--navy) 90%);
+  }
 }
 
 /* Injected mobile "Get the app" bar (assets/js/site.js). Styled here too
