@@ -369,6 +369,22 @@ img { max-width: 100%; display: block; }
   .footer-bottom { flex-direction: column; text-align: center; }
 }
 
+/* ─── PHONE-WIDTH REFINEMENTS ──────────────────────────────────
+   Desktop layout is untouched — everything here is gated on a
+   phone-sized viewport. Focus: reclaim vertical space a phone
+   can't spare (the sticky header was locked at 132px; 96px section
+   padding). The header store badges are dropped on phones — they
+   overflow a narrow header and are redundant with the two full-size
+   store badges sitting right in the hero just below. */
+@media (max-width: 640px) {
+  :root { --nav-h: 66px; }
+  .nav-store-badges { display: none; }
+  /* Tighter rhythm — 96px top/bottom is a lot of empty scroll on a phone. */
+  .section { padding: 56px 5%; }
+  .section-tight { padding: 40px 5%; }
+  .section-head { margin-bottom: 32px; }
+}
+
 /* Local-currency price estimate note (site.js), used on both the Pricing
    cards and the compare-page table -- previously fully unstyled, so on
    dense inline text (e.g. "$4.99/mo") the ≈ note ran flush against the
