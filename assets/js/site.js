@@ -23,6 +23,33 @@
     });
   }
 
+  // Mobile "Get the app" bar — a slim fixed bottom strip with both store
+  // badges, shown only on phone-width viewports (CSS gates visibility).
+  // Skipped on pages that already ship their own .sticky-cta (restaurant
+  // guides) so the two don't stack.
+  (function () {
+    if (document.querySelector('.sticky-cta') || document.getElementById('mobile-appbar')) return;
+    var PLAY = 'https://play.google.com/store/apps/details?id=com.glucobeacon.app';
+    var IOS = 'https://apps.apple.com/us/app/glucobeacon/id6796855474';
+    // Reuse an existing badge image already on the page so the src resolves
+    // correctly no matter how deep the page sits. Bail if the page has none.
+    var playImg = document.querySelector('img[src*="google-play-badge"]');
+    var iosImg = document.querySelector('img[src*="app-store-badge"]');
+    if (!playImg || !iosImg) return;
+    var bar = document.createElement('div');
+    bar.id = 'mobile-appbar';
+    bar.setAttribute('role', 'complementary');
+    bar.setAttribute('aria-label', 'Get the GlucoBeacon app');
+    bar.innerHTML =
+      '<span class="m-label">Get the free app</span>' +
+      '<a href="' + PLAY + '" target="_blank" rel="noopener" data-goatcounter-click="app-cta-mobilebar-play">' +
+        '<img src="' + playImg.getAttribute('src') + '" alt="Get it on Google Play" /></a>' +
+      '<a href="' + IOS + '" target="_blank" rel="noopener" data-goatcounter-click="app-cta-mobilebar-ios">' +
+        '<img src="' + iosImg.getAttribute('src') + '" alt="Download on the App Store" /></a>';
+    document.body.appendChild(bar);
+    document.body.classList.add('has-appbar');
+  })();
+
   // FAQ / accordion
   document.querySelectorAll('.accordion-trigger').forEach(function (btn) {
     var panel = document.getElementById(btn.getAttribute('aria-controls'));

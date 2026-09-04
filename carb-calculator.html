@@ -275,6 +275,18 @@
     .cta-band { position: relative; overflow: hidden; background: linear-gradient(120deg, var(--orange2), var(--orange)); text-align: center; padding: 60px 5%; }
     .cta-band h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 800; color: var(--white); margin-bottom: 10px; }
     .cta-band p { color: rgba(255,255,255,0.9); font-size: 1rem; margin-bottom: 28px; }
+
+    /* ─── PHONE WIDTH ─────────────────────────────────────────
+       The auto-fit grids sit two-up right down to ~372px, and the
+       fields inside can't shrink past their inputs — so they push
+       the page wider than the screen. Force a single column early. */
+    @media (max-width: 560px) {
+      .manual-grid, .nutrient-grid, .budget-results, .explainer-grid { grid-template-columns: 1fr; }
+      .field.wide { grid-column: span 1; }
+      .wrap { padding-left: 6%; padding-right: 6%; }
+      .explainer { padding: 48px 6%; }
+      .tool-head h1 { font-size: 1.8rem; }
+    }
   </style>
 </head>
 <body>

@@ -377,13 +377,35 @@ img { max-width: 100%; display: block; }
    overflow a narrow header and are redundant with the two full-size
    store badges sitting right in the hero just below. */
 @media (max-width: 640px) {
+  html, body { overflow-x: clip; }   /* no sideways scroll, ever, on a phone */
   :root { --nav-h: 66px; }
   .nav-store-badges { display: none; }
   /* Tighter rhythm — 96px top/bottom is a lot of empty scroll on a phone. */
   .section { padding: 56px 5%; }
   .section-tight { padding: 40px 5%; }
   .section-head { margin-bottom: 32px; }
+  /* Any wide table (e.g. the Pro comparison, compare-page matrix) scrolls
+     inside its own box rather than stretching the page. */
+  .pro-table-wrap, .compare-table-wrap { max-width: 100%; }
+  table { max-width: 100%; }
 }
+
+/* Room for the injected mobile "Get the app" bar (site.js) so it never
+   covers the last line of the footer. */
+@media (max-width: 640px) {
+  body.has-appbar { padding-bottom: 60px; }
+}
+#mobile-appbar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 120;
+  display: none; align-items: center; justify-content: center; gap: 12px;
+  background: var(--navy); box-shadow: 0 -4px 18px rgba(0,0,0,0.28);
+  padding: 8px 16px; padding-bottom: calc(8px + env(safe-area-inset-bottom));
+}
+#mobile-appbar .m-label { color: #fff; font-size: 0.82rem; font-weight: 700; margin-right: 2px; }
+#mobile-appbar a { line-height: 0; display: block; }
+#mobile-appbar img { height: 34px; width: auto; display: block; }
+@media (max-width: 640px) { #mobile-appbar { display: flex; } }
+@media (max-width: 380px) { #mobile-appbar .m-label { display: none; } }
 
 /* Local-currency price estimate note (site.js), used on both the Pricing
    cards and the compare-page table -- previously fully unstyled, so on
