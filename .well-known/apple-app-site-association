@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "D3D7HHWNLU.com.glucobeacon.app",
+        "paths": [ "/r/*" ]
+      }
+    ]
+  }
+}

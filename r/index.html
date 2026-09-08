@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Opening GlucoBeacon…</title>
+<style>
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: #f5f7fa; color: #1c2733;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 24px; text-align: center;
+  }
+  .card {
+    background: #fff; border: 1px solid #e2e6ea; border-radius: 16px; padding: 36px 28px;
+    max-width: 380px; width: 100%; box-shadow: 0 4px 24px rgba(11,36,71,0.08);
+  }
+  .logo { font-weight: 800; font-size: 20px; color: #0b2447; margin-bottom: 8px; }
+  p { color: #6b7785; font-size: 14px; line-height: 1.5; margin: 8px 0 0; }
+  a.btn {
+    display: inline-block; margin-top: 20px; padding: 12px 20px; border-radius: 10px;
+    background: #19376d; color: #fff; text-decoration: none; font-weight: 600; font-size: 15px;
+  }
+  code { color: #ff8552; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">GlucoBeacon</div>
+  <p id="msg">Taking you to the app store…</p>
+  <a class="btn" id="fallback" href="https://glucobeacon.com/">Continue</a>
+</div>
+<script>
+(function () {
+  "use strict";
+
+  var APP_STORE  = "https://apps.apple.com/app/glucobeacon/id6796855474";
+  var PLAY_ID    = "com.glucobeacon.app";
+  var HOME       = "https://glucobeacon.com/";
+
+  function codeFromLocation() {
+    var q = new URLSearchParams(window.location.search);
+    var c = q.get("c") || q.get("gb_ref");
+    if (!c) {
+      // Direct hit on /r/<CODE> without the 404 rewrite.
+      var m = window.location.pathname.match(/^\/r\/([^\/?#]+)/i);
+      if (m) c = decodeURIComponent(m[1]);
+    }
+    if (!c) return null;
+    c = c.toUpperCase().trim();
+    return /^[A-Z0-9][A-Z0-9_-]{1,38}$/.test(c) ? c : null;
+  }
+
+  var code = codeFromLocation();
+  var ua = navigator.userAgent || "";
+  var isIOS = /iphone|ipad|ipod/i.test(ua) ||
+              (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var isAndroid = /android/i.test(ua);
+
+  var dest;
+  if (isAndroid) {
+    var referrer = encodeURIComponent("gb_ref=" + (code || ""));
+    dest = "https://play.google.com/store/apps/details?id=" + PLAY_ID +
+           (code ? "&referrer=" + referrer : "");
+  } else if (isIOS) {
+    // The App Store has no organic install-referrer, so an iOS code can't
+    // survive a fresh install — the app's "Referred by a partner?" field in
+    // Settings covers that case. If the app IS installed, the Universal Link
+    // opened it directly and this page never loaded.
+    dest = APP_STORE;
+  } else {
+    dest = HOME;
+  }
+
+  try { if (code) window.localStorage.setItem("gb_ref", code); } catch (e) {}
+
+  document.getElementById("fallback").href = dest;
+  if (code && (isIOS || isAndroid)) {
+    document.getElementById("msg").innerHTML =
+      "Opening GlucoBeacon with referral code <code>" + code + "</code>…";
+  }
+  window.location.replace(dest);
+})();
+</script>
+</body>
+</html>

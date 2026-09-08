@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Page not found — GlucoBeacon</title>
+<script>
+  // Partner referral links are shared as https://glucobeacon.com/r/<CODE>.
+  // GitHub Pages has no per-path file for those, so it serves this 404 — hand
+  // it off to /r/ with the code as a query param, which does the store redirect.
+  (function () {
+    var m = window.location.pathname.match(/^\/r\/([^\/?#]+)\/?$/i);
+    if (m) {
+      window.location.replace("/r/?c=" + encodeURIComponent(m[1]));
+    }
+  })();
+</script>
+<style>
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: #f5f7fa; color: #1c2733;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 24px; text-align: center;
+  }
+  .card {
+    background: #fff; border: 1px solid #e2e6ea; border-radius: 16px; padding: 40px 28px;
+    max-width: 380px; width: 100%; box-shadow: 0 4px 24px rgba(11,36,71,0.08);
+  }
+  .logo { font-weight: 800; font-size: 20px; color: #0b2447; }
+  h1 { font-size: 18px; margin: 16px 0 6px; }
+  p { color: #6b7785; font-size: 14px; line-height: 1.5; margin: 0; }
+  a.btn {
+    display: inline-block; margin-top: 20px; padding: 12px 20px; border-radius: 10px;
+    background: #19376d; color: #fff; text-decoration: none; font-weight: 600; font-size: 15px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">GlucoBeacon</div>
+  <h1>Page not found</h1>
+  <p>The page you're looking for doesn't exist.</p>
+  <a class="btn" href="https://glucobeacon.com/">Go to homepage</a>
+</div>
+</body>
+</html>
