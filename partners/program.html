@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>GlucoBeacon Partner Program</title>
+<meta name="description" content="How the GlucoBeacon referral partner program pays: 20% of net revenue, recurring for the life of the subscription, paid monthly on the 15th." />
+<link rel="icon" type="image/png" href="../img/icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,650&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+<script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<style>
+  :root {
+    --ground: #f6f4ef;
+    --surface: #ffffff;
+    --surface-sunk: #f1ede4;
+    --ink: #16233a;
+    --ink-soft: #5c6b7f;
+    --navy: #0b2447;
+    --on-navy: #eef2f8;
+    --beacon: #e0671f;
+    --beam: #fbe3cf;
+    --rule: #e4ded3;
+    --rule-strong: #d3ccbd;
+    --positive: #1f7a4d;
+    --hold: #916a29;
+    --shadow: 24px 24px 60px -30px rgba(20, 30, 50, 0.28);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12161d;
+      --surface: #1a1f28;
+      --surface-sunk: #151a22;
+      --ink: #ece6da;
+      --ink-soft: #9aa4b2;
+      --navy: #0c1a30;
+      --on-navy: #dfe7f3;
+      --beacon: #ff8f4d;
+      --beam: #3a2a1c;
+      --rule: #2b323d;
+      --rule-strong: #3a424e;
+      --positive: #55c98a;
+      --hold: #d9b877;
+      --shadow: 24px 24px 70px -30px rgba(0, 0, 0, 0.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12161d;
+    --surface: #1a1f28;
+    --surface-sunk: #151a22;
+    --ink: #ece6da;
+    --ink-soft: #9aa4b2;
+    --navy: #0c1a30;
+    --on-navy: #dfe7f3;
+    --beacon: #ff8f4d;
+    --beam: #3a2a1c;
+    --rule: #2b323d;
+    --rule-strong: #3a424e;
+    --positive: #55c98a;
+    --hold: #d9b877;
+    --shadow: 24px 24px 70px -30px rgba(0, 0, 0, 0.6);
+  }
+
+  * { box-sizing: border-box; }
+  img { max-width: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 780px; margin: 0 auto; padding: 0 28px 96px; }
+
+  .topbar {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 26px 28px 0;
+  }
+  .topbar a {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+  .topbar a:hover { color: var(--beacon); }
+
+  header { max-width: 780px; margin: 0 auto; padding: 40px 28px 46px; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--beacon);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 26px;
+  }
+  .beacon-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--beacon);
+    box-shadow: 0 0 0 0 rgba(224, 103, 31, 0.55);
+    animation: pulse 3.4s ease-out infinite;
+    flex: none;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(224, 103, 31, 0.5); }
+    70% { box-shadow: 0 0 0 16px rgba(224, 103, 31, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(224, 103, 31, 0); }
+  }
+  @media (prefers-reduced-motion: reduce) { .beacon-dot { animation: none; } }
+  h1 {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-size: clamp(2rem, 1.3rem + 3.1vw, 3.15rem);
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 0 0 22px;
+    color: var(--ink);
+  }
+  .standfirst {
+    font-size: 1.16rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin: 0;
+  }
+  .standfirst strong { color: var(--ink); font-weight: 600; }
+  .beam {
+    height: 2px;
+    max-width: 780px;
+    margin: 44px auto 0;
+    background: linear-gradient(90deg, var(--beacon) 0%, var(--rule-strong) 42%, transparent 100%);
+    border: 0;
+  }
+
+  section { padding: 54px 0; border-bottom: 1px solid var(--rule); }
+  section:last-of-type { border-bottom: 0; }
+  .kicker {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11.5px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 18px;
+  }
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-size: clamp(1.5rem, 1.15rem + 1.5vw, 2rem);
+    line-height: 1.14;
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+    margin: 0 0 20px;
+  }
+  p { margin: 0 0 18px; max-width: 64ch; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--beacon); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  strong { font-weight: 600; }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.92em; }
+
+  ol.steps {
+    list-style: none; margin: 0; padding: 0;
+    display: flex; flex-direction: column; gap: 4px;
+    counter-reset: step;
+  }
+  ol.steps li {
+    display: grid;
+    grid-template-columns: 2.4rem 1fr;
+    gap: 8px 18px;
+    padding: 22px 0;
+    border-top: 1px solid var(--rule);
+    counter-increment: step;
+  }
+  ol.steps li:first-child { border-top: 0; }
+  ol.steps li::before {
+    content: counter(step, decimal-leading-zero);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.98rem;
+    font-weight: 500;
+    color: var(--beacon);
+    padding-top: 2px;
+  }
+  ol.steps h3 {
+    grid-column: 2;
+    margin: 0 0 4px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+  ol.steps p { grid-column: 2; margin: 0; color: var(--ink-soft); font-size: 0.98rem; }
+
+  .terms { display: flex; flex-direction: column; gap: 0; margin: 6px 0 0; border-top: 1px solid var(--rule); }
+  .terms div {
+    display: grid; grid-template-columns: 1fr; gap: 3px;
+    padding: 15px 0; border-bottom: 1px solid var(--rule);
+  }
+  .terms dt { font-weight: 600; font-size: 0.97rem; }
+  .terms dd { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+
+  .rate-table { width: 100%; border-collapse: collapse; margin: 24px 0 12px; font-size: 0.97rem; }
+  .rate-table caption {
+    text-align: left; font-size: 0.86rem; color: var(--ink-soft);
+    margin-top: 14px; caption-side: bottom; line-height: 1.5;
+  }
+  .rate-table th {
+    text-align: left;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--ink-soft);
+    padding: 0 16px 10px 0;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  .rate-table td { padding: 13px 16px 13px 0; border-bottom: 1px solid var(--rule); font-variant-numeric: tabular-nums; }
+  .rate-table td:last-child, .rate-table th:last-child { text-align: right; padding-right: 0; }
+  .rate-table .cut { font-family: "IBM Plex Mono", monospace; color: var(--positive); font-weight: 500; }
+
+  .device {
+    margin: 8px 0 0;
+    background: var(--surface);
+    border: 1px solid var(--rule-strong);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .device__chrome {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+    padding: 18px 22px;
+    background: var(--navy);
+    color: var(--on-navy);
+  }
+  .device__chrome b { font-weight: 600; font-size: 0.95rem; letter-spacing: -0.01em; }
+  .device__chrome span {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.72;
+  }
+  .device__body { padding: 6px 22px 20px; }
+  .row {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
+    padding: 14px 0; border-bottom: 1px solid var(--rule);
+  }
+  .row:last-child { border-bottom: 0; }
+  .row .label { color: var(--ink-soft); font-size: 0.95rem; }
+  .row .val {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500; font-variant-numeric: tabular-nums; font-size: 1.02rem;
+  }
+  .row .val.big { font-size: 1.35rem; font-weight: 600; }
+  .row .val.pos { color: var(--positive); }
+  .row .val.hold { color: var(--hold); }
+  .pill {
+    display: inline-block;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600; font-size: 0.9rem; letter-spacing: 0.04em;
+    color: var(--beacon); background: var(--beam);
+    border-radius: 6px; padding: 3px 9px;
+  }
+  .device__foot {
+    padding: 14px 22px 18px;
+    background: var(--surface-sunk);
+    border-top: 1px solid var(--rule);
+    font-size: 0.82rem; color: var(--ink-soft); line-height: 1.5;
+  }
+  .sample-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 14px;
+  }
+  .sample-tag::before {
+    content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--rule-strong);
+  }
+
+  .figure {
+    margin: 4px 0 0;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 24px 24px 18px;
+  }
+  .figure h3 { margin: 0 0 2px; font-family: "Public Sans", sans-serif; font-size: 0.98rem; font-weight: 600; }
+  .figure .sub { margin: 0 0 18px; font-size: 0.86rem; color: var(--ink-soft); }
+  .chart-scroll { overflow-x: auto; }
+  svg.bars { display: block; width: 100%; min-width: 460px; height: auto; }
+  .hist-scroll { overflow-x: auto; margin-top: 22px; }
+  table.hist { width: 100%; min-width: 440px; border-collapse: collapse; font-size: 0.92rem; }
+  table.hist th {
+    text-align: right;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink-soft);
+    padding: 0 0 9px 14px;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  table.hist th:first-child { text-align: left; }
+  table.hist td {
+    padding: 10px 0 10px 14px;
+    border-bottom: 1px solid var(--rule);
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  table.hist td:first-child { text-align: left; font-family: "Public Sans", sans-serif; }
+  table.hist tr:last-child td { font-weight: 600; color: var(--ink); border-bottom: 0; }
+
+  .statement {
+    margin: 6px 0 0;
+    border: 1px solid var(--rule-strong);
+    border-radius: 14px;
+    overflow: hidden;
+    font-family: "IBM Plex Mono", monospace;
+    background: var(--surface);
+  }
+  .statement__head {
+    padding: 18px 22px;
+    border-bottom: 1px dashed var(--rule-strong);
+    display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  }
+  .statement__head b { font-weight: 600; font-size: 0.98rem; font-family: "Public Sans", sans-serif; }
+  .statement__head span { font-size: 12px; color: var(--ink-soft); letter-spacing: 0.04em; }
+  .statement__lines { padding: 8px 22px; }
+  .sline {
+    display: flex; justify-content: space-between; gap: 16px;
+    padding: 10px 0; font-size: 0.9rem;
+    border-bottom: 1px solid var(--rule);
+    font-variant-numeric: tabular-nums;
+  }
+  .sline:last-child { border-bottom: 0; }
+  .sline .desc { color: var(--ink-soft); }
+  .statement__total {
+    display: flex; justify-content: space-between; gap: 16px;
+    padding: 16px 22px;
+    background: var(--navy); color: var(--on-navy);
+    font-variant-numeric: tabular-nums;
+  }
+  .statement__total b { font-weight: 600; font-size: 1.05rem; }
+  .statement__note {
+    padding: 13px 22px 16px;
+    font-family: "Public Sans", sans-serif;
+    font-size: 0.82rem; color: var(--ink-soft);
+    background: var(--surface-sunk);
+    line-height: 1.5;
+  }
+  .statement__note .hold-amt { color: var(--hold); font-weight: 600; font-family: "IBM Plex Mono", monospace; }
+
+  .faq { display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--rule); }
+  .faq > div { padding: 20px 0; border-bottom: 1px solid var(--rule); }
+  .faq h3 { margin: 0 0 6px; font-family: "Public Sans", sans-serif; font-size: 1rem; font-weight: 600; }
+  .faq p { margin: 0; color: var(--ink-soft); font-size: 0.96rem; }
+
+  footer { max-width: 780px; margin: 0 auto; padding: 40px 28px 80px; }
+  .cta {
+    background: var(--navy);
+    color: var(--on-navy);
+    border-radius: 16px;
+    padding: 34px 32px;
+  }
+  .cta h2 { color: var(--on-navy); margin-bottom: 10px; }
+  .cta p { color: color-mix(in srgb, var(--on-navy) 78%, transparent); max-width: 52ch; }
+  .cta a.mail {
+    display: inline-block;
+    margin-top: 14px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600; font-size: 1.02rem;
+    color: var(--ground); background: var(--beacon);
+    padding: 12px 20px; border-radius: 10px;
+    text-decoration: none;
+  }
+  .cta a.mail:focus-visible { outline: 3px solid var(--beam); outline-offset: 2px; }
+  .signin-link {
+    display: block;
+    margin-top: 22px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.9rem;
+  }
+  .disclaimer {
+    margin-top: 26px;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    max-width: 68ch;
+  }
+  a:focus-visible { outline: 2px solid var(--beacon); outline-offset: 2px; border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<div class="topbar"><a href="https://glucobeacon.com/">&larr;&nbsp;glucobeacon.com</a></div>
+
+<header>
+  <div class="eyebrow"><span class="beacon-dot" aria-hidden="true"></span>GlucoBeacon Partner Program</div>
+  <h1>Point people toward steadier days &mdash; and earn a share for every month they stay.</h1>
+  <p class="standfirst">You share one link. Someone installs GlucoBeacon and subscribes. You earn <strong>20% of the net revenue</strong> on that subscription &mdash; not once, but <strong>every month or year they keep it</strong>. Balances are paid out on the 15th.</p>
+</header>
+<hr class="beam" />
+
+<div class="wrap">
+
+  <section>
+    <p class="kicker">How it works</p>
+    <h2>Four steps, then it runs on its own.</h2>
+    <ol class="steps">
+      <li>
+        <h3>Share your link</h3>
+        <p>Every partner gets a personal link &mdash; <span class="mono">glucobeacon.com/r/YOURCODE</span> &mdash; to drop into posts, video descriptions, your bio, or a newsletter.</p>
+      </li>
+      <li>
+        <h3>Someone installs GlucoBeacon</h3>
+        <p>Your code travels with them from the Play Store, or from tapping your link with the app already installed. On a fresh iPhone install they can add your code once in <span class="mono">Settings &rsaquo; Referred by a partner?</span></p>
+      </li>
+      <li>
+        <h3>They subscribe</h3>
+        <p>When that person starts a paid plan, a commission is recorded against your code &mdash; 20% of what GlucoBeacon actually nets on the sale.</p>
+      </li>
+      <li>
+        <h3>You&rsquo;re paid on the 15th</h3>
+        <p>Every commission that has cleared its 14-day hold by then is paid together, in one transfer, by PayPal or bank transfer.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <p class="kicker">What you earn</p>
+    <h2>20% of net revenue, for the life of the subscription.</h2>
+    <p>&ldquo;Net revenue&rdquo; is the price after the app store takes its 15&ndash;30% cut and after any local tax &mdash; the amount GlucoBeacon is actually left with. Your 20% is calculated from that, so it already adjusts for where the subscriber lives.</p>
+
+    <table class="rate-table">
+      <thead>
+        <tr><th>Plan</th><th>Subscriber pays</th><th>Your commission</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Monthly</td><td>$4.99 / month</td><td class="cut">$0.72 &mdash; every month</td></tr>
+        <tr><td>Annual</td><td>$49.99 / year</td><td class="cut">$7.20 &mdash; every year</td></tr>
+        <tr><td>Lifetime</td><td>$79.99 once</td><td class="cut">$11.52 &mdash; once</td></tr>
+      </tbody>
+      <caption>Typical US amounts. The exact figure shifts a little by country, tax, and how long the subscription has been active (both stores drop their cut from 30% to 15% after the first year), so your dashboard is always the real number.</caption>
+    </table>
+
+    <dl class="terms">
+      <div><dt>It recurs</dt><dd>You keep earning on every renewal &mdash; monthly or annual &mdash; for as long as that person stays subscribed.</dd></div>
+      <div><dt>14-day hold</dt><dd>Each commission waits 14 days before it can be paid, covering both app stores&rsquo; refund windows.</dd></div>
+      <div><dt>Paid monthly, on the 15th</dt><dd>Everything cleared by the 15th goes out that day. A $25 minimum applies &mdash; a smaller balance rolls to the next month.</dd></div>
+      <div><dt>No clawback</dt><dd>If someone cancels later, you simply stop earning on future renewals. Nothing you&rsquo;ve already been paid is reversed.</dd></div>
+      <div><dt>Refunds</dt><dd>If a subscriber is refunded inside the 14-day hold, just that one commission is reversed &mdash; never the rest.</dd></div>
+      <div><dt>Free to join</dt><dd>No cost, no GlucoBeacon subscription required, no minimum audience.</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <p class="kicker">A sample dashboard</p>
+    <h2>What it looks like from your side.</h2>
+    <p>Every partner has a live dashboard at <span class="mono">glucobeacon.com/partners</span>. Below is how it might read for someone about seven months in, with steady sharing to an engaged diabetes audience.</p>
+
+    <div class="sample-tag">Illustrative &mdash; not a real partner or a guarantee of earnings</div>
+    <div class="device">
+      <div class="device__chrome"><b>GlucoBeacon &middot; Partner Dashboard</b><span>Apr 22</span></div>
+      <div class="device__body">
+        <div class="row"><span class="label">Your code</span><span class="pill">RIVERSIDE</span></div>
+        <div class="row"><span class="label">Referred installs</span><span class="val">1,406</span></div>
+        <div class="row"><span class="label">Referred subscribers</span><span class="val">228</span></div>
+        <div class="row"><span class="label">Available to pay out</span><span class="val big pos">$27.36</span></div>
+        <div class="row"><span class="label">Pending (clearing)</span><span class="val hold">$31.68</span></div>
+        <div class="row"><span class="label">Paid out to date</span><span class="val">$884.20</span></div>
+        <div class="row"><span class="label">Lifetime earnings</span><span class="val">$943.24</span></div>
+        <div class="row"><span class="label">Status</span><span class="val">Active</span></div>
+      </div>
+      <div class="device__foot">You earn 20% of net revenue on every subscriber who signs up with your code, for as long as they stay subscribed. New earnings clear a 14-day hold before they move to &ldquo;Available to pay out.&rdquo;</div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">What that adds up to</p>
+    <h2>Because it recurs, each month starts higher than the last.</h2>
+    <p>The chart below is the same sample partner&rsquo;s monthly payout over seven months. Early months are small. But every subscriber who stays is still paying &mdash; and still earning for you &mdash; while new referrals stack on top. That&rsquo;s the difference between a one-off bounty and a recurring share.</p>
+
+    <div class="figure">
+      <h3>Monthly payout &mdash; sample partner</h3>
+      <p class="sub">Amount deposited on the 15th of each month. April&rsquo;s bar is highlighted.</p>
+      <div class="chart-scroll">
+        <svg class="bars" viewBox="0 0 700 250" role="img" aria-label="Bar chart of monthly payouts rising from $31.10 in October to $170.64 in April.">
+          <line x1="60" y1="200" x2="690" y2="200" stroke="var(--rule-strong)" stroke-width="1" />
+          <line x1="60" y1="150" x2="690" y2="150" stroke="var(--rule)" stroke-width="1" stroke-dasharray="2 4" />
+          <line x1="60" y1="100" x2="690" y2="100" stroke="var(--rule)" stroke-width="1" stroke-dasharray="2 4" />
+          <line x1="60" y1="50"  x2="690" y2="50"  stroke="var(--rule)" stroke-width="1" stroke-dasharray="2 4" />
+          <text x="52" y="204" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--ink-soft)">$0</text>
+          <text x="52" y="154" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--ink-soft)">$50</text>
+          <text x="52" y="104" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--ink-soft)">$100</text>
+          <text x="52" y="54"  text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="11" fill="var(--ink-soft)">$150</text>
+          <g font-family="IBM Plex Mono, monospace" font-size="11">
+            <rect x="72"  y="169" width="58" height="31"  rx="2" fill="var(--ink-soft)" />
+            <rect x="162" y="145" width="58" height="55"  rx="2" fill="var(--ink-soft)" />
+            <rect x="252" y="118" width="58" height="82"  rx="2" fill="var(--ink-soft)" />
+            <rect x="342" y="89"  width="58" height="111" rx="2" fill="var(--ink-soft)" />
+            <rect x="432" y="68"  width="58" height="132" rx="2" fill="var(--ink-soft)" />
+            <rect x="522" y="48"  width="58" height="152" rx="2" fill="var(--ink-soft)" />
+            <rect x="612" y="29"  width="58" height="171" rx="2" fill="var(--beacon)" />
+            <text x="101" y="161" text-anchor="middle" fill="var(--ink-soft)">$31</text>
+            <text x="191" y="137" text-anchor="middle" fill="var(--ink-soft)">$55</text>
+            <text x="281" y="110" text-anchor="middle" fill="var(--ink-soft)">$82</text>
+            <text x="371" y="81"  text-anchor="middle" fill="var(--ink-soft)">$111</text>
+            <text x="461" y="60"  text-anchor="middle" fill="var(--ink-soft)">$132</text>
+            <text x="551" y="40"  text-anchor="middle" fill="var(--ink-soft)">$152</text>
+            <text x="641" y="21"  text-anchor="middle" fill="var(--beacon)" font-weight="600">$170.64</text>
+            <text x="101" y="220" text-anchor="middle" fill="var(--ink-soft)">Oct</text>
+            <text x="191" y="220" text-anchor="middle" fill="var(--ink-soft)">Nov</text>
+            <text x="281" y="220" text-anchor="middle" fill="var(--ink-soft)">Dec</text>
+            <text x="371" y="220" text-anchor="middle" fill="var(--ink-soft)">Jan</text>
+            <text x="461" y="220" text-anchor="middle" fill="var(--ink-soft)">Feb</text>
+            <text x="551" y="220" text-anchor="middle" fill="var(--ink-soft)">Mar</text>
+            <text x="641" y="220" text-anchor="middle" fill="var(--beacon)" font-weight="600">Apr</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="hist-scroll">
+        <table class="hist">
+          <thead>
+            <tr><th>Month</th><th>Active referred subs</th><th>Deposited on the 15th</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>October</td><td>44</td><td>$31.10</td></tr>
+            <tr><td>November</td><td>79</td><td>$54.80</td></tr>
+            <tr><td>December</td><td>118</td><td>$82.44</td></tr>
+            <tr><td>January</td><td>152</td><td>$110.90</td></tr>
+            <tr><td>February</td><td>183</td><td>$132.05</td></tr>
+            <tr><td>March</td><td>209</td><td>$151.60</td></tr>
+            <tr><td>April</td><td>228</td><td>$170.64</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">A payout, in detail</p>
+    <h2>How the 15th actually works.</h2>
+    <p>On the 15th, every commission that has finished its 14-day hold is bundled into one payment. A subscription that started on <span class="mono">April&nbsp;5</span> clears its hold on <span class="mono">April&nbsp;19</span> &mdash; so it lands in the <em>May</em> 15th payout, not April&rsquo;s. Here is the sample partner&rsquo;s April statement.</p>
+
+    <div class="statement">
+      <div class="statement__head"><b>Partner payout</b><span>Deposited April 15 &middot; PayPal</span></div>
+      <div class="statement__lines">
+        <div class="sline"><span class="desc">151 monthly renewals, holds cleared</span><span>$108.72</span></div>
+        <div class="sline"><span class="desc">7 annual plans (new &amp; renewed), holds cleared</span><span>$50.40</span></div>
+        <div class="sline"><span class="desc">1 lifetime purchase, hold cleared</span><span>$11.52</span></div>
+      </div>
+      <div class="statement__total"><span>Total deposited</span><b>$170.64</b></div>
+      <div class="statement__note">A further <span class="hold-amt">$23.04</span> from subscriptions started April&nbsp;1&ndash;14 is still inside its 14-day hold. It clears through the month and is paid on <strong>May&nbsp;15</strong>.</div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">Questions</p>
+    <h2>The details partners ask about.</h2>
+    <div class="faq">
+      <div>
+        <h3>What counts as a referral?</h3>
+        <p>An install that carried your code, or a subscriber who entered your code in Settings. Someone already credited to another partner isn&rsquo;t reassigned &mdash; the first code to reach an account is the one that sticks.</p>
+      </div>
+      <div>
+        <h3>When exactly do I get paid?</h3>
+        <p>The 15th of each month, for every commission whose 14-day hold finished before that date. Anything still in its hold rolls to the next month&rsquo;s payout.</p>
+      </div>
+      <div>
+        <h3>What if my referral cancels or is refunded?</h3>
+        <p>A cancellation just stops future renewals from earning &mdash; past payouts stand. A refund inside the 14-day hold reverses only that single commission.</p>
+      </div>
+      <div>
+        <h3>How do I track it?</h3>
+        <p>Your dashboard at <span class="mono">glucobeacon.com/partners</span> shows referred installs, active subscribers, what&rsquo;s cleared, what&rsquo;s still in hold, and everything paid to date &mdash; updated as events come in.</p>
+      </div>
+      <div>
+        <h3>Does it work on both iPhone and Android?</h3>
+        <p>Yes. On Android your code is captured automatically from the Play Store. On iPhone it&rsquo;s automatic when someone taps your link with the app already installed; a brand-new iPhone install adds your code once in Settings.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="cta">
+    <h2>Become a partner</h2>
+    <p>Tell us where you&rsquo;d share GlucoBeacon and roughly who follows you. We&rsquo;ll set up your code and dashboard and send your link.</p>
+    <a class="mail" href="mailto:partners@glucobeacon.com?subject=GlucoBeacon%20Partner%20Program">partners@glucobeacon.com</a>
+    <a class="signin-link" href="/partners/">Already a partner? Sign in to your dashboard &rarr;</a>
+  </div>
+  <p class="disclaimer">The dashboard, chart, and payout statement on this page use invented figures to show how the program is structured. They are not a real partner&rsquo;s account and are not a projection or guarantee of what any partner will earn &mdash; actual results depend entirely on how many people subscribe through your code and stay subscribed. Prices and store commission rates are current as of the date shared and may change. GlucoBeacon is a diabetes self-management tool and is not a substitute for medical care.</p>
+</footer>
+
+</body>
+</html>
