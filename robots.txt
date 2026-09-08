@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /assets/unlisted/
+Disallow: /partners/
 
 # AI training-data crawlers — blocked site-wide.
 # Regular search engines (Googlebot, Bingbot, etc.) are unaffected by this

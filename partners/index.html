@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>GlucoBeacon Partners</title>
+<style>
+  :root {
+    color-scheme: light;
+    --navy: #0b2447;
+    --blue: #19376d;
+    --accent: #ff8552;
+    --bg: #f5f7fa;
+    --card: #ffffff;
+    --text: #1c2733;
+    --muted: #6b7785;
+    --border: #e2e6ea;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 36px;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0 4px 24px rgba(11, 36, 71, 0.08);
+  }
+  .logo {
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: 22px;
+    margin: 0 0 6px;
+    color: var(--navy);
+  }
+  p.lead {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 24px;
+    line-height: 1.5;
+  }
+  input[type="email"] {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+  input[type="email"]:focus {
+    outline: 2px solid var(--blue);
+    border-color: var(--blue);
+  }
+  button {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: none;
+    background: var(--blue);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button:hover { background: var(--navy); }
+  button:disabled { opacity: 0.6; cursor: default; }
+  button.secondary {
+    background: transparent;
+    color: var(--blue);
+    border: 1px solid var(--border);
+    margin-top: 10px;
+  }
+  button.secondary:hover { background: var(--bg); }
+  .msg {
+    font-size: 13px;
+    margin-top: 12px;
+    line-height: 1.5;
+  }
+  .msg.error { color: #c0392b; }
+  .msg.success { color: #1e8449; }
+  .stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .stat-row:last-of-type { border-bottom: none; }
+  .stat-label { color: var(--muted); font-size: 14px; }
+  .stat-value { font-size: 22px; font-weight: 700; color: var(--navy); }
+  .code-pill {
+    display: inline-block;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-family: ui-monospace, monospace;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="logo">GlucoBeacon</div>
+  <div class="subtitle">Partner Dashboard</div>
+
+  <!-- Step 1: request a sign-in link -->
+  <div id="requestStep">
+    <h1>Sign in</h1>
+    <p class="lead">Enter the email address we set up your partner account with. We'll send you a one-time sign-in link — no password needed.</p>
+    <input type="email" id="emailInput" placeholder="you@example.com" autocomplete="email" />
+    <button id="sendLinkBtn">Send sign-in link</button>
+    <div id="requestMsg" class="msg"></div>
+  </div>
+
+  <!-- Step 2: confirm email if link was opened on a different device -->
+  <div id="confirmStep" hidden>
+    <h1>Confirm your email</h1>
+    <p class="lead">Please re-enter your email to confirm this sign-in link is yours.</p>
+    <input type="email" id="confirmEmailInput" placeholder="you@example.com" autocomplete="email" />
+    <button id="confirmBtn">Continue</button>
+    <div id="confirmMsg" class="msg"></div>
+  </div>
+
+  <!-- Step 3: dashboard -->
+  <div id="dashboard" hidden>
+    <h1>Your stats</h1>
+    <p class="lead" id="welcomeMsg"></p>
+    <div id="statsBody"></div>
+    <button class="secondary" id="signOutBtn">Sign out</button>
+  </div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyBONbFo7Iyf7p_EsMq4Hbro9o2nSHY5ALc",
+    authDomain: "glucobeacon.firebaseapp.com",
+    projectId: "glucobeacon",
+    storageBucket: "glucobeacon.firebasestorage.app",
+    messagingSenderId: "536080166065",
+    appId: "1:536080166065:web:56c53126cea47ff0558690"
+  };
+  firebase.initializeApp(firebaseConfig);
+  var auth = firebase.auth();
+
+  var STATS_URL = "https://us-central1-glucobeacon.cloudfunctions.net/getInfluencerStats";
+  var STORAGE_KEY = "gb_partner_email";
+
+  var requestStep = document.getElementById("requestStep");
+  var confirmStep = document.getElementById("confirmStep");
+  var dashboard = document.getElementById("dashboard");
+  var requestMsg = document.getElementById("requestMsg");
+  var confirmMsg = document.getElementById("confirmMsg");
+
+  function showStep(step) {
+    requestStep.hidden = step !== "request";
+    confirmStep.hidden = step !== "confirm";
+    dashboard.hidden = step !== "dashboard";
+  }
+
+  function setMsg(el, text, kind) {
+    el.textContent = text || "";
+    el.className = "msg" + (kind ? " " + kind : "");
+  }
+
+  // --- Step 1: send the sign-in link ---
+  document.getElementById("sendLinkBtn").addEventListener("click", function () {
+    var email = document.getElementById("emailInput").value.trim();
+    if (!email) {
+      setMsg(requestMsg, "Enter your email first.", "error");
+      return;
+    }
+    var btn = this;
+    btn.disabled = true;
+    var actionCodeSettings = {
+      url: window.location.href.split("?")[0],
+      handleCodeInApp: true
+    };
+    auth.sendSignInLinkToEmail(email, actionCodeSettings).then(function () {
+      window.localStorage.setItem(STORAGE_KEY, email);
+      setMsg(requestMsg, "Check your inbox — we sent a sign-in link to " + email + ".", "success");
+    }).catch(function (err) {
+      setMsg(requestMsg, "Couldn't send that link: " + err.message, "error");
+    }).finally(function () {
+      btn.disabled = false;
+    });
+  });
+
+  // --- Step 2: confirm email (only needed if opened on a different device) ---
+  document.getElementById("confirmBtn").addEventListener("click", function () {
+    var email = document.getElementById("confirmEmailInput").value.trim();
+    if (!email) {
+      setMsg(confirmMsg, "Enter your email first.", "error");
+      return;
+    }
+    completeSignIn(email);
+  });
+
+  function completeSignIn(email) {
+    auth.signInWithEmailLink(email, window.location.href).then(function () {
+      window.localStorage.removeItem(STORAGE_KEY);
+      // Clean the sign-in params out of the URL.
+      window.history.replaceState({}, document.title, window.location.pathname);
+      loadDashboard();
+    }).catch(function (err) {
+      setMsg(confirmMsg, "That link didn't work: " + err.message, "error");
+    });
+  }
+
+  // --- Step 3: dashboard ---
+  function loadDashboard() {
+    var user = auth.currentUser;
+    if (!user) return;
+    document.getElementById("welcomeMsg").textContent = "Signed in as " + user.email;
+    showStep("dashboard");
+
+    user.getIdToken().then(function (idToken) {
+      return fetch(STATS_URL, {
+        headers: { "Authorization": "Bearer " + idToken }
+      });
+    }).then(function (res) {
+      if (!res.ok) return res.json().then(function (j) { throw new Error(j.error || "Failed to load stats"); });
+      return res.json();
+    }).then(function (data) {
+      var html = "";
+      html += '<div class="stat-row"><span class="stat-label">Your code</span><span class="code-pill">' + escapeHtml(data.code) + "</span></div>";
+      html += '<div class="stat-row"><span class="stat-label">Times redeemed</span><span class="stat-value">' + data.redemptions + "</span></div>";
+      html += '<div class="stat-row"><span class="stat-label">Status</span><span class="stat-value">' + (data.active ? "Active" : "Inactive") + "</span></div>";
+      document.getElementById("statsBody").innerHTML = html;
+    }).catch(function (err) {
+      document.getElementById("statsBody").innerHTML = '<p class="msg error">' + escapeHtml(err.message) + "</p>";
+    });
+  }
+
+  function escapeHtml(s) {
+    var d = document.createElement("div");
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  document.getElementById("signOutBtn").addEventListener("click", function () {
+    auth.signOut().then(function () {
+      showStep("request");
+    });
+  });
+
+  // --- On load: figure out which step to show ---
+  if (auth.isSignInWithEmailLink(window.location.href)) {
+    var savedEmail = window.localStorage.getItem(STORAGE_KEY);
+    if (savedEmail) {
+      completeSignIn(savedEmail);
+    } else {
+      showStep("confirm");
+    }
+  } else {
+    auth.onAuthStateChanged(function (user) {
+      if (user) {
+        loadDashboard();
+      } else {
+        showStep("request");
+      }
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
