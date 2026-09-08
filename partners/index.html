@@ -151,6 +151,7 @@
     <h1>Your stats</h1>
     <p class="lead" id="welcomeMsg"></p>
     <div id="statsBody"></div>
+    <p class="lead" id="payoutNote" style="margin-top:20px; font-size:12px;"></p>
     <button class="secondary" id="signOutBtn">Sign out</button>
   </div>
 
@@ -252,14 +253,30 @@
       if (!res.ok) return res.json().then(function (j) { throw new Error(j.error || "Failed to load stats"); });
       return res.json();
     }).then(function (data) {
+      var pct = Math.round((data.commissionRate || 0.20) * 100);
       var html = "";
       html += '<div class="stat-row"><span class="stat-label">Your code</span><span class="code-pill">' + escapeHtml(data.code) + "</span></div>";
-      html += '<div class="stat-row"><span class="stat-label">Times redeemed</span><span class="stat-value">' + data.redemptions + "</span></div>";
+      html += '<div class="stat-row"><span class="stat-label">Referred installs</span><span class="stat-value">' + (data.referredInstalls || 0) + "</span></div>";
+      html += '<div class="stat-row"><span class="stat-label">Referred subscribers</span><span class="stat-value">' + (data.referredSubscribers || 0) + "</span></div>";
+      html += '<div class="stat-row"><span class="stat-label">Available to pay out</span><span class="stat-value">' + money(data.availableUsd) + "</span></div>";
+      html += '<div class="stat-row"><span class="stat-label">Pending (clearing)</span><span class="stat-value">' + money(data.pendingUsd) + "</span></div>";
+      html += '<div class="stat-row"><span class="stat-label">Paid out to date</span><span class="stat-value">' + money(data.paidUsd) + "</span></div>";
+      html += '<div class="stat-row"><span class="stat-label">Lifetime earnings</span><span class="stat-value">' + money(data.lifetimeUsd) + "</span></div>";
+      html += '<div class="stat-row"><span class="stat-label">Code redemptions</span><span class="stat-value">' + data.redemptions + "</span></div>";
       html += '<div class="stat-row"><span class="stat-label">Status</span><span class="stat-value">' + (data.active ? "Active" : "Inactive") + "</span></div>";
       document.getElementById("statsBody").innerHTML = html;
+      document.getElementById("payoutNote").textContent =
+        "You earn " + pct + "% of net revenue on every subscriber who signs up with your code, " +
+        "for as long as they stay subscribed. New earnings clear a 14-day hold (covering store refund windows) " +
+        "before they move to “Available to pay out.”";
     }).catch(function (err) {
       document.getElementById("statsBody").innerHTML = '<p class="msg error">' + escapeHtml(err.message) + "</p>";
     });
+  }
+
+  function money(n) {
+    var v = Number(n);
+    return "$" + (isFinite(v) ? v : 0).toFixed(2);
   }
 
   function escapeHtml(s) {
