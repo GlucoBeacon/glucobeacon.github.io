@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>GlucoBeacon &mdash; Provider Information Sheet</title>
+<link rel="icon" type="image/png" href="../img/icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+  :root {
+    --ground: #f6f4ef;
+    --surface: #ffffff;
+    --ink: #16233a;
+    --ink-soft: #5c6b7f;
+    --navy: #0b2447;
+    --beacon: #e0671f;
+    --beam: #fbe3cf;
+    --rule: #e4ded3;
+    --rule-strong: #d3ccbd;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: #e9e5dc;
+    color: var(--ink);
+    font-family: "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+    font-size: 13.5px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .toolbar {
+    max-width: 210mm; margin: 0 auto; padding: 14px 6mm;
+    display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .toolbar a { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); text-decoration: none; }
+  .toolbar a:hover { color: var(--beacon); }
+  .print-btn {
+    font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 12px;
+    color: #fff; background: var(--beacon); border: 0; border-radius: 8px;
+    padding: 9px 16px; cursor: pointer;
+  }
+
+  .page {
+    max-width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto 24px;
+    background: var(--surface);
+    padding: 16mm 16mm 14mm;
+    box-shadow: 0 10px 40px -18px rgba(20,30,50,0.4);
+  }
+
+  .head {
+    display: flex; justify-content: space-between; align-items: flex-start; gap: 20px;
+    border-bottom: 2px solid var(--navy); padding-bottom: 12px; margin-bottom: 18px;
+  }
+  .brand {
+    font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 22px;
+    color: var(--navy); letter-spacing: -0.01em; display: flex; align-items: center; gap: 9px;
+  }
+  .brand .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--beacon); flex: none; }
+  .head .kind {
+    font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--ink-soft); text-align: right; padding-top: 5px;
+  }
+
+  h1 {
+    font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 24px; line-height: 1.12;
+    margin: 0 0 8px; color: var(--ink); letter-spacing: -0.012em;
+  }
+  .lede { margin: 0 0 20px; color: var(--ink-soft); font-size: 13px; max-width: 62ch; }
+
+  .codebox {
+    background: var(--navy); color: #eef2f8; border-radius: 12px;
+    padding: 16px 20px; margin-bottom: 20px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  }
+  .codebox .lbl { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.75; margin-bottom: 4px; }
+  .codebox .code {
+    font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 24px; letter-spacing: 0.04em;
+    color: #fff;
+  }
+  .codebox .code.blank { letter-spacing: 0.02em; border-bottom: 2px dashed rgba(255,255,255,0.4); padding-bottom: 2px; }
+  .codebox .grant {
+    font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--beam);
+    text-align: right;
+  }
+
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .card {
+    border: 1px solid var(--rule-strong); border-radius: 12px; padding: 15px 16px; background: #fff;
+  }
+  .card h2 {
+    font-family: "Public Sans", sans-serif; font-size: 12px; font-weight: 700;
+    letter-spacing: 0.02em; margin: 0 0 4px; color: var(--navy);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .card h2 .tag {
+    font-family: "IBM Plex Mono", monospace; font-size: 9.5px; font-weight: 500;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft);
+  }
+  .card ol { margin: 8px 0 0; padding-left: 18px; }
+  .card ol li { margin: 5px 0; }
+  .card .mono { font-family: "IBM Plex Mono", monospace; font-size: 0.94em; color: var(--beacon); font-weight: 500; }
+  .qr-wrap { display: flex; gap: 14px; align-items: flex-start; margin-top: 10px; }
+  .qr { width: 108px; height: 108px; flex: none; background: #fff; border: 1px solid var(--rule); border-radius: 8px; padding: 6px; display: flex; align-items: center; justify-content: center; }
+  .qr img, .qr canvas { width: 100% !important; height: 100% !important; display: block; }
+  .qr .ph { font-size: 10px; color: var(--ink-soft); text-align: center; font-family: "IBM Plex Mono", monospace; line-height: 1.35; }
+  .qr-note { font-size: 11px; color: var(--ink-soft); }
+  .qr-note .link { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; word-break: break-all; color: var(--ink); }
+
+  .includes { margin: 0 0 18px; }
+  .includes h2 {
+    font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--ink-soft); margin: 0 0 8px;
+  }
+  .includes ul { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 20px; }
+  .includes li { padding: 4px 0 4px 16px; position: relative; font-size: 12.5px; }
+  .includes li::before { content: ""; position: absolute; left: 2px; top: 10px; width: 6px; height: 6px; border-radius: 50%; background: var(--beacon); }
+
+  .foot {
+    border-top: 1px solid var(--rule); padding-top: 12px; margin-top: 4px;
+    font-size: 10.5px; color: var(--ink-soft); line-height: 1.55;
+  }
+  .foot strong { color: var(--ink); font-weight: 600; }
+  .foot .row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 6px; font-family: "IBM Plex Mono", monospace; }
+
+  @media (max-width: 640px) {
+    .cols { grid-template-columns: 1fr; }
+    .includes ul { grid-template-columns: 1fr; }
+    .page { padding: 22px 18px; }
+  }
+
+  @media print {
+    body { background: #fff; font-size: 10.5pt; }
+    .toolbar { display: none; }
+    .page { box-shadow: none; margin: 0; max-width: none; min-height: 0; padding: 0; }
+    .codebox { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .card, .qr { break-inside: avoid; }
+    @page { size: A4; margin: 14mm; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <a href="/for-clinicians/">&larr;&nbsp;GlucoBeacon for Clinicians</a>
+  <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<div class="page">
+
+  <div class="head">
+    <div class="brand"><span class="dot"></span>GlucoBeacon</div>
+    <div class="kind">Provider Information Sheet</div>
+  </div>
+
+  <h1>A free year of GlucoBeacon Pro for your patients</h1>
+  <p class="lede">GlucoBeacon is a diabetes self-management app &mdash; it puts a patient&rsquo;s glucose, medication, food, and activity in one daily record, estimates an A1C from their logged readings, flags patterns, and scores restaurant menus and 281 dietitian-reviewed recipes by their likely effect on blood glucose. Give a patient the code below and they get <strong>12 months of Pro, free</strong>.</p>
+
+  <div class="codebox">
+    <div>
+      <div class="lbl">Clinic code</div>
+      <div class="code blank" id="code">CLINIC-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    </div>
+    <div class="grant">12 months<br />GlucoBeacon Pro</div>
+  </div>
+
+  <div class="cols">
+    <div class="card">
+      <h2>Android <span class="tag">in the app</span></h2>
+      <ol>
+        <li>Install <strong>GlucoBeacon</strong> from Google Play.</li>
+        <li>Open it and go to <strong>Settings &rsaquo; Redeem Code</strong>.</li>
+        <li>Enter the clinic code above and tap redeem.</li>
+        <li>Confirmation: &ldquo;You now have 12 months of Pro access.&rdquo;</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h2>iPhone / iPad <span class="tag">one-time link</span></h2>
+      <ol>
+        <li>Install <strong>GlucoBeacon</strong> from the App Store.</li>
+        <li>Scan the code or open the link below on the device.</li>
+        <li>The App Store applies the free year to your Apple&nbsp;ID.</li>
+      </ol>
+      <div class="qr-wrap">
+        <div class="qr" id="qr"><span class="ph">iPhone link<br />goes here</span></div>
+        <div class="qr-note">
+          Each iPhone link works once. Ask your clinic contact for more.<br /><br />
+          <span class="link" id="ioslink">[ your clinic&rsquo;s iPhone redemption link ]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="includes">
+    <h2>What the free year unlocks</h2>
+    <ul>
+      <li>Restaurant Advisor &mdash; 132 chains, 4,600+ items scored</li>
+      <li>Unlimited AI food-photo estimates</li>
+      <li>Full A1C estimate &amp; pattern detection</li>
+      <li>All 281 recipes with pantry matching</li>
+      <li>Unlimited history &amp; data export</li>
+      <li>English, Spanish, Filipino, Hindi &mdash; full app</li>
+    </ul>
+  </div>
+
+  <div class="foot">
+    <p>GlucoBeacon is a diabetes self-management and education tool. It is <strong>not a medical device</strong> and does not provide medical advice, diagnosis, or treatment. The A1C figure it shows is an estimate calculated from the patient&rsquo;s own logged glucose readings, not a laboratory result. It is not a substitute for the care of a qualified health professional. Patient logs are stored on the patient&rsquo;s device by default; GlucoBeacon does not receive them, and this program gives the clinic no access to patient data &mdash; only a redemption count for the code. There is no cost and no payment in either direction.</p>
+    <div class="row">
+      <span>glucobeacon.com/for-clinicians</span>
+      <span>partners@glucobeacon.com</span>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var code = (params.get("code") || "").trim().toUpperCase();
+    var ios  = (params.get("ios") || "").trim();
+
+    if (code) {
+      var el = document.getElementById("code");
+      el.textContent = code;
+      el.classList.remove("blank");
+    }
+
+    if (ios) {
+      document.getElementById("ioslink").textContent = ios;
+      var box = document.getElementById("qr");
+      box.innerHTML = "";
+      try {
+        if (window.QRCode) {
+          new QRCode(box, { text: ios, width: 96, height: 96, correctLevel: QRCode.CorrectLevel.M });
+        } else {
+          box.innerHTML = '<span class="ph">' + ios.replace(/&/g, "&amp;").replace(/</g, "&lt;") + '</span>';
+        }
+      } catch (e) {
+        box.innerHTML = '<span class="ph">link:<br />' + ios.replace(/&/g, "&amp;").replace(/</g, "&lt;") + '</span>';
+      }
+    }
+  })();
+</script>
+
+</body>
+</html>
