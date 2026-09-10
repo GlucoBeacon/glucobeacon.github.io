@@ -117,7 +117,7 @@
   .stat { background:var(--surface); padding:16px 16px 14px; }
   .stat .l { font-size:0.8rem; color:var(--ink-soft); margin:0 0 4px; }
   .stat .v { font-family:"Fraunces",Georgia,serif; font-weight:550; font-size:1.5rem; line-height:1.1; color:var(--ink); }
-  .stat .v.money::before { content:"$"; font-size:0.75em; opacity:0.6; margin-right:1px; }
+  .usd-alt { display:block; margin-top:2px; font-size:0.6em; color:var(--ink-soft); font-family:"IBM Plex Mono",ui-monospace,monospace; font-weight:400; white-space:nowrap; }
   .stat.wide { grid-column:1 / -1; }
 
   .plan-split { display:flex; gap:10px; margin-top:9px; }
@@ -141,97 +141,113 @@
   .cur-payout .mono { font-family:"IBM Plex Mono",ui-monospace,monospace; }
   .row2 { display:grid; grid-template-columns:150px 1fr; gap:12px; }
   @media (max-width:520px){ .row2{ grid-template-columns:1fr; } .stat .v{ font-size:1.3rem; } }
+  .topline { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:18px; }
+  .topline .eyebrow { margin-bottom:0; }
+  .toplineCtrls { display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end; }
+  #langSelect, #curSelect { width:auto; padding:6px 10px; font-size:0.8rem; border-radius:8px; background:var(--surface); max-width:44vw; }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <div class="eyebrow"><span class="beacon-dot"></span> GlucoBeacon · Partners</div>
+  <div class="topline">
+    <div class="eyebrow"><span class="beacon-dot"></span> GlucoBeacon · Partners</div>
+    <div class="toplineCtrls">
+      <select id="langSelect" aria-label="Language">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fil">Filipino</option>
+        <option value="hi">हिन्दी</option>
+      </select>
+      <select id="curSelect" aria-label="Currency"><option value="USD">USD</option></select>
+    </div>
+  </div>
 
   <!-- STEP 1 -->
   <div id="requestStep">
-    <h1>Partner sign-in</h1>
-    <p class="sub">Enter the email your partner account was set up with. We'll send a one-time sign-in link — no password.</p>
+    <h1 data-i18n="signInTitle">Partner sign-in</h1>
+    <p class="sub" data-i18n="signInSub">Enter the email your partner account was set up with. We'll send a one-time sign-in link — no password.</p>
     <hr class="beam" />
     <div class="card">
-      <label for="emailInput">Email address</label>
+      <label for="emailInput" data-i18n="emailLabel">Email address</label>
       <input type="email" id="emailInput" placeholder="you@example.com" autocomplete="email" />
-      <div style="margin-top:14px"><button id="sendLinkBtn">Send sign-in link</button></div>
+      <div style="margin-top:14px"><button id="sendLinkBtn" data-i18n="sendLinkBtn">Send sign-in link</button></div>
       <div id="requestMsg" class="msg"></div>
-      <p class="note" style="margin-top:16px">Not a partner yet? <a href="/partners/program.html">See how the program works &rarr;</a></p>
+      <p class="note" style="margin-top:16px" data-i18n-html="notPartnerYet">Not a partner yet? <a href="/partners/program.html">See how the program works &rarr;</a></p>
     </div>
   </div>
 
   <!-- STEP 2 -->
   <div id="confirmStep" hidden>
-    <h1>Confirm your email</h1>
-    <p class="sub">Re-enter your email to confirm this sign-in link is yours.</p>
+    <h1 data-i18n="confirmTitle">Confirm your email</h1>
+    <p class="sub" data-i18n="confirmSub">Re-enter your email to confirm this sign-in link is yours.</p>
     <hr class="beam" />
     <div class="card">
-      <label for="confirmEmailInput">Email address</label>
+      <label for="confirmEmailInput" data-i18n="emailLabel">Email address</label>
       <input type="email" id="confirmEmailInput" placeholder="you@example.com" autocomplete="email" />
-      <div style="margin-top:14px"><button id="confirmBtn">Continue</button></div>
+      <div style="margin-top:14px"><button id="confirmBtn" data-i18n="continueBtn">Continue</button></div>
       <div id="confirmMsg" class="msg"></div>
     </div>
   </div>
 
   <!-- STEP 3 -->
   <div id="dashboard" hidden>
-    <h1 id="dashTitle">Your dashboard</h1>
+    <h1 id="dashTitle" data-i18n="dashTitle">Your dashboard</h1>
     <p class="sub" id="welcomeMsg"></p>
     <hr class="beam" />
 
     <div class="card">
-      <p class="kicker">Your referral link</p>
+      <p class="kicker" data-i18n="kReferralLink">Your referral link</p>
       <div class="code-line">
         <span class="code-pill" id="codePill">—</span>
-        <button class="ghost small" id="copyLinkBtn">Copy link</button>
-        <span class="pill ok" id="statusPill" hidden>Active</span>
+        <button class="ghost small" id="copyLinkBtn" data-i18n="copyLink">Copy link</button>
+        <span class="pill ok" id="statusPill" data-i18n="statusActive" hidden>Active</span>
       </div>
       <p class="link-row" id="linkRow"></p>
     </div>
 
     <section class="block">
       <div class="stat-grid">
-        <div class="stat"><div class="l">Referred installs</div><div class="v" id="s_installs">0</div></div>
-        <div class="stat"><div class="l">Paying subscribers</div><div class="v" id="s_subs">0</div></div>
+        <div class="stat"><div class="l" data-i18n="lInstalls">Referred installs</div><div class="v" id="s_installs">0</div></div>
+        <div class="stat"><div class="l" data-i18n="lPayingSubs">Paying subscribers</div><div class="v" id="s_subs">0</div></div>
         <div class="stat wide">
-          <div class="l">Referred subscribers, by plan</div>
+          <div class="l" data-i18n="lSubsByPlan">Referred subscribers, by plan</div>
           <div class="plan-split">
-            <div class="p"><div class="n" id="s_monthly">0</div><div class="k">Monthly</div></div>
-            <div class="p"><div class="n" id="s_annual">0</div><div class="k">Annual</div></div>
-            <div class="p"><div class="n" id="s_lifetime">0</div><div class="k">Lifetime</div></div>
+            <div class="p"><div class="n" id="s_monthly">0</div><div class="k" data-i18n="planMonthly">Monthly</div></div>
+            <div class="p"><div class="n" id="s_annual">0</div><div class="k" data-i18n="planAnnual">Annual</div></div>
+            <div class="p"><div class="n" id="s_lifetime">0</div><div class="k" data-i18n="planLifetime">Lifetime</div></div>
           </div>
-          <p class="note" style="margin-top:9px">
+          <p class="note" style="margin-top:9px" data-i18n-html="planNote">
             <strong>Monthly</strong> — you're paid your % every month it renews.
             <strong>Annual</strong> — your % at each <em>yearly</em> renewal, not monthly.
             <strong>Lifetime</strong> — your % once, on the single purchase.
           </p>
         </div>
-        <div class="stat"><div class="l">Available to pay out</div><div class="v money" id="s_avail">0.00</div></div>
-        <div class="stat"><div class="l">Pending (clearing)</div><div class="v money" id="s_pending">0.00</div></div>
-        <div class="stat"><div class="l">Paid out to date</div><div class="v money" id="s_paid">0.00</div></div>
-        <div class="stat"><div class="l">Lifetime earnings</div><div class="v money" id="s_earn_lifetime">0.00</div></div>
+        <div class="stat"><div class="l" data-i18n="lAvail">Available to pay out</div><div class="v" id="s_avail">0.00</div></div>
+        <div class="stat"><div class="l" data-i18n="lPending">Pending (clearing)</div><div class="v" id="s_pending">0.00</div></div>
+        <div class="stat"><div class="l" data-i18n="lPaid">Paid out to date</div><div class="v" id="s_paid">0.00</div></div>
+        <div class="stat"><div class="l" data-i18n="lLifetimeEarn">Lifetime earnings</div><div class="v" id="s_earn_lifetime">0.00</div></div>
         <div class="stat wide">
-          <div class="l">Referred revenue &amp; your share</div>
-          <div class="v" style="font-size:1.05rem"><span id="s_gross">$0.00</span> paid by your referrals
-            &nbsp;·&nbsp; your <span id="s_rate">20%</span> of net = <span id="s_share" style="color:var(--beacon)">$0.00</span></div>
+          <div class="l" data-i18n="lRevShare">Referred revenue &amp; your share</div>
+          <div class="v" style="font-size:1.05rem"><span id="s_gross">$0.00</span> <span data-i18n="revShareA">paid by your referrals</span>
+            &nbsp;·&nbsp; <span data-i18n="revShareB">your</span> <span id="s_rate">20%</span> <span data-i18n="revShareC">of net =</span> <span id="s_share" style="color:var(--beacon)">$0.00</span></div>
         </div>
       </div>
       <p class="note" id="payoutNote" style="margin-top:14px"></p>
+      <p class="note" id="fxNote" style="margin-top:10px" hidden></p>
     </section>
 
     <section class="block card">
-      <p class="kicker">Earnings — last 12 months</p>
+      <p class="kicker" data-i18n="kEarnings12">Earnings — last 12 months</p>
       <div class="chart-wrap" id="chartWrap"></div>
     </section>
 
     <section class="block card">
-      <p class="kicker">Payout method</p>
-      <p class="cur-payout" id="curPayout">No payout method on file yet.</p>
+      <p class="kicker" data-i18n="kPayoutMethod">Payout method</p>
+      <p class="cur-payout" id="curPayout" data-i18n="noPayout">No payout method on file yet.</p>
       <div class="row2">
         <div>
-          <label for="payoutMethod">Method</label>
+          <label for="payoutMethod" data-i18n="methodLabel">Method</label>
           <select id="payoutMethod">
             <option value="paypal">PayPal</option>
             <option value="wise">Wise</option>
@@ -242,9 +258,9 @@
           <input type="text" id="payoutHandle" placeholder="you@example.com" autocomplete="off" />
         </div>
       </div>
-      <div style="margin-top:14px"><button id="savePayoutBtn">Save payout method</button></div>
+      <div style="margin-top:14px"><button id="savePayoutBtn" data-i18n="savePayoutBtn">Save payout method</button></div>
       <div id="payoutMsg" class="msg"></div>
-      <p class="note" style="margin-top:12px">
+      <p class="note" style="margin-top:12px" data-i18n-html="payoutStoreNote">
         We only store a PayPal email or a Wise email / Wisetag / pay-link — <strong>never</strong> a bank
         account or card number. Need a bank transfer? Use the message box below and we'll arrange it privately.
         Every change is logged and emailed to us.
@@ -252,16 +268,16 @@
     </section>
 
     <section class="block card">
-      <p class="kicker">Message us</p>
-      <label for="msgSubject">Subject <span style="font-weight:400;color:var(--ink-soft)">(optional)</span></label>
-      <input type="text" id="msgSubject" maxlength="150" placeholder="e.g. Question about a payout" />
-      <label for="msgBody" style="margin-top:12px">Message</label>
-      <textarea id="msgBody" maxlength="5000" placeholder="Anything about the program, your link, payouts…"></textarea>
-      <div style="margin-top:12px"><button id="sendMsgBtn">Send message</button></div>
+      <p class="kicker" data-i18n="kMessageUs">Message us</p>
+      <label for="msgSubject" data-i18n-html="subjectLabel">Subject <span style="font-weight:400;color:var(--ink-soft)">(optional)</span></label>
+      <input type="text" id="msgSubject" maxlength="150" placeholder="e.g. Question about a payout" data-i18n-ph="subjectPh" />
+      <label for="msgBody" style="margin-top:12px" data-i18n="messageLabel">Message</label>
+      <textarea id="msgBody" maxlength="5000" placeholder="Anything about the program, your link, payouts…" data-i18n-ph="messagePh"></textarea>
+      <div style="margin-top:12px"><button id="sendMsgBtn" data-i18n="sendMsgBtn">Send message</button></div>
       <div id="contactMsg" class="msg"></div>
     </section>
 
-    <div style="margin-top:26px"><button class="ghost" id="signOutBtn">Sign out</button></div>
+    <div style="margin-top:26px"><button class="ghost" id="signOutBtn" data-i18n="signOutBtn">Sign out</button></div>
   </div>
 
 </div>
@@ -285,9 +301,120 @@
 
   var FN = "https://us-central1-glucobeacon.cloudfunctions.net";
   var STORAGE_KEY = "gb_partner_email";
+  var LANG_KEY = "gb_partner_lang";
+  var CUR_KEY = "gb_partner_currency";
+  var CUR_LANG = "en";
+  var CUR = "USD";
+  var FX = null;                       // { base, rates, featured, ratesDate } from getInfluencerStats
+  var LAST_STATS = null;
+  var LOCALE_FOR = { en: "en-US", es: "es-419", fil: "en-PH", hi: "en-IN" };
 
   var $ = function (id) { return document.getElementById(id); };
   var requestStep = $("requestStep"), confirmStep = $("confirmStep"), dashboard = $("dashboard");
+
+  var I18N = {"en":{"title":"GlucoBeacon Partner Dashboard","langLabel":"Language","curLabel":"Currency","signInTitle":"Partner sign-in","signInSub":"Enter the email your partner account was set up with. We'll send a one-time sign-in link — no password.","emailLabel":"Email address","sendLinkBtn":"Send sign-in link","notPartnerYet":"Not a partner yet? <a href=\"/partners/program.html\">See how the program works &rarr;</a>","confirmTitle":"Confirm your email","confirmSub":"Re-enter your email to confirm this sign-in link is yours.","continueBtn":"Continue","dashTitle":"Your dashboard","kReferralLink":"Your referral link","copyLink":"Copy link","copied":"Copied","statusActive":"Active","statusInactive":"Inactive","lInstalls":"Referred installs","lPayingSubs":"Paying subscribers","lSubsByPlan":"Referred subscribers, by plan","planMonthly":"Monthly","planAnnual":"Annual","planLifetime":"Lifetime","planNote":"<strong>Monthly</strong> — you're paid your % every month it renews. <strong>Annual</strong> — your % at each <em>yearly</em> renewal, not monthly. <strong>Lifetime</strong> — your % once, on the single purchase.","lAvail":"Available to pay out","lPending":"Pending (clearing)","lPaid":"Paid out to date","lLifetimeEarn":"Lifetime earnings","lRevShare":"Referred revenue & your share","revShareA":"paid by your referrals","revShareB":"your","revShareC":"of net =","kEarnings12":"Earnings — last 12 months","kPayoutMethod":"Payout method","noPayout":"No payout method on file yet.","methodLabel":"Method","savePayoutBtn":"Save payout method","payoutStoreNote":"We only store a PayPal email or a Wise email / Wisetag / pay-link — <strong>never</strong> a bank account or card number. Need a bank transfer? Use the message box below and we'll arrange it privately. Every change is logged and emailed to us.","kMessageUs":"Message us","subjectLabel":"Subject <span style=\"font-weight:400;color:var(--ink-soft)\">(optional)</span>","subjectPh":"e.g. Question about a payout","messageLabel":"Message","messagePh":"Anything about the program, your link, payouts…","sendMsgBtn":"Send message","signOutBtn":"Sign out","handleLabelPaypal":"PayPal email","handleLabelWise":"Wise email / Wisetag / pay-link","handlePhPaypal":"you@example.com","handlePhWise":"you@example.com  ·  $yourtag  ·  wise.com/pay/…","payoutNote":"You earn {pct}% of net revenue on every billing from your link, for as long as they stay subscribed — monthly plans bill your share every month, annual plans once per year at renewal, lifetime once. New earnings clear a 14-day hold before moving to “Available to pay out”, then are paid monthly (minimum $25).","payoutOnFile":"On file: <strong>{method}</strong> — <span class='mono'>{handle}</span>","chartEmpty":"No earnings yet — your chart fills in as referred subscribers are billed.","fxNote":"Non-USD amounts are approximate — 1 USD ≈ {rate} {cur}, updated {date}. Commissions are tracked and paid in USD; your bank or PayPal converts at its own rate.","enterEmailFirst":"Enter your email first.","checkInbox":"Check your inbox — we sent a sign-in link to {email}.","couldntSendLink":"Couldn't send that link: {err}","linkDidntWork":"That link didn't work: {err}","signedInAs":"Signed in as {email}","failedLoadStats":"Failed to load your stats.","couldntLoadDash":"Couldn't load your dashboard","enterHandleFirst":"Enter your payout handle first.","saving":"Saving…","couldntSave":"Couldn't save that.","saved":"Saved. We've logged the change.","writeMessageFirst":"Write a message first.","sending":"Sending…","couldntSend":"Couldn't send that.","messageSent":"Sent — we'll get back to you by email."},"es":{"title":"Panel de Socio de GlucoBeacon","langLabel":"Idioma","curLabel":"Moneda","signInTitle":"Inicio de sesión de socio","signInSub":"Ingresa el correo con el que se creó tu cuenta de socio. Te enviaremos un enlace de acceso de un solo uso — sin contraseña.","emailLabel":"Correo electrónico","sendLinkBtn":"Enviar enlace de acceso","notPartnerYet":"¿Aún no eres socio? <a href=\"/es/partners/program.html\">Mira cómo funciona el programa &rarr;</a>","confirmTitle":"Confirma tu correo","confirmSub":"Vuelve a ingresar tu correo para confirmar que este enlace de acceso es tuyo.","continueBtn":"Continuar","dashTitle":"Tu panel","kReferralLink":"Tu enlace de referido","copyLink":"Copiar enlace","copied":"Copiado","statusActive":"Activo","statusInactive":"Inactivo","lInstalls":"Instalaciones referidas","lPayingSubs":"Suscriptores que pagan","lSubsByPlan":"Suscriptores referidos, por plan","planMonthly":"Mensual","planAnnual":"Anual","planLifetime":"De por vida","planNote":"<strong>Mensual</strong> — se te paga tu % cada mes que se renueva. <strong>Anual</strong> — tu % en cada renovación <em>anual</em>, no mensual. <strong>De por vida</strong> — tu % una sola vez, en la única compra.","lAvail":"Disponible para pago","lPending":"Pendiente (liberando)","lPaid":"Pagado hasta la fecha","lLifetimeEarn":"Ganancias totales","lRevShare":"Ingresos referidos y tu parte","revShareA":"pagado por tus referidos","revShareB":"tu","revShareC":"de neto =","kEarnings12":"Ganancias — últimos 12 meses","kPayoutMethod":"Método de pago","noPayout":"Aún no hay método de pago registrado.","methodLabel":"Método","savePayoutBtn":"Guardar método de pago","payoutStoreNote":"Solo guardamos un correo de PayPal o un correo / Wisetag / enlace de pago de Wise — <strong>nunca</strong> un número de cuenta bancaria o de tarjeta. ¿Necesitas una transferencia bancaria? Usa el cuadro de mensaje de abajo y lo arreglamos en privado. Cada cambio queda registrado y se nos envía por correo.","kMessageUs":"Escríbenos","subjectLabel":"Asunto <span style=\"font-weight:400;color:var(--ink-soft)\">(opcional)</span>","subjectPh":"p. ej. Pregunta sobre un pago","messageLabel":"Mensaje","messagePh":"Cualquier cosa sobre el programa, tu enlace, los pagos…","sendMsgBtn":"Enviar mensaje","signOutBtn":"Cerrar sesión","handleLabelPaypal":"Correo de PayPal","handleLabelWise":"Correo / Wisetag / enlace de pago de Wise","handlePhPaypal":"tu@ejemplo.com","handlePhWise":"tu@ejemplo.com  ·  $tutag  ·  wise.com/pay/…","payoutNote":"Ganas el {pct}% de los ingresos netos en cada cobro desde tu enlace, mientras la persona siga suscrita — los planes mensuales pagan tu parte cada mes, los anuales una vez al año en la renovación, los de por vida una vez. Las ganancias nuevas cumplen una retención de 14 días antes de pasar a «Disponible para pago», y luego se pagan cada mes (mínimo $25).","payoutOnFile":"Registrado: <strong>{method}</strong> — <span class='mono'>{handle}</span>","chartEmpty":"Aún no hay ganancias — tu gráfica se llena a medida que se cobra a los suscriptores referidos.","fxNote":"Los montos que no están en USD son aproximados — 1 USD ≈ {rate} {cur}, actualizado {date}. Las comisiones se registran y se pagan en USD; tu banco o PayPal hace la conversión a su propia tasa.","enterEmailFirst":"Primero ingresa tu correo.","checkInbox":"Revisa tu bandeja de entrada — enviamos un enlace de acceso a {email}.","couldntSendLink":"No se pudo enviar ese enlace: {err}","linkDidntWork":"Ese enlace no funcionó: {err}","signedInAs":"Sesión iniciada como {email}","failedLoadStats":"No se pudieron cargar tus estadísticas.","couldntLoadDash":"No se pudo cargar tu panel","enterHandleFirst":"Primero ingresa tu dato de pago.","saving":"Guardando…","couldntSave":"No se pudo guardar eso.","saved":"Guardado. Registramos el cambio.","writeMessageFirst":"Primero escribe un mensaje.","sending":"Enviando…","couldntSend":"No se pudo enviar eso.","messageSent":"Enviado — te responderemos por correo."},"fil":{"title":"GlucoBeacon Partner Dashboard","langLabel":"Wika","curLabel":"Pera","signInTitle":"Partner sign-in","signInSub":"Ilagay ang email na ginamit sa pag-set up ng iyong partner account. Magpapadala kami ng isang beses na sign-in link — walang password.","emailLabel":"Email address","sendLinkBtn":"Ipadala ang sign-in link","notPartnerYet":"Hindi pa partner? <a href=\"/fil/partners/program.html\">Tingnan kung paano gumagana ang programa &rarr;</a>","confirmTitle":"Kumpirmahin ang iyong email","confirmSub":"I-type ulit ang iyong email para kumpirmahing sa iyo ang sign-in link na ito.","continueBtn":"Magpatuloy","dashTitle":"Ang iyong dashboard","kReferralLink":"Ang iyong referral link","copyLink":"Kopyahin ang link","copied":"Nakopya","statusActive":"Aktibo","statusInactive":"Hindi aktibo","lInstalls":"Mga na-refer na install","lPayingSubs":"Mga nagbabayad na subscriber","lSubsByPlan":"Mga na-refer na subscriber, ayon sa plan","planMonthly":"Buwanan","planAnnual":"Taunan","planLifetime":"Lifetime","planNote":"<strong>Buwanan</strong> — binabayaran ka ng iyong % kada buwan na nagre-renew. <strong>Taunan</strong> — ang iyong % sa bawat <em>taunang</em> renewal, hindi buwanan. <strong>Lifetime</strong> — ang iyong % nang minsan, sa iisang pagbili.","lAvail":"Available para bayaran","lPending":"Nakabinbin (nagcle-clear)","lPaid":"Naibayad hanggang ngayon","lLifetimeEarn":"Kabuuang kita","lRevShare":"Na-refer na kita at ang bahagi mo","revShareA":"binayad ng iyong mga referral","revShareB":"ang iyong","revShareC":"ng net =","kEarnings12":"Kita — nakaraang 12 buwan","kPayoutMethod":"Paraan ng pagbabayad","noPayout":"Wala pang naka-file na paraan ng pagbabayad.","methodLabel":"Paraan","savePayoutBtn":"I-save ang paraan ng pagbabayad","payoutStoreNote":"Nag-i-store lang kami ng PayPal email o Wise email / Wisetag / pay-link — <strong>hindi kailanman</strong> ang bank account o card number. Kailangan ng bank transfer? Gamitin ang message box sa ibaba at ika-arrange namin nang pribado. Bawat pagbabago ay naka-log at ini-email sa amin.","kMessageUs":"Mag-message sa amin","subjectLabel":"Subject <span style=\"font-weight:400;color:var(--ink-soft)\">(opsyonal)</span>","subjectPh":"hal. Tanong tungkol sa isang payout","messageLabel":"Mensahe","messagePh":"Kahit ano tungkol sa programa, sa link mo, sa mga payout…","sendMsgBtn":"Ipadala ang mensahe","signOutBtn":"Mag-sign out","handleLabelPaypal":"PayPal email","handleLabelWise":"Wise email / Wisetag / pay-link","handlePhPaypal":"ikaw@halimbawa.com","handlePhWise":"ikaw@halimbawa.com  ·  $iyongtag  ·  wise.com/pay/…","payoutNote":"Kumikita ka ng {pct}% ng net revenue sa bawat singil mula sa link mo, hangga't naka-subscribe sila — ang buwanang plan ay naniningil ng bahagi mo kada buwan, ang taunan ay minsan kada taon sa renewal, ang lifetime ay minsan. Ang bagong kita ay dumaraan sa 14-araw na hold bago lumipat sa “Available para bayaran”, tapos binabayaran buwanan (minimum $25).","payoutOnFile":"Naka-file: <strong>{method}</strong> — <span class='mono'>{handle}</span>","chartEmpty":"Wala pang kita — mapupunan ang chart mo habang siningil ang mga na-refer na subscriber.","fxNote":"Ang mga halagang wala sa USD ay tinatantya lang — 1 USD ≈ {rate} {cur}, na-update {date}. Ang mga commission ay naka-track at binabayaran sa USD; ang bangko mo o PayPal ang magko-convert sa sarili nilang rate.","enterEmailFirst":"Ilagay muna ang iyong email.","checkInbox":"Tingnan ang iyong inbox — nagpadala kami ng sign-in link sa {email}.","couldntSendLink":"Hindi maipadala ang link na iyon: {err}","linkDidntWork":"Hindi gumana ang link na iyon: {err}","signedInAs":"Naka-sign in bilang {email}","failedLoadStats":"Hindi ma-load ang iyong stats.","couldntLoadDash":"Hindi ma-load ang iyong dashboard","enterHandleFirst":"Ilagay muna ang iyong payout handle.","saving":"Nagse-save…","couldntSave":"Hindi ma-save iyon.","saved":"Na-save. Na-log namin ang pagbabago.","writeMessageFirst":"Magsulat muna ng mensahe.","sending":"Nagpapadala…","couldntSend":"Hindi maipadala iyon.","messageSent":"Naipadala — babalikan ka namin sa email."},"hi":{"title":"GlucoBeacon Partner Dashboard","langLabel":"भाषा","curLabel":"मुद्रा","signInTitle":"Partner sign-in","signInSub":"वह email डालें जिससे आपका partner account set up हुआ था। हम एक बार इस्तेमाल होने वाला sign-in link भेजेंगे — कोई password नहीं।","emailLabel":"Email address","sendLinkBtn":"sign-in link भेजें","notPartnerYet":"अभी partner नहीं हैं? <a href=\"/hi/partners/program.html\">देखें program कैसे काम करता है &rarr;</a>","confirmTitle":"अपना email confirm करें","confirmSub":"यह पुष्टि करने के लिए कि यह sign-in link आपका है, अपना email दोबारा डालें।","continueBtn":"जारी रखें","dashTitle":"आपका dashboard","kReferralLink":"आपका referral link","copyLink":"link copy करें","copied":"Copy हो गया","statusActive":"Active","statusInactive":"Inactive","lInstalls":"Referred installs","lPayingSubs":"भुगतान करने वाले subscribers","lSubsByPlan":"Referred subscribers, plan के अनुसार","planMonthly":"मासिक","planAnnual":"वार्षिक","planLifetime":"Lifetime","planNote":"<strong>मासिक</strong> — हर महीने renew होने पर आपको आपका % मिलता है। <strong>वार्षिक</strong> — हर <em>सालाना</em> renewal पर आपका %, मासिक नहीं। <strong>Lifetime</strong> — एक ही खरीद पर, एक बार आपका %।","lAvail":"भुगतान के लिए उपलब्ध","lPending":"लंबित (clear हो रहा)","lPaid":"अब तक भुगतान किया","lLifetimeEarn":"कुल कमाई","lRevShare":"Referred राजस्व और आपका हिस्सा","revShareA":"आपके referrals ने भुगतान किया","revShareB":"आपका","revShareC":"net का =","kEarnings12":"कमाई — पिछले 12 महीने","kPayoutMethod":"भुगतान का तरीका","noPayout":"अभी कोई भुगतान तरीका file पर नहीं है।","methodLabel":"तरीका","savePayoutBtn":"भुगतान तरीका save करें","payoutStoreNote":"हम सिर्य़ एक PayPal email या Wise email / Wisetag / pay-link store करते हैं — <strong>कभी नहीं</strong> कोई bank account या card number। bank transfer चाहिए? नीचे दिए message box का इस्तेमाल करें और हम इसे निजी तौर पर व्यवस्थित कर देंगे। हर बदलाव log होता है और हमें email किया जाता है।","kMessageUs":"हमें message करें","subjectLabel":"Subject <span style=\"font-weight:400;color:var(--ink-soft)\">(वैकल्पिक)</span>","subjectPh":"जैसे किसी payout के बारे में सवाल","messageLabel":"Message","messagePh":"program, आपके link, payouts — किसी भी बारे में…","sendMsgBtn":"message भेजें","signOutBtn":"Sign out","handleLabelPaypal":"PayPal email","handleLabelWise":"Wise email / Wisetag / pay-link","handlePhPaypal":"aap@udaharan.com","handlePhWise":"aap@udaharan.com  ·  $aapkatag  ·  wise.com/pay/…","payoutNote":"आप अपने link से होने वाले हर billing पर net revenue का {pct}% कमाते हैं, जब तक वे subscribed रहते हैं — मासिक plans हर महीने आपका हिस्सा bill करते हैं, वार्षिक plans साल में एक बार renewal पर, lifetime एक बार। नई कमाई “भुगतान के लिए उपलब्ध” में जाने से पहले 14-दिन का hold पूरा करती है, फिर मासिक भुगतान होता है (न्यूनतम $25)।","payoutOnFile":"File पर: <strong>{method}</strong> — <span class='mono'>{handle}</span>","chartEmpty":"अभी कोई कमाई नहीं — जैसे-जैसे referred subscribers से शुल्क लिया जाएगा, आपका chart भरता जाएगा।","fxNote":"USD के अलावा दिखाई गई राशियां अनुमानित हैं — 1 USD ≈ {rate} {cur}, {date} को अपडेट किया गया। commissions USD में track और भुगतान की जाती हैं; आपका bank या PayPal अपनी दर से रूपांतरण करता है।","enterEmailFirst":"पहले अपना email डालें।","checkInbox":"अपना inbox देखें — हमने {email} पर एक sign-in link भेजा है।","couldntSendLink":"वह link नहीं भेजा जा सका: {err}","linkDidntWork":"वह link काम नहीं आया: {err}","signedInAs":"{email} के रूप में signed in","failedLoadStats":"आपके आंकड़े load नहीं हो सके।","couldntLoadDash":"आपका dashboard load नहीं हो सका","enterHandleFirst":"पहले अपना payout handle डालें।","saving":"Save हो रहा है…","couldntSave":"वह save नहीं हो सका।","saved":"Save हो गया। हमने बदलाव log कर लिया।","writeMessageFirst":"पहले एक message लिखें।","sending":"भेजा जा रहा है…","couldntSend":"वह नहीं भेजा जा सका।","messageSent":"भेज दिया — हम आपको email पर जवाब देंगे।"}};
+
+  function T(k) {
+    var d = I18N[CUR_LANG] || I18N.en;
+    if (d[k] != null) return d[k];
+    if (I18N.en[k] != null) return I18N.en[k];
+    return k;
+  }
+  function fmt(str, map) {
+    return String(str).replace(/\{(\w+)\}/g, function (_, k) {
+      return map[k] != null ? String(map[k]) : "{" + k + "}";
+    });
+  }
+
+  // ---- currency (display only; ledger is USD) ----
+  function curLocale() { return LOCALE_FOR[CUR_LANG] || "en-US"; }
+  function fxRate(cur) {
+    if (cur === "USD") return 1;
+    return FX && FX.rates && isFinite(FX.rates[cur]) ? Number(FX.rates[cur]) : null;
+  }
+  function fmtCur(usd, cur) {
+    var v = Number(usd) || 0;
+    var r = fxRate(cur);
+    var code = r == null ? "USD" : cur;
+    var amt = r == null ? v : v * r;
+    try {
+      return new Intl.NumberFormat(curLocale(), { style: "currency", currency: code }).format(amt);
+    } catch (e) {
+      return "$" + amt.toFixed(2);
+    }
+  }
+  function moneyHtml(usd, alt) {
+    var main = fmtCur(usd, CUR);
+    if (alt === false || CUR === "USD" || fxRate(CUR) == null) return esc(main);
+    return esc(main) + '<span class="usd-alt">' + esc(fmtCur(usd, "USD")) + "</span>";
+  }
+  function fxDate() {
+    var s = FX && FX.ratesDate ? String(FX.ratesDate) : "";
+    var m = s.match(/(\d{1,2} \w{3} \d{4})/);
+    return m ? m[1] : "";
+  }
+  function renderFxNote() {
+    var el = $("fxNote");
+    if (!el) return;
+    var r = fxRate(CUR);
+    if (CUR === "USD" || r == null) { el.hidden = true; el.textContent = ""; return; }
+    el.hidden = false;
+    el.textContent = fmt(T("fxNote"), { cur: CUR, rate: r >= 100 ? Math.round(r) : r.toFixed(2), date: fxDate() });
+  }
+  function curName(code) {
+    try { return code + " \u2013 " + new Intl.DisplayNames([curLocale()], { type: "currency" }).of(code); }
+    catch (e) { return code; }
+  }
+  function populateCurrencies() {
+    var sel = $("curSelect");
+    if (!sel || !FX || !FX.rates) return;
+    var all = Object.keys(FX.rates).filter(function (c) { return /^[A-Z]{3}$/.test(c); });
+    if (all.indexOf("USD") < 0) all.push("USD");
+    var feat = (FX.featured || ["USD"]).filter(function (c) { return c === "USD" || all.indexOf(c) >= 0; });
+    var rest = all.filter(function (c) { return feat.indexOf(c) < 0; }).sort();
+    sel.innerHTML = "";
+    feat.forEach(function (c) {
+      var o = document.createElement("option"); o.value = c; o.textContent = curName(c); sel.appendChild(o);
+    });
+    if (rest.length) {
+      var og = document.createElement("optgroup"); og.label = "\u00b7\u00b7\u00b7";
+      rest.forEach(function (c) { var o = document.createElement("option"); o.value = c; o.textContent = curName(c); og.appendChild(o); });
+      sel.appendChild(og);
+    }
+    if (feat.indexOf(CUR) < 0 && rest.indexOf(CUR) < 0) CUR = "USD";
+    sel.value = CUR;
+  }
+  function applyCurrency(cur) {
+    CUR = cur || "USD";
+    try { localStorage.setItem(CUR_KEY, CUR); } catch (e) {}
+    var sel = $("curSelect"); if (sel) sel.value = CUR;
+    if (LAST_STATS) fill(LAST_STATS); else renderFxNote();
+  }
+
+  function applyLang(lang) {
+    if (!I18N[lang]) lang = "en";
+    CUR_LANG = lang;
+    try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+    document.documentElement.lang = lang;
+    var d = I18N[lang], els, i;
+    if (d.title) document.title = d.title;
+    els = document.querySelectorAll("[data-i18n]");
+    for (i = 0; i < els.length; i++) { var ka = els[i].getAttribute("data-i18n"); if (d[ka] != null) els[i].textContent = d[ka]; }
+    els = document.querySelectorAll("[data-i18n-html]");
+    for (i = 0; i < els.length; i++) { var kb = els[i].getAttribute("data-i18n-html"); if (d[kb] != null) els[i].innerHTML = d[kb]; }
+    els = document.querySelectorAll("[data-i18n-ph]");
+    for (i = 0; i < els.length; i++) { var kc = els[i].getAttribute("data-i18n-ph"); if (d[kc] != null) els[i].placeholder = d[kc]; }
+    var ls = $("langSelect");
+    if (ls) { ls.value = lang; ls.setAttribute("aria-label", T("langLabel")); }
+    var cs = $("curSelect");
+    if (cs) cs.setAttribute("aria-label", T("curLabel"));
+    syncHandleLabel();
+    var cb = $("copyLinkBtn");
+    if (cb && !cb.getAttribute("data-copied")) cb.textContent = T("copyLink");
+    if (auth.currentUser) $("welcomeMsg").textContent = fmt(T("signedInAs"), { email: auth.currentUser.email });
+    if (FX) populateCurrencies();
+    if (LAST_STATS) fill(LAST_STATS); else renderFxNote();
+  }
 
   function showStep(step) {
     requestStep.hidden = step !== "request";
@@ -296,7 +423,7 @@
   }
   function setMsg(el, text, kind) { el.textContent = text || ""; el.className = "msg" + (kind ? " " + kind : ""); }
   function money(n) { var v = Number(n); return (isFinite(v) ? v : 0).toFixed(2); }
-  function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : s; return d.innerHTML; }
+  function esc(s) { var dv = document.createElement("div"); dv.textContent = s == null ? "" : s; return dv.innerHTML; }
   async function idToken() { var u = auth.currentUser; return u ? u.getIdToken() : null; }
   async function api(path, opts) {
     opts = opts || {};
@@ -311,20 +438,20 @@
   // ---- Step 1: send link ----
   $("sendLinkBtn").addEventListener("click", function () {
     var email = $("emailInput").value.trim();
-    if (!email) { setMsg($("requestMsg"), "Enter your email first.", "error"); return; }
+    if (!email) { setMsg($("requestMsg"), T("enterEmailFirst"), "error"); return; }
     var btn = this; btn.disabled = true;
     auth.sendSignInLinkToEmail(email, { url: location.href.split("?")[0], handleCodeInApp: true }).then(function () {
       localStorage.setItem(STORAGE_KEY, email);
-      setMsg($("requestMsg"), "Check your inbox — we sent a sign-in link to " + email + ".", "ok");
+      setMsg($("requestMsg"), fmt(T("checkInbox"), { email: email }), "ok");
     }).catch(function (err) {
-      setMsg($("requestMsg"), "Couldn't send that link: " + err.message, "error");
+      setMsg($("requestMsg"), fmt(T("couldntSendLink"), { err: err.message }), "error");
     }).finally(function () { btn.disabled = false; });
   });
 
   // ---- Step 2: confirm ----
   $("confirmBtn").addEventListener("click", function () {
     var email = $("confirmEmailInput").value.trim();
-    if (!email) { setMsg($("confirmMsg"), "Enter your email first.", "error"); return; }
+    if (!email) { setMsg($("confirmMsg"), T("enterEmailFirst"), "error"); return; }
     completeSignIn(email);
   });
   function completeSignIn(email) {
@@ -332,7 +459,7 @@
       localStorage.removeItem(STORAGE_KEY);
       history.replaceState({}, document.title, location.pathname);
       loadDashboard();
-    }).catch(function (err) { setMsg($("confirmMsg"), "That link didn't work: " + err.message, "error"); });
+    }).catch(function (err) { setMsg($("confirmMsg"), fmt(T("linkDidntWork"), { err: err.message }), "error"); });
   }
 
   // ---- Step 3: dashboard ----
@@ -340,7 +467,7 @@
     var wrap = $("chartWrap");
     var vals = (series || []).map(function (m) { return Number(m.usd) || 0; });
     var max = Math.max.apply(null, vals.concat([0]));
-    if (max <= 0) { wrap.innerHTML = '<div class="chart-empty">No earnings yet — your chart fills in as referred subscribers are billed.</div>'; return; }
+    if (max <= 0) { wrap.innerHTML = '<div class="chart-empty">' + esc(T("chartEmpty")) + '</div>'; return; }
     var W = 480, H = 150, pad = 22, n = series.length;
     var bw = (W - pad * 2) / n * 0.62, gap = (W - pad * 2) / n;
     var bars = "", labels = "";
@@ -348,7 +475,7 @@
       var x = pad + i * gap + (gap - bw) / 2;
       var h = max ? (H - pad * 2) * (Number(m.usd) || 0) / max : 0;
       var y = H - pad - h;
-      bars += '<rect class="bar" x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + bw.toFixed(1) + '" height="' + Math.max(h, 0).toFixed(1) + '" rx="2"><title>' + esc(m.month) + " — $" + money(m.usd) + '</title></rect>';
+      bars += '<rect class="bar" x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + bw.toFixed(1) + '" height="' + Math.max(h, 0).toFixed(1) + '" rx="2"><title>' + esc(m.month) + " \u2014 " + esc(fmtCur(m.usd, CUR)) + '</title></rect>';
       if (i % 2 === 0 || i === n - 1) labels += '<text x="' + (x + bw / 2).toFixed(1) + '" y="' + (H - 6) + '" text-anchor="middle">' + esc(m.month.slice(2)) + "</text>";
     });
     wrap.innerHTML = '<svg class="chart" viewBox="0 0 ' + W + " " + H + '" preserveAspectRatio="xMidYMid meet">' +
@@ -359,33 +486,37 @@
   function renderPayout(p) {
     var cur = $("curPayout");
     if (p && p.method && p.handleMasked) {
-      cur.innerHTML = "On file: <strong>" + esc(p.method === "wise" ? "Wise" : "PayPal") + "</strong> — <span class='mono'>" + esc(p.handleMasked) + "</span>";
+      cur.innerHTML = fmt(T("payoutOnFile"), { method: esc(p.method === "wise" ? "Wise" : "PayPal"), handle: esc(p.handleMasked) });
       $("payoutMethod").value = p.method;
     } else {
-      cur.textContent = "No payout method on file yet.";
+      cur.textContent = T("noPayout");
     }
     syncHandleLabel();
   }
   function syncHandleLabel() {
     var m = $("payoutMethod").value;
-    $("payoutHandleLabel").textContent = m === "wise" ? "Wise email / Wisetag / pay-link" : "PayPal email";
-    $("payoutHandle").placeholder = m === "wise" ? "you@example.com  ·  $yourtag  ·  wise.com/pay/…" : "you@example.com";
+    $("payoutHandleLabel").textContent = m === "wise" ? T("handleLabelWise") : T("handleLabelPaypal");
+    $("payoutHandle").placeholder = m === "wise" ? T("handlePhWise") : T("handlePhPaypal");
   }
   $("payoutMethod").addEventListener("change", syncHandleLabel);
 
   function fill(data) {
-    $("codePill").textContent = data.code || "—";
+    LAST_STATS = data;
+    if (data.fx) { FX = data.fx; populateCurrencies(); }
+    $("codePill").textContent = data.code || "\u2014";
     var link = "https://glucobeacon.com/r/" + (data.code || "");
     $("linkRow").textContent = link;
     $("copyLinkBtn").onclick = function () {
       navigator.clipboard.writeText(link).then(function () {
-        $("copyLinkBtn").textContent = "Copied";
-        setTimeout(function () { $("copyLinkBtn").textContent = "Copy link"; }, 1600);
+        var b = $("copyLinkBtn");
+        b.setAttribute("data-copied", "1");
+        b.textContent = T("copied");
+        setTimeout(function () { b.removeAttribute("data-copied"); b.textContent = T("copyLink"); }, 1600);
       });
     };
     var sp = $("statusPill");
     sp.hidden = false;
-    sp.textContent = data.active ? "Active" : "Inactive";
+    sp.textContent = data.active ? T("statusActive") : T("statusInactive");
     sp.className = "pill " + (data.active ? "ok" : "pos");
 
     var bp = data.subscribersByPlan || {};
@@ -394,34 +525,32 @@
     $("s_subs").textContent = data.referredSubscribers || 0;
     $("s_monthly").textContent = bp.monthly || 0;
     $("s_annual").textContent = bp.annual || 0;
-    $("s_lifetime").textContent = bp.lifetime || 0;              // count of lifetime buyers
-    $("s_avail").textContent = money(data.availableUsd);
-    $("s_pending").textContent = money(data.pendingUsd);
-    $("s_paid").textContent = money(data.paidUsd);
-    $("s_earn_lifetime").textContent = money(data.lifetimeUsd);  // total $ earned
-    $("s_gross").textContent = "$" + money(data.referredRevenueUsd);
+    $("s_lifetime").textContent = bp.lifetime || 0;
+    $("s_avail").innerHTML = moneyHtml(data.availableUsd);
+    $("s_pending").innerHTML = moneyHtml(data.pendingUsd);
+    $("s_paid").innerHTML = moneyHtml(data.paidUsd);
+    $("s_earn_lifetime").innerHTML = moneyHtml(data.lifetimeUsd);
+    $("s_gross").innerHTML = moneyHtml(data.referredRevenueUsd, false);
     $("s_rate").textContent = pct + "%";
-    $("s_share").textContent = "$" + money(data.lifetimeUsd);
+    $("s_share").innerHTML = moneyHtml(data.lifetimeUsd, false);
 
-    $("payoutNote").textContent =
-      "You earn " + pct + "% of net revenue on every billing from your link, for as long as they stay subscribed — " +
-      "monthly plans bill your share every month, annual plans once per year at renewal, lifetime once. " +
-      "New earnings clear a 14-day hold before moving to “Available to pay out”, then are paid monthly (minimum $25).";
+    $("payoutNote").textContent = fmt(T("payoutNote"), { pct: pct });
 
     renderChart(data.monthlyEarnings);
     renderPayout(data.payout);
+    renderFxNote();
   }
 
   function loadDashboard() {
     var user = auth.currentUser;
     if (!user) return;
-    $("welcomeMsg").textContent = "Signed in as " + user.email;
+    $("welcomeMsg").textContent = fmt(T("signedInAs"), { email: user.email });
     showStep("dashboard");
     api("getInfluencerStats").then(function (r) {
-      if (!r.ok) throw new Error(r.data.error || "Failed to load your stats.");
+      if (!r.ok) throw new Error(r.data.error || T("failedLoadStats"));
       fill(r.data);
     }).catch(function (err) {
-      $("dashTitle").textContent = "Couldn't load your dashboard";
+      $("dashTitle").textContent = T("couldntLoadDash");
       $("welcomeMsg").innerHTML = '<span class="msg error">' + esc(err.message) + "</span>";
     });
   }
@@ -429,12 +558,12 @@
   $("savePayoutBtn").addEventListener("click", function () {
     var method = $("payoutMethod").value;
     var handle = $("payoutHandle").value.trim();
-    if (!handle) { setMsg($("payoutMsg"), "Enter your payout handle first.", "error"); return; }
+    if (!handle) { setMsg($("payoutMsg"), T("enterHandleFirst"), "error"); return; }
     var btn = this; btn.disabled = true;
-    setMsg($("payoutMsg"), "Saving…");
+    setMsg($("payoutMsg"), T("saving"));
     api("setPayoutMethod", { method: "POST", body: { method: method, handle: handle } }).then(function (r) {
-      if (!r.ok) throw new Error(r.data.error || "Couldn't save that.");
-      setMsg($("payoutMsg"), "Saved. We've logged the change.", "ok");
+      if (!r.ok) throw new Error(r.data.error || T("couldntSave"));
+      setMsg($("payoutMsg"), T("saved"), "ok");
       $("payoutHandle").value = "";
       renderPayout({ method: r.data.method, handleMasked: r.data.handleMasked });
     }).catch(function (err) {
@@ -445,12 +574,12 @@
   $("sendMsgBtn").addEventListener("click", function () {
     var subject = $("msgSubject").value.trim();
     var message = $("msgBody").value.trim();
-    if (message.length < 2) { setMsg($("contactMsg"), "Write a message first.", "error"); return; }
+    if (message.length < 2) { setMsg($("contactMsg"), T("writeMessageFirst"), "error"); return; }
     var btn = this; btn.disabled = true;
-    setMsg($("contactMsg"), "Sending…");
+    setMsg($("contactMsg"), T("sending"));
     api("partnerContact", { method: "POST", body: { subject: subject, message: message } }).then(function (r) {
-      if (!r.ok) throw new Error(r.data.error || "Couldn't send that.");
-      setMsg($("contactMsg"), "Sent — we'll get back to you by email.", "ok");
+      if (!r.ok) throw new Error(r.data.error || T("couldntSend"));
+      setMsg($("contactMsg"), T("messageSent"), "ok");
       $("msgSubject").value = ""; $("msgBody").value = "";
     }).catch(function (err) {
       setMsg($("contactMsg"), err.message, "error");
@@ -458,6 +587,23 @@
   });
 
   $("signOutBtn").addEventListener("click", function () { auth.signOut().then(function () { showStep("request"); }); });
+
+  // ---- language + currency init ----
+  try { var _c = localStorage.getItem(CUR_KEY); if (_c && /^[A-Z]{3}$/.test(_c)) CUR = _c; } catch (e) {}
+  var initLang = "en";
+  try {
+    var _s = localStorage.getItem(LANG_KEY);
+    if (_s && I18N[_s]) initLang = _s;
+    else {
+      var _n = (navigator.language || "en").toLowerCase();
+      if (_n.indexOf("es") === 0) initLang = "es";
+      else if (_n.indexOf("fil") === 0 || _n.indexOf("tl") === 0) initLang = "fil";
+      else if (_n.indexOf("hi") === 0) initLang = "hi";
+    }
+  } catch (e) {}
+  applyLang(initLang);
+  $("langSelect").addEventListener("change", function () { applyLang(this.value); });
+  $("curSelect").addEventListener("change", function () { applyCurrency(this.value); });
 
   if (auth.isSignInWithEmailLink(location.href)) {
     var saved = localStorage.getItem(STORAGE_KEY);
