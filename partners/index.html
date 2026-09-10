@@ -4,158 +4,254 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex, nofollow" />
-<title>GlucoBeacon Partners</title>
+<title>GlucoBeacon Partner Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
 <style>
   :root {
-    color-scheme: light;
-    --navy: #0b2447;
-    --blue: #19376d;
-    --accent: #ff8552;
-    --bg: #f5f7fa;
-    --card: #ffffff;
-    --text: #1c2733;
-    --muted: #6b7785;
-    --border: #e2e6ea;
+    --ground:#f6f4ef; --surface:#ffffff; --surface-sunk:#f1ede4;
+    --ink:#16233a; --ink-soft:#5c6b7f;
+    --navy:#0b2447; --on-navy:#eef2f8; --beacon:#e0671f; --beam:#fbe3cf;
+    --rule:#e4ded3; --rule-strong:#d3ccbd;
+    --positive:#1f7a4d; --hold:#916a29; --danger:#b3261e;
+    --shadow:0 18px 50px -28px rgba(20,30,50,0.28);
   }
-  * { box-sizing: border-box; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:#12161d; --surface:#1a1f28; --surface-sunk:#151a22;
+      --ink:#ece6da; --ink-soft:#9aa4b2;
+      --navy:#0c1a30; --on-navy:#dfe7f3; --beacon:#ff8f4d; --beam:#3a2a1c;
+      --rule:#2b323d; --rule-strong:#3a424e;
+      --positive:#55c98a; --hold:#d9b877; --danger:#f2857b;
+      --shadow:0 18px 60px -28px rgba(0,0,0,0.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:#12161d; --surface:#1a1f28; --surface-sunk:#151a22;
+    --ink:#ece6da; --ink-soft:#9aa4b2;
+    --navy:#0c1a30; --on-navy:#dfe7f3; --beacon:#ff8f4d; --beam:#3a2a1c;
+    --rule:#2b323d; --rule-strong:#3a424e;
+    --positive:#55c98a; --hold:#d9b877; --danger:#f2857b;
+    --shadow:0 18px 60px -28px rgba(0,0,0,0.6);
+  }
+
+  * { box-sizing:border-box; }
   body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
+    margin:0; background:var(--ground); color:var(--ink);
+    font-family:"Public Sans","Segoe UI",system-ui,-apple-system,sans-serif;
+    font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
   }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 36px;
-    max-width: 420px;
-    width: 100%;
-    box-shadow: 0 4px 24px rgba(11, 36, 71, 0.08);
+  .wrap { max-width:640px; margin:0 auto; padding:32px 20px 80px; }
+  .eyebrow {
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:11.5px; font-weight:500; letter-spacing:0.22em; text-transform:uppercase;
+    color:var(--beacon); display:flex; align-items:center; gap:11px; margin-bottom:18px;
   }
-  .logo {
-    font-weight: 800;
-    font-size: 20px;
-    color: var(--navy);
-    margin-bottom: 4px;
+  .beacon-dot {
+    width:10px; height:10px; border-radius:50%; background:var(--beacon); flex:none;
+    animation:pulse 3.4s ease-out infinite;
   }
-  .subtitle {
-    color: var(--muted);
-    font-size: 14px;
-    margin-bottom: 28px;
+  @keyframes pulse {
+    0%{box-shadow:0 0 0 0 rgba(224,103,31,0.5);}
+    70%{box-shadow:0 0 0 14px rgba(224,103,31,0);}
+    100%{box-shadow:0 0 0 0 rgba(224,103,31,0);}
   }
+  @media (prefers-reduced-motion:reduce){ .beacon-dot{animation:none;} }
   h1 {
-    font-size: 22px;
-    margin: 0 0 6px;
-    color: var(--navy);
+    font-family:"Fraunces",Georgia,serif; font-weight:550;
+    font-size:clamp(1.7rem,1.3rem+1.6vw,2.2rem); line-height:1.1; letter-spacing:-0.014em;
+    margin:0 0 6px; color:var(--ink);
   }
-  p.lead {
-    color: var(--muted);
-    font-size: 14px;
-    margin: 0 0 24px;
-    line-height: 1.5;
+  .sub { color:var(--ink-soft); font-size:0.95rem; margin:0 0 26px; }
+  .beam { height:2px; border:0; margin:0 0 30px;
+    background:linear-gradient(90deg,var(--beacon) 0%,var(--rule-strong) 42%,transparent 100%); }
+
+  .card {
+    background:var(--surface); border:1px solid var(--rule); border-radius:16px;
+    padding:26px; box-shadow:var(--shadow);
   }
-  input[type="email"] {
-    width: 100%;
-    padding: 12px 14px;
-    border-radius: 10px;
-    border: 1px solid var(--border);
-    font-size: 15px;
-    margin-bottom: 14px;
+  .kicker {
+    font-family:"IBM Plex Mono",ui-monospace,monospace;
+    font-size:11px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase;
+    color:var(--ink-soft); margin:0 0 14px;
   }
-  input[type="email"]:focus {
-    outline: 2px solid var(--blue);
-    border-color: var(--blue);
+  section.block { margin-top:26px; }
+
+  label { display:block; font-size:0.9rem; font-weight:600; margin:0 0 7px; color:var(--ink); }
+  input, select, textarea {
+    width:100%; padding:11px 13px; border-radius:10px; border:1px solid var(--rule-strong);
+    background:var(--ground); color:var(--ink); font:inherit; font-size:0.95rem;
   }
+  textarea { min-height:110px; resize:vertical; }
+  input:focus, select:focus, textarea:focus { outline:2px solid var(--beacon); outline-offset:1px; border-color:var(--beacon); }
   button {
-    width: 100%;
-    padding: 12px 14px;
-    border-radius: 10px;
-    border: none;
-    background: var(--blue);
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
+    appearance:none; border:0; border-radius:10px; padding:11px 18px;
+    background:var(--navy); color:var(--on-navy); font:inherit; font-weight:600; font-size:0.95rem;
+    cursor:pointer;
   }
-  button:hover { background: var(--navy); }
-  button:disabled { opacity: 0.6; cursor: default; }
-  button.secondary {
-    background: transparent;
-    color: var(--blue);
-    border: 1px solid var(--border);
-    margin-top: 10px;
-  }
-  button.secondary:hover { background: var(--bg); }
-  .msg {
-    font-size: 13px;
-    margin-top: 12px;
-    line-height: 1.5;
-  }
-  .msg.error { color: #c0392b; }
-  .msg.success { color: #1e8449; }
-  .stat-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 14px 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .stat-row:last-of-type { border-bottom: none; }
-  .stat-label { color: var(--muted); font-size: 14px; }
-  .stat-value { font-size: 22px; font-weight: 700; color: var(--navy); }
+  button:hover { background:var(--beacon); color:#fff; }
+  button:disabled { opacity:0.55; cursor:default; }
+  button.ghost { background:transparent; color:var(--beacon); border:1px solid var(--rule-strong); }
+  button.ghost:hover { background:var(--beam); color:var(--beacon); }
+  button.small { padding:7px 12px; font-size:0.82rem; }
+
+  .msg { font-size:0.85rem; margin-top:11px; line-height:1.5; }
+  .msg.error { color:var(--danger); }
+  .msg.ok { color:var(--positive); }
+  [hidden] { display:none !important; }
+
+  /* dashboard bits */
+  .code-line { display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:6px; }
   .code-pill {
-    display: inline-block;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 4px 10px;
-    font-family: ui-monospace, monospace;
-    font-weight: 700;
-    color: var(--accent);
+    font-family:"IBM Plex Mono",ui-monospace,monospace; font-weight:600; font-size:1.05rem;
+    background:var(--surface-sunk); border:1px solid var(--rule); border-radius:8px;
+    padding:5px 11px; color:var(--beacon);
   }
-  [hidden] { display: none !important; }
+  .link-row {
+    font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:0.82rem; color:var(--ink-soft);
+    word-break:break-all; margin:2px 0 0;
+  }
+
+  .stat-grid { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:12px; overflow:hidden; }
+  .stat { background:var(--surface); padding:16px 16px 14px; }
+  .stat .l { font-size:0.8rem; color:var(--ink-soft); margin:0 0 4px; }
+  .stat .v { font-family:"Fraunces",Georgia,serif; font-weight:550; font-size:1.5rem; line-height:1.1; color:var(--ink); }
+  .stat .v.money::before { content:"$"; font-size:0.75em; opacity:0.6; margin-right:1px; }
+  .stat.wide { grid-column:1 / -1; }
+
+  .plan-split { display:flex; gap:10px; margin-top:9px; }
+  .plan-split .p { flex:1; background:var(--surface-sunk); border:1px solid var(--rule); border-radius:9px; padding:9px 10px; text-align:center; }
+  .plan-split .p .n { font-family:"Fraunces",Georgia,serif; font-weight:550; font-size:1.15rem; color:var(--ink); }
+  .plan-split .p .k { font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-soft); }
+
+  .chart-wrap { margin-top:12px; }
+  svg.chart { width:100%; height:auto; display:block; overflow:visible; }
+  svg.chart .bar { fill:var(--beacon); }
+  svg.chart .bar:hover { fill:var(--navy); }
+  svg.chart text { fill:var(--ink-soft); font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:9px; }
+  svg.chart .axis { stroke:var(--rule-strong); stroke-width:1; }
+  .chart-empty { color:var(--ink-soft); font-size:0.88rem; padding:18px 0; text-align:center; }
+
+  .pill { display:inline-block; font-size:0.75rem; font-weight:600; padding:3px 9px; border-radius:999px; }
+  .pill.pos { background:var(--beam); color:var(--hold); }
+  .pill.ok  { background:rgba(31,122,77,0.14); color:var(--positive); }
+  .note { font-size:0.82rem; color:var(--ink-soft); line-height:1.55; }
+  .cur-payout { font-size:0.9rem; margin:0 0 14px; }
+  .cur-payout .mono { font-family:"IBM Plex Mono",ui-monospace,monospace; }
+  .row2 { display:grid; grid-template-columns:150px 1fr; gap:12px; }
+  @media (max-width:520px){ .row2{ grid-template-columns:1fr; } .stat .v{ font-size:1.3rem; } }
 </style>
 </head>
 <body>
+<div class="wrap">
 
-<div class="card">
-  <div class="logo">GlucoBeacon</div>
-  <div class="subtitle">Partner Dashboard</div>
+  <div class="eyebrow"><span class="beacon-dot"></span> GlucoBeacon · Partners</div>
 
-  <!-- Step 1: request a sign-in link -->
+  <!-- STEP 1 -->
   <div id="requestStep">
-    <h1>Sign in</h1>
-    <p class="lead">Enter the email address we set up your partner account with. We'll send you a one-time sign-in link — no password needed.</p>
-    <input type="email" id="emailInput" placeholder="you@example.com" autocomplete="email" />
-    <button id="sendLinkBtn">Send sign-in link</button>
-    <div id="requestMsg" class="msg"></div>
-    <p class="lead" style="margin-top:18px; font-size:13px;">
-      Not a partner yet? <a href="/partners/program.html" style="color:var(--blue); font-weight:600;">See how the program works &rarr;</a>
-    </p>
+    <h1>Partner sign-in</h1>
+    <p class="sub">Enter the email your partner account was set up with. We'll send a one-time sign-in link — no password.</p>
+    <hr class="beam" />
+    <div class="card">
+      <label for="emailInput">Email address</label>
+      <input type="email" id="emailInput" placeholder="you@example.com" autocomplete="email" />
+      <div style="margin-top:14px"><button id="sendLinkBtn">Send sign-in link</button></div>
+      <div id="requestMsg" class="msg"></div>
+      <p class="note" style="margin-top:16px">Not a partner yet? <a href="/partners/program.html">See how the program works &rarr;</a></p>
+    </div>
   </div>
 
-  <!-- Step 2: confirm email if link was opened on a different device -->
+  <!-- STEP 2 -->
   <div id="confirmStep" hidden>
     <h1>Confirm your email</h1>
-    <p class="lead">Please re-enter your email to confirm this sign-in link is yours.</p>
-    <input type="email" id="confirmEmailInput" placeholder="you@example.com" autocomplete="email" />
-    <button id="confirmBtn">Continue</button>
-    <div id="confirmMsg" class="msg"></div>
+    <p class="sub">Re-enter your email to confirm this sign-in link is yours.</p>
+    <hr class="beam" />
+    <div class="card">
+      <label for="confirmEmailInput">Email address</label>
+      <input type="email" id="confirmEmailInput" placeholder="you@example.com" autocomplete="email" />
+      <div style="margin-top:14px"><button id="confirmBtn">Continue</button></div>
+      <div id="confirmMsg" class="msg"></div>
+    </div>
   </div>
 
-  <!-- Step 3: dashboard -->
+  <!-- STEP 3 -->
   <div id="dashboard" hidden>
-    <h1>Your stats</h1>
-    <p class="lead" id="welcomeMsg"></p>
-    <div id="statsBody"></div>
-    <p class="lead" id="payoutNote" style="margin-top:20px; font-size:12px;"></p>
-    <button class="secondary" id="signOutBtn">Sign out</button>
+    <h1 id="dashTitle">Your dashboard</h1>
+    <p class="sub" id="welcomeMsg"></p>
+    <hr class="beam" />
+
+    <div class="card">
+      <p class="kicker">Your referral link</p>
+      <div class="code-line">
+        <span class="code-pill" id="codePill">—</span>
+        <button class="ghost small" id="copyLinkBtn">Copy link</button>
+        <span class="pill ok" id="statusPill" hidden>Active</span>
+      </div>
+      <p class="link-row" id="linkRow"></p>
+    </div>
+
+    <section class="block">
+      <div class="stat-grid">
+        <div class="stat"><div class="l">Referred installs</div><div class="v" id="s_installs">0</div></div>
+        <div class="stat"><div class="l">Paying subscribers</div><div class="v" id="s_subs">0</div></div>
+        <div class="stat wide">
+          <div class="l">Subscribers by plan</div>
+          <div class="plan-split">
+            <div class="p"><div class="n" id="s_monthly">0</div><div class="k">Monthly</div></div>
+            <div class="p"><div class="n" id="s_annual">0</div><div class="k">Annual</div></div>
+            <div class="p"><div class="n" id="s_lifetime">0</div><div class="k">Lifetime</div></div>
+          </div>
+        </div>
+        <div class="stat"><div class="l">Available to pay out</div><div class="v money" id="s_avail">0.00</div></div>
+        <div class="stat"><div class="l">Pending (clearing)</div><div class="v money" id="s_pending">0.00</div></div>
+        <div class="stat"><div class="l">Paid out to date</div><div class="v money" id="s_paid">0.00</div></div>
+        <div class="stat"><div class="l">Lifetime earnings</div><div class="v money" id="s_lifetime">0.00</div></div>
+      </div>
+      <p class="note" id="payoutNote" style="margin-top:14px"></p>
+    </section>
+
+    <section class="block card">
+      <p class="kicker">Earnings — last 12 months</p>
+      <div class="chart-wrap" id="chartWrap"></div>
+    </section>
+
+    <section class="block card">
+      <p class="kicker">Payout method</p>
+      <p class="cur-payout" id="curPayout">No payout method on file yet.</p>
+      <div class="row2">
+        <div>
+          <label for="payoutMethod">Method</label>
+          <select id="payoutMethod">
+            <option value="paypal">PayPal</option>
+            <option value="wise">Wise</option>
+          </select>
+        </div>
+        <div>
+          <label for="payoutHandle" id="payoutHandleLabel">PayPal email</label>
+          <input type="text" id="payoutHandle" placeholder="you@example.com" autocomplete="off" />
+        </div>
+      </div>
+      <div style="margin-top:14px"><button id="savePayoutBtn">Save payout method</button></div>
+      <div id="payoutMsg" class="msg"></div>
+      <p class="note" style="margin-top:12px">
+        We only store a PayPal email or a Wise email / Wisetag / pay-link — <strong>never</strong> a bank
+        account or card number. Need a bank transfer? Use the message box below and we'll arrange it privately.
+        Every change is logged and emailed to us.
+      </p>
+    </section>
+
+    <section class="block card">
+      <p class="kicker">Message us</p>
+      <label for="msgSubject">Subject <span style="font-weight:400;color:var(--ink-soft)">(optional)</span></label>
+      <input type="text" id="msgSubject" maxlength="150" placeholder="e.g. Question about a payout" />
+      <label for="msgBody" style="margin-top:12px">Message</label>
+      <textarea id="msgBody" maxlength="5000" placeholder="Anything about the program, your link, payouts…"></textarea>
+      <div style="margin-top:12px"><button id="sendMsgBtn">Send message</button></div>
+      <div id="contactMsg" class="msg"></div>
+    </section>
+
+    <div style="margin-top:26px"><button class="ghost" id="signOutBtn">Sign out</button></div>
   </div>
 
 </div>
@@ -177,146 +273,185 @@
   firebase.initializeApp(firebaseConfig);
   var auth = firebase.auth();
 
-  var STATS_URL = "https://us-central1-glucobeacon.cloudfunctions.net/getInfluencerStats";
+  var FN = "https://us-central1-glucobeacon.cloudfunctions.net";
   var STORAGE_KEY = "gb_partner_email";
 
-  var requestStep = document.getElementById("requestStep");
-  var confirmStep = document.getElementById("confirmStep");
-  var dashboard = document.getElementById("dashboard");
-  var requestMsg = document.getElementById("requestMsg");
-  var confirmMsg = document.getElementById("confirmMsg");
+  var $ = function (id) { return document.getElementById(id); };
+  var requestStep = $("requestStep"), confirmStep = $("confirmStep"), dashboard = $("dashboard");
 
   function showStep(step) {
     requestStep.hidden = step !== "request";
     confirmStep.hidden = step !== "confirm";
     dashboard.hidden = step !== "dashboard";
   }
-
-  function setMsg(el, text, kind) {
-    el.textContent = text || "";
-    el.className = "msg" + (kind ? " " + kind : "");
+  function setMsg(el, text, kind) { el.textContent = text || ""; el.className = "msg" + (kind ? " " + kind : ""); }
+  function money(n) { var v = Number(n); return (isFinite(v) ? v : 0).toFixed(2); }
+  function esc(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : s; return d.innerHTML; }
+  async function idToken() { var u = auth.currentUser; return u ? u.getIdToken() : null; }
+  async function api(path, opts) {
+    opts = opts || {};
+    var t = await idToken();
+    var headers = Object.assign({ "Content-Type": "application/json" }, opts.headers || {});
+    if (t) headers.Authorization = "Bearer " + t;
+    var res = await fetch(FN + "/" + path, { method: opts.method || "GET", headers: headers, body: opts.body ? JSON.stringify(opts.body) : undefined });
+    var data = null; try { data = await res.json(); } catch (e) {}
+    return { ok: res.ok, status: res.status, data: data || {} };
   }
 
-  // --- Step 1: send the sign-in link ---
-  document.getElementById("sendLinkBtn").addEventListener("click", function () {
-    var email = document.getElementById("emailInput").value.trim();
-    if (!email) {
-      setMsg(requestMsg, "Enter your email first.", "error");
-      return;
-    }
-    var btn = this;
-    btn.disabled = true;
-    var actionCodeSettings = {
-      url: window.location.href.split("?")[0],
-      handleCodeInApp: true
-    };
-    auth.sendSignInLinkToEmail(email, actionCodeSettings).then(function () {
-      window.localStorage.setItem(STORAGE_KEY, email);
-      setMsg(requestMsg, "Check your inbox — we sent a sign-in link to " + email + ".", "success");
+  // ---- Step 1: send link ----
+  $("sendLinkBtn").addEventListener("click", function () {
+    var email = $("emailInput").value.trim();
+    if (!email) { setMsg($("requestMsg"), "Enter your email first.", "error"); return; }
+    var btn = this; btn.disabled = true;
+    auth.sendSignInLinkToEmail(email, { url: location.href.split("?")[0], handleCodeInApp: true }).then(function () {
+      localStorage.setItem(STORAGE_KEY, email);
+      setMsg($("requestMsg"), "Check your inbox — we sent a sign-in link to " + email + ".", "ok");
     }).catch(function (err) {
-      setMsg(requestMsg, "Couldn't send that link: " + err.message, "error");
-    }).finally(function () {
-      btn.disabled = false;
-    });
+      setMsg($("requestMsg"), "Couldn't send that link: " + err.message, "error");
+    }).finally(function () { btn.disabled = false; });
   });
 
-  // --- Step 2: confirm email (only needed if opened on a different device) ---
-  document.getElementById("confirmBtn").addEventListener("click", function () {
-    var email = document.getElementById("confirmEmailInput").value.trim();
-    if (!email) {
-      setMsg(confirmMsg, "Enter your email first.", "error");
-      return;
-    }
+  // ---- Step 2: confirm ----
+  $("confirmBtn").addEventListener("click", function () {
+    var email = $("confirmEmailInput").value.trim();
+    if (!email) { setMsg($("confirmMsg"), "Enter your email first.", "error"); return; }
     completeSignIn(email);
   });
-
   function completeSignIn(email) {
-    auth.signInWithEmailLink(email, window.location.href).then(function () {
-      window.localStorage.removeItem(STORAGE_KEY);
-      // Clean the sign-in params out of the URL.
-      window.history.replaceState({}, document.title, window.location.pathname);
+    auth.signInWithEmailLink(email, location.href).then(function () {
+      localStorage.removeItem(STORAGE_KEY);
+      history.replaceState({}, document.title, location.pathname);
       loadDashboard();
-    }).catch(function (err) {
-      setMsg(confirmMsg, "That link didn't work: " + err.message, "error");
-    });
+    }).catch(function (err) { setMsg($("confirmMsg"), "That link didn't work: " + err.message, "error"); });
   }
 
-  // --- Step 3: dashboard ---
+  // ---- Step 3: dashboard ----
+  function renderChart(series) {
+    var wrap = $("chartWrap");
+    var vals = (series || []).map(function (m) { return Number(m.usd) || 0; });
+    var max = Math.max.apply(null, vals.concat([0]));
+    if (max <= 0) { wrap.innerHTML = '<div class="chart-empty">No earnings yet — your chart fills in as referred subscribers are billed.</div>'; return; }
+    var W = 480, H = 150, pad = 22, n = series.length;
+    var bw = (W - pad * 2) / n * 0.62, gap = (W - pad * 2) / n;
+    var bars = "", labels = "";
+    series.forEach(function (m, i) {
+      var x = pad + i * gap + (gap - bw) / 2;
+      var h = max ? (H - pad * 2) * (Number(m.usd) || 0) / max : 0;
+      var y = H - pad - h;
+      bars += '<rect class="bar" x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + bw.toFixed(1) + '" height="' + Math.max(h, 0).toFixed(1) + '" rx="2"><title>' + esc(m.month) + " — $" + money(m.usd) + '</title></rect>';
+      if (i % 2 === 0 || i === n - 1) labels += '<text x="' + (x + bw / 2).toFixed(1) + '" y="' + (H - 6) + '" text-anchor="middle">' + esc(m.month.slice(2)) + "</text>";
+    });
+    wrap.innerHTML = '<svg class="chart" viewBox="0 0 ' + W + " " + H + '" preserveAspectRatio="xMidYMid meet">' +
+      '<line class="axis" x1="' + pad + '" y1="' + (H - pad) + '" x2="' + (W - pad) + '" y2="' + (H - pad) + '"/>' +
+      bars + labels + '</svg>';
+  }
+
+  function renderPayout(p) {
+    var cur = $("curPayout");
+    if (p && p.method && p.handleMasked) {
+      cur.innerHTML = "On file: <strong>" + esc(p.method === "wise" ? "Wise" : "PayPal") + "</strong> — <span class='mono'>" + esc(p.handleMasked) + "</span>";
+      $("payoutMethod").value = p.method;
+    } else {
+      cur.textContent = "No payout method on file yet.";
+    }
+    syncHandleLabel();
+  }
+  function syncHandleLabel() {
+    var m = $("payoutMethod").value;
+    $("payoutHandleLabel").textContent = m === "wise" ? "Wise email / Wisetag / pay-link" : "PayPal email";
+    $("payoutHandle").placeholder = m === "wise" ? "you@example.com  ·  $yourtag  ·  wise.com/pay/…" : "you@example.com";
+  }
+  $("payoutMethod").addEventListener("change", syncHandleLabel);
+
+  function fill(data) {
+    $("codePill").textContent = data.code || "—";
+    var link = "https://glucobeacon.com/r/" + (data.code || "");
+    $("linkRow").textContent = link;
+    $("copyLinkBtn").onclick = function () {
+      navigator.clipboard.writeText(link).then(function () {
+        $("copyLinkBtn").textContent = "Copied";
+        setTimeout(function () { $("copyLinkBtn").textContent = "Copy link"; }, 1600);
+      });
+    };
+    var sp = $("statusPill");
+    sp.hidden = false;
+    sp.textContent = data.active ? "Active" : "Inactive";
+    sp.className = "pill " + (data.active ? "ok" : "pos");
+
+    var bp = data.subscribersByPlan || {};
+    $("s_installs").textContent = data.referredInstalls || 0;
+    $("s_subs").textContent = data.referredSubscribers || 0;
+    $("s_monthly").textContent = bp.monthly || 0;
+    $("s_annual").textContent = bp.annual || 0;
+    $("s_lifetime").textContent = bp.lifetime || 0;
+    $("s_avail").textContent = money(data.availableUsd);
+    $("s_pending").textContent = money(data.pendingUsd);
+    $("s_paid").textContent = money(data.paidUsd);
+    $("s_lifetime").textContent = money(data.lifetimeUsd);
+
+    var pct = Math.round((data.commissionRate || 0.2) * 100);
+    $("payoutNote").textContent =
+      "You earn " + pct + "% of net revenue on every subscription from your link, for as long as they stay subscribed. " +
+      "New earnings clear a 14-day hold before moving to “Available to pay out”, then are paid monthly (minimum $25).";
+
+    renderChart(data.monthlyEarnings);
+    renderPayout(data.payout);
+  }
+
   function loadDashboard() {
     var user = auth.currentUser;
     if (!user) return;
-    document.getElementById("welcomeMsg").textContent = "Signed in as " + user.email;
+    $("welcomeMsg").textContent = "Signed in as " + user.email;
     showStep("dashboard");
-
-    user.getIdToken().then(function (idToken) {
-      return fetch(STATS_URL, {
-        headers: { "Authorization": "Bearer " + idToken }
-      });
-    }).then(function (res) {
-      if (!res.ok) return res.json().then(function (j) { throw new Error(j.error || "Failed to load stats"); });
-      return res.json();
-    }).then(function (data) {
-      var pct = Math.round((data.commissionRate || 0.20) * 100);
-      var html = "";
-      html += '<div class="stat-row"><span class="stat-label">Your code</span><span class="code-pill">' + escapeHtml(data.code) + "</span></div>";
-      html += '<div class="stat-row"><span class="stat-label">Referred installs</span><span class="stat-value">' + (data.referredInstalls || 0) + "</span></div>";
-      html += '<div class="stat-row"><span class="stat-label">Referred subscribers</span><span class="stat-value">' + (data.referredSubscribers || 0) + "</span></div>";
-      html += '<div class="stat-row"><span class="stat-label">Available to pay out</span><span class="stat-value">' + money(data.availableUsd) + "</span></div>";
-      html += '<div class="stat-row"><span class="stat-label">Pending (clearing)</span><span class="stat-value">' + money(data.pendingUsd) + "</span></div>";
-      html += '<div class="stat-row"><span class="stat-label">Paid out to date</span><span class="stat-value">' + money(data.paidUsd) + "</span></div>";
-      html += '<div class="stat-row"><span class="stat-label">Lifetime earnings</span><span class="stat-value">' + money(data.lifetimeUsd) + "</span></div>";
-      // "Code redemptions" only applies to partners linked to a redeemable promo
-      // code — referral-only partners have none, so the value is always 0.
-      if (!data.referralOnly) {
-        html += '<div class="stat-row"><span class="stat-label">Code redemptions</span><span class="stat-value">' + data.redemptions + "</span></div>";
-      }
-      html += '<div class="stat-row"><span class="stat-label">Status</span><span class="stat-value">' + (data.active ? "Active" : "Inactive") + "</span></div>";
-      document.getElementById("statsBody").innerHTML = html;
-      document.getElementById("payoutNote").textContent =
-        "You earn " + pct + "% of net revenue on every subscriber who signs up with your code, " +
-        "for as long as they stay subscribed. New earnings clear a 14-day hold (covering store refund windows) " +
-        "before they move to “Available to pay out.”";
+    api("getInfluencerStats").then(function (r) {
+      if (!r.ok) throw new Error(r.data.error || "Failed to load your stats.");
+      fill(r.data);
     }).catch(function (err) {
-      document.getElementById("statsBody").innerHTML = '<p class="msg error">' + escapeHtml(err.message) + "</p>";
+      $("dashTitle").textContent = "Couldn't load your dashboard";
+      $("welcomeMsg").innerHTML = '<span class="msg error">' + esc(err.message) + "</span>";
     });
   }
 
-  function money(n) {
-    var v = Number(n);
-    return "$" + (isFinite(v) ? v : 0).toFixed(2);
-  }
-
-  function escapeHtml(s) {
-    var d = document.createElement("div");
-    d.textContent = s;
-    return d.innerHTML;
-  }
-
-  document.getElementById("signOutBtn").addEventListener("click", function () {
-    auth.signOut().then(function () {
-      showStep("request");
-    });
+  $("savePayoutBtn").addEventListener("click", function () {
+    var method = $("payoutMethod").value;
+    var handle = $("payoutHandle").value.trim();
+    if (!handle) { setMsg($("payoutMsg"), "Enter your payout handle first.", "error"); return; }
+    var btn = this; btn.disabled = true;
+    setMsg($("payoutMsg"), "Saving…");
+    api("setPayoutMethod", { method: "POST", body: { method: method, handle: handle } }).then(function (r) {
+      if (!r.ok) throw new Error(r.data.error || "Couldn't save that.");
+      setMsg($("payoutMsg"), "Saved. We've logged the change.", "ok");
+      $("payoutHandle").value = "";
+      renderPayout({ method: r.data.method, handleMasked: r.data.handleMasked });
+    }).catch(function (err) {
+      setMsg($("payoutMsg"), err.message, "error");
+    }).finally(function () { btn.disabled = false; });
   });
 
-  // --- On load: figure out which step to show ---
-  if (auth.isSignInWithEmailLink(window.location.href)) {
-    var savedEmail = window.localStorage.getItem(STORAGE_KEY);
-    if (savedEmail) {
-      completeSignIn(savedEmail);
-    } else {
-      showStep("confirm");
-    }
+  $("sendMsgBtn").addEventListener("click", function () {
+    var subject = $("msgSubject").value.trim();
+    var message = $("msgBody").value.trim();
+    if (message.length < 2) { setMsg($("contactMsg"), "Write a message first.", "error"); return; }
+    var btn = this; btn.disabled = true;
+    setMsg($("contactMsg"), "Sending…");
+    api("partnerContact", { method: "POST", body: { subject: subject, message: message } }).then(function (r) {
+      if (!r.ok) throw new Error(r.data.error || "Couldn't send that.");
+      setMsg($("contactMsg"), "Sent — we'll get back to you by email.", "ok");
+      $("msgSubject").value = ""; $("msgBody").value = "";
+    }).catch(function (err) {
+      setMsg($("contactMsg"), err.message, "error");
+    }).finally(function () { btn.disabled = false; });
+  });
+
+  $("signOutBtn").addEventListener("click", function () { auth.signOut().then(function () { showStep("request"); }); });
+
+  if (auth.isSignInWithEmailLink(location.href)) {
+    var saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) completeSignIn(saved); else showStep("confirm");
   } else {
-    auth.onAuthStateChanged(function (user) {
-      if (user) {
-        loadDashboard();
-      } else {
-        showStep("request");
-      }
-    });
+    auth.onAuthStateChanged(function (user) { user ? loadDashboard() : showStep("request"); });
   }
 })();
 </script>
-
 </body>
 </html>
