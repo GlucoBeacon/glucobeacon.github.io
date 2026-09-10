@@ -265,7 +265,11 @@
       html += '<div class="stat-row"><span class="stat-label">Pending (clearing)</span><span class="stat-value">' + money(data.pendingUsd) + "</span></div>";
       html += '<div class="stat-row"><span class="stat-label">Paid out to date</span><span class="stat-value">' + money(data.paidUsd) + "</span></div>";
       html += '<div class="stat-row"><span class="stat-label">Lifetime earnings</span><span class="stat-value">' + money(data.lifetimeUsd) + "</span></div>";
-      html += '<div class="stat-row"><span class="stat-label">Code redemptions</span><span class="stat-value">' + data.redemptions + "</span></div>";
+      // "Code redemptions" only applies to partners linked to a redeemable promo
+      // code — referral-only partners have none, so the value is always 0.
+      if (!data.referralOnly) {
+        html += '<div class="stat-row"><span class="stat-label">Code redemptions</span><span class="stat-value">' + data.redemptions + "</span></div>";
+      }
       html += '<div class="stat-row"><span class="stat-label">Status</span><span class="stat-value">' + (data.active ? "Active" : "Inactive") + "</span></div>";
       document.getElementById("statsBody").innerHTML = html;
       document.getElementById("payoutNote").textContent =
