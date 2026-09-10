@@ -299,14 +299,18 @@
       "<div class='stat-grid'>" +
         stat("Referred installs", i.referredInstalls || 0) +
         stat("Paying subscribers", i.referredSubscribers || 0) +
-        "<div class='stat wide'><div class='l'>Subscribers by plan</div><div class='plan-split'>" +
+        "<div class='stat wide'><div class='l'>Referred subscribers, by plan</div><div class='plan-split'>" +
           "<div class='p'><div class='n'>" + (bp.monthly || 0) + "</div><div class='k'>Monthly</div></div>" +
           "<div class='p'><div class='n'>" + (bp.annual || 0) + "</div><div class='k'>Annual</div></div>" +
-          "<div class='p'><div class='n'>" + (bp.lifetime || 0) + "</div><div class='k'>Lifetime</div></div></div></div>" +
+          "<div class='p'><div class='n'>" + (bp.lifetime || 0) + "</div><div class='k'>Lifetime</div></div></div>" +
+          "<p class='detail-meta' style='margin-top:7px'>Monthly bills the % every month · Annual once per yearly renewal · Lifetime once.</p></div>" +
         statMoney("Available to pay out", i.availableUsd) +
         statMoney("Pending (clearing)", i.pendingUsd) +
         statMoney("Paid out to date", i.paidUsd) +
         statMoney("Lifetime earnings", i.lifetimeUsd) +
+        "<div class='stat wide'><div class='l'>Referred revenue &amp; share</div><div class='v' style='font-size:0.98rem'>$" +
+          money(i.referredRevenueUsd) + " paid by referrals · their " + Math.round((i.commissionRate || 0.2) * 100) +
+          "% of net = <span style='color:var(--beacon)'>$" + money(i.lifetimeUsd) + "</span></div></div>" +
       "</div>" +
       "<p class='kicker' style='margin:18px 0 0'>Earnings — last 12 months</p>" + chart(i.monthlyEarnings);
   }

@@ -196,17 +196,27 @@
         <div class="stat"><div class="l">Referred installs</div><div class="v" id="s_installs">0</div></div>
         <div class="stat"><div class="l">Paying subscribers</div><div class="v" id="s_subs">0</div></div>
         <div class="stat wide">
-          <div class="l">Subscribers by plan</div>
+          <div class="l">Referred subscribers, by plan</div>
           <div class="plan-split">
             <div class="p"><div class="n" id="s_monthly">0</div><div class="k">Monthly</div></div>
             <div class="p"><div class="n" id="s_annual">0</div><div class="k">Annual</div></div>
             <div class="p"><div class="n" id="s_lifetime">0</div><div class="k">Lifetime</div></div>
           </div>
+          <p class="note" style="margin-top:9px">
+            <strong>Monthly</strong> — you're paid your % every month it renews.
+            <strong>Annual</strong> — your % at each <em>yearly</em> renewal, not monthly.
+            <strong>Lifetime</strong> — your % once, on the single purchase.
+          </p>
         </div>
         <div class="stat"><div class="l">Available to pay out</div><div class="v money" id="s_avail">0.00</div></div>
         <div class="stat"><div class="l">Pending (clearing)</div><div class="v money" id="s_pending">0.00</div></div>
         <div class="stat"><div class="l">Paid out to date</div><div class="v money" id="s_paid">0.00</div></div>
-        <div class="stat"><div class="l">Lifetime earnings</div><div class="v money" id="s_lifetime">0.00</div></div>
+        <div class="stat"><div class="l">Lifetime earnings</div><div class="v money" id="s_earn_lifetime">0.00</div></div>
+        <div class="stat wide">
+          <div class="l">Referred revenue &amp; your share</div>
+          <div class="v" style="font-size:1.05rem"><span id="s_gross">$0.00</span> paid by your referrals
+            &nbsp;·&nbsp; your <span id="s_rate">20%</span> of net = <span id="s_share" style="color:var(--beacon)">$0.00</span></div>
+        </div>
       </div>
       <p class="note" id="payoutNote" style="margin-top:14px"></p>
     </section>
@@ -379,19 +389,23 @@
     sp.className = "pill " + (data.active ? "ok" : "pos");
 
     var bp = data.subscribersByPlan || {};
+    var pct = Math.round((data.commissionRate || 0.2) * 100);
     $("s_installs").textContent = data.referredInstalls || 0;
     $("s_subs").textContent = data.referredSubscribers || 0;
     $("s_monthly").textContent = bp.monthly || 0;
     $("s_annual").textContent = bp.annual || 0;
-    $("s_lifetime").textContent = bp.lifetime || 0;
+    $("s_lifetime").textContent = bp.lifetime || 0;              // count of lifetime buyers
     $("s_avail").textContent = money(data.availableUsd);
     $("s_pending").textContent = money(data.pendingUsd);
     $("s_paid").textContent = money(data.paidUsd);
-    $("s_lifetime").textContent = money(data.lifetimeUsd);
+    $("s_earn_lifetime").textContent = money(data.lifetimeUsd);  // total $ earned
+    $("s_gross").textContent = "$" + money(data.referredRevenueUsd);
+    $("s_rate").textContent = pct + "%";
+    $("s_share").textContent = "$" + money(data.lifetimeUsd);
 
-    var pct = Math.round((data.commissionRate || 0.2) * 100);
     $("payoutNote").textContent =
-      "You earn " + pct + "% of net revenue on every subscription from your link, for as long as they stay subscribed. " +
+      "You earn " + pct + "% of net revenue on every billing from your link, for as long as they stay subscribed — " +
+      "monthly plans bill your share every month, annual plans once per year at renewal, lifetime once. " +
       "New earnings clear a 14-day hold before moving to “Available to pay out”, then are paid monthly (minimum $25).";
 
     renderChart(data.monthlyEarnings);
