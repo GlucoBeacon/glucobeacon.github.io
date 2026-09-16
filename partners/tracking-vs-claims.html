@@ -261,6 +261,43 @@
   </section>
 
   <section>
+    <p class="kicker">The model &mdash; combined, without double-counting</p>
+    <h2>Your real population has both. Cherry-picking one condition understates the case.</h2>
+    <p><strong>67&ndash;78% of people with diabetes also have hypertension</strong><sup><a href="#r11">11</a></sup> &mdash; simply adding the two calculators above would double-bill that overlap&rsquo;s activation fee while still (correctly) crediting them for both mechanisms&rsquo; avoided claims. This version fixes that: it splits your population into diabetes-only, hypertension-only, and both, bills each real person&rsquo;s activation exactly once, and credits the both-condition group with the combined benefit of the same single app subscription. Adjust anything below.</p>
+
+    <div class="calc">
+      <div class="calc__inputs">
+        <h3 class="panel-h">Inputs</h3>
+        <div class="field"><label for="cmb-diabetic">Diabetic members in the plan</label><div class="control"><input type="number" id="cmb-diabetic" min="0" step="1000" value="100000" /></div></div>
+        <div class="field"><label for="cmb-hypertensive">Hypertensive members in the plan</label><div class="control"><input type="number" id="cmb-hypertensive" min="0" step="1000" value="250000" /></div></div>
+        <div class="field"><label for="cmb-comorbid">Diabetics who also have hypertension <span class="hint">&mdash; the overlap, not double-counted</span></label><div class="control"><input type="number" id="cmb-comorbid" min="0" max="100" step="1" value="70" /><span class="unit">%</span></div></div>
+        <div class="field"><label for="cmb-activation">Activation rate</label><div class="control"><input type="number" id="cmb-activation" min="0" max="100" step="1" value="30" /><span class="unit">% of members</span></div></div>
+        <div class="field"><label for="cmb-engaged">Sustained-tracker rate</label><div class="control"><input type="number" id="cmb-engaged" min="0" max="100" step="1" value="40" /><span class="unit">% of activated</span></div></div>
+        <div class="field"><label for="cmb-dmvalue">Diabetes mechanism value <span class="hint">&mdash; from the calculator above</span></label><div class="control"><input type="number" id="cmb-dmvalue" min="0" step="10" value="252" /><span class="unit">$ / tracker / yr</span></div></div>
+        <div class="field"><label for="cmb-htnvalue">Hypertension mechanism value <span class="hint">&mdash; from the calculator above</span></label><div class="control"><input type="number" id="cmb-htnvalue" min="0" step="10" value="390" /><span class="unit">$ / tracker / yr</span></div></div>
+        <div class="field"><label for="cmb-retention">Years the plan retains the member</label><div class="control"><input type="number" id="cmb-retention" min="1" max="10" step="1" value="3" /><span class="unit">years</span></div></div>
+        <div class="field"><label for="cmb-price">Price per activated member</label><div class="control"><input type="number" id="cmb-price" min="0" step="5" value="30" /><span class="unit">$ once</span></div></div>
+      </div>
+      <div class="calc__out">
+        <h3 class="panel-h">Result &mdash; over the retention window</h3>
+        <div class="result-hero"><div class="rlabel">Net to the plan</div><div class="rbig" id="cmb-o-net">&mdash;</div><div class="rsub" id="cmb-o-roi">&mdash;</div></div>
+        <div class="rrow"><span class="rk">Unique members (no double-counting)</span><span class="rv num" id="cmb-o-unique">&mdash;</span></div>
+        <div class="rrow"><span class="rk">&nbsp;&nbsp;&mdash; of which, both conditions</span><span class="rv num" id="cmb-o-overlap">&mdash;</span></div>
+        <div class="rrow"><span class="rk">Activated members</span><span class="rv num" id="cmb-o-act">&mdash;</span></div>
+        <div class="rrow"><span class="rk">Sustained trackers</span><span class="rv num" id="cmb-o-eng">&mdash;</span></div>
+        <div class="rrow"><span class="rk">Gross avoided claims (window)</span><span class="rv num" id="cmb-o-gross">&mdash;</span></div>
+        <div class="rrow"><span class="rk">Program cost (one-time)</span><span class="rv num" id="cmb-o-cost">&mdash;</span></div>
+        <div class="rrow"><span class="rk">Year-1 return</span><span class="rv num" id="cmb-o-y1">&mdash;</span></div>
+        <div class="bar" aria-hidden="true">
+          <div class="track cost"><span class="bk"><span>Program cost</span><span id="cmb-b-cost">&mdash;</span></span><span class="bv"><i id="cmb-bar-cost" style="width:10%"></i></span></div>
+          <div class="track save"><span class="bk"><span>Avoided claims</span><span id="cmb-b-save">&mdash;</span></span><span class="bv"><i id="cmb-bar-save" style="width:100%"></i></span></div>
+        </div>
+      </div>
+    </div>
+    <p class="anchor-note">The both-condition group is billed one activation fee (they install one app once) but credited with both mechanisms&rsquo; avoided-claims value &mdash; that group is where the combined view genuinely beats adding the two calculators above. GLP-1 isn&rsquo;t a fourth line to add here: real-world GLP-1 cohorts are 82.2% diabetic and 76.4% obese<sup><a href="#r12">12</a></sup>, meaning GLP-1 users are almost entirely already inside the diabetes and/or hypertension counts above, not an incremental population.</p>
+  </section>
+
+  <section>
     <p class="kicker">A third angle &mdash; not a calculator</p>
     <h2>Protecting GLP-1 spend you&rsquo;re already committed to.</h2>
     <p>GLP-1s are the fastest-growing line in employer pharmacy spend &mdash; up from <span class="num">6.9%</span> of pharmacy spend in 2023 to <span class="num">10.5%</span> in 2025, and over 15% of total annual claims for more than a quarter of employers.<sup><a href="#r9">9</a></sup> That spend happens whether or not it works out: up to <span class="num">70%</span> of users discontinue within a year in real-world cohorts (range 37&ndash;81% depending on setting), and up to <span class="num">39%</span> of the weight lost can be lean muscle mass when nutrition support is missing &mdash; which itself drives the weight back on if the drug is later stopped.<sup><a href="#r10">10</a></sup> Only about half of GLP-1 patients report adequate dietary guidance, and barely a third report adequate activity support.</p>
@@ -345,6 +382,8 @@
       <li id="r8">Self-monitored blood pressure telemonitoring/management cohort associated with $7,794 average per-person healthcare cost savings over 20 years, a 4.9% reduction in heart attacks, and a 3.8% reduction in strokes.</li>
       <li id="r9">Employer GLP-1 pharmacy-spend share rising from 6.9% (2023) to 10.5% (2025); over 15% of total annual claims for more than a quarter of employers surveyed. Peterson-KFF Health System Tracker; Mercer; Business Group on Health 2026 Employer Health Care Strategy Survey.</li>
       <li id="r10">GLP-1 discontinuation and nutrition-support literature: 37&ndash;81% one-year discontinuation range across real-world cohorts (up to 70% commonly cited); up to 39% of weight lost as lean muscle mass without nutrition support; ~49% of patients report adequate dietary guidance, ~36% adequate activity support. <em>Nutrients</em> (narrative review); Sword Health; Mayo Clinic.</li>
+      <li id="r11">Diabetes/hypertension comorbidity: hypertension prevalence among U.S. adults with diabetes reported at 78.3% (NHANES-based analysis) and roughly two-thirds (~67%) in a separate two-decade nationally representative analysis; this model uses 70% as a base case, editable. Columbia Mailman School of Public Health; PMC.</li>
+      <li id="r12">GLP-1 receptor agonist new-user cohort (n=10,328): 82.2% had type 2 diabetes, 76.4% had obesity &mdash; used here only to support the claim that GLP-1 users overlap with the diabetes/hypertension populations already counted above, not to size a separate GLP-1 population.</li>
     </ol>
   </section>
 
@@ -521,6 +560,77 @@
       });
     });
 
+    compute();
+  })();
+
+  // Combined view — splits the population into diabetes-only / hypertension-only / both,
+  // so the both group is billed one activation fee but credited with both mechanisms' value.
+  (function () {
+    var ids = ["cmb-diabetic", "cmb-hypertensive", "cmb-comorbid", "cmb-activation", "cmb-engaged", "cmb-dmvalue", "cmb-htnvalue", "cmb-retention", "cmb-price"];
+    var el = {};
+    ids.forEach(function (k) { el[k] = document.getElementById(k); });
+    if (!el["cmb-diabetic"]) return;
+
+    function fmtMoney(v) {
+      var a = Math.abs(v);
+      if (a >= 1e6) return (v < 0 ? "-$" : "$") + (a / 1e6).toFixed(2) + "M";
+      if (a >= 1e3) return (v < 0 ? "-$" : "$") + Math.round(a / 1e3) + "K";
+      return (v < 0 ? "-$" : "$") + Math.round(a).toLocaleString();
+    }
+    function fmtInt(v) { return Math.round(v).toLocaleString(); }
+
+    function read() {
+      var o = {};
+      ids.forEach(function (k) { var n = parseFloat(el[k].value); o[k] = isFinite(n) ? n : 0; });
+      return o;
+    }
+
+    function compute() {
+      var i = read();
+      var overlap = i["cmb-diabetic"] * (i["cmb-comorbid"] / 100);
+      var dmOnly = Math.max(0, i["cmb-diabetic"] - overlap);
+      var htnOnly = Math.max(0, i["cmb-hypertensive"] - overlap);
+      var uniqueTotal = dmOnly + htnOnly + overlap;
+
+      var actRate = i["cmb-activation"] / 100, engRate = i["cmb-engaged"] / 100;
+      var trackDm = dmOnly * actRate * engRate;
+      var trackHtn = htnOnly * actRate * engRate;
+      var trackBoth = overlap * actRate * engRate;
+      var trackersTotal = trackDm + trackHtn + trackBoth;
+
+      var annualValue = trackDm * i["cmb-dmvalue"] + trackHtn * i["cmb-htnvalue"] + trackBoth * (i["cmb-dmvalue"] + i["cmb-htnvalue"]);
+      var grossWindow = annualValue * i["cmb-retention"];
+      var activated = uniqueTotal * actRate;
+      var cost = activated * i["cmb-price"];
+      var net = grossWindow - cost;
+      var roi = cost > 0 ? grossWindow / cost : 0;
+      var y1 = cost > 0 ? annualValue / cost : 0;
+      var TIMES = String.fromCharCode(215), MIDDOT = String.fromCharCode(183);
+
+      document.getElementById("cmb-o-unique").textContent = fmtInt(uniqueTotal);
+      document.getElementById("cmb-o-overlap").textContent = fmtInt(overlap);
+      document.getElementById("cmb-o-act").textContent = fmtInt(activated);
+      document.getElementById("cmb-o-eng").textContent = fmtInt(trackersTotal);
+      document.getElementById("cmb-o-gross").textContent = fmtMoney(grossWindow);
+      document.getElementById("cmb-o-cost").textContent = fmtMoney(cost);
+      document.getElementById("cmb-o-y1").textContent = (y1).toFixed(1) + TIMES;
+
+      var netEl = document.getElementById("cmb-o-net");
+      netEl.textContent = fmtMoney(net);
+      netEl.classList.toggle("neg", net < 0);
+
+      document.getElementById("cmb-o-roi").textContent = cost > 0
+        ? roi.toFixed(1) + TIMES + " return " + MIDDOT + " every $1 spent returns $" + roi.toFixed(2)
+        : "set a price to see the return";
+
+      document.getElementById("cmb-b-cost").textContent = fmtMoney(cost);
+      document.getElementById("cmb-b-save").textContent = fmtMoney(grossWindow);
+      var mx = Math.max(cost, grossWindow, 1);
+      document.getElementById("cmb-bar-cost").style.width = (100 * cost / mx).toFixed(1) + "%";
+      document.getElementById("cmb-bar-save").style.width = (100 * grossWindow / mx).toFixed(1) + "%";
+    }
+
+    ids.forEach(function (k) { el[k].addEventListener("input", compute); });
     compute();
   })();
 </script>
