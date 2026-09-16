@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>GlucoBeacon Partner Brief</title>
+<meta name="description" content="Every benefit and cost of bringing GlucoBeacon to a health plan, employer, or life/DI/LTC insurer, side by side, with the honest risks and how it stays clear of premium-pricing liability." />
+<link rel="icon" type="image/png" href="../img/icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,650&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+<script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<style>
+  :root {
+    --ground: #f6f4ef;
+    --surface: #ffffff;
+    --surface-sunk: #f1ede4;
+    --ink: #16233a;
+    --ink-soft: #5c6b7f;
+    --navy: #0b2447;
+    --on-navy: #eef2f8;
+    --beacon: #e0671f;
+    --beam: #fbe3cf;
+    --rule: #e4ded3;
+    --rule-strong: #d3ccbd;
+    --positive: #1f7a4d;
+    --hold: #916a29;
+    --shadow: 24px 24px 60px -30px rgba(20, 30, 50, 0.28);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12161d; --surface: #1a1f28; --surface-sunk: #151a22;
+      --ink: #ece6da; --ink-soft: #9aa4b2; --navy: #0c1a30; --on-navy: #dfe7f3;
+      --beacon: #ff8f4d; --beam: #3a2a1c; --rule: #2b323d; --rule-strong: #3a424e;
+      --positive: #55c98a; --hold: #d9b877; --shadow: 24px 24px 70px -30px rgba(0, 0, 0, 0.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12161d; --surface: #1a1f28; --surface-sunk: #151a22;
+    --ink: #ece6da; --ink-soft: #9aa4b2; --navy: #0c1a30; --on-navy: #dfe7f3;
+    --beacon: #ff8f4d; --beam: #3a2a1c; --rule: #2b323d; --rule-strong: #3a424e;
+    --positive: #55c98a; --hold: #d9b877; --shadow: 24px 24px 70px -30px rgba(0, 0, 0, 0.6);
+  }
+
+  * { box-sizing: border-box; }
+  img { max-width: 100%; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+    font-size: 17px; line-height: 1.62; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 0 28px 96px; }
+  .topbar { max-width: 820px; margin: 0 auto; padding: 26px 28px 0; display: flex; justify-content: space-between; align-items: baseline; gap: 12px 22px; flex-wrap: wrap; }
+  .topbar a { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); text-decoration: none; }
+  .topbar a:hover { color: var(--beacon); }
+
+  header { max-width: 820px; margin: 0 auto; padding: 40px 28px 46px; }
+  .eyebrow { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--beacon); display: flex; align-items: center; gap: 12px; margin-bottom: 26px; }
+  .beacon-dot { width: 11px; height: 11px; border-radius: 50%; background: var(--beacon); box-shadow: 0 0 0 0 rgba(224, 103, 31, 0.55); animation: pulse 3.4s ease-out infinite; flex: none; }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(224, 103, 31, 0.5); } 70% { box-shadow: 0 0 0 16px rgba(224, 103, 31, 0); } 100% { box-shadow: 0 0 0 0 rgba(224, 103, 31, 0); } }
+  @media (prefers-reduced-motion: reduce) { .beacon-dot { animation: none; } }
+  h1 { font-family: "Fraunces", Georgia, "Times New Roman", serif; font-optical-sizing: auto; font-weight: 550; font-size: clamp(2rem, 1.3rem + 3.1vw, 3.15rem); line-height: 1.08; letter-spacing: -0.015em; text-wrap: balance; margin: 0 0 22px; color: var(--ink); }
+  .standfirst { font-size: 1.16rem; line-height: 1.6; color: var(--ink-soft); max-width: 62ch; margin: 0; }
+  .standfirst strong { color: var(--ink); font-weight: 600; }
+  .beam { height: 2px; max-width: 820px; margin: 44px auto 0; background: linear-gradient(90deg, var(--beacon) 0%, var(--rule-strong) 42%, transparent 100%); border: 0; }
+
+  section { padding: 54px 0; border-bottom: 1px solid var(--rule); }
+  section:last-of-type { border-bottom: 0; }
+  .kicker { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11.5px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 18px; }
+  h2 { font-family: "Fraunces", Georgia, serif; font-optical-sizing: auto; font-weight: 550; font-size: clamp(1.5rem, 1.15rem + 1.5vw, 2rem); line-height: 1.14; letter-spacing: -0.012em; text-wrap: balance; margin: 0 0 20px; }
+  p { margin: 0 0 18px; max-width: 64ch; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--beacon); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  strong { font-weight: 600; }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 0.92em; }
+
+  /* audience cards */
+  .audience { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 4px; }
+  .acard { background: var(--surface); border: 1px solid var(--rule-strong); border-radius: 14px; padding: 20px 20px 18px; display: flex; flex-direction: column; gap: 8px; }
+  .acard .atag { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--beacon); }
+  .acard h3 { font-family: "Public Sans", sans-serif; font-weight: 600; font-size: 1.02rem; margin: 0; color: var(--ink); }
+  .acard p { font-size: 0.92rem; color: var(--ink-soft); margin: 0; max-width: none; }
+
+  /* stat tiles */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 4px 0 14px; }
+  .stat { background: var(--navy); color: var(--on-navy); border-radius: 14px; padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 4px; }
+  .stat .sv { font-family: "Fraunces", serif; font-optical-sizing: auto; font-weight: 600; font-size: 1.6rem; line-height: 1.05; }
+  .stat .sl { font-size: 0.82rem; line-height: 1.36; opacity: 0.92; }
+  .stat .ss { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.06em; opacity: 0.6; }
+  .stat-note { font-size: 0.86rem; color: var(--ink-soft); margin-top: 2px; }
+
+  /* benefit / cost ledger */
+  .ledger { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 6px; }
+  .lcol { background: var(--surface); border: 1px solid var(--rule-strong); border-radius: 14px; padding: 22px 22px 20px; }
+  .lcol h3 { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; margin: 0 0 16px; }
+  .lcol.gain { border-top: 3px solid var(--positive); }
+  .lcol.gain h3 { color: var(--positive); }
+  .lcol.cost { border-top: 3px solid var(--hold); }
+  .lcol.cost h3 { color: var(--hold); }
+  .lgroup-h { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); margin: 18px 0 2px; }
+  .lgroup:first-child .lgroup-h { margin-top: 0; }
+  .litem { padding: 10px 0; border-bottom: 1px solid var(--rule); font-size: 0.94rem; }
+  .litem:last-child { border-bottom: 0; padding-bottom: 0; }
+  .litem b { display: block; font-weight: 600; margin-bottom: 2px; }
+  .litem span { color: var(--ink-soft); font-size: 0.9rem; }
+  .risk b { color: var(--hold); }
+
+  .terms { display: flex; flex-direction: column; gap: 0; margin: 6px 0 0; border-top: 1px solid var(--rule); }
+  .terms div { display: grid; grid-template-columns: 1fr; gap: 3px; padding: 15px 0; border-bottom: 1px solid var(--rule); }
+  .terms dt { font-weight: 600; font-size: 0.97rem; }
+  .terms dd { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+
+  .callout { margin: 8px 0 0; background: var(--surface); border: 1px solid var(--rule-strong); border-left: 3px solid var(--beacon); border-radius: 12px; padding: 22px 24px; font-size: 0.98rem; }
+  .callout p { max-width: none; }
+
+  /* go-deeper resource cards */
+  .resources { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 4px; }
+  .rcard { display: block; background: var(--surface); border: 1px solid var(--rule-strong); border-radius: 14px; padding: 20px 20px 18px; text-decoration: none; }
+  .rcard .rtag { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); }
+  .rcard h3 { font-family: "Fraunces", serif; font-weight: 550; font-size: 1.08rem; margin: 6px 0 4px; color: var(--ink); }
+  .rcard p { font-size: 0.9rem; color: var(--ink-soft); margin: 0; max-width: none; }
+  .rcard .go { display: block; font-family: "IBM Plex Mono", monospace; font-size: 0.84rem; color: var(--beacon); margin-top: 8px; }
+
+  footer { max-width: 820px; margin: 0 auto; padding: 40px 28px 80px; }
+  .cta { background: var(--navy); color: var(--on-navy); border-radius: 16px; padding: 34px 32px; }
+  .cta h2 { color: var(--on-navy); margin-bottom: 10px; }
+  .cta p { color: color-mix(in srgb, var(--on-navy) 78%, transparent); max-width: 54ch; }
+  .cta a.mail { display: inline-block; font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 1.02rem; color: var(--ground); background: var(--beacon); padding: 12px 20px; border-radius: 10px; text-decoration: none; }
+  .cta a.mail:focus-visible { outline: 3px solid var(--beam); outline-offset: 2px; }
+  .disclaimer { margin-top: 26px; font-size: 0.8rem; color: var(--ink-soft); line-height: 1.6; max-width: 68ch; }
+  a:focus-visible { outline: 2px solid var(--beacon); outline-offset: 2px; border-radius: 2px; }
+
+  @media (max-width: 720px) {
+    .audience, .stats, .ledger, .resources { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="https://glucobeacon.com/">&larr;&nbsp;glucobeacon.com</a>
+</div>
+
+<header>
+  <div class="eyebrow"><span class="beacon-dot" aria-hidden="true"></span>GlucoBeacon Partner Brief</div>
+  <h1>What GlucoBeacon costs a partner &mdash; and what it returns.</h1>
+  <p class="standfirst">One page, the full case: every benefit, every cost, and the honest risks in between. Written for the three groups actually positioned to act on it &mdash; <strong>health plans &amp; self-insured employers</strong>, <strong>benefits leaders</strong>, and <strong>life, disability &amp; long-term-care insurers</strong>.</p>
+</header>
+<hr class="beam" />
+
+<div class="wrap">
+
+  <section>
+    <p class="kicker">Who this is for</p>
+    <div class="audience">
+      <div class="acard">
+        <span class="atag">Cost avoidance</span>
+        <h3>Health plans &amp; self-insured employers</h3>
+        <p>Pay only for members who opt in, measured against your own claims.</p>
+      </div>
+      <div class="acard">
+        <span class="atag">Population health</span>
+        <h3>Benefits leaders</h3>
+        <p>A digital-health line item that reaches employees your existing wellness stack doesn&rsquo;t &mdash; four languages, real recipes, real restaurant data.</p>
+      </div>
+      <div class="acard">
+        <span class="atag">Engagement data</span>
+        <h3>Life, DI &amp; LTC insurers</h3>
+        <p>The same playbook life insurers already run at scale (Vitality-style tracked-behavior discounts) &mdash; applied to chronic-disease engagement instead of fitness alone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">The numbers behind the pitch</p>
+    <h2>Why a tracked member costs less.</h2>
+    <div class="stats">
+      <div class="stat"><span class="sv">$12,022</span><span class="sl">attributable cost per diabetic member, per year</span><span class="ss">ADA, 2022</span></div>
+      <div class="stat"><span class="sv">$430&ndash;$740</span><span class="sl">saved per member per year, per 1.0-point A1C drop</span><span class="ss">U.S. claims analyses</span></div>
+      <div class="stat"><span class="sv">&minus;37%</span><span class="sl">fewer microvascular complications per 1.0-point A1C drop</span><span class="ss">UKPDS 35</span></div>
+      <div class="stat"><span class="sv">10.1&times;</span><span class="sl">base-case model return on a 100,000-member book, 3-yr window</span><span class="ss">GlucoBeacon ROI model</span></div>
+    </div>
+    <p class="stat-note">The 10.1&times; figure is model output from stated assumptions, not an observed result &mdash; the full editable model, with every input and source, is linked under &ldquo;Go deeper&rdquo; below.</p>
+  </section>
+
+  <section>
+    <p class="kicker">The full ledger</p>
+    <h2>Every benefit. Every cost. Side by side.</h2>
+    <div class="ledger">
+      <div class="lcol gain">
+        <h3>What you get</h3>
+        <div class="lgroup">
+          <div class="lgroup-h">Product</div>
+          <div class="litem"><b>A complete diabetes self-management app</b><span>AI food-photo carb/calorie estimate, medication logging with reminders, CGM auto-sync (Health Connect / HealthKit), blood pressure &amp; activity tracking, a Doctor Report PDF export.</span></div>
+          <div class="litem"><b>281 recipes &amp; a 132-chain Restaurant Advisor</b><span>4,600+ real menu items scored against a member&rsquo;s own carb/GI goals &mdash; not generic advice.</span></div>
+          <div class="litem"><b>Four full languages</b><span>English, Spanish, Filipino, Hindi &mdash; a real reach differentiator for Medicaid MCOs and diverse workforces, not a translated veneer.</span></div>
+        </div>
+        <div class="lgroup">
+          <div class="lgroup-h">Commercial</div>
+          <div class="litem"><b>Billed only on activation</b><span>No PMPM on your whole eligible population &mdash; nothing charged for members who never opt in.</span></div>
+          <div class="litem"><b>Capped, refundable pilot</b><span>Spend cap you set; 100% refund of activation fees if the intervention cohort shows no statistically meaningful A1C improvement at 6 months.</span></div>
+        </div>
+        <div class="lgroup">
+          <div class="lgroup-h">Strategic</div>
+          <div class="litem"><b>HEDIS / Star ratings angle</b><span>Comprehensive Diabetes Care measures feed MA Star ratings, which feed plan revenue &mdash; a growth argument, not only a cost one.</span></div>
+          <div class="litem"><b>No systems integration required</b><span>A co-branded link in your member hub, a signed deep link, a provisioned entitlement. No PHI pipeline to build.</span></div>
+        </div>
+      </div>
+      <div class="lcol cost">
+        <h3>What it costs</h3>
+        <div class="lgroup">
+          <div class="lgroup-h">Direct</div>
+          <div class="litem"><b>$30 per activated member</b><span>One-time, for a 12-month (pilot) or lifetime (scale) Pro entitlement. Volume tiers negotiable.</span></div>
+          <div class="litem"><b>Your own analysis time</b><span>Or ours, if you&rsquo;d rather hand it off &mdash; the pilot&rsquo;s outcome read runs on your claims either way.</span></div>
+        </div>
+        <div class="lgroup">
+          <div class="lgroup-h">What we need from you</div>
+          <div class="litem"><b>Hub placement</b><span>A tile or link in your member portal or after-visit summary &mdash; the actual integration effort.</span></div>
+          <div class="litem"><b>An eligible-member list &amp; matched control</b><span>Drawn from your own claims &mdash; age, sex, baseline A1C, comorbidity index, region.</span></div>
+        </div>
+        <div class="lgroup">
+          <div class="lgroup-h">Honest risks</div>
+          <div class="litem risk"><b>No GlucoBeacon-specific outcomes study exists yet.</b><span>Effect sizes above are borrowed from meta-analyses of comparable apps, not this product measured in your population &mdash; that&rsquo;s what a pilot is for.</span></div>
+          <div class="litem risk"><b>Engagement, not enrollment, drives the return.</b><span>If the sustained-tracker rate lands at 15% instead of the model&rsquo;s 40%, the return falls by roughly two-thirds.</span></div>
+          <div class="litem risk"><b>Opt-in members are not average.</b><span>People who tap the link are more health-engaged already &mdash; a valid read needs the matched control, not a before/after comparison.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">Ways to structure it</p>
+    <h2>Roughly easiest to hardest.</h2>
+    <dl class="terms">
+      <div><dt>Member-hub, per-activation</dt><dd>The model above. Lowest friction, fastest to pilot.</dd></div>
+      <div><dt>Medicare Advantage supplemental benefit</dt><dd>A health-related supplemental benefit; MA plans compete on benefit richness and Star ratings.</dd></div>
+      <div><dt>Self-insured employer, PEPM</dt><dd>Often faster than carrier deals &mdash; sold through benefits consultants or a PEO channel.</dd></div>
+      <div><dt>Digital-health formulary listing</dt><dd>Vetted onto a navigator or PBM digital formulary &mdash; opens many plans through one relationship.</dd></div>
+      <div><dt>Value-based / shared savings</dt><dd>A lower base fee plus a bonus tied to measured A1C improvement or reduced admissions.</dd></div>
+      <div><dt>Medicaid MCOs &amp; FQHCs</dt><dd>High diabetes burden, cost-sensitive, value-based mandates in many states &mdash; the language coverage matters most here.</dd></div>
+      <div><dt>Life / DI / LTC data partnership</dt><dd>A Vitality-style engagement-rewards integration &mdash; a different regulatory lane than health insurance, already proven at scale elsewhere.</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <p class="kicker">Why this doesn&rsquo;t carry the liability you might expect</p>
+    <div class="callout">
+      <p><strong>This is a tool a payer, employer, or insurer buys for a population</strong> &mdash; not a mechanism for pricing any individual&rsquo;s premium. No one&rsquo;s price changes based on their personal glucose or medication data; the purchaser pays a flat per-activation fee for the group, and every activated member gets the identical entitlement regardless of what their data ends up showing.</p>
+      <p>That&rsquo;s a deliberate design choice, not an accident: it keeps this entirely outside ACA community rating, GINA, and the still-unresolved ADA/GINA wellness-incentive question, because none of those govern a population-level purchasing decision &mdash; only individual-level pricing and underwriting. Member logs stay on the member&rsquo;s device by default; GlucoBeacon does not receive claims-linkable PHI, and payment doesn&rsquo;t buy access to it.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">Go deeper</p>
+    <div class="resources">
+      <a class="rcard" href="/partners/tracking-vs-claims.html">
+        <span class="rtag">Interactive model</span>
+        <h3>Tracking vs. Claims</h3>
+        <p>The full ROI calculator behind the numbers above &mdash; every input editable, every source cited.</p>
+        <span class="go">Open the model &rarr;</span>
+      </a>
+      <a class="rcard" href="/partners/payer-pilot.html">
+        <span class="rtag">Formal proposal</span>
+        <h3>GlucoBeacon Payer Pilot</h3>
+        <p>The 6-month pilot design, endpoints, timeline, and refund guarantee &mdash; ready to fill in and send.</p>
+        <span class="go">Open the proposal &rarr;</span>
+      </a>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <div class="cta">
+    <h2>Talk it through</h2>
+    <p>A 30-minute call to talk through your population and which model above fits.</p>
+    <a class="mail" href="mailto:partners@glucobeacon.com?subject=GlucoBeacon%20Partner%20Brief%20%E2%80%94%20let%27s%20talk&body=Organization%3A%0ARole%3A%0APopulation%20size%20(approx.)%3A%0AWhich%20model%20from%20the%20brief%20interests%20you%3A%0A">partners@glucobeacon.com</a>
+  </div>
+  <p class="disclaimer">GlucoBeacon is a diabetes self-management and education tool. It is not a medical device and does not provide medical advice, diagnosis, or treatment. Cost and effect-size figures are drawn from the cited public literature (American Diabetes Association, <em>Economic Costs of Diabetes in the U.S. in 2022</em>; U.S. commercial-claims HbA1c-cost analyses; UKPDS 35; meta-analyses of diabetes self-management apps) and are not a projection or guarantee of results in any specific population. This page is not legal or actuarial advice; consult your own counsel on wellness-incentive and data-privacy questions specific to your program. Current as of the date this link was shared and may change.</p>
+</footer>
+
+</body>
+</html>

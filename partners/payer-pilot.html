@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>GlucoBeacon Payer Pilot</title>
+<meta name="description" content="A 6-month diabetes self-management pilot proposal, at your risk-free cost — refunded in full if it doesn't move A1C." />
+<link rel="icon" type="image/png" href="../img/icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,650&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+<script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<style>
+  :root {
+    --ground: #f6f4ef; --surface: #ffffff; --surface-sunk: #f1ede4;
+    --ink: #16233a; --ink-soft: #5c6b7f; --navy: #0b2447; --on-navy: #eef2f8;
+    --beacon: #e0671f; --beam: #fbe3cf; --rule: #e4ded3; --rule-strong: #d3ccbd;
+    --positive: #1f7a4d; --shadow: 24px 24px 60px -30px rgba(20, 30, 50, 0.28);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12161d; --surface: #1a1f28; --surface-sunk: #151a22;
+      --ink: #ece6da; --ink-soft: #9aa4b2; --navy: #0c1a30; --on-navy: #dfe7f3;
+      --beacon: #ff8f4d; --beam: #3a2a1c; --rule: #2b323d; --rule-strong: #3a424e;
+      --positive: #55c98a; --shadow: 24px 24px 70px -30px rgba(0, 0, 0, 0.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12161d; --surface: #1a1f28; --surface-sunk: #151a22;
+    --ink: #ece6da; --ink-soft: #9aa4b2; --navy: #0c1a30; --on-navy: #dfe7f3;
+    --beacon: #ff8f4d; --beam: #3a2a1c; --rule: #2b323d; --rule-strong: #3a424e;
+    --positive: #55c98a; --shadow: 24px 24px 70px -30px rgba(0, 0, 0, 0.6);
+  }
+
+  * { box-sizing: border-box; }
+  img { max-width: 100%; }
+  body { margin: 0; background: var(--ground); color: var(--ink); font-family: "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif; font-size: 16px; line-height: 1.58; -webkit-font-smoothing: antialiased; }
+
+  .toolbar { max-width: 800px; margin: 0 auto; padding: 20px 28px 0; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .toolbar a { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); text-decoration: none; }
+  .toolbar a:hover { color: var(--beacon); }
+  .print-btn { font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 12px; color: var(--ground); background: var(--beacon); border: 0; border-radius: 8px; padding: 9px 16px; cursor: pointer; }
+
+  .doc { max-width: 800px; margin: 18px auto 40px; background: var(--surface); border: 1px solid var(--rule); box-shadow: var(--shadow); padding: 40px 46px 44px; border-radius: 16px; }
+
+  a { color: var(--beacon); }
+  h1, h2, h3 { font-family: "Fraunces", Georgia, "Times New Roman", serif; font-optical-sizing: auto; text-wrap: balance; }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+
+  .masthead { border-bottom: 2px solid var(--navy); padding-bottom: 16px; margin-bottom: 22px; }
+  .brand { font-weight: 550; font-size: 1.15rem; color: var(--ink); display: flex; align-items: center; gap: 9px; margin-bottom: 12px; letter-spacing: 0.01em; }
+  .brand .dot { width: 11px; height: 11px; border-radius: 50%; background: var(--beacon); flex: none; }
+  h1 { font-weight: 550; font-size: 1.85rem; line-height: 1.14; letter-spacing: -0.01em; margin: 0 0 12px; }
+  .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 4px 24px; font-size: 0.84rem; color: var(--ink-soft); }
+  .meta b { color: var(--ink); font-weight: 600; }
+  .fill { border-bottom: 1px dashed var(--rule-strong); min-width: 120px; display: inline-block; }
+
+  section { margin-bottom: 20px; }
+  .kicker { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--beacon); margin: 0 0 6px; }
+  h2 { font-weight: 550; font-size: 1.15rem; margin: 0 0 8px; letter-spacing: -0.005em; }
+  p { margin: 0 0 10px; }
+  p:last-child { margin-bottom: 0; }
+  strong { font-weight: 600; }
+
+  table { border-collapse: collapse; width: 100%; font-size: 0.88rem; margin: 4px 0; }
+  td { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  td.k { font-weight: 600; width: 32%; }
+  td.k.narrow { width: 15%; white-space: nowrap; font-family: "IBM Plex Mono", monospace; font-weight: 500; }
+
+  .commercials { background: var(--surface-sunk); border: 1px solid var(--rule-strong); border-left: 3px solid var(--beacon); border-radius: 10px; padding: 16px 18px; }
+  .commercials ul { margin: 0; padding-left: 18px; }
+  .commercials li { margin: 6px 0; font-size: 0.9rem; }
+  .commercials li:first-child { margin-top: 0; }
+  .guarantee { color: var(--positive); font-weight: 600; }
+
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .two h3 { font-family: "Public Sans", sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em; margin: 0 0 6px; text-transform: uppercase; color: var(--ink-soft); }
+  .two ul { margin: 0; padding-left: 17px; font-size: 0.86rem; }
+  .two li { margin: 4px 0; }
+
+  .foot { border-top: 1px solid var(--rule); margin-top: 24px; padding-top: 12px; font-size: 0.74rem; color: var(--ink-soft); line-height: 1.5; }
+
+  @media (max-width: 620px) {
+    .doc { padding: 26px 20px 30px; }
+    .two { grid-template-columns: 1fr; }
+    td.k, td.k.narrow { width: auto; display: block; padding-bottom: 2px; border: 0; }
+    td:not(.k) { display: block; padding-top: 0; padding-bottom: 10px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  @media print {
+    body { background: #fff; font-size: 10.2pt; }
+    .toolbar { display: none; }
+    .doc { box-shadow: none; border: 0; margin: 0; max-width: none; padding: 0; border-radius: 0; }
+    .commercials { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    section, table, .two, .commercials { break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+    @page { size: A4; margin: 15mm; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <a href="/partners/brief.html">&larr;&nbsp;Partner brief</a>
+  <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<div class="doc">
+
+  <div class="masthead">
+    <div class="brand"><span class="dot"></span>GlucoBeacon</div>
+    <h1>A 6-month diabetes self-management pilot, at your risk-free cost.</h1>
+    <div class="meta">
+      <div>Prepared for&nbsp; <b><span class="fill" id="recipient">[ health plan / provider group / employer ]</span></b></div>
+      <div>Date&nbsp; <b><span class="fill" id="date">[ &nbsp; ]</span></b></div>
+      <div>Contact&nbsp; <b>partners@glucobeacon.com</b></div>
+      <div>Prepared by&nbsp; <b>Michael Gonzalez, founder</b></div>
+    </div>
+  </div>
+
+  <section>
+    <p class="kicker">The opportunity</p>
+    <p>Members with diagnosed diabetes cost roughly <strong>2.6&times; a matched non-diabetic member &mdash; about $12,000 a year in attributable claims</strong> (American Diabetes Association, 2022). A sustained one-point drop in A1C is associated with <strong>$430&ndash;$740 per member per year in avoided medical cost</strong> and about 37% fewer microvascular complications (U.S. claims analyses; UKPDS 35). Digital self-management tools move A1C 0.3&ndash;0.5 points in members who engage. This pilot measures whether GlucoBeacon does that <strong>in your population</strong>, on <strong>your claims data</strong>, with a spending cap and a full refund if it fails to move A1C.</p>
+  </section>
+
+  <section>
+    <p class="kicker">What GlucoBeacon is</p>
+    <p>A diabetes self-management app that keeps a member&rsquo;s glucose, medication, food, and activity in one daily record. Live on the App&nbsp;Store and Google&nbsp;Play; <strong>fully localized in English, Spanish, Filipino, and Hindi</strong>. It includes an A1C estimate from logged readings, pattern detection, a Restaurant Advisor scoring 4,600+ menu items across 132 chains, an AI food-photo estimate, and 281 dietitian-reviewed recipes. It is <strong>not a medical device</strong> and does not diagnose or treat &mdash; the pathway to lower cost is better data, better daily decisions, and visible medication adherence.</p>
+  </section>
+
+  <section>
+    <p class="kicker">Pilot design</p>
+    <table>
+      <tr><td class="k">Population</td><td>~3,000&ndash;5,000 members with diagnosed diabetes (Type&nbsp;2 primary), or a single employer group or clinic panel of similar size.</td></tr>
+      <tr><td class="k">Intervention arm</td><td>Members who opt in through a co-branded link in your member hub (or after-visit summary) receive a <strong>12-month GlucoBeacon Pro entitlement</strong>. Opt-in only.</td></tr>
+      <tr><td class="k">Control arm</td><td>A matched cohort drawn from your own claims &mdash; age, sex, baseline A1C, comorbidity index, region &mdash; not offered the app during the pilot, offered it afterward.</td></tr>
+      <tr><td class="k">Duration</td><td>6-month primary read; 12-month secondary read.</td></tr>
+      <tr><td class="k">Primary endpoint</td><td>Change in A1C, intervention vs. control (difference-in-differences on your claims / HEDIS Comprehensive Diabetes Care data).</td></tr>
+      <tr><td class="k">Secondary endpoints</td><td>Diabetes-related ED visits and inpatient admissions; total cost of care PMPM; medication adherence (proportion of days covered, from pharmacy claims); engagement (activation rate, sustained-tracker rate at 6 months).</td></tr>
+      <tr><td class="k">Who runs the analysis</td><td>Your team or an independent third party, on your claims. GlucoBeacon supplies only aggregate engagement data.</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <p class="kicker">Data &amp; privacy</p>
+    <p>Member logs are stored on the member&rsquo;s device by default. <strong>GlucoBeacon receives no claims-linkable PHI</strong>, and the pilot fee does not buy access to member data. All outcome analysis runs on your claims against the matched control. GlucoBeacon will execute a DUA or BAA as your compliance team requires. SOC&nbsp;2 Type&nbsp;II is in progress; the pilot architecture &mdash; a co-branded link plus a signed deep link, with no systems integration &mdash; does not require it.</p>
+  </section>
+
+  <section>
+    <p class="kicker">Commercials &mdash; capped and refundable</p>
+    <div class="commercials">
+      <ul>
+        <li><strong>Price:</strong> one-time <strong>$30 per activated member</strong> (12-month Pro entitlement), invoiced monthly against actual activations. Volume / pilot discount available.</li>
+        <li><strong>Cap:</strong> billed activations are capped at a number you set; nothing is charged for eligible members who do not opt in. A 4,000-activation cap is a maximum pilot spend of <span class="mono">$120,000</span>.</li>
+        <li><span class="guarantee">Performance guarantee:</span> if the intervention cohort does not show a statistically meaningful A1C improvement versus control at the 6-month read, GlucoBeacon <strong>refunds 100% of activation fees</strong>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">What each side provides</p>
+    <div class="two">
+      <div>
+        <h3>GlucoBeacon</h3>
+        <ul>
+          <li>The app and the 12-month entitlements</li>
+          <li>The co-branded link and deep-link attribution</li>
+          <li>A monthly activation &amp; engagement report</li>
+          <li>A named point of contact</li>
+          <li>The refund guarantee</li>
+        </ul>
+      </div>
+      <div>
+        <h3>The plan / group</h3>
+        <ul>
+          <li>Eligible-member list and matched-control definition</li>
+          <li>Placement of the link in the member hub or after-visit workflow</li>
+          <li>De-identified claims / A1C data for the analysis, or running the analysis internally</li>
+          <li>A clinical or analytics point of contact</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">Timeline</p>
+    <table>
+      <tr><td class="k narrow">Week 0</td><td>Pilot agreement signed; cohort and matched control defined.</td></tr>
+      <tr><td class="k narrow">Week 1&ndash;2</td><td>Co-branded link live in the member hub.</td></tr>
+      <tr><td class="k narrow">Week 2&ndash;10</td><td>Enrollment window.</td></tr>
+      <tr><td class="k narrow">Month 6</td><td>Primary A1C read; interim cost and utilization look.</td></tr>
+      <tr><td class="k narrow">Month 12</td><td>Secondary read; full utilization and cost analysis.</td></tr>
+      <tr><td class="k narrow">Post-read</td><td>Decision gate &rarr; pre-agreed scale pricing and rollout terms.</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <p class="kicker">If it works</p>
+    <p>Scale pricing is agreed up front, so a positive read converts straight to a rollout: per-activation with volume tiers, a per-member annual fee, or a value-based structure (a lower base fee plus a bonus tied to measured A1C or admission reduction). Rollout extends the same hub link to your full diabetic book.</p>
+  </section>
+
+  <section>
+    <p class="kicker">Next step</p>
+    <p>A 30-minute call to define the cohort and lock the primary endpoint. <strong>partners@glucobeacon.com</strong></p>
+  </section>
+
+  <div class="foot">
+    GlucoBeacon is a diabetes self-management and education tool. It is not a medical device and does not provide medical advice, diagnosis, or treatment. Cost and effect-size figures are drawn from the cited public literature (ADA <em>Economic Costs of Diabetes in the U.S. in 2022</em>; U.S. commercial-claims HbA1c-cost analyses; UKPDS 35; meta-analyses of diabetes self-management apps) and are not a projection or guarantee of results in any specific population &mdash; that is what the pilot measures. This document is not actuarial advice. Confidential; prepared for the named recipient.
+  </div>
+
+</div>
+
+<script>
+  (function () {
+    var p = new URLSearchParams(location.search);
+    var to = (p.get("to") || "").trim();
+    var dt = (p.get("date") || "").trim();
+    if (to) { var e = document.getElementById("recipient"); e.textContent = to; e.style.borderBottom = "none"; }
+    if (dt) { var d = document.getElementById("date"); d.textContent = dt; d.style.borderBottom = "none"; }
+    else {
+      try {
+        var now = new Date();
+        document.getElementById("date").textContent = now.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+        document.getElementById("date").style.borderBottom = "none";
+      } catch (e) {}
+    }
+  })();
+</script>
+
+</body>
+</html>

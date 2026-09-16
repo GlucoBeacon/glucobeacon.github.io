@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Tracking vs. Claims</title>
+<meta name="description" content="An editable model of what changes in a diabetic member's claims when they log consistently, and what a plan would pay to make that happen." />
+<link rel="icon" type="image/png" href="../img/icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,650&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+<script data-goatcounter="https://glucobeacon.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<style>
+  :root {
+    --ground: #f6f4ef; --surface: #ffffff; --surface-sunk: #f1ede4;
+    --ink: #16233a; --ink-soft: #5c6b7f; --navy: #0b2447; --on-navy: #eef2f8;
+    --beacon: #e0671f; --beam: #fbe3cf; --rule: #e4ded3; --rule-strong: #d3ccbd;
+    --positive: #1f7a4d; --negative: #a23b2f; --hold: #916a29;
+    --shadow: 24px 24px 60px -30px rgba(20, 30, 50, 0.28);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #12161d; --surface: #1a1f28; --surface-sunk: #151a22;
+      --ink: #ece6da; --ink-soft: #9aa4b2; --navy: #0c1a30; --on-navy: #dfe7f3;
+      --beacon: #ff8f4d; --beam: #3a2a1c; --rule: #2b323d; --rule-strong: #3a424e;
+      --positive: #55c98a; --negative: #e0776a; --hold: #d9b877;
+      --shadow: 24px 24px 70px -30px rgba(0, 0, 0, 0.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #12161d; --surface: #1a1f28; --surface-sunk: #151a22;
+    --ink: #ece6da; --ink-soft: #9aa4b2; --navy: #0c1a30; --on-navy: #dfe7f3;
+    --beacon: #ff8f4d; --beam: #3a2a1c; --rule: #2b323d; --rule-strong: #3a424e;
+    --positive: #55c98a; --negative: #e0776a; --hold: #d9b877;
+    --shadow: 24px 24px 70px -30px rgba(0, 0, 0, 0.6);
+  }
+
+  * { box-sizing: border-box; }
+  img { max-width: 100%; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+    font-size: 17px; line-height: 1.62; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 28px 96px; }
+  .topbar { max-width: 860px; margin: 0 auto; padding: 26px 28px 0; display: flex; justify-content: space-between; align-items: baseline; gap: 12px 22px; flex-wrap: wrap; }
+  .topbar a { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); text-decoration: none; }
+  .topbar a:hover { color: var(--beacon); }
+
+  header { max-width: 860px; margin: 0 auto; padding: 40px 28px 46px; }
+  .eyebrow { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--beacon); display: flex; align-items: center; gap: 12px; margin-bottom: 26px; }
+  .beacon-dot { width: 11px; height: 11px; border-radius: 50%; background: var(--beacon); box-shadow: 0 0 0 0 rgba(224, 103, 31, 0.55); animation: pulse 3.4s ease-out infinite; flex: none; }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(224, 103, 31, 0.5); } 70% { box-shadow: 0 0 0 16px rgba(224, 103, 31, 0); } 100% { box-shadow: 0 0 0 0 rgba(224, 103, 31, 0); } }
+  @media (prefers-reduced-motion: reduce) { .beacon-dot { animation: none; } }
+  h1 { font-family: "Fraunces", Georgia, "Times New Roman", serif; font-optical-sizing: auto; font-weight: 550; font-size: clamp(1.9rem, 1.25rem + 2.9vw, 2.9rem); line-height: 1.1; letter-spacing: -0.015em; text-wrap: balance; margin: 0 0 22px; color: var(--ink); }
+  .standfirst { font-size: 1.1rem; line-height: 1.6; color: var(--ink-soft); max-width: 64ch; margin: 0; }
+  .standfirst strong { color: var(--ink); font-weight: 600; }
+  .beam { height: 2px; max-width: 860px; margin: 44px auto 0; background: linear-gradient(90deg, var(--beacon) 0%, var(--rule-strong) 42%, transparent 100%); border: 0; }
+
+  section { padding: 50px 0; border-bottom: 1px solid var(--rule); }
+  section:last-of-type { border-bottom: 0; }
+  .kicker { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 11.5px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 18px; }
+  h2 { font-family: "Fraunces", Georgia, serif; font-optical-sizing: auto; font-weight: 550; font-size: clamp(1.4rem, 1.1rem + 1.3vw, 1.85rem); line-height: 1.16; letter-spacing: -0.012em; text-wrap: balance; margin: 0 0 18px; }
+  p { margin: 0 0 16px; max-width: 66ch; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--beacon); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  strong { font-weight: 600; }
+  .mono, .num { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+
+  /* illustrative tiles */
+  .anchor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-top: 22px; }
+  .tile { background: var(--navy); color: var(--on-navy); border-radius: 14px; padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 4px; }
+  .tile .cost { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.05em; opacity: 0.62; }
+  .tile .big { font-family: "Fraunces", serif; font-weight: 600; font-size: 1.75rem; line-height: 1.05; }
+  .tile .lbl { font-size: 0.86rem; line-height: 1.4; opacity: 0.92; }
+  .anchor-note { margin-top: 16px; font-size: 0.88rem; color: var(--ink-soft); }
+
+  /* calculator */
+  .scenario { display: flex; gap: 6px; margin-bottom: 18px; flex-wrap: wrap; }
+  .scenario button { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; letter-spacing: 0.05em; text-transform: uppercase; background: var(--surface); color: var(--ink-soft); border: 1px solid var(--rule-strong); border-radius: 999px; padding: 6px 13px; cursor: pointer; }
+  .scenario button[aria-pressed="true"] { background: var(--navy); color: var(--on-navy); border-color: var(--navy); }
+  .calc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0; margin-top: 4px; border: 1px solid var(--rule-strong); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); background: var(--surface); }
+  .calc__inputs { padding: 24px; border-right: 1px solid var(--rule); }
+  .calc__out { padding: 24px; background: var(--surface-sunk); }
+  .calc h3.panel-h { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 16px; }
+  .field { margin-bottom: 15px; }
+  .field:last-child { margin-bottom: 0; }
+  .field label { display: block; font-size: 0.88rem; margin-bottom: 4px; }
+  .field .hint { color: var(--ink-soft); font-size: 0.78rem; }
+  .field .control { display: flex; align-items: center; gap: 10px; }
+  .field input[type="number"] { width: 100%; font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; font-size: 0.95rem; color: var(--ink); background: var(--surface); border: 1px solid var(--rule-strong); border-radius: 8px; padding: 8px 10px; }
+  :root[data-theme="dark"] .field input, :root:not([data-theme="light"]) .field input { color-scheme: dark; }
+  .field .unit { font-family: "IBM Plex Mono", monospace; font-size: 0.8rem; color: var(--ink-soft); flex: none; }
+  .result-hero { border-bottom: 1px solid var(--rule); padding-bottom: 16px; margin-bottom: 16px; }
+  .result-hero .rlabel { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 6px; }
+  .result-hero .rbig { font-family: "Fraunces", serif; font-weight: 600; font-size: clamp(1.9rem, 1.4rem + 2.6vw, 2.6rem); line-height: 1; font-variant-numeric: tabular-nums; color: var(--positive); letter-spacing: -0.015em; }
+  .result-hero .rbig.neg { color: var(--negative); }
+  .result-hero .rsub { font-size: 0.86rem; color: var(--ink-soft); margin-top: 6px; }
+  .rrow { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; padding: 9px 0; border-bottom: 1px solid var(--rule); font-size: 0.9rem; }
+  .rrow:last-of-type { border-bottom: 0; }
+  .rrow .rk { color: var(--ink-soft); }
+  .rrow .rv { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; font-weight: 500; }
+  .bar { margin-top: 16px; display: flex; flex-direction: column; gap: 8px; }
+  .bar .track { display: flex; flex-direction: column; gap: 4px; }
+  .bar .track .bk { font-family: "IBM Plex Mono", monospace; font-size: 0.72rem; color: var(--ink-soft); letter-spacing: 0.04em; text-transform: uppercase; display: flex; justify-content: space-between; }
+  .bar .track .bv { height: 13px; border-radius: 3px; background: var(--rule-strong); }
+  .bar .track .bv > i { display: block; height: 100%; border-radius: 3px; }
+  .bar .track.cost .bv > i { background: var(--hold); }
+  .bar .track.save .bv > i { background: var(--positive); }
+
+  .scroll { overflow-x: auto; margin-top: 4px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9rem; min-width: 540px; }
+  caption { text-align: left; font-size: 0.82rem; color: var(--ink-soft); caption-side: bottom; margin-top: 12px; line-height: 1.55; }
+  th { text-align: left; font-family: "IBM Plex Mono", monospace; font-weight: 500; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); padding: 0 14px 10px 0; border-bottom: 1px solid var(--rule-strong); vertical-align: bottom; }
+  td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  td:first-child { font-weight: 600; }
+  td.n { font-family: "IBM Plex Mono", monospace; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  sup a { font-family: "IBM Plex Mono", monospace; font-size: 0.72em; text-decoration: none; }
+
+  .terms { display: flex; flex-direction: column; gap: 0; margin: 4px 0 0; border-top: 1px solid var(--rule); }
+  .terms div { display: grid; grid-template-columns: 1fr; gap: 3px; padding: 15px 0; border-bottom: 1px solid var(--rule); }
+  .terms dt { font-weight: 600; font-size: 0.97rem; }
+  .terms dd { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+
+  .callout { background: var(--surface); border: 1px solid var(--rule-strong); border-left: 3px solid var(--beacon); border-radius: 12px; padding: 22px 24px; margin-top: 4px; }
+  .callout p { max-width: none; }
+  .callout ol { margin: 0; padding-left: 20px; }
+  .callout li { margin: 9px 0; font-size: 0.94rem; }
+  .callout li:first-child { margin-top: 0; }
+
+  .refs { font-size: 0.86rem; color: var(--ink-soft); }
+  .refs ol { padding-left: 22px; margin: 10px 0 0; }
+  .refs li { margin: 8px 0; }
+
+  footer { max-width: 860px; margin: 0 auto; padding: 40px 28px 80px; }
+  .disclaimer { margin-top: 10px; font-size: 0.8rem; color: var(--ink-soft); line-height: 1.6; max-width: 68ch; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--beacon); outline-offset: 2px; border-radius: 2px; }
+
+  @media (max-width: 720px) {
+    .calc { grid-template-columns: 1fr; }
+    .calc__inputs { border-right: 0; border-bottom: 1px solid var(--rule); }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="/partners/brief.html">&larr;&nbsp;Partner brief</a>
+  <a href="https://glucobeacon.com/">glucobeacon.com</a>
+</div>
+
+<header>
+  <div class="eyebrow"><span class="beacon-dot" aria-hidden="true"></span>GlucoBeacon &middot; plan &amp; employer economics</div>
+  <h1>A member who tracks costs a plan less than a member who doesn&rsquo;t.</h1>
+  <p class="standfirst">This is a transparent model of that gap: what changes in a diabetic member&rsquo;s claims when they log consistently, and what a plan would pay to make that happen &mdash; <strong>billed only for members who actually opt in</strong>. Every input below is editable and every assumption is sourced.</p>
+</header>
+<hr class="beam" />
+
+<div class="wrap">
+
+  <section>
+    <p class="kicker">The intuition first</p>
+    <h2>One avoided claim pays for hundreds of members.</h2>
+    <p>GlucoBeacon Pro sells to consumers for $79.99 once. To a plan, at a bulk per-activation rate of roughly <span class="num">$30</span> per member for a lifetime entitlement, a single averted diabetes event covers a large block of licenses. Event costs below are rounded from published U.S. ranges &mdash; illustrative, not the model&rsquo;s engine.</p>
+    <div class="anchor-grid">
+      <div class="tile"><span class="cost">~$1,200 &middot; severe hypoglycemia, ED visit</span><span class="big">40</span><span class="lbl">member licenses at $30</span></div>
+      <div class="tile"><span class="cost">~$20,000 &middot; DKA hospital admission</span><span class="big">667</span><span class="lbl">member licenses at $30</span></div>
+      <div class="tile"><span class="cost">~$60,000 &middot; lower-limb amputation, year 1</span><span class="big">2,000</span><span class="lbl">member licenses at $30</span></div>
+      <div class="tile"><span class="cost">~$100,000 &middot; one year of dialysis (ESRD)</span><span class="big">3,300</span><span class="lbl">member licenses at $30</span></div>
+    </div>
+    <p class="anchor-note">The real case isn&rsquo;t any one avoided catastrophe &mdash; it&rsquo;s a small, steady reduction in average claims across everyone who engages. That&rsquo;s what the model below estimates.</p>
+  </section>
+
+  <section>
+    <p class="kicker">The model</p>
+    <h2>Tracker vs. non-tracker, across a book of business.</h2>
+    <p>The mechanism is not treatment. It is <strong>better data &rarr; better clinical decisions, better day-to-day choices, and visible medication adherence</strong>. Published trials of comparable apps put the effect at a <span class="num">0.2&ndash;0.6</span> percentage-point drop in A1C for engaged users (up to <span class="num">1.1</span> pp when a clinician reviews the data). U.S. claims analyses value each <span class="num">1.0</span> pp of A1C reduction at roughly <span class="num">$430&ndash;$740</span> in avoided annual cost. Adjust anything below.</p>
+
+    <div class="scenario" role="group" aria-label="Preset scenarios">
+      <button type="button" data-scn="cons" aria-pressed="false">Conservative</button>
+      <button type="button" data-scn="base" aria-pressed="true">Base</button>
+      <button type="button" data-scn="opt" aria-pressed="false">Optimistic</button>
+    </div>
+
+    <div class="calc">
+      <div class="calc__inputs">
+        <h3 class="panel-h">Inputs</h3>
+        <div class="field"><label for="members">Diabetic members in the plan</label><div class="control"><input type="number" id="members" min="0" step="1000" value="100000" /></div></div>
+        <div class="field"><label for="activation">Activation rate <span class="hint">&mdash; tap the hub link, install, entitlement provisioned</span></label><div class="control"><input type="number" id="activation" min="0" max="100" step="1" value="30" /><span class="unit">% of members</span></div></div>
+        <div class="field"><label for="engaged">Sustained-tracker rate <span class="hint">&mdash; still logging 3&times;/week at 6 months</span></label><div class="control"><input type="number" id="engaged" min="0" max="100" step="1" value="40" /><span class="unit">% of activated</span></div></div>
+        <div class="field"><label for="a1c">A1C reduction among sustained trackers</label><div class="control"><input type="number" id="a1c" min="0" max="2" step="0.05" value="0.35" /><span class="unit">pp, sustained</span></div></div>
+        <div class="field"><label for="perpp">Avoided medical cost per 1.0 pp A1C</label><div class="control"><input type="number" id="perpp" min="0" step="10" value="550" /><span class="unit">$ / member / yr</span></div></div>
+        <div class="field"><label for="acute">Acute-event avoidance value <span class="hint">&mdash; fewer severe hypo / DKA episodes</span></label><div class="control"><input type="number" id="acute" min="0" step="10" value="60" /><span class="unit">$ / tracker / yr</span></div></div>
+        <div class="field"><label for="retention">Years the plan retains the member</label><div class="control"><input type="number" id="retention" min="1" max="10" step="1" value="3" /><span class="unit">years</span></div></div>
+        <div class="field"><label for="price">Price per activated member <span class="hint">&mdash; one-time, lifetime entitlement</span></label><div class="control"><input type="number" id="price" min="0" step="5" value="30" /><span class="unit">$ once</span></div></div>
+      </div>
+      <div class="calc__out">
+        <h3 class="panel-h">Result &mdash; over the retention window</h3>
+        <div class="result-hero"><div class="rlabel">Net to the plan</div><div class="rbig" id="o-net">$8.19M</div><div class="rsub" id="o-roi">10.1&times; return &middot; every $1 spent returns $10.10</div></div>
+        <div class="rrow"><span class="rk">Activated members</span><span class="rv num" id="o-act">30,000</span></div>
+        <div class="rrow"><span class="rk">Sustained trackers</span><span class="rv num" id="o-eng">12,000</span></div>
+        <div class="rrow"><span class="rk">Avoided claims / tracker / yr</span><span class="rv num" id="o-per">$252</span></div>
+        <div class="rrow"><span class="rk">Gross avoided claims (window)</span><span class="rv num" id="o-gross">$9.09M</span></div>
+        <div class="rrow"><span class="rk">Program cost (one-time)</span><span class="rv num" id="o-cost">$0.90M</span></div>
+        <div class="rrow"><span class="rk">Year-1 return</span><span class="rv num" id="o-y1">3.4&times;</span></div>
+        <div class="bar" aria-hidden="true">
+          <div class="track cost"><span class="bk"><span>Program cost</span><span id="b-cost">$0.90M</span></span><span class="bv"><i id="bar-cost" style="width:10%"></i></span></div>
+          <div class="track save"><span class="bk"><span>Avoided claims</span><span id="b-save">$9.09M</span></span><span class="bv"><i id="bar-save" style="width:100%"></i></span></div>
+        </div>
+      </div>
+    </div>
+    <p class="anchor-note">Figures are model output from the inputs shown, not observed GlucoBeacon results. Rounded to two significant figures above $1M.</p>
+  </section>
+
+  <section>
+    <p class="kicker">Where the numbers come from</p>
+    <h2>Assumptions, ranges, and sources.</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Parameter</th><th>Base value</th><th>Published range</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td>App effect on A1C (engaged users)</td><td class="n">&minus;0.35 pp</td><td class="n">&minus;0.24 to &minus;1.12 pp</td><td>Meta-analyses of diabetes self-management apps<sup><a href="#r3">3</a></sup> &mdash; &minus;0.36 pp pooled (57 trials); &minus;0.57 T2D / &minus;0.49 T1D; &minus;1.12 with clinician review of the data.</td></tr>
+          <tr><td>Avoided cost per 1.0 pp A1C</td><td class="n">$550 / yr</td><td class="n">$429 to $736 / yr</td><td>U.S. commercial claims cohort<sup><a href="#r2">2</a></sup> &mdash; $429 all-cause, $736 diabetes-related, per member per year.</td></tr>
+          <tr><td>Attributable annual cost of diabetes</td><td class="n">context</td><td class="n">$12,022 / person / yr</td><td>ADA, <em>Economic Costs of Diabetes in the U.S. in 2022</em><sup><a href="#r1">1</a></sup> &mdash; total $19,736/yr, 2.6&times; a non-diabetic peer.</td></tr>
+          <tr><td>Activation rate (opt-in from hub)</td><td class="n">30%</td><td class="n">plan-specific</td><td>Depends on hub placement, prompting, and co-branding. Set per pilot; billed on actual activations only.</td></tr>
+          <tr><td>Sustained-tracker rate</td><td class="n">40%</td><td class="n">the dominant risk</td><td>Most digital-health tools lose the majority of users within weeks; this input drives the result more than any other. Validate in-pilot.</td></tr>
+          <tr><td>Clinical basis for cost link</td><td class="n">&mdash;</td><td class="n">&mdash;</td><td>UKPDS 35<sup><a href="#r4">4</a></sup> &mdash; each 1 pp A1C reduction: &minus;37% microvascular complications, &minus;14% MI, &minus;12% stroke.</td></tr>
+        </tbody>
+        <caption>The model multiplies members &times; activation &times; engagement to get sustained trackers, then (A1C reduction &times; $/pp + acute-event value) &times; retention years for gross avoided claims, minus a one-time per-activation program cost.</caption>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">How billing works</p>
+    <h2>The plan is billed only for members who opt in.</h2>
+    <p>GlucoBeacon appears as a tile or single-sign-on link inside the plan&rsquo;s existing member hub &mdash; in the digital-health or diabetes-care section, co-branded if the plan wants. Nothing is charged for eligible-but-inactive members.</p>
+    <dl class="terms">
+      <div><dt>Activation event</dt><dd>A member taps the hub link. A signed deep link carries a plan token, the app installs, and a lifetime Pro entitlement is provisioned to that member. That tap is the billable unit &mdash; unambiguous and auditable.</dd></div>
+      <div><dt>What the plan pays</dt><dd>A one-time fee per activated member for a lifetime entitlement, or a lower per-member annual fee. Volume tiers. No PMPM on the whole diabetic population.</dd></div>
+      <div><dt>Reporting</dt><dd>Monthly activation count and running spend against any cap the plan sets. Aggregate engagement (tracker rate, mean logging frequency) &mdash; never individual member data.</dd></div>
+      <div><dt>Data</dt><dd>Member logs stay on the member&rsquo;s device by default. GlucoBeacon does not send claims-linkable health data to the plan, and the plan&rsquo;s payment does not buy access to it. A pilot&rsquo;s outcome analysis runs on the plan&rsquo;s own claims, matched to a control group.</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <p class="kicker">Read this before you model with it</p>
+    <h2>What would make these numbers wrong.</h2>
+    <div class="callout">
+      <ol>
+        <li><strong>No GlucoBeacon-specific outcomes study exists yet.</strong> Effect sizes are borrowed from meta-analyses of comparable apps. A claims-matched pilot with a control group is the only way to get a real number for this product.</li>
+        <li><strong>The A1C effect is small and range-bound.</strong> Without an integrated clinician-feedback loop &mdash; which GlucoBeacon does not have today &mdash; expect the low end (&minus;0.2 to &minus;0.4 pp), not the &minus;1.1 pp seen in clinician-supervised trials.</li>
+        <li><strong>Engagement is the whole ballgame.</strong> If the sustained-tracker rate is 15% instead of 40%, the return falls by roughly two-thirds. This is the input to pressure-test hardest.</li>
+        <li><strong>Plan churn caps the upside.</strong> Members change plans every ~3 years on average, so the plan that pays for the app captures only the near-term claims reduction, not the decade of avoided complications.</li>
+        <li><strong>Opt-in members are not average.</strong> People who tap the link are more health-engaged and might have improved anyway. A valid pilot needs a matched, non-enrolled control cohort.</li>
+        <li><strong>Vendor ROI runs hot.</strong> Published returns from larger digital-diabetes programs tend to exceed independent replication. This model deliberately uses independent figures and stays at the conservative end.</li>
+        <li><strong>This is not a medical claim.</strong> GlucoBeacon does not diagnose or treat. The pathway to lower cost is information and behavior, and it only works for members who use it.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">Ways to structure it</p>
+    <h2>Roughly easiest to hardest.</h2>
+    <dl class="terms">
+      <div><dt>Member-hub, per-activation</dt><dd>The model above. Plan embeds the link, pays per opt-in, lifetime entitlement. Lowest friction, fastest to pilot.</dd></div>
+      <div><dt>Medicare Advantage supplemental benefit</dt><dd>Position as a health-related supplemental benefit; MA plans compete on benefit richness and Star ratings. Per-activation or flat annual.</dd></div>
+      <div><dt>Digital-health formulary listing</dt><dd>Get vetted onto a PBM digital formulary or a navigator (Rightway, Personify). Requires SOC 2 / HITRUST and this economic dossier; opens many plans at once.</dd></div>
+      <div><dt>Value-based / shared savings</dt><dd>Lower base fee plus a bonus tied to measured A1C improvement or reduced admissions in the enrolled cohort. Higher trust bar, needs a claims-data partnership.</dd></div>
+      <div><dt>Self-insured employers</dt><dd>Often faster than carriers. Sold PEPM through benefits consultants (Mercer, Aon, WTW) or a PEO channel.</dd></div>
+      <div><dt>Medicaid MCOs &amp; FQHCs</dt><dd>High diabetes burden, cost-sensitive, value-based mandates in many states. Full Spanish / Filipino / Hindi localization is a real differentiator here.</dd></div>
+      <div><dt>HEDIS / Star angle</dt><dd>Comprehensive Diabetes Care measures (A1C testing and control) feed MA Star ratings, which feed plan revenue &mdash; a growth argument, not just a cost one.</dd></div>
+    </dl>
+  </section>
+
+  <section class="refs">
+    <p class="kicker">Sources</p>
+    <ol>
+      <li id="r1">American Diabetes Association. Economic Costs of Diabetes in the U.S. in 2022. <em>Diabetes Care</em> 2024;47(1):26&ndash;43.</li>
+      <li id="r2">Relationship between HbA1c reduction and healthcare costs among patients with type 2 diabetes: a U.S. claims database analysis. <em>Curr Med Res Opin</em> 2020 &mdash; $429 all-cause / $736 diabetes-related saving per 1 pp A1C reduction. Supported by retrospective claims cohorts in <em>Diabetes Therapy</em> 2022 &amp; 2023.</li>
+      <li id="r3">Systematic reviews &amp; meta-analyses of mobile-app diabetes self-management: pooled A1C &minus;0.36 pp across 57 trials (2023); &minus;0.49 pp (14-trial GRADE review); T2D &minus;0.57 / T1D &minus;0.49; clinician-feedback subgroup &minus;1.12 pp. <em>Diabetes Care</em>, <em>J Med Internet Res</em>, <em>Front Public Health</em>.</li>
+      <li id="r4">Stratton IM, et al. Association of glycaemia with macrovascular and microvascular complications of type 2 diabetes (UKPDS 35). <em>BMJ</em> 2000;321:405&ndash;412.</li>
+      <li id="r5">Acute-event costs (DKA admission, severe hypoglycemia ED visit, ESRD/dialysis annual, lower-limb amputation year 1): rounded midpoints of published U.S. cost estimates, used only for the illustrative tiles, not the model.</li>
+    </ol>
+  </section>
+
+</div>
+
+<footer>
+  <p class="disclaimer">Illustrative economic model prepared for GlucoBeacon plan &amp; employer conversations. All projected figures are outputs of the stated assumptions, not observed results for this product. Not actuarial advice; not a medical claim. Questions: <span class="mono">partners@glucobeacon.com</span>. Current as of the date this link was shared and may change.</p>
+</footer>
+
+<script>
+  (function () {
+    var ids = ["members","activation","engaged","a1c","perpp","acute","retention","price"];
+    var el = {};
+    ids.forEach(function (k) { el[k] = document.getElementById(k); });
+
+    var scenarios = {
+      cons: { activation: 20, engaged: 25, a1c: 0.25, perpp: 430, acute: 30, retention: 2, price: 30 },
+      base: { activation: 30, engaged: 40, a1c: 0.35, perpp: 550, acute: 60, retention: 3, price: 30 },
+      opt:  { activation: 45, engaged: 55, a1c: 0.50, perpp: 736, acute: 120, retention: 4, price: 30 }
+    };
+
+    function fmtMoney(v) {
+      var a = Math.abs(v);
+      if (a >= 1e6) return (v < 0 ? "-$" : "$") + (a / 1e6).toFixed(2) + "M";
+      if (a >= 1e3) return (v < 0 ? "-$" : "$") + Math.round(a / 1e3) + "K";
+      return (v < 0 ? "-$" : "$") + Math.round(a).toLocaleString();
+    }
+    function fmtInt(v) { return Math.round(v).toLocaleString(); }
+
+    function read() {
+      var o = {};
+      ids.forEach(function (k) { var n = parseFloat(el[k].value); o[k] = isFinite(n) ? n : 0; });
+      return o;
+    }
+
+    function compute() {
+      var i = read();
+      var activated = i.members * (i.activation / 100);
+      var trackers = activated * (i.engaged / 100);
+      var perTrackerYr = i.a1c * i.perpp + i.acute;
+      var grossWindow = trackers * perTrackerYr * i.retention;
+      var cost = activated * i.price;
+      var net = grossWindow - cost;
+      var roi = cost > 0 ? grossWindow / cost : 0;
+      var y1 = cost > 0 ? (trackers * perTrackerYr) / cost : 0;
+
+      document.getElementById("o-act").textContent = fmtInt(activated);
+      document.getElementById("o-eng").textContent = fmtInt(trackers);
+      document.getElementById("o-per").textContent = "$" + fmtInt(perTrackerYr);
+      document.getElementById("o-gross").textContent = fmtMoney(grossWindow);
+      document.getElementById("o-cost").textContent = fmtMoney(cost);
+      var TIMES = String.fromCharCode(215), MIDDOT = String.fromCharCode(183);
+      document.getElementById("o-y1").textContent = (y1).toFixed(1) + TIMES;
+
+      var netEl = document.getElementById("o-net");
+      netEl.textContent = fmtMoney(net);
+      netEl.classList.toggle("neg", net < 0);
+
+      document.getElementById("o-roi").textContent = cost > 0
+        ? roi.toFixed(1) + TIMES + " return " + MIDDOT + " every $1 spent returns $" + roi.toFixed(2)
+        : "set a price to see the return";
+
+      document.getElementById("b-cost").textContent = fmtMoney(cost);
+      document.getElementById("b-save").textContent = fmtMoney(grossWindow);
+      var mx = Math.max(cost, grossWindow, 1);
+      document.getElementById("bar-cost").style.width = (100 * cost / mx).toFixed(1) + "%";
+      document.getElementById("bar-save").style.width = (100 * grossWindow / mx).toFixed(1) + "%";
+    }
+
+    function setScenario(name) {
+      var s = scenarios[name];
+      if (!s) return;
+      Object.keys(s).forEach(function (k) { if (el[k]) el[k].value = s[k]; });
+      document.querySelectorAll(".scenario button").forEach(function (b) {
+        b.setAttribute("aria-pressed", b.dataset.scn === name ? "true" : "false");
+      });
+      compute();
+    }
+
+    document.querySelectorAll(".scenario button").forEach(function (b) {
+      b.addEventListener("click", function () { setScenario(b.dataset.scn); });
+    });
+    ids.forEach(function (k) {
+      el[k].addEventListener("input", function () {
+        document.querySelectorAll(".scenario button").forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
+        compute();
+      });
+    });
+
+    compute();
+  })();
+</script>
+
+</body>
+</html>
